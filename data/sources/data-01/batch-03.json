@@ -1,0 +1,131 @@
+{
+  "taskId": "DATA-01",
+  "batchId": "03-monthly-and-voice-packages",
+  "rawFolder": "batch-03",
+  "observedAt": "2026-10-27T13:40:00+07:00",
+  "method": "Public website text extraction (web open), bounded excerpt and fact selection; HTTP status and redirect chain not directly inspected",
+  "records": [
+    {
+      "code": "ST7K",
+      "title": "Gói Cước Ngày Viettel ST7K - 1GB/Ngày Chỉ 7K, Đăng Ký Ngay!",
+      "lead": "Gói cước ST7K 7.000đ/ngày với 1GB/ngày; đăng ký ST7K UP gửi 290.",
+      "price": 7000,
+      "cycle": { "quantity": 1, "unit": "day", "label": "1 ngày" },
+      "allowances": [{ "value": 1, "unit": "GB", "period": "ngày", "sourceLabel": "1GB/ngày" }],
+      "conditions": ["Hết data hệ thống ngắt kết nối", "Tự động gia hạn khi tài khoản gốc còn tiền"],
+      "headings": ["Thông Tin Gói Cước Ngày Viettel ST7K", "Lợi Ích Khi Đăng Ký Gói ST7K Viettel", "Cách Kiểm Tra Dung Lượng Gói Cước", "Ai Nên Sử Dụng Gói Cước Ngày Viettel ST7K?"],
+      "notes": ["Top summary duration has only 'ngày'; main content says 1 ngày."],
+      "cancelSms": "HUY ST7K",
+      "excerpts": ["L3: # Gói cước Viettel ST7K", "L9-L29: Giá 7.000đ; thời hạn 'ngày'; 1GB/ngày; ST7K UP gửi 290", "L35-L41: giá 7.000đ/ngày; chu kỳ 1 ngày", "L53-L59: KTTK gửi 191; HUY ST7K gửi 191"]
+    },
+    {
+      "code": "SD90",
+      "title": "Gói Cước SD90 Viettel - 45GB Data 4G Tốc Độ Cao Giá Chỉ 90K/Tháng",
+      "lead": "SD90 có giá 90.000đ/tháng, cung cấp 45GB/30 ngày (1.5GB/ngày).",
+      "price": 90000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 1.5, "unit": "GB", "period": "ngày", "sourceLabel": "1.5GB/ngày" }, { "value": 45, "unit": "GB", "period": "30 ngày", "sourceLabel": "45GB/30 ngày" }],
+      "conditions": ["Nguồn ghi áp dụng toàn bộ thuê bao Viettel trả trước và trả sau"],
+      "headings": ["Thông tin chi tiết gói cước SD90 của Viettel", "Cách đăng ký gói cước SD90 của Viettel"],
+      "excerpts": ["L3: # Gói cước Viettel SD90", "L9-L29: 90.000đ; 1 tháng; 1.5GB/ngày; SD90 UP gửi 290", "L39-L43: 45GB/30 ngày; thuê bao trả trước và trả sau", "L45: YouTube player (media src unverified)"]
+    },
+    {
+      "code": "SD120",
+      "title": "Gói Cước SD120 Viettel - 60GB Data 4G Tốc Độ Cao Giá Chỉ 120K/tháng",
+      "lead": "SD120 có giá 120.000đ/tháng, 60GB/30 ngày (2GB/ngày) và TV360 Basic.",
+      "price": 120000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 2, "unit": "GB", "period": "ngày", "sourceLabel": "2GB/ngày" }, { "value": 60, "unit": "GB", "period": "30 ngày", "sourceLabel": "60GB/30 ngày" }],
+      "benefits": ["Miễn phí data TV360 Basic"],
+      "conditions": ["Nguồn ghi áp dụng toàn bộ thuê bao Viettel trả trước và trả sau"],
+      "headings": ["Thông tin chi tiết gói cước SD120 của Viettel", "Cách đăng ký gói cước SD120"],
+      "excerpts": ["L3: # Gói cước Viettel SD120", "L9-L29: 120.000đ; 1 tháng; 2GB/ngày; SD120 UP gửi 290", "L39-L45: 60GB/30 ngày; TV360 Basic; thuê bao trả trước và trả sau", "L47: YouTube player (media src unverified)"]
+    },
+    {
+      "code": "SD135",
+      "title": "Gói SD135 Viettel Giá 135K nhận 150GB (5GB/ngày) + TV360 Basic",
+      "lead": "SD135 có giá 135.000đ/tháng, 150GB/30 ngày (5GB/ngày) và TV360 Basic.",
+      "price": 135000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 5, "unit": "GB", "period": "ngày", "sourceLabel": "5GB/ngày" }, { "value": 150, "unit": "GB", "period": "30 ngày", "sourceLabel": "150GB/30 ngày" }],
+      "benefits": ["Miễn phí data TV360 Basic"],
+      "conditions": ["Nguồn ghi thuê bao Viettel kích hoạt mới từ 01/01/2023 và thuộc danh sách ưu đãi"],
+      "headings": ["Thông tin chi tiết gói cước SD135 của Viettel", "Cách đăng ký gói cước SD135"],
+      "excerpts": ["L3: # Gói cước Viettel SD135", "L9-L29: 135.000đ; 1 tháng; 5GB/ngày; SD135 UP gửi 290", "L39-L45: 150GB/30 ngày; TV360 Basic; thuê bao mới từ 01/01/2023 và danh sách ưu đãi", "L47: YouTube player (media src unverified)"]
+    },
+    {
+      "code": "SD150",
+      "title": "Gói SD150 Viettel - 150K Nhận Ngay 90GB Data 4G (3GB/ngày) + Miễn Phí TV360",
+      "lead": "SD150 có giá 150.000đ/tháng, 90GB/30 ngày (3GB/ngày) và TV360 Basic.",
+      "price": 150000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 3, "unit": "GB", "period": "ngày", "sourceLabel": "3GB/ngày" }, { "value": 90, "unit": "GB", "period": "30 ngày", "sourceLabel": "90GB/30 ngày" }],
+      "benefits": ["Miễn phí data TV360 Basic"],
+      "conditions": ["Nguồn ghi áp dụng toàn bộ thuê bao Viettel trả trước và trả sau"],
+      "headings": ["Thông tin chi tiết gói cước SD150 của Viettel", "Cách đăng ký gói cước SD150"],
+      "excerpts": ["L3: # Gói cước Viettel SD150", "L9-L29: 150.000đ; 1 tháng; 3GB/ngày; SD150 UP gửi 290", "L39-L45: 90GB/30 ngày; TV360 Basic; thuê bao trả trước và trả sau", "L47: YouTube player (media src unverified)"]
+    },
+    {
+      "code": "VM80",
+      "title": "Gói Cước VM80 1GB/ngày Miễn Phí Nghe Sách Nói Mydio Chỉ 80K/tháng",
+      "lead": "VM80 có giá 80.000đ/tháng, 30GB (1GB/ngày) và miễn phí data Mydio theo điều kiện nguồn.",
+      "price": 80000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 1, "unit": "GB", "period": "ngày", "sourceLabel": "1GB/ngày" }, { "value": 30, "unit": "GB", "period": "tháng", "sourceLabel": "30GB (1GB/ngày)" }],
+      "benefits": ["Miễn phí data truy cập ứng dụng sách nói Mydio"],
+      "conditions": ["Thuê bao trả trước kích hoạt mới từ 01/04/2024 (loại trừ GIC và thuê bao chuyển từ trả sau)", "Hoặc thuê bao trả trước thuộc danh sách được áp dụng"],
+      "headings": ["Thông tin chi tiết gói cước VM80 của Viettel", "Giới thiệu về Mydio - Ứng dụng sách nói chất lượng cao từ Viettel"],
+      "excerpts": ["L3: # Gói cước Viettel VM80", "L9-L29: 80.000đ; 1 tháng; 1GB/ngày; VM80 UP gửi 290", "L42-L47: 30GB; ưu đãi Mydio; trả trước mới từ 01/04/2024 theo điều kiện"]
+    },
+    {
+      "code": "VM100",
+      "title": "Gói cước Viettel VM100 | Đăng ký gói data + nghe sách MyDio ưu đãi nhất",
+      "lead": "VM100 có giá 100.000đ/tháng, 45GB/tháng (1.5GB/ngày) và dịch vụ sách nói MyDio.",
+      "price": 100000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 1.5, "unit": "GB", "period": "ngày", "sourceLabel": "1.5GB/ngày" }, { "value": 45, "unit": "GB", "period": "tháng", "sourceLabel": "45GB/tháng" }],
+      "benefits": ["Miễn phí nghe sách nói trên MyDio"],
+      "conditions": ["Nguồn ghi tự động gia hạn theo chu kỳ hàng tháng"],
+      "headings": ["Gói Cước Viettel - Giới Thiệu Gói Cước VM100 Mới Nhất", "Gói Cước VM100 – Gói Cước Viettel Tháng Mới Nhất Cho Tín Đồ Sách Nói", "Lý Do Bạn Nên Chọn Gói Cước Viettel VM100"],
+      "cancelSms": "HUY VM100",
+      "excerpts": ["L3: # Gói cước Viettel VM100", "L9-L29: 100.000đ; 1 tháng; 1.5GB/ngày; VM100 UP gửi 290", "L40-L47: 45GB/tháng; MyDio; gia hạn hàng tháng; HUY VM100 gửi 191"]
+    },
+    {
+      "code": "VM130",
+      "title": "Gói cước Viettel VM130 | Đăng ký gói data + nghe sách MyDio cực ưu đãi",
+      "lead": "VM130 có giá 130.000đ/tháng, 60GB/tháng (2GB/ngày) và dịch vụ sách nói MyDio.",
+      "price": 130000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 2, "unit": "GB", "period": "ngày", "sourceLabel": "2GB/ngày" }, { "value": 60, "unit": "GB", "period": "tháng", "sourceLabel": "60GB/tháng" }],
+      "benefits": ["Miễn phí nghe sách nói trên MyDio"],
+      "conditions": ["Nguồn ghi tự động gia hạn theo chu kỳ hàng tháng"],
+      "headings": ["Gói Cước Viettel - Giới Thiệu Gói Cước VM130 Mới Nhất", "Gói Cước VM130 – Gói Cước Viettel Mới Cho Người Yêu Thích Sách Nói", "Lý Do Bạn Nên Chọn Gói Cước Viettel VM130"],
+      "cancelSms": "HUY VM130",
+      "excerpts": ["L3: # Gói cước Viettel VM130", "L9-L29: 130.000đ; 1 tháng; 2GB/ngày; VM130 UP gửi 290", "L38-L45: 60GB/tháng; MyDio; gia hạn hàng tháng; HUY VM130 gửi 191"]
+    },
+    {
+      "code": "V90B",
+      "title": "Gói V90B Viettel - 30GB Data, Miễn Phí Gọi Nội Ngoại Mạng Giá Chỉ 90K/tháng",
+      "lead": "V90B có giá 90.000đ/tháng, 30GB/30 ngày (1GB/ngày) và ưu đãi thoại.",
+      "price": 90000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 1, "unit": "GB", "period": "ngày", "sourceLabel": "1GB/ngày" }, { "value": 30, "unit": "GB", "period": "30 ngày", "sourceLabel": "30GB/30 ngày" }],
+      "benefits": ["Miễn phí gọi nội mạng dưới 10 phút/cuộc", "30 phút gọi ngoại mạng"],
+      "conditions": ["Nguồn ghi thuê bao kích hoạt mới từ 01/01/2023 và thuộc danh sách ưu đãi"],
+      "headings": ["Thông tin chi tiết gói cước V90B của Viettel", "Cách đăng ký gói cước V90B"],
+      "excerpts": ["L3: # Gói cước Viettel V90B", "L9-L29: 90.000đ; 1 tháng; 1GB/ngày; V90B UP gửi 290", "L39-L49: 30GB/30 ngày; thoại nội mạng dưới 10 phút; 30 phút ngoại mạng; kích hoạt mới từ 01/01/2023"]
+    },
+    {
+      "code": "V120B",
+      "title": "Gói V120B Viettel - 45GB Data 4G, Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 120K/tháng",
+      "lead": "V120B có giá 120.000đ/tháng, 45GB/30 ngày (1.5GB/ngày) và ưu đãi thoại.",
+      "price": 120000,
+      "cycle": { "quantity": 1, "unit": "month", "label": "1 tháng" },
+      "allowances": [{ "value": 1.5, "unit": "GB", "period": "ngày", "sourceLabel": "1.5GB/ngày" }, { "value": 45, "unit": "GB", "period": "30 ngày", "sourceLabel": "45GB/30 ngày" }],
+      "benefits": ["Miễn phí gọi nội mạng dưới 10 phút/cuộc", "50 phút gọi ngoại mạng"],
+      "conditions": ["Nguồn ghi thuê bao kích hoạt mới từ 01/01/2023 và thuộc danh sách ưu đãi"],
+      "headings": ["Thông tin chi tiết gói cước V120B của Viettel", "Cách đăng ký gói cước V120B"],
+      "excerpts": ["L3: # Gói cước Viettel V120B", "L9-L29: 120.000đ; 1 tháng; 1.5GB/ngày; V120B UP gửi 290", "L40-L50: 45GB/30 ngày; thoại nội mạng dưới 10 phút; 50 phút ngoại mạng; kích hoạt mới từ 01/01/2023"]
+    }
+  ]
+}

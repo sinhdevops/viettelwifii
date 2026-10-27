@@ -1,0 +1,145 @@
+/* The exact source utility classes come from Lead's CSS bundle. */
+.sourcePackage {
+  min-width: 0;
+  padding-bottom: 82px;
+}
+
+.sourcePackage :global(.source-package-table-scroll) {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.sourcePackage :global(img) {
+  max-width: 100%;
+}
+
+/* Original ViettelUp `md:` utilities start at 960px. */
+@media (min-width: 960px) {
+  .sourcePackage {
+    padding-bottom: 0;
+  }
+}
+
+/* Original dialogs are centered; contact art was a 404 in the source capture. */
+.sourceDialog {
+  position: fixed;
+  margin: auto;
+  width: min(425px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  padding: 22px 24px 24px;
+  overflow-y: auto;
+  border: 0;
+  border-radius: 9px;
+  background: white;
+  box-shadow: 0 12px 48px rgb(0 0 0 / 15%);
+  color: #303030;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.sourceDialog::backdrop {
+  background: rgb(0 0 0 / 78%);
+}
+
+.sourceDialog[data-variant="contact"] {
+  width: min(576px, calc(100vw - 32px));
+  min-height: min(350px, calc(100dvh - 32px));
+  border-radius: 24px;
+}
+
+.sourceDialogTitle {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sourceDialogMessage p, .sourceDialogContact p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.sourceDialogMessage strong, .sourceDialogContact strong {
+  color: #ef003e;
+  font-weight: 700;
+}
+
+.sourceDialogActions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.sourceDialogPrimary, .sourceDialogSecondary {
+  display: inline-flex;
+  min-width: 130px;
+  min-height: 35px;
+  padding: 7px 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ef003e;
+  border-radius: 999px;
+  font: inherit;
+  color: #ef003e;
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sourceDialogPrimary {
+  color: white;
+  background: #ef003e;
+}
+
+.sourceDialogContact {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.sourceDialogIcon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.sourceDialogPrimary:focus-visible, .sourceDialogSecondary:focus-visible {
+  outline: 3px solid #ef003e;
+  outline-offset: 3px;
+}
+
+.sourceDialogClose {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 90%);
+  color: #444;
+  cursor: pointer;
+}
+
+.sourceDialogClose::before {
+  content: "×";
+  font-size: 24px;
+  line-height: 1;
+}
+
+.sourceDialogClose:focus-visible {
+  outline: 3px solid #ef003e;
+  outline-offset: 2px;
+}

@@ -1,0 +1,1981 @@
+{
+  "taskId": "REF-02",
+  "taskIds": [
+    "REF-02",
+    "ASSET-01"
+  ],
+  "schemaVersion": 1,
+  "sourceSite": "https://www.viettelup.vn",
+  "generatedAt": "2026-10-27T06:42:35.006Z",
+  "rightsNote": "Public access does not establish copyright ownership, redistribution rights, or a license. Confirm permission before production reuse.",
+  "entries": [
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/175S6tUWrxZSARxDOH8rNv/afaff854b53b08e10a7b2925c13bfd26/goi-cuoc-internet-viettel-2025.jpg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/175S6tUWrxZSARxDOH8rNv/afaff854b53b08e10a7b2925c13bfd26/goi-cuoc-internet-viettel-2025.jpg",
+      "localPath": "public/assets/viettelup/external/ctfassets/175S6tUWrxZSARxDOH8rNv-internet-wifi6-2025.jpg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/175S6tUWrxZSARxDOH8rNv-internet-wifi6-2025.jpg",
+      "roles": [
+        "img",
+        "article-body"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
+      "observedRenderUrls": [],
+      "bytes": 614804,
+      "contentType": "image/jpeg",
+      "sha256": "c7bbcbba645d8ac70b4b687e8c3d35e4688cd1792a59118c16edb4d1e129f672",
+      "dimensions": {
+        "width": 1730,
+        "height": 2560,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:42:34.997Z",
+      "verifiedAt": "2026-10-27T06:42:34.997Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Article body image: Viettel WiFi 6 Internet packages.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/1KRArNaoC7v6uku5ujG9D8/7ff6e1b074795063fd5a88a7c97887b2/viettel15.jpeg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1KRArNaoC7v6uku5ujG9D8/7ff6e1b074795063fd5a88a7c97887b2/viettel15.jpeg",
+      "localPath": "public/assets/viettelup/external/ctfassets/1KRArNaoC7v6uku5ujG9D8-viettel15.jpeg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/1KRArNaoC7v6uku5ujG9D8-viettel15.jpeg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/tin-tuc"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 187515,
+      "contentType": "image/jpeg",
+      "sha256": "6ef5a9ce4d6c89e152d347532a631fbc2fdb907379e60ef0bdbbfc0702942a86",
+      "dimensions": {
+        "width": 800,
+        "height": 469,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:20:00.586Z",
+      "verifiedAt": "2026-10-27T06:20:00.586Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/1KsjQU0QC3CGIY94oTDgC7/c095731e11a0f7c69b210ec3fb48714d/viettel_11.jpeg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1KsjQU0QC3CGIY94oTDgC7/c095731e11a0f7c69b210ec3fb48714d/viettel_11.jpeg",
+      "localPath": "public/assets/viettelup/external/ctfassets/1KsjQU0QC3CGIY94oTDgC7-viettel_11.jpeg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/1KsjQU0QC3CGIY94oTDgC7-viettel_11.jpeg",
+      "roles": [
+        "img",
+        "article-body"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+      "observedRenderUrls": [],
+      "bytes": 233031,
+      "contentType": "image/jpeg",
+      "sha256": "08c381bbcb65e46affaa50c7d9b9b6c52bde105974b0987ae60927442e47b396",
+      "dimensions": {
+        "width": 1280,
+        "height": 780,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:42:34.993Z",
+      "verifiedAt": "2026-10-27T06:42:34.993Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Article illustration: data 4G Viettel 2026.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/1u3BHeC7tdjlpn6fm9mR1F/bb0bc6a32e7e91713fe484f51291c403/viettel_10.jpeg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1u3BHeC7tdjlpn6fm9mR1F/bb0bc6a32e7e91713fe484f51291c403/viettel_10.jpeg",
+      "localPath": "public/assets/viettelup/external/ctfassets/1u3BHeC7tdjlpn6fm9mR1F-viettel_10.jpeg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/1u3BHeC7tdjlpn6fm9mR1F-viettel_10.jpeg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 64321,
+      "contentType": "image/jpeg",
+      "sha256": "f0be94e6522406d1884cb451883ffda1155b9031f6d1d73994c37622da1980dc",
+      "dimensions": {
+        "width": 800,
+        "height": 469,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:20:00.730Z",
+      "verifiedAt": "2026-10-27T06:20:00.730Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg",
+      "localPath": "public/assets/viettelup/external/ctfassets/1vLaqVRd9vs5WonZE1kiaN-viettel21.jpeg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/1vLaqVRd9vs5WonZE1kiaN-viettel21.jpeg",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset",
+        "background"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F1vLaqVRd9vs5WonZE1kiaN%2Fab0417c8ad4486931ada6380636bad07%2Fviettel21.jpeg&w=640&q=75",
+        "/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F1vLaqVRd9vs5WonZE1kiaN%2Fab0417c8ad4486931ada6380636bad07%2Fviettel21.jpeg&w=1080&q=75",
+        "/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F1vLaqVRd9vs5WonZE1kiaN%2Fab0417c8ad4486931ada6380636bad07%2Fviettel21.jpeg&w=640&q=75"
+      ],
+      "bytes": 193418,
+      "contentType": "image/jpeg",
+      "sha256": "c2800c117b97dfb79b4f839ba6f0423292b6f5f956eacc20403c47ccbb53d33a",
+      "dimensions": {
+        "width": 1044,
+        "height": 612,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:20:00.867Z",
+      "verifiedAt": "2026-10-27T06:20:00.867Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/2ityVh2bIO2h28MbpcRmQY/e74c183506454c1ffcf7d25933da6272/viettel2_7.jpeg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/2ityVh2bIO2h28MbpcRmQY/e74c183506454c1ffcf7d25933da6272/viettel2_7.jpeg",
+      "localPath": "public/assets/viettelup/external/ctfassets/2ityVh2bIO2h28MbpcRmQY-viettel2_7.jpeg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/2ityVh2bIO2h28MbpcRmQY-viettel2_7.jpeg",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F2ityVh2bIO2h28MbpcRmQY%2Fe74c183506454c1ffcf7d25933da6272%2Fviettel2_7.jpeg&w=1080&q=75",
+        "/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F2ityVh2bIO2h28MbpcRmQY%2Fe74c183506454c1ffcf7d25933da6272%2Fviettel2_7.jpeg&w=3840&q=75",
+        "/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F2ityVh2bIO2h28MbpcRmQY%2Fe74c183506454c1ffcf7d25933da6272%2Fviettel2_7.jpeg&w=1080&q=75"
+      ],
+      "bytes": 162113,
+      "contentType": "image/jpeg",
+      "sha256": "5c6798c93460977f473f72abe3c2196695c9a2c8aa6c2b3a1805b5ca33fe2227",
+      "dimensions": {
+        "width": 1044,
+        "height": 612,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:20:00.959Z",
+      "verifiedAt": "2026-10-27T06:20:00.959Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/2kSZIv8CFvtYxZ4v4ycsnY/22542e1a2b478d3cacd36944179bb83c/Goi-cuoc-sinh-vien-viettel.jpg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/2kSZIv8CFvtYxZ4v4ycsnY/22542e1a2b478d3cacd36944179bb83c/Goi-cuoc-sinh-vien-viettel.jpg",
+      "localPath": "public/assets/viettelup/external/ctfassets/2kSZIv8CFvtYxZ4v4ycsnY-Goi-cuoc-sinh-vien-viettel.jpg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/2kSZIv8CFvtYxZ4v4ycsnY-Goi-cuoc-sinh-vien-viettel.jpg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/tin-tuc"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 70136,
+      "contentType": "image/jpeg",
+      "sha256": "6ca12405fb07dc3016929ed1eed38df6c4c88302c0100b143e48ce87e77d1887",
+      "dimensions": {
+        "width": 800,
+        "height": 469,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:20:01.058Z",
+      "verifiedAt": "2026-10-27T06:20:01.058Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/5k7CxcNVFRN1RV5SnhqgNf/ebff85572328370facb93d62a04d5b5d/3.jpg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/5k7CxcNVFRN1RV5SnhqgNf/ebff85572328370facb93d62a04d5b5d/3.jpg",
+      "localPath": "public/assets/viettelup/external/ctfassets/5k7CxcNVFRN1RV5SnhqgNf-3.jpg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/5k7CxcNVFRN1RV5SnhqgNf-3.jpg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc",
+      "observedRenderUrls": [],
+      "bytes": 164282,
+      "contentType": "image/jpeg",
+      "sha256": "b67ed052e087820fb4b700ee9da95f7c2cc083e63f336f322ed82986e3203e27",
+      "dimensions": {
+        "width": 800,
+        "height": 469,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:20:01.138Z",
+      "verifiedAt": "2026-10-27T06:20:01.138Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/69vhu7erKiLUvGCa6PkDRc/484730b99e51d506f99eb28f89546ce1/2-Banner-web2.jpg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/69vhu7erKiLUvGCa6PkDRc/484730b99e51d506f99eb28f89546ce1/2-Banner-web2.jpg",
+      "localPath": "public/assets/viettelup/external/ctfassets/69vhu7erKiLUvGCa6PkDRc-2-Banner-web2.jpg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/69vhu7erKiLUvGCa6PkDRc-2-Banner-web2.jpg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/tin-tuc"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 31625,
+      "contentType": "image/jpeg",
+      "sha256": "6cf23ac9f3e3810926422eb456669c07aecabf018d40ce4b5f9b950ec5510528",
+      "dimensions": {
+        "width": 522,
+        "height": 306,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:20:01.228Z",
+      "verifiedAt": "2026-10-27T06:20:01.228Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/6HSzS1h0Ds10uo5eAhd9N3/ca7fa4400861b32fcc0c7e3021b42786/gói_cước_data_4g_viettel_miễn_phí_gọi.jpg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/6HSzS1h0Ds10uo5eAhd9N3/ca7fa4400861b32fcc0c7e3021b42786/gói_cước_data_4g_viettel_miễn_phí_gọi.jpg",
+      "localPath": "public/assets/viettelup/external/ctfassets/6HSzS1h0Ds10uo5eAhd9N3-data-4g-free-call.jpg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/6HSzS1h0Ds10uo5eAhd9N3-data-4g-free-call.jpg",
+      "roles": [
+        "img",
+        "article-body"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+      "observedRenderUrls": [],
+      "bytes": 234513,
+      "contentType": "image/jpeg",
+      "sha256": "c35d4208bb0b154b617d25e1aa1dde9b004f32ead475a47ef8ead6b7c30d816b",
+      "dimensions": {
+        "width": 1280,
+        "height": 780,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:42:34.996Z",
+      "verifiedAt": "2026-10-27T06:42:34.996Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Article body image: Viettel 4G data with calls.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/6WmNHtpnGXoj6YgE1OHIwM/1b102170b060d483994b42f7573752d4/gói_cước_data_4g_viettel_miễn_phí_mạng_xã_hội.jpg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/6WmNHtpnGXoj6YgE1OHIwM/1b102170b060d483994b42f7573752d4/gói_cước_data_4g_viettel_miễn_phí_mạng_xã_hội.jpg",
+      "localPath": "public/assets/viettelup/external/ctfassets/6WmNHtpnGXoj6YgE1OHIwM-data-4g-social.jpg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/6WmNHtpnGXoj6YgE1OHIwM-data-4g-social.jpg",
+      "roles": [
+        "img",
+        "article-body"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+      "observedRenderUrls": [],
+      "bytes": 244604,
+      "contentType": "image/jpeg",
+      "sha256": "98cfd63f6386a1a201e4fa651fab9b34fab17b9591088232627fc8c25e44ebb4",
+      "dimensions": {
+        "width": 1280,
+        "height": 780,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:42:34.997Z",
+      "verifiedAt": "2026-10-27T06:42:34.997Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Article body image: Viettel 4G data for social apps.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://images.ctfassets.net/dbp77tujye9f/EBgoF9xUgPGIPm95vwaaX/438468cc01d91b2361bd9566ba97e362/Gói_cước_4g_data_viettel.jpg",
+      "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/EBgoF9xUgPGIPm95vwaaX/438468cc01d91b2361bd9566ba97e362/Gói_cước_4g_data_viettel.jpg",
+      "localPath": "public/assets/viettelup/external/ctfassets/EBgoF9xUgPGIPm95vwaaX-goi-cuoc-4g-data-viettel.jpg",
+      "publicUrl": "/assets/viettelup/external/ctfassets/EBgoF9xUgPGIPm95vwaaX-goi-cuoc-4g-data-viettel.jpg",
+      "roles": [
+        "img",
+        "article-body"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+      "observedRenderUrls": [],
+      "bytes": 264071,
+      "contentType": "image/jpeg",
+      "sha256": "27a88d31730a0b1772b883332978986b975240c9e5f777d7eacff203dc78569a",
+      "dimensions": {
+        "width": 1280,
+        "height": 780,
+        "format": "jpeg"
+      },
+      "checkedAt": "2026-10-27T06:42:34.995Z",
+      "verifiedAt": "2026-10-27T06:42:34.995Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Article body image: Viettel 4G data packages.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/3405f01dea64a005-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/3405f01dea64a005-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/3405f01dea64a005-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/3405f01dea64a005-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 61160,
+      "contentType": "font/woff2",
+      "sha256": "133eee529400866a00fdd329c3b253d6c4a4e8c87c40ab502394e4f8cbd4789f",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:01.322Z",
+      "verifiedAt": "2026-10-27T06:20:01.322Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/46d165ad616e4216-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/46d165ad616e4216-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/46d165ad616e4216-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/46d165ad616e4216-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 31448,
+      "contentType": "font/woff2",
+      "sha256": "5c3c56c38f159cee91a7c0becfe6b167050ede66cecdbaf383c4299e39a61387",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:02.107Z",
+      "verifiedAt": "2026-10-27T06:20:02.107Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/4f330a9a3e3b6523-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/4f330a9a3e3b6523-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/4f330a9a3e3b6523-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/4f330a9a3e3b6523-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 62108,
+      "contentType": "font/woff2",
+      "sha256": "2ab7f527839a494371c21c87e053555d13096525442be4ac6897178aab40b5b4",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:02.845Z",
+      "verifiedAt": "2026-10-27T06:20:02.845Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/4f37d6edfd555d71-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/4f37d6edfd555d71-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/4f37d6edfd555d71-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/4f37d6edfd555d71-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 64200,
+      "contentType": "font/woff2",
+      "sha256": "d9693747c66a58690bcb36d17d07e7e06ecc82cb04f49b24253d511ff7758ef3",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:03.266Z",
+      "verifiedAt": "2026-10-27T06:20:03.266Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/5769b3cfb316ec95-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/5769b3cfb316ec95-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/5769b3cfb316ec95-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/5769b3cfb316ec95-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 61604,
+      "contentType": "font/woff2",
+      "sha256": "535beca8eb5df516ef813a1b8b716925345dd079b7aa10bc83f8794d65e1e7f3",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:03.405Z",
+      "verifiedAt": "2026-10-27T06:20:03.405Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/57ab35ab9018dc34-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/57ab35ab9018dc34-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/57ab35ab9018dc34-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/57ab35ab9018dc34-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 31712,
+      "contentType": "font/woff2",
+      "sha256": "73e0b26a7aa0be58efc7516f2ecb6a2dcb7b0b5f5c0a00014e236a2b2be88290",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:03.533Z",
+      "verifiedAt": "2026-10-27T06:20:03.533Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/613709a08e1b710d-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/613709a08e1b710d-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/613709a08e1b710d-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/613709a08e1b710d-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 62260,
+      "contentType": "font/woff2",
+      "sha256": "d6d7b853903a8706cebbb72a27940390feaf5b3455c9783ba7381e9797784134",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:03.649Z",
+      "verifiedAt": "2026-10-27T06:20:03.649Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/7326b6e59a32b958-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/7326b6e59a32b958-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/7326b6e59a32b958-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/7326b6e59a32b958-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 61492,
+      "contentType": "font/woff2",
+      "sha256": "defb5292312d3eb578c0eea6f795f3f0f79fa76d67a5c4a774c1d8e5517a49b2",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:03.874Z",
+      "verifiedAt": "2026-10-27T06:20:03.874Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/77f7e3119a5ad966-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/77f7e3119a5ad966-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/77f7e3119a5ad966-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/77f7e3119a5ad966-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 126728,
+      "contentType": "font/woff2",
+      "sha256": "7da9d7e026a341a08094c984554d0415325f3b9751ae68b540b9b5f864df5edd",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:04.269Z",
+      "verifiedAt": "2026-10-27T06:20:04.269Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/897baf52a03f8017-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/897baf52a03f8017-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/897baf52a03f8017-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/897baf52a03f8017-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 31092,
+      "contentType": "font/woff2",
+      "sha256": "f1ec18f6054001ed4438590b0027b51505f22f704e61b6690c41439a9ebd5abd",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:04.873Z",
+      "verifiedAt": "2026-10-27T06:20:04.873Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/c24a04e319296b27-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/c24a04e319296b27-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/c24a04e319296b27-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/c24a04e319296b27-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 63112,
+      "contentType": "font/woff2",
+      "sha256": "50e6fc00bd4702b0c145945e92da90ce74575cc27c2f0c17df0d472cecb62e78",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:06.148Z",
+      "verifiedAt": "2026-10-27T06:20:06.148Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/c6fb6ea5d8ef8742-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/c6fb6ea5d8ef8742-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/c6fb6ea5d8ef8742-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/c6fb6ea5d8ef8742-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 124784,
+      "contentType": "font/woff2",
+      "sha256": "f137db60b56b98184c4a73873a449945bed4837bec2accc4d06826b01f1e80e1",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:44.031Z",
+      "verifiedAt": "2026-10-27T06:20:44.031Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/dab87edb4e84492a-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/dab87edb4e84492a-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/dab87edb4e84492a-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/dab87edb4e84492a-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 127868,
+      "contentType": "font/woff2",
+      "sha256": "93d85592c619b6f7ac3281e2975b6ecf1479733ae4f00efb8bd726838ebce126",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:44.805Z",
+      "verifiedAt": "2026-10-27T06:20:44.805Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/_next/static/media/e9ee7175085fb48d-s.p.woff2",
+      "sourceUrl": "https://www.viettelup.vn/_next/static/media/e9ee7175085fb48d-s.p.woff2",
+      "localPath": "public/assets/viettelup/fonts/e9ee7175085fb48d-s.p.woff2",
+      "publicUrl": "/assets/viettelup/fonts/e9ee7175085fb48d-s.p.woff2",
+      "roles": [
+        "font"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 125304,
+      "contentType": "font/woff2",
+      "sha256": "64f833b55db96d6c0d034f73050b6a6ba950acbb195274b71fee142b5a2d52af",
+      "dimensions": null,
+      "checkedAt": "2026-10-27T06:20:45.916Z",
+      "verifiedAt": "2026-10-27T06:20:45.916Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/arrow-right.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/arrow-right.svg",
+      "localPath": "public/assets/viettelup/icons/arrow-right.svg",
+      "publicUrl": "/assets/viettelup/icons/arrow-right.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/icons/arrow-right.svg"
+      ],
+      "bytes": 365,
+      "contentType": "image/svg+xml",
+      "sha256": "6ba4f64e9c0517275180c4295568eacd4b3cfd9124fe06016fbea95fd29c0ad2",
+      "dimensions": {
+        "width": 20,
+        "height": 21,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:46.439Z",
+      "verifiedAt": "2026-10-27T06:20:46.439Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/clock.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/clock.svg",
+      "localPath": "public/assets/viettelup/icons/clock.svg",
+      "publicUrl": "/assets/viettelup/icons/clock.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+      "observedRenderUrls": [
+        "/icons/clock.svg"
+      ],
+      "bytes": 1642,
+      "contentType": "image/svg+xml",
+      "sha256": "0900ea7737a84f649b214b695bfb634e996ccc03e1f6c96a0dd8e5cff65151c4",
+      "dimensions": {
+        "width": 32,
+        "height": 32,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:46.569Z",
+      "verifiedAt": "2026-10-27T06:20:46.569Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/data.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/data.svg",
+      "localPath": "public/assets/viettelup/icons/data.svg",
+      "publicUrl": "/assets/viettelup/icons/data.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+      "observedRenderUrls": [
+        "/icons/data.svg"
+      ],
+      "bytes": 1304,
+      "contentType": "image/svg+xml",
+      "sha256": "860d7487cdac49364793fbc82768a22efb6ec8830ed3ff05f56ad09a36875bd0",
+      "dimensions": {
+        "width": 32,
+        "height": 32,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:47.345Z",
+      "verifiedAt": "2026-10-27T06:20:47.345Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/date.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/date.svg",
+      "localPath": "public/assets/viettelup/icons/date.svg",
+      "publicUrl": "/assets/viettelup/icons/date.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc/so-sanh-roaming",
+      "observedRenderUrls": [
+        "/icons/date.svg"
+      ],
+      "bytes": 787,
+      "contentType": "image/svg+xml",
+      "sha256": "5b5a271c7f7192f80c573a1b6de4051697b497b66bb4652cbebfc21afff8a177",
+      "dimensions": {
+        "width": 16,
+        "height": 16,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:47.483Z",
+      "verifiedAt": "2026-10-27T06:20:47.483Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/discount.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/discount.svg",
+      "localPath": "public/assets/viettelup/icons/discount.svg",
+      "publicUrl": "/assets/viettelup/icons/discount.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/icons/discount.svg"
+      ],
+      "bytes": 3069,
+      "contentType": "image/svg+xml",
+      "sha256": "6842c5e5dac308a3c2f2a80cabfa9a481c5257ea5bff52d0797c88ba66480421",
+      "dimensions": {
+        "width": 108,
+        "height": 107,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:47.603Z",
+      "verifiedAt": "2026-10-27T06:20:47.603Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/hamburger.png",
+      "sourceUrl": "https://www.viettelup.vn/icons/hamburger.png",
+      "localPath": "public/assets/viettelup/icons/hamburger.png",
+      "publicUrl": "/assets/viettelup/icons/hamburger.png",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Ficons%2Fhamburger.png&w=64&q=75",
+        "/_next/image?url=%2Ficons%2Fhamburger.png&w=64&q=75",
+        "/_next/image?url=%2Ficons%2Fhamburger.png&w=32&q=75",
+        "https://www.viettelup.vn/_next/image?url=%2Ficons%2Fhamburger.png&w=32&q=75"
+      ],
+      "bytes": 218,
+      "contentType": "image/png",
+      "sha256": "9f2d324814c524ccbedcd4644639a6c6ce32e7df0f07c1a81507b1fd027fa462",
+      "dimensions": {
+        "width": 32,
+        "height": 32,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:20:47.730Z",
+      "verifiedAt": "2026-10-27T06:20:47.730Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/home.png",
+      "sourceUrl": "https://www.viettelup.vn/icons/home.png",
+      "localPath": "public/assets/viettelup/icons/home.png",
+      "publicUrl": "/assets/viettelup/icons/home.png",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Ficons%2Fhome.png&w=32&q=75",
+        "/_next/image?url=%2Ficons%2Fhome.png&w=48&q=75",
+        "/_next/image?url=%2Ficons%2Fhome.png&w=32&q=75"
+      ],
+      "bytes": 6259,
+      "contentType": "image/png",
+      "sha256": "6c72345e23658af23230220c4c4603dc94115fd715b684028963c9fc7f061161",
+      "dimensions": {
+        "width": 512,
+        "height": 512,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:20:48.130Z",
+      "verifiedAt": "2026-10-27T06:20:48.130Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/phone.png",
+      "sourceUrl": "https://www.viettelup.vn/icons/phone.png",
+      "localPath": "public/assets/viettelup/icons/phone.png",
+      "publicUrl": "/assets/viettelup/icons/phone.png",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Ficons%2Fphone.png&w=32&q=75",
+        "/_next/image?url=%2Ficons%2Fphone.png&w=48&q=75",
+        "/_next/image?url=%2Ficons%2Fphone.png&w=32&q=75"
+      ],
+      "bytes": 15584,
+      "contentType": "image/png",
+      "sha256": "6eec3aa1b72a133ccf9684f3056b14294b184d3114164d11fc937ad4234a9a7c",
+      "dimensions": {
+        "width": 512,
+        "height": 512,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:20:48.559Z",
+      "verifiedAt": "2026-10-27T06:20:48.559Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/price.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/price.svg",
+      "localPath": "public/assets/viettelup/icons/price.svg",
+      "publicUrl": "/assets/viettelup/icons/price.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+      "observedRenderUrls": [
+        "/icons/price.svg"
+      ],
+      "bytes": 3558,
+      "contentType": "image/svg+xml",
+      "sha256": "1a9a65c8c103511e96fdb985c9389688e7c3a8bc335884238defbb830599267e",
+      "dimensions": {
+        "width": 32,
+        "height": 32,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:48.970Z",
+      "verifiedAt": "2026-10-27T06:20:48.970Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/sms.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/sms.svg",
+      "localPath": "public/assets/viettelup/icons/sms.svg",
+      "publicUrl": "/assets/viettelup/icons/sms.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20"
+      ],
+      "sourcePage": "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+      "observedRenderUrls": [
+        "/icons/sms.svg"
+      ],
+      "bytes": 2719,
+      "contentType": "image/svg+xml",
+      "sha256": "33a798e8e1dff6faa8c1f965562da51e698b7b17ff11f9cd32bf8e590dad57df",
+      "dimensions": {
+        "width": 32,
+        "height": 32,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:49.090Z",
+      "verifiedAt": "2026-10-27T06:20:49.090Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/viettel-big.png",
+      "sourceUrl": "https://www.viettelup.vn/icons/viettel-big.png",
+      "localPath": "public/assets/viettelup/icons/viettel-big.png",
+      "publicUrl": "/assets/viettelup/icons/viettel-big.png",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Ficons%2Fviettel-big.png&w=256&q=75",
+        "/_next/image?url=%2Ficons%2Fviettel-big.png&w=640&q=75",
+        "/_next/image?url=%2Ficons%2Fviettel-big.png&w=256&q=75"
+      ],
+      "bytes": 33677,
+      "contentType": "image/png",
+      "sha256": "3be6dffc3acf4726d031dd96439e42bf854495ba2044e55d0c9c2bb125736602",
+      "dimensions": {
+        "width": 1200,
+        "height": 415,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:20:49.244Z",
+      "verifiedAt": "2026-10-27T06:20:49.244Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/icons/viettel.svg",
+      "sourceUrl": "https://www.viettelup.vn/icons/viettel.svg",
+      "localPath": "public/assets/viettelup/icons/viettel.svg",
+      "publicUrl": "/assets/viettelup/icons/viettel.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/internet/NETVT01",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/icons/viettel.svg"
+      ],
+      "bytes": 3185,
+      "contentType": "image/svg+xml",
+      "sha256": "0b80e45291a714533b69afd6c60d0bc0c6418861cf698f95b35da24a2d0a2bec",
+      "dimensions": {
+        "width": 800,
+        "height": 170,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:20:49.608Z",
+      "verifiedAt": "2026-10-27T06:20:49.608Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/banner-news.webp",
+      "sourceUrl": "https://www.viettelup.vn/images/banner-news.webp",
+      "localPath": "public/assets/viettelup/images/banner-news.webp",
+      "publicUrl": "/assets/viettelup/images/banner-news.webp",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/tin-tuc"
+      ],
+      "sourcePage": "https://www.viettelup.vn/tin-tuc",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Fimages%2Fbanner-news.webp&w=640&q=75",
+        "/_next/image?url=%2Fimages%2Fbanner-news.webp&w=1080&q=75",
+        "/_next/image?url=%2Fimages%2Fbanner-news.webp&w=640&q=75"
+      ],
+      "bytes": 49104,
+      "contentType": "image/webp",
+      "sha256": "41de936164f171ce8b8d3ae942168c95e736a56a43812435c903bc1e2f999f8b",
+      "dimensions": {
+        "width": 535,
+        "height": 399,
+        "format": "webp"
+      },
+      "checkedAt": "2026-10-27T06:20:49.740Z",
+      "verifiedAt": "2026-10-27T06:20:49.740Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/banner-wifi-mesh-desktop.webp",
+      "sourceUrl": "https://www.viettelup.vn/images/banner-wifi-mesh-desktop.webp",
+      "localPath": "public/assets/viettelup/images/banner-wifi-mesh-desktop.webp",
+      "publicUrl": "/assets/viettelup/images/banner-wifi-mesh-desktop.webp",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Fimages%2Fbanner-wifi-mesh-desktop.webp&w=1920&q=75",
+        "/_next/image?url=%2Fimages%2Fbanner-wifi-mesh-desktop.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Fbanner-wifi-mesh-desktop.webp&w=1920&q=75"
+      ],
+      "bytes": 202720,
+      "contentType": "image/webp",
+      "sha256": "6cfccef541c4a50866d86bb2c93a714d831ec0bc7841b767d964c25070fe8587",
+      "dimensions": {
+        "width": 1920,
+        "height": 792,
+        "format": "webp"
+      },
+      "checkedAt": "2026-10-27T06:20:50.867Z",
+      "verifiedAt": "2026-10-27T06:20:50.867Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/banner-wifi-mesh-mobile.webp",
+      "sourceUrl": "https://www.viettelup.vn/images/banner-wifi-mesh-mobile.webp",
+      "localPath": "public/assets/viettelup/images/banner-wifi-mesh-mobile.webp",
+      "publicUrl": "/assets/viettelup/images/banner-wifi-mesh-mobile.webp",
+      "roles": [
+        "img"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Fimages%2Fbanner-wifi-mesh-mobile.webp&w=1200&q=75"
+      ],
+      "bytes": 95956,
+      "contentType": "image/webp",
+      "sha256": "1e9423338229fc1ad2da4543b2579b4213b0e0a29495f5a9b1991e35a257d43a",
+      "dimensions": {
+        "width": 1200,
+        "height": 900,
+        "format": "webp"
+      },
+      "checkedAt": "2026-10-27T06:20:52.224Z",
+      "verifiedAt": "2026-10-27T06:20:52.224Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/banner-youtube-premium-desktop.webp",
+      "sourceUrl": "https://www.viettelup.vn/images/banner-youtube-premium-desktop.webp",
+      "localPath": "public/assets/viettelup/images/banner-youtube-premium-desktop.webp",
+      "publicUrl": "/assets/viettelup/images/banner-youtube-premium-desktop.webp",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Fimages%2Fbanner-youtube-premium-desktop.webp&w=1920&q=75",
+        "/_next/image?url=%2Fimages%2Fbanner-youtube-premium-desktop.webp&w=3840&q=75",
+        "/_next/image?url=%2Fimages%2Fbanner-youtube-premium-desktop.webp&w=1920&q=75",
+        "https://www.viettelup.vn/_next/image?url=%2Fimages%2Fbanner-youtube-premium-desktop.webp&w=3840&q=75"
+      ],
+      "bytes": 193758,
+      "contentType": "image/webp",
+      "sha256": "562d7f90c91bf006996e81126d458ec7b86dafb7869cfd7121fe564fd1dc972a",
+      "dimensions": {
+        "width": 1920,
+        "height": 792,
+        "format": "webp"
+      },
+      "checkedAt": "2026-10-27T06:21:27.704Z",
+      "verifiedAt": "2026-10-27T06:21:27.704Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/bg-data.png",
+      "sourceUrl": "https://www.viettelup.vn/images/bg-data.png",
+      "localPath": "public/assets/viettelup/images/bg-data.png",
+      "publicUrl": "/assets/viettelup/images/bg-data.png",
+      "roles": [
+        "background"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [],
+      "bytes": 3622,
+      "contentType": "image/png",
+      "sha256": "7cb9974dd6ba0c9c9fdf5d250092e53ee16f87b0322b1c05c500f1189d42a0f0",
+      "dimensions": {
+        "width": 237,
+        "height": 296,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:21:28.343Z",
+      "verifiedAt": "2026-10-27T06:21:28.343Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/contact-phone.png",
+      "sourceUrl": "https://www.viettelup.vn/images/contact-phone.png",
+      "localPath": "public/assets/viettelup/images/contact-phone.png",
+      "publicUrl": "/assets/viettelup/images/contact-phone.png",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/internet/NETVT01"
+      ],
+      "sourcePage": "https://www.viettelup.vn/internet/NETVT01",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Fimages%2Fcontact-phone.png&w=64&q=75",
+        "/_next/image?url=%2Fimages%2Fcontact-phone.png&w=128&q=75",
+        "/_next/image?url=%2Fimages%2Fcontact-phone.png&w=64&q=75"
+      ],
+      "bytes": 14956,
+      "contentType": "image/png",
+      "sha256": "0e7fa8ade21d0a3a30d4a12c9ea703fb005eedc56db9ce9e86e755c01d79d54a",
+      "dimensions": {
+        "width": 120,
+        "height": 120,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:21:28.841Z",
+      "verifiedAt": "2026-10-27T06:21:28.841Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/facebook.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/facebook.svg",
+      "localPath": "public/assets/viettelup/images/facebook.svg",
+      "publicUrl": "/assets/viettelup/images/facebook.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/facebook.svg"
+      ],
+      "bytes": 764,
+      "contentType": "image/svg+xml",
+      "sha256": "b7aece2fd1f2ad89720c3a0a3e65da7082691b0de16b3a6198df00b96ac47f57",
+      "dimensions": {
+        "width": 303,
+        "height": 303,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:29.453Z",
+      "verifiedAt": "2026-10-27T06:21:29.453Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/internet-card-bg-mobi.png",
+      "sourceUrl": "https://www.viettelup.vn/images/internet-card-bg-mobi.png",
+      "localPath": "public/assets/viettelup/images/internet-card-bg-mobi.png",
+      "publicUrl": "/assets/viettelup/images/internet-card-bg-mobi.png",
+      "roles": [
+        "background"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/internet/NETVT01"
+      ],
+      "sourcePage": "https://www.viettelup.vn/internet/NETVT01",
+      "observedRenderUrls": [],
+      "bytes": 21909,
+      "contentType": "image/png",
+      "sha256": "f3b67b9604ecae5f846bc0a8b8d87644cff55109523f6854f4c3186a49832b27",
+      "dimensions": {
+        "width": 196,
+        "height": 258,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:21:29.570Z",
+      "verifiedAt": "2026-10-27T06:21:29.570Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/internet-card-bg.png",
+      "sourceUrl": "https://www.viettelup.vn/images/internet-card-bg.png",
+      "localPath": "public/assets/viettelup/images/internet-card-bg.png",
+      "publicUrl": "/assets/viettelup/images/internet-card-bg.png",
+      "roles": [
+        "background"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/internet/NETVT01"
+      ],
+      "sourcePage": "https://www.viettelup.vn/internet/NETVT01",
+      "observedRenderUrls": [],
+      "bytes": 50984,
+      "contentType": "image/png",
+      "sha256": "4241b928a33bea8590597d261e8821030ee7a6bede2a4bd92c0ec7d2b835b6c9",
+      "dimensions": {
+        "width": 359,
+        "height": 412,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:21:29.953Z",
+      "verifiedAt": "2026-10-27T06:21:29.953Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/internet-ultra-speed.png",
+      "sourceUrl": "https://www.viettelup.vn/images/internet-ultra-speed.png",
+      "localPath": "public/assets/viettelup/images/internet-ultra-speed.png",
+      "publicUrl": "/assets/viettelup/images/internet-ultra-speed.png",
+      "roles": [
+        "img",
+        "img-src",
+        "img-srcset"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/internet/NETVT01"
+      ],
+      "sourcePage": "https://www.viettelup.vn/internet/NETVT01",
+      "observedRenderUrls": [
+        "https://www.viettelup.vn/_next/image?url=%2Fimages%2Finternet-ultra-speed.png&w=128&q=75",
+        "/_next/image?url=%2Fimages%2Finternet-ultra-speed.png&w=256&q=75",
+        "/_next/image?url=%2Fimages%2Finternet-ultra-speed.png&w=128&q=75"
+      ],
+      "bytes": 13491,
+      "contentType": "image/png",
+      "sha256": "6f4df3e8f97ba124cc370dac77fe7f39b951227ec560002f1ad6f88dfb35b63b",
+      "dimensions": {
+        "width": 97,
+        "height": 102,
+        "format": "png"
+      },
+      "checkedAt": "2026-10-27T06:21:30.128Z",
+      "verifiedAt": "2026-10-27T06:21:30.128Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/messenger.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/messenger.svg",
+      "localPath": "public/assets/viettelup/images/messenger.svg",
+      "publicUrl": "/assets/viettelup/images/messenger.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/messenger.svg"
+      ],
+      "bytes": 1105,
+      "contentType": "image/svg+xml",
+      "sha256": "dcf8ab9c06393e210daba0fa71fa29c637d4ae0b5c373618df8809ecdf069a06",
+      "dimensions": {
+        "width": 303,
+        "height": 303,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:30.529Z",
+      "verifiedAt": "2026-10-27T06:21:30.529Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/mybox.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/mybox.svg",
+      "localPath": "public/assets/viettelup/images/mybox.svg",
+      "publicUrl": "/assets/viettelup/images/mybox.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/mybox.svg"
+      ],
+      "bytes": 3971,
+      "contentType": "image/svg+xml",
+      "sha256": "7bec5cdbe1fce1f41865fcedc873586989f808d27026d1ba5b1b26f3b1167684",
+      "dimensions": {
+        "width": 300,
+        "height": 300,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:30.978Z",
+      "verifiedAt": "2026-10-27T06:21:30.978Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/mydio.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/mydio.svg",
+      "localPath": "public/assets/viettelup/images/mydio.svg",
+      "publicUrl": "/assets/viettelup/images/mydio.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/mydio.svg"
+      ],
+      "bytes": 3799,
+      "contentType": "image/svg+xml",
+      "sha256": "b1c39ae6dcf70f0320f909a8330a908878be334b5b2a09a3c3bb0e2d4c20abc3",
+      "dimensions": {
+        "width": 900,
+        "height": 900,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:31.095Z",
+      "verifiedAt": "2026-10-27T06:21:31.095Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/phone.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/phone.svg",
+      "localPath": "public/assets/viettelup/images/phone.svg",
+      "publicUrl": "/assets/viettelup/images/phone.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/phone.svg"
+      ],
+      "bytes": 2104,
+      "contentType": "image/svg+xml",
+      "sha256": "aca9af16114e7447b5d40afa80263a805c2cf3f10a7611c81f02ab2206b6a373",
+      "dimensions": {
+        "width": 303,
+        "height": 303,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:31.208Z",
+      "verifiedAt": "2026-10-27T06:21:31.208Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/sms.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/sms.svg",
+      "localPath": "public/assets/viettelup/images/sms.svg",
+      "publicUrl": "/assets/viettelup/images/sms.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/sms.svg"
+      ],
+      "bytes": 1516,
+      "contentType": "image/svg+xml",
+      "sha256": "f8b3433c91f395f6b54fce0d8f24aaa488ab701429fdff68a8cb4c2aba793a6a",
+      "dimensions": {
+        "width": 19,
+        "height": 18,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:31.663Z",
+      "verifiedAt": "2026-10-27T06:21:31.663Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/tiktok.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/tiktok.svg",
+      "localPath": "public/assets/viettelup/images/tiktok.svg",
+      "publicUrl": "/assets/viettelup/images/tiktok.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/tiktok.svg"
+      ],
+      "bytes": 1641,
+      "contentType": "image/svg+xml",
+      "sha256": "6fbdb46b05670575f55ff76c163b868336e5b7c2608b1a2f72faaace969ce25b",
+      "dimensions": {
+        "width": 303,
+        "height": 303,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:31.772Z",
+      "verifiedAt": "2026-10-27T06:21:31.772Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/tv360.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/tv360.svg",
+      "localPath": "public/assets/viettelup/images/tv360.svg",
+      "publicUrl": "/assets/viettelup/images/tv360.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+        "https://www.viettelup.vn/tin-tuc",
+        "https://www.viettelup.vn/tin-tuc/so-sanh-roaming"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/tv360.svg"
+      ],
+      "bytes": 2162,
+      "contentType": "image/svg+xml",
+      "sha256": "0c76a18b6cae6731be153cc4c2e735b017562bea27a69cd38826c0233c0bf290",
+      "dimensions": {
+        "width": 303,
+        "height": 303,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:32.286Z",
+      "verifiedAt": "2026-10-27T06:21:32.286Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/tv3604k.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/tv3604k.svg",
+      "localPath": "public/assets/viettelup/images/tv3604k.svg",
+      "publicUrl": "/assets/viettelup/images/tv3604k.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/tv3604k.svg"
+      ],
+      "bytes": 3408,
+      "contentType": "image/svg+xml",
+      "sha256": "650446c643e757faf37892b6de67d90c01bcaefeb0b625d2eac796d3c7fbaf7c",
+      "dimensions": {
+        "width": 303,
+        "height": 303,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:32.489Z",
+      "verifiedAt": "2026-10-27T06:21:32.489Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    },
+    {
+      "originalUrl": "https://www.viettelup.vn/images/youtube.svg",
+      "sourceUrl": "https://www.viettelup.vn/images/youtube.svg",
+      "localPath": "public/assets/viettelup/images/youtube.svg",
+      "publicUrl": "/assets/viettelup/images/youtube.svg",
+      "roles": [
+        "img",
+        "img-src"
+      ],
+      "sourcePages": [
+        "https://www.viettelup.vn/",
+        "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120"
+      ],
+      "sourcePage": "https://www.viettelup.vn/",
+      "observedRenderUrls": [
+        "/images/youtube.svg"
+      ],
+      "bytes": 969,
+      "contentType": "image/svg+xml",
+      "sha256": "ff87e86339ddd2fb0f04cf23ed110566ac531936f14e4ce6dde0772a58627ae9",
+      "dimensions": {
+        "width": 303,
+        "height": 303,
+        "format": "svg"
+      },
+      "checkedAt": "2026-10-27T06:21:32.612Z",
+      "verifiedAt": "2026-10-27T06:21:32.612Z",
+      "httpStatus": 200,
+      "verificationStatus": "downloaded_verified",
+      "error": null,
+      "usageNotes": "Reference media/font observed on listed source page(s); local reuse subject to rights confirmation.",
+      "rightsStatus": "rights-not-established",
+      "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
+      "licenseEvidence": null
+    }
+  ]
+}

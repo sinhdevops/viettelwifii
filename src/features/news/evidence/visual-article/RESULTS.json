@@ -1,0 +1,173 @@
+{
+  "createdAt": "2026-10-27T09:56:14.194Z",
+  "source": "http://localhost:4185/",
+  "candidate": "http://localhost:4191/",
+  "routeCount": 1,
+  "viewportCount": 3,
+  "samples": 3,
+  "problematicSamples": 0,
+  "rows": [
+    {
+      "route": "/tin-tuc/so-sanh-roaming",
+      "width": 390,
+      "original": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
+          "h1": [
+            "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?"
+          ],
+          "textLength": 4456,
+          "missingImages": [],
+          "overflow": false,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [
+          "Loading the script 'https://www.googletagmanager.com/gtag/js?id=AW-17592464480' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+        ],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-article\\screenshots\\tin-tuc_so-sanh-roaming-390-html.png"
+      },
+      "next": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
+          "h1": [
+            "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?"
+          ],
+          "textLength": 4456,
+          "missingImages": [],
+          "overflow": false,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-article\\screenshots\\tin-tuc_so-sanh-roaming-390-next.png"
+      },
+      "image": {
+        "meanAbsolutePixelDifference": 0.66,
+        "changedPixelsPct": 0.35
+      }
+    },
+    {
+      "route": "/tin-tuc/so-sanh-roaming",
+      "width": 768,
+      "original": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
+          "h1": [
+            "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?"
+          ],
+          "textLength": 4456,
+          "missingImages": [],
+          "overflow": false,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [
+          "Loading the script 'https://www.googletagmanager.com/gtag/js?id=AW-17592464480' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked."
+        ],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-article\\screenshots\\tin-tuc_so-sanh-roaming-768-html.png"
+      },
+      "next": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
+          "h1": [
+            "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?"
+          ],
+          "textLength": 4456,
+          "missingImages": [],
+          "overflow": false,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-article\\screenshots\\tin-tuc_so-sanh-roaming-768-next.png"
+      },
+      "image": {
+        "meanAbsolutePixelDifference": 0.32,
+        "changedPixelsPct": 0.17
+      }
+    },
+    {
+      "route": "/tin-tuc/so-sanh-roaming",
+      "width": 1440,
+      "original": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
+          "h1": [
+            "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?"
+          ],
+          "textLength": 4493,
+          "missingImages": [],
+          "overflow": false,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [
+          "Loading the script 'https://www.googletagmanager.com/gtag/js?id=AW-17592464480' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        ],
+        "failedLocal": [
+          "404 http://localhost:4185/internet?_rsc=1jxax",
+          "404 http://localhost:4185/goi-cuoc-gic?_rsc=1jxax",
+          "404 http://localhost:4185/goi-cuoc-nine?_rsc=1jxax",
+          "404 http://localhost:4185/goi-cuoc-roaming?_rsc=1jxax"
+        ],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-article\\screenshots\\tin-tuc_so-sanh-roaming-1440-html.png"
+      },
+      "next": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
+          "h1": [
+            "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?"
+          ],
+          "textLength": 4493,
+          "missingImages": [],
+          "overflow": false,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-article\\screenshots\\tin-tuc_so-sanh-roaming-1440-next.png"
+      },
+      "image": {
+        "meanAbsolutePixelDifference": 0.16,
+        "changedPixelsPct": 0.09
+      }
+    }
+  ]
+}

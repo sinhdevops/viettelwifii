@@ -1,0 +1,77 @@
+{
+  "createdAt": "2026-10-27T10:40:45.658Z",
+  "source": "http://127.0.0.1:4185/",
+  "candidate": "http://127.0.0.1:4191/",
+  "routeCount": 1,
+  "viewportCount": 1,
+  "fullPage": true,
+  "samples": 1,
+  "problematicSamples": 1,
+  "rows": [
+    {
+      "route": "/tin-tuc",
+      "width": 390,
+      "original": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
+          "h1": [
+            "Dùng mạng mỗi ngàykhông cần wifi"
+          ],
+          "textLength": 801,
+          "missingImages": [
+            "https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg",
+            "https://images.ctfassets.net/dbp77tujye9f/1u3BHeC7tdjlpn6fm9mR1F/bb0bc6a32e7e91713fe484f51291c403/viettel_10.jpeg"
+          ],
+          "overflow": false,
+          "documentHeight": 2005,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [
+          "Loading the script 'https://www.googletagmanager.com/gtag/js?id=AW-17592464480' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+          "Loading the image 'https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg' violates the following Content Security Policy directive: \"img-src 'self' data: blob:\". The action has been blocked.",
+          "Loading the image 'https://images.ctfassets.net/dbp77tujye9f/1u3BHeC7tdjlpn6fm9mR1F/bb0bc6a32e7e91713fe484f51291c403/viettel_10.jpeg' violates the following Content Security Policy directive: \"img-src 'self' data: blob:\". The action has been blocked."
+        ],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\restored-valid-assets-390\\screenshots\\tin-tuc-390-html.png"
+      },
+      "next": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
+          "h1": [
+            "Dùng mạng mỗi ngàykhông cần wifi"
+          ],
+          "textLength": 801,
+          "missingImages": [],
+          "overflow": false,
+          "documentHeight": 1841,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [
+          "WebSocket connection to 'ws://127.0.0.1:4191/_next/hmr?id=JBqIx4R98rpJo7k63iJbi' failed: Error during WebSocket handshake: net::ERR_INVALID_HTTP_RESPONSE"
+        ],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\restored-valid-assets-390\\screenshots\\tin-tuc-390-next.png"
+      },
+      "image": {
+        "meanAbsolutePixelDifference": 36.46,
+        "changedPixelsPct": 25.29,
+        "sourceHeight": 2005,
+        "nextHeight": 1841,
+        "comparedHeight": 1841,
+        "heightDifference": -164
+      }
+    }
+  ]
+}

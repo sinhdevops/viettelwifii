@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-27T10:44:36.739Z",
+  "path": "/tin-tuc",
+  "ssrHttpStatus": 200,
+  "assets": [
+    {
+      "path": "/assets/viettelup/c842cb99847910a15f8f07d2.jpeg",
+      "status": 200,
+      "bytes": 193418,
+      "ssrSrcMatches": true
+    },
+    {
+      "path": "/assets/viettelup/9c7f40eb51aa115e109e7319.jpeg",
+      "status": 200,
+      "bytes": 64321,
+      "ssrSrcMatches": true
+    }
+  ],
+  "rows": [
+    {
+      "width": 390,
+      "status": 200,
+      "scrollHeight": 1841,
+      "overflow": false,
+      "reactOverlay": false,
+      "cards": [
+        {
+          "src": "/assets/viettelup/c842cb99847910a15f8f07d2.jpeg",
+          "naturalWidth": 1044,
+          "naturalHeight": 612,
+          "complete": true
+        },
+        {
+          "src": "/assets/viettelup/9c7f40eb51aa115e109e7319.jpeg",
+          "naturalWidth": 800,
+          "naturalHeight": 469,
+          "complete": true
+        }
+      ],
+      "nonHmrErrors": [],
+      "pageErrors": [],
+      "httpErrors": [],
+      "hmrConsoleMessages": 2
+    },
+    {
+      "width": 768,
+      "status": 200,
+      "scrollHeight": 1853,
+      "overflow": false,
+      "reactOverlay": false,
+      "cards": [
+        {
+          "src": "/assets/viettelup/c842cb99847910a15f8f07d2.jpeg",
+          "naturalWidth": 1044,
+          "naturalHeight": 612,
+          "complete": true
+        },
+        {
+          "src": "/assets/viettelup/9c7f40eb51aa115e109e7319.jpeg",
+          "naturalWidth": 800,
+          "naturalHeight": 469,
+          "complete": true
+        }
+      ],
+      "nonHmrErrors": [],
+      "pageErrors": [],
+      "httpErrors": [],
+      "hmrConsoleMessages": 2
+    }
+  ],
+  "passed": true
+}

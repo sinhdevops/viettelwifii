@@ -1,0 +1,2597 @@
+{
+  "/": {
+    "kind": "home",
+    "title": "Gói cước Viettel 2026 | Đăng ký 4G 5G nhanh nhất",
+    "description": "Cập nhật gói cước Viettel 2026 mới nhất: các gói 4G, 5G theo ngày, tháng, combo data – thoại, ưu đãi hấp dẫn, đăng ký nhanh chóng.",
+    "heading": "GÓI CƯỚC DATA 4G 5G VIETTEL",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0000.html",
+    "rawSha256": "c5e567038556a7aa91a8f09bf7017f44d82fd99c3161dd2c0966b5154834beee",
+    "sourceUrl": "https://www.viettelup.vn/",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "home"
+  },
+  "/tin-tuc": {
+    "kind": "news-list",
+    "title": "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
+    "description": "Đón đầu thông tin mới nhất về gói cước, khuyến mãi và dịch vụ Viettel. Cập nhật nhanh, chính xác, giúp bạn không bỏ lỡ ưu đãi hấp dẫn.",
+    "heading": "Dùng mạng mỗi ngàykhông cần wifi",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0001.html",
+    "rawSha256": "6a229fb127e0850697b1528a633dadd23a0b07722d072a07713e8d2190f25758",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_index"
+  },
+  "/goi-cuoc-viettel/5G20": {
+    "kind": "package",
+    "title": "Gói 5G20 Viettel: 6GB/3 ngày chỉ 20.000đ",
+    "description": "Đăng ký gói 5G20 Viettel chỉ 20.000đ dùng 6GB trong 3 ngày, tốc độ cao 4G/5G, hết dung lượng ngừng truy cập. Soạn 5G20 UP gửi 290 để dùng ngay.",
+    "heading": "Gói cước Viettel 5G20",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0002.html",
+    "rawSha256": "3b491df942a653a286c84d881acd3b896bc34b1e1c0ff3d465a62f4d072dd43e",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G20",
+      "code": "5G20",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G30": {
+    "kind": "package",
+    "title": "Gói Cước Ngày Viettel 5G30 – 7GB/Ngày, Chỉ 30K/3 Ngày!",
+    "description": "Gói cước ngày Viettel 5G30 chỉ 30.000đ/3 ngày, nhận ngay 21GB (7GB/ngày), sử dụng trên cả mạng 4G & 5G. Đăng ký ngay bằng cách soạn 5G30 UP gửi 290!",
+    "heading": "Gói cước Viettel 5G30",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0003.html",
+    "rawSha256": "e404e5473aa8da157647a09e766a4c268805584e979e7424d114fbba4c8a357b",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G30",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G30",
+      "code": "5G30",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G40": {
+    "kind": "package",
+    "title": "Gói 5G40 Viettel: 15GB/7 ngày chỉ 40.000đ",
+    "description": "Đăng ký gói 5G40 Viettel chỉ 40.000đ dùng 15GB trong 7 ngày, tốc độ cao 4G/5G, hết dung lượng ngừng truy cập. Soạn 5G40 UP gửi 290 để dùng ngay.",
+    "heading": "Gói cước Viettel 5G40",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0004.html",
+    "rawSha256": "da3faa62552e95c8dc7cdf1a804bd6528361c65fe5b769d681565e3a9e81aed2",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G40",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G40",
+      "code": "5G40",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G70": {
+    "kind": "package",
+    "title": "Gói Cước Ngày Viettel 5G70 – 8GB/Ngày, Chỉ 70K/7 Ngày!",
+    "description": "Gói cước ngày Viettel 5G70 chỉ 70.000đ/7 ngày, nhận ngay 56GB (8GB/ngày), dùng trên cả mạng 4G & 5G. Đăng ký ngay, soạn 5G70 UP gửi 290!",
+    "heading": "Gói cước Viettel 5G70",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0005.html",
+    "rawSha256": "4912a28b0e6c8e39f77bce9fc0bfec8a6c7ff51b1800f1a3a9e789fd4fb7ef05",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G70",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G70",
+      "code": "5G70",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5GVS80": {
+    "kind": "package",
+    "title": "Gói Cước Ngày Viettel 5GVS80 – 8GB/Ngày, Xem Ngoại Hạng Anh & Cúp C1 Miễn Phí!",
+    "description": "Gói cước ngày Viettel 5GVS80 chỉ 80.000đ/7 ngày, nhận 8GB/ngày, xem miễn phí Ngoại Hạng Anh, Cúp C1 trên TV360. Đăng ký ngay, soạn 5GVS80 UP gửi 290.",
+    "heading": "Gói cước Viettel 5GVS80",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0006.html",
+    "rawSha256": "ab9178f9bae33d31a0f171ee4f65db0568083bd3a35826a8789a27545a46cee5",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GVS80",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5GVS80",
+      "code": "5GVS80",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/3N": {
+    "kind": "package",
+    "title": "Gói 3N Viettel chỉ 30K Nhận 15GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
+    "description": "3N - Gói cước combo Viettel chỉ với 30.000đ nhận ngay 15GB(5GB/ngày). Miễn phí gọi, miễn phí SMS, miễn phí xem TV360. Đăng ký soạn 3N UP gửi 290.",
+    "heading": "Gói cước Viettel 3N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0007.html",
+    "rawSha256": "5e70ab16b49b3aa684156a141bd17515a73d536e0551a07d010452d2e125644b",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/3N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/3N",
+      "code": "3N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/7N": {
+    "kind": "package",
+    "title": "Gói 7N Viettel chỉ 70K/7ngày Nhận 35GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
+    "description": "7N - Gói cước combo Viettel chỉ với 70.000đ nhận ngay 35GB trong 7 ngày (5GB/ngày). Miễn phí gọi, miễn phí SMS, miễn phí xem TV360. Đăng ký soạn 7N UP gửi 290.",
+    "heading": "Gói cước Viettel 7N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0008.html",
+    "rawSha256": "3ebefd6995290806f896f883f03d21dc5e0766e1b8f53ee53c94eb11b8435ad8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/7N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/7N",
+      "code": "7N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G10": {
+    "kind": "package",
+    "title": "Gói Cước Ngày Viettel 5G10 – 6GB/Ngày Chỉ 10K, Truy Cập Mạng Mượt Mà!",
+    "description": "Gói cước ngày Viettel 5G10 chỉ 10.000đ nhận ngay 6GB tốc độ cao, hỗ trợ cả mạng 4G và 5G. Đăng ký ngay bằng cách soạn 5G10 UP gửi 290!",
+    "heading": "Gói cước Viettel 5G10",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0009.html",
+    "rawSha256": "f9e88ce9edfae8d3c67e32af925c7de695c853ce4fda7bc0e9ccdb25fd139baa",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G10",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G10",
+      "code": "5G10",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/1N": {
+    "kind": "package",
+    "title": "Gói 1N Viettel - 10K/ngày Nhận 5GB Data. Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
+    "description": "1N - Gói cước combo Viettel chỉ với 10.000đ/ngày nhận ngay 5GB. Miễn phí gọi, miễn phí SMS, miễn phí xem TV360. Đăng ký soạn 1N UP gửi 290.",
+    "heading": "Gói cước Viettel 1N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0010.html",
+    "rawSha256": "dc963932491a023c441a3b432e21e0818d5ed2da81e34353a2707522d17a87f9",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/1N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/1N",
+      "code": "1N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5GVS12": {
+    "kind": "package",
+    "title": "Gói Cước Ngày Viettel 5GVS12 – 6GB/Ngày, Xem Ngoại Hạng Anh & C1 Miễn Phí!",
+    "description": "Gói cước ngày Viettel 5GVS12 chỉ 12.000đ/ngày, nhận 6GB tốc độ cao, xem miễn phí Cúp C1, Ngoại Hạng Anh trên TV360. Đăng ký ngay, soạn 5GVS12 UP gửi 290.",
+    "heading": "Gói cước Viettel 5GVS12",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0011.html",
+    "rawSha256": "ab7f14915abc1dbb05de2674fd1f9c162f7acc9a0b902c6f467a267c27bfd7c4",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GVS12",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5GVS12",
+      "code": "5GVS12",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST7K": {
+    "kind": "package",
+    "title": "Gói Cước Ngày Viettel ST7K - 1GB/Ngày Chỉ 7K, Đăng Ký Ngay!",
+    "description": "Gói cước ngày Viettel ST7K chỉ 7.000đ nhận ngay 1GB data tốc độ cao. Đăng ký nhanh bằng cách soạn ST7K UP gửi 290. Truy cập mạng tiết kiệm, lướt web thả ga!",
+    "heading": "Gói cước Viettel ST7K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0012.html",
+    "rawSha256": "359095a3b06e8b00960690ccbe2ed5314b3f465279a33a66ce0edce27d7f6bb7",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST7K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST7K",
+      "code": "ST7K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/SD90": {
+    "kind": "package",
+    "title": "Gói Cước SD90 Viettel - 45GB Data 4G Tốc Độ Cao Giá Chỉ 90K/Tháng",
+    "description": "SD90 - Gói cước 4G Viettel truy cập internet tốc độ cao giá chỉ 90.000đ nhận ngay 45GB data mỗi tháng (1.5GB/ngày). Đăng ký soạn SD90 UP gửi 290.",
+    "heading": "Gói cước Viettel SD90",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0013.html",
+    "rawSha256": "ee46da7d7c23eb636545ff30e8e6e36b095b0bfeea7cb0c83f30922b6142a11e",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD90",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/SD90",
+      "code": "SD90",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/SD120": {
+    "kind": "package",
+    "title": "Gói Cước SD120 Viettel - 60GB Data 4G Tốc Độ Cao Giá Chỉ 120K/tháng",
+    "description": "SD120 - Gói cước 4G Viettel truy cập internet tốc độ cao giá chỉ 120.000đ nhận ngay 60GB data mỗi tháng (2GB/ngày). Xem miễn phí TV360. Đăng ký soạn SD120 UP gửi 290.",
+    "heading": "Gói cước Viettel SD120",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0014.html",
+    "rawSha256": "e78ae1a7e030fd270df8e134c543da4ec69fec6b41ab096e3797bc2362d0d518",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD120",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/SD120",
+      "code": "SD120",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/SD135": {
+    "kind": "package",
+    "title": "Gói SD135 Viettel Giá 135K nhận 150GB (5GB/ngày) + TV360 Basic",
+    "description": "SD135 - Gói cước 4G Viettel truy cập internet tốc độ cao giá chỉ 135.000đ nhận ngay 150GB data mỗi tháng (5GB/ngày). Xem miễn phí TV360. Đăng ký soạn SD135 UP gửi 290.",
+    "heading": "Gói cước Viettel SD135",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0015.html",
+    "rawSha256": "0f96c959b43d56c42737f093bdecbca14141fed9e9807f956631fcfa8f7f440b",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD135",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/SD135",
+      "code": "SD135",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/SD150": {
+    "kind": "package",
+    "title": "Gói SD150 Viettel - 150K Nhận Ngay 90GB Data 4G (3GB/ngày) + Miễn Phí TV360",
+    "description": "SD150 - Gói cước 4G Viettel truy cập internet tốc độ cao giá chỉ 150.000đ nhận ngay 90GB data mỗi tháng (3GB/ngày). Xem miễn phí TV360. Đăng ký soạn SD150 UP gửi 290.",
+    "heading": "Gói cước Viettel SD150",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0016.html",
+    "rawSha256": "80c18d4ea706831e15f7eafe6fc4b15d33b21d36b776fc7c9e5d374c13360bed",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD150",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/SD150",
+      "code": "SD150",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/VM80": {
+    "kind": "package",
+    "title": "Gói Cước VM80 1GB/ngày Miễn Phí Nghe Sách Nói Mydio Chỉ 80K/tháng",
+    "description": "VM80 - Gói cước 4G Viettel truy cập internet tốc độ cao giá chỉ 80.000đ nhận ngay 30GB(1GB/ngày). Nghe miễn phí Mydio. Đăng ký soạn VM80 UP gửi 290.",
+    "heading": "Gói cước Viettel VM80",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0017.html",
+    "rawSha256": "91a438f9d9c358f6a85973caece55b04cdf4f7e2794f6b4e319de5dc6a33d181",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/VM80",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/VM80",
+      "code": "VM80",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/VM100": {
+    "kind": "package",
+    "title": "Gói cước Viettel VM100 | Đăng ký gói data + nghe sách MyDio ưu đãi nhất",
+    "description": "Gói cước Viettel VM100 mới nhất: 45GB/tháng + miễn phí nghe sách nói MyDio. Đăng ký VM100 ngay, chỉ 100.000đ/tháng. Hướng dẫn cách đăng ký, hủy gói VM100 Viettel.",
+    "heading": "Gói cước Viettel VM100",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0018.html",
+    "rawSha256": "6144b3b70f158d74dc6719f9c3b5c67c52466b65f39836f381e3f9da6b526538",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/VM100",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/VM100",
+      "code": "VM100",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/VM130": {
+    "kind": "package",
+    "title": "Gói cước Viettel VM130 | Đăng ký gói data + nghe sách MyDio cực ưu đãi",
+    "description": "Gói cước Viettel VM130 mới nhất: 60GB/tháng + miễn phí nghe sách nói MyDio. Đăng ký VM130 chỉ 130.000đ/tháng. Cách đăng ký, hủy gói VM130 Viettel.",
+    "heading": "Gói cước Viettel VM130",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0019.html",
+    "rawSha256": "e792491cbb92436ff7c9c0b76a41a004f8448ad8c22a64e27d83998f42d061c7",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/VM130",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/VM130",
+      "code": "VM130",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V90B": {
+    "kind": "package",
+    "title": "Gói V90B Viettel - 30GB Data, Miễn Phí Gọi Nội Ngoại Mạng Giá Chỉ 90K/tháng",
+    "description": "V90B - Gói cước data 4G Viettel chỉ 90.000đ nhận ngay ưu đãi 30GB(1GB/ngày). Miễn phí cuộc gọi nội mạng dưới 10 phút và 30 phút gọi ngoại mạng.",
+    "heading": "Gói cước Viettel V90B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0020.html",
+    "rawSha256": "e874f99bb97ab5060346875827a4c3785b2245688060132a0d213be6b890fe08",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V90B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V90B",
+      "code": "V90B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V120B": {
+    "kind": "package",
+    "title": "Gói V120B Viettel - 45GB Data 4G, Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 120K/tháng",
+    "description": "V120B - Gói cước data 4G Viettel chỉ 120.000đ ưu đãi 45GB(1.5GB/ngày). Miễn phí cuộc gọi nội mạng dưới 10 phút và 50 phút gọi ngoại mạng.",
+    "heading": "Gói cước Viettel V120B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0021.html",
+    "rawSha256": "c1d139c41b36f7c9a87ea555f895e453dfccb746db046b6f142b1c59c0621049",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V120B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V120B",
+      "code": "V120B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V150B": {
+    "kind": "package",
+    "title": "Gói V150B Viettel - 60GB Data 4G + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 150K/tháng",
+    "description": "V150B - Gói cước data 4G Viettel ưu đãi 60GB(2GB/ngày). Miễn phí cuộc gọi nội mạng dưới 10 phút và 80 phút gọi ngoại mạng. Đăng ký soạn V150B UP gửi 290.",
+    "heading": "Gói cước Viettel V150B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0022.html",
+    "rawSha256": "fef7431c3270453b84c949eb764c5d2e6eadd8a3e244c19b1d1cca03ec8160c3",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V150B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V150B",
+      "code": "V150B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V160B": {
+    "kind": "package",
+    "title": "Gói V160B Viettel - 120GB (4GB/ngày) + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 160K/tháng",
+    "description": "V160B - Gói cước data 4G Viettel ưu đãi 120GB(4GB/ngày). Miễn phí cuộc gọi nội mạng dưới 10 phút và 100 phút gọi ngoại mạng. Đăng ký soạn V160B UP gửi 290.",
+    "heading": "Gói cước Viettel V160B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0023.html",
+    "rawSha256": "cdbb8f53c0c978e3e94dca5a19eba7f8540483e4b896ed82265772af2c2f0ed3",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V160B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V160B",
+      "code": "V160B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V180B": {
+    "kind": "package",
+    "title": "Gói V180B Viettel - 180GB (6GB/ngày) + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 180K/tháng",
+    "description": "V180B - Gói cước data 4G Viettel ưu đãi 180GB(6GB/ngày). Miễn phí cuộc gọi nội mạng dưới 10 phút và 100 phút gọi ngoại mạng. Đăng ký soạn V180B UP gửi 290.",
+    "heading": "Gói cước Viettel V180B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0024.html",
+    "rawSha256": "8610e4f25827d334d50ee8bcd5a248ebd5964e0b384559bf49ad59a718005be6",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V180B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V180B",
+      "code": "V180B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V200B": {
+    "kind": "package",
+    "title": "Gói V200B Viettel - 240GB Data (8GB/ngày) + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 200K/tháng",
+    "description": "V200B - Gói cước data 4G Viettel ưu đãi 240GB(8GB/ngày). Miễn phí cuộc gọi nội mạng dưới 20 phút và 100 phút gọi ngoại mạng. Đăng ký soạn V200B UP gửi 290.",
+    "heading": "Gói cước Viettel V200B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0025.html",
+    "rawSha256": "a514a6d6e62e3ee7e1a869cb078f42aab06f20ddeb811d9210e9a2f5e06759ed",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V200B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V200B",
+      "code": "V200B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/30N": {
+    "kind": "package",
+    "title": "Gói 30N Viettel - 300K/tháng Nhận 150GB Data. Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
+    "description": "30N - Gói cước combo Viettel với 300.000đ/tháng nhận ngay 150GB(5GB/ngày). Miễn phí gọi, miễn phí SMS, miễn phí xem TV360. Đăng ký soạn 30N UP gửi 290.",
+    "heading": "Gói cước Viettel 30N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0026.html",
+    "rawSha256": "812fec42a1b3f0227c95dd5818b4110cc4884211db3a9680f7af99b0f93bccd1",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/30N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/30N",
+      "code": "30N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/90N": {
+    "kind": "package",
+    "title": "Gói 90N Viettel (90 ngày) Nhận 450GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
+    "description": "90N - Gói cước combo Viettel với 900.000đ/3 tháng nhận ngay 450GB(5GB/ngày). Miễn phí gọi, miễn phí SMS, miễn phí xem TV360. Đăng ký soạn 90N UP gửi 290.",
+    "heading": "Gói cước Viettel 90N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0027.html",
+    "rawSha256": "d9877815ff2639135449936358bff28b9d6e6ccce4fc867f427fd4686d0deca4",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/90N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/90N",
+      "code": "90N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/180N": {
+    "kind": "package",
+    "title": "Gói 180N Viettel (180 ngày) Nhận 900GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV36",
+    "description": "180N - Gói cước combo Viettel với 1.800.000đ/6 tháng nhận ngay 900GB(5GB/ngày). Miễn phí gọi, miễn phí SMS, miễn phí xem TV360. Đăng ký soạn 180N UP gửi 290.",
+    "heading": "Gói cước Viettel 180N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0028.html",
+    "rawSha256": "efa074e2751260cfa5167c8faa6915c9eaa3b5b67c73d189e6121a67fe0de2f0",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/180N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/180N",
+      "code": "180N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/360N": {
+    "kind": "package",
+    "title": "Gói 360N Viettel - 1.800GB (5GB/ngày). Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360 Trong 1 năm",
+    "description": "360N - Gói cước combo Viettel với 3.600.000đ/năm nhận ngay 1.800GB(5GB/ngày). Miễn phí gọi, miễn phí SMS, miễn phí xem TV360. Đăng ký soạn 360N UP gửi 290.",
+    "heading": "Gói cước Viettel 360N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0029.html",
+    "rawSha256": "bd936ad6d1a297934019942f1a3f83465cd8881c6106d686ad5db1c366eb5b64",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/360N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/360N",
+      "code": "360N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/MXH100": {
+    "kind": "package",
+    "title": "Gói MXH100 Viettel - 30GB Data + Miễn Phí Mạng Xã Hội, Chỉ 100K/tháng",
+    "description": "MXH100 - Gói cước 4G Viettel đặc biệt chỉ với 100.000đ/tháng nhận ngay 30GB(1GB/ngày) và quyền lợi miễn phí truy cập Mạng xã hội. Đăng ký soạn MXH100 UP gửi 290.",
+    "heading": "Gói cước Viettel MXH100",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0030.html",
+    "rawSha256": "7905a721631da968694f350566226417c2f92d5430871cf334356914150d1d2a",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MXH100",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/MXH100",
+      "code": "MXH100",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/MXH120": {
+    "kind": "package",
+    "title": "Gói MXH120 Viettel - 120K Nhận 30GB Data. Miễn Phí Truy Cập Mạng Xã Hội. Miễn Phí Gọi",
+    "description": "MXH120 - Gói cước 4G Viettel đặc biệt chỉ với 120.000đ/tháng nhận ngay 30GB(1GB/ngày), miễn phí gọi, miễn phí truy cập Mạng xã hội. Đăng ký soạn MXH120 UP gửi 290.",
+    "heading": "Gói cước Viettel MXH120",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0031.html",
+    "rawSha256": "83c58b2e9a7484b80a65761d0324e88c81ee9663291530473f296f85e1312e38",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MXH120",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/MXH120",
+      "code": "MXH120",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/MXH150": {
+    "kind": "package",
+    "title": "Gói MXH150 Viettel - 45GB Data + Miễn Phí TikTok, YouTube, Facebook, Chỉ 150K/tháng",
+    "description": "MXH150 - Gói cước 4G Viettel đặc biệt chỉ với 150.000đ/tháng nhận ngay 45GB(1.5GB/ngày), miễn phí gọi, miễn phí truy cập Mạng xã hội. Đăng ký soạn MXH150 UP gửi 290.",
+    "heading": "Gói cước Viettel MXH150",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0032.html",
+    "rawSha256": "eab1af3a204f3985645a3d904b0c8c20511794b263b47c7368ed7d09cf990c23",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MXH150",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/MXH150",
+      "code": "MXH150",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5GMXH200": {
+    "kind": "package",
+    "title": "Gói cước 5GMXH200 Viettel: Data 2GB/ngày, ưu đãi gọi và 150GB ứng dụng",
+    "description": "Đăng ký gói 5GMXH200 Viettel chỉ 200.000đ/tháng. Nhận 2GB/ngày, miễn phí 10 phút gọi nội mạng, 50 phút ngoại mạng, 150GB Facebook, TikTok, YouTube. Soạn 5GMXH200 UP gửi 290.",
+    "heading": "Gói cước Viettel 5GMXH200",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0033.html",
+    "rawSha256": "d7cbf6c9899ac03f2962334a28ee00aff5796ea56a935ebb28b714799e8a6ff6",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GMXH200",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5GMXH200",
+      "code": "5GMXH200",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5GMXH230": {
+    "kind": "package",
+    "title": "Gói cước 5GMXH230 Viettel: 3GB/ngày, gọi miễn phí và 150GB ứng dụng",
+    "description": "Đăng ký gói 5GMXH230 Viettel chỉ 230.000đ/tháng. Nhận 3GB/ngày, miễn phí 10 phút gọi nội mạng, 50 phút ngoại mạng, 150GB cho Facebook, TikTok, YouTube. Soạn 5GMXH230 UP gửi 290.",
+    "heading": "Gói cước Viettel 5GMXH230",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0034.html",
+    "rawSha256": "b2a7fa225573a3f8da69d09311610f85c3afa40aeb2a1a1bc3c1a69e0bedd024",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GMXH230",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5GMXH230",
+      "code": "5GMXH230",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV75K": {
+    "kind": "package",
+    "title": "Gói TV75K Viettel - 30GB Data + Miễn Phí TV360 Full HD, Chỉ 75K/tháng",
+    "description": "TV75K - Gói cước 4G Viettel chỉ 75.000đ/tháng nhận ngay 15GB(500MB/ngày). Xem miễn phí gói Standard trên TV360. Đăng ký soạn TV75K UP gửi 290.",
+    "heading": "Gói cước Viettel TV75K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0035.html",
+    "rawSha256": "4e7aecf8bb09d4ebd5ee63d6eb48a90b2b692e9389e812fbd3b2197f6ea5a77c",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV75K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV75K",
+      "code": "TV75K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV90C": {
+    "kind": "package",
+    "title": "TV90C - 1GB/ngày + miễn phí gọi nội ngoại mạng + TV360 4K",
+    "description": "TV90C - Gói cước 4G Viettel chỉ 90k/tháng nhận 30GB(1GB/ngày). Miễn phí gọi nội ngoại mạng. Miễn phí gói Standard trên TV360. Đăng ký soạn TV75K UP gửi 290.",
+    "heading": "Gói cước Viettel TV90C",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0036.html",
+    "rawSha256": "08c2a3f29641e2b941a77d8547accbf6503e65eece5ff2286b75f613a3c7513a",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV90C",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV90C",
+      "code": "TV90C",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV95K": {
+    "kind": "package",
+    "title": "Gói TV95K Viettel - 45GB Data (1.5GB/ngày) + Xem Miễn Phí TV360 Full HD, Chỉ 95K/tháng",
+    "description": "TV95K - Gói cước 4G Viettel chỉ với 95.000đ, người dùng sở hữu ngay 45GB (1.5GB/ngày) và miễn phí 100% data khi truy cập TV360. Đăng ký soạn TV95K UP gửi 290.",
+    "heading": "Gói cước Viettel TV95K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0037.html",
+    "rawSha256": "c3c06bba01935ccf07572ebfbfb046c158be81aa500b2c119707d7adad246bee",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV95K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV95K",
+      "code": "TV95K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV120C": {
+    "kind": "package",
+    "title": "Gói TV120C Viettel - 45GB Data + Miễn Phí TV360 Full HD, Chỉ 120K/tháng",
+    "description": "TV120C - Gói cước 4G Viettel chỉ 120.000đ/tháng nhận ngay 45GB(1.5GB/ngày). Miễn phí gọi. Xem miễn phí gói Standard trên TV360. Đăng ký soạn TV120C UP gửi 290.",
+    "heading": "Gói cước Viettel TV120C",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0038.html",
+    "rawSha256": "9382fbe14a67094ebd6427139f5913c3274f4074bd5a1b4ef39c49a422743fd3",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV120C",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV120C",
+      "code": "TV120C",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV120K": {
+    "kind": "package",
+    "title": "Gói TV120K Viettel - 30GB Data (1GB/ngày) + Miễn Phí Xem TV360 Full HD, Chỉ 120K/tháng",
+    "description": "TV120K - Gói cước 4G Viettel chỉ với 120.000đ, người dùng sở hữu ngay 30GB (1GB/ngày) và miễn phí 100% data khi truy cập TV360. Đăng ký soạn TV120K UP gửi 290.",
+    "heading": "Gói cước Viettel TV120K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0039.html",
+    "rawSha256": "c608a69bda25d4bd0f54be513fae8bdd4859bbd761ceb85fb44618fd716e74e8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV120K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV120K",
+      "code": "TV120K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV125K": {
+    "kind": "package",
+    "title": "Gói TV125K Viettel - 60GB Data (2GB/ngày) + Miễn Phí Xem TV360 Full HD, Chỉ 125K/tháng",
+    "description": "TV125K - Gói cước 4G Viettel chỉ với 125.000đ, người dùng sở hữu ngay 60GB (2GB/ngày) và miễn phí 100% data khi truy cập TV360. Đăng ký soạn TV125K UP gửi 290.",
+    "heading": "Gói cước Viettel TV125K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0040.html",
+    "rawSha256": "a54fbbeca0375a81eee30e8d6b88aba814b4195b134e414548b91260aa86d02b",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV125K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV125K",
+      "code": "TV125K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TH30": {
+    "kind": "package",
+    "title": "Standard - Gói Cước TV360 chỉ 50K/tháng Xem Miễn Phí Hơn 160 Kênh Truyền Hình Chất Lượng Cao",
+    "description": "Standard - Gói cước TV360 chỉ 50.000đ xem miễn phí 166 kênh truyền hình trực tuyến trong 30 ngày. Đăng ký soạn TH30 UP gửi 290.",
+    "heading": "Gói cước Viettel TH30",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0041.html",
+    "rawSha256": "4c64137df29bb532d5d5a97c65a77dcca55f2d70c58a1fa4eff3615a08b1d117",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TH30",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TH30",
+      "code": "TH30",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/T50K": {
+    "kind": "package",
+    "title": "Gói T50K Viettel - Miễn Phí Data Truy Cập TikTok, Chỉ 50K/tháng",
+    "description": "T50K - Gói cước 4G đặc biệt của Viettel chỉ với 50.000đ, người dùng sở hữu ngay quyền lợi miễn phí truy cập TikTok trong 30 ngày. Đăng ký soạn T50K UP gửi 290",
+    "heading": "Gói cước Viettel T50K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0042.html",
+    "rawSha256": "54d99a1a70235a02d56e7364ac1e4d08fe25423266acfc6f1f24b896ed9989c6",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/T50K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/T50K",
+      "code": "T50K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/YT50K": {
+    "kind": "package",
+    "title": "Gói YT50K Viettel - Miễn Phí Data Truy Cập Youtube, Chỉ 50K/tháng",
+    "description": "YT50K - Gói cước 4G đặc biệt của Viettel chỉ với 50.000đ sở hữu ngay quyền lợi miễn phí xem Youtube trong 30 ngày. Đăng ký soạn YT50K UP gửi 290.",
+    "heading": "Gói cước Viettel YT50K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0043.html",
+    "rawSha256": "41b8789786049191e618148610584721fcb3415993a50018ed6336cf9f050419",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/YT50K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/YT50K",
+      "code": "YT50K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/FB50K": {
+    "kind": "package",
+    "title": "Gói FB50K Viettel - Miễn Phí Data Truy Cập Facebook, Messenger, Chỉ 50K/tháng",
+    "description": "FB50K - Gói cước 4G đặc biệt của Viettel chỉ với 50.000đ sở hữu ngay quyền lợi miễn phí truy cập Facebook, Messenger trong 30 ngày. Đăng ký soạn FB50K UP gửi 290",
+    "heading": "Gói cước Viettel FB50K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0044.html",
+    "rawSha256": "e81b914ac2a93facf44e7ceee249622051d6f613129958244dfa2cedff949961",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FB50K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/FB50K",
+      "code": "FB50K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/T15K": {
+    "kind": "package",
+    "title": "Gói T15K Viettel - Miễn Phí Data Truy Cập TikTok Trong 7 Ngày",
+    "description": "T15K - Gói cước đặc biệt của Viettel chỉ với 15.000đ, người dùng sở hữu ngay quyền lợi miễn phí truy cập TikTok trong 7 ngày. Đăng ký soạn T15K UP gửi 290.",
+    "heading": "Gói cước Viettel T15K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0045.html",
+    "rawSha256": "e4cba06069449bec190a5bb3739b809eb237e12605de38c7021afcfecb059dea",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/T15K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/T15K",
+      "code": "T15K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/YT15K": {
+    "kind": "package",
+    "title": "Gói YT15K Viettel - Miễn Phí Data Truy Cập Youtube Trong 7 Ngày",
+    "description": "YT15K - Gói cước 4G đặc biệt của Viettel chỉ với 15.000đ, người dùng sở hữu ngay quyền lợi miễn phí xem Youtube trong 7 ngày. Đăng ký soạn YT15K UP gửi 290",
+    "heading": "Gói cước Viettel YT15K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0046.html",
+    "rawSha256": "dba5034cd878dacc31954ce1b01c1845175523e52d1eaefb1d6dac1658502f22",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/YT15K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/YT15K",
+      "code": "YT15K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/FB15K": {
+    "kind": "package",
+    "title": "Gói FB15K Viettel - Miễn Phí Data Truy Cập Facebook, Messenger Trong 7 Ngày",
+    "description": "FB15K - Gói cước 4G đặc biệt của Viettel chỉ với 15.000đ sở hữu ngay quyền lợi miễn phí truy cập Facebook, Messenger trong 7 ngày. Đăng ký soạn FB15K UP gửi 290.",
+    "heading": "Gói cước Viettel FB15K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0047.html",
+    "rawSha256": "d55950986b7125928808b9a6f6b0ce97a49e14de7da1e704d42a2e09f3549202",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FB15K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/FB15K",
+      "code": "FB15K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/T5K": {
+    "kind": "package",
+    "title": "Gói T5K Viettel - Miễn Phí Data Truy Cập TikTok Trong 1 Ngày",
+    "description": "T5K - Gói cước đặc biệt của Viettel chỉ với 5.000đ, người dùng sở hữu ngay quyền lợi miễn phí truy cập TikTok trong 1 ngày. Đăng ký soạn T5K UP gửi 290.",
+    "heading": "Gói cước Viettel T5K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0048.html",
+    "rawSha256": "a24e6d06b0e0f4d5248208f84c373ee02b275a59229a5ae1c50b049211eb95c2",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/T5K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/T5K",
+      "code": "T5K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/YT5K": {
+    "kind": "package",
+    "title": "Gói T5K Viettel - Miễn Phí Data Truy Cập Youtube Trong 1 Ngày",
+    "description": "YT5K - Gói cước 4G đặc biệt của Viettel chỉ với 5.000đ, người dùng sở hữu ngay quyền lợi miễn phí xem Youtube trong 1 ngày. Đăng ký soạn YT5K UP gửi 290.",
+    "heading": "Gói cước Viettel YT5K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0049.html",
+    "rawSha256": "8f6ee9fbbd2daf5690970d9a9201573c5ddcc41467ace8798242b8c46cd3c60d",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/YT5K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/YT5K",
+      "code": "YT5K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/FB5K": {
+    "kind": "package",
+    "title": "Gói FB5K Viettel - Miễn Phí Data Truy Cập Facebbok, Messenger Trong 1 Ngày",
+    "description": "FB5K - Gói cước 4G đặc biệt của Viettel chỉ với 5.000đ, miễn phí truy cập Facebook, Messenger trong 1 ngày. Đăng ký soạn FB5K UP gửi 290",
+    "heading": "Gói cước Viettel FB5K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0050.html",
+    "rawSha256": "9e899948ca8e792fafde45fb7e64155ce11dea987ec12c3dc4516cfddf702039",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FB5K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/FB5K",
+      "code": "FB5K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V15B": {
+    "kind": "package",
+    "title": "Gói V15B Viettel - 500MB Data + Gọi Nội Mạng, Chỉ 15K/15 Ngày",
+    "description": "V15B - Gói cước 4G Viettel chỉ với 15.000đ nhận ngay 500MB data, ưu đãi miễn phí cuộc gọi nội mạng dưới 5 phút trong 15 ngày. Đăng ký soạn V15B UP gửi 290",
+    "heading": "Gói cước Viettel V15B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0051.html",
+    "rawSha256": "1af5106d65b233b25759b8f4282be306329b0cbc06e3a77eb846208dc969d481",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V15B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V15B",
+      "code": "V15B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V25B": {
+    "kind": "package",
+    "title": "Gói V25B Viettel - Miễn Phí Gọi Nội Mạng + 2GB Data, Chỉ 25k/15ngày",
+    "description": "V25B - Gói cước 4G Viettel chỉ với 25.000đ nhận ngay 2GB data, ưu đãi miễn phí cuộc gọi nội mạng dưới 10 phút trong 15 ngày. Đăng ký soạn V25B UP gửi 290.",
+    "heading": "Gói cước Viettel V25B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0052.html",
+    "rawSha256": "4e4a2ea501230cfd9439b6f4cf6c1649cc384c4ab1a82e38318f4888634c3ea8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V25B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V25B",
+      "code": "V25B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V35B": {
+    "kind": "package",
+    "title": "Gói V35B Viettel - Miễn Phí Gọi Nội Mạng + 7.5GB Data, Chỉ 35k/15ngày",
+    "description": "V35B - Gói cước 4G Viettel chỉ với 35.000đ nhận ngay 7.5GB data, ưu đãi miễn phí cuộc gọi nội mạng dưới 10 phút trong 15 ngày. Đăng ký soạn V35B UP gửi 290.",
+    "heading": "Gói cước Viettel V35B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0053.html",
+    "rawSha256": "0b4b782252c4af47c4549e21a779c3f38b4726eddd8672067b8810394436d75d",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V35B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V35B",
+      "code": "V35B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/C20K": {
+    "kind": "package",
+    "title": "Gói C20K Viettel - Miễn Phí 50 Phút Gọi Nội Mạng + 1GB Data Trong 7 Ngày",
+    "description": "C20K - Gói cước 4G Viettel với 20.000đ/7 ngày, người dùng sở hữu ngay 1GB data, ưu đãi 50 phút gọi nội mạng. Đăng ký soạn tin nhắn C20K UP gửi 290",
+    "heading": "Gói cước Viettel C20K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0054.html",
+    "rawSha256": "efb0abe9c0a5dd04b30316a7568e91b32d86af3fdff65a904717ee9e3635feaf",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/C20K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/C20K",
+      "code": "C20K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/F30": {
+    "kind": "package",
+    "title": "Gói F30 Viettel - Miễn Phí Cưới Gọi Nội Mạng Dưới 20 Phút + 3GB Data Trong 7 Ngày",
+    "description": "F30 - Gói cước 4G Viettel với 30.000đ/7 ngày nhận ngay 3GB data, ưu đãi miễn phí cuộc gọi nội mạng dưới 20 phút. Đăng ký soạn tin nhắn F30 UP gửi 290",
+    "heading": "Gói cước Viettel F30",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0055.html",
+    "rawSha256": "7a1b5bf62937472e9e0c4303437340924895c4767e651123516947ee1b91f2a9",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/F30",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/F30",
+      "code": "F30",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/FT50": {
+    "kind": "package",
+    "title": "Gói FT50 Viettel - Miễn Phí Cưới Gọi Nội Mạng Dưới 10 Phút + 7GB Data Trong 7 Ngày",
+    "description": "FT50 - Gói cước 4G Viettel với 50.000đ nhận ngay 7GB data (1GB/ngày), ưu đãi miễn phí cuộc gọi nội mạng dưới 10 phút. Đăng ký soạn tin nhắn FT50 UP gửi 290.",
+    "heading": "Gói cước Viettel FT50",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0056.html",
+    "rawSha256": "a3565b67be9d940e17a2f1a99eb76182539bc10dee139e0d8347d014298fa340",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FT50",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/FT50",
+      "code": "FT50",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV35K": {
+    "kind": "package",
+    "title": "Gói TV35K Viettel - 7GB Data + Miễn Phí TV360, Chỉ 35K/7 Ngày",
+    "description": "TV35K - Gói cước 4G Viettel chỉ 35.000đ/7 ngày nhận ngay 7GB(1GB/ngày). Xem miễn phí gói Standard trên TV360. Đăng ký soạn TV35K UP gửi 290.",
+    "heading": "Gói cước Viettel TV35K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0057.html",
+    "rawSha256": "52172aaaf65a7f32d1768bda152e6fea3ce31b7d5b17e060dd861c2823bfc923",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV35K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV35K",
+      "code": "TV35K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TV65K": {
+    "kind": "package",
+    "title": "Gói TV65K Viettel - 14GB Data + Miễn Phí TV360, Chỉ 65K/14 Ngày",
+    "description": "TV65K - Gói cước 4G Viettel chỉ 65.000đ/14 ngày nhận ngay 14GB(1GB/ngày). Xem miễn phí gói Standard trên TV360. Đăng ký soạn TV65K UP gửi 290.",
+    "heading": "Gói cước Viettel TV65K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0058.html",
+    "rawSha256": "e85e1c22ebe3b362c36513a5cb77bb21d96ebd4441ec57ec6499ea68b5db3da9",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV65K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TV65K",
+      "code": "TV65K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V50K": {
+    "kind": "package",
+    "title": "Gói V50K Viettel - 7GB Data + Miễn Phí Cước Gọi Nội Mạng, Chỉ 50K/7 Ngày",
+    "description": "V50K - Gói cước 4G Viettel thông dụng chỉ với 50.000đ, người dùng sở hữu ngay 7GB(1GB/ngày) và ưu đãi cước gọi trong 7 ngày. Đăng ký soạn V50K UP gửi 290.",
+    "heading": "Gói cước Viettel V50K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0059.html",
+    "rawSha256": "b088df82eb399d1720ab70bc80d5ae6d0a48d999e9bac45bb5df1e10d1a529e1",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V50K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V50K",
+      "code": "V50K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V100K": {
+    "kind": "package",
+    "title": "Gói V100K Viettel - 21GB Data + 1.000 Phút Nội Mạng, Chỉ 100K/7 Ngày",
+    "description": "V100K - Gói cước 4G Viettel chỉ với 100.000đ/7 ngày nhận ngay 21GB Data (3GB/ngày), Miễn phí cước gọi nội mạng dưới 20 phút. Đăng ký soạn V100K UP gửi 290",
+    "heading": "Gói cước Viettel V100K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0060.html",
+    "rawSha256": "6ebf51d716057a311a4694671641dd224ae52cb8b9374eeb3878d71c2061ddd2",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V100K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V100K",
+      "code": "V100K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST15K": {
+    "kind": "package",
+    "title": "Gói ST15K Viettel - 3GB Data Chỉ 15K/3 Ngày",
+    "description": "ST15K - Gói cước 4G Viettel thông dụng chỉ với 15.000đ, người dùng sở hữu ngay 3GB/3 ngày, tương đương 1GB/ngày.",
+    "heading": "Gói cước Viettel ST15K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0061.html",
+    "rawSha256": "6f9063e93c487d574cad546cbdf631f13e46f34ac14c5e9f285db0bc04bd5634",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST15K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST15K",
+      "code": "ST15K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/MI20K": {
+    "kind": "package",
+    "title": "Gói MI20K Viettel - 2GB Data 4G Tốc Độ Cao, Chỉ 20K/5 Ngày",
+    "description": "MI20K - Gói cước 4G Viettel thông dụng chỉ với 20.000đ, người dùng sở hữu ngay 2GB/5ngày, hết 2GB tính cước phát sinh 75đ/50KB. Đăng ký soạn MI20K UP gửi 290",
+    "heading": "Gói cước Viettel MI20K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0062.html",
+    "rawSha256": "80cf14d7d69b2ac80fd8e331166499efd978e6a87cb06f3452b283d1a5a436c9",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MI20K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/MI20K",
+      "code": "MI20K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST30K": {
+    "kind": "package",
+    "title": "Gói ST30K Viettel - 7GB Data 4G Tốc Độ Cao, Chỉ 30K/7 Ngày",
+    "description": "ST30K - Gói cước 3G 4G Viettel thông dụng chỉ với 30.000đ, người dùng sở hữu ngay 7GB/7 ngày, tương đương 1GB/ngày. Đăng ký soạn ST30K UP gửi 290.",
+    "heading": "Gói cước Viettel ST30K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0063.html",
+    "rawSha256": "dac5a886a7bfe2fa1cc19fdbb56fb80cfbe428d07e0faac83df2a52f568d9a53",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST30K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST30K",
+      "code": "ST30K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/EST30": {
+    "kind": "package",
+    "title": "Gói EST30 Viettel - 7GB Data + Free Data Liên Quân, Chỉ 30K/7 Ngày",
+    "description": "EST30 - Gói cước 4G Viettel chỉ với 30.000đ nhận ngay 7GB/7 ngày (1GB/ngày), Miễn phí data khi truy cập chơi game hoặc livestream game Liên Quân Mobile. Đăng ký soạn EST30 UP gửi 290.",
+    "heading": "Gói cước Viettel EST30",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0064.html",
+    "rawSha256": "062937d33a71f56027f7738293e130b53b38632714114abd842f5b9b1761a5b2",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/EST30",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/EST30",
+      "code": "EST30",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V30X": {
+    "kind": "package",
+    "title": "Gói V30X Viettel - 3.5GB Data + Miễn Phí Gọi Nội Mạng, Chỉ 30K/7 Ngày",
+    "description": "V30X - Gói cước 4G Viettel thông dụng chỉ với 30.000đ, người dùng sở hữu ngay 3.5GB/7 ngày, Miễn phí cước gọi nội mạng dưới 10 phút. Đăng ký soạn V30X UP gửi 290.",
+    "heading": "Gói cước Viettel V30X",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0065.html",
+    "rawSha256": "f335712118c06ddc6080be5ff5bc12bba080556ff4758e25335cb2b9e8c88f65",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V30X",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V30X",
+      "code": "V30X",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/MI50K": {
+    "kind": "package",
+    "title": "Gói cước Viettel MI50K",
+    "description": "Cập nhật gói cước Viettel 2026 mới nhất: các gói 4G, 5G theo ngày, tháng, combo data – thoại, ưu đãi hấp dẫn, đăng ký nhanh chóng.",
+    "heading": "Gói cước Viettel MI50K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0066.html",
+    "rawSha256": "17ba052827c9a7d9505944762686e6f02f14cba9f809d32923cb6d16ad844962",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MI50K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/MI50K",
+      "code": "MI50K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST60N": {
+    "kind": "package",
+    "title": "Gói ST60N Viettel - 60GB Data 4G Tốc Độ Cao, Chỉ 60K/tháng",
+    "description": "ST60N - Gói cước 4G Viettel thông dụng chỉ với 60.000đ, người dùng sở hữu ngay 60GB data/tháng, tương đương 2GB/ngày. Đăng ký soạn tin nhắn ST60N UP gửi 290.",
+    "heading": "Gói cước Viettel ST60N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0067.html",
+    "rawSha256": "d96b4026ce47a7b8ea576bf63235cd2039cf9aa2d8f5a190fda827dace500104",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST60N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST60N",
+      "code": "ST60N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TRE60": {
+    "kind": "package",
+    "title": "Gói TRE60 Viettel - 60GB Data + Miễn Phí TikTok, Chỉ 60K/tháng",
+    "description": "TRE60 - Gói cước 4G Viettel chỉ với 60.000đ sở hữu ngay 60GB(2GB/ngày), miễn phí data truy cập TikTok. Đăng ký soạn tin nhắn TRE60 UP gửi 290",
+    "heading": "Gói cước Viettel TRE60",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0068.html",
+    "rawSha256": "e2373ef857fb320cb43da3dd60b3962b454f734981ffbabd2cf29c497ffff5ff",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TRE60",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TRE60",
+      "code": "TRE60",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST70K": {
+    "kind": "package",
+    "title": "Gói Cước ST70K Viettel - 15GB (500MB/ngày) Giá Chỉ 70K",
+    "description": "ST70K - Gói cước 4G Viettel truy cập internet tốc độ cao giá chỉ 70.000đ nhận ngay 15GB data mỗi tháng (500MB/ngày). Đăng ký soạn ST70K UP gửi 290.",
+    "heading": "Gói cước Viettel ST70K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0069.html",
+    "rawSha256": "439b0dbd8f9ee00c892ef2a648f6e29a0c1ead97ed34ae0fdcfe5647ba9dc6e9",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST70K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST70K",
+      "code": "ST70K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST90N": {
+    "kind": "package",
+    "title": "Gói ST90N Viettel - 120GB Data 4G Tốc Độ Cao (4GB/ngày), Chỉ 90K/tháng",
+    "description": "ST90N - Gói cước 4G Viettel thông dụng chỉ với 90.000đ, người dùng sở hữu ngay 120GB data/tháng, tương đương 4GB/ngày. Đăng ký soạn tin nhắn ST90N UP gửi 290.",
+    "heading": "Gói cước Viettel ST90N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0070.html",
+    "rawSha256": "61a8282a7957f55e99f28eb9f3047d2333d2ff762cae3c745d338a2ed48960e8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST90N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST90N",
+      "code": "ST90N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/TRE90": {
+    "kind": "package",
+    "title": "Gói TRE90 Viettel - 120GB Data (4GB/ngày) + Miễn Phí TikTok, Chỉ 90K/tháng",
+    "description": "TRE90 - Gói cước 4G Viettel chỉ với 90.000đ sở hữu ngay 120GB(2GB/ngày), miễn phí data truy cập TikTok. Đăng ký soạn tin nhắn TRE90 UP gửi 290",
+    "heading": "Gói cước Viettel TRE90",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0071.html",
+    "rawSha256": "bbf1df2a25088e6c8ebf56032be5825d7a94fc3db5ff6277b542bdca952fe9bb",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TRE90",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/TRE90",
+      "code": "TRE90",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V120N": {
+    "kind": "package",
+    "title": "Gói V120N Viettel - 120GB Data (4GB/ngày) + Miễn Phí Gọi, Chỉ 120K/tháng",
+    "description": "V120N - Gói cước 4G Viettel với 120.000đ nhận ngay 120GB (4GB/ngày). Miễn cước gọi nội mạng dưới 20 phút và 50 phút gọi ngoại mạng. Đăng ký soạn V120N UP gửi 290.",
+    "heading": "Gói cước Viettel V120N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0072.html",
+    "rawSha256": "2e578b3ecb1d980f84d60a0eabb20de0fb33acffadda8266480992a4d84793ca",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V120N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V120N",
+      "code": "V120N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V120C": {
+    "kind": "package",
+    "title": "Gói V120C Viettel - 60GB Data + Miễn Phí Cước Gọi, Chỉ 120K/tháng",
+    "description": "V120C - Gói cước 4G Viettel chỉ 120.000đ nhận ngay 60GB (2GB/ngày), Miễn phí cước gọi nội mạng dưới 20 phút và 50 phút gọi ngoại mạng, Miễn phí data truy cập TikTok.",
+    "heading": "Gói cước Viettel V120C",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0073.html",
+    "rawSha256": "b97cb9d6faa5f9a20e53a04f2b670b3cf31bf790429875b9eb6df35719bad47d",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V120C",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V120C",
+      "code": "V120C",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST120K": {
+    "kind": "package",
+    "title": "Gói ST120K Viettel - 60GB Data 4G + Miễn Phí TV360, Chỉ 120K/Tháng",
+    "description": "ST120K - Gói cước 4G Viettel chỉ với 120.000đ nhận ngay 60GB(2GB/ngày), Miễn phí xem TV360 và 25GB dữ liệu lưu trữ trên LifeBox. Đăng ký soạn ST120K UP gửi 290.",
+    "heading": "Gói cước Viettel ST120K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0074.html",
+    "rawSha256": "7f05c18cc5567264e29e1e45cc04a61410fb01b747b7f13edba9a240d6ac3891",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST120K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST120K",
+      "code": "ST120K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V150N": {
+    "kind": "package",
+    "title": "Gói V150N Viettel - 180GB Data + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 150K/tháng",
+    "description": "V150N - Gói cước 4G Viettel chỉ 150.000đ nhận ngay 180GB data/tháng, tương đương 6GB/ngày. Miễn phí cước gọi nội mạng dưới 20 phút và 100 phút gọi ngoại mạng.",
+    "heading": "Gói cước Viettel V150N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0075.html",
+    "rawSha256": "4215a1c1a6e8aee1efdc3fc4d313c9c76ab4098df9c2929fcef35ed6ba9a2d9c",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V150N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V150N",
+      "code": "V150N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V150C": {
+    "kind": "package",
+    "title": "Gói V150C Viettel - 90GB Data + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 150K/tháng",
+    "description": "V150C - Gói cước 4G Viettel chỉ 150.000đ nhận ngay 90GB data/tháng (3GB/ngày). Miễn phí cuộc gọi nội mạng dưới 20 phút và 50 phút gọi ngoại mạng.",
+    "heading": "Gói cước Viettel V150C",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0076.html",
+    "rawSha256": "27e96d099f3c2b217e9839db9359e37738724cf7ed106b7135d86ef2b74022ad",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V150C",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V150C",
+      "code": "V150C",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/ST150K": {
+    "kind": "package",
+    "title": "Gói ST150K Viettel - 90GB Data + Miễn Phí TV360, Chỉ 150K/tháng",
+    "description": "ST150K - Gói cước 4G Viettel chỉ 150.000đ nhận ngay 90GB data/tháng (3GB/ngày), miễn phí data truy cập TV360, miễn phí 25GB dữ liệu lưu trữ trên LifeBox.",
+    "heading": "Gói cước Viettel ST150K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0077.html",
+    "rawSha256": "260e71fd92c23f1bf61e69c84659333fe38ad35855016e39966dc3593668c0c8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST150K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/ST150K",
+      "code": "ST150K",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/V200C": {
+    "kind": "package",
+    "title": "Gói V200C Viettel - 120GB Data (4GB/ngày) + Miễn Phí Gọi, Chỉ 200K/tháng",
+    "description": "V200C - Gói cước 4G Viettel chỉ 200.000đ nhận ngay 120GB data (4GB/ngày). Miễn phí gọi nội mạng dưới 20 phút và 100 phút ngoại mạng. Miễn phí lưu trữ 25 GB trên LifeBox. Miễn phí xem TV360.",
+    "heading": "Gói cước Viettel V200C",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0078.html",
+    "rawSha256": "b14bee4b9a284e1a7f248b6d94af47a06eff606d00fe4489ca91ce33b4257dd8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V200C",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/V200C",
+      "code": "V200C",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G135": {
+    "kind": "package",
+    "title": "Đăng Ký Gói 5G Viettel 5G135: 4GB/ngày Kèm Ưu Đãi Hấp Dẫn",
+    "description": "5G135 - Gói cước 5G mới nhất của Viettel chỉ 135.000đ nhận ngay 4GB/ngày. Ưu đãi miễn phí xem TV360 4K và 25GB lưu trữ Mybox. Đăng ký soạn 5G135 UP gửi 290.",
+    "heading": "Gói cước Viettel 5G135",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0079.html",
+    "rawSha256": "9222314af3586c38f1bb386826edfd6a48d3e1b64c3a3e7099b738baa6ccd900",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G135",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G135",
+      "code": "5G135",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G150": {
+    "kind": "package",
+    "title": "Đăng Ký Gói 5G Viettel 5G150 Nhận 6GB/ngày chỉ 150.000đ",
+    "description": "5G150 - Đăng ký gói cước 5G Viettel siêu tốc độ chỉ 150.000đ/tháng nhận ngay 180GB (6GB/ngày). Miễn phí xem TV360 4K. Miễn phí 30GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G150",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0080.html",
+    "rawSha256": "6cb6d6318a4d03c4165b11145129fdb9ebce3ac7c0c93c0056a59b25ec7b04d8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G150",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G150",
+      "code": "5G150",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G160B": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5G160B Nhận 4GB/ngày + Miễn Phí Gọi",
+    "description": "Đăng ký gói cước 5G Viettel 5G160B chỉ 160.000đ/tháng nhận ngay 120GB (4GB/ngày). Ưu đãi miễn phí gọi nội ngoại mạng. Miễn phí TV360 4K, 20GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G160B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0081.html",
+    "rawSha256": "c509ef7f2150c04fb12f13099970b010a0417234e24b240baa69c9e9d8ef6af8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G160B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G160B",
+      "code": "5G160B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G180B": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5G180B Nhận 6GB/ngày. Miễn Phí Gọi+TV360",
+    "description": "Đăng ký 5G Viettel 5G180B chỉ 180.000đ/tháng nhận ngay 180GB (6GB/ngày). Ưu đãi miễn phí cước gọi nội ngoại mạng. Miễn phí xem TV360 và 30GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G180B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0082.html",
+    "rawSha256": "743885ebcb7b5113d65d10ddc09b6b19f1a866ba0579f4085326e8cab4126912",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G180B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G180B",
+      "code": "5G180B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G230B": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5G230B Nhận 8GB/ngày. Miễn Phí Gọi+TV360",
+    "description": "Đăng ký gói cước 5G Viettel 5G230B chỉ 230.000đ/tháng nhận 240GB (8GB/ngày). Miễn phí cước gọi nội ngoại mạng. Miễn phí TV360 4K. Miễn phí 50Gb lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G230B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0083.html",
+    "rawSha256": "02ebfc48ab96104536d10492607a9fb4fca874c0b95e0d32b2a8087018892f3d",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G230B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G230B",
+      "code": "5G230B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G280B": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5G280B Nhận 10GB/ngày. Miễn Phí Gọi+TV360",
+    "description": "Đăng ký gói cước 5G Viettel 5G280B chỉ 280.000đ/tháng nhận 300GB (10GB/ngày). Miễn phí gọi nội ngoại mạng. Miễn phí xem TV360 4K. Miễn phí 70GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G280B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0084.html",
+    "rawSha256": "35eae6722e2e328973b893492c9afb2000c167c44f3ef11c9628471c86f3fdd6",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G280B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G280B",
+      "code": "5G280B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G330B": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5G330B Nhận 12GB/ngày Miễn Phí Gọi+TV360",
+    "description": "5G330B - Đăng ký gói cước 5G Viettel 330.000đ/tháng nhận 360GB (12GB/ngày). Miễn phí cước gọi nội ngoại mạng. Miễn Phí TV360 4K. Miễn phí 100GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G330B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0085.html",
+    "rawSha256": "f02af6f932193ccc395603cd64892609462654fec5db23e35b9b4c5166a94bf6",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G330B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G330B",
+      "code": "5G330B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G380B": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5G380B Nhận 15GB/ngày. Miễn Phí Gọi+TV360",
+    "description": "5G380B - Đăng ký gói cước 5G Viettel với 380.000đ/tháng nhận 450GB (15GB/ngày). Miễn phí gọi nội ngoại mạng. Miễn phí TV360 4K. Miễn phí 150GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G380B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0086.html",
+    "rawSha256": "b339dc80c6acc3ea881766789d2a15c4c853bc69ca8c5e7cd72583ab9daa6355",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G380B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G380B",
+      "code": "5G380B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G480B": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5G480B Nhận 20GB/ngày. Miễn Phí Gọi+TV360",
+    "description": "5G480B - Đăng ký gói cước 5G Viettel với 480.000đ/tháng nhận 600GB (20GB/ngày). Miễn phí gọi nội ngoại mạng. Miễn phí TV360 4K. Miễn phí 200GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G480B",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0087.html",
+    "rawSha256": "44aacd976392597f5178632e3bfa8dddb58b4edbd6d806decc6c96c76f3c0d0a",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G480B",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G480B",
+      "code": "5G480B",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G135N": {
+    "kind": "package",
+    "title": "Gói 5G135N Viettel – 6GB/ngày, Miễn phí TV360 4K & 20GB MyBox",
+    "description": "Đăng ký gói 5G135N Viettel nhận 6GB/ngày, miễn phí TV360 Basic 4K và 20GB lưu trữ MyBox. Áp dụng cho thuê bao mới từ 01/01/2025 hoặc theo danh sách.",
+    "heading": "Gói cước Viettel 5G135N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0088.html",
+    "rawSha256": "0d90d709e4460e0a052402620f972252131967d09f331c15f6597439180d2694",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G135N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G135N",
+      "code": "5G135N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G150N": {
+    "kind": "package",
+    "title": "Gói cước tháng 5G150N Viettel – 8GB/ngày, miễn phí TV360 và lưu trữ Mybox",
+    "description": "Đăng ký gói 5G150N Viettel chỉ 150.000đ/tháng nhận 240GB data 5G (8GB/ngày), miễn phí TV360 4K và 30GB lưu trữ Mybox.",
+    "heading": "Gói cước Viettel 5G150N",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0089.html",
+    "rawSha256": "7c43360d58eadc0cfd5eaf8c98344df4461fec6b69c837e22f2067657d91befc",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G150N",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G150N",
+      "code": "5G150N",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5GLQ190": {
+    "kind": "package",
+    "title": "Đăng Ký 5G Viettel 5GLQ190 Nhận 6GB/ngày. Miễn Phí Liên Quân",
+    "description": "5GLQ190 - Đăng ký gói cước 5G Viettel nhận 180GB data tốc độ cực cao (6GB/ngày). Miễn phí 2GB/ngày data chơi Liên Quân Mobile.",
+    "heading": "Gói cước Viettel 5GLQ190",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0090.html",
+    "rawSha256": "c0d0e3a33774061a6254c806e3a92048a5f041e7b8d311da590b09086fbd17cf",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GLQ190",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5GLQ190",
+      "code": "5GLQ190",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5GLQ210": {
+    "kind": "package",
+    "title": "5GLQ210 - Gói Cước 5G Viettel 6GB/ngày + 2GB/ngày Liên Quân + Gọi",
+    "description": "Đăng ký gói cước 5G Viettel 5GLQ210 chỉ 210.000đ/tháng nhận 180GB (6GB/ngày). Miễn phí 2GB/ngày data Liên Quân. Miễn phí gọi. Miễn phí TV360 4K. Miễn phí Mybox",
+    "heading": "Gói cước Viettel 5GLQ210",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0091.html",
+    "rawSha256": "12717dbf82615d6ff8b352ad4e5443488b6257cf3b67f04a6b636f30ea2310e7",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GLQ210",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5GLQ210",
+      "code": "5GLQ210",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G200C": {
+    "kind": "package",
+    "title": "Gói cước 5G200C Viettel – 6GB/ngày, miễn phí gọi, TV360 4K chỉ 200K/tháng!",
+    "description": "Đăng ký gói 5G200C Viettel chỉ 200K/tháng, nhận ngay 6GB/ngày, miễn phí cuộc gọi nội mạng dưới 20 phút và 150 phút gọi ngoại mạng, xem TV360 Basic 4K.",
+    "heading": "Gói cước Viettel 5G200C",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0092.html",
+    "rawSha256": "a389cad89254a0ee4e828013718024b5e3d78db3a84dbc2b5f40cc716eceef46",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G200C",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G200C",
+      "code": "5G200C",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/5G300C": {
+    "kind": "package",
+    "title": "Gói 5G300C Viettel – 10GB/ngày, Gọi Thoải Mái, Xem TV360 4K Miễn Phí",
+    "description": "Đăng ký gói 5G300C Viettel chỉ 300K/tháng, nhận ngay 10GB/ngày, miễn phí gọi nội mạng dưới 20 phút, tặng 250 phút gọi ngoại mạng, xem TV360 Basic 4K miễn phí. Trải nghiệm tốc độ cao, không lo gián đoạn!",
+    "heading": "Gói cước Viettel 5G300C",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0093.html",
+    "rawSha256": "ef7df4756a43b388b2d63df262c794f74f4fba3e085385a6530156ed35845f71",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G300C",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/5G300C",
+      "code": "5G300C",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS110": {
+    "kind": "package",
+    "title": "Gói cước KS110 Viettel Money: 36GB Dùng Trong 30 Ngày, Giá Chỉ 104.500đ",
+    "description": "Đăng ký gói KS110 trên Viettel Money để nhận ngay 36GB data tốc độ cao sử dụng trong 30 ngày. Giá ưu đãi chỉ 104.500đ sau khuyến mãi 5%.",
+    "heading": "Gói cước Viettel KS110",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0094.html",
+    "rawSha256": "289e54bf82499876a53cf556502404da11150fe578f3412c9f058028cec84197",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS110",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS110",
+      "code": "KS110",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS145": {
+    "kind": "package",
+    "title": "Gói cước KS145 Viettel Money: 66GB Dùng Trong 30 Ngày, Giá Chỉ 137.750đ",
+    "description": "Đăng ký gói KS145 trên Viettel Money để nhận ngay 66GB data tốc độ cao sử dụng trong 30 ngày. Giá ưu đãi chỉ 137.750đ sau khuyến mãi 5%.",
+    "heading": "Gói cước Viettel KS145",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0095.html",
+    "rawSha256": "ff218a718fa34352cf517d19a11d4387ee89b5c9731bae5960e9d205b89a2be3",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS145",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS145",
+      "code": "KS145",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS165": {
+    "kind": "package",
+    "title": "Gói cước KS165 Viettel Money: 90GB Dùng Trong 30 Ngày, Giá Chỉ 156.750đ",
+    "description": "Đăng ký gói KS165 trên Viettel Money để nhận ngay 90GB data tốc độ cao sử dụng trong 30 ngày. Giá ưu đãi chỉ 156.750đ sau khuyến mãi 5%.",
+    "heading": "Gói cước Viettel KS165",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0096.html",
+    "rawSha256": "5344a8d3a723ec3365b5045a5fbd3db450aab490acde803588aed8eacb7a2124",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS165",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS165",
+      "code": "KS165",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS2H": {
+    "kind": "package",
+    "title": "Gói cước KS2H Viettel Money: 1,2GB Dùng Trong 2 Giờ, Giá Chỉ 5.700đ",
+    "description": "Đăng ký gói KS2H trên Viettel Money để nhận ngay 1,2GB tốc độ cao trong 2 giờ. Giá siêu rẻ chỉ 5.700đ sau khuyến mãi 5%. Truy cập nhanh chóng, tiện lợi!",
+    "heading": "Gói cước Viettel KS2H",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0097.html",
+    "rawSha256": "7b63a8ca37fa6730938b3065335cbce6e71125d6ab328a69eaa263b9cfd1e725",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS2H",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS2H",
+      "code": "KS2H",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS6H": {
+    "kind": "package",
+    "title": "Gói cước KS6H Viettel Money: 3GB Dùng Trong 6 Giờ, Giá Chỉ 9.500đ",
+    "description": "Nhận ngay 3GB data tốc độ cao dùng trong 6 giờ với gói KS6H trên Viettel Money. Giá siêu ưu đãi chỉ 9.500đ sau khuyến mãi 5%. Đăng ký dễ dàng, sử dụng tiện lợi!",
+    "heading": "Gói cước Viettel KS6H",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0098.html",
+    "rawSha256": "a52bd912762b41506c33036d26337d4f614e389af9fb387a44d9495a2b09da11",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS6H",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS6H",
+      "code": "KS6H",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS8": {
+    "kind": "package",
+    "title": "Gói cước KS8 Viettel Money: 1.5GB Dùng Trong Ngày, Giá Chỉ 7.600đ",
+    "description": "Đăng ký gói KS8 trên Viettel Money để nhận 1.5GB tốc độ cao dùng trong 1 ngày. Giá siêu rẻ chỉ 7.600đ sau khuyến mãi 5%. Truy cập internet nhanh chóng, tiện lợi!",
+    "heading": "Gói cước Viettel KS8",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0099.html",
+    "rawSha256": "5a151a48ae7f5f5a670a9e84356896de335405acfb7f2331e859ce86c56d0aa6",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS8",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS8",
+      "code": "KS8",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS12": {
+    "kind": "package",
+    "title": "Gói cước KS12 Viettel Money: 2.5GB Dùng Trong Ngày, Giá Chỉ 11.400đ",
+    "description": "Nhận ngay 2.5GB data tốc độ cao dùng trong ngày với gói KS12 trên Viettel Money. Giá ưu đãi chỉ 11.400đ sau khuyến mãi 5%. Đăng ký nhanh chóng, tiện lợi!",
+    "heading": "Gói cước Viettel KS12",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0100.html",
+    "rawSha256": "cc26379db76992e0ecd5d494fbf9219e59281d741f5eb0d26f05d3852f021d61",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS12",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS12",
+      "code": "KS12",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS20": {
+    "kind": "package",
+    "title": "Gói cước KS20 Viettel Money: 4GB Dùng Trong 3 Ngày, Giá Chỉ 19.000đ",
+    "description": "Đăng ký gói KS20 trên Viettel Money để nhận ngay 4GB data tốc độ cao sử dụng trong 3 ngày. Giá ưu đãi chỉ 19.000đ sau khuyến mãi 5%.",
+    "heading": "Gói cước Viettel KS20",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0101.html",
+    "rawSha256": "2feb5d1e9e6704ce95273baa77cb7e5eec2bfa22553ccb96a3ee18d0c9c60dd7",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS20",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS20",
+      "code": "KS20",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/KS36": {
+    "kind": "package",
+    "title": "Gói cước KS36 Viettel Money: 8GB Dùng Trong 7 Ngày, Giá Chỉ 34.000đ",
+    "description": "Đăng ký gói KS36 trên Viettel Money để nhận ngay 8GB data tốc độ cao sử dụng trong 7 ngày. Giá khuyến mãi chỉ 34.000đ sau giảm 5%.",
+    "heading": "Gói cước Viettel KS36",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0102.html",
+    "rawSha256": "7c6e3883d2a2f8ed89bb46c4d4117c9ffae63a6d21430cbe0fef9cb2dff6ae45",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS36",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.prepaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/KS36",
+      "code": "KS36",
+      "subscription": "general"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/MXH120": {
+    "kind": "package",
+    "title": "Gói Cước Trả Sau MXH120 Viettel - 30GB Data + Miễn Phí Mạng Xã Hội, Chỉ 120K/tháng",
+    "description": "Gói cước trả sau MXH120 chỉ với 120.000đ/tháng nhận ngay 30GB(1GB/ngày) và quyền lợi miễn phí truy cập Mạng xã hội. Miễn phí gọi. Miễn phí SMS.",
+    "heading": "Gói cước Viettel trả sau MXH120",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0103.html",
+    "rawSha256": "458cc6bdd459c76146a754069a4e1da41e345661fa473079f06803f03390cfcd",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/MXH120",
+      "code": "MXH120",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/MXH150": {
+    "kind": "package",
+    "title": "Gói cước trả sau Viettel MXH150 miễn phí data truy cập TikTok, Youtube, Facebook, Messenger",
+    "description": "Đăng ký gói cước MXH150 chỉ với 150.000đ/tháng nhận ngay 45GB(1.5GB/ngày) và quyền lợi miễn phí truy cập Mạng xã hội. Miễn phí gọi. Miễn phí SMS.",
+    "heading": "Gói cước Viettel trả sau MXH150",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0104.html",
+    "rawSha256": "662305b12b9224de41a434ad553172ef93b2ee0d3c8977c0673ad28df3f109d4",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH150",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/MXH150",
+      "code": "MXH150",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/MXH200": {
+    "kind": "package",
+    "title": "Gói cước trả sau Viettel MXH200 4GB/ngày + miễn phí data truy cập TikTok, Youtube, Facebook, Messenger",
+    "description": "MXH200 - Gói cước trả sau Viettel chỉ 200.000đ/tháng nhận ngay 120GB(4GB/ngày) và quyền lợi miễn phí truy cập Mạng xã hội. Miễn phí gọi. Miễn phí SMS.",
+    "heading": "Gói cước Viettel trả sau MXH200",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0105.html",
+    "rawSha256": "91e99e5cd5f7097bb290c44f7a531227e965281cc342c481791087a5544e87b0",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH200",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/MXH200",
+      "code": "MXH200",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/MXH250": {
+    "kind": "package",
+    "title": "Gói cước trả sau Viettel MXH250 5GB/ngày + miễn phí data truy cập TikTok, Youtube, Facebook, Messenger",
+    "description": "Đăng ký gói cước MXH250 chỉ 250.000đ/tháng nhận ngay 150GB(5GB/ngày) và quyền lợi miễn phí truy cập Mạng xã hội. Miễn phí gọi. Miễn phí SMS.",
+    "heading": "Gói cước Viettel trả sau MXH250",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0106.html",
+    "rawSha256": "32d1b9eed885d0375ebafe074a2bc55c0448badc793273126125281ca7b2fd78",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH250",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/MXH250",
+      "code": "MXH250",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/V120K": {
+    "kind": "package",
+    "title": "Gói cước trả sau Viettel V120K: 120.000đ/Tháng nhận 1.5GB/ngày, Miễn Phí Gọi.",
+    "description": "Đăng ký gói V120K chỉ 120.000đ/tháng, nhận 1.5GB/ngày, miễn phí 20 phút/cuộc gọi nội mạng, 50 phút gọi ngoại mạng. Thoải mái lướt web và gọi điện không lo phí!",
+    "heading": "Gói cước Viettel trả sau V120K",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0107.html",
+    "rawSha256": "3a09a7d74846c18e3ac47ddabb875ae5eabbd0b74a89d4c277310efc95758438",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V120K",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/V120K",
+      "code": "V120K",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/V160X": {
+    "kind": "package",
+    "title": "Gói cước trả sau V160X: 160.000đ/Tháng, 4GB/Ngày, Miễn Phí Gọi & SMS",
+    "description": "Đăng ký gói V160X với 160.000đ/tháng, nhận 4GB/ngày, miễn phí 20 phút/cuộc gọi nội mạng, 60 phút gọi ngoại mạng và 60 SMS nội mạng. Ưu đãi cực hấp dẫn!",
+    "heading": "Gói cước Viettel trả sau V160X",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0108.html",
+    "rawSha256": "c8593823c478b3b292e6bbdb7ef12b32d6f56a967b7185e603f569e22c353267",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V160X",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/V160X",
+      "code": "V160X",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/V180X": {
+    "kind": "package",
+    "title": "Gói cước trả sau V180X: 180.000đ/Tháng, 6GB/Ngày, Miễn Phí Gọi Hấp Dẫn",
+    "description": "Đăng ký gói V180X với 180.000đ/tháng, nhận 6GB/ngày, miễn phí 10 phút/cuộc gọi nội mạng và 100 phút gọi ngoại mạng. Truy cập và liên lạc cực tiện lợi!",
+    "heading": "Gói cước Viettel trả sau V180X",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0109.html",
+    "rawSha256": "58761635c9c1484f1e0fe5e81dff96278ed5eba81d395aa89d85e030130f0a01",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V180X",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/V180X",
+      "code": "V180X",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N200": {
+    "kind": "package",
+    "title": "Gói cước trả sau N200 chỉ 200k/tháng nhận 8GB/ngày. Miễn phí data Youtube, Spotify.",
+    "description": "N200 - Dung lượng 240GB (8GB/ngày). Miễn phí Youtube, Spotify. Miễn phí gọi. Miễn phí SMS. Chỉ 200k/tháng.",
+    "heading": "Gói cước Viettel trả sau N200",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0110.html",
+    "rawSha256": "373c628efa03854a7beaf7abf8d67259146f4a28658b72b896cf728811648ff5",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N200",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N200",
+      "code": "N200",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N250": {
+    "kind": "package",
+    "title": "Gói cước trả sau N250 chỉ 250k/tháng nhận 10GB/ngày. Miễn phí data Youtube, Spotify.",
+    "description": "N250 - Dung lượng 300GB (10GB/ngày). Miễn phí Youtube, Spotify. Miễn phí gọi. Miễn phí SMS. Chỉ 250k/tháng.",
+    "heading": "Gói cước Viettel trả sau N250",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0111.html",
+    "rawSha256": "90c97168d9928737f4c36d75e09239b605747e9963f8fca392badc51cf270677",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N250",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N250",
+      "code": "N250",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N300": {
+    "kind": "package",
+    "title": "Gói cước trả sau N300 chỉ 300k/tháng nhận 12GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
+    "description": "N300 - Dung lượng 360GB (12GB/ngày). Miễn phí Youtube, Spotify, Facebook, TikTok. Miễn phí gọi. Miễn phí SMS. Chỉ 300k/tháng.",
+    "heading": "Gói cước Viettel trả sau N300",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0112.html",
+    "rawSha256": "8095ec45a89d4f9908244d70c73cbf8e53b82fe85935c6e50cac26ba3e6c3595",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N300",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N300",
+      "code": "N300",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N350": {
+    "kind": "package",
+    "title": "Gói cước trả sau N350 350k/tháng nhận 15GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
+    "description": "N350 - Dung lượng 450GB (15GB/ngày). Miễn phí Youtube, Spotify, Facebook, TikTok. Miễn phí gọi. Miễn phí SMS. Chỉ 350k/tháng.",
+    "heading": "Gói cước Viettel trả sau N350",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0113.html",
+    "rawSha256": "b8652df9ac63d0289e9510f72fd8620fd22a477b52a4ceb8c52b97894711aed8",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N350",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N350",
+      "code": "N350",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N400": {
+    "kind": "package",
+    "title": "Gói cước trả sau N400 400k/tháng nhận 17GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
+    "description": "N400 - Dung lượng 510GB (17GB/ngày). Miễn phí Youtube, Spotify, Facebook, TikTok. Miễn phí gọi. Miễn phí SMS. Giá 400k/tháng.",
+    "heading": "Gói cước Viettel trả sau N400",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0114.html",
+    "rawSha256": "8422fdd193f82f4b63b7cb8c9b9bc5bbea3ffaeff126a119a0f2f03178cfca3e",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N400",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N400",
+      "code": "N400",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N500": {
+    "kind": "package",
+    "title": "Gói cước trả sau N500 500k/tháng nhận 20GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
+    "description": "N500 - Dung lượng 600GB (20GB/ngày). Miễn phí Youtube, Spotify, Facebook, TikTok. Miễn phí gọi. Miễn phí SMS. Giá 500k/tháng.",
+    "heading": "Gói cước Viettel trả sau N500",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0115.html",
+    "rawSha256": "09c5df902af443459d5f9fa275034f518abb4d41e54bf14bc02a7be8919f7e17",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N500",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N500",
+      "code": "N500",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N1000": {
+    "kind": "package",
+    "title": "Gói cước trả sau N1000 1tr/tháng nhận 30GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
+    "description": "N1000 - Dung lượng 900GB (30GB/ngày). Miễn phí Youtube, Spotify, Facebook, TikTok. Miễn phí gọi. Miễn phí SMS. Giá 1.000.000đ/tháng.",
+    "heading": "Gói cước Viettel trả sau N1000",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0116.html",
+    "rawSha256": "2edc2456fb8858ac6157a7d6bfb1a41c66e75267b490148c629f2916a6f7b258",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N1000",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N1000",
+      "code": "N1000",
+      "subscription": "postpaid"
+    }
+  },
+  "/goi-cuoc-viettel/tra-sau/N2000": {
+    "kind": "package",
+    "title": "Gói cước trả sau N2000 2tr/tháng nhận 50GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
+    "description": "N2000 - Dung lượng 1.500GB (50GB/ngày). Miễn phí Youtube, Spotify, Facebook, TikTok. Miễn phí gọi. Miễn phí SMS. Giá 2.000.000đ/tháng.",
+    "heading": "Gói cước Viettel trả sau N2000",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0117.html",
+    "rawSha256": "6683b749e6047e59c83c525b5270d54ca32996bba0f9058b7ab332dd9db94cfd",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N2000",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "mobile_detail.postpaid",
+    "product": {
+      "id": "/goi-cuoc-viettel/tra-sau/N2000",
+      "code": "N2000",
+      "subscription": "postpaid"
+    }
+  },
+  "/tin-tuc/so-sanh-roaming": {
+    "kind": "news-article",
+    "title": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
+    "description": "So sánh Roaming, eSIM du lịch và SIM vật lý: Đâu là giải pháp mạng tốt nhất khi đi nước ngoài? Khám phá ngay ưu nhược điểm để lựa chọn gói cước phù hợp!",
+    "heading": "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0118.html",
+    "rawSha256": "cad59a30c155b91e577daa216dfc9d4c357454b31c378dcf819eb97fb4c1dd87",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/so-sanh-roaming",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te": {
+    "kind": "news-article",
+    "title": "TẤT TẦN TẬT VỀ VIETTEL ROAMING: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
+    "description": "Data roaming là gì? Hướng dẫn cách bật chuyển vùng quốc tế trên iOS và Android, bảng cước phí tham khảo theo khu vực và mẹo tiết kiệm data khi ra nước ngoài.",
+    "heading": "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0119.html",
+    "rawSha256": "71cc2bd9d892b68858d56ce32dd71bfc5fc1ce8b65b4c4bf400e9c365ec7008c",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-data-4g-viettel-2026": {
+    "kind": "news-article",
+    "title": "Đăng ký gói cước 4G Viettel tháng siêu rẻ chỉ từ 50k nhận ngay 4GB, 6GB, 8GB,.. mỗi ngày",
+    "description": "Các gói cước HOT 4G dành cho thuê bao Viettel giá rất rẻ, tiện lợi. Hướng dẫn cách đăng ký siêu nhanh. Thoải mái lướt web, mạng xã hội không giới hạn.",
+    "heading": "Tổng hợp chi tiết gói cước data 4G Viettel 2026 và cách đăng ký",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0120.html",
+    "rawSha256": "3c48b926c59ca9a1a8a3430b45c32169e4d68c89222d7da66c974163acc09677",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android": {
+    "kind": "news-article",
+    "title": "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026",
+    "description": "Hướng dẫn từng bước cách kích hoạt 5G Viettel trên iPhone (17, 16, 15, 14,...) và các dòng Android (Samsung, Oppo, Xiaomi, Realme, Huawei, Vivo, HONOR, Motorola, Google Pixel,...). Xem ngay để dùng 5G tốc độ cao!",
+    "heading": "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0121.html",
+    "rawSha256": "d60258aee0128d80e5a4a7046189a5d6b320f39b0c442071466b3c737bf4ebc4",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-roaming-viettel-la-gi": {
+    "kind": "news-article",
+    "title": "Gói cước Roaming Viettel là gì? Tổng hợp các gói roaming phù hợp cho người đi du lịch, công tác nước ngoài (mới nhất)",
+    "description": "Tìm hiểu gói cước Roaming Viettel chỉ từ 20k. Tổng hợp các gói roaming Viettel phổ biến, tiết kiệm nhất cho người đi du lịch, công tác nước ngoài bao gồm Hàn Quốc, Nhật Bản, Thái Lan, Singapore, Trung Quốc, Mỹ, Úc, Đài Loan,...",
+    "heading": "Gói cước Roaming Viettel là gì? Tổng hợp các gói Roaming phù hợp cho người đi du lịch, công tác nước ngoài",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0122.html",
+    "rawSha256": "7a66ed73fc1bd59ef7ff0e4933989abedb1b32dfcb4fe45ef23157f2cee6af72",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/giai-dap-thac-mac-hssv": {
+    "kind": "news-article",
+    "title": "Gói cước HSSV là gì? Có thực sự rẻ hơn gói thông thường? Làm sao để đăng ký và có cần giấy tờ xác nhận sinh viên không?",
+    "description": "Giải đáp thắc mắc về đăng ký gói cước rẻ cho HSSV, huỷ gia hạn, gia hạn thêm, kiểm tra tài khoản,... Giải đáp nhanh chóng.",
+    "heading": "GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP CHO HSSV KHI ĐĂNG KÝ DATA VIETTEL",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0123.html",
+    "rawSha256": "abdb42591fa97a8e3c428c8366d06e422b23a2a3151cb495681f305b85ce985e",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/giai-dap-thac-mac-hssv",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-viettel-thang-3-2026": {
+    "kind": "news-article",
+    "title": "Gói Cước Viettel Tháng 3/2026 - Đăng Ký 4G 5G Viettel Giá Rẻ",
+    "description": "Tổng hợp các gói cước Viettel tháng 3/2026 mới nhất: 4G 5G giá rẻ, dung lượng cao, đăng ký dễ dàng qua SMS, My Viettel, *098#, và website. Tổng hợp toàn bộ gói cước 4G/5G Viettel Tháng 3/2026 (KS110, KS145, ST90, V120). Xem ngay Data Khủng chỉ từ 6.000đ và cú pháp đăng ký chính thức!",
+    "heading": "Gói Cước Viettel Tháng 3/2026 – Đăng Ký 4G 5G Viettel Giá Rẻ Nhất",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0124.html",
+    "rawSha256": "e81867c61f888d6540eb980154bba152d129b15b4052baaa5c9f7c03f122cfc0",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-3-2026",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-viettel-cho-sinh-vien": {
+    "kind": "news-article",
+    "title": "Gói Cước Sinh Viên Viettel 2026 – Data Khủng, Giá Rẻ, Ưu Đãi Cực Hấp Dẫn",
+    "description": "Tham khảo các gói mạng Viettel rẻ cho sinh viên với nhiều ưu đãi data và gọi. Đăng ký sim sinh viên Viettel hoặc chọn gói data theo tháng tiết kiệm nhất cho nhu cầu học tập – giải trí.",
+    "heading": "Danh sách gói cước Viettel tốt nhất dành cho sinh viên 2026: Data khủng, học tập & giải trí thả ga",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0125.html",
+    "rawSha256": "0d262f98a08aafe081b917c4a17b1d91d5b7c7e1022356d3100a85d053d40be0",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-cho-sinh-vien",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi": {
+    "kind": "news-article",
+    "title": "Các gói cước Viettel miễn phí data truy cập mạng xã hội - Đăng ký dễ dàng - Dùng thoải mái không giới hạn",
+    "description": "Viettel đã ra mắt các gói cước lướt mạng xã hội không giới hạn theo tháng. Khám phá các gói cước 4G Viettel miễn phí truy cập Facebook, TikTok, YouTube và nhiều mạng xã hội khác. Đăng ký ngay để lướt mạng xã hội không lo hết data và tiết kiệm chi phí.",
+    "heading": "Danh Sách Gói Cước 4G Viettel Miễn Phí Mạng Xã Hội 2026 Rẻ Nhất",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0126.html",
+    "rawSha256": "a876c9b393b71295649d7ac2d7dcbe8649cbd835dc5f4c963cee87e38fcf5187",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-camera-ai": {
+    "kind": "news-article",
+    "title": "Lắp Internet Viettel kèm Camera AI: Giải pháp giám sát trẻ nhỏ an tâm nhất",
+    "description": "Khám phá các gói cước Internet tích hợp Camera AI của Viettel giúp ba mẹ dễ dàng giám sát, chăm sóc trẻ nhỏ từ xa với tốc độ mạng ổn định và hình ảnh sắc nét.",
+    "heading": "Tổng hợp gói cước Internet Camera AI dành cho gia đình có trẻ nhỏ tốt nhất 2026",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0127.html",
+    "rawSha256": "43894bf4794b507a3c038d8402179b0e885cde713a2bc8923939ccb8145d120a",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-camera-ai",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/nine-style": {
+    "kind": "news-article",
+    "title": "TẤT TẦN TẬT VỀ GÓI CƯỚC NINE VIETTEL - DATA THẢ GA, LỐI SỐNG BẬN RỘN",
+    "description": "“Làm việc xuyên biên giới, giải trí không biên giới.”",
+    "heading": "TẤT TẦN TẬT VỀ GÓI CƯỚC NINE VIETTEL - DATA THẢ GA, LỐI SỐNG BẬN RỘN",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0128.html",
+    "rawSha256": "1e825e366478179c3881e31af48769a52182b2e0f28c7d82c0eae9cb3e074f36",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/nine-style",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/cap-nhat-goi-cuoc-GIC": {
+    "kind": "news-article",
+    "title": "Tổng Hợp Gói GIC Viettel Mới Nhất 2026: Giá Rẻ, Ưu Đãi Cực Khủng",
+    "description": "Cập nhật bảng giá chi tiết các gói GIC30N, GIC70N, GIC90N, GIC125N của Viettel. Hướng dẫn cú pháp đăng ký nhanh nhất và những lưu ý quan trọng để không bỏ lỡ ưu đãi.",
+    "heading": "Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0129.html",
+    "rawSha256": "76550a064f4672c7a8a008ba7edc3a06515d458ed067ae071616e51b58f570f0",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/cap-nhat-goi-cuoc-GIC",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-5g-family": {
+    "kind": "news-article",
+    "title": "Cách đăng ký 5G Family Viettel: Giảm tới 20% cước cho cả nhà",
+    "description": "Chỉ với vài bước trên My Viettel, gia đình bạn sẽ nhận ngay chiết khấu cước di động lên đến 20% và quà tặng 10.000 điểm Viettel++. Xem ngay hướng dẫn xác thực nhóm 5G Family chi tiết tại đây!",
+    "heading": "Mẹo giảm đến 20% tiền điện thoại cho cả nhà với tính năng 5G Family trên My Viettel",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0130.html",
+    "rawSha256": "855e01227c5a963eea95c6d08f19ac7465cdf4f34a4f4a6bb005ad056a7e92c3",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-5g-family",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-mang-viettel": {
+    "kind": "news-article",
+    "title": "Gói mạng Viettel 2025 | Bảng giá mới nhất, 5G tốc độ cao, nhiều ưu đãi",
+    "description": "Bảng giá gói mạng Viettel 2025 mới nhất: 5G/4G tốc độ cao, miễn phí mạng xã hội, gói ngày linh hoạt. Chọn gói mạng Viettel phù hợp, đăng ký nhanh, giá ưu đãi.",
+    "heading": "Chọn đúng gói mạng Viettel, trải nghiệm internet không giới hạn",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0131.html",
+    "rawSha256": "954b5a97ab689320ed403b694eacbfb183096dde8ee00c6052e7f671fe94df46",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-mang-viettel",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/dung-5g-co-hao-pin-va-ton-data": {
+    "kind": "news-article",
+    "title": "Dùng 5G Có Hao Pin Và Tốn Data Hơn Không? Giải Đáp Cùng Chuyên Gia Viettel",
+    "description": "5G tốn pin hơn 4G khoảng 5% - 10% do xử lý tín hiệu. Sự thật về Data. Xem ngay 3 cách TẮT/Tối ưu 5G để tiết kiệm pin tối đa cho iPhone và Android!",
+    "heading": "SỰ THẬT: 5G Hao PIN và Tốn DATA Hơn 4G Bao Nhiêu? Chuyên gia VIETTEL Giải Đáp",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0132.html",
+    "rawSha256": "3d4528431e2a3c838b1cc3beb5f479d5c91d5675ed7d91fd31476edf0bca3765",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/dung-5g-co-hao-pin-va-ton-data",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-ngay-viettel": {
+    "kind": "news-article",
+    "title": "Đăng Ký 4G VIETTEL 1 NGÀY 5K: Cú Pháp Gói Cước Ngày Siêu Rẻ Mới Nhất",
+    "description": "Đăng ký 4G Viettel 1 ngày giá rẻ chỉ từ 5000Đ. Tổng hợp các gói 4G Viettel 1 ngày mới nhất 2025: data lớn, tốc độ cao, cách đăng ký nhanh nhất. Xem ngay!",
+    "heading": "Tổng Hợp Gói Cước Data 4G/5G Viettel 1 Ngày SIÊU RẺ MỚI NHẤT 2025 GIÁ CHỈ TỪ 5000Đ",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0133.html",
+    "rawSha256": "0cfe72cfe823eb1ec61fbb1b90e1c5eb193d800ec4b2f6a1b2f96e8a6709d697",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-ngay-viettel",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-viettel-thang-06-2025": {
+    "kind": "news-article",
+    "title": "Gói cước Viettel tháng 06/2025 mới nhất | Ưu đãi 4G/5G, Combo thoại + Data",
+    "description": "Tổng hợp gói cước Viettel tháng 06/2025 mới nhất: gói 4G/5G theo ngày, tháng, gói combo thoại + data, mạng xã hội, game. Đăng ký dễ dàng, nhiều ưu đãi. Xem ngay!",
+    "heading": "Đăng ký 4G 5G Viettel data khủng, giá rẻ cập nhật mới nhất",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0134.html",
+    "rawSha256": "cb894e519cae9e29012edec68717a59a7c89783e1b76b6761e6f93aa529fadd1",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-06-2025",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-mydio-viettel": {
+    "kind": "news-article",
+    "title": "MyDio Viettel - Ứng dụng nghe sách nói, truyện audio bản quyền | Gói cước MyDio mới nhất",
+    "description": "MyDio Viettel - Kho sách nói & truyện audio bản quyền dành cho người Việt. Giá gói MyDio ưu đãi. Đăng ký MyDio trên app, web hoặc gói cước Viettel bundle miễn phí MyDio.",
+    "heading": "Giới Thiệu MyDio Viettel - Ứng Dụng Nghe Sách Nói, Truyện Audio Bản Quyền Hấp Dẫn",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0135.html",
+    "rawSha256": "7f8517e3b7c77b7a1be3a7fd8dc3872737377044bd2a85e8b3f7a66ff78a32cc",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-mydio-viettel",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025": {
+    "kind": "news-article",
+    "title": "Tổng hợp các gói cước Internet Viettel WiFi 6 mới nhất – Tốc độ cao, phủ sóng toàn nhà",
+    "description": "Internet 6 là gì? Khám phá các gói Internet Viettel WiFi 6 mới nhất 2025 – Tốc độ từ 300 Mbps, tặng modem WiFi 6 miễn phí, hỗ trợ Mesh WiFi phủ sóng toàn bộ ngôi nhà trên mọi tỉnh thành Việt Nam. Tăng cường kết nối quốc tế nhờ tuyến cáp quang ADC siêu tốc.",
+    "heading": "Viettel cung cấp nhóm gói cước internet từ 300 Mbps, nhanh tương đương top 5 quốc gia có hạ tầng internet tốt nhất thế giới",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0136.html",
+    "rawSha256": "d1a870052a63d47c2c18fb95bb18f6638e5f4efa231987c5a11ba4a154fe8afa",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-viettel-thang-4-2025": {
+    "kind": "news-article",
+    "title": "Gói Cước Viettel 4G 5G Tháng 04/2025 – Danh Sách Mới Nhất, Giá Rẻ, Dễ Đăng Ký",
+    "description": "Cập nhật danh sách gói cước Viettel 4G 5G tháng 04/2025: gói ngày, gói tháng, gói mạng xã hội, combo data + gọi. Hướng dẫn đăng ký 4G Viettel, cú pháp huỷ gói, tiết kiệm chi phí truy cập mạng Viettel.",
+    "heading": "Danh sách gói cước 4G, 5G Viettel mới nhất tháng 4/2025",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0137.html",
+    "rawSha256": "55da2c2828e08d4cb7949befe65916fbd67f02285292464a9c123b689c3e4fe9",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-4-2025",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80": {
+    "kind": "news-article",
+    "title": "Trải Nghiệm Tốc Độ Cao Với Gói Cước Ngày Viettel - Đăng Ký Dễ Dàng",
+    "description": "Bạn cần data tốc độ cao cho công việc, giải trí hay học tập? Gói cước ngày Viettel với dung lượng lớn, giá hợp lý, giúp bạn kết nối mọi lúc, mọi nơi. Đăng ký ngay chỉ với một tin nhắn!",
+    "heading": "Viettel Ra Mắt Gói Cước Ngày Mới: ST7K, 5G10, 5G30, 5G70, 5GVS12, 5GVS80",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0138.html",
+    "rawSha256": "469bb863b343c1a8d0197f40808119285c0c963365100e4337fd3c5c14b16b35",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025": {
+    "kind": "news-article",
+    "title": "Viettel Đưa Công Nghệ Việt Đến Sự Kiện Di Động Lớn Nhất Hành Tinh",
+    "description": "Viettel khẳng định vị thế công nghệ Việt tại sự kiện di động lớn nhất thế giới MWC Barcelona 2025, mang đến các giải pháp tiên tiến, thúc đẩy chuyển đổi số toàn cầu. Xem chi tiết!",
+    "heading": "Viettel Đại Diện Việt Nam Tham Gia MWC Barcelona 2025",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0139.html",
+    "rawSha256": "2648df45ae26359aba8dbf866779598a2063169aaeb97ade01f239b29ce0e51c",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025": {
+    "kind": "news-article",
+    "title": "Gói Cước 4G 5G Viettel Mới Nhất Tháng 3/2025 – Cập Nhật Chi Tiết",
+    "description": "Cập nhật bảng giá và ưu đãi mới nhất của các gói cước 4G 5G Viettel tháng 3/2025. Xem ngay để chọn gói phù hợp, đăng ký nhanh chóng và tiết kiệm chi phí!",
+    "heading": "Gói cước 4G 5G Viettel cập nhật tháng 3/2025",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0140.html",
+    "rawSha256": "3335c76a4fcf62f7a964144e95b06627a8858073df02edc1ba12ab829fc3f6ab",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/lo-trinh-trien-khai-5g-viettel": {
+    "kind": "news-article",
+    "title": "Lộ Trình Triển Khai 5G Viettel – Hỗ Trợ Đối Tác Phát Triển Hệ Sinh Thái",
+    "description": "Viettel đẩy mạnh triển khai 5G từ 2025 với mục tiêu mở rộng 20.000 trạm, hỗ trợ doanh nghiệp qua Network Slicing & API mở. Tìm hiểu chiến lược & tiềm năng 5G tại Viettelup.vn.",
+    "heading": "Lộ Trình Triển Khai 5G Viettel – Hỗ Trợ Đối Tác Phát Triển Hệ Sinh Thái",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0141.html",
+    "rawSha256": "a63d29671055de0d78fcb9e807cb344f0832532d00d046811792c0acdfdca1a2",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/lo-trinh-trien-khai-5g-viettel",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025": {
+    "kind": "news-article",
+    "title": "Gói cước 4G, 5G Viettel tháng 2/2025 - Khuyến mãi mới nhất",
+    "description": "Cập nhật danh sách gói cước 4G, 5G Viettel tháng 2/2025 với ưu đãi data khủng, giá siêu tiết kiệm. Xem ngay cách đăng ký để tận hưởng internet tốc độ cao!",
+    "heading": "Gói cước 4G, 5G Viettel cập nhật tháng 2/2025",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0142.html",
+    "rawSha256": "a08dd94042bc86fb4bdf94d406828aac955817f3349bee35e8bdce0d09d29e2f",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang": {
+    "kind": "news-article",
+    "title": "Gói Cước 5G Viettel Chu Kỳ Dài 3 Tháng, 6 Tháng, 12 Tháng - Siêu Tiết Kiệm, Dung Lượng Khủng",
+    "description": "Khám phá các gói cước 5G Viettel chu kỳ 3 tháng, 6 tháng, 12 tháng với dung lượng data siêu tốc, giá siêu ưu đãi. Lựa chọn lý tưởng cho người dùng có nhu cầu sử dụng ổn định, dài hạn. Đăng ký dễ dàng qua SMS hoặc My Viettel!",
+    "heading": "Gói Cước 5G Viettel Chu Kỳ Dài – Kết Nối Ổn Định, Tốc Độ Đỉnh Cao",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0143.html",
+    "rawSha256": "8fc1a527e786525717bd0cde219f04b112bdaad39d9eede7a2d76fa4281c1544",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/goi-cuoc-5g-viettel-tet5g": {
+    "kind": "news-article",
+    "title": "Gói cước TET5G UP Viettel: 25GB + Nhiều Ưu Đãi Chỉ 50.000đ",
+    "description": "Đăng ký gói TET5G UP Viettel nhận ngay 25GB (5GB/ngày), miễn phí gọi nội mạng dưới 10 phút, 25 phút gọi ngoại mạng, và xem TV360. Giá chỉ 50.000đ/5 ngày.",
+    "heading": "Viettel ra mắt gói cước 5G giá rẻ chỉ 50.000đ đáp ứng trọn vẹn nhu cầu Tết",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0144.html",
+    "rawSha256": "bfac169e77cda04b8a194432645312977eb535ab471c43739f1fcad43a924000",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-5g-viettel-tet5g",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/tong-dai-viettel": {
+    "kind": "news-article",
+    "title": "Số tổng đài Viettel 24/7 – Hotline hỗ trợ mọi dịch vụ",
+    "description": "Tổng đài Viettel 1800 8098, 198, 1800 8119, 1800 8000,... hỗ trợ 24/7, miễn phí tư vấn dịch vụ di động, Internet, truyền hình, 4G, 5G và giải đáp mọi thắc mắc cho khách hàng.\n",
+    "heading": "TỔNG ĐÀI CSKH VIETTEL 24/7 Nhanh Nhất 2025: Hotline Lắp Mạng, Báo Hỏng và CSKH Miễn Phí",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0145.html",
+    "rawSha256": "986271c2134dcbd037412f775b24fe5e105f107fe752ca1376d000f411e5a312",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/tong-dai-viettel",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/so-sanh-goi-cuoc-4g-va-5g": {
+    "kind": "news-article",
+    "title": "So sánh gói cước 4G và 5G",
+    "description": "Viettel vừa chính thức ra mắt hệ gói cước 5G vào tháng 10 và thu hút đông đảo tệp fan công nghệ đu trend test 5G.",
+    "heading": "Gói Cước 5G Nổi Bật Gì So Với 4G?",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0146.html",
+    "rawSha256": "f49d40ce951d6291bd87dcfb8162f81cd348ec52b9db99fa42cea0fad3dbbc6e",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/so-sanh-goi-cuoc-4g-va-5g",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/dang-ky-5g-viettel-2024": {
+    "kind": "news-article",
+    "title": "Đăng Ký Gói Cước 5G Viettel 9/2024: Tốc Độ Đáng Kinh Ngạc!",
+    "description": "Khám phá gói cước 5G Viettel mới nhất tháng 9/2024 với tốc độ đáng kinh ngạc và kết nối ổn định. Đăng ký ngay để không bỏ lỡ cơ hội nâng cấp kết nối internet của bạn với Viettel.",
+    "heading": "Đăng Ký Gói Cước 5G Viettel Mới Nhất 9/2024: Hướng Dẫn Đầy Đủ Và Chi Tiết",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0147.html",
+    "rawSha256": "ccf82921db4642cc236019d90751080a997d17f91d50e4db3dd84d944e6186aa",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/dang-ky-5g-viettel-2024",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/khuyen-mai-nap-the-viettel-20-7": {
+    "kind": "news-article",
+    "title": "Khuyến mãi nạp thẻ Viettel ngày 20/7",
+    "description": "Tặng ngay 20% giá trị thẻ nạp cho các thuê bao di động trả trước khi thực hiện nạp tiền vào ngày 25/07/2024. Chương trình triển khai trên Toàn Quốc.",
+    "heading": "Tặng 20% giá trị thẻ nạp cho thuê bao Viettel trả trước trong ngày 25/7",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0148.html",
+    "rawSha256": "66d02c39862633644fbd5dcd9235eed6121b7bc9d208fc985f1c593b5fb3befd",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc": {
+    "kind": "news-article",
+    "title": "Tập đoàn Công nghiệp - Viễn thông Quân đội Viettel với chặng đường 35 năm thành lập và phát triển",
+    "description": "Từ ngành nghề chính ban đầu là xây lắp công trình viễn thông, đến nay Viettel đã phát triển thêm 5 ngành nghề mới gồm ngành dịch vụ viễn thông & CNTT",
+    "heading": "Viettel 35 năm - dòng chảy hạnh phúc",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0149.html",
+    "rawSha256": "9c6a013181aacaca8e088b4e4d7d0611f571a14af6f41d4f486f53927afa9567",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/khuyen-mai-nap-the-15-6": {
+    "kind": "news-article",
+    "title": "Khuyến mãi nạp thẻ Viettel ngày 15 tháng 6",
+    "description": "Tặng ngay 20% giá trị thẻ nạp cho các thuê bao di động trả trước khi thực hiện nạp tiền vào ngày 15/06/2024. Chương trình triển khai trên Toàn Quốc.",
+    "heading": "Khuyến mãi 20% thẻ nạp cho thuê bao trả trước mạng Viettel ngày 15/6",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0150.html",
+    "rawSha256": "5cb26c975a6bb21747058128ab7771af7ec8ffac45293db227a3eee2d624128d",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/khuyen-mai-nap-the-15-6",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/mo-app-co-qua-viettel-money": {
+    "kind": "news-article",
+    "title": "Mở app có quà - Cơ hội rinh thưởng triệu đồng từ Viettel Money. Đừng bỏ lỡ!",
+    "description": "Khách hàng truy cập app Viettel Money sẽ nhận ngay cơ hội trúng thưởng dựa trên số thứ tự mở app. Giải thưởng từ 1.000đ đến 1.000.000đ",
+    "heading": "Cơ hội rinh thưởng triệu đồng từ Viettel Money: Đừng bỏ lỡ!",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0151.html",
+    "rawSha256": "a695c38eb2a8108e6f243741175315c4ad087d94e51a83c999c141dda08769e5",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/mo-app-co-qua-viettel-money",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360": {
+    "kind": "news-article",
+    "title": "Gói cước Viettel 2026 | Đăng ký 4G 5G nhanh nhất",
+    "description": "Cập nhật gói cước Viettel 2026 mới nhất: các gói 4G, 5G theo ngày, tháng, combo data – thoại, ưu đãi hấp dẫn, đăng ký nhanh chóng.",
+    "heading": "TỔNG HỢP CÁCH ĐĂNG KÝ XEM TRỌN BỘ EURO 2024 TRÊN TV360",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0152.html",
+    "rawSha256": "2fdc183c5cfa01d119cfcc13519108ca6b50f8f8135bd4f90ece2175536ba874",
+    "sourceUrl": "https://www.viettelup.vn/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "news_article"
+  },
+  "/internet/NETVT01": {
+    "kind": "internet",
+    "title": "Gói NETVT01 Viettel 300Mbps + Camera + TV360 | Chỉ từ 225K/tháng",
+    "description": "Đăng ký NETVT01 Viettel tốc độ 300Mbps, WiFi 6, tặng camera + cloud 24h và TV360. Giá chỉ từ 225K/tháng, lắp đặt nhanh, ổn định cho gia đình.",
+    "heading": "Gói Internet NETVT01",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0153.html",
+    "rawSha256": "5e89dc6e9b32e06765b11a04b56a8a114019c80c02e36b077a8dfeafadfa141a",
+    "sourceUrl": "https://www.viettelup.vn/internet/NETVT01",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/NETVT01",
+      "code": "NETVT01",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/MESHVT01": {
+    "kind": "internet",
+    "title": "MESHVT1 Viettel 300Mbps + Mesh WiFi + Camera | Phủ sóng rộng từ 240K",
+    "description": "Đăng ký MESHVT1 Viettel 300Mbps, WiFi 6 + Mesh phủ sóng rộng, kèm camera & TV360. Giá từ 240K/tháng, ổn định cho nhà nhiều phòng, nhiều thiết bị.",
+    "heading": "Gói Internet MESHVT01",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0154.html",
+    "rawSha256": "aae53fd9f9f26c96ad38c0262d269a98d014ce18293510c3b2b4f6c604505161",
+    "sourceUrl": "https://www.viettelup.vn/internet/MESHVT01",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/MESHVT01",
+      "code": "MESHVT01",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/NETVT1": {
+    "kind": "internet",
+    "title": "Lắp Wifi Viettel 300Mbps Wifi 6 | NETVT1",
+    "description": "Lắp đặt internet Viettel gói Wifi 6 300Mbps chỉ từ 195.000đ/tháng tại tỉnh, 235.000đ tại HN/HCM. Lắp nhanh, miễn phí công lắp, hỗ trợ 24/7.",
+    "heading": "Gói Internet NETVT1",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0155.html",
+    "rawSha256": "0fc3ad9f0b88f0d9af7e939751231525415c5688daa18589c87d8a8a7df825c5",
+    "sourceUrl": "https://www.viettelup.vn/internet/NETVT1",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/NETVT1",
+      "code": "NETVT1",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/NETVT2": {
+    "kind": "internet",
+    "title": "Lắp Wifi Viettel 500Mbps Wifi 6 | NETVT2",
+    "description": "Lắp wifi Viettel NETVT2 500Mbps ổn định, hỗ trợ 10–15 thiết bị. Lắp đặt nhanh, hỗ trợ kỹ thuật 24/7.",
+    "heading": "Gói Internet NETVT2",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0156.html",
+    "rawSha256": "6d003d4abcb16e063ed20b21b442b3b3a0b9eb4fdfc7c585cf23c7f77f13b85d",
+    "sourceUrl": "https://www.viettelup.vn/internet/NETVT2",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/NETVT2",
+      "code": "NETVT2",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/MESHVT1": {
+    "kind": "internet",
+    "title": "Gói Mesh Wifi 6 Viettel MESHVT1 300Mbps | Phủ Sóng Rộng",
+    "description": "Gói Mesh Wifi 6 Viettel MESHVT1 tốc độ 300Mbps, phủ sóng rộng cho nhà nhiều tầng, hỗ trợ 25 thiết bị, tặng 1 tháng khi đóng trước 12 tháng.",
+    "heading": "Gói Internet MESHVT1",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0157.html",
+    "rawSha256": "ca5eed4db6e124c477b0ead3b2a97d867e52fe635e83381ce19d72ce20c1374f",
+    "sourceUrl": "https://www.viettelup.vn/internet/MESHVT1",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/MESHVT1",
+      "code": "MESHVT1",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/GIGA1": {
+    "kind": "internet",
+    "title": "Internet Viettel GIGA1_H 1Gbps | Nội Thành HN, HCM – 320K",
+    "description": "Gói Internet Viettel GIGA1_H tốc độ đối xứng 1Gbps, modem công nghệ mới, dùng ổn định 15–20 thiết bị. Áp dụng nội thành HN & HCM, giá 320K/tháng.",
+    "heading": "Gói Internet GIGA1",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0158.html",
+    "rawSha256": "690e9f50d8affb7f6006a24fa37420f90bc0a55166c1c3b99772d7f42d0f8460",
+    "sourceUrl": "https://www.viettelup.vn/internet/GIGA1",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/GIGA1",
+      "code": "GIGA1",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/GIGA2": {
+    "kind": "internet",
+    "title": "Internet Viettel GIGA2 1Gbps + Mesh | HN, HCM – 355K",
+    "description": "Gói Internet Viettel GIGA2 tốc độ đối xứng 1Gbps, kèm Mesh mở rộng vùng phủ, hỗ trợ 35–40 thiết bị. Áp dụng nội thành HN & HCM, giá 355K/tháng.",
+    "heading": "Gói Internet GIGA2",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0159.html",
+    "rawSha256": "3bbe4e4caa9fdc8aaee3f0ee3b63c225909f10e32e1cbe7d93a21e0a7ae16f15",
+    "sourceUrl": "https://www.viettelup.vn/internet/GIGA2",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/GIGA2",
+      "code": "GIGA2",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/GIGA3": {
+    "kind": "internet",
+    "title": "Internet Viettel GIGA3 1Gbps + 2 Mesh | HN, HCM – 390K",
+    "description": "Gói Internet Viettel GIGA3 tốc độ 1Gbps, WiFi 6 kèm 2 Mesh, phủ sóng mạnh cho văn phòng và streamer. Giá từ 390.000đ/tháng.",
+    "heading": "Gói Internet GIGA3",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0160.html",
+    "rawSha256": "f916c838736e943201495c7a4fb61850e8b9bf1f558269b64af9a9f34a4c7b50",
+    "sourceUrl": "https://www.viettelup.vn/internet/GIGA3",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/GIGA3",
+      "code": "GIGA3",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/GIGA4": {
+    "kind": "internet",
+    "title": "1 Modem Wifi 6 + 1 Mesh Wifi",
+    "description": "Gói Internet Viettel GIGA4 tốc độ 1Gbps, WiFi 6 kèm 3 Mesh, phủ sóng toàn không gian cho văn phòng, streamer và dân công nghệ. Giá từ 425.000đ/tháng.",
+    "heading": "Gói Internet GIGA4",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0161.html",
+    "rawSha256": "0011b95d52a486e924b6b593897b1eb47c589f2ad139297da6257d664058420b",
+    "sourceUrl": "https://www.viettelup.vn/internet/GIGA4",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/GIGA4",
+      "code": "GIGA4",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/MESHVT2": {
+    "kind": "internet",
+    "title": "Mesh WiFi 6 Viettel MESHVT2 | 500Gbps",
+    "description": "Gói Mesh WiFi 6 Viettel MESHVT2 phủ 3 vùng, tốc độ đến 500Mbps, hỗ trợ 25–30 thiết bị. Phù hợp nhà nhiều tầng.",
+    "heading": "Gói Internet MESHVT2",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0162.html",
+    "rawSha256": "a3c53d25dce81d122f61e537e9f4c84f5298169c021eb1ec7b96229d0fbe5566",
+    "sourceUrl": "https://www.viettelup.vn/internet/MESHVT2",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/MESHVT2",
+      "code": "MESHVT2",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/MESHVT3": {
+    "kind": "internet",
+    "title": "Mesh WiFi 6 Viettel MESHVT3 | 500Mbps",
+    "description": "Gói Mesh WiFi 6 Viettel MESHVT3 phủ 4 vùng, tốc độ đến 1Gbps, hỗ trợ 30–40 thiết bị. Phù hợp nhà lớn",
+    "heading": "Gói Internet MESHVT3",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0163.html",
+    "rawSha256": "4d8c1f7d60edb6bf6983d928d6eac82eb3957a162062a29dd091c7db77a79f33",
+    "sourceUrl": "https://www.viettelup.vn/internet/MESHVT3",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/MESHVT3",
+      "code": "MESHVT3",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/NETVT1_CAM1": {
+    "kind": "internet",
+    "title": "Internet + Camera Viettel NETVT1_CAM1 | 350Mbps",
+    "description": "Combo Internet Viettel + Camera NETVT1_CAM1: WiFi 6 tốc độ 350Mbps, tặng camera AI 2K xoay 360 độ đàm thoại 2 chiều, lưu trữ cloud 24h.",
+    "heading": "Gói Internet NETVT1_CAM1",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0164.html",
+    "rawSha256": "29659a6bce16909a04c0f3e7bc9d83ed5c1093ebf5e922bf18ce1ba4f28e890e",
+    "sourceUrl": "https://www.viettelup.vn/internet/NETVT1_CAM1",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/NETVT1_CAM1",
+      "code": "NETVT1_CAM1",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/NETVT2_CAM1": {
+    "kind": "internet",
+    "title": "Internet + Camera Viettel NETVT2_CAM1 | 500Mbps",
+    "description": "Combo Internet Viettel + Camera NETVT2_CAM1: WiFi 6 tốc độ 500Mbps, tặng camera AI 2K, lưu trữ cloud 24h.",
+    "heading": "Gói Internet NETVT2_CAM1",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0165.html",
+    "rawSha256": "34721cb65ddd03321b32520ee52dee97447ea213df5c2c5f62d459c49849afdf",
+    "sourceUrl": "https://www.viettelup.vn/internet/NETVT2_CAM1",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/NETVT2_CAM1",
+      "code": "NETVT2_CAM1",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/MESHVT1_CAM1": {
+    "kind": "internet",
+    "title": "Internet Mesh + Camera Viettel MESHVT1_CAM1 | 350Mbps",
+    "description": "Combo Internet Viettel MESHVT1H_CAM1: WiFi 6 Mesh phủ khắp nhà, tốc độ 350Mbps, camera AI 2K lưu trữ cloud 24h",
+    "heading": "Gói Internet MESHVT1_CAM1",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0166.html",
+    "rawSha256": "9b7d6dfc247189d8a1ed8befcea1bfb34558d1df5e4b61157cb29ee124acff61",
+    "sourceUrl": "https://www.viettelup.vn/internet/MESHVT1_CAM1",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/MESHVT1_CAM1",
+      "code": "MESHVT1_CAM1",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/MESHVT2_CAM1": {
+    "kind": "internet",
+    "title": "WiFi Mesh + Camera Viettel MESHVT2_CAM1 | 500Mbps",
+    "description": "Combo Internet Viettel MESHVT2_CAM1: WiFi 6 Mesh phủ 3 vùng, tốc độ 500Mbps, camera AI 2K lưu trữ cloud 24h.",
+    "heading": "Gói Internet MESHVT2_CAM1",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0167.html",
+    "rawSha256": "e9a81fba0042df388054ffd3b50d6a5257022859b9f54753d84cf787eb71c80a",
+    "sourceUrl": "https://www.viettelup.vn/internet/MESHVT2_CAM1",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/MESHVT2_CAM1",
+      "code": "MESHVT2_CAM1",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/NETVT1_GIAITRI": {
+    "kind": "internet",
+    "title": "Combo Internet + TV360 Viettel 300Mbps | NETVT1_GIAITRI",
+    "description": "Gói combo Internet Viettel + TV360 NETVT1_GIAITRI tốc độ 300Mbps, WiFi 6, hơn 100 kênh truyền hình và kho phim hấp dẫn",
+    "heading": "Gói Internet NETVT1_GIAITRI",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0168.html",
+    "rawSha256": "c149175067515db654d801e1370dfbd2fdce69e4606730db86e2362154dd13c2",
+    "sourceUrl": "https://www.viettelup.vn/internet/NETVT1_GIAITRI",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/NETVT1_GIAITRI",
+      "code": "NETVT1_GIAITRI",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/NETVT2_GIAITRI": {
+    "kind": "internet",
+    "title": "Combo Internet Viettel + TV360 500Mbps | NETVT2_GIAITRI",
+    "description": "Combo Internet Viettel + TV360 NETVT2_GIAITRI: tốc độ 500Mbps, WiFi 6, hơn 100 kênh TV và kho phim phong phú.",
+    "heading": "Gói Internet NETVT2_GIAITRI",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0169.html",
+    "rawSha256": "79a5ded0397f59a1ab90f8234c4820ced804b207b7c12fd92669c1c7af9f0b34",
+    "sourceUrl": "https://www.viettelup.vn/internet/NETVT2_GIAITRI",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/NETVT2_GIAITRI",
+      "code": "NETVT2_GIAITRI",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet/MESHVT1_GIAITRI": {
+    "kind": "internet",
+    "title": "Combo WiFi Mesh Viettel + TV360 300Mbps | MESHVT_GIAITRI",
+    "description": "Combo Internet Viettel + TV360 MESHVT_GIAITRI: WiFi 6 Mesh phủ sóng nhiều phòng, tốc độ 300Mbps, xem hơn 100 kênh TV và kho phim lớn. Giá chỉ từ 230K/tháng.",
+    "heading": "Gói Internet MESHVT1_GIAITRI",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0170.html",
+    "rawSha256": "6c6463878c681949f1eef33a5e8da70afc165c79e037c70aad81037dd0da97bb",
+    "sourceUrl": "https://www.viettelup.vn/internet/MESHVT1_GIAITRI",
+    "capturedAt": "2026-10-27T08:27:55.740Z",
+    "templateId": "internet_detail",
+    "product": {
+      "id": "/internet/MESHVT1_GIAITRI",
+      "code": "MESHVT1_GIAITRI",
+      "subscription": "unspecified"
+    }
+  },
+  "/internet": {
+    "kind": "collection",
+    "title": "Internet Viettel - WiFi Cáp Quang Nhanh, Ổn Định, Giá Tốt",
+    "description": "Internet Viettel - WiFi Cáp Quang Nhanh, Ổn Định, Giá Tốt",
+    "heading": "Trải nghiệm Internet không giới hạnTừ 195.000đ/tháng",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0171.html",
+    "rawSha256": "6e847c84a8e86cff66ff8869f562f46e2d2b0fe5abfb1b3fe888a8feb85ebe77",
+    "sourceUrl": "https://www.viettelup.vn/internet",
+    "capturedAt": "2026-10-27T11:26:12.084Z",
+    "templateId": "collection.internet"
+  },
+  "/goi-cuoc-gic": {
+    "kind": "collection",
+    "title": "GIC Viettel là gì? Gói cước dành cho học sinh, sinh viên",
+    "description": "GIC Viettel là gì? Gói cước dành cho học sinh, sinh viên",
+    "heading": "Đề bài: GIC là gì?",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0172.html",
+    "rawSha256": "186457859dd29929622761f365691267d1e54564136e77319dd7f5359652c201",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-gic",
+    "capturedAt": "2026-10-27T11:26:12.084Z",
+    "templateId": "collection.goi-cuoc-gic"
+  },
+  "/goi-cuoc-nine": {
+    "kind": "collection",
+    "title": "NINE Viettel – Gói cước trả sau cao cấp, nhiều đặc quyền",
+    "description": "NINE Viettel – Gói cước trả sau cao cấp, nhiều đặc quyền",
+    "heading": "NINE Viettel – Gói cước trả sau cao cấp, nhiều đặc quyền",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0173.html",
+    "rawSha256": "b6772bbc39e7f4da8100ef26c4912413bda39bd893c92af1f7fc2e2bbe450cd7",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-nine",
+    "capturedAt": "2026-10-27T11:26:12.084Z",
+    "templateId": "collection.goi-cuoc-nine"
+  },
+  "/goi-cuoc-roaming": {
+    "kind": "collection",
+    "title": "Gói Data Roaming Viettel – Dùng Internet Khi Ra Nước Ngoài, Không Cần Đổi SIM",
+    "description": "Gói Data Roaming Viettel – Dùng Internet Khi Ra Nước Ngoài, Không Cần Đổi SIM",
+    "heading": "Gói cước roaming – Dùng Internet khi đi nước ngoài",
+    "rawHtmlPath": "work/web-clone-benchmark/raw/html/0174.html",
+    "rawSha256": "89e90ec9ddb36462dc5eab39c54cf9b7da67ed767a35bbe1d4d995e2351705cd",
+    "sourceUrl": "https://www.viettelup.vn/goi-cuoc-roaming",
+    "capturedAt": "2026-10-27T11:26:12.084Z",
+    "templateId": "collection.goi-cuoc-roaming"
+  }
+}

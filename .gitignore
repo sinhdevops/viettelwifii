@@ -1,0 +1,20 @@
+node_modules/
+.next/
+.next-preview/
+out/
+coverage/
+playwright-report/
+test-results/
+.env*
+!.env.example
+# Approved routes and verified page content are part of the reproducible source.
+reference-clone/
+reports/
+*.tsbuildinfo
+
+work/
+.playwright-mcp/
+outputs/
+tests/
+scripts/
+docs/

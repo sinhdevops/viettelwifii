@@ -1,0 +1,76 @@
+{
+  "createdAt": "2026-10-27T10:13:00.349Z",
+  "source": "http://localhost:4185/",
+  "candidate": "http://localhost:4191/",
+  "routeCount": 1,
+  "viewportCount": 1,
+  "fullPage": true,
+  "samples": 1,
+  "problematicSamples": 0,
+  "rows": [
+    {
+      "route": "/tin-tuc",
+      "width": 1440,
+      "original": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
+          "h1": [
+            "DÙNG MẠNG MỖI NGÀY\nKHÔNG CẦN WIFI"
+          ],
+          "textLength": 1100,
+          "missingImages": [],
+          "overflow": false,
+          "documentHeight": 3406,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [
+          "Loading the script 'https://www.googletagmanager.com/gtag/js?id=AW-17592464480' violates the following Content Security Policy directive: \"script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'\". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked.",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        ],
+        "failedLocal": [
+          "404 http://localhost:4185/internet?_rsc=1v3zb",
+          "404 http://localhost:4185/goi-cuoc-gic?_rsc=1v3zb",
+          "404 http://localhost:4185/goi-cuoc-nine?_rsc=1v3zb",
+          "404 http://localhost:4185/goi-cuoc-roaming?_rsc=1v3zb"
+        ],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-full-page-1440\\screenshots\\tin-tuc-1440-html.png"
+      },
+      "next": {
+        "status": 200,
+        "navigationError": null,
+        "dom": {
+          "title": "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
+          "h1": [
+            "DÙNG MẠNG MỖI NGÀY\nKHÔNG CẦN WIFI"
+          ],
+          "textLength": 1100,
+          "missingImages": [],
+          "overflow": false,
+          "documentHeight": 3405,
+          "classCounts": {
+            "header": 0,
+            "footer": 1,
+            "article": 1
+          }
+        },
+        "consoleErrors": [],
+        "failedLocal": [],
+        "screenshot": "C:\\Users\\EmSinhChoiGay\\Downloads\\VIETTELUP-CODEX-KIT\\src\\features\\news\\evidence\\visual-full-page-1440\\screenshots\\tin-tuc-1440-next.png"
+      },
+      "image": {
+        "meanAbsolutePixelDifference": 0.24,
+        "changedPixelsPct": 0.13,
+        "sourceHeight": 3406,
+        "nextHeight": 3405,
+        "comparedHeight": 3405,
+        "heightDifference": -1
+      }
+    }
+  ]
+}

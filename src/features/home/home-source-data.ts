@@ -1,0 +1,2717 @@
+// Extracted from work/web-clone-benchmark/raw/html/home.html (source DOM).
+// Values, order and mapped asset bytes are source-derived. Regenerate only from the captured source.
+
+export type HomeIcon = {kind: "img"; src: string; alt: string; className: string} | {kind: "text"; text: string; className: string};
+export type HomeCard = {code: string; metricType: "quota" | "free"; metricText: string; metricUnit: string; metricDescription: string; secondMetric: string; perkText: string; icons: HomeIcon[]; price: string; priceUnit: string; sms: string; discount: string};
+export type HomeCategory = {title: string; className: string; cards: HomeCard[]};
+export type HomeGroup = {title: string; className: string; expanded: boolean; categories: HomeCategory[]};
+export type HomeNews = {href: string; image: string; imageAlt: string; date: string; title: string};
+
+export const homeGroups: HomeGroup[] = [
+  {
+    "title": "Gói cước tháng",
+    "className": "md:bg-transparent md:px-8 md:py-8 lg:px-0",
+    "expanded": true,
+    "categories": [
+      {
+        "title": "GÓI CƯỚC DATA 5G",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "5G135",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "4 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "135.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G135 UP",
+            "discount": ""
+          },
+          {
+            "code": "5G150",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G150 UP",
+            "discount": ""
+          },
+          {
+            "code": "5G160B",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "4 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "160.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G160B UP",
+            "discount": ""
+          },
+          {
+            "code": "5G180B",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "180.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G180B UP",
+            "discount": ""
+          },
+          {
+            "code": "5G230B",
+            "metricType": "quota",
+            "metricText": "8GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "8 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "230.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G230B UP",
+            "discount": ""
+          },
+          {
+            "code": "5G280B",
+            "metricType": "quota",
+            "metricText": "10GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "10 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "280.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G280B UP",
+            "discount": ""
+          },
+          {
+            "code": "5G330B",
+            "metricType": "quota",
+            "metricText": "12GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "12 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "330.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G330B UP",
+            "discount": ""
+          },
+          {
+            "code": "5G380B",
+            "metricType": "quota",
+            "metricText": "15GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "15 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "380.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G380B UP",
+            "discount": ""
+          },
+          {
+            "code": "5G480B",
+            "metricType": "quota",
+            "metricText": "20GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "20 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "480.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G480B UP",
+            "discount": ""
+          },
+          {
+            "code": "5G135N",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "135.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G135N UP",
+            "discount": ""
+          },
+          {
+            "code": "5G150N",
+            "metricType": "quota",
+            "metricText": "8GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "8 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G150N UP",
+            "discount": ""
+          },
+          {
+            "code": "5GLQ190",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "2GB/ngày Liên Quân",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "190.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5GLQ190 UP",
+            "discount": ""
+          },
+          {
+            "code": "5GLQ210",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "2GB/ngày Liên Quân",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/d658470ad5815161ccc2628d.svg",
+                "alt": "mybox",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "210.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5GLQ210 UP",
+            "discount": ""
+          },
+          {
+            "code": "5G200C",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "200.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G200C UP",
+            "discount": ""
+          },
+          {
+            "code": "5G300C",
+            "metricType": "quota",
+            "metricText": "10GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "10 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "300.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5G300C UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC DATA 4G",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "SD90",
+            "metricType": "quota",
+            "metricText": "1.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "90.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=SD90 UP",
+            "discount": ""
+          },
+          {
+            "code": "SD120",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Basic",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=SD120 UP",
+            "discount": ""
+          },
+          {
+            "code": "SD135",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Basic",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "135.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=SD135 UP",
+            "discount": ""
+          },
+          {
+            "code": "SD150",
+            "metricType": "quota",
+            "metricText": "3GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "3 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Basic",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=SD150 UP",
+            "discount": ""
+          },
+          {
+            "code": "VM80",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/a79272683e1b36261bf0574f.svg",
+                "alt": "mydio",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Mydio",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "80.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=VM80 UP",
+            "discount": ""
+          },
+          {
+            "code": "VM100",
+            "metricType": "quota",
+            "metricText": "1.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/a79272683e1b36261bf0574f.svg",
+                "alt": "mydio",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Mydio",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "100.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=VM100 UP",
+            "discount": ""
+          },
+          {
+            "code": "VM130",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/a79272683e1b36261bf0574f.svg",
+                "alt": "mydio",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Mydio",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "130.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=VM130 UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC MIỄN PHÍ MẠNG XÃ HỘI",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "MXH100",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "100.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=MXH100 UP",
+            "discount": ""
+          },
+          {
+            "code": "MXH120",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=MXH120 UP",
+            "discount": ""
+          },
+          {
+            "code": "MXH150",
+            "metricType": "quota",
+            "metricText": "1.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=MXH150 UP",
+            "discount": ""
+          },
+          {
+            "code": "5GMXH200",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "200.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5GMXH200 UP",
+            "discount": ""
+          },
+          {
+            "code": "5GMXH230",
+            "metricType": "quota",
+            "metricText": "3GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "3 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "230.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=5GMXH230 UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC DATA + GỌI",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "V90B",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "90.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V90B UP",
+            "discount": ""
+          },
+          {
+            "code": "V120B",
+            "metricType": "quota",
+            "metricText": "1.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V120B UP",
+            "discount": ""
+          },
+          {
+            "code": "V150B",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V150B UP",
+            "discount": ""
+          },
+          {
+            "code": "V160B",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "4 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "160.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V160B UP",
+            "discount": ""
+          },
+          {
+            "code": "V180B",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "180.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V180B UP",
+            "discount": ""
+          },
+          {
+            "code": "V200B",
+            "metricType": "quota",
+            "metricText": "8GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "8 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "200.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V200B UP",
+            "discount": ""
+          },
+          {
+            "code": "30N",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/0a4722908ce9c7f6702e4ff0.svg",
+                "alt": "sms",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "300.000đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "sms:290?body=30N UP",
+            "discount": ""
+          },
+          {
+            "code": "90N",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/0a4722908ce9c7f6702e4ff0.svg",
+                "alt": "sms",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "900.000đ",
+            "priceUnit": "/ 90 ngày",
+            "sms": "sms:290?body=90N UP",
+            "discount": ""
+          },
+          {
+            "code": "180N",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/0a4722908ce9c7f6702e4ff0.svg",
+                "alt": "sms",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "1800.000đ",
+            "priceUnit": "/ 6 tháng",
+            "sms": "sms:290?body=180N UP",
+            "discount": ""
+          },
+          {
+            "code": "360N",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/0a4722908ce9c7f6702e4ff0.svg",
+                "alt": "sms",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "3600.000đ",
+            "priceUnit": "/ năm",
+            "sms": "sms:290?body=360N UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC MIỄN PHÍ TV360",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "TV75K",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "75.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TV75K UP",
+            "discount": ""
+          },
+          {
+            "code": "TV90C",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "90.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TV90C UP",
+            "discount": ""
+          },
+          {
+            "code": "TV95K",
+            "metricType": "quota",
+            "metricText": "1.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "95.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TV95K UP",
+            "discount": ""
+          },
+          {
+            "code": "TV120C",
+            "metricType": "quota",
+            "metricText": "1.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TV120C UP",
+            "discount": ""
+          },
+          {
+            "code": "TV120K",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TV120K UP",
+            "discount": ""
+          },
+          {
+            "code": "TV125K",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "125.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TV125K UP",
+            "discount": ""
+          },
+          {
+            "code": "TH30",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/9db63c1dc983c5cad433d98e.svg",
+                "alt": "tv3604k",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Standard",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "50.000đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "sms:290?body=TH30 UP",
+            "discount": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gói cước ngày",
+    "className": "md:bg-transparent md:px-8 md:py-8 lg:px-0",
+    "expanded": true,
+    "categories": [
+      {
+        "title": "GÓI CƯỚC MẠNG XÃ HỘI - ADD ON",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "T50K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TikTok",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "50.000đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "sms:290?body=T50K UP",
+            "discount": ""
+          },
+          {
+            "code": "YT50K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Youtube",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "50.000đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "sms:290?body=YT50K UP",
+            "discount": ""
+          },
+          {
+            "code": "FB50K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Facebook",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "50.000đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "sms:290?body=FB50K UP",
+            "discount": ""
+          },
+          {
+            "code": "T15K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TikTok",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "15.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=T15K UP",
+            "discount": ""
+          },
+          {
+            "code": "YT15K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Youtube",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "15.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=YT15K UP",
+            "discount": ""
+          },
+          {
+            "code": "FB15K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Facebook",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "15.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=FB15K UP",
+            "discount": ""
+          },
+          {
+            "code": "T5K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/f70b923544e36b46b35f4f1e.svg",
+                "alt": "tiktok",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Tiktok",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "5.000đ",
+            "priceUnit": "/ ngày",
+            "sms": "sms:290?body=T5K UP",
+            "discount": ""
+          },
+          {
+            "code": "YT5K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/7e5b5e57e94a0a4fed8dfede.svg",
+                "alt": "youtube",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Youtube",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "5.000đ",
+            "priceUnit": "/ ngày",
+            "sms": "sms:290?body=YT5K UP",
+            "discount": ""
+          },
+          {
+            "code": "FB5K",
+            "metricType": "free",
+            "metricText": "MIỄN PHÍ",
+            "metricUnit": "",
+            "metricDescription": "Miễn phí Data truy cập",
+            "secondMetric": "Data truy cập",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/84b4d07b454ce55bea7aca8a.svg",
+                "alt": "facebook",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/53fafbee202f1f4c4f14ac84.svg",
+                "alt": "messenger",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Facebook",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "5.000đ",
+            "priceUnit": "/ ngày",
+            "sms": "sms:290?body=FB5K UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC DATA COMBO",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "5G20",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/3 ngày",
+            "metricDescription": "6 GB/3 ngày",
+            "secondMetric": "/3 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "20.000đ",
+            "priceUnit": "/ 3 ngày",
+            "sms": "sms:290?body=5G20 UP",
+            "discount": ""
+          },
+          {
+            "code": "5G30",
+            "metricType": "quota",
+            "metricText": "7GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "7 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "30.000đ",
+            "priceUnit": "/ 3 ngày",
+            "sms": "sms:290?body=5G30 UP",
+            "discount": ""
+          },
+          {
+            "code": "5G40",
+            "metricType": "quota",
+            "metricText": "15GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "15 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "40.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=5G40 UP",
+            "discount": ""
+          },
+          {
+            "code": "5G70",
+            "metricType": "quota",
+            "metricText": "8GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "8 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "70.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=5G70 UP",
+            "discount": ""
+          },
+          {
+            "code": "5GVS80",
+            "metricType": "quota",
+            "metricText": "8GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "8 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "80.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=5GVS80 UP",
+            "discount": ""
+          },
+          {
+            "code": "3N",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/0a4722908ce9c7f6702e4ff0.svg",
+                "alt": "sms",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "30.000đ",
+            "priceUnit": "/ 3 ngày",
+            "sms": "sms:290?body=3N UP",
+            "discount": ""
+          },
+          {
+            "code": "7N",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/0a4722908ce9c7f6702e4ff0.svg",
+                "alt": "sms",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "70.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=7N UP",
+            "discount": ""
+          },
+          {
+            "code": "5G10",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "10.000đ",
+            "priceUnit": "/ ngày",
+            "sms": "sms:290?body=5G10 UP",
+            "discount": ""
+          },
+          {
+            "code": "1N",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "Miễn phí",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/0a4722908ce9c7f6702e4ff0.svg",
+                "alt": "sms",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              }
+            ],
+            "price": "10.000đ",
+            "priceUnit": "/ 1 ngày",
+            "sms": "sms:290?body=1N UP",
+            "discount": ""
+          },
+          {
+            "code": "5GVS12",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "12.000đ",
+            "priceUnit": "/ ngày",
+            "sms": "sms:290?body=5GVS12 UP",
+            "discount": ""
+          },
+          {
+            "code": "ST7K",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "7.000đ",
+            "priceUnit": "/ ngày",
+            "sms": "sms:290?body=ST7K UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC DATA MIỄN PHÍ GỌI",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "V15B",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/15 ngày",
+            "metricDescription": "1 GB/15 ngày",
+            "secondMetric": "/15 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "15.000đ",
+            "priceUnit": "/ 15 ngày",
+            "sms": "sms:290?body=V15B UP",
+            "discount": ""
+          },
+          {
+            "code": "V25B",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/15 ngày",
+            "metricDescription": "2 GB/15 ngày",
+            "secondMetric": "/15 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "25.000đ",
+            "priceUnit": "/ 15 ngày",
+            "sms": "sms:290?body=V25B UP",
+            "discount": ""
+          },
+          {
+            "code": "V35B",
+            "metricType": "quota",
+            "metricText": "7.5GB",
+            "metricUnit": "/15 ngày",
+            "metricDescription": "7.5 GB/15 ngày",
+            "secondMetric": "/15 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "35.000đ",
+            "priceUnit": "/ 15 ngày",
+            "sms": "sms:290?body=V35B UP",
+            "discount": ""
+          },
+          {
+            "code": "C20K",
+            "metricType": "quota",
+            "metricText": "1GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "1 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "20.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=C20K UP",
+            "discount": ""
+          },
+          {
+            "code": "F30",
+            "metricType": "quota",
+            "metricText": "3GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "3 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "30.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=F30 UP",
+            "discount": ""
+          },
+          {
+            "code": "FT50",
+            "metricType": "quota",
+            "metricText": "7GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "7 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "50.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=FT50 UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC TUẦN",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "TV35K",
+            "metricType": "quota",
+            "metricText": "7GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "7 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "35.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=TV35K UP",
+            "discount": ""
+          },
+          {
+            "code": "TV65K",
+            "metricType": "quota",
+            "metricText": "14GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "14 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "TV360 4K",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "65.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=TV65K UP",
+            "discount": ""
+          },
+          {
+            "code": "V50K",
+            "metricType": "quota",
+            "metricText": "7GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "7 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "50.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=V50K UP",
+            "discount": ""
+          },
+          {
+            "code": "V100K",
+            "metricType": "quota",
+            "metricText": "21GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "21 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "100.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=V100K UP",
+            "discount": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Gói cước khác",
+    "className": "md:bg-transparent md:px-8 md:py-8 lg:px-0",
+    "expanded": true,
+    "categories": [
+      {
+        "title": "GÓI DATA NGÀY",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "ST15K",
+            "metricType": "quota",
+            "metricText": "3GB",
+            "metricUnit": "/3 ngày",
+            "metricDescription": "3 GB/3 ngày",
+            "secondMetric": "/3 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "15.000đ",
+            "priceUnit": "/ 3 ngày",
+            "sms": "sms:290?body=ST15K UP",
+            "discount": ""
+          },
+          {
+            "code": "MI20K",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/5 ngày",
+            "metricDescription": "2 GB/5 ngày",
+            "secondMetric": "/5 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "20.000đ",
+            "priceUnit": "/ 5 ngày",
+            "sms": "sms:290?body=MI20K UP",
+            "discount": ""
+          },
+          {
+            "code": "ST30K",
+            "metricType": "quota",
+            "metricText": "7GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "7 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "30.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=ST30K UP",
+            "discount": ""
+          },
+          {
+            "code": "EST30",
+            "metricType": "quota",
+            "metricText": "7GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "7 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "Miễn phí data",
+            "icons": [],
+            "price": "30.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=EST30 UP",
+            "discount": ""
+          },
+          {
+            "code": "V30X",
+            "metricType": "quota",
+            "metricText": "3.5GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "3.5 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "30.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=V30X UP",
+            "discount": ""
+          },
+          {
+            "code": "MI50K",
+            "metricType": "quota",
+            "metricText": "5GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "5 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "50.000đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "sms:290?body=MI50K UP",
+            "discount": ""
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC TỔNG HỢP",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "ST60N",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "60.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=ST60N UP",
+            "discount": ""
+          },
+          {
+            "code": "TRE60",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "60.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TRE60 UP",
+            "discount": ""
+          },
+          {
+            "code": "ST70K",
+            "metricType": "quota",
+            "metricText": "500MB",
+            "metricUnit": "/ngày",
+            "metricDescription": "500 MB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "70.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=ST70K UP",
+            "discount": ""
+          },
+          {
+            "code": "ST90N",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "4 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "90.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=ST90N UP",
+            "discount": ""
+          },
+          {
+            "code": "TRE90",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "4 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "90.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=TRE90 UP",
+            "discount": ""
+          },
+          {
+            "code": "V120N",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "4 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V120N UP",
+            "discount": ""
+          },
+          {
+            "code": "V120C",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V120C UP",
+            "discount": ""
+          },
+          {
+            "code": "ST120K",
+            "metricType": "quota",
+            "metricText": "2GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Basic",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "120.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=ST120K UP",
+            "discount": ""
+          },
+          {
+            "code": "V150N",
+            "metricType": "quota",
+            "metricText": "6GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "6 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V150N UP",
+            "discount": ""
+          },
+          {
+            "code": "V150C",
+            "metricType": "quota",
+            "metricText": "3GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "3 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V150C UP",
+            "discount": ""
+          },
+          {
+            "code": "ST150K",
+            "metricType": "quota",
+            "metricText": "3GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "3 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/c81a63ed94891bbcef4d9b99.svg",
+                "alt": "tv360",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Basic",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "150.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=ST150K UP",
+            "discount": ""
+          },
+          {
+            "code": "V200C",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "4 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [
+              {
+                "kind": "img",
+                "src": "/assets/viettelup/253c14f43e1bdddaae0b4925.svg",
+                "alt": "phone",
+                "className": "md:h-[30px] md:w-[30px]"
+              },
+              {
+                "kind": "text",
+                "text": "Miễn phí gọi",
+                "className": "px-[3px] text-[11px]"
+              }
+            ],
+            "price": "200.000đ",
+            "priceUnit": "/ tháng",
+            "sms": "sms:290?body=V200C UP",
+            "discount": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GÓI CƯỚC VIETTEL MONEY",
+    "className": "bg-primary md:bg-transparent ml-[-16px] pl-[16px] md:ml-0 [&_h3]:text-white md:[&_h3]:text-black md:px-8 md:py-8 lg:px-0",
+    "expanded": true,
+    "categories": [
+      {
+        "title": "GÓI CƯỚC 1-7 NGÀY",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "KS2H",
+            "metricType": "quota",
+            "metricText": "1.2GB",
+            "metricUnit": "/2 giờ",
+            "metricDescription": "1.2 GB/2 giờ",
+            "secondMetric": "/2 giờ",
+            "perkText": "",
+            "icons": [],
+            "price": "5.700đ",
+            "priceUnit": "/ 2 giờ",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          },
+          {
+            "code": "KS6H",
+            "metricType": "quota",
+            "metricText": "3GB",
+            "metricUnit": "/6 giờ",
+            "metricDescription": "3 GB/6 giờ",
+            "secondMetric": "/6 giờ",
+            "perkText": "",
+            "icons": [],
+            "price": "9.500đ",
+            "priceUnit": "/ 6 giờ",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          },
+          {
+            "code": "KS8",
+            "metricType": "quota",
+            "metricText": "1.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "1.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "7.600đ",
+            "priceUnit": "/ ngày",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          },
+          {
+            "code": "KS12",
+            "metricType": "quota",
+            "metricText": "2.5GB",
+            "metricUnit": "/ngày",
+            "metricDescription": "2.5 GB/ngày",
+            "secondMetric": "/ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "11.400đ",
+            "priceUnit": "/ ngày",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          },
+          {
+            "code": "KS20",
+            "metricType": "quota",
+            "metricText": "4GB",
+            "metricUnit": "/3 ngày",
+            "metricDescription": "4 GB/3 ngày",
+            "secondMetric": "/3 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "19.000đ",
+            "priceUnit": "/ 3 ngày",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          },
+          {
+            "code": "KS36",
+            "metricType": "quota",
+            "metricText": "8GB",
+            "metricUnit": "/7 ngày",
+            "metricDescription": "8 GB/7 ngày",
+            "secondMetric": "/7 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "34.200đ",
+            "priceUnit": "/ 7 ngày",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          }
+        ]
+      },
+      {
+        "title": "GÓI CƯỚC 30 NGÀY",
+        "className": "flex flex-col gap-2 pt-6 first:pt-2 md:gap-6 md:pt-12 md:first:pt-6\n                    [&_.data-card-icons]:border-[#DDD] [&_.data-card-icons]:bg-[#FAFAFA] \n                    [&_.data-card]:bg-[url('/images/bg-data.png')]\n                    ",
+        "cards": [
+          {
+            "code": "KS110",
+            "metricType": "quota",
+            "metricText": "36GB",
+            "metricUnit": "/30 ngày",
+            "metricDescription": "36 GB/30 ngày",
+            "secondMetric": "/30 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "104.500đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          },
+          {
+            "code": "KS145",
+            "metricType": "quota",
+            "metricText": "66GB",
+            "metricUnit": "/30 ngày",
+            "metricDescription": "66 GB/30 ngày",
+            "secondMetric": "/30 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "137.800đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          },
+          {
+            "code": "KS165",
+            "metricType": "quota",
+            "metricText": "90GB",
+            "metricUnit": "/30 ngày",
+            "metricDescription": "90 GB/30 ngày",
+            "secondMetric": "/30 ngày",
+            "perkText": "",
+            "icons": [],
+            "price": "156.800đ",
+            "priceUnit": "/ 30 ngày",
+            "sms": "",
+            "discount": "/assets/viettelup/54b6c5f3d3d39a6589c01632.svg"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+export const homeNews: HomeNews[] = [
+  {
+    "href": "/tin-tuc/so-sanh-roaming",
+    "image": "/assets/viettelup/af1e14f28e46caf357431e7f.jpeg",
+    "imageAlt": "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?",
+    "date": "2/7/2026",
+    "title": "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?"
+  },
+  {
+    "href": "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
+    "image": "/assets/viettelup/c842cb99847910a15f8f07d2.jpeg",
+    "imageAlt": "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
+    "date": "27/06/2026",
+    "title": "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data"
+  },
+  {
+    "href": "/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+    "image": "/assets/viettelup/9c7f40eb51aa115e109e7319.jpeg",
+    "imageAlt": "Tổng hợp chi tiết gói cước data 4G Viettel 2026 và cách đăng ký",
+    "date": "11/05/2026",
+    "title": "Tổng hợp chi tiết gói cước data 4G Viettel 2026 và cách đăng ký"
+  },
+  {
+    "href": "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
+    "image": "/assets/viettelup/791dfe9b8497b6f3cb429744.jpg",
+    "imageAlt": "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026",
+    "date": "24/4/2026",
+    "title": "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026"
+  },
+  {
+    "href": "/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
+    "image": "/assets/viettelup/47299b6c1c4ccdfe159acf16.jpeg",
+    "imageAlt": "Gói cước Roaming Viettel là gì? Tổng hợp các gói Roaming phù hợp cho người đi du lịch, công tác nước ngoài",
+    "date": "31/3/2026",
+    "title": "Gói cước Roaming Viettel là gì? Tổng hợp các gói Roaming phù hợp cho người đi du lịch, công tác nước ngoài"
+  },
+  {
+    "href": "/tin-tuc/giai-dap-thac-mac-hssv",
+    "image": "/assets/viettelup/ffcc08e0c1da267cd3969b71.jpg",
+    "imageAlt": "GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP CHO HSSV KHI ĐĂNG KÝ DATA VIETTEL",
+    "date": "3/3/2026",
+    "title": "GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP CHO HSSV KHI ĐĂNG KÝ DATA VIETTEL"
+  }
+];

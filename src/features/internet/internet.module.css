@@ -1,0 +1,75 @@
+/* These scoped adjustments map the captured source background assets to their local copies. */
+.page {
+  min-width: 0;
+}
+.relatedCard {
+  background-image: var(--internet-bg-mobile);
+}
+@media (min-width: 960px) {
+  .relatedCard {
+    background-image: var(--internet-bg-desktop);
+  }
+}
+.cardCta :global(button) {
+  background-color: #ee0033;
+  color: #fff;
+  min-height: 26px;
+  height: 26px;
+  border-radius: 10px;
+  padding: 4px 14px;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.desktopCta :global(button) {
+  background-color: #ee0033;
+  color: #fff;
+  min-height: 50px;
+  height: 50px;
+  width: 214px;
+  border-radius: 16px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mobileCta :global(button) {
+  background-color: #ee0033;
+  color: #fff;
+  min-height: 32px;
+  height: 32px;
+  width: 100px;
+  border-radius: 9999px;
+  padding: 4px 14px;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 500;
+}
+@media (min-width: 960px) {
+  .cardCta :global(button) {
+    height: 42px;
+    min-height: 42px;
+    border-radius: 16px;
+    padding: 8px 24px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+/* Source GIGA comparison tables remain readable in a narrow viewport. */
+.page :global(table) {
+  max-width: 100%;
+}
+@media (max-width: 959px) {
+  .page :global(table) {
+    display: block;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+}
+.page :global(td),
+.page :global(th) {
+  overflow-wrap: anywhere;
+}
+.page :global(.internet-card) {
+  overflow: visible;
+}
