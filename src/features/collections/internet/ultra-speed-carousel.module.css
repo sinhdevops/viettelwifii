@@ -1,0 +1,126 @@
+﻿.section {
+  scroll-margin-top: 112px;
+}
+
+.carousel {
+  position: relative;
+  width: calc(100% + 20px);
+  margin-top: 24px;
+  margin-left: -20px;
+  padding-bottom: 24px;
+}
+
+.viewport {
+  overflow: hidden;
+  padding-inline: 20px;
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  touch-action: pan-y pinch-zoom;
+}
+
+.carousel .slide {
+  flex: 0 0 196px;
+  min-width: 0;
+  padding: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+  padding-inline: 20px;
+}
+
+.carousel .arrow {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #282828;
+  box-shadow: 0 6px 20px 0 #970a0a26;
+  transform: none;
+  cursor: pointer;
+}
+
+.carousel .arrow:hover {
+  background: #f3f4f6;
+}
+
+.carousel .arrow:focus-visible {
+  outline: 2px solid #282828;
+  outline-offset: 3px;
+}
+
+.carousel .arrow:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+@media (min-width: 960px) {
+  .carousel {
+    width: 100%;
+    margin-top: 48px;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+
+  .viewport {
+    padding: 0;
+  }
+
+  .track {
+    gap: 24px;
+  }
+
+  .carousel .slide {
+    flex-basis: 359px;
+  }
+
+  .controls {
+    display: contents;
+  }
+
+  .carousel .arrow {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-50%);
+  }
+
+  .carousel .previous {
+    left: -32px;
+  }
+
+  .carousel .next {
+    right: -32px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1023px) {
+  .carousel .previous {
+    left: 0;
+  }
+
+  .carousel .next {
+    right: 0;
+  }
+}
+
+/* Hide Swiper's default navigation arrows - we use custom ones */
+.carousel :global(.swiper-button-prev),
+.carousel :global(.swiper-button-next) {
+  display: none;
+}

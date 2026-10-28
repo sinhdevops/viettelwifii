@@ -62,7 +62,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/",
+      "url": "https://viettelwifii.vn/",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -140,7 +140,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc",
+      "url": "https://viettelwifii.vn/tin-tuc",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -204,7 +204,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -341,7 +341,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G30",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G30",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -437,7 +437,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G40",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G40",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -540,7 +540,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G70",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G70",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -638,7 +638,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5GVS80",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5GVS80",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -744,7 +744,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/3N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/3N",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -850,7 +850,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/7N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/7N",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -946,7 +946,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G10",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G10",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -1046,7 +1046,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/1N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/1N",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -1144,7 +1144,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5GVS12",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5GVS12",
       "capturedAt": "2026-10-27T13:36:30+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-02.json",
@@ -1231,7 +1231,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST7K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST7K",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -1321,7 +1321,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/SD90",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/SD90",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -1420,7 +1420,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/SD120",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/SD120",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -1520,7 +1520,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/SD135",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/SD135",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -1620,7 +1620,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/SD150",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/SD150",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -1722,7 +1722,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/VM80",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/VM80",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -1823,7 +1823,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/VM100",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/VM100",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -1924,7 +1924,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/VM130",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/VM130",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -2026,7 +2026,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V90B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V90B",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -2128,7 +2128,7 @@
       }
     },
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V120B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V120B",
       "capturedAt": "2026-10-27T13:40:00+07:00",
       "evidencePaths": [
         "data/sources/data-01/batch-03.json",
@@ -2191,7 +2191,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V150B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V150B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V150B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -2357,7 +2357,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V150B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V150B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0022.html",
@@ -2427,7 +2427,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V160B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V160B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V160B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -2593,7 +2593,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V160B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V160B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0023.html",
@@ -2663,7 +2663,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V180B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V180B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V180B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -2829,7 +2829,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V180B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V180B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0024.html",
@@ -2899,7 +2899,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V200B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V200B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V200B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -3065,7 +3065,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V200B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V200B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0025.html",
@@ -3137,7 +3137,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 30N của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 30N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 30N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -3319,7 +3319,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/30N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/30N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0026.html",
@@ -3391,7 +3391,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 90N của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 90N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 90N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -3573,7 +3573,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/90N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/90N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0027.html",
@@ -3645,7 +3645,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 180N của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 180N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 180N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -3827,7 +3827,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/180N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/180N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0028.html",
@@ -3899,7 +3899,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 360N của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 360N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 360N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -4081,7 +4081,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/360N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/360N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0029.html",
@@ -4149,7 +4149,7 @@
         "paragraphs": [
           "Để đăng ký gói cước MXH100 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp MXH100 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp MXH100 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -4322,7 +4322,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/MXH100",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/MXH100",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0030.html",
@@ -4391,7 +4391,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/MXH120",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/MXH120",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -4497,7 +4497,7 @@
         "paragraphs": [
           "Để đăng ký gói cước MXH150 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp MXH150 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp MXH150 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -4675,7 +4675,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/MXH150",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/MXH150",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0032.html",
@@ -4758,7 +4758,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5GMXH200",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5GMXH200",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0033.html",
@@ -4849,7 +4849,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5GMXH230",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5GMXH230",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0034.html",
@@ -4916,7 +4916,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV75K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV75K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV75K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -5107,7 +5107,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV75K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV75K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0035.html",
@@ -5177,7 +5177,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV90C của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV90C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV90C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -5369,7 +5369,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV90C",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV90C",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0036.html",
@@ -5438,7 +5438,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV95K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV95K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV95K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -5629,7 +5629,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV95K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV95K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0037.html",
@@ -5699,7 +5699,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV120C của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV120C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV120C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -5891,7 +5891,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV120C",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV120C",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0038.html",
@@ -5960,7 +5960,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV120K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV120K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV120K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -6151,7 +6151,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV120K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV120K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0039.html",
@@ -6220,7 +6220,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV125K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV125K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV125K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -6411,7 +6411,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV125K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV125K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0040.html",
@@ -6480,7 +6480,7 @@
         "heading": "Cách đăng ký gói cước Standard",
         "paragraphs": [
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TH30 UP gửi 290 (50.000đ/30 ngày). Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TH30 UP gửi 290 (50.000đ/30 ngày). Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trực tiếp trên ứng dụng TV360",
           "Bước 1: Tải ứng dụng TV360 từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -6558,7 +6558,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TH30",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TH30",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0041.html",
@@ -6625,7 +6625,7 @@
         "paragraphs": [
           "Để đăng ký gói cước T50K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp T50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp T50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -6753,7 +6753,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/T50K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/T50K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0042.html",
@@ -6820,7 +6820,7 @@
         "paragraphs": [
           "Để đăng ký gói cước YT50K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp YT50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp YT50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -6948,7 +6948,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/YT50K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/YT50K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0043.html",
@@ -7015,7 +7015,7 @@
         "paragraphs": [
           "Để đăng ký gói cước FB50K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FB50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FB50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -7179,7 +7179,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/FB50K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/FB50K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0044.html",
@@ -7245,7 +7245,7 @@
         "paragraphs": [
           "Để đăng ký gói cước T15K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp T15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp T15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -7373,7 +7373,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/T15K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/T15K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0045.html",
@@ -7438,7 +7438,7 @@
         "paragraphs": [
           "Để đăng ký gói cước YT15K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp YT15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp YT15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -7566,7 +7566,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/YT15K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/YT15K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0046.html",
@@ -7633,7 +7633,7 @@
         "paragraphs": [
           "Để đăng ký gói cước FB15K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FB15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FB15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -7761,7 +7761,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/FB15K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/FB15K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0047.html",
@@ -7828,7 +7828,7 @@
         "paragraphs": [
           "Để đăng ký gói cước T5K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp T5K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp T5K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -7956,7 +7956,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/T5K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/T5K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0048.html",
@@ -8023,7 +8023,7 @@
         "paragraphs": [
           "Để đăng ký gói cước YT5K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp YT5K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp YT5K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -8151,7 +8151,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/YT5K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/YT5K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0049.html",
@@ -8218,7 +8218,7 @@
         "paragraphs": [
           "Để đăng ký gói cước FB5K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FB5K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FB5K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -8346,7 +8346,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/FB5K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/FB5K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0050.html",
@@ -8413,7 +8413,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V15B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V15B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V15B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -8712,7 +8712,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V15B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V15B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0051.html",
@@ -8779,7 +8779,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V15B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V25B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V25B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -9078,7 +9078,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V25B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V25B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0052.html",
@@ -9145,7 +9145,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V35B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V35B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V35B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -9444,7 +9444,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V35B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V35B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0053.html",
@@ -9511,7 +9511,7 @@
         "paragraphs": [
           "Để đăng ký gói cước C20K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp C20K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp C20K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -9810,7 +9810,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/C20K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/C20K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0054.html",
@@ -9877,7 +9877,7 @@
         "paragraphs": [
           "Để đăng ký gói cước F30 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp F30 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp F30 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -10176,7 +10176,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/F30",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/F30",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0055.html",
@@ -10243,7 +10243,7 @@
         "paragraphs": [
           "Để đăng ký gói cước FT50 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FT50 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp FT50 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -10542,7 +10542,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/FT50",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/FT50",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0056.html",
@@ -10610,7 +10610,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV35K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV35K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV35K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -10827,7 +10827,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV35K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV35K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0057.html",
@@ -10895,7 +10895,7 @@
         "paragraphs": [
           "Để đăng ký gói cước TV65K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV65K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TV65K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -11108,7 +11108,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TV65K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TV65K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0058.html",
@@ -11175,7 +11175,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V50K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V50K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -11329,7 +11329,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V50K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V50K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0059.html",
@@ -11398,7 +11398,7 @@
         "paragraphs": [
           "Để đăng ký gói cước V100K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V100K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V100K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -11552,7 +11552,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V100K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V100K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0060.html",
@@ -11618,7 +11618,7 @@
         "paragraphs": [
           "Để đăng ký gói cước ST15K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST15K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -11667,7 +11667,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST15K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST15K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0061.html",
@@ -11733,7 +11733,7 @@
         "paragraphs": [
           "Để đăng ký gói cước MI20K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp MI20K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp MI20K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -11782,7 +11782,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/MI20K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/MI20K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0062.html",
@@ -11848,7 +11848,7 @@
         "paragraphs": [
           "Để đăng ký gói cước ST30K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST30K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST30K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -11897,7 +11897,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST30K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST30K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0063.html",
@@ -11980,7 +11980,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/EST30",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/EST30",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0064.html",
@@ -12064,7 +12064,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V30X",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V30X",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0065.html",
@@ -12146,7 +12146,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/MI50K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/MI50K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0066.html",
@@ -12209,7 +12209,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói ST60N",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST60N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST60N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -12388,7 +12388,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST60N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST60N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0067.html",
@@ -12454,7 +12454,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói TRE60 Viettel:",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TRE60 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TRE60 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -12599,7 +12599,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TRE60",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TRE60",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0068.html",
@@ -12665,7 +12665,7 @@
         "paragraphs": [
           "Để đăng ký gói cước ST70K của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST70K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST70K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -12828,7 +12828,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST70K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST70K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0069.html",
@@ -12893,7 +12893,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói ST90N",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST90N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST90N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -13072,7 +13072,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST90N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST90N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0070.html",
@@ -13138,7 +13138,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói TRE90 Viettel:",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TRE90 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp TRE90 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -13317,7 +13317,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/TRE90",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/TRE90",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0071.html",
@@ -13385,7 +13385,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói V120N",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V120N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V120N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -13564,7 +13564,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V120N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V120N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0072.html",
@@ -13633,7 +13633,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói V120C",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V120C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V120C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -13812,7 +13812,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V120C",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V120C",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0073.html",
@@ -13880,7 +13880,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói ST120K",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST120K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST120K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -14059,7 +14059,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST120K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST120K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0074.html",
@@ -14127,7 +14127,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói cước V150N",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V150N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V150N UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -14306,7 +14306,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V150N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V150N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0075.html",
@@ -14374,7 +14374,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói cước V150C",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V150C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp V150C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -14553,7 +14553,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V150C",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V150C",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0076.html",
@@ -14620,7 +14620,7 @@
         "type": "text",
         "heading": "Cách đăng ký gói cước ST150K",
         "paragraphs": [
-          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST150K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "Đăng ký qua tin nhắn SMS: Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp ST150K UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         ]
       },
       {
@@ -14808,7 +14808,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/ST150K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/ST150K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0077.html",
@@ -15065,7 +15065,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/V200C",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/V200C",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0078.html",
@@ -15142,7 +15142,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G135 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G135 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G135 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -15407,7 +15407,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G135",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G135",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0079.html",
@@ -15484,7 +15484,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G150 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G150 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G150 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -15749,7 +15749,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G150",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G150",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0080.html",
@@ -15829,7 +15829,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G160B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G160B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G160B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -16095,7 +16095,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G160B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G160B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0081.html",
@@ -16175,7 +16175,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G180B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G180B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G180B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -16441,7 +16441,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G180B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G180B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0082.html",
@@ -16521,7 +16521,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G230B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G230B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G230B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -16786,7 +16786,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G230B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G230B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0083.html",
@@ -16866,7 +16866,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G280B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G280B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G280B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -17131,7 +17131,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G280B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G280B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0084.html",
@@ -17211,7 +17211,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G330B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G330B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G330B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -17476,7 +17476,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G330B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G330B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0085.html",
@@ -17556,7 +17556,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G380B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G380B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G380B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -17821,7 +17821,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G380B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G380B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0086.html",
@@ -17901,7 +17901,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G480B của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G480B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G480B UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -18166,7 +18166,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G480B",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G480B",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0087.html",
@@ -18308,7 +18308,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G135N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G135N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0088.html",
@@ -18496,7 +18496,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G150N",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G150N",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0089.html",
@@ -18576,7 +18576,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5GLQ190 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5GLQ190 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5GLQ190 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -18842,7 +18842,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5GLQ190",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5GLQ190",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0090.html",
@@ -18923,7 +18923,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5GLQ210 của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5GLQ210 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5GLQ210 UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -19189,7 +19189,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5GLQ210",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5GLQ210",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0091.html",
@@ -19259,7 +19259,7 @@
         "paragraphs": [
           "Để đăng ký gói cước 5G200C của Viettel, bạn có thể lựa chọn một trong các phương thức sau:",
           "1. Đăng ký qua tin nhắn SMS:",
-          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G200C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
+          "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp 5G200C UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel",
           "Bước 1: Tải ứng dụng My Viettel từ App Store hoặc Google Play.",
           "Bước 2: Đăng nhập vào tài khoản của bạn hoặc đăng ký tài khoản mới nếu chưa có.",
@@ -19350,7 +19350,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G200C",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G200C",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0092.html",
@@ -19443,7 +19443,7 @@
       {
         "type": "text",
         "paragraphs": [
-          "Hoặc nhấn nút đăng ký trên website viettelup.vn để soạn tin nhanh hơn.",
+          "Hoặc nhấn nút đăng ký trên website viettelwifii.vn để soạn tin nhanh hơn.",
           "2. Đăng ký trên ứng dụng My Viettel"
         ]
       },
@@ -19589,7 +19589,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/5G300C",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/5G300C",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0093.html",
@@ -19687,7 +19687,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS110",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS110",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0094.html",
@@ -19780,7 +19780,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS145",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS145",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0095.html",
@@ -19878,7 +19878,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS165",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS165",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0096.html",
@@ -19976,7 +19976,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS2H",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS2H",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0097.html",
@@ -20069,7 +20069,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS6H",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS6H",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0098.html",
@@ -20167,7 +20167,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS8",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS8",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0099.html",
@@ -20260,7 +20260,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS12",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS12",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0100.html",
@@ -20358,7 +20358,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS20",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS20",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0101.html",
@@ -20456,7 +20456,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/KS36",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/KS36",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0102.html",
@@ -20520,7 +20520,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -20662,7 +20662,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH150",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH150",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0104.html",
@@ -20766,7 +20766,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH200",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH200",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0105.html",
@@ -20870,7 +20870,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH250",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH250",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0106.html",
@@ -20972,7 +20972,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V120K",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/V120K",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0107.html",
@@ -21075,7 +21075,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V160X",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/V160X",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0108.html",
@@ -21177,7 +21177,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V180X",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/V180X",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0109.html",
@@ -21355,7 +21355,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N200",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N200",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0110.html",
@@ -21533,7 +21533,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N250",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N250",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0111.html",
@@ -21712,7 +21712,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N300",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N300",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0112.html",
@@ -21890,7 +21890,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N350",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N350",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0113.html",
@@ -22080,7 +22080,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N400",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N400",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0114.html",
@@ -22272,7 +22272,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N500",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N500",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0115.html",
@@ -22465,7 +22465,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N1000",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N1000",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0116.html",
@@ -22658,7 +22658,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N2000",
+      "url": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N2000",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0117.html",
@@ -22710,7 +22710,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/so-sanh-roaming",
+      "url": "https://viettelwifii.vn/tin-tuc/so-sanh-roaming",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -22774,7 +22774,7 @@
     "heading": "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
+      "url": "https://viettelwifii.vn/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0119.html",
@@ -23049,7 +23049,7 @@
     "heading": "Tổng hợp chi tiết gói cước data 4G Viettel 2026 và cách đăng ký",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0120.html",
@@ -23828,7 +23828,7 @@
     "heading": "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
+      "url": "https://viettelwifii.vn/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0121.html",
@@ -24247,7 +24247,7 @@
     "heading": "Gói cước Roaming Viettel là gì? Tổng hợp các gói Roaming phù hợp cho người đi du lịch, công tác nước ngoài",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0122.html",
@@ -24722,7 +24722,7 @@
     "heading": "GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP CHO HSSV KHI ĐĂNG KÝ DATA VIETTEL",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/giai-dap-thac-mac-hssv",
+      "url": "https://viettelwifii.vn/tin-tuc/giai-dap-thac-mac-hssv",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0123.html",
@@ -24891,7 +24891,7 @@
     "heading": "Gói Cước Viettel Tháng 3/2026 – Đăng Ký 4G 5G Viettel Giá Rẻ Nhất",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-3-2026",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-thang-3-2026",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0124.html",
@@ -25776,7 +25776,7 @@
     "heading": "Danh sách gói cước Viettel tốt nhất dành cho sinh viên 2026: Data khủng, học tập & giải trí thả ga",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-cho-sinh-vien",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-cho-sinh-vien",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0125.html",
@@ -26541,7 +26541,7 @@
     "heading": "Danh Sách Gói Cước 4G Viettel Miễn Phí Mạng Xã Hội 2026 Rẻ Nhất",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0126.html",
@@ -26963,7 +26963,7 @@
     "heading": "Tổng hợp gói cước Internet Camera AI dành cho gia đình có trẻ nhỏ tốt nhất 2026",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-camera-ai",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-camera-ai",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0127.html",
@@ -27103,7 +27103,7 @@
     "heading": "TẤT TẦN TẬT VỀ GÓI CƯỚC NINE VIETTEL - DATA THẢ GA, LỐI SỐNG BẬN RỘN",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/nine-style",
+      "url": "https://viettelwifii.vn/tin-tuc/nine-style",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0128.html",
@@ -27360,7 +27360,7 @@
     "heading": "Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/cap-nhat-goi-cuoc-GIC",
+      "url": "https://viettelwifii.vn/tin-tuc/cap-nhat-goi-cuoc-GIC",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0129.html",
@@ -27625,7 +27625,7 @@
     "heading": "Mẹo giảm đến 20% tiền điện thoại cho cả nhà với tính năng 5G Family trên My Viettel",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-5g-family",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-5g-family",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0130.html",
@@ -27790,7 +27790,7 @@
     "heading": "Chọn đúng gói mạng Viettel, trải nghiệm internet không giới hạn",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-mang-viettel",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-mang-viettel",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0131.html",
@@ -28232,7 +28232,7 @@
     "heading": "SỰ THẬT: 5G Hao PIN và Tốn DATA Hơn 4G Bao Nhiêu? Chuyên gia VIETTEL Giải Đáp",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/dung-5g-co-hao-pin-va-ton-data",
+      "url": "https://viettelwifii.vn/tin-tuc/dung-5g-co-hao-pin-va-ton-data",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0132.html",
@@ -28444,7 +28444,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Khách hàng kiểm tra gói cước 5G phù hợp với thuê bao và đăng ký trực tiếp tại website chính thức viettel.vn. Hoặc click nút đăng ký trên viettelup.vn (hỗ trợ bạn soạn cú pháp SMS nhanh hơn)"
+          "text": "Khách hàng kiểm tra gói cước 5G phù hợp với thuê bao và đăng ký trực tiếp tại website chính thức viettel.vn. Hoặc click nút đăng ký trên viettelwifii.vn (hỗ trợ bạn soạn cú pháp SMS nhanh hơn)"
         },
         {
           "type": "heading",
@@ -28632,7 +28632,7 @@
     "heading": "Tổng Hợp Gói Cước Data 4G/5G Viettel 1 Ngày SIÊU RẺ MỚI NHẤT 2025 GIÁ CHỈ TỪ 5000Đ",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-ngay-viettel",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-ngay-viettel",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0133.html",
@@ -29001,7 +29001,7 @@
     "heading": "Đăng ký 4G 5G Viettel data khủng, giá rẻ cập nhật mới nhất",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-06-2025",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-thang-06-2025",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0134.html",
@@ -29772,7 +29772,7 @@
     "heading": "Giới Thiệu MyDio Viettel - Ứng Dụng Nghe Sách Nói, Truyện Audio Bản Quyền Hấp Dẫn",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-mydio-viettel",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-mydio-viettel",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0135.html",
@@ -30088,7 +30088,7 @@
     "heading": "Viettel cung cấp nhóm gói cước internet từ 300 Mbps, nhanh tương đương top 5 quốc gia có hạ tầng internet tốt nhất thế giới",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
+      "url": "https://viettelwifii.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0136.html",
@@ -30695,7 +30695,7 @@
     "heading": "Danh sách gói cước 4G, 5G Viettel mới nhất tháng 4/2025",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-4-2025",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-thang-4-2025",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0137.html",
@@ -30732,7 +30732,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Bạn đang tìm gói cước Viettel phù hợp để đăng ký mạng 4G hoặc 5G Viettel? ViettelUp.vn tổng hợp chi tiết các gói cước 4G Viettel, gói 5G Viettel, gói cước theo ngày, theo tháng, gói mạng xã hội, data kèm thoại... giúp bạn dễ dàng lựa chọn và đăng ký nhanh chóng qua SMS."
+          "text": "Bạn đang tìm gói cước Viettel phù hợp để đăng ký mạng 4G hoặc 5G Viettel? viettelwifii.vn tổng hợp chi tiết các gói cước 4G Viettel, gói 5G Viettel, gói cước theo ngày, theo tháng, gói mạng xã hội, data kèm thoại... giúp bạn dễ dàng lựa chọn và đăng ký nhanh chóng qua SMS."
         },
         {
           "type": "heading",
@@ -31142,7 +31142,7 @@
     "heading": "Viettel Ra Mắt Gói Cước Ngày Mới: ST7K, 5G10, 5G30, 5G70, 5GVS12, 5GVS80",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80",
+      "url": "https://viettelwifii.vn/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0138.html",
@@ -31305,7 +31305,7 @@
     "heading": "Viettel Đại Diện Việt Nam Tham Gia MWC Barcelona 2025",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025",
+      "url": "https://viettelwifii.vn/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0139.html",
@@ -31517,7 +31517,7 @@
     "heading": "Gói cước 4G 5G Viettel cập nhật tháng 3/2025",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0140.html",
@@ -32017,7 +32017,7 @@
           "ordered": false,
           "items": [
             "Soạn tin nhắn: Gửi tin nhắn theo cú pháp quy định của từng gói cước đến tổng đài 290.",
-            "Đăng ký trực tuyến trên website viettelup.vn",
+            "Đăng ký trực tuyến trên website viettelwifii.vn",
             "Gọi tổng đài: Bấm gọi *098# và làm theo hướng dẫn.",
             "Ứng dụng My Viettel: Truy cập ứng dụng My Viettel trên điện thoại và chọn gói cước phù hợp."
           ]
@@ -32345,11 +32345,11 @@
     "status": "draft",
     "kind": "news-article",
     "title": "Lộ Trình Triển Khai 5G Viettel – Hỗ Trợ Đối Tác Phát Triển Hệ Sinh Thái",
-    "description": "Viettel đẩy mạnh triển khai 5G từ 2025 với mục tiêu mở rộng 20.000 trạm, hỗ trợ doanh nghiệp qua Network Slicing & API mở. Tìm hiểu chiến lược & tiềm năng 5G tại Viettelup.vn.",
+    "description": "Viettel đẩy mạnh triển khai 5G từ 2025 với mục tiêu mở rộng 20.000 trạm, hỗ trợ doanh nghiệp qua Network Slicing & API mở. Tìm hiểu chiến lược & tiềm năng 5G tại viettelwifii.vn.",
     "heading": "Lộ Trình Triển Khai 5G Viettel – Hỗ Trợ Đối Tác Phát Triển Hệ Sinh Thái",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/lo-trinh-trien-khai-5g-viettel",
+      "url": "https://viettelwifii.vn/tin-tuc/lo-trinh-trien-khai-5g-viettel",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0141.html",
@@ -32546,7 +32546,7 @@
     "heading": "Gói cước 4G, 5G Viettel cập nhật tháng 2/2025",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0142.html",
@@ -32604,7 +32604,7 @@
           "items": [
             "Nhắn SMS đến tổng đài 191 hoặc 290",
             "Ứng dụng My Viettel ngay trên điện thoại",
-            "Đăng ký trực tuyến trên website viettelup.vn"
+            "Đăng ký trực tuyến trên website viettelwifii.vn"
           ]
         },
         {
@@ -33500,7 +33500,7 @@
     "heading": "Gói Cước 5G Viettel Chu Kỳ Dài – Kết Nối Ổn Định, Tốc Độ Đỉnh Cao",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0143.html",
@@ -34022,7 +34022,7 @@
     "heading": "Viettel ra mắt gói cước 5G giá rẻ chỉ 50.000đ đáp ứng trọn vẹn nhu cầu Tết",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/goi-cuoc-5g-viettel-tet5g",
+      "url": "https://viettelwifii.vn/tin-tuc/goi-cuoc-5g-viettel-tet5g",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0144.html",
@@ -34149,7 +34149,7 @@
     "heading": "TỔNG ĐÀI CSKH VIETTEL 24/7 Nhanh Nhất 2025: Hotline Lắp Mạng, Báo Hỏng và CSKH Miễn Phí",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/tong-dai-viettel",
+      "url": "https://viettelwifii.vn/tin-tuc/tong-dai-viettel",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0145.html",
@@ -34657,7 +34657,7 @@
     "heading": "Gói Cước 5G Nổi Bật Gì So Với 4G?",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/so-sanh-goi-cuoc-4g-va-5g",
+      "url": "https://viettelwifii.vn/tin-tuc/so-sanh-goi-cuoc-4g-va-5g",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0146.html",
@@ -34994,7 +34994,7 @@
     "heading": "Đăng Ký Gói Cước 5G Viettel Mới Nhất 9/2024: Hướng Dẫn Đầy Đủ Và Chi Tiết",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/dang-ky-5g-viettel-2024",
+      "url": "https://viettelwifii.vn/tin-tuc/dang-ky-5g-viettel-2024",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0147.html",
@@ -35295,7 +35295,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp [Tên gói cước] UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelup.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
+          "text": "Đây là cách đơn giản và nhanh nhất. Bạn chỉ cần soạn tin nhắn theo cú pháp [Tên gói cước] UP gửi 290. Sau khi gửi, bạn sẽ nhận được thông báo xác nhận đăng ký thành công và bắt đầu sử dụng gói cước. Hoặc bạn có thể click nút đăng ký trên website viettelwifii.vn, hỗ trợ bạn soạn tin nhắn nhanh hơn."
         },
         {
           "type": "heading",
@@ -35590,7 +35590,7 @@
     "heading": "Tặng 20% giá trị thẻ nạp cho thuê bao Viettel trả trước trong ngày 25/7",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
+      "url": "https://viettelwifii.vn/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0148.html",
@@ -35985,7 +35985,7 @@
     "heading": "Viettel 35 năm - dòng chảy hạnh phúc",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc",
+      "url": "https://viettelwifii.vn/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0149.html",
@@ -36117,7 +36117,7 @@
     "heading": "Khuyến mãi 20% thẻ nạp cho thuê bao trả trước mạng Viettel ngày 15/6",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/khuyen-mai-nap-the-15-6",
+      "url": "https://viettelwifii.vn/tin-tuc/khuyen-mai-nap-the-15-6",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0150.html",
@@ -36316,7 +36316,7 @@
     "heading": "Cơ hội rinh thưởng triệu đồng từ Viettel Money: Đừng bỏ lỡ!",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/mo-app-co-qua-viettel-money",
+      "url": "https://viettelwifii.vn/tin-tuc/mo-app-co-qua-viettel-money",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0151.html",
@@ -36434,7 +36434,7 @@
     "heading": "TỔNG HỢP CÁCH ĐĂNG KÝ XEM TRỌN BỘ EURO 2024 TRÊN TV360",
     "sections": [],
     "source": {
-      "url": "https://www.viettelup.vn/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
+      "url": "https://viettelwifii.vn/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0152.html",
@@ -36484,7 +36484,7 @@
         {
           "type": "heading",
           "level": 2,
-          "text": "Đăng ký gói cước 4G Viettel xem Euro trực tiếp tại Viettelup.vn"
+          "text": "Đăng ký gói cước 4G Viettel xem Euro trực tiếp tại viettelwifii.vn"
         },
         {
           "type": "paragraph",
@@ -36607,7 +36607,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Nhanh tay đăng ký gói cước TV360 để tận hưởng mùa giải cuồng nhiệt và săn bóng vàng EURO 24K trị giá 1 cây vàng 9999. Chi tiết các chương trình khuyến mãi được cập nhật thường xuyên qua website Viettelup.vn"
+          "text": "Nhanh tay đăng ký gói cước TV360 để tận hưởng mùa giải cuồng nhiệt và săn bóng vàng EURO 24K trị giá 1 cây vàng 9999. Chi tiết các chương trình khuyến mãi được cập nhật thường xuyên qua website viettelwifii.vn"
         }
       ]
     }
@@ -36667,7 +36667,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/NETVT01",
+      "url": "https://viettelwifii.vn/internet/NETVT01",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -36852,7 +36852,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/MESHVT01",
+      "url": "https://viettelwifii.vn/internet/MESHVT01",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0154.html",
@@ -37050,7 +37050,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/NETVT1",
+      "url": "https://viettelwifii.vn/internet/NETVT1",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0155.html",
@@ -37228,7 +37228,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/NETVT2",
+      "url": "https://viettelwifii.vn/internet/NETVT2",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0156.html",
@@ -37426,7 +37426,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/MESHVT1",
+      "url": "https://viettelwifii.vn/internet/MESHVT1",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0157.html",
@@ -37515,7 +37515,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/GIGA1",
+      "url": "https://viettelwifii.vn/internet/GIGA1",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -37734,7 +37734,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/GIGA2",
+      "url": "https://viettelwifii.vn/internet/GIGA2",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0159.html",
@@ -37936,7 +37936,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/GIGA3",
+      "url": "https://viettelwifii.vn/internet/GIGA3",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0160.html",
@@ -38141,7 +38141,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/GIGA4",
+      "url": "https://viettelwifii.vn/internet/GIGA4",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0161.html",
@@ -38308,7 +38308,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/MESHVT2",
+      "url": "https://viettelwifii.vn/internet/MESHVT2",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0162.html",
@@ -38490,7 +38490,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/MESHVT3",
+      "url": "https://viettelwifii.vn/internet/MESHVT3",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0163.html",
@@ -38580,7 +38580,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/NETVT1_CAM1",
+      "url": "https://viettelwifii.vn/internet/NETVT1_CAM1",
       "capturedAt": "2026-10-27T13:13:06+07:00",
       "evidencePaths": [
         "data/sources/ref-01/archetypes.json",
@@ -38803,7 +38803,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/NETVT2_CAM1",
+      "url": "https://viettelwifii.vn/internet/NETVT2_CAM1",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0165.html",
@@ -38998,7 +38998,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/MESHVT1_CAM1",
+      "url": "https://viettelwifii.vn/internet/MESHVT1_CAM1",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0166.html",
@@ -39208,7 +39208,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/MESHVT2_CAM1",
+      "url": "https://viettelwifii.vn/internet/MESHVT2_CAM1",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0167.html",
@@ -39522,7 +39522,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/NETVT1_GIAITRI",
+      "url": "https://viettelwifii.vn/internet/NETVT1_GIAITRI",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0168.html",
@@ -39695,7 +39695,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/NETVT2_GIAITRI",
+      "url": "https://viettelwifii.vn/internet/NETVT2_GIAITRI",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0169.html",
@@ -39856,7 +39856,7 @@
       }
     ],
     "source": {
-      "url": "https://www.viettelup.vn/internet/MESHVT1_GIAITRI",
+      "url": "https://viettelwifii.vn/internet/MESHVT1_GIAITRI",
       "capturedAt": "2026-10-27T08:27:55.740Z",
       "evidencePaths": [
         "work/web-clone-benchmark/raw/html/0170.html",

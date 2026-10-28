@@ -1,8 +1,8 @@
 @import "tailwindcss";
+@import "../styles/brand.css";
 
 :root {
   color-scheme: light;
-  --brand: #ed1c24;
   --home-gray: #f2f2f2;
 }
 * {

@@ -4,6 +4,8 @@
 
 Đọc trước: [MASTER_PLAN](docs/MASTER_PLAN.md), [Sơ đồ và cấu trúc](docs/ARCHITECTURE.md), [Phạm vi 171 URL](docs/ROUTE_SCOPE.md).
 
+Để sửa UI/nội dung: xem [Hướng dẫn chỉnh TSX và vị trí component/dữ liệu](docs/EDITING_TSX.md). Các nhóm gói cước, tin tức và collection được tách bố cục dùng chung, dữ liệu có kiểu và nội dung riêng từng trang; không chạy lại generator HTML cũ để ghi đè code đang chỉnh.
+
 Đội 10 agent đã được chuẩn bị trong `.codex/agents/`, kế thừa model và quyền của phiên chính, tối đa 5 subagent đang mở. Dùng [hướng dẫn khởi động](docs/START_AGENTS.md), [master prompt](docs/MASTER_PROMPT_VIETTELUP.md) và [Boardroom](docs/BOARDROOM.md) cho lần triển khai tiếp theo. Chat chính làm Lead; bộ agent chưa tự khởi động làm website.
 
 ## Trạng thái triển khai
@@ -29,16 +31,20 @@ Lập bảng audit đúng 171 URL sau khi nhận manifest: `pnpm routes:audit`. 
 
 Để triển khai production, cần `NEXT_PUBLIC_SITE_URL` domain thật, đủ dữ liệu, quyền tài nguyên, thông tin liên hệ, Telegram và anti-spam đã cấu hình, kiểm tra riêng việc bảo vệ dữ liệu, rồi mới chuyển `SITE_LIVE=true`. Không chạy `output: "export"` vì form Telegram cần server.
 
+Domain được khai báo một lần bằng `NEXT_PUBLIC_SITE_URL` trong env. Code gọi `siteConfig.origin`, `siteConfig.hostname` hoặc `siteConfig.url(path)` từ `src/lib/site-config.ts`; xem [hướng dẫn env](docs/SITE_ENV.md). Sau khi đổi giá trị cần restart dev hoặc build lại vì Next đóng gói biến public khi build.
+
 ## Nhập nội dung route
 
-`data/approved-routes.json` chấp nhận `{"routes": ["/", "/tin-tuc", ...]}` hoặc array path. **Bắt buộc đúng 175 URL** gồm 171 gốc theo tỉ lệ 1/116/36/18 và bốn collection được duyệt.
+Danh sách runtime nằm ở `src/lib/approved-routes.ts`: **đúng 175 URL**, giữ nguyên chữ hoa/thường và `tra-sau`. `data/approved-routes.json` được giữ làm bản đối chiếu phạm vi và kiểm thử.
 
-`data/pages.json` là object với keys chính xác bằng URL; dữ liệu page gồm:
+Nội dung runtime được quản lý bằng TSX và dữ liệu TypeScript theo feature. `data/pages.json` và JSON capture giữ làm bằng chứng lịch sử/kiểm thử, không còn được loader đọc khi phục vụ trang. Metadata và trạng thái nằm ở `src/features/{home,internet,news,collections}/page-content.ts` và `src/app/goi-cuoc-viettel/_data/page-content.ts`; giao diện nằm ở component TSX của từng feature. Dữ liệu page gồm:
 
 - `status`: `draft` hoặc `ready`.
 - `kind`: `home`, `package`, `internet`, `news-list`, `news-article`, `collection`.
 - `title`, `description`, `heading`, `intro` tùy chọn.
-- `sections`: `text`, `cards`, `faq`; mở rộng template khi port HTML thật.
+- `sections`: dữ liệu nội dung được bảo toàn khi chuyển đổi; giao diện hiện hành được ghép trực tiếp bằng component TSX theo nhóm route.
+
+App Router được chia rõ: `/internet/[code]`, `/goi-cuoc-viettel/[code]`, `/goi-cuoc-viettel/tra-sau/[code]`, `/tin-tuc/[slug]`. Trang chủ, `/tin-tuc` và bốn collection có `page.tsx` riêng. Không còn catch-all `[...segments]` hoặc bộ render giao diện JSON toàn site. Xem [sơ đồ route](docs/ARCHITECTURE.md).
 
 Chỉ page `ready` trong allowlist mới có route/sitemap; page khác trả 404 (trừ trang chủ scaffold). Không trích toàn bộ các link ngoài vào tập URL được phép.
 

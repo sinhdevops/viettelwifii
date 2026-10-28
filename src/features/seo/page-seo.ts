@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { PageContent } from "@/lib/content-schema";
+import { siteConfig } from "../../lib/site-config";
 
 /** Lead resolves the page and the exact 171-path allowlist before calling this helper. */
 export type PageSeoContext = {
@@ -49,6 +50,14 @@ function getConfiguredOrigin(rawUrl: string | undefined, siteLive: boolean): URL
     throw new Error("SITE_LIVE=true requires a public NEXT_PUBLIC_SITE_URL origin");
   }
 
+  if (siteLive && url.protocol !== "https:") {
+    throw new Error("SITE_LIVE=true requires an https NEXT_PUBLIC_SITE_URL origin");
+  }
+
+  if (siteLive && url.origin !== siteConfig.origin) {
+    throw new Error("SITE_LIVE=true requires the configured NEXT_PUBLIC_SITE_URL origin");
+  }
+
   return url;
 }
 
@@ -62,12 +71,6 @@ function approvedPage(context: PageSeoContext): context is PageSeoContext & { pa
   );
 }
 
-function rejectSourceOrigin(origin: URL, page: PageContent): void {
-  if (page.source?.url && new URL(page.source.url).origin === origin.origin) {
-    throw new Error("NEXT_PUBLIC_SITE_URL must point to the deployment, not the reference website");
-  }
-}
-
 /** Safe even when the root layout is accidentally configured to allow indexing. */
 export function buildPageMetadata(context: PageSeoContext): Metadata {
   if (!approvedPage(context)) return { robots: blockedRobots };
@@ -75,7 +78,6 @@ export function buildPageMetadata(context: PageSeoContext): Metadata {
   const live = context.siteLive === true;
   const origin = getConfiguredOrigin(context.siteUrl, live);
   const indexable = live && context.page.status === "ready";
-  if (indexable && origin) rejectSourceOrigin(origin, context.page);
   const canonical = indexable && origin ? new URL(context.path, origin).href : undefined;
 
   return {
@@ -106,7 +108,6 @@ export function buildPageJsonLd(context: PageSeoContext): StructuredPage | null 
 
   const origin = getConfiguredOrigin(context.siteUrl, true);
   if (!origin) return null;
-  rejectSourceOrigin(origin, context.page);
   const url = new URL(context.path, origin).href;
   const isArticle = context.page.kind === "news-article" && Boolean(context.page.article?.blocks.length);
 

@@ -1,16 +1,43 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
+import styles from "./button.module.css";
 
-const variants = cva("inline-flex items-center justify-center rounded-lg font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-600 disabled:opacity-50", {
+export const buttonVariants = cva(styles.base, {
   variants: {
-    variant: { primary: "bg-rose-600 px-4 py-2 text-white hover:bg-rose-700", outline: "border border-neutral-300 bg-white px-4 py-2 hover:bg-neutral-100", ghost: "px-3 py-2 hover:bg-neutral-100" },
-    size: { normal: "min-h-11 text-sm", small: "min-h-9 text-sm" },
+    variant: {
+      primary: `${styles.control} ${styles.primary}`,
+      outline: `${styles.control} ${styles.outline}`,
+      ghost: `${styles.control} ${styles.ghost}`,
+      package: `${styles.control} ${styles.package}`,
+      packageOutline: `${styles.control} ${styles.packageOutline}`,
+      unstyled: "",
+    },
+    size: {
+      normal: styles.normal,
+      small: styles.small,
+      card: styles.card,
+      unstyled: "",
+    },
   },
   defaultVariants: { variant: "primary", size: "normal" },
 });
 
-type Props = React.ComponentProps<"button"> & VariantProps<typeof variants>;
-export function Button({ variant, size, className, ...props }: Props) {
-  return <button className={cn(variants({ variant, size }), className)} {...props} />;
+export type ButtonProps = React.ComponentProps<"button"> &
+  VariantProps<typeof buttonVariants>;
+/** React 19 forwards ref as a prop, including through Radix asChild triggers. */
+export function Button({
+  variant,
+  size,
+  className,
+  type = "button",
+  ...props
+}: ButtonProps) {
+  return (
+    <button
+      type={type}
+      className={cn(buttonVariants({ variant, size }), className)}
+      {...props}
+    />
+  );
 }

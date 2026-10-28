@@ -1,0 +1,112 @@
+.base {
+  --button-accent: #ee0033;
+  --button-accent-hover: #dd4043;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.base:disabled {
+  cursor: not-allowed;
+}
+
+.base:focus-visible {
+  outline: 2px solid var(--button-accent);
+  outline-offset: 3px;
+}
+
+.control.control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: var(--font-beausans), Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  line-height: 1.25;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+
+.control:disabled {
+  opacity: 0.5;
+}
+
+.primary {
+  border: 0;
+  background: var(--button-accent);
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--button-accent-hover);
+}
+
+.outline {
+  border: 1px solid var(--button-accent);
+  background: #fff;
+  color: #111;
+  padding: 8px 16px;
+}
+
+.outline:hover:not(:disabled) {
+  background: #fff0fe;
+}
+
+.ghost {
+  border: 0;
+  background: transparent;
+  padding: 8px 12px;
+}
+
+.ghost:hover:not(:disabled) {
+  background: #fff0fe;
+}
+
+.normal {
+  min-height: 44px;
+}
+
+.small {
+  min-height: 36px;
+}
+
+.package {
+  border: 1px solid var(--button-accent);
+  background: var(--button-accent);
+  color: #fff;
+}
+
+.package:hover:not(:disabled) {
+  background: var(--button-accent-hover);
+}
+
+.packageOutline {
+  border: 1px solid var(--button-accent);
+  background: #fff;
+  color: #111;
+}
+
+.packageOutline:hover {
+  background: #fff0fe;
+  color: var(--button-accent-hover);
+}
+
+.card {
+  width: 100px;
+  height: 28px;
+  padding: 0 12px;
+  line-height: 1;
+}
+
+/* Match the existing site's md breakpoint; it is 960px, not Tailwind's default. */
+@media (min-width: 960px) {
+  .card {
+    width: 106px;
+    height: 34px;
+  }
+}

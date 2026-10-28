@@ -1,0 +1,21 @@
+/* Single font preview for the entire app, including existing source utilities. */
+html {
+  --font-beausans: var(--font-site);
+  --font-magistral: var(--font-site);
+  --font-sarabun: var(--font-site);
+  --font-sans: var(--font-site);
+  font-family: var(--font-site), Arial, sans-serif;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+code,
+pre,
+kbd,
+samp,
+.font-sans {
+  font-family: var(--font-site), Arial, sans-serif;
+}

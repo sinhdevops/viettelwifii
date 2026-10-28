@@ -1,5 +1,6 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import type { PageContent } from "@/lib/content-schema";
+import { siteConfig } from "../../lib/site-config";
 import { buildPageJsonLd, buildPageMetadata, serializeJsonLd } from "./page-seo";
 
 const path = "/goi-cuoc-viettel/5G20";
@@ -11,7 +12,7 @@ const draft: PageContent = {
   description: "Thông tin gói 5G20",
   sections: [],
   source: {
-    url: "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+    url: siteConfig.url(path),
     capturedAt: "2026-10-27",
     evidencePaths: [],
     verifiedFields: [],
@@ -19,7 +20,9 @@ const draft: PageContent = {
     notes: [],
   },
 };
-const base = { path, approvedRoutes: [path], siteUrl: "https://deploy.example" };
+const base = { path, approvedRoutes: [path], get siteUrl() { return siteConfig.origin; } };
+
+afterEach(() => vi.unstubAllEnvs());
 
 describe("page SEO publish guards", () => {
   it("protects draft and preview even with siteLive explicitly true", () => {
@@ -46,11 +49,29 @@ describe("page SEO publish guards", () => {
   it("requires a real deployment origin for ready pages and preserves case-sensitive paths", () => {
     const ready = { ...draft, status: "ready" } as PageContent;
     const metadata = buildPageMetadata({ ...base, page: ready, siteLive: true });
-    expect(metadata.alternates).toEqual({ canonical: "https://deploy.example/goi-cuoc-viettel/5G20" });
+    expect(metadata.alternates).toEqual({ canonical: siteConfig.url(path) });
     expect(metadata.robots).toEqual({ index: true, follow: true });
-    for (const siteUrl of [undefined, "http://localhost:4191", "https://www.viettelup.vn"]) {
+    for (const siteUrl of [undefined, "http://localhost:4191", siteConfig.origin.replace("https:", "http:"), "https://mismatch.invalid"]) {
       expect(() => buildPageMetadata({ ...base, page: ready, siteLive: true, siteUrl })).toThrow();
+      expect(() => buildPageJsonLd({ ...base, page: ready, siteLive: true, siteUrl })).toThrow();
     }
+  });
+
+  it("follows a custom deployment origin from env and rejects a stale context origin", () => {
+    const previousOrigin = siteConfig.origin;
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://custom-deployment.example:8443/");
+    const context = { ...base, page: { ...draft, status: "ready" } as PageContent, siteLive: true };
+    expect(buildPageMetadata(context).alternates).toEqual({ canonical: siteConfig.url(path) });
+    expect(buildPageJsonLd(context)?.url).toBe(siteConfig.url(path));
+    expect(() => buildPageMetadata({ ...context, siteUrl: previousOrigin })).toThrow(/configured/);
+    expect(() => buildPageJsonLd({ ...context, siteUrl: previousOrigin })).toThrow(/configured/);
+  });
+
+  it.each(["http://public.example", "https://localhost", "https://preview.localhost", "https://preview.local", "https://127.0.0.1", "https://0.0.0.0", "https://[::1]"])("rejects unsafe live origin even when env matches: %s", (siteUrl) => {
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", siteUrl);
+    const context = { ...base, page: { ...draft, status: "ready" } as PageContent, siteLive: true };
+    expect(() => buildPageMetadata(context)).toThrow();
+    expect(() => buildPageJsonLd(context)).toThrow();
   });
 
   it("creates conservative type-specific JSON-LD without made-up price, rating, author or date", () => {
@@ -63,7 +84,7 @@ describe("page SEO publish guards", () => {
     };
     const article = buildPageJsonLd({ ...base, page: articlePage, siteLive: true });
     expect(article?.["@type"]).toBe("Article");
-    expect(article).toMatchObject({ headline: "Chủ đề <SEO>", mainEntityOfPage: `https://deploy.example${path}` });
+    expect(article).toMatchObject({ headline: "Chủ đề <SEO>", mainEntityOfPage: siteConfig.url(path) });
     const json = serializeJsonLd(article!);
     expect(json).toContain("\\u003cSEO>");
     expect(json).not.toMatch(/datePublished|author|offers|aggregateRating|price/);

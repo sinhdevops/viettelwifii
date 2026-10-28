@@ -2,6 +2,7 @@
 
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { X } from "lucide-react";
+import { Button } from "./button";
 
 export const Dialog = DialogPrimitive.Root;
 export const DialogTrigger = DialogPrimitive.Trigger;
@@ -15,7 +16,16 @@ export function DialogContent({ children }: { children: React.ReactNode }) {
       <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/60" />
       <DialogPrimitive.Content className="fixed top-1/2 left-1/2 z-50 max-h-[90vh] w-[calc(100vw-2rem)] max-w-lg -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-xl bg-white p-6 shadow-2xl">
         {children}
-        <DialogPrimitive.Close aria-label="Đóng" className="absolute top-4 right-4 rounded-md p-1 hover:bg-neutral-100"><X size={20} /></DialogPrimitive.Close>
+        <DialogPrimitive.Close asChild>
+          <Button
+            variant="unstyled"
+            size="unstyled"
+            aria-label="Đóng"
+            className="absolute top-4 right-4 rounded-md p-1 hover:bg-neutral-100"
+          >
+            <X size={20} />
+          </Button>
+        </DialogPrimitive.Close>
       </DialogPrimitive.Content>
     </DialogPrimitive.Portal>
   );

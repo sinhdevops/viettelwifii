@@ -14,7 +14,7 @@
       "templateId": "home",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/",
+      "sourceUrl": "https://viettelwifii.vn/",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0000.html",
       "rawSha256": "c5e567038556a7aa91a8f09bf7017f44d82fd99c3161dd2c0966b5154834beee",
       "otherOriginalSmsHrefs": [
@@ -118,7 +118,7 @@
       "templateId": "news_index",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0001.html",
       "rawSha256": "6a229fb127e0850697b1528a633dadd23a0b07722d072a07713e8d2190f25758",
       "otherOriginalSmsHrefs": [
@@ -137,7 +137,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G20 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G20",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0002.html",
       "rawSha256": "3b491df942a653a286c84d881acd3b896bc34b1e1c0ff3d465a62f4d072dd43e",
       "otherOriginalSmsHrefs": [
@@ -158,7 +158,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G30 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G30",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G30",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0003.html",
       "rawSha256": "e404e5473aa8da157647a09e766a4c268805584e979e7424d114fbba4c8a357b",
       "otherOriginalSmsHrefs": [
@@ -179,7 +179,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G40 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G40",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G40",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0004.html",
       "rawSha256": "da3faa62552e95c8dc7cdf1a804bd6528361c65fe5b769d681565e3a9e81aed2",
       "otherOriginalSmsHrefs": [
@@ -200,7 +200,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G70 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G70",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G70",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0005.html",
       "rawSha256": "4912a28b0e6c8e39f77bce9fc0bfec8a6c7ff51b1800f1a3a9e789fd4fb7ef05",
       "otherOriginalSmsHrefs": [
@@ -221,7 +221,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5GVS80 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GVS80",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5GVS80",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0006.html",
       "rawSha256": "ab9178f9bae33d31a0f171ee4f65db0568083bd3a35826a8789a27545a46cee5",
       "otherOriginalSmsHrefs": [
@@ -242,7 +242,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=3N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/3N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/3N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0007.html",
       "rawSha256": "5e70ab16b49b3aa684156a141bd17515a73d536e0551a07d010452d2e125644b",
       "otherOriginalSmsHrefs": [
@@ -278,7 +278,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=7N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/7N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/7N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0008.html",
       "rawSha256": "3ebefd6995290806f896f883f03d21dc5e0766e1b8f53ee53c94eb11b8435ad8",
       "otherOriginalSmsHrefs": [
@@ -314,7 +314,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G10 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G10",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G10",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0009.html",
       "rawSha256": "f9e88ce9edfae8d3c67e32af925c7de695c853ce4fda7bc0e9ccdb25fd139baa",
       "otherOriginalSmsHrefs": [
@@ -335,7 +335,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=1N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/1N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/1N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0010.html",
       "rawSha256": "dc963932491a023c441a3b432e21e0818d5ed2da81e34353a2707522d17a87f9",
       "otherOriginalSmsHrefs": [
@@ -371,7 +371,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5GVS12 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GVS12",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5GVS12",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0011.html",
       "rawSha256": "ab7f14915abc1dbb05de2674fd1f9c162f7acc9a0b902c6f467a267c27bfd7c4",
       "otherOriginalSmsHrefs": [
@@ -392,7 +392,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST7K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST7K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST7K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0012.html",
       "rawSha256": "359095a3b06e8b00960690ccbe2ed5314b3f465279a33a66ce0edce27d7f6bb7",
       "otherOriginalSmsHrefs": [
@@ -413,7 +413,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=SD90 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD90",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/SD90",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0013.html",
       "rawSha256": "ee46da7d7c23eb636545ff30e8e6e36b095b0bfeea7cb0c83f30922b6142a11e",
       "otherOriginalSmsHrefs": [
@@ -446,7 +446,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=SD120 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD120",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/SD120",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0014.html",
       "rawSha256": "e78ae1a7e030fd270df8e134c543da4ec69fec6b41ab096e3797bc2362d0d518",
       "otherOriginalSmsHrefs": [
@@ -479,7 +479,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=SD135 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD135",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/SD135",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0015.html",
       "rawSha256": "0f96c959b43d56c42737f093bdecbca14141fed9e9807f956631fcfa8f7f440b",
       "otherOriginalSmsHrefs": [
@@ -512,7 +512,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=SD150 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/SD150",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/SD150",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0016.html",
       "rawSha256": "80c18d4ea706831e15f7eafe6fc4b15d33b21d36b776fc7c9e5d374c13360bed",
       "otherOriginalSmsHrefs": [
@@ -545,7 +545,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=VM80 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/VM80",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/VM80",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0017.html",
       "rawSha256": "91a438f9d9c358f6a85973caece55b04cdf4f7e2794f6b4e319de5dc6a33d181",
       "otherOriginalSmsHrefs": [
@@ -566,7 +566,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=VM100 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/VM100",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/VM100",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0018.html",
       "rawSha256": "6144b3b70f158d74dc6719f9c3b5c67c52466b65f39836f381e3f9da6b526538",
       "otherOriginalSmsHrefs": [
@@ -587,7 +587,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=VM130 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/VM130",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/VM130",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0019.html",
       "rawSha256": "e792491cbb92436ff7c9c0b76a41a004f8448ad8c22a64e27d83998f42d061c7",
       "otherOriginalSmsHrefs": [
@@ -608,7 +608,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V90B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V90B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V90B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0020.html",
       "rawSha256": "e874f99bb97ab5060346875827a4c3785b2245688060132a0d213be6b890fe08",
       "otherOriginalSmsHrefs": [
@@ -641,7 +641,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V120B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V120B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V120B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0021.html",
       "rawSha256": "c1d139c41b36f7c9a87ea555f895e453dfccb746db046b6f142b1c59c0621049",
       "otherOriginalSmsHrefs": [
@@ -674,7 +674,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V150B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V150B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V150B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0022.html",
       "rawSha256": "fef7431c3270453b84c949eb764c5d2e6eadd8a3e244c19b1d1cca03ec8160c3",
       "otherOriginalSmsHrefs": [
@@ -707,7 +707,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V160B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V160B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V160B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0023.html",
       "rawSha256": "cdbb8f53c0c978e3e94dca5a19eba7f8540483e4b896ed82265772af2c2f0ed3",
       "otherOriginalSmsHrefs": [
@@ -740,7 +740,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V180B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V180B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V180B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0024.html",
       "rawSha256": "8610e4f25827d334d50ee8bcd5a248ebd5964e0b384559bf49ad59a718005be6",
       "otherOriginalSmsHrefs": [
@@ -773,7 +773,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V200B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V200B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V200B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0025.html",
       "rawSha256": "a514a6d6e62e3ee7e1a869cb078f42aab06f20ddeb811d9210e9a2f5e06759ed",
       "otherOriginalSmsHrefs": [
@@ -806,7 +806,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=30N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/30N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/30N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0026.html",
       "rawSha256": "812fec42a1b3f0227c95dd5818b4110cc4884211db3a9680f7af99b0f93bccd1",
       "otherOriginalSmsHrefs": [
@@ -838,7 +838,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=90N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/90N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/90N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0027.html",
       "rawSha256": "d9877815ff2639135449936358bff28b9d6e6ccce4fc867f427fd4686d0deca4",
       "otherOriginalSmsHrefs": [
@@ -870,7 +870,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=180N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/180N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/180N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0028.html",
       "rawSha256": "efa074e2751260cfa5167c8faa6915c9eaa3b5b67c73d189e6121a67fe0de2f0",
       "otherOriginalSmsHrefs": [
@@ -902,7 +902,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=360N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/360N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/360N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0029.html",
       "rawSha256": "bd936ad6d1a297934019942f1a3f83465cd8881c6106d686ad5db1c366eb5b64",
       "otherOriginalSmsHrefs": [
@@ -934,7 +934,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=MXH100 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MXH100",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/MXH100",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0030.html",
       "rawSha256": "7905a721631da968694f350566226417c2f92d5430871cf334356914150d1d2a",
       "otherOriginalSmsHrefs": [
@@ -969,7 +969,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=MXH120 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MXH120",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/MXH120",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0031.html",
       "rawSha256": "83c58b2e9a7484b80a65761d0324e88c81ee9663291530473f296f85e1312e38",
       "otherOriginalSmsHrefs": [
@@ -1004,7 +1004,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=MXH150 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MXH150",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/MXH150",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0032.html",
       "rawSha256": "eab1af3a204f3985645a3d904b0c8c20511794b263b47c7368ed7d09cf990c23",
       "otherOriginalSmsHrefs": [
@@ -1039,7 +1039,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5GMXH200 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GMXH200",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5GMXH200",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0033.html",
       "rawSha256": "d7cbf6c9899ac03f2962334a28ee00aff5796ea56a935ebb28b714799e8a6ff6",
       "otherOriginalSmsHrefs": [
@@ -1060,7 +1060,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5GMXH230 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GMXH230",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5GMXH230",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0034.html",
       "rawSha256": "b2a7fa225573a3f8da69d09311610f85c3afa40aeb2a1a1bc3c1a69e0bedd024",
       "otherOriginalSmsHrefs": [
@@ -1081,7 +1081,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV75K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV75K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV75K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0035.html",
       "rawSha256": "4e7aecf8bb09d4ebd5ee63d6eb48a90b2b692e9389e812fbd3b2197f6ea5a77c",
       "otherOriginalSmsHrefs": [
@@ -1119,7 +1119,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV90C UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV90C",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV90C",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0036.html",
       "rawSha256": "08c2a3f29641e2b941a77d8547accbf6503e65eece5ff2286b75f613a3c7513a",
       "otherOriginalSmsHrefs": [
@@ -1157,7 +1157,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV95K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV95K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV95K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0037.html",
       "rawSha256": "c3c06bba01935ccf07572ebfbfb046c158be81aa500b2c119707d7adad246bee",
       "otherOriginalSmsHrefs": [
@@ -1195,7 +1195,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV120C UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV120C",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV120C",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0038.html",
       "rawSha256": "9382fbe14a67094ebd6427139f5913c3274f4074bd5a1b4ef39c49a422743fd3",
       "otherOriginalSmsHrefs": [
@@ -1233,7 +1233,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV120K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV120K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV120K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0039.html",
       "rawSha256": "c608a69bda25d4bd0f54be513fae8bdd4859bbd761ceb85fb44618fd716e74e8",
       "otherOriginalSmsHrefs": [
@@ -1271,7 +1271,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV125K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV125K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV125K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0040.html",
       "rawSha256": "a54fbbeca0375a81eee30e8d6b88aba814b4195b134e414548b91260aa86d02b",
       "otherOriginalSmsHrefs": [
@@ -1309,7 +1309,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TH30 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TH30",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TH30",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0041.html",
       "rawSha256": "4c64137df29bb532d5d5a97c65a77dcca55f2d70c58a1fa4eff3615a08b1d117",
       "otherOriginalSmsHrefs": [
@@ -1334,7 +1334,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=T50K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/T50K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/T50K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0042.html",
       "rawSha256": "54d99a1a70235a02d56e7364ac1e4d08fe25423266acfc6f1f24b896ed9989c6",
       "otherOriginalSmsHrefs": [
@@ -1362,7 +1362,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=YT50K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/YT50K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/YT50K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0043.html",
       "rawSha256": "41b8789786049191e618148610584721fcb3415993a50018ed6336cf9f050419",
       "otherOriginalSmsHrefs": [
@@ -1390,7 +1390,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=FB50K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FB50K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/FB50K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0044.html",
       "rawSha256": "e81b914ac2a93facf44e7ceee249622051d6f613129958244dfa2cedff949961",
       "otherOriginalSmsHrefs": [
@@ -1421,7 +1421,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=T15K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/T15K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/T15K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0045.html",
       "rawSha256": "e4cba06069449bec190a5bb3739b809eb237e12605de38c7021afcfecb059dea",
       "otherOriginalSmsHrefs": [
@@ -1449,7 +1449,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=YT15K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/YT15K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/YT15K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0046.html",
       "rawSha256": "dba5034cd878dacc31954ce1b01c1845175523e52d1eaefb1d6dac1658502f22",
       "otherOriginalSmsHrefs": [
@@ -1477,7 +1477,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=FB15K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FB15K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/FB15K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0047.html",
       "rawSha256": "d55950986b7125928808b9a6f6b0ce97a49e14de7da1e704d42a2e09f3549202",
       "otherOriginalSmsHrefs": [
@@ -1505,7 +1505,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=T5K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/T5K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/T5K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0048.html",
       "rawSha256": "a24e6d06b0e0f4d5248208f84c373ee02b275a59229a5ae1c50b049211eb95c2",
       "otherOriginalSmsHrefs": [
@@ -1533,7 +1533,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=YT5K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/YT5K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/YT5K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0049.html",
       "rawSha256": "8f6ee9fbbd2daf5690970d9a9201573c5ddcc41467ace8798242b8c46cd3c60d",
       "otherOriginalSmsHrefs": [
@@ -1561,7 +1561,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=FB5K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FB5K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/FB5K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0050.html",
       "rawSha256": "9e899948ca8e792fafde45fb7e64155ce11dea987ec12c3dc4516cfddf702039",
       "otherOriginalSmsHrefs": [
@@ -1589,7 +1589,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V15B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V15B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V15B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0051.html",
       "rawSha256": "1af5106d65b233b25759b8f4282be306329b0cbc06e3a77eb846208dc969d481",
       "otherOriginalSmsHrefs": [
@@ -1641,7 +1641,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V25B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V25B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V25B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0052.html",
       "rawSha256": "4e4a2ea501230cfd9439b6f4cf6c1649cc384c4ab1a82e38318f4888634c3ea8",
       "otherOriginalSmsHrefs": [
@@ -1693,7 +1693,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V35B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V35B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V35B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0053.html",
       "rawSha256": "0b4b782252c4af47c4549e21a779c3f38b4726eddd8672067b8810394436d75d",
       "otherOriginalSmsHrefs": [
@@ -1745,7 +1745,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=C20K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/C20K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/C20K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0054.html",
       "rawSha256": "efb0abe9c0a5dd04b30316a7568e91b32d86af3fdff65a904717ee9e3635feaf",
       "otherOriginalSmsHrefs": [
@@ -1797,7 +1797,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=F30 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/F30",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/F30",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0055.html",
       "rawSha256": "7a1b5bf62937472e9e0c4303437340924895c4767e651123516947ee1b91f2a9",
       "otherOriginalSmsHrefs": [
@@ -1849,7 +1849,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=FT50 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/FT50",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/FT50",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0056.html",
       "rawSha256": "a3565b67be9d940e17a2f1a99eb76182539bc10dee139e0d8347d014298fa340",
       "otherOriginalSmsHrefs": [
@@ -1901,7 +1901,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV35K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV35K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV35K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0057.html",
       "rawSha256": "52172aaaf65a7f32d1768bda152e6fea3ce31b7d5b17e060dd861c2823bfc923",
       "otherOriginalSmsHrefs": [
@@ -1941,7 +1941,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TV65K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TV65K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TV65K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0058.html",
       "rawSha256": "e85e1c22ebe3b362c36513a5cb77bb21d96ebd4441ec57ec6499ea68b5db3da9",
       "otherOriginalSmsHrefs": [
@@ -1981,7 +1981,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V50K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V50K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V50K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0059.html",
       "rawSha256": "b088df82eb399d1720ab70bc80d5ae6d0a48d999e9bac45bb5df1e10d1a529e1",
       "otherOriginalSmsHrefs": [
@@ -2015,7 +2015,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V100K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V100K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V100K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0060.html",
       "rawSha256": "6ebf51d716057a311a4694671641dd224ae52cb8b9374eeb3878d71c2061ddd2",
       "otherOriginalSmsHrefs": [
@@ -2049,7 +2049,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST15K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST15K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST15K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0061.html",
       "rawSha256": "6f9063e93c487d574cad546cbdf631f13e46f34ac14c5e9f285db0bc04bd5634",
       "otherOriginalSmsHrefs": [
@@ -2070,7 +2070,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=MI20K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MI20K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/MI20K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0062.html",
       "rawSha256": "80cf14d7d69b2ac80fd8e331166499efd978e6a87cb06f3452b283d1a5a436c9",
       "otherOriginalSmsHrefs": [
@@ -2091,7 +2091,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST30K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST30K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST30K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0063.html",
       "rawSha256": "dac5a886a7bfe2fa1cc19fdbb56fb80cfbe428d07e0faac83df2a52f568d9a53",
       "otherOriginalSmsHrefs": [
@@ -2112,7 +2112,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=EST30 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/EST30",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/EST30",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0064.html",
       "rawSha256": "062937d33a71f56027f7738293e130b53b38632714114abd842f5b9b1761a5b2",
       "otherOriginalSmsHrefs": [
@@ -2133,7 +2133,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V30X UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V30X",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V30X",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0065.html",
       "rawSha256": "f335712118c06ddc6080be5ff5bc12bba080556ff4758e25335cb2b9e8c88f65",
       "otherOriginalSmsHrefs": [
@@ -2154,7 +2154,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=MI50K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/MI50K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/MI50K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0066.html",
       "rawSha256": "17ba052827c9a7d9505944762686e6f02f14cba9f809d32923cb6d16ad844962",
       "otherOriginalSmsHrefs": [
@@ -2175,7 +2175,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST60N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST60N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST60N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0067.html",
       "rawSha256": "d96b4026ce47a7b8ea576bf63235cd2039cf9aa2d8f5a190fda827dace500104",
       "otherOriginalSmsHrefs": [
@@ -2214,7 +2214,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TRE60 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TRE60",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TRE60",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0068.html",
       "rawSha256": "e2373ef857fb320cb43da3dd60b3962b454f734981ffbabd2cf29c497ffff5ff",
       "otherOriginalSmsHrefs": [
@@ -2247,7 +2247,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST70K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST70K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST70K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0069.html",
       "rawSha256": "439b0dbd8f9ee00c892ef2a648f6e29a0c1ead97ed34ae0fdcfe5647ba9dc6e9",
       "otherOriginalSmsHrefs": [
@@ -2283,7 +2283,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST90N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST90N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST90N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0070.html",
       "rawSha256": "61a8282a7957f55e99f28eb9f3047d2333d2ff762cae3c745d338a2ed48960e8",
       "otherOriginalSmsHrefs": [
@@ -2322,7 +2322,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=TRE90 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/TRE90",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/TRE90",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0071.html",
       "rawSha256": "bbf1df2a25088e6c8ebf56032be5825d7a94fc3db5ff6277b542bdca952fe9bb",
       "otherOriginalSmsHrefs": [
@@ -2361,7 +2361,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V120N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V120N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V120N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0072.html",
       "rawSha256": "2e578b3ecb1d980f84d60a0eabb20de0fb33acffadda8266480992a4d84793ca",
       "otherOriginalSmsHrefs": [
@@ -2400,7 +2400,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V120C UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V120C",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V120C",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0073.html",
       "rawSha256": "b97cb9d6faa5f9a20e53a04f2b670b3cf31bf790429875b9eb6df35719bad47d",
       "otherOriginalSmsHrefs": [
@@ -2439,7 +2439,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST120K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST120K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST120K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0074.html",
       "rawSha256": "7f05c18cc5567264e29e1e45cc04a61410fb01b747b7f13edba9a240d6ac3891",
       "otherOriginalSmsHrefs": [
@@ -2478,7 +2478,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V150N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V150N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V150N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0075.html",
       "rawSha256": "4215a1c1a6e8aee1efdc3fc4d313c9c76ab4098df9c2929fcef35ed6ba9a2d9c",
       "otherOriginalSmsHrefs": [
@@ -2517,7 +2517,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V150C UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V150C",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V150C",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0076.html",
       "rawSha256": "27e96d099f3c2b217e9839db9359e37738724cf7ed106b7135d86ef2b74022ad",
       "otherOriginalSmsHrefs": [
@@ -2556,7 +2556,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=ST150K UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/ST150K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/ST150K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0077.html",
       "rawSha256": "260e71fd92c23f1bf61e69c84659333fe38ad35855016e39966dc3593668c0c8",
       "otherOriginalSmsHrefs": [
@@ -2595,7 +2595,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=V200C UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/V200C",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/V200C",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0078.html",
       "rawSha256": "b14bee4b9a284e1a7f248b6d94af47a06eff606d00fe4489ca91ce33b4257dd8",
       "otherOriginalSmsHrefs": [
@@ -2634,7 +2634,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G135 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G135",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G135",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0079.html",
       "rawSha256": "9222314af3586c38f1bb386826edfd6a48d3e1b64c3a3e7099b738baa6ccd900",
       "otherOriginalSmsHrefs": [
@@ -2678,7 +2678,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G150 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G150",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G150",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0080.html",
       "rawSha256": "6cb6d6318a4d03c4165b11145129fdb9ebce3ac7c0c93c0056a59b25ec7b04d8",
       "otherOriginalSmsHrefs": [
@@ -2722,7 +2722,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G160B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G160B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G160B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0081.html",
       "rawSha256": "c509ef7f2150c04fb12f13099970b010a0417234e24b240baa69c9e9d8ef6af8",
       "otherOriginalSmsHrefs": [
@@ -2766,7 +2766,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G180B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G180B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G180B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0082.html",
       "rawSha256": "743885ebcb7b5113d65d10ddc09b6b19f1a866ba0579f4085326e8cab4126912",
       "otherOriginalSmsHrefs": [
@@ -2810,7 +2810,7 @@
         "label": "ĐĂNG KÝ",
         "href": "sms:290?body=5G230B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G230B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G230B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0083.html",
       "rawSha256": "02ebfc48ab96104536d10492607a9fb4fca874c0b95e0d32b2a8087018892f3d",
       "otherOriginalSmsHrefs": [
@@ -2854,7 +2854,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G280B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G280B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G280B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0084.html",
       "rawSha256": "35eae6722e2e328973b893492c9afb2000c167c44f3ef11c9628471c86f3fdd6",
       "otherOriginalSmsHrefs": [
@@ -2898,7 +2898,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G330B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G330B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G330B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0085.html",
       "rawSha256": "f02af6f932193ccc395603cd64892609462654fec5db23e35b9b4c5166a94bf6",
       "otherOriginalSmsHrefs": [
@@ -2942,7 +2942,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G380B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G380B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G380B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0086.html",
       "rawSha256": "b339dc80c6acc3ea881766789d2a15c4c853bc69ca8c5e7cd72583ab9daa6355",
       "otherOriginalSmsHrefs": [
@@ -2986,7 +2986,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G480B UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G480B",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G480B",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0087.html",
       "rawSha256": "44aacd976392597f5178632e3bfa8dddb58b4edbd6d806decc6c96c76f3c0d0a",
       "otherOriginalSmsHrefs": [
@@ -3030,7 +3030,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G135N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G135N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G135N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0088.html",
       "rawSha256": "0d90d709e4460e0a052402620f972252131967d09f331c15f6597439180d2694",
       "otherOriginalSmsHrefs": [
@@ -3054,7 +3054,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G150N UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G150N",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G150N",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0089.html",
       "rawSha256": "7c43360d58eadc0cfd5eaf8c98344df4461fec6b69c837e22f2067657d91befc",
       "otherOriginalSmsHrefs": [
@@ -3078,7 +3078,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5GLQ190 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GLQ190",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5GLQ190",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0090.html",
       "rawSha256": "c0d0e3a33774061a6254c806e3a92048a5f041e7b8d311da590b09086fbd17cf",
       "otherOriginalSmsHrefs": [
@@ -3122,7 +3122,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5GLQ210 UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5GLQ210",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5GLQ210",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0091.html",
       "rawSha256": "12717dbf82615d6ff8b352ad4e5443488b6257cf3b67f04a6b636f30ea2310e7",
       "otherOriginalSmsHrefs": [
@@ -3166,7 +3166,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G200C UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G200C",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G200C",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0092.html",
       "rawSha256": "a389cad89254a0ee4e828013718024b5e3d78db3a84dbc2b5f40cc716eceef46",
       "otherOriginalSmsHrefs": [
@@ -3190,7 +3190,7 @@
         "label": "Đăng Ký",
         "href": "sms:290?body=5G300C UP"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/5G300C",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G300C",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0093.html",
       "rawSha256": "ef7df4756a43b388b2d63df262c794f74f4fba3e085385a6530156ed35845f71",
       "otherOriginalSmsHrefs": [
@@ -3214,7 +3214,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS110",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS110",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0094.html",
       "rawSha256": "289e54bf82499876a53cf556502404da11150fe578f3412c9f058028cec84197",
       "otherOriginalSmsHrefs": [
@@ -3232,7 +3232,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS145",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS145",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0095.html",
       "rawSha256": "ff218a718fa34352cf517d19a11d4387ee89b5c9731bae5960e9d205b89a2be3",
       "otherOriginalSmsHrefs": [
@@ -3250,7 +3250,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS165",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS165",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0096.html",
       "rawSha256": "5344a8d3a723ec3365b5045a5fbd3db450aab490acde803588aed8eacb7a2124",
       "otherOriginalSmsHrefs": [
@@ -3268,7 +3268,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS2H",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS2H",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0097.html",
       "rawSha256": "7b63a8ca37fa6730938b3065335cbce6e71125d6ab328a69eaa263b9cfd1e725",
       "otherOriginalSmsHrefs": [
@@ -3288,7 +3288,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS6H",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS6H",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0098.html",
       "rawSha256": "a52bd912762b41506c33036d26337d4f614e389af9fb387a44d9495a2b09da11",
       "otherOriginalSmsHrefs": [
@@ -3308,7 +3308,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS8",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS8",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0099.html",
       "rawSha256": "5a151a48ae7f5f5a670a9e84356896de335405acfb7f2331e859ce86c56d0aa6",
       "otherOriginalSmsHrefs": [
@@ -3328,7 +3328,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS12",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS12",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0100.html",
       "rawSha256": "cc26379db76992e0ecd5d494fbf9219e59281d741f5eb0d26f05d3852f021d61",
       "otherOriginalSmsHrefs": [
@@ -3348,7 +3348,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS20",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS20",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0101.html",
       "rawSha256": "2feb5d1e9e6704ce95273baa77cb7e5eec2bfa22553ccb96a3ee18d0c9c60dd7",
       "otherOriginalSmsHrefs": [
@@ -3368,7 +3368,7 @@
         "label": "Đăng Ký",
         "href": "https://km.vtmoney.vn/314y/homeapp"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/KS36",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/KS36",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0102.html",
       "rawSha256": "7c6e3883d2a2f8ed89bb46c4d4117c9ffae63a6d21430cbe0fef9cb2dff6ae45",
       "otherOriginalSmsHrefs": [
@@ -3388,7 +3388,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH120",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0103.html",
       "rawSha256": "458cc6bdd459c76146a754069a4e1da41e345661fa473079f06803f03390cfcd",
       "otherOriginalSmsHrefs": [],
@@ -3405,7 +3405,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH150",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH150",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0104.html",
       "rawSha256": "662305b12b9224de41a434ad553172ef93b2ee0d3c8977c0673ad28df3f109d4",
       "otherOriginalSmsHrefs": [],
@@ -3422,7 +3422,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH200",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH200",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0105.html",
       "rawSha256": "91e99e5cd5f7097bb290c44f7a531227e965281cc342c481791087a5544e87b0",
       "otherOriginalSmsHrefs": [],
@@ -3439,7 +3439,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/MXH250",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH250",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0106.html",
       "rawSha256": "32d1b9eed885d0375ebafe074a2bc55c0448badc793273126125281ca7b2fd78",
       "otherOriginalSmsHrefs": [],
@@ -3456,7 +3456,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V120K",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/V120K",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0107.html",
       "rawSha256": "3a09a7d74846c18e3ac47ddabb875ae5eabbd0b74a89d4c277310efc95758438",
       "otherOriginalSmsHrefs": [],
@@ -3473,7 +3473,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V160X",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/V160X",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0108.html",
       "rawSha256": "c8593823c478b3b292e6bbdb7ef12b32d6f56a967b7185e603f569e22c353267",
       "otherOriginalSmsHrefs": [],
@@ -3490,7 +3490,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/V180X",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/V180X",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0109.html",
       "rawSha256": "58761635c9c1484f1e0fe5e81dff96278ed5eba81d395aa89d85e030130f0a01",
       "otherOriginalSmsHrefs": [],
@@ -3507,7 +3507,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N200",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N200",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0110.html",
       "rawSha256": "373c628efa03854a7beaf7abf8d67259146f4a28658b72b896cf728811648ff5",
       "otherOriginalSmsHrefs": [],
@@ -3524,7 +3524,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N250",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N250",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0111.html",
       "rawSha256": "90c97168d9928737f4c36d75e09239b605747e9963f8fca392badc51cf270677",
       "otherOriginalSmsHrefs": [],
@@ -3541,7 +3541,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N300",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N300",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0112.html",
       "rawSha256": "8095ec45a89d4f9908244d70c73cbf8e53b82fe85935c6e50cac26ba3e6c3595",
       "otherOriginalSmsHrefs": [],
@@ -3558,7 +3558,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N350",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N350",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0113.html",
       "rawSha256": "b8652df9ac63d0289e9510f72fd8620fd22a477b52a4ceb8c52b97894711aed8",
       "otherOriginalSmsHrefs": [],
@@ -3575,7 +3575,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N400",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N400",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0114.html",
       "rawSha256": "8422fdd193f82f4b63b7cb8c9b9bc5bbea3ffaeff126a119a0f2f03178cfca3e",
       "otherOriginalSmsHrefs": [],
@@ -3592,7 +3592,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N500",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N500",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0115.html",
       "rawSha256": "09c5df902af443459d5f9fa275034f518abb4d41e54bf14bc02a7be8919f7e17",
       "otherOriginalSmsHrefs": [],
@@ -3609,7 +3609,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N1000",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N1000",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0116.html",
       "rawSha256": "2edc2456fb8858ac6157a7d6bfb1a41c66e75267b490148c629f2916a6f7b258",
       "otherOriginalSmsHrefs": [],
@@ -3626,7 +3626,7 @@
         "label": "Liên hệ",
         "href": "tel:18008098"
       },
-      "sourceUrl": "https://www.viettelup.vn/goi-cuoc-viettel/tra-sau/N2000",
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/N2000",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0117.html",
       "rawSha256": "6683b749e6047e59c83c525b5270d54ca32996bba0f9058b7ab332dd9db94cfd",
       "otherOriginalSmsHrefs": [],
@@ -3639,7 +3639,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/so-sanh-roaming",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/so-sanh-roaming",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0118.html",
       "rawSha256": "cad59a30c155b91e577daa216dfc9d4c357454b31c378dcf819eb97fb4c1dd87",
       "otherOriginalSmsHrefs": [
@@ -3654,7 +3654,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0119.html",
       "rawSha256": "71cc2bd9d892b68858d56ce32dd71bfc5fc1ce8b65b4c4bf400e9c365ec7008c",
       "otherOriginalSmsHrefs": [
@@ -3669,7 +3669,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0120.html",
       "rawSha256": "3c48b926c59ca9a1a8a3430b45c32169e4d68c89222d7da66c974163acc09677",
       "otherOriginalSmsHrefs": [
@@ -3738,7 +3738,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0121.html",
       "rawSha256": "d60258aee0128d80e5a4a7046189a5d6b320f39b0c442071466b3c737bf4ebc4",
       "otherOriginalSmsHrefs": [
@@ -3753,7 +3753,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0122.html",
       "rawSha256": "7a66ed73fc1bd59ef7ff0e4933989abedb1b32dfcb4fe45ef23157f2cee6af72",
       "otherOriginalSmsHrefs": [
@@ -3768,7 +3768,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/giai-dap-thac-mac-hssv",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/giai-dap-thac-mac-hssv",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0123.html",
       "rawSha256": "abdb42591fa97a8e3c428c8366d06e422b23a2a3151cb495681f305b85ce985e",
       "otherOriginalSmsHrefs": [
@@ -3783,7 +3783,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-3-2026",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-thang-3-2026",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0124.html",
       "rawSha256": "e81867c61f888d6540eb980154bba152d129b15b4052baaa5c9f7c03f122cfc0",
       "otherOriginalSmsHrefs": [
@@ -3839,7 +3839,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-cho-sinh-vien",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-cho-sinh-vien",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0125.html",
       "rawSha256": "0d262f98a08aafe081b917c4a17b1d91d5b7c7e1022356d3100a85d053d40be0",
       "otherOriginalSmsHrefs": [
@@ -3875,7 +3875,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0126.html",
       "rawSha256": "a876c9b393b71295649d7ac2d7dcbe8649cbd835dc5f4c963cee87e38fcf5187",
       "otherOriginalSmsHrefs": [
@@ -3902,7 +3902,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-camera-ai",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-camera-ai",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0127.html",
       "rawSha256": "43894bf4794b507a3c038d8402179b0e885cde713a2bc8923939ccb8145d120a",
       "otherOriginalSmsHrefs": [
@@ -3917,7 +3917,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/nine-style",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/nine-style",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0128.html",
       "rawSha256": "1e825e366478179c3881e31af48769a52182b2e0f28c7d82c0eae9cb3e074f36",
       "otherOriginalSmsHrefs": [
@@ -3932,7 +3932,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/cap-nhat-goi-cuoc-GIC",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/cap-nhat-goi-cuoc-GIC",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0129.html",
       "rawSha256": "76550a064f4672c7a8a008ba7edc3a06515d458ed067ae071616e51b58f570f0",
       "otherOriginalSmsHrefs": [
@@ -3947,7 +3947,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-5g-family",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-5g-family",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0130.html",
       "rawSha256": "855e01227c5a963eea95c6d08f19ac7465cdf4f34a4f4a6bb005ad056a7e92c3",
       "otherOriginalSmsHrefs": [
@@ -3962,7 +3962,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-mang-viettel",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-mang-viettel",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0131.html",
       "rawSha256": "954b5a97ab689320ed403b694eacbfb183096dde8ee00c6052e7f671fe94df46",
       "otherOriginalSmsHrefs": [
@@ -3977,7 +3977,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/dung-5g-co-hao-pin-va-ton-data",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/dung-5g-co-hao-pin-va-ton-data",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0132.html",
       "rawSha256": "3d4528431e2a3c838b1cc3beb5f479d5c91d5675ed7d91fd31476edf0bca3765",
       "otherOriginalSmsHrefs": [
@@ -4003,7 +4003,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-ngay-viettel",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-ngay-viettel",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0133.html",
       "rawSha256": "0cfe72cfe823eb1ec61fbb1b90e1c5eb193d800ec4b2f6a1b2f96e8a6709d697",
       "otherOriginalSmsHrefs": [
@@ -4024,7 +4024,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-06-2025",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-thang-06-2025",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0134.html",
       "rawSha256": "cb894e519cae9e29012edec68717a59a7c89783e1b76b6761e6f93aa529fadd1",
       "otherOriginalSmsHrefs": [
@@ -4089,7 +4089,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-mydio-viettel",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-mydio-viettel",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0135.html",
       "rawSha256": "7f8517e3b7c77b7a1be3a7fd8dc3872737377044bd2a85e8b3f7a66ff78a32cc",
       "otherOriginalSmsHrefs": [
@@ -4107,7 +4107,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0136.html",
       "rawSha256": "d1a870052a63d47c2c18fb95bb18f6638e5f4efa231987c5a11ba4a154fe8afa",
       "otherOriginalSmsHrefs": [
@@ -4122,7 +4122,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-viettel-thang-4-2025",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-viettel-thang-4-2025",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0137.html",
       "rawSha256": "55da2c2828e08d4cb7949befe65916fbd67f02285292464a9c123b689c3e4fe9",
       "otherOriginalSmsHrefs": [
@@ -4168,7 +4168,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0138.html",
       "rawSha256": "469bb863b343c1a8d0197f40808119285c0c963365100e4337fd3c5c14b16b35",
       "otherOriginalSmsHrefs": [
@@ -4189,7 +4189,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0139.html",
       "rawSha256": "2648df45ae26359aba8dbf866779598a2063169aaeb97ade01f239b29ce0e51c",
       "otherOriginalSmsHrefs": [
@@ -4204,7 +4204,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0140.html",
       "rawSha256": "3335c76a4fcf62f7a964144e95b06627a8858073df02edc1ba12ab829fc3f6ab",
       "otherOriginalSmsHrefs": [
@@ -4288,7 +4288,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/lo-trinh-trien-khai-5g-viettel",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/lo-trinh-trien-khai-5g-viettel",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0141.html",
       "rawSha256": "a63d29671055de0d78fcb9e807cb344f0832532d00d046811792c0acdfdca1a2",
       "otherOriginalSmsHrefs": [
@@ -4303,7 +4303,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0142.html",
       "rawSha256": "a08dd94042bc86fb4bdf94d406828aac955817f3349bee35e8bdce0d09d29e2f",
       "otherOriginalSmsHrefs": [
@@ -4381,7 +4381,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0143.html",
       "rawSha256": "8fc1a527e786525717bd0cde219f04b112bdaad39d9eede7a2d76fa4281c1544",
       "otherOriginalSmsHrefs": [
@@ -4435,7 +4435,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/goi-cuoc-5g-viettel-tet5g",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/goi-cuoc-5g-viettel-tet5g",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0144.html",
       "rawSha256": "bfac169e77cda04b8a194432645312977eb535ab471c43739f1fcad43a924000",
       "otherOriginalSmsHrefs": [
@@ -4451,7 +4451,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/tong-dai-viettel",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/tong-dai-viettel",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0145.html",
       "rawSha256": "986271c2134dcbd037412f775b24fe5e105f107fe752ca1376d000f411e5a312",
       "otherOriginalSmsHrefs": [
@@ -4466,7 +4466,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/so-sanh-goi-cuoc-4g-va-5g",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/so-sanh-goi-cuoc-4g-va-5g",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0146.html",
       "rawSha256": "f49d40ce951d6291bd87dcfb8162f81cd348ec52b9db99fa42cea0fad3dbbc6e",
       "otherOriginalSmsHrefs": [
@@ -4495,7 +4495,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/dang-ky-5g-viettel-2024",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/dang-ky-5g-viettel-2024",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0147.html",
       "rawSha256": "ccf82921db4642cc236019d90751080a997d17f91d50e4db3dd84d944e6186aa",
       "otherOriginalSmsHrefs": [
@@ -4521,7 +4521,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0148.html",
       "rawSha256": "66d02c39862633644fbd5dcd9235eed6121b7bc9d208fc985f1c593b5fb3befd",
       "otherOriginalSmsHrefs": [
@@ -4548,7 +4548,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0149.html",
       "rawSha256": "9c6a013181aacaca8e088b4e4d7d0611f571a14af6f41d4f486f53927afa9567",
       "otherOriginalSmsHrefs": [
@@ -4563,7 +4563,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/khuyen-mai-nap-the-15-6",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/khuyen-mai-nap-the-15-6",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0150.html",
       "rawSha256": "5cb26c975a6bb21747058128ab7771af7ec8ffac45293db227a3eee2d624128d",
       "otherOriginalSmsHrefs": [
@@ -4590,7 +4590,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/mo-app-co-qua-viettel-money",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/mo-app-co-qua-viettel-money",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0151.html",
       "rawSha256": "a695c38eb2a8108e6f243741175315c4ad087d94e51a83c999c141dda08769e5",
       "otherOriginalSmsHrefs": [
@@ -4605,7 +4605,7 @@
       "templateId": "news_article",
       "productId": null,
       "primary": null,
-      "sourceUrl": "https://www.viettelup.vn/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0152.html",
       "rawSha256": "2fdc183c5cfa01d119cfcc13519108ca6b50f8f8135bd4f90ece2175536ba874",
       "otherOriginalSmsHrefs": [
@@ -4633,7 +4633,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/NETVT01",
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT01",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0153.html",
       "rawSha256": "5e89dc6e9b32e06765b11a04b56a8a114019c80c02e36b077a8dfeafadfa141a",
       "otherOriginalSmsHrefs": [],
@@ -4649,7 +4649,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/MESHVT01",
+      "sourceUrl": "https://viettelwifii.vn/internet/MESHVT01",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0154.html",
       "rawSha256": "aae53fd9f9f26c96ad38c0262d269a98d014ce18293510c3b2b4f6c604505161",
       "otherOriginalSmsHrefs": [],
@@ -4665,7 +4665,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/NETVT1",
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT1",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0155.html",
       "rawSha256": "0fc3ad9f0b88f0d9af7e939751231525415c5688daa18589c87d8a8a7df825c5",
       "otherOriginalSmsHrefs": [],
@@ -4681,7 +4681,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/NETVT2",
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT2",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0156.html",
       "rawSha256": "6d003d4abcb16e063ed20b21b442b3b3a0b9eb4fdfc7c585cf23c7f77f13b85d",
       "otherOriginalSmsHrefs": [],
@@ -4697,7 +4697,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/MESHVT1",
+      "sourceUrl": "https://viettelwifii.vn/internet/MESHVT1",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0157.html",
       "rawSha256": "ca5eed4db6e124c477b0ead3b2a97d867e52fe635e83381ce19d72ce20c1374f",
       "otherOriginalSmsHrefs": [],
@@ -4713,7 +4713,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/GIGA1",
+      "sourceUrl": "https://viettelwifii.vn/internet/GIGA1",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0158.html",
       "rawSha256": "690e9f50d8affb7f6006a24fa37420f90bc0a55166c1c3b99772d7f42d0f8460",
       "otherOriginalSmsHrefs": [],
@@ -4729,7 +4729,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/GIGA2",
+      "sourceUrl": "https://viettelwifii.vn/internet/GIGA2",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0159.html",
       "rawSha256": "3bbe4e4caa9fdc8aaee3f0ee3b63c225909f10e32e1cbe7d93a21e0a7ae16f15",
       "otherOriginalSmsHrefs": [],
@@ -4745,7 +4745,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/GIGA3",
+      "sourceUrl": "https://viettelwifii.vn/internet/GIGA3",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0160.html",
       "rawSha256": "f916c838736e943201495c7a4fb61850e8b9bf1f558269b64af9a9f34a4c7b50",
       "otherOriginalSmsHrefs": [],
@@ -4761,7 +4761,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/GIGA4",
+      "sourceUrl": "https://viettelwifii.vn/internet/GIGA4",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0161.html",
       "rawSha256": "0011b95d52a486e924b6b593897b1eb47c589f2ad139297da6257d664058420b",
       "otherOriginalSmsHrefs": [],
@@ -4777,7 +4777,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/MESHVT2",
+      "sourceUrl": "https://viettelwifii.vn/internet/MESHVT2",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0162.html",
       "rawSha256": "a3c53d25dce81d122f61e537e9f4c84f5298169c021eb1ec7b96229d0fbe5566",
       "otherOriginalSmsHrefs": [],
@@ -4793,7 +4793,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/MESHVT3",
+      "sourceUrl": "https://viettelwifii.vn/internet/MESHVT3",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0163.html",
       "rawSha256": "4d8c1f7d60edb6bf6983d928d6eac82eb3957a162062a29dd091c7db77a79f33",
       "otherOriginalSmsHrefs": [],
@@ -4809,7 +4809,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/NETVT1_CAM1",
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT1_CAM1",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0164.html",
       "rawSha256": "29659a6bce16909a04c0f3e7bc9d83ed5c1093ebf5e922bf18ce1ba4f28e890e",
       "otherOriginalSmsHrefs": [],
@@ -4825,7 +4825,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/NETVT2_CAM1",
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT2_CAM1",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0165.html",
       "rawSha256": "34721cb65ddd03321b32520ee52dee97447ea213df5c2c5f62d459c49849afdf",
       "otherOriginalSmsHrefs": [],
@@ -4841,7 +4841,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/MESHVT1_CAM1",
+      "sourceUrl": "https://viettelwifii.vn/internet/MESHVT1_CAM1",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0166.html",
       "rawSha256": "9b7d6dfc247189d8a1ed8befcea1bfb34558d1df5e4b61157cb29ee124acff61",
       "otherOriginalSmsHrefs": [],
@@ -4857,7 +4857,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/MESHVT2_CAM1",
+      "sourceUrl": "https://viettelwifii.vn/internet/MESHVT2_CAM1",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0167.html",
       "rawSha256": "e9a81fba0042df388054ffd3b50d6a5257022859b9f54753d84cf787eb71c80a",
       "otherOriginalSmsHrefs": [],
@@ -4873,7 +4873,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/NETVT1_GIAITRI",
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT1_GIAITRI",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0168.html",
       "rawSha256": "c149175067515db654d801e1370dfbd2fdce69e4606730db86e2362154dd13c2",
       "otherOriginalSmsHrefs": [],
@@ -4889,7 +4889,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/NETVT2_GIAITRI",
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT2_GIAITRI",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0169.html",
       "rawSha256": "79a5ded0397f59a1ab90f8234c4820ced804b207b7c12fd92669c1c7af9f0b34",
       "otherOriginalSmsHrefs": [],
@@ -4905,7 +4905,7 @@
         "href": null,
         "observedElement": "button"
       },
-      "sourceUrl": "https://www.viettelup.vn/internet/MESHVT1_GIAITRI",
+      "sourceUrl": "https://viettelwifii.vn/internet/MESHVT1_GIAITRI",
       "rawHtmlPath": "work/web-clone-benchmark/raw/html/0170.html",
       "rawSha256": "6c6463878c681949f1eef33a5e8da70afc165c79e037c70aad81037dd0da97bb",
       "otherOriginalSmsHrefs": [],

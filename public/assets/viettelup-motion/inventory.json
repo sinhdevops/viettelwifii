@@ -1,0 +1,288 @@
+{
+  "taskId": "MOTION-ASSETS-01",
+  "capturedAt": "2026-10-27T16:55:19.775Z",
+  "runtime": {
+    "package": "@lottiefiles/dotlottie-web",
+    "version": "0.58.1",
+    "evidence": "public/assets/viettelup/59d5a49e6e3d181f82e2004f.js"
+  },
+  "assets": [
+    {
+      "name": "travel.lottie",
+      "sourceUrl": "https://viettelwifii.vn/travel.lottie",
+      "pageUrl": "https://viettelwifii.vn/goi-cuoc-roaming",
+      "localPath": "public/assets/viettelup-motion/travel.lottie",
+      "frontendUrl": "/assets/viettelup-motion/travel.lottie",
+      "rights": "Public source; reuse rights not independently established",
+      "fetchedAt": "2026-10-27T16:55:19.115Z",
+      "httpStatus": 200,
+      "responseUrl": "https://viettelwifii.vn/travel.lottie",
+      "contentType": "application/octet-stream",
+      "contentLength": null,
+      "contentEncoding": "br",
+      "bytes": 9836,
+      "sha256": "0b076501f750db3d5e789a99f6bf145f72b5b79c345f25d150bb7d81c3fffd67",
+      "magicHex": "504b030414000000",
+      "inspection": {
+        "manifest": {
+          "version": "1",
+          "generator": "@dotlottie/dotlottie-js@1.6.3",
+          "author": "@dotlottie/dotlottie-js@1.6.3",
+          "animations": [
+            {
+              "id": "1ff86496-3718-4e80-b0e2-ff93baaf1295",
+              "playMode": "normal"
+            }
+          ]
+        },
+        "crc32Verified": true,
+        "entries": [
+          {
+            "name": "manifest.json",
+            "bytes": 181,
+            "sha256": "10cc71b1f08328e4a1f0f4fe802dcbbd38e1a593692731c1bca73cd212be75a4",
+            "magicHex": "7b2276657273696f6e223a22"
+          },
+          {
+            "name": "animations/1ff86496-3718-4e80-b0e2-ff93baaf1295.json",
+            "bytes": 149906,
+            "sha256": "103daf479f2d2213fddaba3c6269680b955a34536f5d5e057159b690cb942923",
+            "magicHex": "7b2276223a22352e352e3722"
+          }
+        ],
+        "animations": [
+          {
+            "path": "animations/1ff86496-3718-4e80-b0e2-ff93baaf1295.json",
+            "version": "5.5.7",
+            "width": 1000,
+            "height": 800,
+            "frameRate": 30,
+            "inPoint": 0,
+            "outPoint": 181,
+            "durationSeconds": 6.033333333333333,
+            "layerCount": 11,
+            "images": [],
+            "fonts": [],
+            "glyphCount": 0
+          }
+        ],
+        "unresolvedDependencies": [],
+        "selfContained": true
+      },
+      "savedFileHashVerified": true,
+      "status": "verified-binary"
+    },
+    {
+      "name": "ruler.lottie",
+      "sourceUrl": "https://viettelwifii.vn/ruler.lottie",
+      "pageUrl": "https://viettelwifii.vn/goi-cuoc-gic",
+      "localPath": "public/assets/viettelup-motion/ruler.lottie",
+      "frontendUrl": "/assets/viettelup-motion/ruler.lottie",
+      "rights": "Public source; reuse rights not independently established",
+      "fetchedAt": "2026-10-27T16:55:19.149Z",
+      "httpStatus": 200,
+      "responseUrl": "https://viettelwifii.vn/ruler.lottie",
+      "contentType": "application/octet-stream",
+      "contentLength": null,
+      "contentEncoding": "br",
+      "bytes": 1721,
+      "sha256": "f3ace1a6b90c9ba200a00f5c0a9b0e25d1ae39809dfeecb268305664befd7ac8",
+      "magicHex": "504b030414000000",
+      "inspection": {
+        "manifest": {
+          "version": "2",
+          "generator": "@dotlottie/dotlottie-js@1.3.0",
+          "animations": [
+            {
+              "id": "12482985"
+            }
+          ]
+        },
+        "crc32Verified": true,
+        "entries": [
+          {
+            "name": "manifest.json",
+            "bytes": 92,
+            "sha256": "388c760d9ee097b8232b825ac800436d758d90b8e24cfc9a8a40291e4211667b",
+            "magicHex": "7b2276657273696f6e223a22"
+          },
+          {
+            "name": "a/12482985.json",
+            "bytes": 11848,
+            "sha256": "e11caa2b4232c32e5b0775c75d2c52114248d226a9168f62673ec32addd10117",
+            "magicHex": "7b2276223a22352e362e3822"
+          }
+        ],
+        "animations": [
+          {
+            "path": "a/12482985.json",
+            "version": "5.6.8",
+            "width": 1080,
+            "height": 1080,
+            "frameRate": 29.97,
+            "inPoint": 0,
+            "outPoint": 60,
+            "durationSeconds": 2.002002002002002,
+            "layerCount": 3,
+            "images": [],
+            "fonts": [],
+            "glyphCount": 0
+          }
+        ],
+        "unresolvedDependencies": [],
+        "selfContained": true
+      },
+      "savedFileHashVerified": true,
+      "status": "verified-binary"
+    },
+    {
+      "name": "plane.lottie",
+      "sourceUrl": "https://viettelwifii.vn/plane.lottie",
+      "pageUrl": "https://viettelwifii.vn/goi-cuoc-nine",
+      "localPath": "public/assets/viettelup-motion/plane.lottie",
+      "frontendUrl": "/assets/viettelup-motion/plane.lottie",
+      "rights": "Public source; reuse rights not independently established",
+      "fetchedAt": "2026-10-27T16:55:19.150Z",
+      "httpStatus": 200,
+      "responseUrl": "https://viettelwifii.vn/plane.lottie",
+      "contentType": "application/octet-stream",
+      "contentLength": null,
+      "contentEncoding": "br",
+      "bytes": 1517,
+      "sha256": "9a9929800f33ddbad9f5b6368323e356ee6bef059887daad29dc48f7adac245d",
+      "magicHex": "504b030414000000",
+      "inspection": {
+        "manifest": {
+          "version": "1",
+          "generator": "@dotlottie/dotlottie-js@1.6.1",
+          "author": "@dotlottie/dotlottie-js@1.6.1",
+          "animations": [
+            {
+              "id": "alif travel",
+              "direction": 1,
+              "playMode": "normal"
+            }
+          ]
+        },
+        "crc32Verified": true,
+        "entries": [
+          {
+            "name": "manifest.json",
+            "bytes": 170,
+            "sha256": "f8513d9459a9cf9f13bd6f54e1d01f6121c60cdaa13dfe42be8fc44e8fc3e158",
+            "magicHex": "7b2276657273696f6e223a22"
+          },
+          {
+            "name": "animations/alif travel.json",
+            "bytes": 4398,
+            "sha256": "d8381d655673a218df46c6ebe0957f7e20e997fdc78dfebb0e3438401ebebba0",
+            "magicHex": "7b2276223a22342e382e3022"
+          }
+        ],
+        "animations": [
+          {
+            "path": "animations/alif travel.json",
+            "version": "4.8.0",
+            "width": 300,
+            "height": 80,
+            "frameRate": 60,
+            "inPoint": 0,
+            "outPoint": 180,
+            "durationSeconds": 3,
+            "layerCount": 2,
+            "images": [],
+            "fonts": [],
+            "glyphCount": 0
+          }
+        ],
+        "unresolvedDependencies": [],
+        "selfContained": true
+      },
+      "savedFileHashVerified": true,
+      "status": "verified-binary"
+    },
+    {
+      "name": "gift.lottie",
+      "sourceUrl": "https://viettelwifii.vn/gift.lottie",
+      "pageUrl": "https://viettelwifii.vn/internet",
+      "localPath": "public/assets/viettelup-motion/gift.lottie",
+      "frontendUrl": "/assets/viettelup-motion/gift.lottie",
+      "rights": "Public source; reuse rights not independently established",
+      "fetchedAt": "2026-10-27T16:55:19.151Z",
+      "httpStatus": 200,
+      "responseUrl": "https://viettelwifii.vn/gift.lottie",
+      "contentType": "application/octet-stream",
+      "contentLength": null,
+      "contentEncoding": "br",
+      "bytes": 3187,
+      "sha256": "0012b78e37d55f5e0e0f0c12d3c97030ba9db4b9be563e460a278048132156af",
+      "magicHex": "504b030414000000",
+      "inspection": {
+        "manifest": {
+          "version": "2",
+          "generator": "@dotlottie/dotlottie-js@1.4.0",
+          "animations": [
+            {
+              "id": "Main Scene"
+            }
+          ]
+        },
+        "crc32Verified": true,
+        "entries": [
+          {
+            "name": "manifest.json",
+            "bytes": 94,
+            "sha256": "7325f125e7065e9b981e087a4cfb694ff39a8ec39236f9c0312935bb9987de8c",
+            "magicHex": "7b2276657273696f6e223a22"
+          },
+          {
+            "name": "a/Main Scene.json",
+            "bytes": 29364,
+            "sha256": "5212a9268ca5b1f6b246094c0c5fbcf5e7faa0b83f4e7a27add4083388828e9f",
+            "magicHex": "7b226e6d223a224d61696e20"
+          }
+        ],
+        "animations": [
+          {
+            "path": "a/Main Scene.json",
+            "version": "5.7.0",
+            "width": 400,
+            "height": 400,
+            "frameRate": 30,
+            "inPoint": 0,
+            "outPoint": 90,
+            "durationSeconds": 3,
+            "layerCount": 17,
+            "images": [],
+            "fonts": [],
+            "glyphCount": 0
+          }
+        ],
+        "unresolvedDependencies": [],
+        "selfContained": true
+      },
+      "savedFileHashVerified": true,
+      "status": "verified-binary"
+    },
+    {
+      "name": "dotlottie-player.wasm",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.58.1/dist/dotlottie-player.wasm",
+      "pageUrl": null,
+      "localPath": "public/assets/viettelup-motion/dotlottie-player.wasm",
+      "frontendUrl": "/assets/viettelup-motion/dotlottie-player.wasm",
+      "rights": "Exact public npm runtime artifact; package license not independently reviewed",
+      "fetchedAt": "2026-10-27T16:55:19.152Z",
+      "httpStatus": 200,
+      "responseUrl": "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.58.1/dist/dotlottie-player.wasm",
+      "contentType": "application/wasm",
+      "contentLength": "602662",
+      "contentEncoding": "br",
+      "bytes": 1490523,
+      "sha256": "9523bbc0c53374076b8eb1caf489fe1d8798d16db5efd8d34a84198130f8f348",
+      "magicHex": "0061736d01000000",
+      "wasmValidated": true,
+      "savedFileHashVerified": true,
+      "status": "verified-binary"
+    }
+  ]
+}

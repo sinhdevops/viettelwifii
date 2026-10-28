@@ -1,5 +1,6 @@
 "use client";
 
+import { Button as AppButton } from "@/components/ui/button";
 import { useEffect, useRef, useState, type ButtonHTMLAttributes, type MouseEvent } from "react";
 import { collectionSlider } from "./collection-runtime";
 import { CollectionCountryPicker } from "./collection-country-picker";
@@ -50,5 +51,5 @@ export function CollectionSliderButton({
       ancestor = ancestor.parentElement;
     }
   }
-  return <button {...props} ref={ref} disabled={disabled} data-collection-direction={direction} onClick={slide}>{children}</button>;
+  return <AppButton variant="unstyled" size="unstyled" {...props} ref={ref} disabled={disabled} data-collection-direction={direction} onClick={slide}>{children}</AppButton>;
 }

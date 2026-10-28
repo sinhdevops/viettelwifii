@@ -1,0 +1,26 @@
+.group {
+  grid-auto-flow: column;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.label {
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .group {
+    padding-top: 4px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+}

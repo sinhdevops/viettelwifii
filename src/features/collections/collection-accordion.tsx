@@ -1,5 +1,6 @@
 "use client";
 
+import { Button as AppButton } from "@/components/ui/button";
 import { createContext, useContext, useId, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 const AccordionContext = createContext<{
@@ -40,11 +41,11 @@ export function CollectionAccordionItem({
   const state = open ? "open" : "closed";
   return <div className={className} data-state={state} data-orientation="vertical">
     <h3 className={headingClassName} data-state={state} data-orientation="vertical">
-      <button type="button" id={`${id}-trigger`} className={buttonClassName}
+      <AppButton variant="unstyled" size="unstyled" type="button" id={`${id}-trigger`} className={buttonClassName}
         aria-controls={`${id}-content`} aria-expanded={open} data-state={state}
         data-orientation="vertical" onClick={() => group?.toggle(id)}>
         {trigger}
-      </button>
+      </AppButton>
     </h3>
     <div ref={region} id={`${id}-content`} role="region" aria-labelledby={`${id}-trigger`}
       hidden={!open} data-state={state} data-orientation="vertical" className={regionClassName}>

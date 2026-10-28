@@ -1,0 +1,21 @@
+// Captured regional prices in thousands of VND; capital first, other regions second.
+export const sourcePrices: Record<string, string> = {
+  NETVT01: "265-225",
+  MESHVT01: "285-240",
+  NETVT1: "235-195",
+  NETVT2: "265-240",
+  MESHVT1: "255-210",
+  NETVT1_CAM1: "255-215",
+  NETVT2_CAM1: "285-260",
+  MESHVT1_CAM1: "275-230",
+  MESHVT2_CAM1: "309-265",
+  NETVT1_GIAITRI: "255-215",
+  NETVT2_GIAITRI: "285-260",
+  MESHVT1_GIAITRI: "275-230",
+  MESHVT2: "289-245",
+  MESHVT3: "359-299",
+  GIGA1: "320",
+  GIGA2: "355",
+  GIGA3: "390",
+  GIGA4: "425",
+};

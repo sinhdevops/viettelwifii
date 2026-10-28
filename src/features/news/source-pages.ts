@@ -1,76 +1,85 @@
-/* Explicit compile-time route mapping of the 36 original archived news pages. */
+/** Explicit route API retained for routing and offline SSR verification. */
 import type { ComponentType } from "react";
-import NewsSource0001 from "./source-pages/listing-0001";
-import NewsSource0118 from "./source-pages/article-0118";
-import NewsSource0119 from "./source-pages/article-0119";
-import NewsSource0120 from "./source-pages/article-0120";
-import NewsSource0121 from "./source-pages/article-0121";
-import NewsSource0122 from "./source-pages/article-0122";
-import NewsSource0123 from "./source-pages/article-0123";
-import NewsSource0124 from "./source-pages/article-0124";
-import NewsSource0125 from "./source-pages/article-0125";
-import NewsSource0126 from "./source-pages/article-0126";
-import NewsSource0127 from "./source-pages/article-0127";
-import NewsSource0128 from "./source-pages/article-0128";
-import NewsSource0129 from "./source-pages/article-0129";
-import NewsSource0130 from "./source-pages/article-0130";
-import NewsSource0131 from "./source-pages/article-0131";
-import NewsSource0132 from "./source-pages/article-0132";
-import NewsSource0133 from "./source-pages/article-0133";
-import NewsSource0134 from "./source-pages/article-0134";
-import NewsSource0135 from "./source-pages/article-0135";
-import NewsSource0136 from "./source-pages/article-0136";
-import NewsSource0137 from "./source-pages/article-0137";
-import NewsSource0138 from "./source-pages/article-0138";
-import NewsSource0139 from "./source-pages/article-0139";
-import NewsSource0140 from "./source-pages/article-0140";
-import NewsSource0141 from "./source-pages/article-0141";
-import NewsSource0142 from "./source-pages/article-0142";
-import NewsSource0143 from "./source-pages/article-0143";
-import NewsSource0144 from "./source-pages/article-0144";
-import NewsSource0145 from "./source-pages/article-0145";
-import NewsSource0146 from "./source-pages/article-0146";
-import NewsSource0147 from "./source-pages/article-0147";
-import NewsSource0148 from "./source-pages/article-0148";
-import NewsSource0149 from "./source-pages/article-0149";
-import NewsSource0150 from "./source-pages/article-0150";
-import NewsSource0151 from "./source-pages/article-0151";
-import NewsSource0152 from "./source-pages/article-0152";
+import NewsListingPage from "./source-pages/tin-tuc";
+import SoSanhRoamingArticle from "./source-pages/so-sanh-roaming";
+import ViettelRoamingChuyenVungQuocTeArticle from "./source-pages/viettel-roaming-chuyen-vung-quoc-te";
+import GoiCuocData4gViettel2026Article from "./source-pages/goi-cuoc-data-4g-viettel-2026";
+import HuongDanCachBat5gTrenDongMayIphoneVaAndroidArticle from "./source-pages/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android";
+import GoiCuocRoamingViettelLaGiArticle from "./source-pages/goi-cuoc-roaming-viettel-la-gi";
+import GiaiDapThacMacHssvArticle from "./source-pages/giai-dap-thac-mac-hssv";
+import GoiCuocViettelThang32026Article from "./source-pages/goi-cuoc-viettel-thang-3-2026";
+import GoiCuocViettelChoSinhVienArticle from "./source-pages/goi-cuoc-viettel-cho-sinh-vien";
+import GoiCuocData4gViettelMienPhiMangXaHoiArticle from "./source-pages/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi";
+import GoiCuocCameraAiArticle from "./source-pages/goi-cuoc-camera-ai";
+import NineStyleArticle from "./source-pages/nine-style";
+import CapNhatGoiCuocGICArticle from "./source-pages/cap-nhat-goi-cuoc-GIC";
+import GoiCuoc5gFamilyArticle from "./source-pages/goi-cuoc-5g-family";
+import GoiMangViettelArticle from "./source-pages/goi-mang-viettel";
+import Dung5gCoHaoPinVaTonDataArticle from "./source-pages/dung-5g-co-hao-pin-va-ton-data";
+import GoiCuocNgayViettelArticle from "./source-pages/goi-cuoc-ngay-viettel";
+import GoiCuocViettelThang062025Article from "./source-pages/goi-cuoc-viettel-thang-06-2025";
+import GoiCuocMydioViettelArticle from "./source-pages/goi-cuoc-mydio-viettel";
+import DangKyInternetViettelWifi6MoiNhat042025Article from "./source-pages/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025";
+import GoiCuocViettelThang42025Article from "./source-pages/goi-cuoc-viettel-thang-4-2025";
+import ViettelRaMatGoiCuocNgayMoiSt7k5g105g705gvs125gvs80Article from "./source-pages/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80";
+import ViettelTaiHoiNghiDiDongTheGioiMwcBarcelona2025Article from "./source-pages/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025";
+import GoiCuoc4g5gViettelCapNhatThang32025Article from "./source-pages/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025";
+import LoTrinhTrienKhai5gViettelArticle from "./source-pages/lo-trinh-trien-khai-5g-viettel";
+import GoiCuoc4g5gViettelCapNhatThang22025Article from "./source-pages/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025";
+import Goi5gViettel3Thang6Thang12ThangArticle from "./source-pages/goi-5g-viettel-3-thang-6-thang-12-thang";
+import GoiCuoc5gViettelTet5gArticle from "./source-pages/goi-cuoc-5g-viettel-tet5g";
+import TongDaiViettelArticle from "./source-pages/tong-dai-viettel";
+import SoSanhGoiCuoc4gVa5gArticle from "./source-pages/so-sanh-goi-cuoc-4g-va-5g";
+import DangKy5gViettel2024Article from "./source-pages/dang-ky-5g-viettel-2024";
+import KhuyenMaiNapTheViettel207Article from "./source-pages/khuyen-mai-nap-the-viettel-20-7";
+import Viettel35NamDongChayHanhPhucArticle from "./source-pages/viettel-35-nam-dong-chay-hanh-phuc";
+import KhuyenMaiNapThe156Article from "./source-pages/khuyen-mai-nap-the-15-6";
+import MoAppCoQuaViettelMoneyArticle from "./source-pages/mo-app-co-qua-viettel-money";
+import TongHopCachDangKyXemTronBoEuro2024TrenTv360Article from "./source-pages/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360";
 export const sourceNewsRoutes: Record<string, ComponentType> = {
-  "/tin-tuc": NewsSource0001,
-  "/tin-tuc/so-sanh-roaming": NewsSource0118,
-  "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te": NewsSource0119,
-  "/tin-tuc/goi-cuoc-data-4g-viettel-2026": NewsSource0120,
-  "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android": NewsSource0121,
-  "/tin-tuc/goi-cuoc-roaming-viettel-la-gi": NewsSource0122,
-  "/tin-tuc/giai-dap-thac-mac-hssv": NewsSource0123,
-  "/tin-tuc/goi-cuoc-viettel-thang-3-2026": NewsSource0124,
-  "/tin-tuc/goi-cuoc-viettel-cho-sinh-vien": NewsSource0125,
-  "/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi": NewsSource0126,
-  "/tin-tuc/goi-cuoc-camera-ai": NewsSource0127,
-  "/tin-tuc/nine-style": NewsSource0128,
-  "/tin-tuc/cap-nhat-goi-cuoc-GIC": NewsSource0129,
-  "/tin-tuc/goi-cuoc-5g-family": NewsSource0130,
-  "/tin-tuc/goi-mang-viettel": NewsSource0131,
-  "/tin-tuc/dung-5g-co-hao-pin-va-ton-data": NewsSource0132,
-  "/tin-tuc/goi-cuoc-ngay-viettel": NewsSource0133,
-  "/tin-tuc/goi-cuoc-viettel-thang-06-2025": NewsSource0134,
-  "/tin-tuc/goi-cuoc-mydio-viettel": NewsSource0135,
-  "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025": NewsSource0136,
-  "/tin-tuc/goi-cuoc-viettel-thang-4-2025": NewsSource0137,
-  "/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80": NewsSource0138,
-  "/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025": NewsSource0139,
-  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025": NewsSource0140,
-  "/tin-tuc/lo-trinh-trien-khai-5g-viettel": NewsSource0141,
-  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025": NewsSource0142,
-  "/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang": NewsSource0143,
-  "/tin-tuc/goi-cuoc-5g-viettel-tet5g": NewsSource0144,
-  "/tin-tuc/tong-dai-viettel": NewsSource0145,
-  "/tin-tuc/so-sanh-goi-cuoc-4g-va-5g": NewsSource0146,
-  "/tin-tuc/dang-ky-5g-viettel-2024": NewsSource0147,
-  "/tin-tuc/khuyen-mai-nap-the-viettel-20-7": NewsSource0148,
-  "/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc": NewsSource0149,
-  "/tin-tuc/khuyen-mai-nap-the-15-6": NewsSource0150,
-  "/tin-tuc/mo-app-co-qua-viettel-money": NewsSource0151,
-  "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360": NewsSource0152,
+  "/tin-tuc": NewsListingPage,
+  "/tin-tuc/so-sanh-roaming": SoSanhRoamingArticle,
+  "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te": ViettelRoamingChuyenVungQuocTeArticle,
+  "/tin-tuc/goi-cuoc-data-4g-viettel-2026": GoiCuocData4gViettel2026Article,
+  "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android":
+    HuongDanCachBat5gTrenDongMayIphoneVaAndroidArticle,
+  "/tin-tuc/goi-cuoc-roaming-viettel-la-gi": GoiCuocRoamingViettelLaGiArticle,
+  "/tin-tuc/giai-dap-thac-mac-hssv": GiaiDapThacMacHssvArticle,
+  "/tin-tuc/goi-cuoc-viettel-thang-3-2026": GoiCuocViettelThang32026Article,
+  "/tin-tuc/goi-cuoc-viettel-cho-sinh-vien": GoiCuocViettelChoSinhVienArticle,
+  "/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi":
+    GoiCuocData4gViettelMienPhiMangXaHoiArticle,
+  "/tin-tuc/goi-cuoc-camera-ai": GoiCuocCameraAiArticle,
+  "/tin-tuc/nine-style": NineStyleArticle,
+  "/tin-tuc/cap-nhat-goi-cuoc-GIC": CapNhatGoiCuocGICArticle,
+  "/tin-tuc/goi-cuoc-5g-family": GoiCuoc5gFamilyArticle,
+  "/tin-tuc/goi-mang-viettel": GoiMangViettelArticle,
+  "/tin-tuc/dung-5g-co-hao-pin-va-ton-data": Dung5gCoHaoPinVaTonDataArticle,
+  "/tin-tuc/goi-cuoc-ngay-viettel": GoiCuocNgayViettelArticle,
+  "/tin-tuc/goi-cuoc-viettel-thang-06-2025": GoiCuocViettelThang062025Article,
+  "/tin-tuc/goi-cuoc-mydio-viettel": GoiCuocMydioViettelArticle,
+  "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025":
+    DangKyInternetViettelWifi6MoiNhat042025Article,
+  "/tin-tuc/goi-cuoc-viettel-thang-4-2025": GoiCuocViettelThang42025Article,
+  "/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80":
+    ViettelRaMatGoiCuocNgayMoiSt7k5g105g705gvs125gvs80Article,
+  "/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025":
+    ViettelTaiHoiNghiDiDongTheGioiMwcBarcelona2025Article,
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025":
+    GoiCuoc4g5gViettelCapNhatThang32025Article,
+  "/tin-tuc/lo-trinh-trien-khai-5g-viettel": LoTrinhTrienKhai5gViettelArticle,
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025":
+    GoiCuoc4g5gViettelCapNhatThang22025Article,
+  "/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang":
+    Goi5gViettel3Thang6Thang12ThangArticle,
+  "/tin-tuc/goi-cuoc-5g-viettel-tet5g": GoiCuoc5gViettelTet5gArticle,
+  "/tin-tuc/tong-dai-viettel": TongDaiViettelArticle,
+  "/tin-tuc/so-sanh-goi-cuoc-4g-va-5g": SoSanhGoiCuoc4gVa5gArticle,
+  "/tin-tuc/dang-ky-5g-viettel-2024": DangKy5gViettel2024Article,
+  "/tin-tuc/khuyen-mai-nap-the-viettel-20-7": KhuyenMaiNapTheViettel207Article,
+  "/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc": Viettel35NamDongChayHanhPhucArticle,
+  "/tin-tuc/khuyen-mai-nap-the-15-6": KhuyenMaiNapThe156Article,
+  "/tin-tuc/mo-app-co-qua-viettel-money": MoAppCoQuaViettelMoneyArticle,
+  "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360":
+    TongHopCachDangKyXemTronBoEuro2024TrenTv360Article,
 };

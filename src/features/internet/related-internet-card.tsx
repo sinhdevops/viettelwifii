@@ -1,8 +1,9 @@
 "use client";
 
+import { Button as AppButton } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from "nextjs-toploader/app";
 import {
   useRef,
   useState,
@@ -136,7 +137,7 @@ export function RelatedInternetCard({
             >
               {regions.map((region, index) => (
                 <div className="flex items-center space-x-1" key={region}>
-                  <button
+                  <AppButton variant="unstyled" size="unstyled"
                     ref={(node) => {
                       radioNodes.current[region] = node ?? undefined;
                     }}
@@ -167,14 +168,14 @@ export function RelatedInternetCard({
                         <circle cx="12" cy="12" r="10" />
                       </svg>
                     )}
-                  </button>
-                  <button
+                  </AppButton>
+                  <AppButton variant="unstyled" size="unstyled"
                     type="button"
                     onClick={() => setSelected(region)}
                     className="md:!text-14 cursor-pointer !text-[9px] font-semibold"
                   >
                     {regionLabels[region]}
-                  </button>
+                  </AppButton>
                 </div>
               ))}
             </div>
