@@ -4,7 +4,7 @@ import type { PageContent } from "@/lib/content-schema";
 /** Detail-page metadata; visible UI remains authored in the existing Internet TSX. */
 export const internetDetailPageContents: Record<string, PageContent> = {
   "/internet/NETVT01": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Gói NETVT01 Viettel 300Mbps + Camera + TV360 | Chỉ từ 225K/tháng",
     description:
@@ -103,7 +103,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/MESHVT01": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title:
       "MESHVT1 Viettel 300Mbps + Mesh WiFi + Camera | Phủ sóng rộng từ 240K",
@@ -267,7 +267,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/NETVT1": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Lắp Wifi Viettel 300Mbps Wifi 6 | NETVT1",
     description:
@@ -450,7 +450,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/NETVT2": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Lắp Wifi Viettel 500Mbps Wifi 6 | NETVT2",
     description:
@@ -619,7 +619,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/MESHVT1": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Gói Mesh Wifi 6 Viettel MESHVT1 300Mbps | Phủ Sóng Rộng",
     description:
@@ -804,7 +804,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/GIGA1": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Internet Viettel GIGA1_H 1Gbps | Nội Thành HN, HCM – 320K",
     description: "Internet Viettel GIGA1_H 1Gbps | Nội Thành HN, HCM – 320K",
@@ -890,7 +890,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/GIGA2": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Internet Viettel GIGA2 1Gbps + Mesh | HN, HCM – 355K",
     description:
@@ -1070,7 +1070,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/GIGA3": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Internet Viettel GIGA3 1Gbps + 2 Mesh | HN, HCM – 390K",
     description:
@@ -1250,7 +1250,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/GIGA4": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "1 Modem Wifi 6 + 1 Mesh Wifi",
     description:
@@ -1433,7 +1433,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/MESHVT2": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Mesh WiFi 6 Viettel MESHVT2 | 500Gbps",
     description:
@@ -1593,7 +1593,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/MESHVT3": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Mesh WiFi 6 Viettel MESHVT3 | 500Mbps",
     description:
@@ -1768,7 +1768,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/NETVT1_CAM1": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Internet + Camera Viettel NETVT1_CAM1 | 350Mbps",
     description: "Internet + Camera Viettel NETVT1_CAM1 | 350Mbps",
@@ -1876,7 +1876,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/NETVT2_CAM1": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Internet + Camera Viettel NETVT2_CAM1 | 500Mbps",
     description:
@@ -2062,7 +2062,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/MESHVT1_CAM1": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Internet Mesh + Camera Viettel MESHVT1_CAM1 | 350Mbps",
     description:
@@ -2250,7 +2250,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/MESHVT2_CAM1": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "WiFi Mesh + Camera Viettel MESHVT2_CAM1 | 500Mbps",
     description:
@@ -2451,7 +2451,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/NETVT1_GIAITRI": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Combo Internet + TV360 Viettel 300Mbps | NETVT1_GIAITRI",
     description:
@@ -2735,7 +2735,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/NETVT2_GIAITRI": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Combo Internet Viettel + TV360 500Mbps | NETVT2_GIAITRI",
     description:
@@ -2905,7 +2905,7 @@ export const internetDetailPageContents: Record<string, PageContent> = {
     },
   },
   "/internet/MESHVT1_GIAITRI": {
-    status: "draft",
+    status: "ready",
     kind: "internet",
     title: "Combo WiFi Mesh Viettel + TV360 300Mbps | MESHVT_GIAITRI",
     description:

@@ -4,7 +4,7 @@ import type { PageContent } from "@/lib/content-schema";
 /** News route metadata; existing authored TSX components own visible content. */
 export const newsPageContents: Record<string, PageContent> = {
   "/tin-tuc": {
-    status: "draft",
+    status: "ready",
     kind: "news-list",
     title: "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
     description: "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
@@ -88,7 +88,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/so-sanh-roaming": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
@@ -166,7 +166,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "TẤT TẦN TẬT VỀ VIETTEL ROAMING: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
@@ -409,7 +409,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-data-4g-viettel-2026": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Đăng ký gói cước 4G Viettel tháng siêu rẻ chỉ từ 50k nhận ngay 4GB, 6GB, 8GB,.. mỗi ngày",
@@ -1115,7 +1115,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026",
     description:
@@ -1514,7 +1514,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-roaming-viettel-la-gi": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Gói cước Roaming Viettel là gì? Tổng hợp các gói roaming phù hợp cho người đi du lịch, công tác nước ngoài (mới nhất)",
@@ -1967,7 +1967,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/giai-dap-thac-mac-hssv": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Gói cước HSSV là gì? Có thực sự rẻ hơn gói thông thường? Làm sao để đăng ký và có cần giấy tờ xác nhận sinh viên không?",
@@ -2139,7 +2139,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-viettel-thang-3-2026": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Gói Cước Viettel Tháng 3/2026 - Đăng Ký 4G 5G Viettel Giá Rẻ",
     description:
@@ -2917,7 +2917,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-viettel-cho-sinh-vien": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Gói Cước Sinh Viên Viettel 2026 – Data Khủng, Giá Rẻ, Ưu Đãi Cực Hấp Dẫn",
@@ -3616,7 +3616,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-data-4g-viettel-mien-phi-mang-xa-hoi": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Các gói cước Viettel miễn phí data truy cập mạng xã hội - Đăng ký dễ dàng - Dùng thoải mái không giới hạn",
@@ -4018,7 +4018,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-camera-ai": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Lắp Internet Viettel kèm Camera AI: Giải pháp giám sát trẻ nhỏ an tâm nhất",
@@ -4157,7 +4157,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/nine-style": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "TẤT TẦN TẬT VỀ GÓI CƯỚC NINE VIETTEL - DATA THẢ GA, LỐI SỐNG BẬN RỘN",
@@ -4404,7 +4404,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/cap-nhat-goi-cuoc-GIC": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Tổng Hợp Gói GIC Viettel Mới Nhất 2026: Giá Rẻ, Ưu Đãi Cực Khủng",
     description:
@@ -4651,7 +4651,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-5g-family": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Cách đăng ký 5G Family Viettel: Giảm tới 20% cước cho cả nhà",
     description:
@@ -4818,7 +4818,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-mang-viettel": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Gói mạng Viettel 2025 | Bảng giá mới nhất, 5G tốc độ cao, nhiều ưu đãi",
@@ -5042,7 +5042,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/dung-5g-co-hao-pin-va-ton-data": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Dùng 5G Có Hao Pin Và Tốn Data Hơn Không? Giải Đáp Cùng Chuyên Gia Viettel",
@@ -5438,7 +5438,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-ngay-viettel": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Đăng Ký 4G VIETTEL 1 NGÀY 5K: Cú Pháp Gói Cước Ngày Siêu Rẻ Mới Nhất",
@@ -5780,7 +5780,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-viettel-thang-06-2025": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Gói cước Viettel tháng 06/2025 mới nhất | Ưu đãi 4G/5G, Combo thoại + Data",
@@ -6443,7 +6443,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-mydio-viettel": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "MyDio Viettel - Ứng dụng nghe sách nói, truyện audio bản quyền | Gói cước MyDio mới nhất",
@@ -6732,7 +6732,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Tổng hợp các gói cước Internet Viettel WiFi 6 mới nhất – Tốc độ cao, phủ sóng toàn nhà",
@@ -7248,7 +7248,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-viettel-thang-4-2025": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Gói Cước Viettel 4G 5G Tháng 04/2025 – Danh Sách Mới Nhất, Giá Rẻ, Dễ Đăng Ký",
@@ -7635,7 +7635,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/viettel-ra-mat-goi-cuoc-ngay-moi-st7k-5g10-5g70-5gvs12-5gvs80": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Trải Nghiệm Tốc Độ Cao Với Gói Cước Ngày Viettel - Đăng Ký Dễ Dàng",
     description:
@@ -7787,7 +7787,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/viettel-tai-hoi-nghi-di-dong-the-gioi-mwc-barcelona-2025": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Viettel Đưa Công Nghệ Việt Đến Sự Kiện Di Động Lớn Nhất Hành Tinh",
     description:
@@ -7998,7 +7998,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Gói Cước 4G 5G Viettel Mới Nhất Tháng 3/2025 – Cập Nhật Chi Tiết",
     description:
@@ -8708,7 +8708,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/lo-trinh-trien-khai-5g-viettel": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Lộ Trình Triển Khai 5G Viettel – Hỗ Trợ Đối Tác Phát Triển Hệ Sinh Thái",
@@ -8910,7 +8910,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Gói cước 4G, 5G Viettel tháng 2/2025 - Khuyến mãi mới nhất",
     description:
@@ -9767,7 +9767,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-5g-viettel-3-thang-6-thang-12-thang": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Gói Cước 5G Viettel Chu Kỳ Dài 3 Tháng, 6 Tháng, 12 Tháng - Siêu Tiết Kiệm, Dung Lượng Khủng",
@@ -10232,7 +10232,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-5g-viettel-tet5g": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Gói cước TET5G UP Viettel: 25GB + Nhiều Ưu Đãi Chỉ 50.000đ",
     description:
@@ -10356,7 +10356,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/tong-dai-viettel": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Số tổng đài Viettel 24/7 – Hotline hỗ trợ mọi dịch vụ",
     description:
@@ -10856,7 +10856,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/so-sanh-goi-cuoc-4g-va-5g": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "So sánh gói cước 4G và 5G",
     description:
@@ -11134,7 +11134,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/dang-ky-5g-viettel-2024": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Đăng Ký Gói Cước 5G Viettel 9/2024: Tốc Độ Đáng Kinh Ngạc!",
     description:
@@ -11720,7 +11720,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/khuyen-mai-nap-the-viettel-20-7": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Khuyến mãi nạp thẻ Viettel ngày 20/7",
     description:
@@ -12102,7 +12102,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/viettel-35-nam-dong-chay-hanh-phuc": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Tập đoàn Công nghiệp - Viễn thông Quân đội Viettel với chặng đường 35 năm thành lập và phát triển",
@@ -12236,7 +12236,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/khuyen-mai-nap-the-15-6": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Khuyến mãi nạp thẻ Viettel ngày 15 tháng 6",
     description:
@@ -12422,7 +12422,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/mo-app-co-qua-viettel-money": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title:
       "Mở app có quà - Cơ hội rinh thưởng triệu đồng từ Viettel Money. Đừng bỏ lỡ!",
@@ -12542,7 +12542,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360": {
-    status: "draft",
+    status: "ready",
     kind: "news-article",
     title: "Gói cước Viettel 2026 | Đăng ký 4G 5G nhanh nhất",
     description:

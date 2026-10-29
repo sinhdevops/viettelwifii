@@ -41,7 +41,7 @@ const original = Object.fromEntries(
     return [
       path,
       {
-        status: "draft",
+        status: "ready",
         kind: source.kind,
         title: source.title,
         description: source.description,

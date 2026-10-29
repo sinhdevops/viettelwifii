@@ -4,7 +4,7 @@ import type { PageContent } from "@/lib/content-schema";
 /** Route metadata; visible sections remain authored in home-content.tsx. */
 export const homePageContent: Record<string, PageContent> = {
   "/": {
-    status: "draft",
+    status: "ready",
     kind: "home",
     title: "Gói cước Viettel 2026 | Đăng ký 4G 5G nhanh nhất",
     description: "Gói cước Viettel 2026 | Đăng ký 4G 5G nhanh nhất",

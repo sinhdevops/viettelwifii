@@ -6,7 +6,7 @@ import { internetPageContent } from "./internet/page-content";
 export const collectionPageContents: Record<string, PageContent> = {
   "/internet": internetPageContent,
   "/goi-cuoc-gic": {
-    status: "draft",
+    status: "ready",
     kind: "collection",
     title: "GIC Viettel là gì? Gói cước dành cho học sinh, sinh viên",
     description: "GIC Viettel là gì? Gói cước dành cho học sinh, sinh viên",
@@ -24,7 +24,7 @@ export const collectionPageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-nine": {
-    status: "draft",
+    status: "ready",
     kind: "collection",
     title: "NINE Viettel – Gói cước trả sau cao cấp, nhiều đặc quyền",
     description: "NINE Viettel – Gói cước trả sau cao cấp, nhiều đặc quyền",
@@ -42,7 +42,7 @@ export const collectionPageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-roaming": {
-    status: "draft",
+    status: "ready",
     kind: "collection",
     title:
       "Gói Data Roaming Viettel – Dùng Internet Khi Ra Nước Ngoài, Không Cần Đổi SIM",

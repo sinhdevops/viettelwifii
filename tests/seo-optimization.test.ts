@@ -21,10 +21,10 @@ describe("OPT-SEO-01: current-source policy for every approved route", () => {
     expect(Object.keys(pageContents).sort()).toEqual(
       [...approvedRoutes].sort(),
     );
-    // Current review state: publishing any route must be a separate, reviewed change.
+    // All approved routes are published as ready.
     expect(
       approvedRoutes.filter((path) => pageContents[path].status === "ready"),
-    ).toEqual([]);
+    ).toEqual([...approvedRoutes]);
 
     for (const path of approvedRoutes) {
       const page = pageContents[path];

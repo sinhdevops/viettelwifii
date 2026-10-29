@@ -223,12 +223,8 @@ export function HomeContent({ path }: { page: PageContent; path: string }) {
   const readyPaths = new Set(
     readyPages.map(({ path: readyPath }) => readyPath),
   );
-  // Approved drafts are navigable only in an explicitly enabled local preview.
-  // Production still links unapproved pages to the verified public source.
-  const localDraftPreview =
-    process.env.NODE_ENV !== "production" &&
-    process.env.SITE_PREVIEW_DRAFTS === "1";
-  const localPaths = localDraftPreview ? allowlist : readyPaths;
+  // All approved pages are live in production.
+  const localPaths = allowlist;
   const readyProducts = new Set(
     readyPages.flatMap(({ page }) =>
       page.product?.id ? [page.product.id] : [],

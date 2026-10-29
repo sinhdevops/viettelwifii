@@ -4,7 +4,7 @@ import type { PageContent } from "@/lib/content-schema";
 /** Route metadata preserved from the parsed page data and source preview fallback. */
 export const packagePageContents: Record<string, PageContent> = {
   "/goi-cuoc-viettel/5G20": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói 5G20 Viettel: 6GB/3 ngày chỉ 20.000đ",
     description: "Gói 5G20 Viettel: 6GB/3 ngày chỉ 20.000đ",
@@ -99,7 +99,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G30": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói Cước Ngày Viettel 5G30 – 7GB/Ngày, Chỉ 30K/3 Ngày!",
     description:
@@ -201,7 +201,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G40": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói 5G40 Viettel: 15GB/7 ngày chỉ 40.000đ",
     description:
@@ -296,7 +296,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G70": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói Cước Ngày Viettel 5G70 – 8GB/Ngày, Chỉ 70K/7 Ngày!",
     description:
@@ -398,7 +398,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5GVS80": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói Cước Ngày Viettel 5GVS80 – 8GB/Ngày, Xem Ngoại Hạng Anh & Cúp C1 Miễn Phí!",
@@ -500,7 +500,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/3N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 3N Viettel chỉ 30K Nhận 15GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
@@ -608,7 +608,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/7N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 7N Viettel chỉ 70K/7ngày Nhận 35GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
@@ -716,7 +716,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G10": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói Cước Ngày Viettel 5G10 – 6GB/Ngày Chỉ 10K, Truy Cập Mạng Mượt Mà!",
@@ -813,7 +813,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/1N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 1N Viettel - 10K/ngày Nhận 5GB Data. Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
@@ -914,7 +914,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5GVS12": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói Cước Ngày Viettel 5GVS12 – 6GB/Ngày, Xem Ngoại Hạng Anh & C1 Miễn Phí!",
@@ -1017,7 +1017,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST7K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói Cước Ngày Viettel ST7K - 1GB/Ngày Chỉ 7K, Đăng Ký Ngay!",
     description:
@@ -1105,7 +1105,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/SD90": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói Cước SD90 Viettel - 45GB Data 4G Tốc Độ Cao Giá Chỉ 90K/Tháng",
     description:
@@ -1196,7 +1196,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/SD120": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói Cước SD120 Viettel - 60GB Data 4G Tốc Độ Cao Giá Chỉ 120K/tháng",
@@ -1296,7 +1296,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/SD135": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói SD135 Viettel Giá 135K nhận 150GB (5GB/ngày) + TV360 Basic",
     description:
@@ -1395,7 +1395,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/SD150": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói SD150 Viettel - 150K Nhận Ngay 90GB Data 4G (3GB/ngày) + Miễn Phí TV360",
@@ -1495,7 +1495,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/VM80": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói Cước VM80 1GB/ngày Miễn Phí Nghe Sách Nói Mydio Chỉ 80K/tháng",
     description:
@@ -1597,7 +1597,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/VM100": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước Viettel VM100 | Đăng ký gói data + nghe sách MyDio ưu đãi nhất",
@@ -1695,7 +1695,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/VM130": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước Viettel VM130 | Đăng ký gói data + nghe sách MyDio cực ưu đãi",
@@ -1793,7 +1793,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V90B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V90B Viettel - 30GB Data, Miễn Phí Gọi Nội Ngoại Mạng Giá Chỉ 90K/tháng",
@@ -1899,7 +1899,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V120B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V120B Viettel - 45GB Data 4G, Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 120K/tháng",
@@ -2005,7 +2005,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V150B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V150B Viettel - 60GB Data 4G + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 150K/tháng",
@@ -2225,7 +2225,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V160B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V160B Viettel - 120GB (4GB/ngày) + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 160K/tháng",
@@ -2445,7 +2445,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V180B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V180B Viettel - 180GB (6GB/ngày) + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 180K/tháng",
@@ -2665,7 +2665,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V200B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V200B Viettel - 240GB Data (8GB/ngày) + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 200K/tháng",
@@ -2885,7 +2885,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/30N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 30N Viettel - 300K/tháng Nhận 150GB Data. Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
@@ -3134,7 +3134,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/90N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 90N Viettel (90 ngày) Nhận 450GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360",
@@ -3383,7 +3383,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/180N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 180N Viettel (180 ngày) Nhận 900GB (5GB/ngày) . Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV36",
@@ -3632,7 +3632,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/360N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 360N Viettel - 1.800GB (5GB/ngày). Miễn Phí Gọi. Miễn Phí SMS. Miễn Phí TV360 Trong 1 năm",
@@ -3881,7 +3881,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/MXH100": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói MXH100 Viettel - 30GB Data + Miễn Phí Mạng Xã Hội, Chỉ 100K/tháng",
@@ -4104,7 +4104,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/MXH120": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói MXH120 Viettel - 120K Nhận 30GB Data. Miễn Phí Truy Cập Mạng Xã Hội. Miễn Phí Gọi",
@@ -4215,7 +4215,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/MXH150": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói MXH150 Viettel - 45GB Data + Miễn Phí TikTok, YouTube, Facebook, Chỉ 150K/tháng",
@@ -4445,7 +4445,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5GMXH200": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước 5GMXH200 Viettel: Data 2GB/ngày, ưu đãi gọi và 150GB ứng dụng",
@@ -4534,7 +4534,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5GMXH230": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước 5GMXH230 Viettel: 3GB/ngày, gọi miễn phí và 150GB ứng dụng",
@@ -4627,7 +4627,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV75K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói TV75K Viettel - 30GB Data + Miễn Phí TV360 Full HD, Chỉ 75K/tháng",
@@ -4871,7 +4871,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV90C": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "TV90C - 1GB/ngày + miễn phí gọi nội ngoại mạng + TV360 4K",
     description:
@@ -5116,7 +5116,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV95K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói TV95K Viettel - 45GB Data (1.5GB/ngày) + Xem Miễn Phí TV360 Full HD, Chỉ 95K/tháng",
@@ -5360,7 +5360,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV120C": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói TV120C Viettel - 45GB Data + Miễn Phí TV360 Full HD, Chỉ 120K/tháng",
@@ -5606,7 +5606,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV120K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói TV120K Viettel - 30GB Data (1GB/ngày) + Miễn Phí Xem TV360 Full HD, Chỉ 120K/tháng",
@@ -5850,7 +5850,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV125K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói TV125K Viettel - 60GB Data (2GB/ngày) + Miễn Phí Xem TV360 Full HD, Chỉ 125K/tháng",
@@ -6094,7 +6094,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TH30": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Standard - Gói Cước TV360 chỉ 50K/tháng Xem Miễn Phí Hơn 160 Kênh Truyền Hình Chất Lượng Cao",
@@ -6240,7 +6240,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/T50K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói T50K Viettel - Miễn Phí Data Truy Cập TikTok, Chỉ 50K/tháng",
     description:
@@ -6433,7 +6433,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/YT50K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói YT50K Viettel - Miễn Phí Data Truy Cập Youtube, Chỉ 50K/tháng",
     description:
@@ -6626,7 +6626,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/FB50K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói FB50K Viettel - Miễn Phí Data Truy Cập Facebook, Messenger, Chỉ 50K/tháng",
@@ -6851,7 +6851,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/T15K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói T15K Viettel - Miễn Phí Data Truy Cập TikTok Trong 7 Ngày",
     description:
@@ -7041,7 +7041,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/YT15K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói YT15K Viettel - Miễn Phí Data Truy Cập Youtube Trong 7 Ngày",
     description:
@@ -7234,7 +7234,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/FB15K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói FB15K Viettel - Miễn Phí Data Truy Cập Facebook, Messenger Trong 7 Ngày",
@@ -7428,7 +7428,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/T5K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói T5K Viettel - Miễn Phí Data Truy Cập TikTok Trong 1 Ngày",
     description:
@@ -7621,7 +7621,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/YT5K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói T5K Viettel - Miễn Phí Data Truy Cập Youtube Trong 1 Ngày",
     description:
@@ -7814,7 +7814,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/FB5K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói FB5K Viettel - Miễn Phí Data Truy Cập Facebbok, Messenger Trong 1 Ngày",
@@ -8008,7 +8008,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V15B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói V15B Viettel - 500MB Data + Gọi Nội Mạng, Chỉ 15K/15 Ngày",
     description:
@@ -8352,7 +8352,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V25B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V25B Viettel - Miễn Phí Gọi Nội Mạng + 2GB Data, Chỉ 25k/15ngày",
@@ -8697,7 +8697,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V35B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V35B Viettel - Miễn Phí Gọi Nội Mạng + 7.5GB Data, Chỉ 35k/15ngày",
@@ -9042,7 +9042,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/C20K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói C20K Viettel - Miễn Phí 50 Phút Gọi Nội Mạng + 1GB Data Trong 7 Ngày",
@@ -9387,7 +9387,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/F30": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói F30 Viettel - Miễn Phí Cưới Gọi Nội Mạng Dưới 20 Phút + 3GB Data Trong 7 Ngày",
@@ -9732,7 +9732,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/FT50": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói FT50 Viettel - Miễn Phí Cưới Gọi Nội Mạng Dưới 10 Phút + 7GB Data Trong 7 Ngày",
@@ -10077,7 +10077,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV35K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói TV35K Viettel - 7GB Data + Miễn Phí TV360, Chỉ 35K/7 Ngày",
     description:
@@ -10335,7 +10335,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TV65K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói TV65K Viettel - 14GB Data + Miễn Phí TV360, Chỉ 65K/14 Ngày",
     description:
@@ -10589,7 +10589,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V50K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V50K Viettel - 7GB Data + Miễn Phí Cước Gọi Nội Mạng, Chỉ 50K/7 Ngày",
@@ -10799,7 +10799,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V100K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V100K Viettel - 21GB Data + 1.000 Phút Nội Mạng, Chỉ 100K/7 Ngày",
@@ -11011,7 +11011,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST15K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói ST15K Viettel - 3GB Data Chỉ 15K/3 Ngày",
     description:
@@ -11129,7 +11129,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/MI20K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói MI20K Viettel - 2GB Data 4G Tốc Độ Cao, Chỉ 20K/5 Ngày",
     description:
@@ -11247,7 +11247,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST30K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói ST30K Viettel - 7GB Data 4G Tốc Độ Cao, Chỉ 30K/7 Ngày",
     description:
@@ -11365,7 +11365,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/EST30": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói EST30 Viettel - 7GB Data + Free Data Liên Quân, Chỉ 30K/7 Ngày",
     description:
@@ -11449,7 +11449,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V30X": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V30X Viettel - 3.5GB Data + Miễn Phí Gọi Nội Mạng, Chỉ 30K/7 Ngày",
@@ -11535,7 +11535,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/MI50K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói cước Viettel MI50K",
     description:
@@ -11616,7 +11616,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST60N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói ST60N Viettel - 60GB Data 4G Tốc Độ Cao, Chỉ 60K/tháng",
     description:
@@ -11843,7 +11843,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TRE60": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói TRE60 Viettel - 60GB Data + Miễn Phí TikTok, Chỉ 60K/tháng",
     description:
@@ -12037,7 +12037,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST70K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói Cước ST70K Viettel - 15GB (500MB/ngày) Giá Chỉ 70K",
     description:
@@ -12254,7 +12254,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST90N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói ST90N Viettel - 120GB Data 4G Tốc Độ Cao (4GB/ngày), Chỉ 90K/tháng",
@@ -12482,7 +12482,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/TRE90": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói TRE90 Viettel - 120GB Data (4GB/ngày) + Miễn Phí TikTok, Chỉ 90K/tháng",
@@ -12711,7 +12711,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V120N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V120N Viettel - 120GB Data (4GB/ngày) + Miễn Phí Gọi, Chỉ 120K/tháng",
@@ -12942,7 +12942,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V120C": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói V120C Viettel - 60GB Data + Miễn Phí Cước Gọi, Chỉ 120K/tháng",
     description:
@@ -13173,7 +13173,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST120K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói ST120K Viettel - 60GB Data 4G + Miễn Phí TV360, Chỉ 120K/Tháng",
     description:
@@ -13403,7 +13403,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V150N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V150N Viettel - 180GB Data + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 150K/tháng",
@@ -13632,7 +13632,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V150C": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V150C Viettel - 90GB Data + Miễn Phí Gọi Nội Ngoại Mạng, Chỉ 150K/tháng",
@@ -13865,7 +13865,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/ST150K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói ST150K Viettel - 90GB Data + Miễn Phí TV360, Chỉ 150K/tháng",
     description:
@@ -14103,7 +14103,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/V200C": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói V200C Viettel - 120GB Data (4GB/ngày) + Miễn Phí Gọi, Chỉ 200K/tháng",
@@ -14327,7 +14327,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G135": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký Gói 5G Viettel 5G135: 4GB/ngày Kèm Ưu Đãi Hấp Dẫn",
     description:
@@ -14647,7 +14647,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G150": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký Gói 5G Viettel 5G150 Nhận 6GB/ngày chỉ 150.000đ",
     description:
@@ -14967,7 +14967,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G160B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5G160B Nhận 4GB/ngày + Miễn Phí Gọi",
     description:
@@ -15291,7 +15291,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G180B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5G180B Nhận 6GB/ngày. Miễn Phí Gọi+TV360",
     description:
@@ -15615,7 +15615,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G230B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5G230B Nhận 8GB/ngày. Miễn Phí Gọi+TV360",
     description:
@@ -15938,7 +15938,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G280B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5G280B Nhận 10GB/ngày. Miễn Phí Gọi+TV360",
     description:
@@ -16261,7 +16261,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G330B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5G330B Nhận 12GB/ngày Miễn Phí Gọi+TV360",
     description:
@@ -16584,7 +16584,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G380B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5G380B Nhận 15GB/ngày. Miễn Phí Gọi+TV360",
     description:
@@ -16907,7 +16907,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G480B": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5G480B Nhận 20GB/ngày. Miễn Phí Gọi+TV360",
     description:
@@ -17230,7 +17230,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G135N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói 5G135N Viettel – 6GB/ngày, Miễn phí TV360 4K & 20GB MyBox",
     description:
@@ -17366,7 +17366,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G150N": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước tháng 5G150N Viettel – 8GB/ngày, miễn phí TV360 và lưu trữ Mybox",
@@ -17547,7 +17547,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5GLQ190": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Đăng Ký 5G Viettel 5GLQ190 Nhận 6GB/ngày. Miễn Phí Liên Quân",
     description:
@@ -17871,7 +17871,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5GLQ210": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "5GLQ210 - Gói Cước 5G Viettel 6GB/ngày + 2GB/ngày Liên Quân + Gọi",
     description:
@@ -18196,7 +18196,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G200C": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước 5G200C Viettel – 6GB/ngày, miễn phí gọi, TV360 4K chỉ 200K/tháng!",
@@ -18356,7 +18356,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/5G300C": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói 5G300C Viettel – 10GB/ngày, Gọi Thoải Mái, Xem TV360 4K Miễn Phí",
@@ -18586,7 +18586,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS110": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước KS110 Viettel Money: 36GB Dùng Trong 30 Ngày, Giá Chỉ 104.500đ",
@@ -18686,7 +18686,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS145": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước KS145 Viettel Money: 66GB Dùng Trong 30 Ngày, Giá Chỉ 137.750đ",
@@ -18781,7 +18781,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS165": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước KS165 Viettel Money: 90GB Dùng Trong 30 Ngày, Giá Chỉ 156.750đ",
@@ -18881,7 +18881,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS2H": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước KS2H Viettel Money: 1,2GB Dùng Trong 2 Giờ, Giá Chỉ 5.700đ",
@@ -18981,7 +18981,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS6H": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói cước KS6H Viettel Money: 3GB Dùng Trong 6 Giờ, Giá Chỉ 9.500đ",
     description:
@@ -19075,7 +19075,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS8": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title: "Gói cước KS8 Viettel Money: 1.5GB Dùng Trong Ngày, Giá Chỉ 7.600đ",
     description:
@@ -19174,7 +19174,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS12": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước KS12 Viettel Money: 2.5GB Dùng Trong Ngày, Giá Chỉ 11.400đ",
@@ -19269,7 +19269,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS20": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước KS20 Viettel Money: 4GB Dùng Trong 3 Ngày, Giá Chỉ 19.000đ",
@@ -19369,7 +19369,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/KS36": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước KS36 Viettel Money: 8GB Dùng Trong 7 Ngày, Giá Chỉ 34.000đ",
@@ -19469,7 +19469,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/MXH120": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói Cước Trả Sau MXH120 Viettel - 30GB Data + Miễn Phí Mạng Xã Hội, Chỉ 120K/tháng",
@@ -19566,7 +19566,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/MXH150": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau Viettel MXH150 miễn phí data truy cập TikTok, Youtube, Facebook, Messenger",
@@ -19678,7 +19678,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/MXH200": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau Viettel MXH200 4GB/ngày + miễn phí data truy cập TikTok, Youtube, Facebook, Messenger",
@@ -19784,7 +19784,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/MXH250": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau Viettel MXH250 5GB/ngày + miễn phí data truy cập TikTok, Youtube, Facebook, Messenger",
@@ -19890,7 +19890,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/V120K": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau Viettel V120K: 120.000đ/Tháng nhận 1.5GB/ngày, Miễn Phí Gọi.",
@@ -19994,7 +19994,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/V160X": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau V160X: 160.000đ/Tháng, 4GB/Ngày, Miễn Phí Gọi & SMS",
@@ -20099,7 +20099,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/V180X": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau V180X: 180.000đ/Tháng, 6GB/Ngày, Miễn Phí Gọi Hấp Dẫn",
@@ -20203,7 +20203,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N200": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N200 chỉ 200k/tháng nhận 8GB/ngày. Miễn phí data Youtube, Spotify.",
@@ -20381,7 +20381,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N250": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N250 chỉ 250k/tháng nhận 10GB/ngày. Miễn phí data Youtube, Spotify.",
@@ -20559,7 +20559,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N300": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N300 chỉ 300k/tháng nhận 12GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
@@ -20738,7 +20738,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N350": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N350 350k/tháng nhận 15GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
@@ -20916,7 +20916,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N400": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N400 400k/tháng nhận 17GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
@@ -21100,7 +21100,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N500": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N500 500k/tháng nhận 20GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
@@ -21290,7 +21290,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N1000": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N1000 1tr/tháng nhận 30GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
@@ -21481,7 +21481,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/tra-sau/N2000": {
-    status: "draft",
+    status: "ready",
     kind: "package",
     title:
       "Gói cước trả sau N2000 2tr/tháng nhận 50GB/ngày. Miễn phí data Youtube, Spotify, Facebook, TikTok",
