@@ -7,6 +7,10 @@ export default defineConfig([
   ...nextVitals,
   ...nextTypescript,
   prettier,
+  {
+    files: ["**/*.cjs"],
+    rules: { "@typescript-eslint/no-require-imports": "off" },
+  },
   globalIgnores([
     ".next/**",
     ".next-preview/**",

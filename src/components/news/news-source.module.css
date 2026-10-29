@@ -1,0 +1,27 @@
+/* The original classnames use the already loaded viettelup-source.css.
+   These local rules only contain wide editorial media and tables. */
+.sourceNews {
+  min-width: 0;
+  max-width: 100%;
+}
+.sourceNews > article {
+  min-width: 0;
+  width: 100%;
+}
+.sourceNews :global(.source-news-table-scroll) {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.sourceNews :global(.source-news-table-scroll table) {
+  width: max-content;
+  min-width: 100%;
+}
+.sourceNews :global([itemprop="articleBody"]) {
+  overflow-wrap: break-word;
+}
+
+/* The archived listing keeps this load-more control disabled until its source behavior is ported. Preserve the source red button while disabled. */
+.sourceNews :global([data-source-news-latest-more]:disabled) {
+  opacity: 1;
+}

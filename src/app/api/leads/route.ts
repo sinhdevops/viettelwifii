@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { leadSchema } from "@/lib/lead-schema";
-import { getPage } from "@/lib/site-data";
+import { getPage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
 
 const allowedAttribution = new Set([

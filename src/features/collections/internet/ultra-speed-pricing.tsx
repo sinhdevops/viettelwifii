@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useRef } from "react";
-import { sourceAsset } from "@/lib/viettelup-source-assets";
-import { UltraSpeedInternetCard, UltraSpeedInternetSlide } from "./internet-cards";
+import { UltraSpeedInternetCard } from "./ultra-speed-internet-card";
+import { UltraSpeedInternetSlide } from "./ultra-speed-internet-slide";
 import { ultraSpeedPlans } from "./internet-data";
 import styles from "./ultra-speed-carousel.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -59,12 +59,16 @@ export function InternetUltraSpeedPricing() {
             slidesPerView={3}
             spaceBetween={24}
             navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
+              prevEl: null,
+              nextEl: null,
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                if (swiper.params?.navigation && typeof swiper.params.navigation !== "boolean") {
+                if (swiper.destroyed || !swiper.navigation) return;
+                if (
+                  swiper.params?.navigation &&
+                  typeof swiper.params.navigation !== "boolean"
+                ) {
                   swiper.params.navigation.prevEl = prevRef.current;
                   swiper.params.navigation.nextEl = nextRef.current;
                 }
@@ -83,17 +87,33 @@ export function InternetUltraSpeedPricing() {
           <button
             ref={prevRef}
             aria-label="Previous slide"
-            className="absolute h-[60px] w-[60px] rounded-full bg-white shadow-[0px_6px_20px_0px_#970A0A26] -left-8 top-1/2 -translate-y-1/2 flex items-center justify-center disabled:opacity-50 disabled:cursor-default hover:bg-gray-100"
+            className="absolute top-1/2 -left-8 flex h-[60px] w-[60px] -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-[0px_6px_20px_0px_#970A0A26] hover:bg-gray-100 disabled:cursor-default disabled:opacity-50"
           >
-            <img alt="previous" loading="lazy" width="24" height="10" decoding="async" style={{ color: "transparent" }} src={sourceAsset("/icons/arrow-black-left.svg")} />
+            <img
+              alt="previous"
+              loading="lazy"
+              width="24"
+              height="10"
+              decoding="async"
+              style={{ color: "transparent" }}
+              src="/assets/viettelup/a99b912fe8229005fe387173.svg"
+            />
             <span className="sr-only">Previous slide</span>
           </button>
           <button
             ref={nextRef}
             aria-label="Next slide"
-            className="absolute h-[60px] w-[60px] rounded-full bg-white shadow-[0px_6px_20px_0px_#970A0A26] -right-8 top-1/2 -translate-y-1/2 flex items-center justify-center disabled:opacity-50 disabled:cursor-default hover:bg-gray-100"
+            className="absolute top-1/2 -right-8 flex h-[60px] w-[60px] -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-[0px_6px_20px_0px_#970A0A26] hover:bg-gray-100 disabled:cursor-default disabled:opacity-50"
           >
-            <img alt="next" loading="lazy" width="24" height="10" decoding="async" style={{ color: "transparent" }} src={sourceAsset("/icons/arrow-black-right.svg")} />
+            <img
+              alt="next"
+              loading="lazy"
+              width="24"
+              height="10"
+              decoding="async"
+              style={{ color: "transparent" }}
+              src="/assets/viettelup/d4869de7b0533b6c535bad05.svg"
+            />
             <span className="sr-only">Next slide</span>
           </button>
         </div>

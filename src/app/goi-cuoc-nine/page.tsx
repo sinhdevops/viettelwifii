@@ -1,4 +1,4 @@
-import NineCollection from "@/features/collections/nine/nine-collection";
+import NineCollection from "@/components/nine/nine-collection";
 import { CollectionRuntime } from "@/features/collections/collection-runtime";
 import { metadataForPage, requirePage } from "@/lib/page-routing";
 

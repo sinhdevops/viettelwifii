@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PackageContent } from "@/app/goi-cuoc-viettel/_components/package-content";
+import { PackageContent } from "@/components/packages/package-content";
 import {
   metadataForPage,
   pathFromSegment,

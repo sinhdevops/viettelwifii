@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { sourceAsset } from "@/lib/viettelup-source-assets";
 import type { CSSProperties } from "react";
 import { InternetRegionalPricing } from "./regional-pricing";
 import type { CameraInternetSlideData } from "./internet-data";
@@ -19,12 +18,10 @@ export function CameraInternetSlide({
           decoding="async"
           className="h-[56px] w-[53px] md:h-[102px] md:w-[97px]"
           style={{ color: "transparent" } as CSSProperties}
-          src={sourceAsset(
-            "/_next/image?url=%2Fimages%2Finternet-gia-%C4%91%C3%ACnh.png&w=256&q=75",
-          )}
+          src="/assets/viettelup/e11a6d955c9fc18279ce7099.webp"
           srcSet={[
-            `${sourceAsset("/_next/image?url=%2Fimages%2Finternet-gia-%C4%91%C3%ACnh.png&w=128&q=75")} 1x`,
-            `${sourceAsset("/_next/image?url=%2Fimages%2Finternet-gia-%C4%91%C3%ACnh.png&w=256&q=75")} 2x`,
+            `/assets/viettelup/37f8359e8f0fde5b2370075d.webp 1x`,
+            `/assets/viettelup/e11a6d955c9fc18279ce7099.webp 2x`,
           ].join(", ")}
         />
       </div>

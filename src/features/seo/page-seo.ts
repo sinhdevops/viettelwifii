@@ -13,9 +13,13 @@ export type PageSeoContext = {
 
 const blockedRobots = { index: false, follow: false } as const;
 
-function getConfiguredOrigin(rawUrl: string | undefined, siteLive: boolean): URL | null {
+function getConfiguredOrigin(
+  rawUrl: string | undefined,
+  siteLive: boolean,
+): URL | null {
   if (!rawUrl?.trim()) {
-    if (siteLive) throw new Error("NEXT_PUBLIC_SITE_URL is required when SITE_LIVE=true");
+    if (siteLive)
+      throw new Error("NEXT_PUBLIC_SITE_URL is required when SITE_LIVE=true");
     return null;
   }
 
@@ -35,7 +39,9 @@ function getConfiguredOrigin(rawUrl: string | undefined, siteLive: boolean): URL
     url.search ||
     url.hash
   ) {
-    throw new Error("NEXT_PUBLIC_SITE_URL must be an http(s) origin without path or credentials");
+    throw new Error(
+      "NEXT_PUBLIC_SITE_URL must be an http(s) origin without path or credentials",
+    );
   }
 
   if (
@@ -47,26 +53,35 @@ function getConfiguredOrigin(rawUrl: string | undefined, siteLive: boolean): URL
       url.hostname === "127.0.0.1" ||
       url.hostname === "[::1]")
   ) {
-    throw new Error("SITE_LIVE=true requires a public NEXT_PUBLIC_SITE_URL origin");
+    throw new Error(
+      "SITE_LIVE=true requires a public NEXT_PUBLIC_SITE_URL origin",
+    );
   }
 
   if (siteLive && url.protocol !== "https:") {
-    throw new Error("SITE_LIVE=true requires an https NEXT_PUBLIC_SITE_URL origin");
+    throw new Error(
+      "SITE_LIVE=true requires an https NEXT_PUBLIC_SITE_URL origin",
+    );
   }
 
   if (siteLive && url.origin !== siteConfig.origin) {
-    throw new Error("SITE_LIVE=true requires the configured NEXT_PUBLIC_SITE_URL origin");
+    throw new Error(
+      "SITE_LIVE=true requires the configured NEXT_PUBLIC_SITE_URL origin",
+    );
   }
 
   return url;
 }
 
-function approvedPage(context: PageSeoContext): context is PageSeoContext & { page: PageContent } {
+function approvedPage(
+  context: PageSeoContext,
+): context is PageSeoContext & { page: PageContent } {
   return (
     context.page !== null &&
     context.approvedRoutes.includes(context.path) &&
     context.path.startsWith("/") &&
     !context.path.startsWith("//") &&
+    !context.path.includes("\\") &&
     !/[?#]/.test(context.path)
   );
 }
@@ -78,7 +93,8 @@ export function buildPageMetadata(context: PageSeoContext): Metadata {
   const live = context.siteLive === true;
   const origin = getConfiguredOrigin(context.siteUrl, live);
   const indexable = live && context.page.status === "ready";
-  const canonical = indexable && origin ? new URL(context.path, origin).href : undefined;
+  const canonical =
+    indexable && origin ? new URL(context.path, origin).href : undefined;
 
   return {
     title: context.page.title,
@@ -101,15 +117,23 @@ type StructuredPage = {
 };
 
 /** No synthesized prices, ratings, authors, publication dates, or publisher claims. */
-export function buildPageJsonLd(context: PageSeoContext): StructuredPage | null {
-  if (!approvedPage(context) || context.siteLive !== true || context.page.status !== "ready") {
+export function buildPageJsonLd(
+  context: PageSeoContext,
+): StructuredPage | null {
+  if (
+    !approvedPage(context) ||
+    context.siteLive !== true ||
+    context.page.status !== "ready"
+  ) {
     return null;
   }
 
   const origin = getConfiguredOrigin(context.siteUrl, true);
   if (!origin) return null;
   const url = new URL(context.path, origin).href;
-  const isArticle = context.page.kind === "news-article" && Boolean(context.page.article?.blocks.length);
+  const isArticle =
+    context.page.kind === "news-article" &&
+    Boolean(context.page.article?.blocks.length);
 
   if (isArticle) {
     return {

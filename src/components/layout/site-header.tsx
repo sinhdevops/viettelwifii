@@ -7,7 +7,6 @@ import Link from "next/link";
 import * as Dialog from "@radix-ui/react-dialog";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { sourceAsset } from "@/lib/viettelup-source-assets";
 
 const items = [
   { text: "Trang chủ", href: "/", inScope: true },
@@ -70,7 +69,7 @@ export function SiteHeader({ newsLocal = false }: { newsLocal?: boolean }) {
           <Image
             unoptimized
             alt="Viettel"
-            src={sourceAsset("/icons/viettel.svg")}
+            src="/assets/viettelup/99a5712d86ce7a98a3e03885.svg"
             width={96}
             height={18}
             className="hidden md:block"
@@ -78,7 +77,7 @@ export function SiteHeader({ newsLocal = false }: { newsLocal?: boolean }) {
           <Image
             unoptimized
             alt="Viettel"
-            src={sourceAsset("/icons/viettel.svg")}
+            src="/assets/viettelup/99a5712d86ce7a98a3e03885.svg"
             width={96}
             height={18}
             className="md:hidden"
@@ -109,9 +108,7 @@ export function SiteHeader({ newsLocal = false }: { newsLocal?: boolean }) {
                 <Image
                   unoptimized
                   alt="Navigation menu"
-                  src={sourceAsset(
-                    "/_next/image?url=%2Ficons%2Fhamburger.png&w=64&q=75",
-                  )}
+                  src="/assets/viettelup/973d63da6ea2449b738197c4.webp"
                   width={32}
                   height={32}
                 />
@@ -133,7 +130,7 @@ export function SiteHeader({ newsLocal = false }: { newsLocal?: boolean }) {
                   <Image
                     unoptimized
                     alt="Viettel"
-                    src={sourceAsset("/icons/viettel.svg")}
+                    src="/assets/viettelup/99a5712d86ce7a98a3e03885.svg"
                     width={96}
                     height={18}
                   />

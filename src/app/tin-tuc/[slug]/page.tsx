@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { NewsArticleContent } from "@/features/news/news-article-content";
+import { NewsArticleContent } from "@/components/news/news-article-content";
 import {
   metadataForPage,
   pathFromSegment,

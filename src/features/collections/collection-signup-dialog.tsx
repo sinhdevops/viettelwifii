@@ -4,7 +4,6 @@
 import { Button as AppButton } from "@/components/ui/button";
 import * as Dialog from "@radix-ui/react-dialog";
 import { useId, useState, type ButtonHTMLAttributes } from "react";
-import { sourceAsset } from "@/lib/viettelup-source-assets";
 import {
   getSignupWards,
   readSignupSelection,
@@ -140,10 +139,8 @@ export function CollectionSignupDialog({
                 width="438"
                 height="169"
                 className="w-[250px] md:w-[300px]"
-                src={sourceAsset(
-                  "/_next/image?url=%2Fimages%2Fbanner-nine.png&w=1080&q=75",
-                )}
-                srcSet={`${sourceAsset("/_next/image?url=%2Fimages%2Fbanner-nine.png&w=640&q=75")} 1x, ${sourceAsset("/_next/image?url=%2Fimages%2Fbanner-nine.png&w=1080&q=75")} 2x`}
+                src="/assets/viettelup/4eab87965bb969cd46e1953f.webp"
+                srcSet="/assets/viettelup/6efa1b0ae73d1a3756c07223.webp 1x, /assets/viettelup/4eab87965bb969cd46e1953f.webp 2x"
               />
             )}
           </div>

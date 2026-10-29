@@ -1,4 +1,4 @@
-import GicCollection from "@/features/collections/gic/gic-collection";
+import GicCollection from "@/components/gic/gic-collection";
 import { CollectionRuntime } from "@/features/collections/collection-runtime";
 import { metadataForPage, requirePage } from "@/lib/page-routing";
 

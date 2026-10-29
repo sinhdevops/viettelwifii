@@ -1,4 +1,4 @@
-import RoamingCollection from "@/features/collections/roaming/roaming-collection";
+import RoamingCollection from "@/components/roaming/roaming-collection";
 import { CollectionRuntime } from "@/features/collections/collection-runtime";
 import { metadataForPage, requirePage } from "@/lib/page-routing";
 

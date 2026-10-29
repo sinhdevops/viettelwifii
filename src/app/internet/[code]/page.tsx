@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { InternetContent } from "@/features/internet/internet-content";
+import { InternetContent } from "@/components/internet/internet-content";
 import {
   metadataForPage,
   pathFromSegment,

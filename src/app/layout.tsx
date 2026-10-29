@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
-import { getRenderablePage } from "@/lib/site-data";
+import { getRenderablePage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
 import { FloatingContact } from "@/components/site/floating-contact";
 import { sourceFont } from "./fonts";

@@ -1,4 +1,4 @@
-import { NewsListContent } from "@/features/news/news-list-content";
+import { NewsListContent } from "@/components/news/news-list-content";
 import { metadataForPage, requirePage } from "@/lib/page-routing";
 
 export function generateMetadata() {

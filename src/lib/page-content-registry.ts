@@ -1,10 +1,10 @@
 import "server-only";
 import { z } from "zod";
 import { pageSchema, type PageContent } from "@/lib/content-schema";
-import { homePageContent } from "@/features/home/page-content";
-import { packagePageContents } from "@/app/goi-cuoc-viettel/_data/page-content";
-import { newsPageContents } from "@/features/news/page-content";
-import { internetDetailPageContents } from "@/features/internet/page-content";
+import { homePageContent } from "@/constants/home/page-content";
+import { packagePageContents } from "@/constants/packages/page-content";
+import { newsPageContents } from "@/constants/news/page-content";
+import { internetDetailPageContents } from "@/content/internet/page-content";
 import { collectionPageContents } from "@/features/collections/page-content";
 import { approvedRoutes } from "./approved-routes";
 

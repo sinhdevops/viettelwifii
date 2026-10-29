@@ -15,6 +15,3 @@ reports/
 work/
 .playwright-mcp/
 outputs/
-tests/
-scripts/
-docs/

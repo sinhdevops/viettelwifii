@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import { HomeContent } from "@/features/home/home-content";
-import { getRenderablePage } from "@/lib/site-data";
+import { HomeContent } from "@/components/home/home-content";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { getRenderablePage } from "@/lib/server/page-repository";
 
 export function generateMetadata(): Metadata {
-  const page = getRenderablePage("/");
-  return page
-    ? {
-        title: page.title,
-        description: page.description,
-        alternates: { canonical: "/" },
-        ...(page.status === "draft"
-          ? { robots: { index: false, follow: false } }
-          : {}),
-      }
-    : { robots: { index: false, follow: false } };
+  return buildMetadata("/", getRenderablePage("/"));
 }
 
 export default function Home() {
