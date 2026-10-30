@@ -38,6 +38,13 @@ async function fillMeshForm(page: import("@playwright/test").Page) {
       })
       .toBeLessThan(2);
   }
+  const closeButton = dialog.getByRole("button", { name: "ĐÓNG", exact: true });
+  expect(
+    await closeButton.evaluate((button) => {
+      const bounds = button.getBoundingClientRect();
+      return document.elementFromPoint(bounds.x + 35, bounds.y + 1) === button;
+    }),
+  ).toBe(true);
   await expect(dialog.getByText("Bản xem trước")).toHaveCount(0);
   await dialog
     .getByRole("textbox", { name: "Nhập họ tên" })

@@ -395,7 +395,14 @@ export function CollectionSignupDialog({
                 tabIndex={-1}
                 autoComplete="off"
                 aria-hidden="true"
-                className="absolute -left-[9999px]"
+                style={{
+                  position: "absolute",
+                  left: "-9999px",
+                  width: 1,
+                  height: 1,
+                  opacity: 0,
+                  pointerEvents: "none",
+                }}
               />
               <div className="flex justify-center gap-4 pt-5">
                 <SheetClose asChild>
