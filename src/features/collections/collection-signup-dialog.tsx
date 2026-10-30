@@ -2,8 +2,27 @@
 /* eslint-disable @next/next/no-img-element -- byte-identical captured source banner */
 
 import { Button as AppButton } from "@/components/ui/button";
-import * as Dialog from "@radix-ui/react-dialog";
-import { useId, useState, type ButtonHTMLAttributes } from "react";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetOverlay,
+  SheetPortal,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
+import {
+  useId,
+  useRef,
+  useState,
+  type ButtonHTMLAttributes,
+  type FormEvent,
+} from "react";
+import { toast } from "sonner";
+import { leadSchema } from "@/lib/lead-schema";
+import { CollectionSelect } from "./collection-select";
 import {
   getSignupWards,
   readSignupSelection,
@@ -17,12 +36,8 @@ export type CollectionSignupDialogProps =
     pagePath: string;
   };
 
-const shell =
-  "fixed left-[50%] top-[50%] grid w-[calc(100%_-_32px)] max-w-lg translate-x-[-50%] translate-y-[-50%] border border-gray-200 shadow-lg duration-200 sm:rounded-lg";
 const input =
   "flex h-[42px] w-full rounded-xl border border-[#E9E9E9] bg-[#F4F4F4] px-3 py-2 text-16 ring-offset-white focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-gray-600 focus-visible:ring-offset-2 md:h-[52px] md:text-16 placeholder:text-[#737373]";
-const select =
-  "flex h-[42px] w-full items-center justify-between rounded-md border border-[#E9E9E9] bg-[#F4F4F4] px-3 py-2 text-16 focus:outline-none focus:ring-[1.5px] focus:ring-gray-600 focus:ring-offset-2 md:h-[52px] md:text-16";
 const action =
   "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 px-4 py-2";
 const outline =
@@ -31,9 +46,9 @@ const formButton =
   "h-[38px] w-[125px] rounded-full sm:!ml-0 md:h-[48px] md:w-[127px] md:text-16";
 const description =
   "Nhập thông tin cụ thể của quý khách để chúng tôi có thể hỗ trợ tốt nhất";
+const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+const cityOptions = signupCities.map((city) => ({ value: city, label: city }));
 
-/** Source dialog variants only. Lead wires this into CollectionDialogButton.
- * No form action, network request, storage, analytics or outbound SMS invocation. */
 export function CollectionSignupDialog({
   dialogLabel,
   pagePath,
@@ -43,7 +58,10 @@ export function CollectionSignupDialog({
 }: CollectionSignupDialogProps) {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState<SignupSelection>({});
-  const [response, setResponse] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const pendingRef = useRef(false);
+  const turnstileRef = useRef<TurnstileInstance>(null);
+  const [turnstileToken, setTurnstileToken] = useState("");
   const [city, setCity] = useState("");
   const [ward, setWard] = useState("");
   const wards = getSignupWards(city);
@@ -51,6 +69,89 @@ export function CollectionSignupDialog({
   const nine = pagePath === "/goi-cuoc-nine";
   const sms = pagePath === "/goi-cuoc-gic";
   const supported = sms || nine || pagePath === "/internet";
+  async function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (pendingRef.current) return;
+    if (pagePath !== "/internet") {
+      toast.error("Gói này chưa hỗ trợ đăng ký qua biểu mẫu.");
+      return;
+    }
+    const form = new FormData(event.currentTarget);
+    const code = selection.code?.trim();
+    const selectedWard = wards.find((entry) => entry.ward_code === ward)?.name;
+    const address = String(form.get("address") ?? "").trim();
+    if (!code || !city || !selectedWard || !address) {
+      toast.error("Vui lòng chọn gói cước và nhập đầy đủ địa chỉ lắp đặt.");
+      return;
+    }
+    const url = new URL(window.location.href);
+    const attribution = Object.fromEntries(
+      [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_content",
+        "utm_term",
+        "gclid",
+      ]
+        .map((key) => [key, url.searchParams.get(key)?.slice(0, 200)] as const)
+        .filter((entry): entry is readonly [string, string] =>
+          Boolean(entry[1]),
+        ),
+    );
+    const parsed = leadSchema.safeParse({
+      name: String(form.get("name") ?? ""),
+      phone: String(form.get("phone") ?? ""),
+      note: `Địa chỉ lắp đặt: ${address}, ${selectedWard}, ${city}. Khu vực: ${selection.region ?? "—"}. Giá hiển thị: ${selection.price ?? "—"}.`,
+      itemId: `/internet/${code}`,
+      itemTitle: code,
+      pagePath,
+      attribution,
+      company: String(form.get("company") ?? ""),
+      turnstileToken,
+    });
+    if (!parsed.success) {
+      toast.error(parsed.error.issues[0]?.message ?? "Thông tin chưa hợp lệ.");
+      return;
+    }
+    pendingRef.current = true;
+    setSubmitting(true);
+    try {
+      const response = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(parsed.data),
+        signal: AbortSignal.timeout(15000),
+      });
+      const result = (await response.json().catch(() => null)) as {
+        ok?: boolean;
+        error?: string;
+      } | null;
+      if (!response.ok || result?.ok !== true) {
+        const message =
+          result?.error === "invalid_item"
+            ? "Gói cước chưa được liên kết đúng. Vui lòng chọn lại gói."
+            : result?.error === "captcha_failed"
+              ? "Xác minh đã hết hạn. Vui lòng xác minh lại."
+              : response.status === 503
+                ? "Hệ thống tiếp nhận chưa được cấu hình. Vui lòng liên hệ qua số điện thoại."
+                : "Chưa gửi được đăng ký. Vui lòng thử lại.";
+        toast.error(message);
+        return;
+      }
+      setOpen(false);
+      toast.success("Đã gửi đăng ký thành công. Chúng tôi sẽ liên hệ sớm!");
+    } catch {
+      toast.error(
+        "Chưa nhận được xác nhận từ máy chủ. Vui lòng kiểm tra trước khi gửi lại.",
+      );
+    } finally {
+      setTurnstileToken("");
+      turnstileRef.current?.reset();
+      pendingRef.current = false;
+      setSubmitting(false);
+    }
+  }
   if (!supported)
     return (
       <AppButton
@@ -65,8 +166,8 @@ export function CollectionSignupDialog({
     );
 
   return (
-    <Dialog.Root open={open} onOpenChange={setOpen}>
-      <Dialog.Trigger asChild>
+    <Sheet open={open} onOpenChange={setOpen}>
+      <SheetTrigger asChild>
         <AppButton
           variant="unstyled"
           size="unstyled"
@@ -77,41 +178,48 @@ export function CollectionSignupDialog({
             onClick?.(event);
             if (event.defaultPrevented) return;
             setSelection(readSignupSelection(event.currentTarget, pagePath));
-            setResponse("");
             setCity("");
             setWard("");
+            setTurnstileToken("");
           }}
         >
           {children}
         </AppButton>
-      </Dialog.Trigger>
-      <Dialog.Portal>
-        <Dialog.Overlay
-          className="fixed inset-0 bg-black/80"
-          style={{ zIndex: 150 }}
-        />
-        <Dialog.Content
-          style={{
-            zIndex: 151,
-            maxHeight: "calc(100dvh - 32px)",
-            overflowY: "auto",
+      </SheetTrigger>
+      <SheetPortal>
+        <SheetOverlay />
+        <SheetContent
+          mobileSide={pagePath === "/internet" ? "bottom" : "center"}
+          onEscapeKeyDown={(event) => {
+            if (
+              document.querySelector(
+                "[data-collection-select-popover]:popover-open",
+              )
+            )
+              event.preventDefault();
           }}
           aria-describedby={`${id}-description`}
           data-collection-signup={pagePath}
           data-source-product={selection.code}
           data-source-region={selection.region}
           data-source-price={selection.price}
-          className={`${shell} ${sms ? "gap-8 border-none bg-white p-6 sm:max-w-[425px]" : nine ? "gap-0 !rounded-2xl border-none bg-transparent p-0 sm:max-w-[400px]" : "gap-4 !rounded-2xl border-none bg-white px-[18px] py-6 sm:max-w-[410px]"}`}
+          className={
+            sms
+              ? "gap-8 border-none bg-white p-6 sm:max-w-[425px]"
+              : nine
+                ? "gap-0 !rounded-2xl border-none bg-transparent p-0 sm:max-w-[400px]"
+                : "gap-4 bg-white px-[18px] py-6 sm:max-w-[410px] sm:!rounded-2xl"
+          }
         >
           <div
             className={`flex flex-col space-y-1.5 text-center sm:text-left ${nine ? "bg-primary items-center rounded-[18px] border-x-[6px] border-white py-4" : ""}`}
           >
-            <Dialog.Title
+            <SheetTitle
               className={`text-center text-lg leading-none font-semibold tracking-tight ${nine ? "font-magistral md:text-24 pb-2 text-white md:pb-4" : `font-sarabun text-text-dark md:text-24 ${sms ? "" : "pb-2 md:pb-4"}`}`}
             >
               {sms ? "Thông báo" : nine ? "ĐĂNG KÝ GÓI" : "Thông tin đặt mua"}
-            </Dialog.Title>
-            <Dialog.Description
+            </SheetTitle>
+            <SheetDescription
               id={`${id}-description`}
               className="md:text-16 !mt-2 text-sm text-black"
               hidden={nine}
@@ -132,7 +240,7 @@ export function CollectionSignupDialog({
               ) : (
                 description
               )}
-            </Dialog.Description>
+            </SheetDescription>
             {nine && (
               <img
                 alt="banner-nine"
@@ -146,7 +254,7 @@ export function CollectionSignupDialog({
           </div>
           {sms ? (
             <div className="flex flex-col-reverse gap-4 sm:flex-row sm:justify-center sm:space-x-2">
-              <Dialog.Close asChild>
+              <SheetClose asChild>
                 <AppButton
                   variant="unstyled"
                   size="unstyled"
@@ -155,7 +263,7 @@ export function CollectionSignupDialog({
                 >
                   Đóng
                 </AppButton>
-              </Dialog.Close>
+              </SheetClose>
               {/* Original mobile SMS link stays on its source card; do not initiate it here. */}
             </div>
           ) : (
@@ -166,10 +274,7 @@ export function CollectionSignupDialog({
                   : undefined
               }
               onSubmit={(event) => {
-                event.preventDefault();
-                setResponse(
-                  "Bản xem trước: thông tin chưa được gửi. Chức năng đăng ký trực tuyến đang tắt.",
-                );
+                void submit(event);
               }}
             >
               <div className="flex flex-col gap-4 text-black">
@@ -180,6 +285,7 @@ export function CollectionSignupDialog({
                     aria-label="Nhập họ tên"
                     name="name"
                     autoComplete="name"
+                    required
                   />
                 </div>
                 <div className="space-y-2">
@@ -192,6 +298,7 @@ export function CollectionSignupDialog({
                       name="phone"
                       inputMode="tel"
                       autoComplete="tel"
+                      required
                     />
                     <span
                       className="text-14 text-primary absolute top-[12px] left-[151px]"
@@ -237,43 +344,29 @@ export function CollectionSignupDialog({
                 ) : (
                   <>
                     <div className="space-y-2">
-                      <select
-                        className={`${select} ${city ? "text-black" : "text-[#737373]"}`}
-                        aria-label="Chọn tỉnh/thành phố"
-                        aria-required="true"
-                        name="city"
+                      <CollectionSelect
+                        label="Chọn tỉnh/thành phố"
+                        placeholder="Chọn tỉnh/thành phố *"
                         value={city}
-                        onChange={(event) => {
-                          setCity(event.target.value);
+                        options={cityOptions}
+                        onChange={(value) => {
+                          setCity(value);
                           setWard("");
-                          setResponse("");
                         }}
-                      >
-                        <option value="">Chọn tỉnh/thành phố *</option>
-                        {signupCities.map((value) => (
-                          <option key={value} value={value}>
-                            {value}
-                          </option>
-                        ))}
-                      </select>
+                      />
                     </div>
                     <div className="space-y-2">
-                      <select
-                        className={`${select} ${ward ? "text-black" : "text-[#737373]"}`}
-                        aria-label="Chọn phường/xã"
-                        aria-required="true"
-                        name="ward"
+                      <CollectionSelect
+                        label="Chọn phường/xã"
+                        placeholder="Chọn phường/xã *"
                         disabled={!wards.length}
                         value={ward}
-                        onChange={(event) => setWard(event.target.value)}
-                      >
-                        <option value="">Chọn phường/xã *</option>
-                        {wards.map((value) => (
-                          <option key={value.ward_code} value={value.ward_code}>
-                            {value.name}
-                          </option>
-                        ))}
-                      </select>
+                        options={wards.map((entry) => ({
+                          value: entry.ward_code,
+                          label: entry.name,
+                        }))}
+                        onChange={setWard}
+                      />
                     </div>
                     <div className="space-y-2">
                       <input
@@ -282,13 +375,30 @@ export function CollectionSignupDialog({
                         aria-label="Nhập địa chỉ"
                         name="address"
                         autoComplete="street-address"
+                        required
                       />
                     </div>
                   </>
                 )}
               </div>
+              {pagePath === "/internet" && siteKey && (
+                <Turnstile
+                  ref={turnstileRef}
+                  siteKey={siteKey}
+                  onSuccess={setTurnstileToken}
+                  onExpire={() => setTurnstileToken("")}
+                  onError={() => setTurnstileToken("")}
+                />
+              )}
+              <input
+                name="company"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="absolute -left-[9999px]"
+              />
               <div className="flex justify-center gap-4 pt-5">
-                <Dialog.Close asChild>
+                <SheetClose asChild>
                   <AppButton
                     variant="unstyled"
                     size="unstyled"
@@ -297,24 +407,20 @@ export function CollectionSignupDialog({
                   >
                     ĐÓNG
                   </AppButton>
-                </Dialog.Close>
+                </SheetClose>
                 <AppButton
                   variant="unstyled"
                   size="unstyled"
                   className={`${action} bg-primary hover:bg-primary-dark text-gray-50 ${formButton}`}
                   type="submit"
+                  disabled={submitting || Boolean(siteKey && !turnstileToken)}
                 >
-                  XÁC NHẬN
+                  {submitting ? "ĐANG GỬI…" : "XÁC NHẬN"}
                 </AppButton>
               </div>
-              {response && (
-                <p role="status" className="mt-3 text-sm text-black">
-                  {response}
-                </p>
-              )}
             </form>
           )}
-          <Dialog.Close asChild>
+          <SheetClose asChild>
             <AppButton
               variant="unstyled"
               size="unstyled"
@@ -339,9 +445,9 @@ export function CollectionSignupDialog({
               </svg>
               <span className="sr-only">Close</span>
             </AppButton>
-          </Dialog.Close>
-        </Dialog.Content>
-      </Dialog.Portal>
-    </Dialog.Root>
+          </SheetClose>
+        </SheetContent>
+      </SheetPortal>
+    </Sheet>
   );
 }

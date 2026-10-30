@@ -1,0 +1,87 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  background: rgb(0 0 0 / 80%);
+}
+
+.content {
+  position: fixed;
+  z-index: 151;
+  display: grid;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 16%);
+  outline: none;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 32px);
+  max-width: 512px;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.bottom {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: calc(100dvh - 16px);
+  border-bottom: 0;
+  border-radius: 16px 16px 0 0;
+  overscroll-behavior: contain;
+}
+
+@media (min-width: 640px) {
+  .bottom {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: calc(100% - 32px);
+    max-height: calc(100dvh - 32px);
+    max-width: 512px;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid #e5e7eb;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 639px) {
+  .bottom[data-state="open"] {
+    animation: sheet-in 220ms ease-out;
+  }
+
+  .bottom[data-state="closed"] {
+    animation: sheet-out 180ms ease-in;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bottom[data-state="open"],
+  .bottom[data-state="closed"] {
+    animation-duration: 0ms;
+  }
+}
+
+@keyframes sheet-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes sheet-out {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}

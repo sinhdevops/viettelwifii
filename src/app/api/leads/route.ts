@@ -2,6 +2,25 @@ import { NextRequest, NextResponse } from "next/server";
 import { leadSchema } from "@/lib/lead-schema";
 import { getPage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
+import {
+  broadbandPlans,
+  cameraPlans,
+  comboPlans,
+  meshPlans,
+  televisionPlans,
+  ultraSpeedPlans,
+} from "@/features/collections/internet/internet-data";
+
+const internetCollectionCodes = new Set(
+  [
+    ...broadbandPlans,
+    ...cameraPlans,
+    ...comboPlans,
+    ...meshPlans,
+    ...televisionPlans,
+    ...ultraSpeedPlans,
+  ].map((plan) => plan.code),
+);
 
 const allowedAttribution = new Set([
   "utm_source",
@@ -103,7 +122,16 @@ export async function POST(req: NextRequest) {
       section.type === "cards" &&
       section.cards.some((card) => card.productId === lead.itemId),
   );
-  if (!isReadyProduct || (!isOwnDetail && !isReferencedCard)) {
+  const isInternetCollectionCard =
+    lead.pagePath === "/internet" &&
+    sourcePage?.kind === "collection" &&
+    productPage?.kind === "internet" &&
+    lead.itemId.startsWith("/internet/") &&
+    internetCollectionCodes.has(lead.itemId.slice("/internet/".length));
+  if (
+    !isReadyProduct ||
+    (!isOwnDetail && !isReferencedCard && !isInternetCollectionCard)
+  ) {
     return NextResponse.json({ error: "invalid_item" }, { status: 400 });
   }
 

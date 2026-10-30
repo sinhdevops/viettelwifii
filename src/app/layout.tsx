@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
+import { Toaster } from "sonner";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { getRenderablePage } from "@/lib/server/page-repository";
@@ -32,6 +33,7 @@ export default function RootLayout({
         {children}
         <SiteFooter />
         <FloatingContact />
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );
