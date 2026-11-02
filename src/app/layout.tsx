@@ -5,7 +5,6 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { getRenderablePage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
-import { FloatingContact } from "@/components/site/floating-contact";
 import { sourceFont } from "./fonts";
 // Exact stylesheets extracted by true-web-clone, with only local asset URLs rewritten.
 import "@/styles/viettelup-source.css";
@@ -32,7 +31,6 @@ export default function RootLayout({
         <SiteHeader newsLocal={getRenderablePage("/tin-tuc") !== null} />
         {children}
         <SiteFooter />
-        <FloatingContact />
         <Toaster position="top-right" richColors />
       </body>
     </html>

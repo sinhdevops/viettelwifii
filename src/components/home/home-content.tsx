@@ -21,18 +21,18 @@ import {
 } from "@/constants/home/home-source-data";
 
 const slides: HomeSlide[] = [
-  {
-    id: "youtube-premium",
-    href: siteConfig.url("/youtube-premium-viettel"),
-    label: "YouTube Premium",
-    alt: "Tặng YouTube Premium với gói YT150",
-    desktop: sourceAsset(
-      "/_next/image?url=%2Fimages%2Fbanner-youtube-premium-desktop.webp&w=3840&q=75",
-    ),
-    mobile: sourceAsset(
-      "/_next/image?url=%2Fimages%2Fbanner-youtube-premium-mobile.webp&w=1200&q=75",
-    ),
-  },
+  // {
+  //   id: "youtube-premium",
+  //   href: siteConfig.url("/youtube-premium-viettel"),
+  //   label: "YouTube Premium",
+  //   alt: "Tặng YouTube Premium với gói YT150",
+  //   desktop: sourceAsset(
+  //     "/_next/image?url=%2Fimages%2Fbanner-youtube-premium-desktop.webp&w=3840&q=75",
+  //   ),
+  //   mobile: sourceAsset(
+  //     "/_next/image?url=%2Fimages%2Fbanner-youtube-premium-mobile.webp&w=1200&q=75",
+  //   ),
+  // },
   {
     id: "wifi-mesh",
     href: siteConfig.url("/internet"),

@@ -107,8 +107,6 @@ export async function POST(req: NextRequest) {
   const lead = parsed.data;
   if (lead.company)
     return NextResponse.json({ error: "invalid_input" }, { status: 400 }); // honeypot, never claim delivery
-  // Both routes must resolve through the approved, ready-only server catalog.
-  // Never use the client's itemTitle, card id, code, or price for identity.
   const sourcePage = getPage(lead.pagePath);
   const productPage = getPage(lead.itemId);
   const isReadyProduct =
@@ -144,7 +142,7 @@ export async function POST(req: NextRequest) {
     (process.env.NODE_ENV === "production" &&
       (!captchaSecret || !process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)) ||
     Boolean(captchaSecret) !==
-      Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)
+    Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)
   ) {
     return NextResponse.json(
       { error: "spam_protection_not_configured" },
@@ -179,7 +177,6 @@ export async function POST(req: NextRequest) {
     `Khách: ${lead.name}`,
     `Điện thoại: ${lead.phone}`,
     `Quan tâm: ${productPage.title} (${lead.itemId})`,
-    `Trang: ${lead.pagePath}`,
     `Ghi chú: ${lead.note || "—"}`,
     attribution && `Nguồn:\n${attribution}`,
   ]
