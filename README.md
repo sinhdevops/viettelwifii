@@ -62,7 +62,7 @@ Shadcn component khác **chỉ thêm khi clone archetype cần**: `pnpm dlx shad
 
 - Đã capture 175 HTML và local hóa 699 asset; các component TSX vẫn cần nghiệm thu theo từng nhóm. Không coi toàn bộ route đã hoàn thiện chỉ dựa vào HTTP smoke.
 - Đã có so sánh Playwright mobile/tablet/desktop theo lô tại `reports/integration/` và `reports/qa/`; các sai khác/tương tác còn lại được ghi tại Boardroom.
-- Form chưa có thông tin bot thật, hệ thống rate limit distributed, hàng đợi lưu lead dự phòng; nếu lượng Ads lớn cần bổ sung trước launch.
+- Lead được lưu vào Supabase trước khi gửi Telegram. Cần cấu hình `SUPABASE_URL`, `SUPABASE_SECRET_KEY` ở môi trường server và chạy `db/001_create_leads.sql` trong Supabase SQL Editor trước khi nhận lead. Nếu Telegram lỗi, API vẫn xác nhận lead đã lưu; kiểm tra các bản ghi `telegram_status = 'failed'` hoặc `pending` trong database. Chưa có cơ chế tự gửi lại Telegram hoặc rate limit distributed; cần bổ sung nếu lượng Ads lớn.
 - SEO và CWV chỉ có nền kỹ thuật, chưa thể đánh giá kết quả khi chưa có trang thật và deployment thật.
 
 ## Security

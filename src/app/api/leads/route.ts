@@ -3,6 +3,11 @@ import { leadSchema } from "@/lib/lead-schema";
 import { getPage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
 import {
+  leadStoreConfigured,
+  saveLead,
+  setLeadNotificationStatus,
+} from "@/lib/server/lead-store";
+import {
   broadbandPlans,
   cameraPlans,
   comboPlans,
@@ -133,16 +138,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "invalid_item" }, { status: 400 });
   }
 
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
   const captchaSecret = process.env.TURNSTILE_SECRET_KEY;
-  if (!token || !chatId)
+  if (!leadStoreConfigured())
     return NextResponse.json({ error: "not_configured" }, { status: 503 });
   if (
     (process.env.NODE_ENV === "production" &&
       (!captchaSecret || !process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)) ||
     Boolean(captchaSecret) !==
-    Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)
+      Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)
   ) {
     return NextResponse.json(
       { error: "spam_protection_not_configured" },
@@ -182,24 +185,43 @@ export async function POST(req: NextRequest) {
   ]
     .filter(Boolean)
     .join("\n");
+  let leadId: string;
   try {
-    const response = await fetch(
-      `https://api.telegram.org/bot${token}/sendMessage`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ chat_id: chatId, text: message }),
-        signal: AbortSignal.timeout(8000),
-        cache: "no-store",
-      },
-    );
-    if (!response.ok)
-      return NextResponse.json({ error: "delivery_failed" }, { status: 502 });
-    const delivered = (await response.json()) as { ok?: boolean };
-    if (delivered.ok !== true)
-      return NextResponse.json({ error: "delivery_failed" }, { status: 502 });
-    return NextResponse.json({ ok: true });
+    leadId = await saveLead(lead, productPage.title);
   } catch {
-    return NextResponse.json({ error: "delivery_failed" }, { status: 502 });
+    return NextResponse.json({ error: "storage_failed" }, { status: 503 });
   }
+
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  let notificationSent = false;
+  if (token && chatId) {
+    try {
+      const response = await fetch(
+        `https://api.telegram.org/bot${token}/sendMessage`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ chat_id: chatId, text: message }),
+          signal: AbortSignal.timeout(8000),
+          cache: "no-store",
+        },
+      );
+      if (response.ok) {
+        const delivered = (await response.json()) as { ok?: boolean };
+        notificationSent = delivered.ok === true;
+      }
+    } catch {
+      // The lead is durable even if Telegram is unavailable.
+    }
+  }
+  try {
+    await setLeadNotificationStatus(
+      leadId,
+      notificationSent ? "sent" : "failed",
+    );
+  } catch {
+    // The saved lead remains pending if the status update fails.
+  }
+  return NextResponse.json({ ok: true, notificationSent });
 }

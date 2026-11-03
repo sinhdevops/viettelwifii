@@ -2,6 +2,15 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { NextRequest } from "next/server";
 
 vi.mock("server-only", () => ({}));
+const store = vi.hoisted(() => ({
+  saveLead: vi.fn(),
+  setLeadNotificationStatus: vi.fn(),
+}));
+vi.mock("../src/lib/server/lead-store", () => ({
+  leadStoreConfigured: () => true,
+  saveLead: store.saveLead,
+  setLeadNotificationStatus: store.setLeadNotificationStatus,
+}));
 import { POST } from "../src/app/api/leads/route";
 
 const payload = {
@@ -30,14 +39,17 @@ function request(body = payload) {
 afterEach(() => {
   vi.unstubAllGlobals();
   vi.unstubAllEnvs();
+  vi.clearAllMocks();
 });
 
 describe("Internet collection lead delivery", () => {
-  it("only confirms success after Telegram accepts the message", async () => {
+  it("stores before Telegram and retains a saved lead when notification fails", async () => {
     vi.stubEnv("TELEGRAM_BOT_TOKEN", "test-token");
     vi.stubEnv("TELEGRAM_CHAT_ID", "test-chat");
     vi.stubEnv("TURNSTILE_SECRET_KEY", "");
     vi.stubEnv("NEXT_PUBLIC_TURNSTILE_SITE_KEY", "");
+    store.saveLead.mockResolvedValue("lead-1");
+    store.setLeadNotificationStatus.mockResolvedValue(undefined);
     const send = vi
       .fn()
       .mockResolvedValueOnce(
@@ -50,15 +62,39 @@ describe("Internet collection lead delivery", () => {
 
     const accepted = await POST(request());
     expect(accepted.status).toBe(200);
-    expect(await accepted.json()).toEqual({ ok: true });
+    expect(await accepted.json()).toEqual({ ok: true, notificationSent: true });
+    expect(store.saveLead).toHaveBeenCalledBefore(send);
+    expect(store.setLeadNotificationStatus).toHaveBeenCalledWith(
+      "lead-1",
+      "sent",
+    );
     expect(send.mock.calls[0][0]).toBe(
       "https://api.telegram.org/bottest-token/sendMessage",
     );
     expect(JSON.parse(send.mock.calls[0][1].body).text).toContain("MESHVT3");
 
     const rejected = await POST(request());
-    expect(rejected.status).toBe(502);
-    expect(await rejected.json()).toEqual({ error: "delivery_failed" });
+    expect(rejected.status).toBe(200);
+    expect(await rejected.json()).toEqual({
+      ok: true,
+      notificationSent: false,
+    });
+    expect(store.setLeadNotificationStatus).toHaveBeenCalledWith(
+      "lead-1",
+      "failed",
+    );
+  });
+
+  it("does not notify or confirm when storage fails", async () => {
+    vi.stubEnv("TURNSTILE_SECRET_KEY", "");
+    vi.stubEnv("NEXT_PUBLIC_TURNSTILE_SITE_KEY", "");
+    store.saveLead.mockRejectedValue(new Error("database unavailable"));
+    const send = vi.fn();
+    vi.stubGlobal("fetch", send);
+    const response = await POST(request());
+    expect(response.status).toBe(503);
+    expect(await response.json()).toEqual({ error: "storage_failed" });
+    expect(send).not.toHaveBeenCalled();
   });
 
   it("rejects unknown products before contacting Telegram", async () => {
