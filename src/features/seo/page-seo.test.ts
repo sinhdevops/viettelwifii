@@ -16,7 +16,7 @@ const publicationFlags = [
   "PRIVACY_POLICY_APPROVED",
 ] as const;
 
-const draft: PageContent = {
+const draft = {
   status: "draft",
   kind: "package",
   heading: "Gói cước Viettel 5G20",
@@ -31,8 +31,8 @@ const draft: PageContent = {
     unverifiedFields: [],
     notes: [],
   },
-};
-const ready = { ...draft, status: "ready" } as PageContent;
+} satisfies PageContent;
+const ready = { ...draft, status: "ready" } satisfies PageContent;
 const base = {
   path,
   approvedRoutes: [path],
@@ -102,8 +102,12 @@ describe("page SEO publish guards", () => {
       siteConfig.origin.replace("https:", "http:"),
       "https://mismatch.invalid",
     ]) {
-      expect(() => buildPageMetadata({ ...base, page: ready, siteUrl })).toThrow();
-      expect(() => buildPageJsonLd({ ...base, page: ready, siteUrl })).toThrow();
+      expect(() =>
+        buildPageMetadata({ ...base, page: ready, siteUrl }),
+      ).toThrow();
+      expect(() =>
+        buildPageJsonLd({ ...base, page: ready, siteUrl }),
+      ).toThrow();
     }
   });
 
@@ -123,18 +127,21 @@ describe("page SEO publish guards", () => {
   it("follows a custom deployment origin from env and rejects a stale context origin", () => {
     enablePublication();
     const previousOrigin = siteConfig.origin;
-    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://custom-deployment.example:8443/");
+    vi.stubEnv(
+      "NEXT_PUBLIC_SITE_URL",
+      "https://custom-deployment.example:8443/",
+    );
     const context = { ...base, page: ready };
     expect(buildPageMetadata(context).alternates).toEqual({
       canonical: siteConfig.url(path),
     });
     expect(buildPageJsonLd(context)?.url).toBe(siteConfig.url(path));
-    expect(() => buildPageMetadata({ ...context, siteUrl: previousOrigin })).toThrow(
-      /configured/,
-    );
-    expect(() => buildPageJsonLd({ ...context, siteUrl: previousOrigin })).toThrow(
-      /configured/,
-    );
+    expect(() =>
+      buildPageMetadata({ ...context, siteUrl: previousOrigin }),
+    ).toThrow(/configured/);
+    expect(() =>
+      buildPageJsonLd({ ...context, siteUrl: previousOrigin }),
+    ).toThrow(/configured/);
   });
 
   it.each([
@@ -154,12 +161,12 @@ describe("page SEO publish guards", () => {
 
   it("uses conservative structured data and requires verified author/date for Article", () => {
     enablePublication();
-    const articlePage: PageContent = {
+    const articlePage = {
       ...ready,
       kind: "news-article",
       article: { blocks: [{ type: "paragraph", text: "Thông tin nguồn" }] },
       heading: "Chủ đề <SEO>",
-    };
+    } satisfies PageContent;
     const unverified = buildPageJsonLd({ ...base, page: articlePage });
     expect(unverified?.["@type"]).toBe("WebPage");
 
@@ -193,9 +200,10 @@ describe("page SEO publish guards", () => {
     });
     expect(list?.["@type"]).toBe("CollectionPage");
     expect(
-      buildPageJsonLd({ ...base, page: { ...articlePage, kind: "internet" } })?.[
-        "@type"
-      ],
+      buildPageJsonLd({
+        ...base,
+        page: { ...articlePage, kind: "internet" },
+      })?.["@type"],
     ).toBe("WebPage");
   });
 });
