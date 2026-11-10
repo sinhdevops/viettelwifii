@@ -649,16 +649,9 @@ function HuongDanCachBat5gTrenDongMayIphoneVaAndroidKetLuan() {
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <i>{"Tham khảo "}</i>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/tin-tuc/goi-cuoc-viettel-thang-5-2025")}
-        >
-          <i>
-            <u>gói cước 5G</u>
-          </i>
-        </a>
+        <i>
+          <u>gói cước 5G</u>
+        </i>
         <i>{" mới nhất của Viettel phù hợp với các thiết bị iOS và Android"}</i>
       </p>
       <br />

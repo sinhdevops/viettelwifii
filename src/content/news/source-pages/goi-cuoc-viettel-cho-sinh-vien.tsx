@@ -139,14 +139,7 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC30N")}
-                    >
-                      <b>GIC30N</b>
-                    </a>
+                    <b>GIC30N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -173,14 +166,7 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
                     <b></b>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC70N")}
-                    >
-                      <b>GIC70N</b>
-                    </a>
+                    <b>GIC70N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -205,14 +191,7 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC90N")}
-                    >
-                      <b>GIC90N</b>
-                    </a>
+                    <b>GIC90N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -240,14 +219,7 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC125N")}
-                    >
-                      <b>GIC125N</b>
-                    </a>
+                    <b>GIC125N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -289,18 +261,9 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <i>{"Đọc thêm: "}</i>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url(
-            "/tin-tuc/goi-cuoc-viettel/tin-moi/cap-nhat-goi-cuoc-GIC",
-          )}
-        >
-          <i>
+        <i>
             Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?
           </i>
-        </a>
         <i></i>
       </p>
       <h3 className="text-20 md:text-24 py-3 leading-[28px] font-bold md:leading-[32px]">
@@ -390,14 +353,7 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-viettel/SD70")}
-                    >
-                      SD70
-                    </a>
+                    <span className="text-primary">SD70</span>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -412,20 +368,10 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
                 </td>
                 <td className="border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0">
                   <div className="flex justify-center md:hidden">
-                    <a
-                      className="bg-primary text-12 hover:bg-primary-dark md:text-14 flex h-[28px] w-[80px] items-center justify-center rounded-full font-medium text-gray-50 md:w-[106px] dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90"
-                      href="sms:290?body=SD70 UP"
-                    >
-                      ĐĂNG KÝ
-                    </a>
+                    ĐĂNG KÝ
                   </div>
                   <div className="hidden justify-center md:flex">
-                    <a
-                      className="bg-primary hover:bg-primary-dark md:text-16 inline-flex h-[28px] w-[106px] items-center justify-center rounded-full px-4 py-0 text-sm font-medium whitespace-nowrap text-gray-50 ring-offset-white transition-colors focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:pb-1 dark:bg-gray-50 dark:text-gray-900 dark:ring-offset-gray-950 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                      href="sms:290?body=SD70 UP"
-                    >
-                      Đăng ký
-                    </a>
+                    Đăng ký
                   </div>
                 </td>
               </tr>
@@ -1178,14 +1124,7 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href="/goi-cuoc-viettel/FB5K"
-                    >
-                      FB5K
-                    </a>
+                    FB5K
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1831,14 +1770,7 @@ function GoiCuocViettelChoSinhVienKinhNghiemChonGoiCuocPhuHopVoiSinhVien() {
                       MXH120
                     </a>
                     {", "}
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-viettel/SD70")}
-                    >
-                      SD70
-                    </a>
+                    <span className="text-primary">SD70</span>
                   </p>
                 </td>
               </tr>

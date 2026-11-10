@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { InternetContent } from "@/components/internet/internet-content";
+import { PageJsonLd } from "@/components/site-pages/page-json-ld";
 import {
   metadataForPage,
   pathFromSegment,
@@ -21,5 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const path = pathFromSegment("/internet/", (await params).code);
   const page = requirePage(path, "internet");
-  return <InternetContent page={page} path={path} />;
+  return (
+    <>
+      <PageJsonLd path={path} page={page} />
+      <InternetContent page={page} path={path} />
+    </>
+  );
 }

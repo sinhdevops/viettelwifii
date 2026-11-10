@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages -- Preserve the archived native-anchor navigation contract. */
-import { Button as AppButton } from "@/components/ui/button";
 import { sourceAsset } from "@/lib/viettelup-source-assets";
+import { additionalNewsCards } from "@/features/news/load-more-news-data";
 import { Fragment } from "react";
 import SourceMobileListingCards from "./source-mobile-listing-cards";
 import { NewsCard } from "./news-card";
+import { NewsLoadMore } from "./news-load-more";
 import { newsCards } from "@/constants/news/card-records";
 import type { NewsListingRecord } from "@/types/news/news-types";
 export function NewsListing({ record }: { record: NewsListingRecord }) {
@@ -92,19 +93,11 @@ function LatestNews({ record }: { record: NewsListingRecord }) {
             {index === 0 ? <SourceMobileListingCards /> : null}
           </Fragment>
         ))}
-      </div>
-      <div className="flex justify-center pt-6">
-        <AppButton
-          variant="unstyled"
-          size="unstyled"
-          className="bg-primary hover:bg-primary-dark border-primary flex h-[34px] w-[112px] items-center justify-center rounded-[10px] rounded-bl-sm border px-4 py-2 text-sm font-medium whitespace-nowrap text-white ring-offset-white transition-colors focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:h-[40px] md:w-[148px] dark:bg-gray-50 dark:text-gray-900 dark:ring-offset-gray-950 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-          type="button"
-          disabled
-          aria-disabled="true"
-          data-source-news-latest-more
-        >
-          Xem thêm
-        </AppButton>
+        <NewsLoadMore
+          items={additionalNewsCards.map(({ key, ...card }) => (
+            <NewsCard key={key} card={card} />
+          ))}
+        />
       </div>
     </div>
   );

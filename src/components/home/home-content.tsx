@@ -65,6 +65,11 @@ function HomePackageCard({
   const targetPath = `/goi-cuoc-viettel/${card.code}`;
   const canRegister = readyProducts.has(targetPath);
   const canSeeDetails = allowlist.has(targetPath);
+  const detailHref = canSeeDetails
+    ? localPaths.has(targetPath)
+      ? targetPath
+      : sourceUrl(targetPath)
+    : undefined;
   return (
     <div>
       <div className="data-card font-magistral text-text-dark relative flex h-[197px] w-[158px] flex-col justify-between bg-cover md:h-[326px] md:w-[261px]">
@@ -80,7 +85,18 @@ function HomePackageCard({
         )}
         <div className="flex h-[26px] items-center justify-center pb-1 md:h-[42px] md:pb-[6px]">
           <p className="text-14 md:text-22 font-bold md:leading-[22px]">
-            {card.code}
+            {detailHref ? (
+              <Link
+                href={detailHref}
+                prefetch={false}
+                aria-label={`Chi tiết gói ${card.code}`}
+                className="text-inherit underline underline-offset-4 focus-visible:underline md:no-underline md:hover:underline"
+              >
+                {card.code}
+              </Link>
+            ) : (
+              card.code
+            )}
           </p>
         </div>
         <div className="">

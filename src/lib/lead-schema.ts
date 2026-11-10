@@ -15,6 +15,17 @@ export const leadSchema = z.object({
   itemTitle: z.string().trim().min(1).max(150),
   pagePath: approvedPathShape,
   attribution: z.record(z.string(), z.string().max(200)).default({}),
+  // Optional: forms without a consent checkbox must not invent acceptance.
+  privacyConsent: z.boolean().optional().default(false),
+  privacyPolicyVersion: z
+    .string()
+    .trim()
+    .min(1, "Phiên bản Chính sách bảo mật không hợp lệ")
+    .max(64)
+    .regex(
+      /^[A-Za-z0-9][A-Za-z0-9._-]*$/,
+      "Phiên bản Chính sách bảo mật không hợp lệ",
+    ),
   turnstileToken: z.string().max(3000).default(""),
   company: z.string().max(100).default(""), // honeypot
 });

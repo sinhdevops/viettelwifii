@@ -7,7 +7,7 @@ export const internetPageContent: PageContent = {
   kind: "collection",
   title: "Internet Viettel - WiFi Cáp Quang Nhanh, Ổn Định, Giá Tốt",
   description: "Internet Viettel - WiFi Cáp Quang Nhanh, Ổn Định, Giá Tốt",
-  heading: "Trải nghiệm Internet không giới hạnTừ 195.000đ/tháng",
+  heading: "Trải nghiệm Internet không giới hạn Từ 195.000đ/tháng",
   sections: [],
   source: {
     url: siteConfig.url("/internet"),

@@ -1,3 +1,4 @@
+import { PageJsonLd } from "@/components/site-pages/page-json-ld";
 import InternetCollection from "@/features/collections/internet/internet-collection";
 import { CollectionRuntime } from "@/features/collections/collection-runtime";
 import { FloatingContact } from "@/components/site/floating-contact";
@@ -7,9 +8,10 @@ export function generateMetadata() {
   return metadataForPage("/internet");
 }
 export default function Page() {
-  requirePage("/internet", "collection");
+  const page = requirePage("/internet", "collection");
   return (
     <>
+      <PageJsonLd path="/internet" page={page} />
       <InternetCollection />
       <CollectionRuntime key="/internet" />
       <FloatingContact />

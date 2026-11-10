@@ -139,41 +139,13 @@ function CapNhatGoiCuocGICCapNhatChiTietCacGoiCuocGICViettelMoiNhat2026() {
         }
         <b>{"GIC Viettel "}</b>
         {"bao gồm "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-gic/GIC30N")}
-        >
-          <b>GIC30N</b>
-        </a>
+        <b>GIC30N</b>
         {", "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-gic/GIC70N")}
-        >
-          <b>GIC70N</b>
-        </a>
+        <b>GIC70N</b>
         {", "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-gic/GIC90N")}
-        >
-          <b>GIC90N</b>
-        </a>
+        <b>GIC90N</b>
         {", "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-gic/GIC125N")}
-        >
-          <b>GIC125N</b>
-        </a>
+        <b>GIC125N</b>
         . Mỗi gói đều cung cấp tối đa tiện ích của 1 loại nhu cầu đặc thù: gọi
         nội mạng, ngoại mạng, data, lướt mạng xã hội Tiktok, Youtube, Facebook,
         Instagram và Threads. Hãy cùng xem gói cước nào phù hợp nhất cho điện
@@ -224,14 +196,7 @@ function CapNhatGoiCuocGICCapNhatChiTietCacGoiCuocGICViettelMoiNhat2026() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC30N")}
-                    >
-                      <b>GIC30N</b>
-                    </a>
+                    <b>GIC30N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -258,14 +223,7 @@ function CapNhatGoiCuocGICCapNhatChiTietCacGoiCuocGICViettelMoiNhat2026() {
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
                     <b></b>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC70N")}
-                    >
-                      <b>GIC70N</b>
-                    </a>
+                    <b>GIC70N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -290,14 +248,7 @@ function CapNhatGoiCuocGICCapNhatChiTietCacGoiCuocGICViettelMoiNhat2026() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC90N")}
-                    >
-                      <b>GIC90N</b>
-                    </a>
+                    <b>GIC90N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -325,14 +276,7 @@ function CapNhatGoiCuocGICCapNhatChiTietCacGoiCuocGICViettelMoiNhat2026() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/GIC125N")}
-                    >
-                      <b>GIC125N</b>
-                    </a>
+                    <b>GIC125N</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -428,14 +372,7 @@ function CapNhatGoiCuocGICUuDaiDacBietDanhChoCacGoiCuocGIC() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/ST10K")}
-                    >
-                      <b>ST10K</b>
-                    </a>
+                    <b>ST10K</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -457,14 +394,7 @@ function CapNhatGoiCuocGICUuDaiDacBietDanhChoCacGoiCuocGIC() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/V10K")}
-                    >
-                      <b>V10K</b>
-                    </a>
+                    <b>V10K</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -486,14 +416,7 @@ function CapNhatGoiCuocGICUuDaiDacBietDanhChoCacGoiCuocGIC() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/MT10T")}
-                    >
-                      <b>MT10T</b>
-                    </a>
+                    <b>MT10T</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -515,14 +438,7 @@ function CapNhatGoiCuocGICUuDaiDacBietDanhChoCacGoiCuocGIC() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/TIK10")}
-                    >
-                      <b>TIK10</b>
-                    </a>
+                    <b>TIK10</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -545,14 +461,7 @@ function CapNhatGoiCuocGICUuDaiDacBietDanhChoCacGoiCuocGIC() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/YT10")}
-                    >
-                      <b>YT10</b>
-                    </a>
+                    <b>YT10</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -575,14 +484,7 @@ function CapNhatGoiCuocGICUuDaiDacBietDanhChoCacGoiCuocGIC() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-gic/FB10")}
-                    >
-                      <b>FB10</b>
-                    </a>
+                    <b>FB10</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">

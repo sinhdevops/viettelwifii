@@ -7,7 +7,6 @@ export const newsArticles = {
       "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?",
     publishedLabel: "2/7/2026",
     relatedCards: [
-      "so-sanh-roaming",
       "viettel-roaming-chuyen-vung-quoc-te",
       "goi-cuoc-data-4g-viettel-2026",
     ],
@@ -19,7 +18,6 @@ export const newsArticles = {
     publishedLabel: "27/06/2026",
     relatedCards: [
       "so-sanh-roaming",
-      "viettel-roaming-chuyen-vung-quoc-te",
       "goi-cuoc-data-4g-viettel-2026",
     ],
   },
@@ -30,7 +28,6 @@ export const newsArticles = {
     relatedCards: [
       "so-sanh-roaming",
       "viettel-roaming-chuyen-vung-quoc-te",
-      "goi-cuoc-data-4g-viettel-2026",
     ],
   },
   "huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android": {

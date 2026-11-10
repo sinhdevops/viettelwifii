@@ -1993,17 +1993,8 @@ function GoiCuocViettelThang42025FAQCauHoiThuongGap() {
         {
           " Có. SIM 4G Viettel vẫn đăng ký được các gói 5G. Khi không có sóng 5G, điện thoại sẽ tự động chuyển sang 4G/LTE. Xem thêm: "
         }
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url(
-            "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-android-va-ios",
-          )}
-        >
-          Danh sách các dòng điện thoại hỗ trợ 5G và Hướng dẫn bật 5G trên
-          Android và IOS
-        </a>
+        Danh sách các dòng điện thoại hỗ trợ 5G và Hướng dẫn bật 5G trên
+        Android và IOS
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <b>2. Làm sao kiểm tra dung lượng còn lại của gói?</b>

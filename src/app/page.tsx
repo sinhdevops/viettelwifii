@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import { HomeContent } from "@/components/home/home-content";
-import { buildMetadata } from "@/lib/seo/metadata";
-import { getRenderablePage } from "@/lib/server/page-repository";
+import { PageJsonLd } from "@/components/site-pages/page-json-ld";
+import { metadataForPage, requirePage } from "@/lib/page-routing";
 
 export function generateMetadata(): Metadata {
-  return buildMetadata("/", getRenderablePage("/"));
+  return metadataForPage("/");
 }
 
 export default function Home() {
-  const page = getRenderablePage("/");
-  return <HomeContent page={page!} path="/" />;
+  const page = requirePage("/", "home");
+  return (
+    <>
+      <PageJsonLd path="/" page={page} />
+      <HomeContent page={page} path="/" />
+    </>
+  );
 }

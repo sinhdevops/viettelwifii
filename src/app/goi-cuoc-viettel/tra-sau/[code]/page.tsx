@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PackageContent } from "@/components/packages/package-content";
+import { PageJsonLd } from "@/components/site-pages/page-json-ld";
 import {
   metadataForPage,
   pathFromSegment,
@@ -28,5 +29,10 @@ export default async function Page({ params }: Props) {
     (await params).code,
   );
   const page = requirePage(path, "package");
-  return <PackageContent page={page} path={path} />;
+  return (
+    <>
+      <PageJsonLd path={path} page={page} />
+      <PackageContent page={page} path={path} />
+    </>
+  );
 }

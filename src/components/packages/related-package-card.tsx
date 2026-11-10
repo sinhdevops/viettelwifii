@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import { sourceAsset } from "@/lib/viettelup-source-assets";
 import { PackageSourceDialogTrigger } from "./package-source-dialog-trigger";
 import type { RelatedPackage } from "@/types/packages/package-types";
@@ -13,7 +14,9 @@ export function RelatedPackageCard({ card }: { card: RelatedPackage }) {
       >
         <div className="flex h-[26px] items-center justify-center pb-1 md:h-[42px] md:pb-[6px]">
           <p className="text-14 md:text-22 font-bold md:leading-[22px]">
-            {card.code}
+            <Link href={card.path} className="hover:underline">
+              {card.code}
+            </Link>
           </p>
         </div>
         <div className="">
@@ -47,7 +50,6 @@ function PackageAllowance({
           {allowance.value}
         </p>
         <p className="text-14 md:text-22 md:pt-1">{allowance.period}</p>
-        <p className="hidden">{allowance.description}</p>
       </div>
     );
   return (
@@ -60,7 +62,6 @@ function PackageAllowance({
           {allowance.period}
         </span>
       </div>
-      <p className="hidden">{allowance.description}</p>
     </div>
   );
 }
@@ -124,12 +125,6 @@ function PackageCardActions({ card }: { card: RelatedPackage }) {
             {cta.desktopLabel}
           </PackageSourceDialogTrigger>
         </div>
-        <a
-          className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-          href={card.path}
-        >
-          CHI TIẾT
-        </a>
       </div>
     );
   if (cta.variant === "postpaid-contact")
@@ -148,12 +143,6 @@ function PackageCardActions({ card }: { card: RelatedPackage }) {
           className="bg-primary hover:bg-primary-dark md:text-16 inline-flex h-[24px] items-center justify-center rounded-full px-4 py-0 text-sm font-medium whitespace-nowrap text-gray-50 ring-offset-white transition-colors focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:hidden md:h-[34px] md:w-[106px] md:pb-2 md:font-semibold dark:bg-gray-50 dark:text-gray-900 dark:ring-offset-gray-950 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
         >
           {cta.mobileLabel}
-        </a>
-        <a
-          className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-          href={card.path}
-        >
-          CHI TIẾT
         </a>
       </div>
     );

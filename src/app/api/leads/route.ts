@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { leadSchema } from "@/lib/lead-schema";
 import { getPage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
+import { getLeadPrivacyConfig } from "./_lib/privacy-config";
 import {
   leadStoreConfigured,
   saveLead,
@@ -100,6 +101,16 @@ export async function POST(req: NextRequest) {
   if (length > maxBodyBytes)
     return NextResponse.json({ error: "payload_too_large" }, { status: 413 });
 
+  // Fail closed before reading personal data, contacting third parties, or
+  // storing anything.
+  const intakeConfig = getLeadPrivacyConfig();
+  if (!intakeConfig.available) {
+    return NextResponse.json(
+      { error: "lead_intake_unavailable" },
+      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
+    );
+  }
+
   const body = await readBody(req);
   if (body.error)
     return NextResponse.json(
@@ -112,10 +123,17 @@ export async function POST(req: NextRequest) {
   const lead = parsed.data;
   if (lead.company)
     return NextResponse.json({ error: "invalid_input" }, { status: 400 }); // honeypot, never claim delivery
+  if (lead.privacyPolicyVersion !== intakeConfig.policyVersion) {
+    return NextResponse.json(
+      { error: "privacy_policy_version_mismatch" },
+      { status: 409, headers: { "Cache-Control": "no-store, max-age=0" } },
+    );
+  }
   const sourcePage = getPage(lead.pagePath);
   const productPage = getPage(lead.itemId);
   const isReadyProduct =
     productPage &&
+    productPage.status === "ready" &&
     (productPage.kind === "package" || productPage.kind === "internet") &&
     productPage.product?.id === lead.itemId;
   const isOwnDetail =
@@ -138,18 +156,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "invalid_item" }, { status: 400 });
   }
 
-  const captchaSecret = process.env.TURNSTILE_SECRET_KEY;
+  const captchaSecret = process.env.TURNSTILE_SECRET_KEY?.trim() ?? "";
+  const captchaSiteKey =
+    process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() ?? "";
   if (!leadStoreConfigured())
-    return NextResponse.json({ error: "not_configured" }, { status: 503 });
+    return NextResponse.json(
+      { error: "lead_intake_unavailable" },
+      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
+    );
   if (
     (process.env.NODE_ENV === "production" &&
-      (!captchaSecret || !process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)) ||
-    Boolean(captchaSecret) !==
-      Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)
+      (!captchaSecret || !captchaSiteKey)) ||
+    Boolean(captchaSecret) !== Boolean(captchaSiteKey)
   ) {
     return NextResponse.json(
-      { error: "spam_protection_not_configured" },
-      { status: 503 },
+      { error: "lead_intake_unavailable" },
+      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
     );
   }
   if (captchaSecret) {
@@ -187,9 +209,16 @@ export async function POST(req: NextRequest) {
     .join("\n");
   let leadId: string;
   try {
-    leadId = await saveLead(lead, productPage.title);
+    leadId = await saveLead(lead, productPage.title, {
+      // Only record affirmative consent when the submitted form actually collected it.
+      consentAt: lead.privacyConsent ? new Date().toISOString() : null,
+      privacyPolicyVersion: lead.privacyConsent ? intakeConfig.policyVersion : null,
+    });
   } catch {
-    return NextResponse.json({ error: "storage_failed" }, { status: 503 });
+    return NextResponse.json(
+      { error: "lead_intake_unavailable" },
+      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
+    );
   }
 
   const token = process.env.TELEGRAM_BOT_TOKEN;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 import type {
   BroadbandInternetCardData,
@@ -19,9 +20,12 @@ export function InternetPlanCard({ item, visual }: InternetPlanCardProps) {
       <div className="flex grow flex-col justify-between px-4 pb-4 pt-3 md:px-8 md:pb-8 md:pt-4">
         <div>
           <div className="flex h-[26px] items-center justify-between border-b border-[#d0d0d0a6] pb-2 font-beausans md:h-[42px] md:pb-4">
-            <span className="border-l-2 border-primary pl-1 text-14 font-bold leading-[14px] text-[#282828] md:border-l-[3px] md:pl-2 md:text-22 md:leading-[22px]">
+            <Link
+              href={`/internet/${item.code}`}
+              className="border-l-2 border-primary pl-1 text-14 font-bold leading-[14px] text-[#282828] md:border-l-[3px] md:pl-2 md:text-22 md:leading-[22px]"
+            >
               {item.code}
-            </span>
+            </Link>
             <span className="text-10 font-semibold text-[#444444] md:text-[15px]">
               {item.bandwidth}
             </span>

@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { LeadDialog } from "@/components/leads/lead-dialog";
 import type { PageContent } from "@/lib/content-schema";
 import { sourceAsset } from "@/lib/viettelup-source-assets";
+import { siteConfig } from "@/lib/site-config";
 import { INTERNET_COPY } from "@/content/internet/source-copy";
 import {
   INTERNET_SOURCE_PAGES,
@@ -160,7 +161,7 @@ export function InternetContent({ page, path }: InternetContentProps) {
         <div className="relative flex flex-col gap-3">
           <div className="relative rounded-full hover:shadow-[0_8px_32px_rgba(0,0,0,.35)]">
             <a
-              href="tel:18008132"
+              href={siteConfig.phoneHref}
               className="flex items-center rounded-full bg-[#ea1f19] pr-2 text-white"
             >
               <Image

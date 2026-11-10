@@ -12,9 +12,11 @@ import type {
 /** Server template. Only the existing dialog trigger is a client boundary. */
 export function PackagePage({
   record,
+  h1Override,
   children,
 }: {
   record: PackagePageRecord;
+  h1Override?: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -27,11 +29,15 @@ export function PackagePage({
           itemProp={record.postpaid ? "name" : undefined}
           className="md:pd-0 pt-6 text-[28px] leading-[40px] sm:text-[32px] sm:leading-[32px] md:text-[48px] md:leading-[48px]"
         >
-          {record.titlePrefix}
-          <span className="text-primary">{record.code}</span>
+          {h1Override ?? (
+            <>
+              {record.titlePrefix}
+              <span className="text-primary">{record.code}</span>
+            </>
+          )}
         </h1>
         {record.description !== undefined && (
-          <p className="hidden">{record.description}</p>
+          <p>{record.description}</p>
         )}
       </div>
       <div className="flex flex-col gap-9 pb-9 md:pb-12">

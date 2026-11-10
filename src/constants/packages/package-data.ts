@@ -300,7 +300,7 @@ export const PACKAGE_PAGES = {
         label: "Thời hạn sử dụng",
         icon: "/icons/clock.svg",
         iconAlt: "thời hạn sử dụng",
-        value: "ngày",
+        value: "1 ngày",
       },
       {
         kind: "data",
@@ -1532,7 +1532,7 @@ export const PACKAGE_PAGES = {
         label: "Thời hạn sử dụng",
         icon: "/icons/clock.svg",
         iconAlt: "thời hạn sử dụng",
-        value: "ngày",
+        value: "1 ngày",
       },
       {
         kind: "data",
@@ -2190,7 +2190,7 @@ export const PACKAGE_PAGES = {
         label: "Thời hạn sử dụng",
         icon: "/icons/clock.svg",
         iconAlt: "thời hạn sử dụng",
-        value: "ngày",
+        value: "Trong ngày",
       },
       {
         kind: "data",
@@ -2509,7 +2509,7 @@ export const PACKAGE_PAGES = {
         label: "Thời hạn sử dụng",
         icon: "/icons/clock.svg",
         iconAlt: "thời hạn sử dụng",
-        value: "ngày",
+        value: "Trong ngày",
       },
       {
         kind: "data",
@@ -3395,7 +3395,7 @@ export const PACKAGE_PAGES = {
         label: "Thời hạn sử dụng",
         icon: "/icons/clock.svg",
         iconAlt: "thời hạn sử dụng",
-        value: "ngày",
+        value: "1 ngày",
       },
       {
         kind: "data",
@@ -3619,7 +3619,7 @@ export const PACKAGE_PAGES = {
         label: "Thời hạn sử dụng",
         icon: "/icons/clock.svg",
         iconAlt: "thời hạn sử dụng",
-        value: "ngày",
+        value: "1 ngày",
       },
       {
         kind: "data",
@@ -5503,7 +5503,7 @@ export const PACKAGE_PAGES = {
         label: "Thời hạn sử dụng",
         icon: "/icons/clock.svg",
         iconAlt: "thời hạn sử dụng",
-        value: "ngày",
+        value: "1 ngày",
       },
       {
         kind: "data",

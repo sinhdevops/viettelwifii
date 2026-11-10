@@ -193,16 +193,7 @@ function Dung5gCoHaoPinVaTonDataNhungLyDoNenNangCapTu4GLen5GViettel() {
         {
           "- Gói cước 5G sử dụng trên cả hạ tầng 4G. Ngoài vùng phủ sóng 5G, thuê bao sẽ tự động chuyển sang 4G/LTE để tiếp tục sử dụng dung lượng còn lại trong ngày. Xem thêm: "
         }
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url(
-            "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-android-va-ios",
-          )}
-        >
-          Cách bật 5G Viettel
-        </a>
+        Cách bật 5G Viettel
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         - Tải 1GB chỉ trong vài giây.
@@ -263,16 +254,7 @@ function Dung5gCoHaoPinVaTonDataNhungLyDoNenNangCapTu4GLen5GViettel() {
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"- Không cần đổi SIM, chỉ cần đăng ký gói cước và "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url(
-            "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-android-va-ios",
-          )}
-        >
-          bật 5G trên điện thoại
-        </a>
+        bật 5G trên điện thoại
         .
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">

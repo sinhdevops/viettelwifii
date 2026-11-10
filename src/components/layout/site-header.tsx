@@ -8,9 +8,22 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const items = [
+type NavigationItem = {
+  text: string;
+  href: string;
+  inScope: boolean;
+  supportRoute?: boolean;
+};
+
+const items: NavigationItem[] = [
   { text: "Trang chủ", href: "/", inScope: true },
   { text: "Internet", href: "/internet", inScope: true },
+  // {
+  //   text: "Gói cước",
+  //   href: "/goi-cuoc-viettel",
+  //   inScope: true,
+  //   supportRoute: true,
+  // },
   { text: "Gói cước GIC", href: "/goi-cuoc-gic", inScope: true },
   { text: "Gói cước Nine", href: "/goi-cuoc-nine", inScope: true },
   { text: "Gói cước Roaming", href: "/goi-cuoc-roaming", inScope: true },
@@ -26,7 +39,7 @@ function NavItem({
   newsLocal,
   onNavigate,
 }: {
-  item: (typeof items)[number];
+  item: NavigationItem;
   pathname: string;
   newsLocal: boolean;
   onNavigate?: () => void;
@@ -55,10 +68,19 @@ function NavItem({
   );
 }
 
-export function SiteHeader({ newsLocal = false }: { newsLocal?: boolean }) {
+export function SiteHeader({
+  newsLocal = false,
+  availableSiteRoutes = [],
+}: {
+  newsLocal?: boolean;
+  availableSiteRoutes?: readonly string[];
+}) {
   const path = usePathname();
   const isNine = path === "/goi-cuoc-nine";
   const [open, setOpen] = useState(false);
+  const visibleItems = items.filter(
+    (item) => !item.supportRoute || availableSiteRoutes.includes(item.href),
+  );
   return (
     <nav
       aria-label="Điều hướng chính"
@@ -86,7 +108,7 @@ export function SiteHeader({ newsLocal = false }: { newsLocal?: boolean }) {
         <div
           className={`!text-18 hidden items-center gap-[53px] font-medium md:flex ${isNine ? "text-white" : ""}`}
         >
-          {items.map((item) => (
+          {visibleItems.map((item) => (
             <NavItem
               key={item.href}
               item={item}
@@ -146,7 +168,7 @@ export function SiteHeader({ newsLocal = false }: { newsLocal?: boolean }) {
                   </Dialog.Close>
                 </div>
                 <div className="flex flex-col gap-4 font-medium">
-                  {items.map((item) => (
+                  {visibleItems.map((item) => (
                     <NavItem
                       key={item.href}
                       item={item}

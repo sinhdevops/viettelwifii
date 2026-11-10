@@ -65,6 +65,28 @@ const original = Object.fromEntries(
   }),
 );
 
+// The historical fixture predates the current factual-freshness readiness
+// policy. Model only the intentional draft status changes; all other authored
+// metadata/content must still match the baseline exactly.
+for (const path of [
+  "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
+  "/tin-tuc/goi-cuoc-viettel-thang-06-2025",
+  "/tin-tuc/goi-cuoc-viettel-thang-4-2025",
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
+  "/tin-tuc/goi-cuoc-5g-viettel-tet5g",
+  "/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
+  "/tin-tuc/khuyen-mai-nap-the-15-6",
+  "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
+  "/goi-cuoc-viettel/FB5K",
+]) {
+  original[path] = { ...original[path], status: "draft" };
+}
+original["/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360"] = {
+  ...original["/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360"],
+  title: "TỔNG HỢP CÁCH ĐĂNG KÝ XEM TRỌN BỘ EURO 2024 TRÊN TV360",
+};
+
 afterEach(() => vi.unstubAllEnvs());
 
 describe("explicit App Router migration", () => {
@@ -84,7 +106,8 @@ describe("explicit App Router migration", () => {
         vi.stubEnv("SITE_PREVIEW_DRAFTS", preview);
         for (const path of approvedRoutes) {
           const page = original[path];
-          expect(getPage(path)).toEqual(page.status === "ready" ? page : null);
+          // getPage is raw data access; only renderable/indexable selectors filter drafts.
+          expect(getPage(path)).toEqual(page);
           expect(getRenderablePage(path)).toEqual(
             page.status === "ready" || (env !== "production" && preview === "1")
               ? page
@@ -118,18 +141,24 @@ describe("explicit App Router migration", () => {
     expect(pathFromSegment("/internet/", "NETVT01")).toBe("/internet/NETVT01");
   });
 
-  it("preserves title, description, canonical and noindex in preview", () => {
+  it("keeps preview metadata noindex and omits canonicals while publication gates are closed", () => {
     vi.stubEnv("NODE_ENV", "development");
     vi.stubEnv("SITE_PREVIEW_DRAFTS", "1");
+    for (const flag of [
+      "SITE_LIVE",
+      "CONTENT_RIGHTS_CLEARED",
+      "SITE_IDENTITY_VERIFIED",
+      "PRODUCT_FACTS_VERIFIED",
+      "PRIVACY_POLICY_APPROVED",
+    ]) {
+      vi.stubEnv(flag, "false");
+    }
     for (const path of approvedRoutes) {
       const page = original[path];
       expect(metadataForPage(path)).toEqual({
         title: page.title,
         description: page.description,
-        alternates: { canonical: path },
-        ...(page.status === "draft"
-          ? { robots: { index: false, follow: false } }
-          : {}),
+        robots: { index: false, follow: false },
       });
     }
   });

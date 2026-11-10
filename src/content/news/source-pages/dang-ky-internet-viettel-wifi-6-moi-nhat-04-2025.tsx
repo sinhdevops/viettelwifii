@@ -549,14 +549,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H")}
-                    >
-                      SUN1H
-                    </a>
+                    SUN1H
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -578,14 +571,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN2H")}
-                    >
                       SUN2H
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -607,14 +593,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN3H")}
-                    >
                       SUN3H
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -636,14 +615,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H")}
-                    >
                       STAR1H
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -668,14 +640,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR2H")}
-                    >
                       STAR2H
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -700,14 +665,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR3H")}
-                    >
                       STAR3H
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -767,14 +725,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET")}
-                    >
                       HOMET
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -796,14 +747,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T")}
-                    >
                       SUN1T
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -825,14 +769,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN2T")}
-                    >
                       SUN2T
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -854,14 +791,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN3T")}
-                    >
                       SUN3T
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -883,14 +813,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T")}
-                    >
                       STAR1T
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -915,14 +838,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR2T")}
-                    >
                       STAR2T
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -947,14 +863,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR3T")}
-                    >
                       STAR3T
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1017,14 +926,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H-STD")}
-                    >
                       SUN1H-STD
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1049,14 +951,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H-STDBOX")}
-                    >
                       SUN1H-STDBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1084,14 +979,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H-VIP")}
-                    >
                       SUN1H-VIP
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1116,14 +1004,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H-VIPBOX")}
-                    >
                       SUN1H-VIPBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1151,14 +1032,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H-STD")}
-                    >
                       STAR1H-STD
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1186,14 +1060,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H-STDBOX")}
-                    >
                       STAR1H-STDBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1224,14 +1091,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H-VIP")}
-                    >
                       STAR1H-VIP
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1259,14 +1119,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H-VIPBOX")}
-                    >
                       STAR1H-VIPBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1332,14 +1185,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET-STD")}
-                    >
                       HOMET-STD
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1364,14 +1210,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET-STDBOX")}
-                    >
                       HOMET-STDBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1399,14 +1238,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET-VIP")}
-                    >
                       HOMET-VIP
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1431,14 +1263,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET-VIPBOX")}
-                    >
                       HOMET-VIPBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1466,14 +1291,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T-STD")}
-                    >
                       SUN1T-STD
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1498,14 +1316,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T-STDBOX")}
-                    >
                       SUN1T-STDBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1533,14 +1344,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T-VIP")}
-                    >
                       SUN1T-VIP
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1565,14 +1369,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T-VIPBOX")}
-                    >
                       SUN1T-VIPBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1600,14 +1397,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T-STD")}
-                    >
                       STAT1T-STD
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1635,14 +1425,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T-STDBOX")}
-                    >
                       STAR1T-STDBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1673,14 +1456,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T-VIP")}
-                    >
                       STAR1T-VIP
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1708,14 +1484,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T-VIPBOX")}
-                    >
                       STAR1T-VIPBOX
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1784,14 +1553,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H-CAMERA-CL7")}
-                    >
                       SUN1H-CAMERA CL7
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1816,14 +1578,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H-CAMERA-CL15")}
-                    >
                       SUN1H-CAMERA CL15
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1848,14 +1603,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1H-CAMERA-CL30")}
-                    >
                       SUN1H-CAMERA CL30
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1880,14 +1628,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H-CAMERA-CL7")}
-                    >
                       STAR1H-CAMERA CL7
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1915,14 +1656,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H-CAMERA-CL15")}
-                    >
                       STAR1H-CAMERA CL15
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1950,14 +1684,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1H-CAMERA-CL30")}
-                    >
                       STAR1H-CAMERA CL30
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2020,14 +1747,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET-CAMERA-CL7")}
-                    >
                       HOMET-CAMERA CL7
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2052,14 +1772,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET-CAMERA-CL15")}
-                    >
                       HOMET-CAMERA CL15
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2084,14 +1797,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/HOMET-CAMERA-CL30")}
-                    >
                       HOMET-CAMERA CL30
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2116,14 +1822,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T-CAMERA-CL7")}
-                    >
                       SUN1T-CAMERA CL7
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2148,14 +1847,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T-CAMERA-CL15")}
-                    >
                       SUN1T-CAMERA CL15
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2180,14 +1872,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/SUN1T-CAMERA-CL30")}
-                    >
                       SUN1T-CAMERA CL30
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2212,14 +1897,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T-CAMERA-CL7")}
-                    >
                       STAR1T-CAMERA CL7
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2247,14 +1925,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T-CAMERA-CL15")}
-                    >
                       STAR1T-CAMERA CL15
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -2282,14 +1953,7 @@ function DangKyInternetViettelWifi6MoiNhat042025ThamKhaoDanhSachGoiCuocInternetV
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/internet/STAR1T-CAMERA-CL30")}
-                    >
                       STAR1T-CAMERA CL30
-                    </a>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">

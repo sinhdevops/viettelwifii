@@ -15,6 +15,20 @@ function assetKey(value: string, sortQuery = false): string {
   return absolute ? url.href : `${url.pathname}${url.search}`;
 }
 
+// Original editorial artwork replaces the captured roaming comparison image at
+// every captured size. Keep the source keys so existing data stays compatible.
+const originalArtwork: Record<string, string> = {
+  'https://images.ctfassets.net/dbp77tujye9f/2ityVh2bIO2h28MbpcRmQY/e74c183506454c1ffcf7d25933da6272/viettel2_7.jpeg':
+    '/assets/roaming-esim-viettelwifii.png',
+  '/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F2ityVh2bIO2h28MbpcRmQY%2Fe74c183506454c1ffcf7d25933da6272%2Fviettel2_7.jpeg&w=1080&q=75':
+    '/assets/roaming-esim-viettelwifii.png',
+  '/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F2ityVh2bIO2h28MbpcRmQY%2Fe74c183506454c1ffcf7d25933da6272%2Fviettel2_7.jpeg&w=3840&q=75':
+    '/assets/roaming-esim-viettelwifii.png',
+};
+const sortedOriginalArtwork = new Map(
+  Object.entries(originalArtwork).map(([key, local]) => [assetKey(key, true), local]),
+);
+
 // Captures with an alternate query parameter order are equivalent, but keep
 // exact keys first so distinct original files remain addressable.
 const sortedLookup = new Map(
@@ -23,6 +37,9 @@ const sortedLookup = new Map(
 
 /** Resolve captured media to the local public directory; never return a remote URL. */
 export function sourceAsset(value: string): string {
+  const replacement =
+    originalArtwork[assetKey(value)] ?? sortedOriginalArtwork.get(assetKey(value, true));
+  if (replacement) return replacement;
   if (value.startsWith('/assets/viettelup/')) return value;
   // The parser base is local and does not make network requests.
   const local = lookup[assetKey(value)] ?? sortedLookup.get(assetKey(value, true));

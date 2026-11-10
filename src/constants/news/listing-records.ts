@@ -4,7 +4,7 @@ export const newsListing = {
   title: "Dùng mạng mỗi ngày",
   titleAccent: "không cần wifi",
   bannerAlt: "Dùng mạng mỗi ngày không cần wifi",
-  bannerImage: "/_next/image?url=%2Fimages%2Fbanner-news.webp&w=1080&q=75",
+  bannerImage: "/assets/viettelup/images/news-banner-viettelwifii.jpg",
   mobileHeading: "Tin tức",
   desktopHeading: "TIN MỚI NHẤT",
   featuredHeading: "TIN NỔI BẬT",
@@ -14,10 +14,9 @@ export const newsListing = {
     publishedLabel: "27/06/2026",
     description: "",
     href: "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
-    image:
-      "/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fdbp77tujye9f%2F1vLaqVRd9vs5WonZE1kiaN%2Fab0417c8ad4486931ada6380636bad07%2Fviettel21.jpeg&w=1080&q=75",
+    image: "/assets/viettelup/images/news-roaming-featured-viettelwifii.jpg",
     backgroundImage:
-      "https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg",
+      "/assets/viettelup/images/news-roaming-featured-viettelwifii.jpg",
   },
   cards: [
     {

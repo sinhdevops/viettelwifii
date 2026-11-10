@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { NewsArticleContent } from "@/components/news/news-article-content";
+import { PageJsonLd } from "@/components/site-pages/page-json-ld";
 import {
   metadataForPage,
   pathFromSegment,
@@ -21,5 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const path = pathFromSegment("/tin-tuc/", (await params).slug);
   const page = requirePage(path, "news-article");
-  return <NewsArticleContent page={page} path={path} />;
+  return (
+    <>
+      <PageJsonLd path={path} page={page} />
+      <NewsArticleContent page={page} path={path} />
+    </>
+  );
 }

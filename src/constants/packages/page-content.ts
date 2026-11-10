@@ -7814,7 +7814,7 @@ export const packagePageContents: Record<string, PageContent> = {
     },
   },
   "/goi-cuoc-viettel/FB5K": {
-    status: "ready",
+    status: "draft",
     kind: "package",
     title:
       "Gói FB5K Viettel - Miễn Phí Data Truy Cập Facebbok, Messenger Trong 1 Ngày",

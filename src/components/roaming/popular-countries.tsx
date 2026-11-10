@@ -10,7 +10,7 @@ export function RoamingPopularCountries() {
           </h2>
           <div className="mx-auto mt-6 grid w-[82%] grid-cols-1 grid-rows-4 gap-x-6 gap-y-4 md:mt-12 md:w-[79%] md:grid-cols-2">
             {popularCountries.map((item) => (
-              <PopularCountryCard key={item.href} item={item} />
+              <PopularCountryCard key={item.name} item={item} />
             ))}
           </div>
         </div>

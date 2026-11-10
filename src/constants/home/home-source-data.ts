@@ -2718,7 +2718,7 @@ export const homeGroups: HomeGroup[] = [
 export const homeNews: HomeNews[] = [
   {
     href: "/tin-tuc/so-sanh-roaming",
-    image: "/assets/viettelup/af1e14f28e46caf357431e7f.jpeg",
+    image: "/assets/roaming-esim-viettelwifii.png",
     imageAlt:
       "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?",
     date: "2/7/2026",
@@ -2727,7 +2727,7 @@ export const homeNews: HomeNews[] = [
   },
   {
     href: "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
-    image: "/assets/viettelup/c842cb99847910a15f8f07d2.jpeg",
+    image: "/assets/viettelup/images/news-roaming-featured-viettelwifii.jpg",
     imageAlt:
       "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
     date: "27/06/2026",
@@ -2736,14 +2736,14 @@ export const homeNews: HomeNews[] = [
   },
   {
     href: "/tin-tuc/goi-cuoc-data-4g-viettel-2026",
-    image: "/assets/viettelup/9c7f40eb51aa115e109e7319.jpeg",
+    image: "/assets/viettelup/images/news-4g-5g-data-viettelwifii.jpg",
     imageAlt: "Tổng hợp chi tiết gói cước data 4G Viettel 2026 và cách đăng ký",
     date: "11/05/2026",
     title: "Tổng hợp chi tiết gói cước data 4G Viettel 2026 và cách đăng ký",
   },
   {
     href: "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
-    image: "/assets/viettelup/791dfe9b8497b6f3cb429744.jpg",
+    image: "/assets/viettelup/images/news-5g-guide-viettelwifii.jpg",
     imageAlt:
       "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026",
     date: "24/4/2026",
@@ -2751,7 +2751,7 @@ export const homeNews: HomeNews[] = [
   },
   {
     href: "/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
-    image: "/assets/viettelup/47299b6c1c4ccdfe159acf16.jpeg",
+    image: "/assets/viettelup/images/news-roaming-guide-viettelwifii.jpg",
     imageAlt:
       "Gói cước Roaming Viettel là gì? Tổng hợp các gói Roaming phù hợp cho người đi du lịch, công tác nước ngoài",
     date: "31/3/2026",
@@ -2760,7 +2760,7 @@ export const homeNews: HomeNews[] = [
   },
   {
     href: "/tin-tuc/giai-dap-thac-mac-hssv",
-    image: "/assets/viettelup/ffcc08e0c1da267cd3969b71.jpg",
+    image: "/assets/viettelup/images/news-student-data-viettelwifii.jpg",
     imageAlt:
       "GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP CHO HSSV KHI ĐĂNG KÝ DATA VIETTEL",
     date: "3/3/2026",

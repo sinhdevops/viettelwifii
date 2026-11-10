@@ -181,7 +181,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/han-quoc")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       HQ5
                     </a>
@@ -231,7 +231,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/han-quoc")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       HQ10
                     </a>
@@ -281,7 +281,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/nhat-ban")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       NHAT15
                     </a>
@@ -331,7 +331,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/thai-lan")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       THAI5
                     </a>
@@ -381,7 +381,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/thai-lan")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       THAI10
                     </a>
@@ -431,7 +431,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/singapore")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       SING10
                     </a>
@@ -481,7 +481,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/trung-quoc")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       TQ5
                     </a>
@@ -531,7 +531,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/trung-quoc")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       TQ10
                     </a>
@@ -581,7 +581,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/hoa-ky")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       USA15
                     </a>
@@ -631,7 +631,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/uc")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       UC10
                     </a>
@@ -681,7 +681,7 @@ function GoiCuocRoamingViettelLaGiPhanLoaiCacGoiCuocRoamingViettelPhoBien() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-roaming/dai-loan")}
+                      href={siteConfig.url("/goi-cuoc-roaming")}
                     >
                       DL10
                     </a>

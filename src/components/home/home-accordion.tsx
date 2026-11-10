@@ -24,7 +24,7 @@ export function HomeAccordion({
       data-orientation="vertical"
       className={className}
     >
-      <h3
+      <h2
         data-orientation="vertical"
         data-state={open ? "open" : "closed"}
         className="flex justify-center"
@@ -39,19 +39,19 @@ export function HomeAccordion({
           data-orientation="vertical"
           id={`${id}-trigger`}
           onClick={() => setOpen((value) => !value)}
-          className="flex flex-1 items-center justify-between py-4 text-left font-medium transition-all md:max-w-[1140px] [&[data-state=open]>div>svg]:rotate-180"
+          className="flex flex-1 items-center justify-between py-4 text-left font-medium transition-all md:max-w-[1140px] [&[data-state=open]>span>svg]:rotate-180"
         >
-          <h2 className="text-18 flex-1 text-left leading-[25px] font-bold uppercase md:text-[48px] md:leading-[67px]">
+          <span className="text-18 flex-1 text-left leading-[25px] font-bold uppercase md:text-[48px] md:leading-[67px]">
             <strong>{title}</strong>
-          </h2>
-          <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full pr-4 md:h-16 md:w-16 md:bg-white md:pr-0">
+          </span>
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full pr-4 md:h-16 md:w-16 md:bg-white md:pr-0">
             <ChevronDown
               aria-hidden="true"
               className="lucide lucide-chevron-down h-6 w-6 shrink-0 transition-transform duration-200 md:text-black"
             />
-          </div>
+          </span>
         </AppButton>
-      </h3>
+      </h2>
       <div
         data-state={open ? "open" : "closed"}
         id={`${id}-content`}

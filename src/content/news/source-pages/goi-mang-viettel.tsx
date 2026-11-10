@@ -601,15 +601,7 @@ function GoiMangViettelGoiMangViettel4GLuaChonThongMinhChoMoiNhuCauSuDung() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <u></u>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-viettel/SD70")}
-                    >
-                      <u>SD70</u>
-                    </a>
+                    <u>SD70</u>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">

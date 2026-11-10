@@ -364,14 +364,7 @@ function LoTrinhTrienKhai5gViettelNhuCauCuaKhachHang5GTaiVietNamVaXuHuongTrenThe
         thị trường Việt Nam mà còn mở rộng ảnh hưởng ở khu vực và toàn cầu.
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href="/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025"
-        >
-          Danh sách gói cước 5G Viettel đã ra mắt (Cập nhật tháng 02/2025)
-        </a>
+        Danh sách gói cước 5G Viettel đã ra mắt (Cập nhật tháng 02/2025)
       </p>
       <div className="mx-auto my-6 w-fit text-center">
         <img

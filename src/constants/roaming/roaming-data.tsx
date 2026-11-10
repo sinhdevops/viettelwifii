@@ -1,56 +1,47 @@
-import { siteConfig } from "@/lib/site-config";
 import type { CollectionFaq } from "@/features/collections/parts/collection-faq";
 export type PopularCountryCardData = {
-  href: string;
+  href?: string;
   name: string;
   image: string;
   smallImage: string;
 };
 export const popularCountries: readonly PopularCountryCardData[] = [
   {
-    href: siteConfig.url("/goi-cuoc-roaming/han-quoc"),
     name: "Hàn Quốc",
     image: "/_next/image?url=%2Fimages%2FKR.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FKR.png&w=256&q=75",
   },
   {
-    href: siteConfig.url("/goi-cuoc-roaming/nhat-ban"),
     name: "Nhật Bản",
     image: "/_next/image?url=%2Fimages%2FJP.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FJP.png&w=256&q=75",
   },
   {
-    href: siteConfig.url("/goi-cuoc-roaming/thai-lan"),
     name: "Thái Lan",
     image: "/_next/image?url=%2Fimages%2FTH.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FTH.png&w=256&q=75",
   },
   {
-    href: siteConfig.url("/goi-cuoc-roaming/singapore"),
     name: "Singapore",
     image: "/_next/image?url=%2Fimages%2FSG.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FSG.png&w=256&q=75",
   },
   {
-    href: siteConfig.url("/goi-cuoc-roaming/trung-quoc"),
     name: "Trung Quốc",
     image: "/_next/image?url=%2Fimages%2FCN.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FCN.png&w=256&q=75",
   },
   {
-    href: siteConfig.url("/goi-cuoc-roaming/hoa-ky"),
     name: "Hoa Kỳ",
     image: "/_next/image?url=%2Fimages%2FUS.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FUS.png&w=256&q=75",
   },
   {
-    href: siteConfig.url("/goi-cuoc-roaming/uc"),
     name: "Úc",
     image: "/_next/image?url=%2Fimages%2FAU.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FAU.png&w=256&q=75",
   },
   {
-    href: siteConfig.url("/goi-cuoc-roaming/dai-loan"),
     name: "Đài Loan",
     image: "/_next/image?url=%2Fimages%2FTW.png&w=640&q=75",
     smallImage: "/_next/image?url=%2Fimages%2FTW.png&w=256&q=75",

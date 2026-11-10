@@ -1,6 +1,26 @@
 import { expect, test } from "@playwright/test";
 
-async function fillMeshForm(page: import("@playwright/test").Page) {
+const policyVersion = "v1";
+
+async function mockLeadConfig(
+  page: import("@playwright/test").Page,
+  available = true,
+) {
+  await page.route("**/api/leads/config", (route) =>
+    route.fulfill({
+      status: 200,
+      contentType: "application/json",
+      body: JSON.stringify(
+        available ? { available: true, policyVersion } : { available: false },
+      ),
+    }),
+  );
+}
+
+async function fillMeshForm(
+  page: import("@playwright/test").Page,
+  consent = true,
+) {
   await page.goto("/internet");
   const card = page
     .locator(".internet-card")
@@ -17,6 +37,13 @@ async function fillMeshForm(page: import("@playwright/test").Page) {
   await signup.click();
   const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
   await expect(dialog).toBeVisible();
+  const privacyConsent = dialog.getByRole("checkbox");
+  await expect(privacyConsent).toBeVisible();
+  await expect(privacyConsent).not.toBeChecked();
+  expect(
+    await privacyConsent.evaluate((input) => (input as HTMLInputElement).required),
+  ).toBe(true);
+  if (consent) await privacyConsent.check();
   const viewport = page.viewportSize()!;
   if (viewport.width < 640) {
     await expect
@@ -79,6 +106,7 @@ test.setTimeout(90_000);
 test("Internet dropdown supports keyboard selection and Escape", async ({
   page,
 }) => {
+  await mockLeadConfig(page);
   await page.goto("/internet");
   const signup = page
     .locator(".internet-card")
@@ -114,6 +142,7 @@ test("Internet dropdown supports keyboard selection and Escape", async ({
 test("Internet signup shows success only after API confirmation", async ({
   page,
 }) => {
+  await mockLeadConfig(page);
   let sent: Record<string, unknown> | undefined;
   await page.route("**/api/leads", async (route) => {
     sent = route.request().postDataJSON() as Record<string, unknown>;
@@ -132,11 +161,14 @@ test("Internet signup shows success only after API confirmation", async ({
   expect(sent?.itemId).toBe("/internet/MESHVT3");
   expect(sent?.pagePath).toBe("/internet");
   expect(sent?.note).toContain("Đà Nẵng");
+  expect(sent?.privacyConsent).toBe(true);
+  expect(sent?.privacyPolicyVersion).toBe(policyVersion);
 });
 
 test("Internet signup keeps entered data on failed delivery", async ({
   page,
 }) => {
+  await mockLeadConfig(page);
   await page.route("**/api/leads", (route) =>
     route.fulfill({
       status: 502,
@@ -153,4 +185,53 @@ test("Internet signup keeps entered data on failed delivery", async ({
   await expect(
     page.getByText("Chưa gửi được đăng ký. Vui lòng thử lại."),
   ).toBeVisible();
+});
+
+test("Internet signup hides personal-data fields when intake is unavailable", async ({
+  page,
+}) => {
+  await mockLeadConfig(page, false);
+  await page.goto("/internet");
+  const signup = page
+    .locator(".internet-card")
+    .filter({ hasText: "MESHVT3" })
+    .first()
+    .getByRole("button", { name: "Đăng ký" });
+  await signup.click();
+  const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
+  await expect(dialog).toBeVisible();
+  await expect(
+    dialog.getByText("Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau."),
+  ).toBeVisible();
+  await expect(
+    dialog.getByRole("textbox", { name: "Nhập họ tên" }),
+  ).toHaveCount(0);
+  await expect(
+    dialog.getByRole("textbox", { name: "Nhập số điện thoại" }),
+  ).toHaveCount(0);
+});
+
+test("Internet signup requires affirmative consent before posting", async ({
+  page,
+}) => {
+  await mockLeadConfig(page);
+  let postCount = 0;
+  await page.route("**/api/leads", async (route) => {
+    postCount += 1;
+    await route.fulfill({
+      status: 200,
+      contentType: "application/json",
+      body: JSON.stringify({ ok: true }),
+    });
+  });
+
+  const dialog = await fillMeshForm(page, false);
+  const submit = dialog.getByRole("button", { name: "XÁC NHẬN" });
+  if (await submit.isEnabled()) {
+    await submit.click();
+    await expect(
+      page.getByText("Vui lòng xác nhận đồng ý với Chính sách bảo mật"),
+    ).toBeVisible();
+  }
+  expect(postCount).toBe(0);
 });

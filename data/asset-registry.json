@@ -1977,5 +1977,29 @@
       "rightsNote": "Public access does not establish a license or redistribution rights; obtain permission before production reuse.",
       "licenseEvidence": null
     }
+  ],
+  "generatedReplacements": [
+    {
+      "assetId": "roaming-esim-viettelwifii",
+      "path": "public/assets/roaming-esim-viettelwifii.png",
+      "publicUrl": "/assets/roaming-esim-viettelwifii.png",
+      "sha256": "b1fed18153c110173851890f39f5338be890dd8c024117f168d2ef3cbf8a6b25",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024,
+        "format": "png"
+      },
+      "watermark": "viettelwifii.vn",
+      "generation": "Codex Image",
+      "status": "integrated",
+      "replaces": "https://images.ctfassets.net/dbp77tujye9f/2ityVh2bIO2h28MbpcRmQY/e74c183506454c1ffcf7d25933da6272/viettel2_7.jpeg",
+      "coverage": [
+        "homepage news card",
+        "news listing card",
+        "related news card",
+        "internet collection card",
+        "comparison article inline image"
+      ]
+    }
   ]
 }

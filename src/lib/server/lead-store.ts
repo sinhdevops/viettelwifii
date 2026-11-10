@@ -33,16 +33,26 @@ async function leadsRequest(
   return response;
 }
 
-export async function saveLead(lead: ValidatedLead, productTitle: string) {
-  const response = await leadsRequest("POST", {
-    name: lead.name,
-    phone: lead.phone,
-    note: lead.note,
-    item_id: lead.itemId,
-    item_title: productTitle,
-    page_path: lead.pagePath,
-    attribution: lead.attribution,
-  });
+export async function saveLead(
+  lead: ValidatedLead,
+  productTitle: string,
+  consent: { consentAt: string | null; privacyPolicyVersion: string | null },
+) {
+  const response = await leadsRequest(
+    "POST",
+    {
+      name: lead.name,
+      phone: lead.phone,
+      note: lead.note,
+      item_id: lead.itemId,
+      item_title: productTitle,
+      page_path: lead.pagePath,
+      attribution: lead.attribution,
+      consent_at: consent.consentAt,
+      privacy_policy_version: consent.privacyPolicyVersion,
+    },
+    "?select=id",
+  );
   const rows = (await response.json()) as Array<{ id?: string }>;
   const id = rows[0]?.id;
   if (typeof id !== "string") throw new Error("Lead insert returned no ID");

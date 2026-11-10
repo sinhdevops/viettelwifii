@@ -2418,16 +2418,7 @@ function Goi5gViettel3Thang6Thang12ThangLuuYKhiDangKyGoiCuoc5GViettel() {
       </ul>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"Xem thêm: "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url(
-            "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-android-va-ios",
-          )}
-        >
-          hướng dẫn cách bật 5G trên IOS và Android
-        </a>
+        hướng dẫn cách bật 5G trên IOS và Android
       </p>
     </>
   );

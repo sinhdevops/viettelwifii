@@ -587,7 +587,7 @@ export default function General90NPageDetails() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary"
-          href={siteConfig.url("/tin-tuc/goi-cuoc-data-4g-viettel-2024")}
+          href={siteConfig.url("/tin-tuc/goi-cuoc-data-4g-viettel-2026")}
         >
           gói cước 4G Viettel
         </a>{" "}

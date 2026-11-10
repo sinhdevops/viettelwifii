@@ -5780,7 +5780,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-viettel-thang-06-2025": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title:
       "Gói cước Viettel tháng 06/2025 mới nhất | Ưu đãi 4G/5G, Combo thoại + Data",
@@ -6732,7 +6732,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title:
       "Tổng hợp các gói cước Internet Viettel WiFi 6 mới nhất – Tốc độ cao, phủ sóng toàn nhà",
@@ -7248,7 +7248,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-viettel-thang-4-2025": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title:
       "Gói Cước Viettel 4G 5G Tháng 04/2025 – Danh Sách Mới Nhất, Giá Rẻ, Dễ Đăng Ký",
@@ -7998,7 +7998,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title: "Gói Cước 4G 5G Viettel Mới Nhất Tháng 3/2025 – Cập Nhật Chi Tiết",
     description:
@@ -8910,7 +8910,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title: "Gói cước 4G, 5G Viettel tháng 2/2025 - Khuyến mãi mới nhất",
     description:
@@ -10232,7 +10232,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/goi-cuoc-5g-viettel-tet5g": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title: "Gói cước TET5G UP Viettel: 25GB + Nhiều Ưu Đãi Chỉ 50.000đ",
     description:
@@ -11720,7 +11720,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/khuyen-mai-nap-the-viettel-20-7": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title: "Khuyến mãi nạp thẻ Viettel ngày 20/7",
     description:
@@ -12236,7 +12236,7 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/khuyen-mai-nap-the-15-6": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
     title: "Khuyến mãi nạp thẻ Viettel ngày 15 tháng 6",
     description:
@@ -12542,9 +12542,9 @@ export const newsPageContents: Record<string, PageContent> = {
     },
   },
   "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360": {
-    status: "ready",
+    status: "draft",
     kind: "news-article",
-    title: "Gói cước Viettel 2026 | Đăng ký 4G 5G nhanh nhất",
+    title: "TỔNG HỢP CÁCH ĐĂNG KÝ XEM TRỌN BỘ EURO 2024 TRÊN TV360",
     description:
       "Cập nhật gói cước Viettel 2026 mới nhất: các gói 4G, 5G theo ngày, tháng, combo data – thoại, ưu đãi hấp dẫn, đăng ký nhanh chóng.",
     heading: "TỔNG HỢP CÁCH ĐĂNG KÝ XEM TRỌN BỘ EURO 2024 TRÊN TV360",

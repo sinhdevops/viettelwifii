@@ -347,14 +347,7 @@ function GoiCuocNgayViettelBangTongHopCacGoi4GViettel1NgayCapNhatMoiNhat() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href="/goi-cuoc-viettel/FB5K"
-                    >
-                      FB5K
-                    </a>
+                    FB5K
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -919,14 +912,7 @@ function GoiCuocNgayViettelCauHoiThuongGapKhiDangKy4GViettel1Ngay() {
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"Tham khảo: "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/tin-tuc/goi-cuoc-viettel-thang-5-2025")}
-        >
-          Gói cước 4G 5G Viettel cập nhật tháng 12/2025
-        </a>
+        Gói cước 4G 5G Viettel cập nhật tháng 12/2025
       </p>
       <br />
     </>

@@ -29,6 +29,18 @@ const extraCollections = [
   "/goi-cuoc-nine",
   "/goi-cuoc-roaming",
 ];
+const expectedDraftRoutes = [
+  "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
+  "/tin-tuc/goi-cuoc-viettel-thang-06-2025",
+  "/tin-tuc/goi-cuoc-viettel-thang-4-2025",
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
+  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
+  "/tin-tuc/goi-cuoc-5g-viettel-tet5g",
+  "/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
+  "/tin-tuc/khuyen-mai-nap-the-15-6",
+  "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
+  "/goi-cuoc-viettel/FB5K",
+];
 
 // Run preview against an isolated dev server with SITE_PREVIEW_DRAFTS=1.
 // Run production against a separate build/start server with drafts disabled.
@@ -40,14 +52,19 @@ test("E2E mode is explicit", () => {
 test.describe("175 approved routes: authored content identities in preview", () => {
   test.skip(mode !== "preview", "Requires isolated draft preview mode");
 
-  test("authored route data covers the exact approved manifest", () => {
+  test("authored route data covers the manifest with only explicitly stale routes drafted", () => {
     expect(approved.routes).toHaveLength(175);
     expect(new Set(approved.routes).size).toBe(175);
     for (const route of extraCollections)
       expect(approved.routes).toContain(route);
     expect(Object.keys(pages).sort()).toEqual([...approved.routes].sort());
+    expect(
+      approved.routes
+        .filter((route) => pages[route]?.status === "draft")
+        .sort(),
+    ).toEqual([...expectedDraftRoutes].sort());
     for (const [route, content] of Object.entries(pages)) {
-      expect(content.status, route).toBe("draft");
+      expect(["draft", "ready"], route).toContain(content.status);
       if (content.product) {
         expect(content.product.id, route).toBe(route);
         expect(content.product.code, route).toBe(route.split("/").at(-1));
@@ -79,21 +96,11 @@ test.describe("175 approved routes: authored content identities in preview", () 
         "content",
         content.description,
       );
-      const canonical = await page
-        .locator('link[rel="canonical"]')
-        .getAttribute("href");
-      expect(canonical, route).toBeTruthy();
-      const canonicalURL = new URL(canonical!);
-      expect(canonicalURL.pathname, route).toBe(route);
-      expect(canonicalURL.origin, route).toBe(
-        new URL(process.env.NEXT_PUBLIC_SITE_URL!).origin,
+      await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+        "content",
+        /noindex/i,
       );
-      if (content.status === "draft") {
-        await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
-          "content",
-          /noindex/i,
-        );
-      }
+      await expect(page.locator('link[rel="canonical"]')).toHaveCount(0);
       if (content.product) {
         // A correct title alone can hide a different product's rendered body.
         await expect(page.locator("main h1")).toContainText(
@@ -154,25 +161,30 @@ test.describe("production draft guard across the approved manifest", () => {
   test("authored status inventory matches the approved manifest", () => {
     expect(Object.keys(pages).sort()).toEqual([...approved.routes].sort());
     expect(
-      approved.routes.filter((route) => pages[route]?.status === "draft"),
-    ).toHaveLength(175);
+      approved.routes
+        .filter((route) => pages[route]?.status === "draft")
+        .sort(),
+    ).toEqual([...expectedDraftRoutes].sort());
   });
 
   for (const route of approved.routes.filter((path) => path !== "/")) {
-    test(`${route} returns 404 while draft`, async ({ request }) => {
-      expect(pages[route]?.status, route).toBe("draft");
+    test(`${route} renders only when its authored status is ready`, async ({
+      request,
+    }) => {
       const response = await request.get(route, { maxRedirects: 0 });
-      expect(response.status()).toBe(404);
+      expect(response.status()).toBe(
+        pages[route]?.status === "ready" ? 200 : 404,
+      );
     });
   }
 
-  test("home stays a noindex holding page while its authored record is draft", async ({
+  test("ready home content remains noindex while publication gates are closed", async ({
     page,
   }) => {
-    expect(pages["/"]?.status).toBe("draft");
+    expect(pages["/"]?.status).toBe("ready");
     const response = await page.goto("/", { waitUntil: "domcontentloaded" });
     expect(response?.status()).toBe(200);
-    await expect(page.locator("main")).toContainText("bản chờ nhập liệu");
+    await expect(page.locator("main h1")).toHaveCount(1);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
       "content",
       /noindex/i,

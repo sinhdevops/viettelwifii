@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PackageContent } from "@/components/packages/package-content";
+import { PageJsonLd } from "@/components/site-pages/page-json-ld";
 import {
   metadataForPage,
   pathFromSegment,
@@ -23,5 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const path = pathFromSegment("/goi-cuoc-viettel/", (await params).code);
   const page = requirePage(path, "package");
-  return <PackageContent page={page} path={path} />;
+  return (
+    <>
+      <PageJsonLd path={path} page={page} />
+      <PackageContent page={page} path={path} />
+    </>
+  );
 }

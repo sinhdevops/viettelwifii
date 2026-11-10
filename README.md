@@ -25,11 +25,11 @@ cp .env.example .env.local
 pnpm dev
 ```
 
-Trong `.env.local`, giữ `SITE_LIVE=false`. Lệnh `dev` tự bật preview draft; có thể tắt bằng biến môi trường `SITE_PREVIEW_DRAFTS=0` trước khi chạy. Chạy trực tiếp `next dev` cần tự đặt `SITE_PREVIEW_DRAFTS=1`. Lệnh build/start production vẫn giữ guard, không xuất bản nội dung draft. Kiểm tra bằng `pnpm routes:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`, `pnpm test:e2e` theo mốc tích hợp.
+Trong `.env.local` chỉ cần `NEXT_PUBLIC_SITE_URL` (và các thông tin liên hệ). `SITE_LIVE`, bốn cờ phê duyệt và cơ chế chặn draft đã được **gỡ bỏ**: mọi route đã duyệt render và được index giống nhau ở local lẫn production; trạng thái `draft`/`ready` trong dữ liệu chỉ còn để theo dõi nội dung, không còn chặn gì. Kiểm tra bằng `pnpm routes:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`, `pnpm test:e2e` theo mốc tích hợp.
 
 Lập bảng audit đúng 171 URL sau khi nhận manifest: `pnpm routes:audit`. Kết quả là `reports/clone-checklist.csv`, dùng để đánh dấu baseline/asset/interactions/port/review từng trang.
 
-Để triển khai production, cần `NEXT_PUBLIC_SITE_URL` domain thật, đủ dữ liệu, quyền tài nguyên, thông tin liên hệ, Telegram và anti-spam đã cấu hình, kiểm tra riêng việc bảo vệ dữ liệu, rồi mới chuyển `SITE_LIVE=true`. Không chạy `output: "export"` vì form Telegram cần server.
+Để triển khai production chỉ cần `NEXT_PUBLIC_SITE_URL` là domain thật. Không còn `SITE_LIVE` hay guard chặn build. Lead form vẫn tách riêng: chỉ hoạt động khi `LEAD_CAPTURE_ENABLED=true`, có `PRIVACY_POLICY_VERSION` hợp lệ, cấu hình Supabase và cả hai khóa Turnstile. Không chạy `output: "export"` vì form Telegram cần server.
 
 Domain được khai báo một lần bằng `NEXT_PUBLIC_SITE_URL` trong env. Code gọi `siteConfig.origin`, `siteConfig.hostname` hoặc `siteConfig.url(path)` từ `src/lib/site-config.ts`; xem [hướng dẫn env](docs/SITE_ENV.md). Sau khi đổi giá trị cần restart dev hoặc build lại vì Next đóng gói biến public khi build.
 

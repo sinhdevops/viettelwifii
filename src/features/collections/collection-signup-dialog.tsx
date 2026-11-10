@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sheet";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import {
+  useEffect,
   useId,
   useRef,
   useState,
@@ -46,7 +47,7 @@ const formButton =
   "h-[38px] w-[125px] rounded-full sm:!ml-0 md:h-[48px] md:w-[127px] md:text-16";
 const description =
   "Nhập thông tin cụ thể của quý khách để chúng tôi có thể hỗ trợ tốt nhất";
-const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim();
 const cityOptions = signupCities.map((city) => ({ value: city, label: city }));
 
 export function CollectionSignupDialog({
@@ -64,16 +65,64 @@ export function CollectionSignupDialog({
   const [turnstileToken, setTurnstileToken] = useState("");
   const [city, setCity] = useState("");
   const [ward, setWard] = useState("");
+  const [privacyAvailability, setPrivacyAvailability] = useState<
+    "checking" | "available" | "unavailable"
+  >("checking");
+  const [privacyPolicyVersion, setPrivacyPolicyVersion] = useState("");
   const wards = getSignupWards(city);
   const id = useId();
   const nine = pagePath === "/goi-cuoc-nine";
   const sms = pagePath === "/goi-cuoc-gic";
-  const supported = sms || nine || pagePath === "/internet";
+  const internetPage = pagePath === "/internet";
+  const supported = sms || nine || internetPage;
+
+  useEffect(() => {
+    if (!open || !internetPage) return;
+    let active = true;
+    void fetch("/api/leads/config", {
+      cache: "no-store",
+      signal: AbortSignal.timeout(5000),
+    })
+      .then(async (response) => {
+        if (!response.ok)
+          throw new Error("Lead capture availability unavailable");
+        return (await response.json()) as {
+          available?: unknown;
+          policyVersion?: unknown;
+        };
+      })
+      .then((config) => {
+        const version = config.policyVersion;
+        const available =
+          config.available === true &&
+          typeof version === "string" &&
+          /^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$/.test(version) &&
+          version.toLowerCase() !== "unapproved";
+        if (!active) return;
+        if (!available || typeof version !== "string") {
+          setPrivacyAvailability("unavailable");
+          return;
+        }
+        setPrivacyPolicyVersion(version);
+        setPrivacyAvailability("available");
+      })
+      .catch(() => {
+        if (active) setPrivacyAvailability("unavailable");
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [open, internetPage]);
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (pendingRef.current) return;
     if (pagePath !== "/internet") {
       toast.error("Gói này chưa hỗ trợ đăng ký qua biểu mẫu.");
+      return;
+    }
+    if (privacyAvailability !== "available") {
+      toast.error("Chưa thể gửi đăng ký trực tuyến. Vui lòng gọi để được tư vấn.");
       return;
     }
     const form = new FormData(event.currentTarget);
@@ -107,6 +156,7 @@ export function CollectionSignupDialog({
       itemTitle: code,
       pagePath,
       attribution,
+      privacyPolicyVersion,
       company: String(form.get("company") ?? ""),
       turnstileToken,
     });
@@ -126,21 +176,43 @@ export function CollectionSignupDialog({
       const result = (await response.json().catch(() => null)) as {
         ok?: boolean;
         error?: string;
+        notificationSent?: boolean;
       } | null;
       if (!response.ok || result?.ok !== true) {
+        if (
+          result?.error === "lead_intake_unavailable" ||
+          response.status === 503
+        ) {
+          setPrivacyAvailability("unavailable");
+          setPrivacyPolicyVersion("");
+          toast.error("Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.");
+          return;
+        }
+        if (result?.error === "privacy_policy_version_mismatch") {
+          setPrivacyAvailability("unavailable");
+          setPrivacyPolicyVersion("");
+          toast.error(
+            "Chính sách bảo mật vừa thay đổi. Biểu mẫu tạm thời chưa khả dụng; vui lòng mở lại để xem bản hiện hành.",
+          );
+          return;
+        }
         const message =
           result?.error === "invalid_item"
             ? "Gói cước chưa được liên kết đúng. Vui lòng chọn lại gói."
             : result?.error === "captcha_failed"
               ? "Xác minh đã hết hạn. Vui lòng xác minh lại."
-              : response.status === 503
-                ? "Hệ thống tiếp nhận chưa được cấu hình. Vui lòng liên hệ qua số điện thoại."
-                : "Chưa gửi được đăng ký. Vui lòng thử lại.";
+              : "Chưa gửi được đăng ký. Vui lòng thử lại.";
         toast.error(message);
         return;
       }
       setOpen(false);
-      toast.success("Đã gửi đăng ký thành công. Chúng tôi sẽ liên hệ sớm!");
+      if (result?.notificationSent === true) {
+        toast.success("Đã gửi đăng ký thành công. Chúng tôi sẽ liên hệ sớm!");
+      } else {
+        toast.warning(
+          "Đã nhận đăng ký nhưng chưa gửi được thông báo. Vui lòng liên hệ hỗ trợ để xác nhận.",
+        );
+      }
     } catch {
       toast.error(
         "Chưa nhận được xác nhận từ máy chủ. Vui lòng kiểm tra trước khi gửi lại.",
@@ -166,7 +238,18 @@ export function CollectionSignupDialog({
     );
 
   return (
-    <Sheet open={open} onOpenChange={setOpen}>
+    <Sheet
+      open={open}
+      onOpenChange={(nextOpen) => {
+        setOpen(nextOpen);
+        if (!nextOpen) {
+          setPrivacyAvailability("checking");
+          setPrivacyPolicyVersion("");
+          
+          setTurnstileToken("");
+        }
+      }}
+    >
       <SheetTrigger asChild>
         <AppButton
           variant="unstyled"
@@ -180,6 +263,9 @@ export function CollectionSignupDialog({
             setSelection(readSignupSelection(event.currentTarget, pagePath));
             setCity("");
             setWard("");
+            setPrivacyAvailability("checking");
+            setPrivacyPolicyVersion("");
+            
             setTurnstileToken("");
           }}
         >
@@ -217,7 +303,7 @@ export function CollectionSignupDialog({
             <SheetTitle
               className={`text-center text-lg leading-none font-semibold tracking-tight ${nine ? "font-magistral md:text-24 pb-2 text-white md:pb-4" : `font-sarabun text-text-dark md:text-24 ${sms ? "" : "pb-2 md:pb-4"}`}`}
             >
-              {sms ? "Thông báo" : nine ? "ĐĂNG KÝ GÓI" : "Thông tin đặt mua"}
+              {sms || nine ? "Thông báo" : "Thông tin đặt mua"}
             </SheetTitle>
             <SheetDescription
               id={`${id}-description`}
@@ -266,13 +352,24 @@ export function CollectionSignupDialog({
               </SheetClose>
               {/* Original mobile SMS link stays on its source card; do not initiate it here. */}
             </div>
+          ) : !internetPage ? (
+            <div className="flex flex-col gap-4 text-center text-sm text-neutral-700">
+              <p role="status">
+                Gói này chưa hỗ trợ đăng ký qua biểu mẫu.
+              </p>
+              <SheetClose asChild>
+                <AppButton
+                  variant="unstyled"
+                  size="unstyled"
+                  type="button"
+                  className={`${action} ${outline} md:text-16 h-[34px] w-[124px] rounded-full md:w-[130px]`}
+                >
+                  Đóng
+                </AppButton>
+              </SheetClose>
+            </div>
           ) : (
             <form
-              className={
-                nine
-                  ? "rounded-[18px] border-x-[6px] border-gray-300 bg-white p-4"
-                  : undefined
-              }
               onSubmit={(event) => {
                 void submit(event);
               }}
@@ -308,80 +405,43 @@ export function CollectionSignupDialog({
                     </span>
                   </div>
                 </div>
-                {nine ? (
-                  <>
-                    <div id={`${id}-subscriber`}>
-                      Bạn đang sử dụng loại thuê bao nào?
-                    </div>
-                    <div
-                      role="radiogroup"
-                      aria-labelledby={`${id}-subscriber`}
-                      className="grid gap-1.5"
-                    >
-                      {["Trả trước", "Trả sau"].map((value, index) => (
-                        <div
-                          key={value}
-                          className="flex items-center space-x-1 py-1"
-                        >
-                          <input
-                            id={`${id}-${index}`}
-                            className="h-3 w-3 accent-[#EE0033] md:h-4 md:w-4"
-                            type="radio"
-                            name="subscriber"
-                            value={value}
-                            defaultChecked={index === 0}
-                          />
-                          <label
-                            className="!text-12 md:!text-14 text-sm leading-none font-semibold"
-                            htmlFor={`${id}-${index}`}
-                          >
-                            {value.toLocaleUpperCase("vi")}
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="space-y-2">
-                      <CollectionSelect
-                        label="Chọn tỉnh/thành phố"
-                        placeholder="Chọn tỉnh/thành phố *"
-                        value={city}
-                        options={cityOptions}
-                        onChange={(value) => {
-                          setCity(value);
-                          setWard("");
-                        }}
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <CollectionSelect
-                        label="Chọn phường/xã"
-                        placeholder="Chọn phường/xã *"
-                        disabled={!wards.length}
-                        value={ward}
-                        options={wards.map((entry) => ({
-                          value: entry.ward_code,
-                          label: entry.name,
-                        }))}
-                        onChange={setWard}
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <input
-                        className={input}
-                        placeholder="Nhập địa chỉ"
-                        aria-label="Nhập địa chỉ"
-                        name="address"
-                        autoComplete="street-address"
-                        required
-                      />
-                    </div>
-                  </>
-                )}
+                <div className="space-y-2">
+                  <CollectionSelect
+                    label="Chọn tỉnh/thành phố"
+                    placeholder="Chọn tỉnh/thành phố *"
+                    value={city}
+                    options={cityOptions}
+                    onChange={(value) => {
+                      setCity(value);
+                      setWard("");
+                    }}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <CollectionSelect
+                    label="Chọn phường/xã"
+                    placeholder="Chọn phường/xã *"
+                    disabled={!wards.length}
+                    value={ward}
+                    options={wards.map((entry) => ({
+                      value: entry.ward_code,
+                      label: entry.name,
+                    }))}
+                    onChange={setWard}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <input
+                    className={input}
+                    placeholder="Nhập địa chỉ"
+                    aria-label="Nhập địa chỉ"
+                    name="address"
+                    autoComplete="street-address"
+                    required
+                  />
+                </div>
               </div>
-              {pagePath === "/internet" && siteKey && (
+              {internetPage && siteKey && (
                 <Turnstile
                   ref={turnstileRef}
                   siteKey={siteKey}
@@ -404,6 +464,16 @@ export function CollectionSignupDialog({
                   pointerEvents: "none",
                 }}
               />
+              {privacyAvailability === "checking" && (
+                <p className="pt-3 text-center text-sm text-neutral-600" role="status">
+                  Đang kiểm tra khả năng gửi đăng ký…
+                </p>
+              )}
+              {privacyAvailability === "unavailable" && (
+                <p className="pt-3 text-center text-sm text-primary" role="alert">
+                  Đăng ký trực tuyến hiện chưa khả dụng. Vui lòng liên hệ để được hỗ trợ.
+                </p>
+              )}
               <div className="flex justify-center gap-4 pt-5">
                 <SheetClose asChild>
                   <AppButton
@@ -418,9 +488,13 @@ export function CollectionSignupDialog({
                 <AppButton
                   variant="unstyled"
                   size="unstyled"
-                  className={`${action} bg-primary hover:bg-primary-dark text-gray-50 ${formButton}`}
+                  className={`${action} bg-primary hover:bg-primary-dark text-gray-50 disabled:cursor-not-allowed disabled:opacity-50 ${formButton}`}
                   type="submit"
-                  disabled={submitting || Boolean(siteKey && !turnstileToken)}
+                  disabled={
+                    privacyAvailability !== "available" ||
+                    submitting ||
+                    Boolean(siteKey && !turnstileToken)
+                  }
                 >
                   {submitting ? "ĐANG GỬI…" : "XÁC NHẬN"}
                 </AppButton>

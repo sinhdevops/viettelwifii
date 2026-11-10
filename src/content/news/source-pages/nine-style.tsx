@@ -1,4 +1,3 @@
-import { siteConfig } from "@/lib/site-config";
 /* eslint-disable @next/next/no-img-element */
 import { sourceAsset } from "@/lib/viettelup-source-assets";
 import { ArticleLayout } from "@/components/news/article-layout";
@@ -92,14 +91,7 @@ function NineStyleSection3TruCotTaoNenNINEstyleLoiSongCuaSuUuTien() {
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"Khi trở thành chủ nhân của các gói cước NINE cao cấp (từ "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-nine/N500")}
-        >
-          {"N500 "}
-        </a>
+        {"N500 "}
         trở lên), bạn sẽ nhận được đặc quyền:
       </p>
       <ul className="list-disc py-3 pl-7 md:py-4 md:pl-10">
@@ -122,32 +114,11 @@ function NineStyleSection3TruCotTaoNenNINEstyleLoiSongCuaSuUuTien() {
       </ul>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"Xem thêm: "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-nine/N500")}
-        >
-          Gói cước Viettel N500
-        </a>
+        Gói cước Viettel N500
         {", "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-nine/N1000")}
-        >
-          Gói cước Viettel N1000
-        </a>
+        Gói cước Viettel N1000
         {", "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-nine/N2000")}
-        >
-          Gói cước Viettel N2000
-        </a>
+        Gói cước Viettel N2000
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <b>3. Tự do dịch chuyển toàn cầu</b>
@@ -247,14 +218,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N200")}
-                    >
-                      <b>N200</b>
-                    </a>
+                    <b>N200</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -281,14 +245,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N250")}
-                    >
-                      <b>N250</b>
-                    </a>
+                    <b>N250</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -315,14 +272,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N300")}
-                    >
-                      <b>N300</b>
-                    </a>
+                    <b>N300</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -349,14 +299,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N350")}
-                    >
-                      <b>N350</b>
-                    </a>
+                    <b>N350</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -416,14 +359,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N400")}
-                    >
-                      <b>N400</b>
-                    </a>
+                    <b>N400</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -450,14 +386,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N500")}
-                    >
-                      <b>N500</b>
-                    </a>
+                    <b>N500</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -517,14 +446,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N1000")}
-                    >
-                      <b>N1000</b>
-                    </a>
+                    <b>N1000</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -551,14 +473,7 @@ function NineStyleChiTietCacGoiCuocDinhHinhNINEstyle() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary"
-                      href={siteConfig.url("/goi-cuoc-nine/N2000")}
-                    >
-                      <b>N2000</b>
-                    </a>
+                    <b>N2000</b>
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">

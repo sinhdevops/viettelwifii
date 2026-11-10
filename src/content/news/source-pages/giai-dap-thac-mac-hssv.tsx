@@ -56,18 +56,9 @@ function GiaiDapThacMacHssvIntroduction() {
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <i>{"Đọc thêm: "}</i>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url(
-            "/tin-tuc/goi-cuoc-viettel/tin-moi/cap-nhat-goi-cuoc-GIC",
-          )}
-        >
-          <i>
+        <i>
             Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?
           </i>
-        </a>
         <i></i>
       </p>
       <p className="text-18 md:text-20 pb-2 leading-[28px] md:leading-[28px]">
@@ -125,32 +116,11 @@ function GiaiDapThacMacHssvIntroduction() {
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"Hoặc các gói GIC: "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-gic/GIC30N")}
-        >
-          <b>GIC30N</b>
-        </a>
+        <b>GIC30N</b>
         {", "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-gic/GIC90N")}
-        >
-          <b>GIC90N</b>
-        </a>
+        <b>GIC90N</b>
         {", "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-          href={siteConfig.url("/goi-cuoc-gic/GIC125N")}
-        >
-          <b>GIC125N</b>
-        </a>
+        <b>GIC125N</b>
       </p>
       <p className="text-18 md:text-20 pb-2 leading-[28px] md:leading-[28px]">
         <b>
