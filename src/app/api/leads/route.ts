@@ -73,7 +73,11 @@ export async function POST(req: NextRequest) {
     if (origin) {
       const requestOrigin = new URL(origin).origin;
       const deploymentOrigin = process.env.VERCEL_URL
-        ? new URL(`https://${process.env.VERCEL_URL}`).origin
+        ? new URL(
+            process.env.VERCEL_URL.startsWith("https://")
+              ? process.env.VERCEL_URL
+              : `https://${process.env.VERCEL_URL}`,
+          ).origin
         : null;
       const localPreview =
         process.env.NODE_ENV !== "production" &&
