@@ -273,7 +273,7 @@ test("Internet signup hides personal-data fields when intake is unavailable", as
   ).toHaveCount(0);
 });
 
-test("Internet signup renders no personal fields while config is checking", async ({
+test("Internet signup waits for config before showing the modal", async ({
   page,
 }) => {
   let releaseConfig!: () => void;
@@ -285,7 +285,7 @@ test("Internet signup renders no personal fields while config is checking", asyn
     await route.fulfill({
       status: 200,
       contentType: "application/json",
-      body: JSON.stringify({ available: false }),
+      body: JSON.stringify({ available: true, policyVersion }),
     });
   });
   await page.goto("/internet");
@@ -304,18 +304,18 @@ test("Internet signup renders no personal fields while config is checking", asyn
   await signup.click();
   const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
   try {
-    await expect(
-      dialog.getByText("Đang kiểm tra khả năng gửi đăng ký…"),
-    ).toBeVisible();
-    await expect(dialog.locator("input, textarea")).toHaveCount(0);
-    await expect(dialog.getByRole("combobox")).toHaveCount(0);
+    await expect(signup).toHaveAttribute("aria-busy", "true");
+    await expect(dialog).toHaveCount(0);
   } finally {
     releaseConfig();
   }
+  await expect(dialog).toBeVisible();
   await expect(
-    dialog.getByText("Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau."),
+    dialog.getByRole("textbox", { name: "Nhập họ tên" }),
   ).toBeVisible();
-  await expect(dialog.locator("input, textarea")).toHaveCount(0);
+  await expect(
+    dialog.getByText("Đang kiểm tra khả năng gửi đăng ký…"),
+  ).toHaveCount(0);
 });
 
 test("Internet signup submits without a checkbox or implied policy acceptance", async ({

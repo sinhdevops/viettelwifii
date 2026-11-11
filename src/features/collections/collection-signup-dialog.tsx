@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/sheet";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import {
-  useEffect,
   useId,
   useRef,
   useState,
@@ -69,6 +68,7 @@ export function CollectionSignupDialog({
     "checking" | "available" | "unavailable"
   >("checking");
   const [privacyPolicyVersion, setPrivacyPolicyVersion] = useState("");
+  const [checkingConfig, setCheckingConfig] = useState(false);
   const wards = getSignupWards(city);
   const id = useId();
   const nine = pagePath === "/goi-cuoc-nine";
@@ -76,44 +76,38 @@ export function CollectionSignupDialog({
   const internetPage = pagePath === "/internet";
   const supported = sms || nine || internetPage;
 
-  useEffect(() => {
-    if (!open || !internetPage) return;
-    let active = true;
-    void fetch("/api/leads/config", {
-      cache: "no-store",
-      signal: AbortSignal.timeout(5000),
-    })
-      .then(async (response) => {
-        if (!response.ok)
-          throw new Error("Lead capture availability unavailable");
-        return (await response.json()) as {
-          available?: unknown;
-          policyVersion?: unknown;
-        };
-      })
-      .then((config) => {
-        const version = config.policyVersion;
-        const available =
-          config.available === true &&
-          typeof version === "string" &&
-          /^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$/.test(version) &&
-          version.toLowerCase() !== "unapproved";
-        if (!active) return;
-        if (!available || typeof version !== "string") {
-          setPrivacyAvailability("unavailable");
-          return;
-        }
+  async function openInternetSignup() {
+    setCheckingConfig(true);
+    try {
+      const response = await fetch("/api/leads/config", {
+        cache: "no-store",
+        signal: AbortSignal.timeout(5000),
+      });
+      if (!response.ok)
+        throw new Error("Lead capture availability unavailable");
+      const config = (await response.json()) as {
+        available?: unknown;
+        policyVersion?: unknown;
+      };
+      const version = config.policyVersion;
+      const available =
+        config.available === true &&
+        typeof version === "string" &&
+        /^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$/.test(version) &&
+        version.toLowerCase() !== "unapproved";
+      if (!available || typeof version !== "string") {
+        setPrivacyAvailability("unavailable");
+      } else {
         setPrivacyPolicyVersion(version);
         setPrivacyAvailability("available");
-      })
-      .catch(() => {
-        if (active) setPrivacyAvailability("unavailable");
-      });
-
-    return () => {
-      active = false;
-    };
-  }, [open, internetPage]);
+      }
+    } catch {
+      setPrivacyAvailability("unavailable");
+    } finally {
+      setCheckingConfig(false);
+      setOpen(true);
+    }
+  }
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (pendingRef.current) return;
@@ -268,6 +262,8 @@ export function CollectionSignupDialog({
           {...props}
           type={props.type ?? "button"}
           aria-label={props["aria-label"] ?? dialogLabel}
+          aria-busy={checkingConfig}
+          disabled={props.disabled || checkingConfig}
           onClick={(event) => {
             onClick?.(event);
             if (event.defaultPrevented) return;
@@ -277,6 +273,10 @@ export function CollectionSignupDialog({
             setPrivacyAvailability("checking");
             setPrivacyPolicyVersion("");
             setTurnstileToken("");
+            if (internetPage) {
+              event.preventDefault();
+              void openInternetSignup();
+            }
           }}
         >
           {children}
