@@ -72,13 +72,20 @@ export async function POST(req: NextRequest) {
   try {
     if (origin) {
       const requestOrigin = new URL(origin).origin;
+      const deploymentOrigin = process.env.VERCEL_URL
+        ? new URL(`https://${process.env.VERCEL_URL}`).origin
+        : null;
       const localPreview =
         process.env.NODE_ENV !== "production" &&
         ["localhost", "127.0.0.1", "[::1]"].includes(
           new URL(req.url).hostname,
         ) &&
         requestOrigin === new URL(req.url).origin;
-      originAllowed = requestOrigin === siteConfig.origin || localPreview;
+      originAllowed =
+        requestOrigin === siteConfig.origin ||
+        (requestOrigin === deploymentOrigin &&
+          requestOrigin === new URL(req.url).origin) ||
+        localPreview;
     }
   } catch {
     originAllowed = false;

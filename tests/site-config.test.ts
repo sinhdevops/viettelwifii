@@ -56,6 +56,22 @@ describe("deployment domain configuration", () => {
     expect((await check("https://changed.example")).status).toBe(415);
     expect((await check("http://localhost:3000")).status).toBe(403);
     expect((await check("https://untrusted.example")).status).toBe(403);
+    vi.stubEnv("VERCEL_URL", "viettelwifii.vercel.app");
+    expect((await check("https://viettelwifii.vercel.app")).status).toBe(403);
+    expect(
+      (
+        await POST(
+          new NextRequest("https://viettelwifii.vercel.app/api/leads", {
+            method: "POST",
+            headers: {
+              origin: "https://viettelwifii.vercel.app",
+              "content-type": "text/plain",
+            },
+            body: "not a lead",
+          }),
+        )
+      ).status,
+    ).toBe(415);
     vi.stubEnv("NODE_ENV", "development");
     expect((await check("http://localhost:3000")).status).toBe(415);
     expect((await check("http://localhost:3001")).status).toBe(403);
