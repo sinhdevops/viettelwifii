@@ -3,6 +3,10 @@ import type { PageContent } from "@/lib/content-schema";
 import { approvedRoutes as productRoutes } from "@/lib/approved-routes";
 import { siteConfig } from "@/lib/site-config";
 import { siteRoutes } from "@/lib/site-routes";
+import {
+  normalizeSeoDescription,
+  normalizeSeoTitle,
+} from "./metadata-normalize";
 
 /**
  * The registry-backed SEO allowlist includes the original product routes plus
@@ -14,6 +18,28 @@ export const seoApprovedRoutes: readonly string[] = Object.freeze([
 const seoApprovedRouteSet = new Set(seoApprovedRoutes);
 
 const blockedRobots = { index: false, follow: false } as const;
+
+const LOOPBACK_HOSTNAMES = new Set([
+  "localhost",
+  "127.0.0.1",
+  "0.0.0.0",
+  "[::1]",
+]);
+
+/** Loopback and *.local origins cannot ever be the public canonical of a deploy. */
+export function isLoopbackOrigin(origin: string): boolean {
+  try {
+    const { hostname } = new URL(origin);
+    return (
+      LOOPBACK_HOSTNAMES.has(hostname) ||
+      /^127\./.test(hostname) ||
+      hostname.endsWith(".localhost") ||
+      hostname.endsWith(".local")
+    );
+  } catch {
+    return false;
+  }
+}
 
 /**
  * Publication is no longer gated by environment flags: every approved route is
@@ -27,7 +53,18 @@ export function isPublicationEnabled(): boolean {
 
 /** Minimal SEO fields accepted from PageContent or the Lead-owned site-route registry. */
 export type SeoPage = Pick<PageContent, "title" | "description" | "status"> &
-  Partial<Pick<PageContent, "kind" | "heading" | "article" | "source">>;
+  Partial<
+    Pick<
+      PageContent,
+      | "kind"
+      | "heading"
+      | "article"
+      | "source"
+      | "intro"
+      | "sections"
+      | "product"
+    >
+  >;
 
 export type PageSeoContext = {
   path: string;
@@ -100,8 +137,6 @@ function validatePublicationOrigin(rawUrl: string | undefined): URL {
     );
   }
 
-  // Publication is ungated, so a local http://localhost origin must also be
-  // accepted; otherwise every page would throw during local development.
   if (url.origin !== siteConfig.origin) {
     throw new Error(
       "Publication origin must match the configured NEXT_PUBLIC_SITE_URL origin",
@@ -113,11 +148,26 @@ function validatePublicationOrigin(rawUrl: string | undefined): URL {
 
 /**
  * Returns the validated configured origin for canonical, Open Graph, robots,
- * and sitemap URLs. Publication does not depend on legacy environment flags.
+ * and sitemap URLs, or `null` when the build must not advertise itself.
+ *
+ * A production build configured with a loopback/non-https origin yields `null`
+ * so every caller fails closed (noindex, empty sitemap, `Disallow: /`) instead
+ * of publishing `http://localhost` canonicals to search engines. Local
+ * development and tests keep working with a loopback origin.
  */
 export function getPublicationOrigin(siteUrl?: string): URL | null {
   if (!isPublicationEnabled()) return null;
-  return validatePublicationOrigin(siteUrl ?? process.env.NEXT_PUBLIC_SITE_URL);
+  const origin = validatePublicationOrigin(
+    siteUrl ?? process.env.NEXT_PUBLIC_SITE_URL,
+  );
+  const production = process.env.NODE_ENV === "production";
+  if (
+    production &&
+    (origin.protocol !== "https:" || isLoopbackOrigin(origin.origin))
+  ) {
+    return null;
+  }
+  return origin;
 }
 
 type SocialMetadata = {
@@ -130,14 +180,34 @@ function socialMetadata(title: string, description: string): SocialMetadata {
     type: "website",
     title,
     description,
+    images: ["/opengraph-image"],
   };
   const twitter: NonNullable<Metadata["twitter"]> = {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description,
+    images: ["/opengraph-image"],
   };
 
   return { openGraph, twitter };
+}
+
+/** Metadata title/description normalised to the display-length gates. */
+function seoCopy(page: SeoPage): { title: string; description: string } {
+  const normalisable = {
+    title: page.title,
+    description: page.description,
+    heading: page.heading ?? page.title,
+    kind: page.kind ?? "collection",
+    intro: page.intro,
+    sections: page.sections,
+    product: page.product,
+    article: page.article,
+  };
+  return {
+    title: normalizeSeoTitle(normalisable),
+    description: normalizeSeoDescription(normalisable),
+  };
 }
 
 /** Safe even if a caller/root layout is accidentally configured to allow indexing. */
@@ -145,10 +215,11 @@ export function buildPageMetadata(context: PageSeoContext): Metadata {
   if (!approvedPage(context)) return { robots: blockedRobots };
 
   const { page } = context;
-  const social = socialMetadata(page.title, page.description);
+  const copy = seoCopy(page);
+  const social = socialMetadata(copy.title, copy.description);
   const blocked: Metadata = {
-    title: page.title,
-    description: page.description,
+    title: copy.title,
+    description: copy.description,
     robots: blockedRobots,
     ...social,
   };
@@ -170,8 +241,12 @@ export function buildPageMetadata(context: PageSeoContext): Metadata {
   };
 }
 
-type StructuredPage = {
+type JsonLdNode = Record<string, unknown> & {
   "@context": "https://schema.org";
+  "@type": string;
+};
+
+type StructuredPage = JsonLdNode & {
   "@type": "WebPage" | "CollectionPage" | "Article";
   "@id": string;
   url: string;
@@ -184,6 +259,90 @@ type StructuredPage = {
   datePublished?: string;
 };
 
+const SITE_NAME = "ViettelWiFii.vn";
+/**
+ * Site-wide identity nodes for root-layout integration; no inferred search action.
+ * Nothing here is inferred beyond the configured origin and site name.
+ */
+export function buildSiteJsonLd(siteUrl?: string): JsonLdNode[] {
+  const origin = getPublicationOrigin(siteUrl);
+  if (!origin) return [];
+  const root = new URL("/", origin).href;
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": `${root}#website`,
+      url: root,
+      name: SITE_NAME,
+      inLanguage: "vi",
+      publisher: { "@id": `${root}#organization` },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": `${root}#organization`,
+      name: SITE_NAME,
+      url: root,
+    },
+  ];
+}
+
+/** Breadcrumb trail derived only from the route path; labels reuse page copy. */
+export function buildBreadcrumbJsonLd(
+  context: PageSeoContext,
+): JsonLdNode | null {
+  if (!indexablePage(context) || context.path === "/") return null;
+  const origin = getPublicationOrigin(context.siteUrl);
+  if (!origin) return null;
+
+  const { page } = context;
+  const segments = context.path.split("/").filter(Boolean);
+  const items: Record<string, unknown>[] = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Trang chủ",
+      item: new URL("/", origin).href,
+    },
+  ];
+
+  const parentPath = `/${segments[0]}`;
+  if (
+    segments.length > 1 &&
+    isSeoRouteAllowed(parentPath) &&
+    (context.approvedRoutes === undefined ||
+      context.approvedRoutes.includes(parentPath))
+  ) {
+    items.push({
+      "@type": "ListItem",
+      position: 2,
+      name:
+        parentPath === "/tin-tuc"
+          ? "Tin tức"
+          : parentPath === "/goi-cuoc-viettel"
+            ? "Gói cước Viettel"
+            : "Internet",
+      item: new URL(parentPath, origin).href,
+    });
+  }
+
+  const leafName = (page.heading ?? page.title).trim();
+  items.push({
+    "@type": "ListItem",
+    position: items.length + 1,
+    name: leafName,
+    item: new URL(context.path, origin).href,
+  });
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${new URL(context.path, origin).href}#breadcrumb`,
+    itemListElement: items,
+  };
+}
+
 function isVerifiedIsoDate(value: string | undefined): value is string {
   if (!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
   const parsed = Date.parse(`${value}T00:00:00.000Z`);
@@ -193,28 +352,46 @@ function isVerifiedIsoDate(value: string | undefined): value is string {
   );
 }
 
+/** Article identity requires independently verified authored fields. */
 function getVerifiedArticleDetails(
   page: SeoPage,
 ): { author: string; datePublished: string } | null {
   const author = page.article?.author?.trim();
   const datePublished = page.article?.publishedLabel?.trim();
-  const verifiedFields = page.source?.verifiedFields ?? [];
-
+  const verified = page.source?.verifiedFields ?? [];
   if (
     !author ||
-    !verifiedFields.includes("article.author") ||
+    !verified.includes("article.author") ||
     !isVerifiedIsoDate(datePublished) ||
-    !verifiedFields.includes("article.publishedLabel")
-  ) {
+    !verified.includes("article.publishedLabel")
+  )
     return null;
-  }
-
   return { author, datePublished };
 }
 
+function buildProductNode(page: SeoPage, url: string): JsonLdNode | null {
+  const product = page.product;
+  if (
+    !product ||
+    product.id !== new URL(url).pathname ||
+    (page.kind !== "package" && page.kind !== "internet")
+  )
+    return null;
+  // Captures alone cannot establish a current offer, availability or seller.
+  // No current-offer verification exists in the content contract: omit offers.
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": url + "#product",
+    name: (page.heading ?? page.title).trim(),
+    description: seoCopy(page).description,
+    sku: product.code,
+    url,
+  };
+}
+
 /**
- * Emits JSON-LD only for an approved, ready page. Articles without verified
- * author + ISO publication date remain WebPage.
+ * Approved, ready pages only; Article requires verified author and ISO date.
  */
 export function buildPageJsonLd(
   context: PageSeoContext,
@@ -228,24 +405,24 @@ export function buildPageJsonLd(
 
   const page = context.page;
   const url = new URL(context.path, origin).href;
-  const name = page.heading ?? page.title;
+  const copy = seoCopy(page);
+  const name = (page.heading ?? copy.title).trim();
 
-  if (page.kind === "news-article") {
-    const verifiedArticle = getVerifiedArticleDetails(page);
-    if (verifiedArticle) {
-      return {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "@id": `${url}#article`,
-        url,
-        headline: name,
-        description: page.description,
-        inLanguage: "vi",
-        mainEntityOfPage: url,
-        author: { "@type": "Person", name: verifiedArticle.author },
-        datePublished: verifiedArticle.datePublished,
-      };
-    }
+  const verifiedArticle = getVerifiedArticleDetails(page);
+  if (page.kind === "news-article" && verifiedArticle) {
+    const article: StructuredPage = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `${url}#article`,
+      url,
+      headline: name,
+      description: copy.description,
+      inLanguage: "vi",
+      mainEntityOfPage: url,
+      author: { "@type": "Person", name: verifiedArticle.author },
+      datePublished: verifiedArticle.datePublished,
+    };
+    return article;
   }
 
   const isCollection = page.kind === "news-list" || page.kind === "collection";
@@ -255,12 +432,30 @@ export function buildPageJsonLd(
     "@id": `${url}#webpage`,
     url,
     name,
-    description: page.description,
+    description: copy.description,
     inLanguage: "vi",
   };
 }
 
+/** All page-level nodes (page + breadcrumb + optional product) for one URL. */
+export function buildPageJsonLdGraph(context: PageSeoContext): JsonLdNode[] {
+  const nodes: JsonLdNode[] = [];
+  const page = buildPageJsonLd(context);
+  if (page) nodes.push(page as JsonLdNode);
+  const breadcrumb = buildBreadcrumbJsonLd(context);
+  if (breadcrumb) nodes.push(breadcrumb);
+  if (approvedPage(context) && context.page.status === "ready") {
+    const origin = getPublicationOrigin(context.siteUrl);
+    if (origin) {
+      const url = new URL(context.path, origin).href;
+      const product = buildProductNode(context.page, url);
+      if (product) nodes.push(product);
+    }
+  }
+  return nodes;
+}
+
 /** Use in a native application/ld+json script in a Server Component. */
-export function serializeJsonLd(data: StructuredPage): string {
+export function serializeJsonLd(data: unknown): string {
   return JSON.stringify(data).replace(/</g, "\\u003c");
 }

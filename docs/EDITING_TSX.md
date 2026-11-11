@@ -59,7 +59,9 @@ Nút hành động dùng `Button`, điều hướng dùng `ButtonLink` trong `sr
 
 ## Render, SEO và kiểm tra
 
-Dùng pnpm theo `packageManager`, một lockfile `pnpm-lock.yaml`. `pnpm dev` phục vụ mặc định `http://localhost:3000`, không cần cờ preview. Tất cả 175 approved product/content route và 5 support render; chỉ `ready` được index/sitemap/canonical/JSON-LD. Draft `noindex,nofollow`, không canonical/JSON-LD. Form luôn mở, không phụ thuộc readiness của privacy; gửi thật cần Supabase (hiện chưa cấu hình). Giữ consent/phiên bản mặc định `v1`; Turnstile tùy chọn theo cặp khóa và được xác minh khi cấu hình, Telegram tùy chọn sau lưu bền vững. Không thử lead thật.
+Dùng pnpm theo `packageManager`, một lockfile `pnpm-lock.yaml`. `pnpm dev` phục vụ mặc định `http://localhost:3000`, không cần cờ preview. Tất cả 175 approved product/content route và 5 support render; chỉ `ready` được index/sitemap/canonical/JSON-LD. Draft `noindex,nofollow`, không canonical/JSON-LD. Form luôn mở, không phụ thuộc readiness của privacy.
+
+CAPTCHA đã gỡ; giữ validation/origin/honeypot/chống gửi lặp và định danh sản phẩm. Form chung giữ consent thật/phiên bản mặc định `v1`; modal collection `/internet` không có control consent, không suy diễn chấp thuận, lưu cặp consent DB là `null` khi không có consent. API chờ `saveLead` trả ID, đăng ký Telegram/cập nhật trạng thái qua Next `after()`, rồi trả ngay `{ok:true}` để form hiện toast thành công. Telegram lỗi không đổi thành công; DB vẫn theo dõi `failed`/`pending`, không tự gửi lại/queue. Form giữ dữ liệu khi lỗi lưu. Biến storage hiện có giá trị, Supabase đã trả `404 PGRST205` do thiếu `public.leads`; cần chạy `db/setup-leads.sql` trong SQL Editor rồi xác minh lại; xem `docs/SITE_ENV.md`. Không thử lead/Telegram thật.
 
 Lệnh kiểm tra theo phạm vi (không phải kết quả đã chạy):
 

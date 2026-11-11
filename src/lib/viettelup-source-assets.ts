@@ -1,6 +1,16 @@
 import registry from "@/generated/viettelup-assets.json";
+import optimizedImages from "@/generated/optimized-images.json";
 
 const lookup = registry as Record<string, string>;
+const optimizedLookup = optimizedImages as Record<string, string>;
+
+/** Resolve a local original to its derivative, leaving other local assets intact. */
+export function optimizedLocalAsset(local: string): string {
+  if (!local.startsWith("/assets/")) return local;
+  const url = new URL(local, "http://localhost");
+  const optimized = optimizedLookup[url.pathname];
+  return optimized ? `${optimized}${url.search}${url.hash}` : local;
+}
 
 function assetKey(value: string, sortQuery = false): string {
   const absolute = /^https?:\/\//i.test(value);
@@ -45,11 +55,13 @@ export function sourceAsset(value: string): string {
   const replacement =
     originalArtwork[assetKey(value)] ??
     sortedOriginalArtwork.get(assetKey(value, true));
-  if (replacement) return replacement;
-  if (value.startsWith("/assets/viettelup/")) return value;
+  if (replacement) return optimizedLocalAsset(replacement);
+  // Direct local paths (including editorial artwork and existing derivatives)
+  // remain resolvable even when they have no captured registry entry.
+  if (value.startsWith("/assets/")) return optimizedLocalAsset(value);
   // The parser base is local and does not make network requests.
   const local =
     lookup[assetKey(value)] ?? sortedLookup.get(assetKey(value, true));
-  if (local?.startsWith("/assets/viettelup/")) return local;
+  if (local?.startsWith("/assets/")) return optimizedLocalAsset(local);
   throw new Error(`Original ViettelUp asset was not captured: ${value}`);
 }

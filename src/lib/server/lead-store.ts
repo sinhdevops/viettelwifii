@@ -20,6 +20,7 @@ async function leadsRequest(
       method,
       headers: {
         apikey: key,
+        ...(key.startsWith("eyJ") ? { Authorization: `Bearer ${key}` } : {}),
         "Content-Type": "application/json",
         Prefer: method === "POST" ? "return=representation" : "return=minimal",
       },

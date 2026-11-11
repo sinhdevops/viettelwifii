@@ -15,7 +15,7 @@
 1. Đối chiếu registry 175 route hiện có với manifest và 5 support riêng; không yêu cầu người dùng gửi lại sitemap. `data/pages.json` giữ làm archive có chú thích, không phải runtime/test truth.
 2. Ghi rõ tài nguyên nào được phép tái sử dụng, domain/brand sẽ xuất bản, logo và nội dung sẽ giữ hay thay.
 3. Có output từ True Web Clone hoặc khả năng chạy skill đó trong môi trường đã cài; bổ sung thiết bị/viewport cần so sánh.
-4. Cấu hình liên hệ qua env; form luôn mở, không cần Telegram để hiển thị hoặc gửi. Giao nhận thật cần Supabase lưu bền vững (hiện chưa cấu hình); Telegram tùy chọn sau lưu. Secrets nhập qua biến môi trường, không gửi vào repo.
+4. Cấu hình liên hệ qua env; form luôn mở, không cần Telegram để hiển thị hoặc gửi. Giao nhận thật cần Supabase lưu bền vững; biến storage hiện có giá trị nhưng Supabase đã trả `404 PGRST205` do thiếu `public.leads`; cần chạy `db/setup-leads.sql` trong SQL Editor rồi xác minh lại. Sau xác nhận DB, trả thành công và chạy Telegram qua Next `after()`. Secrets nhập qua biến môi trường, không gửi vào repo.
 
 **Gate dự kiến:** `pnpm routes:check` đối chiếu phạm vi; không nới allowlist để vượt kiểm tra. Dùng pnpm theo `packageManager` và duy nhất `pnpm-lock.yaml`; chưa chạy gate trong đợt sửa tài liệu này.
 
@@ -49,17 +49,17 @@
 
 ## 5. Giai đoạn D — Tích hợp core kỹ thuật
 
-| Lớp      | Thành phần                                                                  | Tiêu chí                                                                                        |
-| -------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| UI       | Tailwind 4, shadcn/ui, CVA, clsx, tailwind-merge, Lucide                    | Dùng có chọn lọc; không kéo toàn bộ component vào client bundle                                 |
-| Form     | React Hook Form, Zod, Dialog, Sonner                                        | Form ngắn lấy `itemId` và title chuẩn từ dữ liệu đã duyệt                                       |
-| Lead     | Server endpoint `/api/leads` → Supabase → Telegram tùy chọn                 | Secrets chỉ server; validate lại card; Turnstile tùy chọn, xác minh nếu cấu hình; không log PII |
-| Contact  | Floating phone `tel:` và Zalo outbound                                      | Không che nội dung mobile; nhãn accessibility                                                   |
-| SEO      | metadata từng path, canonical, sitemap, robots, structured data khi phù hợp | Chỉ `ready` + approved indexable; HTML semantic, heading đúng                                   |
-| Tracking | Không bật GTM/Ads trong đợt này; cấu hình GTM không dùng sẽ xóa             | Không mang tracking nguồn hoặc PII vào analytics                                                |
-| QA       | ESLint, Prettier, Husky, lint-staged, Vitest, Playwright                    | CI routes/type/lint/test/format:check/build cần xác minh; smoke mobile/desktop theo mốc         |
+| Lớp      | Thành phần                                                                      | Tiêu chí                                                                                               |
+| -------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| UI       | Tailwind 4, shadcn/ui, CVA, clsx, tailwind-merge, Lucide                        | Dùng có chọn lọc; không kéo toàn bộ component vào client bundle                                        |
+| Form     | React Hook Form, Zod, Dialog, Sonner                                            | Form ngắn lấy `itemId` và title chuẩn từ dữ liệu đã duyệt                                              |
+| Lead     | `/api/leads` → Supabase xác nhận ID → `{ok:true}`/toast; Telegram qua `after()` | Secrets chỉ server; validate lại card; không CAPTCHA; giữ origin/honeypot/chống gửi lặp; không log PII |
+| Contact  | Floating phone `tel:` và Zalo outbound                                          | Không che nội dung mobile; nhãn accessibility                                                          |
+| SEO      | metadata từng path, canonical, sitemap, robots, structured data khi phù hợp     | Chỉ `ready` + approved indexable; HTML semantic, heading đúng                                          |
+| Tracking | Không bật GTM/Ads trong đợt này; cấu hình GTM không dùng sẽ xóa                 | Không mang tracking nguồn hoặc PII vào analytics                                                       |
+| QA       | ESLint, Prettier, Husky, lint-staged, Vitest, Playwright                        | CI routes/type/lint/test/format:check/build cần xác minh; smoke mobile/desktop theo mốc                |
 
-**Cần xác minh trước launch:** cấu hình Supabase lưu lead trước Telegram, migration, xử lý Telegram thất bại, rate limit distributed/queue nếu cần, domain, quyền nội dung và policy privacy. Form luôn mở, không có capture flag hoặc gate privacy-ready. Consent thật/phiên bản (mặc định `v1`) vẫn bắt buộc. Turnstile tùy chọn mọi môi trường: đủ cặp khóa và xác minh token nếu cấu hình. Supabase hiện chưa cấu hình; thiếu storage trả `503 lead_storage_unconfigured` trước đọc body, form giữ dữ liệu và báo chưa gửi. Telegram tùy chọn sau lưu bền vững; không dùng cấu hình mẫu làm bằng chứng tích hợp.
+**Blocker DB:** GET Supabase trả `404 PGRST205`, thiếu `public.leads`; người dùng cần chạy `db/setup-leads.sql` trong SQL Editor. **Cần xác minh trước launch:** bảng/quyền sau khi áp dụng SQL, trạng thái thông báo, domain, quyền nội dung và policy privacy. Form luôn mở, không có capture flag hoặc gate privacy-ready. Form chung vẫn bắt buộc consent thật/phiên bản (mặc định `v1`); modal collection `/internet` không có control consent, không suy diễn chấp thuận, lưu cặp consent DB là `null` khi không có consent. CAPTCHA đã gỡ hoàn toàn, giữ validation/origin/honeypot/chống gửi lặp. Thiếu storage trả `503 lead_storage_unconfigured` trước đọc body; lỗi lưu trả `503 lead_intake_unavailable`; form giữ dữ liệu và báo chưa gửi. API chờ `saveLead` trả ID, đăng ký Telegram/cập nhật trạng thái qua Next `after()`, rồi trả ngay `{ok:true}` để form hiện toast thành công. Telegram lỗi không đổi thành công; DB có `failed` khi gửi lỗi/thiếu cấu hình hoặc còn `pending` nếu cập nhật trạng thái lỗi. Không thêm tự gửi lại/queue hoặc rate limit distributed. Biến storage hiện có giá trị, Telegram token/chat ID hiện rỗng; chưa xác minh tích hợp thật.
 
 ## 6. Giai đoạn E — Performance và SEO theo dữ liệu thực
 

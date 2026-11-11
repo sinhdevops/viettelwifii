@@ -7,8 +7,10 @@ flowchart TD
     C --> D["Next App Router + TSX components"]
     D --> E["Content manifest + SEO"]
     D --> F["Floating CTA + form"]
-    F --> G["Server validate + Turnstile"]
-    G --> H["Supabase lưu lead → Telegram thông báo"]
+    F --> G["Server validate + origin + honeypot; không CAPTCHA"]
+    G --> H["Supabase saveLead xác nhận ID"]
+    H --> J["Response ok:true → toast thành công"]
+    H --> K["Next after(): Telegram + cập nhật trạng thái sau response"]
     D --> I["Playwright / kiểm tra thực tế; không bật Ads/GTM"]
 ```
 
@@ -63,7 +65,9 @@ Mỗi `app/**/page.tsx` gọi trực tiếp component của nhóm tương ứng.
 
 `src/lib/page-content-registry.ts` thực tế nhập `src/constants/{home,news,packages}/page-content.ts`, `src/content/internet/page-content.ts` và `src/features/collections/page-content.ts`; xác minh đủ 175 đường dẫn và product ID khi nạp module server. Không giả định tất cả metadata đã chuyển vào `src/content/`. `src/lib/server/page-repository.ts` tra registry trong bộ nhớ (compatibility `site-data.ts` đã được coordinator xóa); không đọc `data/pages.json` hoặc generated capture mỗi request. JSON asset và tỉnh/phường vẫn là dữ liệu kỹ thuật, không mô tả cây giao diện.
 
-Mọi route approved render, kể cả draft; chỉ `ready` được index/sitemap/canonical/JSON-LD. Support có registry riêng 5 route, nên SEO allowlist là 180 chứ không phải sitemap cố định 180. Draft có `noindex,nofollow`, không canonical/JSON-LD. Form luôn mở, không phụ thuộc readiness của privacy hoặc capture flag. Consent thật/phiên bản (mặc định `v1`) vẫn được kiểm tra; Turnstile tùy chọn theo cặp khóa và xác minh token khi cấu hình. Supabase hiện chưa cấu hình: API trả `503 lead_storage_unconfigured` trước đọc body; form giữ dữ liệu, không giả thành công. Telegram tùy chọn sau lưu bền vững. Không có cờ xuất bản/preview cũ.
+Mọi route approved render, kể cả draft; chỉ `ready` được index/sitemap/canonical/JSON-LD. Support có registry riêng 5 route, nên SEO allowlist là 180 chứ không phải sitemap cố định 180. Draft có `noindex,nofollow`, không canonical/JSON-LD. Form luôn mở, không phụ thuộc readiness của privacy hoặc capture flag. Không có cờ xuất bản/preview cũ.
+
+CAPTCHA đã gỡ; giữ validation, origin, honeypot, chống gửi lặp và server-resolved product identity. Form chung yêu cầu consent thật/phiên bản (mặc định `v1`); modal collection `/internet` không có control consent, không suy diễn chấp thuận, lưu `consent_at`/`privacy_policy_version` là `null` khi không có consent. API chờ `saveLead` trả ID, đăng ký Telegram và cập nhật trạng thái bằng Next `after()`, rồi trả ngay `{ok:true}` sau xác nhận DB để form hiện toast thành công. Telegram chạy sau response; lỗi thông báo không đổi kết quả thành công. DB giữ trạng thái `failed` khi gửi lỗi/thiếu cấu hình hoặc còn `pending` nếu cập nhật trạng thái lỗi; không tự gửi lại/queue. Thiếu storage trả `503 lead_storage_unconfigured` trước đọc body; lỗi lưu trả `503 lead_intake_unavailable`; form giữ dữ liệu. Biến storage hiện có giá trị, nhưng Supabase đã trả `404 PGRST205` do thiếu `public.leads`; cần chạy `db/setup-leads.sql` trong SQL Editor rồi xác minh lại; xem `docs/SITE_ENV.md`.
 
 SEO smoke script hiện ở `scripts/seo/smoke-test.mjs`, không còn trong app source. Biến `SITE_CONTACT_EMAIL` vẫn là cấu hình runtime; không xóa chỉ vì cleanup các env không dùng.
 

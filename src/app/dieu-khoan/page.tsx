@@ -10,7 +10,7 @@ export default function TermsPage() {
     <SiteInfoPage
       path="/dieu-khoan"
       title="Điều khoản sử dụng"
-      intro="Điều khoản này đang ở trạng thái bản nháp. Website chưa mở giao dịch công khai hoặc tiếp nhận đăng ký cho đến khi thông tin pháp lý và quyền sử dụng nội dung được xác nhận."
+      intro="Điều khoản đang được rà soát về thông tin pháp lý, quyền sử dụng nội dung và điều kiện tiếp nhận yêu cầu tư vấn."
       sections={[
         {
           heading: "Phạm vi thông tin",
@@ -29,6 +29,17 @@ export default function TermsPage() {
               Việc nhắc đến nhãn hiệu hoặc dịch vụ của nhà mạng nhằm nhận diện
               nội dung. Trang này không thay thế hợp đồng, điều khoản dịch vụ
               hoặc kênh hỗ trợ chính thức của nhà mạng.
+            </p>
+          ),
+        },
+        {
+          heading: "Yêu cầu tư vấn qua biểu mẫu",
+          content: (
+            <p>
+              Website có thể hiển thị biểu mẫu đăng ký tư vấn. Yêu cầu chỉ được
+              tiếp nhận khi máy chủ có cấu hình lưu trữ phù hợp; biểu mẫu không
+              đồng nghĩa với việc một hợp đồng dịch vụ đã được ký kết. Không gửi
+              mật khẩu, mã OTP hoặc giấy tờ tùy thân qua biểu mẫu.
             </p>
           ),
         },

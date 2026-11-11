@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { after, NextRequest, NextResponse } from "next/server";
 import { leadSchema } from "@/lib/lead-schema";
 import { getPage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
@@ -156,36 +156,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "invalid_item" }, { status: 400 });
   }
 
-  const captchaSecret = process.env.TURNSTILE_SECRET_KEY?.trim() ?? "";
-  const captchaSiteKey =
-    process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() ?? "";
-  // Turnstile is optional; when configured, require a complete key pair and
-  // continue verifying every submitted token rather than bypassing CAPTCHA.
-  if (Boolean(captchaSecret) !== Boolean(captchaSiteKey)) {
-    return NextResponse.json(
-      { error: "lead_intake_unavailable" },
-      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
-    );
-  }
-  if (captchaSecret) {
-    const result = await fetch(
-      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-      {
-        method: "POST",
-        body: new URLSearchParams({
-          secret: captchaSecret,
-          response: lead.turnstileToken,
-        }),
-        signal: AbortSignal.timeout(6000),
-        cache: "no-store",
-      },
-    )
-      .then((res) => res.json() as Promise<{ success: boolean }>)
-      .catch(() => ({ success: false }));
-    if (!result.success)
-      return NextResponse.json({ error: "captcha_failed" }, { status: 400 });
-  }
-
   const attribution = Object.entries(lead.attribution)
     .filter(([key]) => allowedAttribution.has(key))
     .map(([key, value]) => `${key}: ${value}`)
@@ -194,7 +164,7 @@ export async function POST(req: NextRequest) {
     "📥 ĐĂNG KÝ MỚI",
     `Khách: ${lead.name}`,
     `Điện thoại: ${lead.phone}`,
-    `Quan tâm: ${productPage.title} (${lead.itemId})`,
+    `Quan tâm: ${productPage.heading} (${lead.itemId})`,
     `Ghi chú: ${lead.note || "—"}`,
     attribution && `Nguồn:\n${attribution}`,
   ]
@@ -202,7 +172,7 @@ export async function POST(req: NextRequest) {
     .join("\n");
   let leadId: string;
   try {
-    leadId = await saveLead(lead, productPage.title, {
+    leadId = await saveLead(lead, productPage.heading, {
       // Do not record acceptance of a policy the Internet modal no longer shows.
       consentAt: lead.privacyConsent ? new Date().toISOString() : null,
       privacyPolicyVersion: lead.privacyConsent
@@ -216,36 +186,38 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
-  let notificationSent = false;
-  if (token && chatId) {
-    try {
-      const response = await fetch(
-        `https://api.telegram.org/bot${token}/sendMessage`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ chat_id: chatId, text: message }),
-          signal: AbortSignal.timeout(8000),
-          cache: "no-store",
-        },
-      );
-      if (response.ok) {
-        const delivered = (await response.json()) as { ok?: boolean };
-        notificationSent = delivered.ok === true;
+  after(async () => {
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+    let notificationSent = false;
+    if (token && chatId) {
+      try {
+        const response = await fetch(
+          `https://api.telegram.org/bot${token}/sendMessage`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ chat_id: chatId, text: message }),
+            signal: AbortSignal.timeout(8000),
+            cache: "no-store",
+          },
+        );
+        if (response.ok) {
+          const delivered = (await response.json()) as { ok?: boolean };
+          notificationSent = delivered.ok === true;
+        }
+      } catch {
+        // The lead is durable even if Telegram is unavailable.
       }
-    } catch {
-      // The lead is durable even if Telegram is unavailable.
     }
-  }
-  try {
-    await setLeadNotificationStatus(
-      leadId,
-      notificationSent ? "sent" : "failed",
-    );
-  } catch {
-    // The saved lead remains pending if the status update fails.
-  }
-  return NextResponse.json({ ok: true, notificationSent });
+    try {
+      await setLeadNotificationStatus(
+        leadId,
+        notificationSent ? "sent" : "failed",
+      );
+    } catch {
+      // The saved lead remains pending if the status update fails.
+    }
+  });
+  return NextResponse.json({ ok: true });
 }

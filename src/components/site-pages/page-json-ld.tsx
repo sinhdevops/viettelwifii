@@ -1,5 +1,5 @@
 import {
-  buildPageJsonLd,
+  buildPageJsonLdGraph,
   seoApprovedRoutes,
   serializeJsonLd,
 } from "@/features/seo/page-seo";
@@ -12,12 +12,12 @@ export function PageJsonLd({
   path: string;
   page: SeoPage | null;
 }) {
-  const jsonLd = buildPageJsonLd({
+  const jsonLd = buildPageJsonLdGraph({
     path,
     page,
     approvedRoutes: seoApprovedRoutes,
   });
-  if (!jsonLd) return null;
+  if (jsonLd.length === 0) return null;
 
   return (
     <script

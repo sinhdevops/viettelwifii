@@ -7,7 +7,10 @@ import {
   getApprovedRoutes,
   getIndexablePages,
 } from "@/lib/server/page-repository";
-import { sourceAsset } from "@/lib/viettelup-source-assets";
+import {
+  optimizedLocalAsset,
+  sourceAsset,
+} from "@/lib/viettelup-source-assets";
 import { LeadDialog } from "@/components/leads/lead-dialog";
 import { Button } from "@/components/ui/button";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -327,7 +330,7 @@ export function HomeContent({ path }: { page: PageContent; path: string }) {
                   >
                     <Image
                       unoptimized
-                      src={item.image}
+                      src={optimizedLocalAsset(item.image)}
                       alt={item.imageAlt}
                       width={252}
                       height={148}

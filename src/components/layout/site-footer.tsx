@@ -44,13 +44,6 @@ export function SiteFooter({
           className={`m-auto flex w-full max-w-[1440px] flex-col justify-around gap-8 px-4 py-[30px] sm:flex-row sm:gap-0 sm:px-0 ${sectionTextClass}`}
         >
           <div>
-            <h5 className="pb-2">
-              <strong>
-                <span className="text-16 font-bold sm:text-[19px]">
-                  Website quản lý bởi Lê Văn Sinh
-                </span>
-              </strong>
-            </h5>
             <Image
               unoptimized
               alt="Viettel"
@@ -61,11 +54,11 @@ export function SiteFooter({
           </div>
           <div>
             <div className="flex gap-1 pb-2">
-              <h5>
+              <h2>
                 <strong>
                   <span className="text-16 sm:text-[19px]">Liên hệ</span>
                 </strong>
-              </h5>
+              </h2>
             </div>
             <div className="text-14 sm:text-16">
               <div className="flex items-center gap-1 fill-black">
@@ -96,13 +89,13 @@ export function SiteFooter({
           </div>
           {visibleFooterLinks.length > 0 && (
             <nav aria-label="Liên kết chân trang">
-              <h5 className="pb-2">
+              <h2 className="pb-2">
                 <strong>
                   <span className="text-16 sm:text-[19px]">
                     Thông tin website
                   </span>
                 </strong>
-              </h5>
+              </h2>
               <ul className="text-14 sm:text-16 flex flex-col gap-1">
                 {visibleFooterLinks.map((item) => (
                   <li key={item.href}>

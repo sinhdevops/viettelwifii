@@ -12,7 +12,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import {
   useId,
   useRef,
@@ -46,7 +45,6 @@ const formButton =
   "h-[38px] w-[125px] rounded-full sm:!ml-0 md:h-[48px] md:w-[127px] md:text-16";
 const description =
   "Nhập thông tin cụ thể của quý khách để chúng tôi có thể hỗ trợ tốt nhất";
-const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim();
 const cityOptions = signupCities.map((city) => ({ value: city, label: city }));
 
 export function CollectionSignupDialog({
@@ -60,8 +58,6 @@ export function CollectionSignupDialog({
   const [selection, setSelection] = useState<SignupSelection>({});
   const [submitting, setSubmitting] = useState(false);
   const pendingRef = useRef(false);
-  const turnstileRef = useRef<TurnstileInstance>(null);
-  const [turnstileToken, setTurnstileToken] = useState("");
   const [city, setCity] = useState("");
   const [ward, setWard] = useState("");
   const [privacyAvailability, setPrivacyAvailability] = useState<
@@ -125,8 +121,14 @@ export function CollectionSignupDialog({
     const code = selection.code?.trim();
     const selectedWard = wards.find((entry) => entry.ward_code === ward)?.name;
     const address = String(form.get("address") ?? "").trim();
-    if (!code || !city || !selectedWard || !address) {
-      toast.error("Vui lòng chọn gói cước và nhập đầy đủ địa chỉ lắp đặt.");
+    if (!code) {
+      toast.error(
+        "Chưa xác định được gói cước. Vui lòng đóng và chọn lại gói.",
+      );
+      return;
+    }
+    if (!city || !selectedWard || !address) {
+      toast.error("Vui lòng nhập đầy đủ địa chỉ lắp đặt.");
       return;
     }
     const url = new URL(window.location.href);
@@ -154,7 +156,6 @@ export function CollectionSignupDialog({
       attribution,
       privacyPolicyVersion,
       company: String(form.get("company") ?? ""),
-      turnstileToken,
     });
     if (!parsed.success) {
       toast.error(parsed.error.issues[0]?.message ?? "Thông tin chưa hợp lệ.");
@@ -172,7 +173,6 @@ export function CollectionSignupDialog({
       const result = (await response.json().catch(() => null)) as {
         ok?: boolean;
         error?: string;
-        notificationSent?: boolean;
       } | null;
       if (!response.ok || result?.ok !== true) {
         if (result?.error === "lead_storage_unconfigured") {
@@ -185,16 +185,12 @@ export function CollectionSignupDialog({
           result?.error === "lead_intake_unavailable" ||
           response.status === 503
         ) {
-          setPrivacyAvailability("unavailable");
-          setPrivacyPolicyVersion("");
           toast.error(
             "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.",
           );
           return;
         }
         if (result?.error === "privacy_policy_version_mismatch") {
-          setPrivacyAvailability("unavailable");
-          setPrivacyPolicyVersion("");
           toast.error(
             "Chính sách bảo mật vừa thay đổi. Biểu mẫu tạm thời chưa khả dụng; vui lòng mở lại để xem bản hiện hành.",
           );
@@ -203,29 +199,19 @@ export function CollectionSignupDialog({
         const message =
           result?.error === "invalid_item"
             ? "Gói cước chưa được liên kết đúng. Vui lòng chọn lại gói."
-            : result?.error === "captcha_failed"
-              ? "Xác minh đã hết hạn. Vui lòng xác minh lại."
-              : "Chưa gửi được đăng ký. Vui lòng thử lại.";
+            : "Chưa gửi được đăng ký. Vui lòng thử lại.";
         toast.error(message);
         return;
       }
       setOpen(false);
       setPrivacyAvailability("checking");
       setPrivacyPolicyVersion("");
-      if (result?.notificationSent === true) {
-        toast.success("Đã gửi đăng ký thành công. Chúng tôi sẽ liên hệ sớm!");
-      } else {
-        toast.warning(
-          "Đã nhận đăng ký nhưng chưa gửi được thông báo. Vui lòng liên hệ hỗ trợ để xác nhận.",
-        );
-      }
+      toast.success("Đã gửi đăng ký thành công. Chúng tôi sẽ liên hệ sớm!");
     } catch {
       toast.error(
         "Chưa nhận được xác nhận từ máy chủ. Vui lòng kiểm tra trước khi gửi lại.",
       );
     } finally {
-      setTurnstileToken("");
-      turnstileRef.current?.reset();
       pendingRef.current = false;
       setSubmitting(false);
     }
@@ -251,7 +237,6 @@ export function CollectionSignupDialog({
         if (!nextOpen) {
           setPrivacyAvailability("checking");
           setPrivacyPolicyVersion("");
-          setTurnstileToken("");
         }
       }}
     >
@@ -272,7 +257,6 @@ export function CollectionSignupDialog({
             setWard("");
             setPrivacyAvailability("checking");
             setPrivacyPolicyVersion("");
-            setTurnstileToken("");
             if (internetPage) {
               event.preventDefault();
               void openInternetSignup();
@@ -459,15 +443,6 @@ export function CollectionSignupDialog({
                   />
                 </div>
               </div>
-              {internetPage && siteKey && (
-                <Turnstile
-                  ref={turnstileRef}
-                  siteKey={siteKey}
-                  onSuccess={setTurnstileToken}
-                  onExpire={() => setTurnstileToken("")}
-                  onError={() => setTurnstileToken("")}
-                />
-              )}
               <input
                 name="company"
                 tabIndex={-1}
@@ -498,7 +473,7 @@ export function CollectionSignupDialog({
                   size="unstyled"
                   className={`${action} bg-primary hover:bg-primary-dark text-gray-50 disabled:cursor-not-allowed disabled:opacity-50 ${formButton}`}
                   type="submit"
-                  disabled={submitting || Boolean(siteKey && !turnstileToken)}
+                  disabled={submitting}
                 >
                   {submitting ? "ĐANG GỬI…" : "XÁC NHẬN"}
                 </AppButton>

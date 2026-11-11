@@ -31,7 +31,7 @@ Trong `.env.local` cấu hình `NEXT_PUBLIC_SITE_URL` và thông tin liên hệ.
 
 Lập bảng audit 175 route sản phẩm từ manifest hiện có: `pnpm routes:audit`. Kết quả là `reports/clone-checklist.csv`, dùng để đánh dấu baseline/asset/interactions/port/review từng trang.
 
-Domain thật chỉ là một phần chuẩn bị production; vẫn cần xác minh quyền nội dung, thông tin sản phẩm, pháp lý và hạ tầng. Lead form luôn mở, không dùng `LEAD_CAPTURE_ENABLED` hoặc readiness của privacy làm gate. Consent thật vẫn bắt buộc; `PRIVACY_POLICY_VERSION` mặc định `v1` nếu thiếu/placeholder. Turnstile tùy chọn: nếu cấu hình phải đủ cặp khóa và xác minh token. Gửi thật cần Supabase (hiện chưa cấu hình); thiếu storage API trả `503 lead_storage_unconfigured` trước đọc body, form giữ dữ liệu và báo chưa gửi. Telegram tùy chọn sau lưu bền vững. Không chạy `output: "export"` vì API lead cần server. Không tự deploy, mở index hay gửi lead thật.
+Domain thật chỉ là một phần chuẩn bị production; vẫn cần xác minh quyền nội dung, thông tin sản phẩm, pháp lý và hạ tầng. Lead form luôn mở, không dùng `LEAD_CAPTURE_ENABLED` hoặc readiness của privacy làm gate. Form chung vẫn bắt buộc consent thật; riêng modal collection `/internet` không có control consent và không suy diễn chấp thuận: khi không có consent, `consent_at`/`privacy_policy_version` lưu `null`. `PRIVACY_POLICY_VERSION` mặc định `v1` nếu thiếu/placeholder. CAPTCHA đã được gỡ, gồm widget, token, schema, server verify, dependency và biến env mẫu; giữ validation, origin, honeypot và chống gửi lặp. Gửi thật cần Supabase; Supabase đã trả `404 PGRST205` do thiếu bảng `public.leads`; cần chạy `db/setup-leads.sql` trong SQL Editor rồi xác minh lại. Thiếu storage API trả `503 lead_storage_unconfigured` trước đọc body; lỗi lưu trả `503 lead_intake_unavailable`; form giữ dữ liệu và báo chưa gửi. Không chạy `output: "export"` vì API lead cần server. Không tự deploy, mở index hay gửi lead thật.
 
 Domain được khai báo một lần bằng `NEXT_PUBLIC_SITE_URL` trong env. Code gọi `siteConfig.origin`, `siteConfig.hostname` hoặc `siteConfig.url(path)` từ `src/lib/site-config.ts`; xem [hướng dẫn env](docs/SITE_ENV.md). Sau khi đổi giá trị cần restart dev hoặc build lại vì Next đóng gói biến public khi build.
 
@@ -54,7 +54,7 @@ App Router được chia rõ: `/internet/[code]`, `/goi-cuoc-viettel/[code]`, `/
 
 - TypeScript, Next.js 16.4, App Router, Tailwind CSS 4, ESLint flat config, Prettier, Husky, lint-staged, Vitest, Playwright.
 - shadcn-style button/dialog, CVA/clsx/tailwind-merge, Lucide, Sonner.
-- React Hook Form + Zod; form gắn `itemId`, Zod server revalidate, Cloudflare Turnstile server verify, Telegram Bot API server-only.
+- React Hook Form + Zod; form gắn `itemId`, Zod server revalidate, không CAPTCHA; Telegram Bot API server-only qua Next `after()` sau xác nhận lưu DB.
 - Floating phone/Zalo; không đưa PII vào telemetry. GTM chưa được tích hợp; cấu hình GTM không dùng sẽ được coordinator xóa, không bật tracking trong đợt này.
 - SEO metadata/canonical và JSON-LD chỉ cho route `ready`; draft render nhưng noindex, không canonical/JSON-LD; sitemap lọc theo readiness.
 
@@ -70,7 +70,7 @@ Shadcn component khác **chỉ thêm khi clone archetype cần**: `pnpm dlx shad
 
 - Đã capture 175 HTML và local hóa 699 asset; các component TSX vẫn cần nghiệm thu theo từng nhóm. Không coi toàn bộ route đã hoàn thiện chỉ dựa vào HTTP smoke.
 - Đã có so sánh Playwright mobile/tablet/desktop theo lô tại `reports/integration/` và `reports/qa/`; các sai khác/tương tác còn lại được ghi tại Boardroom.
-- Lead được lưu vào Supabase trước khi gửi Telegram. Cần cấu hình `SUPABASE_URL`, `SUPABASE_SECRET_KEY` ở môi trường server và chạy `db/001_create_leads.sql` trong Supabase SQL Editor trước khi nhận lead. Nếu Telegram lỗi, API vẫn xác nhận lead đã lưu; kiểm tra các bản ghi `telegram_status = 'failed'` hoặc `pending` trong database. Chưa có cơ chế tự gửi lại Telegram hoặc rate limit distributed; cần bổ sung nếu lượng Ads lớn.
+- API chờ `saveLead` trả ID từ Supabase, đăng ký gửi Telegram và cập nhật trạng thái bằng Next `after()`, rồi trả ngay `{ok:true}` sau xác nhận DB để form hiện toast thành công. Telegram không chặn response; lỗi thông báo không đổi kết quả thành công. `SUPABASE_URL`/`SUPABASE_SECRET_KEY` trong `.env.local` hiện có giá trị, nhưng GET Supabase với cả hai biến thể auth trả `404 PGRST205`: thiếu bảng `public.leads`. Người dùng cần chạy `db/setup-leads.sql` (ghép `db/001_create_leads.sql` → `db/002_lead_privacy_rls.sql`) trong Supabase SQL Editor rồi xác minh lại bảng/quyền. `TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID` hiện rỗng; không khẳng định đã kiểm tích hợp thật. Kiểm tra `telegram_status` bằng quyền DB phù hợp: `sent` khi gửi thành công, `failed` khi gửi lỗi/thiếu cấu hình; nếu cập nhật trạng thái lỗi, bản ghi còn `pending`. Không có tự gửi lại, queue hoặc rate limit distributed.
 - SEO và CWV chỉ có nền kỹ thuật, chưa thể đánh giá kết quả khi chưa có trang thật và deployment thật.
 
 ## Security

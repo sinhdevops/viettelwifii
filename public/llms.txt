@@ -1,0 +1,14 @@
+# ViettelWiFii.vn
+
+Vietnamese-language reference pages for mobile data plans and home Internet services. Published prices, promotions and availability must be confirmed with the network operator before registration. Historical news may describe expired offers.
+
+## Main sections
+- [Home](https://viettelwifii.vn/)
+- [Mobile plans](https://viettelwifii.vn/goi-cuoc-viettel)
+- [Home Internet](https://viettelwifii.vn/internet)
+- [News archive](https://viettelwifii.vn/tin-tuc)
+- [About and corrections](https://viettelwifii.vn/gioi-thieu)
+- [Contact](https://viettelwifii.vn/lien-he)
+- [Privacy information](https://viettelwifii.vn/chinh-sach-bao-mat)
+
+The website's editorial sourcing, current tariff confirmation, and permission to reuse some reference material remain under review. The site does not replace Viettel's official service channels.

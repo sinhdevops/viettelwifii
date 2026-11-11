@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SiteInfoPage } from "@/components/site-pages/site-info-page";
 import { metadataForSiteRoute } from "@/lib/site-page-metadata";
 
@@ -42,6 +43,26 @@ export default function AboutPage() {
               nhà mạng. Vui lòng kiểm tra thông tin hiện hành trực tiếp với nhà
               mạng trước khi thực hiện giao dịch.
             </p>
+          ),
+        },
+        {
+          heading: "Cách kiểm tra và điều chỉnh thông tin",
+          content: (
+            <>
+              <p>
+                Nội dung trên website được tổng hợp để tham khảo. Các thông tin
+                về giá, thời hạn, ưu đãi, khu vực áp dụng và cú pháp đăng ký cần
+                được đối chiếu với thông báo hiện hành của nhà mạng trước khi sử
+                dụng. Bài viết cũ có thể mô tả chương trình đã kết thúc.
+              </p>
+              <p>
+                Nếu phát hiện thông tin thiếu chính xác, trùng lặp hoặc tài
+                nguyên có vấn đề về quyền sử dụng, vui lòng phản hồi qua trang{" "}
+                <Link href="/lien-he">Liên hệ</Link>, kèm đường dẫn trang và nội
+                dung cần kiểm tra. Người quản lý sẽ rà soát trước khi sửa hoặc
+                gỡ nội dung.
+              </p>
+            </>
           ),
         },
       ]}

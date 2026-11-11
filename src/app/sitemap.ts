@@ -27,5 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const supportPaths = indexableSiteRoutes.filter(isSeoRouteAllowed);
 
   const paths = new Set([...productPaths, ...supportPaths]);
+  // No verified modification date exists in the content contract. Omit lastModified;
+  // neither source.capturedAt nor article publication dates establish a page edit.
   return [...paths].map((path) => ({ url: new URL(path, origin).href }));
 }

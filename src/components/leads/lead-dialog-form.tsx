@@ -3,7 +3,6 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { useForm, useWatch, type FieldErrors } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { toast } from "sonner";
 import {
   DialogContent,
@@ -18,8 +17,6 @@ import {
 } from "@/lib/lead-schema";
 import { trackEvent } from "@/lib/analytics";
 
-const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim();
-
 export function LeadDialogForm({
   itemId,
   itemTitle,
@@ -32,13 +29,11 @@ export function LeadDialogForm({
   onClose: () => void;
 }) {
   const formId = useId();
-  const [turnstileToken, setTurnstileToken] = useState("");
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [privacyAvailability, setPrivacyAvailability] = useState<
     "checking" | "available" | "unavailable"
   >("checking");
   const pendingRef = useRef(false);
-  const turnstileRef = useRef<TurnstileInstance>(null);
   const {
     register,
     handleSubmit,
@@ -59,7 +54,6 @@ export function LeadDialogForm({
       privacyConsent: false,
       privacyPolicyVersion: "",
       company: "",
-      turnstileToken: "",
     },
   });
 
@@ -136,7 +130,6 @@ export function LeadDialogForm({
           itemTitle,
           pagePath: sourcePath,
           attribution,
-          turnstileToken,
         }),
         signal: AbortSignal.timeout(15000),
       });
@@ -154,21 +147,15 @@ export function LeadDialogForm({
           result?.error === "lead_intake_unavailable" ||
           response.status === 503
         ) {
-          setPrivacyAvailability("unavailable");
           throw new Error(
             "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.",
           );
         }
         if (result?.error === "privacy_policy_version_mismatch") {
-          setPrivacyAvailability("unavailable");
           throw new Error(
             "Chính sách bảo mật vừa thay đổi. Biểu mẫu tạm thời chưa khả dụng; vui lòng tải lại trang để xem bản hiện hành.",
           );
         }
-        if (result?.error === "captcha_failed")
-          throw new Error(
-            "Mã xác minh đã hết hạn hoặc không hợp lệ. Vui lòng xác minh lại.",
-          );
         throw new Error(
           "Chưa xác nhận được đăng ký. Vui lòng kiểm tra và thử lại.",
         );
@@ -180,13 +167,11 @@ export function LeadDialogForm({
       toast.success("Đã gửi đăng ký. Chúng tôi sẽ liên hệ sớm!");
       reset();
       onClose();
-      setTurnstileToken("");
     } catch (error) {
       const knownErrors = [
         "Chưa cấu hình nơi nhận đăng ký. Vui lòng gọi hotline để được hỗ trợ; thông tin chưa được gửi.",
         "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.",
         "Chính sách bảo mật vừa thay đổi. Biểu mẫu tạm thời chưa khả dụng; vui lòng tải lại trang để xem bản hiện hành.",
-        "Mã xác minh đã hết hạn hoặc không hợp lệ. Vui lòng xác minh lại.",
         "Chưa xác nhận được đăng ký. Vui lòng kiểm tra và thử lại.",
       ];
       const message =
@@ -196,9 +181,6 @@ export function LeadDialogForm({
       setStatusMessage(message);
       toast.error(message);
     } finally {
-      // Turnstile tokens can be single-use after server validation, including failed delivery.
-      setTurnstileToken("");
-      turnstileRef.current?.reset();
       pendingRef.current = false;
     }
   }
@@ -308,10 +290,6 @@ export function LeadDialogForm({
                 shouldValidate: true,
                 shouldDirty: true,
               });
-              if (!event.target.checked) {
-                setTurnstileToken("");
-                turnstileRef.current?.reset();
-              }
             }}
             type="checkbox"
             required
@@ -339,31 +317,6 @@ export function LeadDialogForm({
             {errors.privacyConsent.message}
           </p>
         )}
-        {siteKey && privacyConsent && (
-          <Turnstile
-            ref={turnstileRef}
-            siteKey={siteKey}
-            onSuccess={(token) => {
-              setTurnstileToken(token);
-              setStatusMessage((message) =>
-                message?.startsWith("Mã xác minh") ||
-                message?.startsWith("Không tải được xác minh")
-                  ? null
-                  : message,
-              );
-            }}
-            onExpire={() => {
-              setTurnstileToken("");
-              setStatusMessage(
-                "Mã xác minh đã hết hạn. Vui lòng xác minh lại.",
-              );
-            }}
-            onError={() => {
-              setTurnstileToken("");
-              setStatusMessage("Không tải được xác minh. Vui lòng thử lại.");
-            }}
-          />
-        )}
         {statusMessage && (
           <p role="alert" className="text-sm text-red-700">
             {statusMessage}
@@ -371,11 +324,7 @@ export function LeadDialogForm({
         )}
         <Button
           type="submit"
-          disabled={
-            isSubmitting ||
-            !privacyConsent ||
-            Boolean(siteKey && !turnstileToken)
-          }
+          disabled={isSubmitting || !privacyConsent}
           className="w-full"
         >
           {isSubmitting ? "Đang gửi…" : "Gửi đăng ký"}

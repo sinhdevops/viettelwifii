@@ -41,7 +41,6 @@ export const leadSchema = z
         /^[A-Za-z0-9][A-Za-z0-9._-]*$/,
         "Phiên bản Chính sách bảo mật không hợp lệ",
       ),
-    turnstileToken: z.string().max(3000).default(""),
     company: z.string().max(100).default(""), // honeypot
   })
   .refine(

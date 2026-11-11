@@ -21,9 +21,9 @@ function KhuyenMaiNapTheViettel207Introduction() {
         thực hiện nạp tiền vào ngày 25/07/2024. Chương trình triển khai trên
         Toàn Quốc.
       </p>
-      <h3 className="text-20 md:text-24 py-3 leading-[28px] font-bold md:leading-[32px]">
+      <h2 className="text-20 md:text-24 py-3 leading-[28px] font-bold md:leading-[32px]">
         <b>Chi tiết chương trình khuyến mại:</b>
-      </h3>
+      </h2>
       <ul className="list-disc py-3 pl-7 md:py-4 md:pl-10">
         <li>
           <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">

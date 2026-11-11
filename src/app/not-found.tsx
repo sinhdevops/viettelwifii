@@ -3,6 +3,11 @@ import { ArrowLeft } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button-link";
 import { StatusScreen } from "@/components/site/status-screen";
 
+export const metadata = {
+  title: "Không tìm thấy trang | ViettelWiFii.vn",
+  robots: { index: false, follow: false },
+};
+
 export default function NotFound() {
   return (
     <StatusScreen

@@ -81,7 +81,7 @@ export function readSignupSelection(
       card.classList.contains("internet-card")
     ) {
       return {
-        code: card.querySelector("span.border-l-2")?.textContent?.trim(),
+        code: card.querySelector(".border-l-2")?.textContent?.trim(),
         region:
           card
             .querySelector('[role="radio"][aria-checked="true"]')

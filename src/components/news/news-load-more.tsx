@@ -1,42 +1,26 @@
-"use client";
-
-import { Button as AppButton } from "@/components/ui/button";
-import { useState, type ReactNode } from "react";
+import type { ReactNode } from "react";
+import styles from "./news-load-more.module.css";
 
 const batchSize = 6;
 
+/** Native disclosure keeps every article link in server HTML, even without JS. */
 export function NewsLoadMore({ items }: { items: readonly ReactNode[] }) {
-  const [visibleCount, setVisibleCount] = useState(0);
-
   if (items.length === 0) return null;
 
-  return (
-    <>
-      <div
-        id="news-additional-cards"
-        className="flex w-full basis-full flex-col gap-4 md:flex-row md:flex-wrap md:gap-6"
-      >
-        {items.slice(0, visibleCount)}
-      </div>
-      {visibleCount < items.length ? (
-        <div className="flex basis-full justify-center pt-6">
-          <AppButton
-            variant="package"
-            size="card"
-            type="button"
-            aria-controls="news-additional-cards"
-            aria-expanded={visibleCount > 0}
-            data-source-news-latest-more
-            onClick={() =>
-              setVisibleCount((current) =>
-                Math.min(current + batchSize, items.length),
-              )
-            }
-          >
-            Xem thêm
-          </AppButton>
+  function renderBatch(offset: number): ReactNode {
+    const end = Math.min(offset + batchSize, items.length);
+    return (
+      <details className={styles.disclosure}>
+        <summary className={styles.summary}>
+          Xem thêm {end - offset} bài viết
+        </summary>
+        <div className="flex w-full flex-col gap-4 md:flex-row md:flex-wrap md:gap-6">
+          {items.slice(offset, end)}
+          {end < items.length ? renderBatch(end) : null}
         </div>
-      ) : null}
-    </>
-  );
+      </details>
+    );
+  }
+
+  return renderBatch(0);
 }

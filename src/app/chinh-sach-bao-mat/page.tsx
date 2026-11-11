@@ -9,20 +9,29 @@ export default function PrivacyPolicyPage() {
     <SiteInfoPage
       path="/chinh-sach-bao-mat"
       title="Chính sách bảo mật"
-      intro="Chính sách này chưa được phê duyệt. Biểu mẫu thu thập thông tin sẽ được tắt cho đến khi người kiểm soát dữ liệu, mục đích, thời hạn lưu trữ và quyền của người dùng được xác nhận đầy đủ."
+      intro="Thông tin về việc tiếp nhận dữ liệu qua biểu mẫu đang được rà soát. Bản chính sách hiện tại chưa được người quản lý phê duyệt đầy đủ."
       sections={[
         {
-          heading: "Trạng thái xử lý dữ liệu",
+          heading: "Biểu mẫu liên hệ hiện tại",
           content: (
-            <p>
-              Không gửi thông tin cá nhân qua biểu mẫu khi trang này còn hiển
-              thị trạng thái bản nháp. Không có dữ liệu nào được lưu theo chính
-              sách này trước khi chính sách được hoàn thiện và công bố.
-            </p>
+            <>
+              <p>
+                Các biểu mẫu đăng ký có thể hiển thị trên website. Khi dịch vụ
+                lưu trữ thông tin liên hệ chưa được cấu hình, máy chủ từ chối
+                tiếp nhận yêu cầu. Việc biểu mẫu hiển thị không bảo đảm rằng
+                thông tin gửi đi đã được tiếp nhận thành công.
+              </p>
+              <p>
+                Nếu biểu mẫu hoạt động, dữ liệu được yêu cầu có thể gồm họ tên,
+                số điện thoại và địa chỉ cần lắp đặt, cùng thông tin về trang
+                hoặc gói cước mà bạn đang quan tâm. Chỉ gửi thông tin khi đã đọc
+                và đồng ý với nội dung áp dụng tại thời điểm gửi.
+              </p>
+            </>
           ),
         },
         {
-          heading: "Thông tin phải được công bố trước khi bật biểu mẫu",
+          heading: "Thông tin còn chờ xác nhận",
           content: (
             <ul className="list-disc space-y-2 pl-6">
               <li>
@@ -45,10 +54,9 @@ export default function PrivacyPolicyPage() {
           heading: "Phê duyệt",
           content: (
             <p>
-              Nội dung này là khung nháp, không phải tư vấn pháp lý hay chính
-              sách đã được phê duyệt. Biểu mẫu chỉ được bật sau khi thông tin
-              còn thiếu được cung cấp, chính sách được rà soát và phiên bản áp
-              dụng được cấu hình.
+              Đây là bản thông tin tạm thời, chưa thay thế chính sách bảo mật
+              đầy đủ đã được phê duyệt. Người quản lý cần hoàn tất các mục còn
+              thiếu trước khi sử dụng biểu mẫu để tiếp nhận dữ liệu thực tế.
             </p>
           ),
         },

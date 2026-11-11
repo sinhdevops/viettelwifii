@@ -19,7 +19,7 @@ Registry runtime sản phẩm là `src/lib/approved-routes.ts`; `data/approved-r
 
 - Mọi route trong hai registry đều render ở mọi môi trường, không dùng cờ preview hoặc xuất bản cũ.
 - Chỉ route `ready` được index và vào sitemap. Draft render với `noindex,nofollow`, không canonical và không JSON-LD.
-- Readiness của privacy không chặn form: form luôn mở. Gửi thật cần Supabase (hiện chưa cấu hình); consent/phiên bản vẫn được kiểm tra, Turnstile tùy chọn theo cặp khóa, Telegram tùy chọn sau lưu bền vững.
+- Readiness của privacy không chặn form: form luôn mở, CAPTCHA đã gỡ; giữ validation/origin/honeypot/chống gửi lặp và định danh sản phẩm. Form chung vẫn yêu cầu consent thật/phiên bản; modal collection `/internet` không có control consent, không suy diễn chấp thuận, lưu cặp consent DB là `null` khi không có consent. Gửi thật cần Supabase: biến storage hiện có giá trị nhưng Supabase trả `404 PGRST205` do thiếu `public.leads`; cần chạy `db/setup-leads.sql` trong SQL Editor rồi xác minh lại. API chờ `saveLead` trả ID, đăng ký Telegram/cập nhật trạng thái qua Next `after()`, rồi trả ngay `{ok:true}` để form hiện toast thành công. Telegram lỗi không đổi thành công; `failed`/`pending` vẫn theo dõi trong DB, không tự gửi lại/queue. Xem `docs/SITE_ENV.md`.
 - Route ngoài allowlist trả 404. Không crawl link để tự thêm scope; đích ngoài phạm vi chỉ dùng external link đã xác minh khi phù hợp.
 - `generateStaticParams` dùng các route được duyệt, không lọc draft khỏi render. Sitemap lọc readiness độc lập.
 

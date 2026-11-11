@@ -1,10 +1,18 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { NextRequest } from "next/server";
+import { leadSchema } from "../src/lib/lead-schema";
 
 vi.mock("server-only", () => ({}));
+const postResponse = vi.hoisted(() => ({
+  queue: [] as (() => Promise<void>)[],
+}));
 vi.mock("next/server", async (importOriginal) => {
   const actual = await importOriginal<typeof import("next/server")>();
-  return { ...actual, connection: async () => {} };
+  return {
+    ...actual,
+    connection: async () => {},
+    after: (callback: () => Promise<void>) => postResponse.queue.push(callback),
+  };
 });
 const store = vi.hoisted(() => ({
   configured: vi.fn(() => true),
@@ -30,8 +38,11 @@ const payload = {
   privacyConsent: true,
   privacyPolicyVersion: "v1",
   company: "",
-  turnstileToken: "",
 };
+
+async function drainAfter() {
+  while (postResponse.queue.length) await postResponse.queue.shift()!();
+}
 
 function setup() {
   vi.stubEnv("NEXT_PUBLIC_SITE_URL", "http://localhost:3000");
@@ -57,6 +68,7 @@ function request(body: unknown = payload) {
 }
 
 afterEach(() => {
+  postResponse.queue.length = 0;
   vi.unstubAllGlobals();
   vi.unstubAllEnvs();
   vi.resetAllMocks();
@@ -99,45 +111,129 @@ describe("Internet collection lead delivery without manual gates", () => {
     });
   });
 
-  it("stores consent before Telegram and retains the lead when notification fails", async () => {
+  it("responds only after database confirmation and before delayed Telegram resolves", async () => {
     setup();
     vi.stubEnv("TELEGRAM_BOT_TOKEN", "test-token");
     vi.stubEnv("TELEGRAM_CHAT_ID", "test-chat");
-    const send = vi
-      .fn()
-      .mockResolvedValueOnce(Response.json({ ok: true }))
-      .mockResolvedValueOnce(Response.json({ ok: false }));
+    let save!: (id: string) => void;
+    store.saveLead.mockReturnValue(
+      new Promise<string>((resolve) => {
+        save = resolve;
+      }),
+    );
+    let deliver!: (response: Response) => void;
+    const send = vi.fn(
+      () =>
+        new Promise<Response>((resolve) => {
+          deliver = resolve;
+        }),
+    );
     vi.stubGlobal("fetch", send);
-    expect(await (await POST(request())).json()).toEqual({
-      ok: true,
-      notificationSent: true,
+    let responded = false;
+    const responseReady = POST(request()).then((response) => {
+      responded = true;
+      return response;
     });
-    expect(store.saveLead).toHaveBeenCalledBefore(send);
+    await vi.waitFor(() => expect(store.saveLead).toHaveBeenCalledOnce());
+    expect(responded).toBe(false);
+    expect(postResponse.queue).toHaveLength(0);
+    expect(send).not.toHaveBeenCalled();
+    save("lead-1");
+    const response = await responseReady;
+    expect(response.status).toBe(200);
+    expect(await response.clone().json()).toEqual({ ok: true });
+    expect(postResponse.queue).toHaveLength(1);
+    expect(send).not.toHaveBeenCalled();
+    expect(store.setLeadNotificationStatus).not.toHaveBeenCalled();
     expect(store.saveLead.mock.calls[0][2]).toEqual({
       consentAt: expect.any(String),
       privacyPolicyVersion: "v1",
     });
-    expect(JSON.parse(send.mock.calls[0][1].body).text).toContain("MESHVT3");
-    expect(await (await POST(request())).json()).toEqual({
-      ok: true,
-      notificationSent: false,
-    });
-    expect(store.setLeadNotificationStatus).toHaveBeenLastCalledWith(
+    const draining = drainAfter();
+    expect(send).toHaveBeenCalledOnce();
+    expect(store.saveLead).toHaveBeenCalledBefore(send);
+    expect(send.mock.calls[0]).toEqual([
+      "https://api.telegram.org/bottest-token/sendMessage",
+      expect.objectContaining({
+        method: "POST",
+        body: expect.stringContaining("MESHVT3"),
+      }),
+    ]);
+    expect(store.setLeadNotificationStatus).not.toHaveBeenCalled();
+    deliver(Response.json({ ok: true }));
+    await draining;
+    expect(store.setLeadNotificationStatus).toHaveBeenCalledWith(
       "lead-1",
-      "failed",
+      "sent",
     );
+    expect(await response.json()).toEqual({ ok: true });
   });
 
-  it("allows production without optional CAPTCHA when neither key is configured", async () => {
-    setup();
-    vi.stubEnv("NODE_ENV", "production");
-    const send = vi.fn();
-    vi.stubGlobal("fetch", send);
-    const response = await POST(request());
-    expect(response.status).toBe(200);
-    expect(store.saveLead).toHaveBeenCalledOnce();
-    expect(send).not.toHaveBeenCalled();
-  });
+  it.each([
+    ["", ""],
+    ["stale-secret", ""],
+    ["", "stale-site"],
+    ["stale-secret", "stale-site"],
+  ])(
+    "ignores stale CAPTCHA keys (%s, %s) in production without requiring a token",
+    async (secret, siteKey) => {
+      setup();
+      vi.stubEnv("NODE_ENV", "production");
+      vi.stubEnv("TURNSTILE_SECRET_KEY", secret);
+      vi.stubEnv("NEXT_PUBLIC_TURNSTILE_SITE_KEY", siteKey);
+      const send = vi.fn();
+      vi.stubGlobal("fetch", send);
+      expect(leadSchema.parse(payload)).not.toHaveProperty("turnstileToken");
+      const response = await POST(request());
+      expect(response.status).toBe(200);
+      expect(await response.json()).toEqual({ ok: true });
+      expect(store.saveLead).toHaveBeenCalledOnce();
+      await drainAfter();
+      expect(send).not.toHaveBeenCalled();
+    },
+  );
+
+  it.each([
+    "sent",
+    "rejected",
+    "http-error",
+    "network-error",
+    "bad-json",
+    "missing-config",
+  ])(
+    "keeps saved success after Telegram %s and status-update failure",
+    async (outcome) => {
+      setup();
+      if (outcome !== "missing-config") {
+        vi.stubEnv("TELEGRAM_BOT_TOKEN", "test-token");
+        vi.stubEnv("TELEGRAM_CHAT_ID", "test-chat");
+      }
+      const send = vi.fn().mockImplementation(async () => {
+        if (outcome === "network-error") throw new Error("offline");
+        if (outcome === "bad-json") return new Response("not json");
+        return Response.json(
+          { ok: outcome === "sent" },
+          { status: outcome === "http-error" ? 502 : 200 },
+        );
+      });
+      vi.stubGlobal("fetch", send);
+      store.setLeadNotificationStatus.mockRejectedValue(
+        new Error("status unavailable"),
+      );
+      const response = await POST(request());
+      expect(response.status).toBe(200);
+      expect(await response.clone().json()).toEqual({ ok: true });
+      expect(store.setLeadNotificationStatus).not.toHaveBeenCalled();
+      await expect(drainAfter()).resolves.toBeUndefined();
+      expect(store.setLeadNotificationStatus).toHaveBeenCalledWith(
+        "lead-1",
+        outcome === "sent" ? "sent" : "failed",
+      );
+      expect(send).toHaveBeenCalledTimes(outcome === "missing-config" ? 0 : 1);
+      expect(store.saveLead).toHaveBeenCalledOnce();
+      expect(await response.json()).toEqual({ ok: true });
+    },
+  );
 
   it("rejects missing storage before reading the body, without pretending to save", async () => {
     setup();
@@ -153,10 +249,14 @@ describe("Internet collection lead delivery without manual gates", () => {
     expect(req.bodyUsed).toBe(false);
     expect(store.saveLead).not.toHaveBeenCalled();
     expect(send).not.toHaveBeenCalled();
+    expect(postResponse.queue).toHaveLength(0);
+    expect(store.setLeadNotificationStatus).not.toHaveBeenCalled();
   });
 
   it("does not confirm or notify when the database fails", async () => {
     setup();
+    vi.stubEnv("TELEGRAM_BOT_TOKEN", "test-token");
+    vi.stubEnv("TELEGRAM_CHAT_ID", "test-chat");
     store.saveLead.mockRejectedValue(new Error("database unavailable"));
     const send = vi.fn();
     vi.stubGlobal("fetch", send);
@@ -164,6 +264,8 @@ describe("Internet collection lead delivery without manual gates", () => {
     expect(response.status).toBe(503);
     expect(await response.json()).toEqual({ error: "lead_intake_unavailable" });
     expect(send).not.toHaveBeenCalled();
+    expect(postResponse.queue).toHaveLength(0);
+    expect(store.setLeadNotificationStatus).not.toHaveBeenCalled();
   });
 
   it("rejects unknown products before storing", async () => {
@@ -248,19 +350,25 @@ describe("Internet collection lead delivery without manual gates", () => {
     expect(store.saveLead).not.toHaveBeenCalled();
   });
 
-  it("verifies CAPTCHA when configured and rejects incomplete keys", async () => {
-    setup();
-    vi.stubEnv("TURNSTILE_SECRET_KEY", "test-secret");
-    expect((await POST(request())).status).toBe(503);
-    vi.stubEnv("NEXT_PUBLIC_TURNSTILE_SITE_KEY", "test-site-key");
-    const send = vi.fn().mockResolvedValue(Response.json({ success: false }));
-    vi.stubGlobal("fetch", send);
-    const response = await POST(request());
-    expect(response.status).toBe(400);
-    expect(await response.json()).toEqual({ error: "captcha_failed" });
-    expect(send.mock.calls[0][0]).toBe(
-      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-    );
-    expect(store.saveLead).not.toHaveBeenCalled();
-  });
+  it.each(["MESHVT01", "NETVT01", "NETVT1", "MESHVT3"])(
+    "accepts the actual ready Internet collection plan %s",
+    async (code) => {
+      setup();
+      const response = await POST(
+        request({
+          ...payload,
+          itemId: `/internet/${code}`,
+          itemTitle: "untrusted title",
+          phone: "+84 900 000 000",
+        }),
+      );
+      expect(response.status).toBe(200);
+      expect(await response.json()).toEqual({ ok: true });
+      expect(store.saveLead).toHaveBeenCalledWith(
+        expect.objectContaining({ itemId: `/internet/${code}` }),
+        expect.stringContaining(code),
+        expect.any(Object),
+      );
+    },
+  );
 });

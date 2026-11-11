@@ -3,12 +3,14 @@
 import { sourceAsset } from "@/lib/viettelup-source-assets";
 import { additionalNewsCards } from "@/features/news/load-more-news-data";
 import { Fragment } from "react";
-import SourceMobileListingCards from "./source-mobile-listing-cards";
+import Image from "next/image";
+import { mobileNewsCards } from "@/constants/news/listing-records";
 import { NewsCard } from "./news-card";
 import { NewsLoadMore } from "./news-load-more";
 import { newsCards } from "@/constants/news/card-records";
 import type { NewsListingRecord } from "@/types/news/news-types";
 import styles from "./news-listing-hero.module.css";
+import { PublishedDate } from "./published-date";
 export function NewsListing({ record }: { record: NewsListingRecord }) {
   return (
     <article className="w-full max-w-[1140px]">
@@ -23,12 +25,13 @@ function ListingHero({ record }: { record: NewsListingRecord }) {
   return (
     <div className="px-4 pt-6 md:px-8 md:pt-0 lg:px-0">
       <div className={styles.panel}>
-        <img
+        <Image
           alt={record.bannerAlt}
-          loading="lazy"
-          width="1774"
-          height="887"
-          decoding="async"
+          loading="eager"
+          fetchPriority="high"
+          sizes="(min-width: 960px) 504px, 100vw"
+          width={1774}
+          height={887}
           className={styles.image}
           style={{ color: "transparent" }}
           src={sourceAsset(record.bannerImage)}
@@ -42,23 +45,23 @@ function ListingHero({ record }: { record: NewsListingRecord }) {
           </h1>
         </div>
       </div>
-      <div className="font-sarabun hidden w-fit gap-[60px] md:flex">
-        <img
-          alt="tin tức"
-          loading="lazy"
-          width="522"
-          height="306"
-          decoding="async"
+      <div className="font-sarabun hidden w-fit gap-[60px] lg:flex">
+        <Image
+          alt={record.featured.title}
+          loading="eager"
+          sizes="522px"
+          width={522}
+          height={306}
           className="h-[306px] shrink-0 grow-0 rounded-[20px] object-cover"
           style={{ color: "transparent" }}
           src={sourceAsset(record.featured.image)}
         />
         <div className="flex flex-[1_1_50%] flex-col justify-between">
-          <h3 className="py-1 text-[40px] leading-[48px] font-bold">
+          <h2 className="py-1 text-[40px] leading-[48px] font-bold">
             {record.featured.title}
-          </h3>
+          </h2>
           <p className="text-16 leading-[24px] text-[#919397]">
-            {record.featured.publishedLabel}
+            <PublishedDate label={record.featured.publishedLabel} />
           </p>
           <p className="text-16 leading-[24px] text-[#616161]">
             {record.featured.description}
@@ -91,7 +94,13 @@ function LatestNews({ record }: { record: NewsListingRecord }) {
               card={newsCards[entry.key]}
               desktopOnly={entry.desktopOnly}
             />
-            {index === 0 ? <SourceMobileListingCards /> : null}
+            {index === 0
+              ? mobileNewsCards.map((card) => (
+                  <div key={card.href} className="w-full md:hidden">
+                    <NewsCard card={card} />
+                  </div>
+                ))
+              : null}
           </Fragment>
         ))}
         <NewsLoadMore
@@ -106,7 +115,7 @@ function LatestNews({ record }: { record: NewsListingRecord }) {
 
 function FeaturedNews({ record }: { record: NewsListingRecord }) {
   return (
-    <div className="hidden px-8 md:block lg:px-0">
+    <div className="hidden px-8 lg:block lg:px-0">
       <h2 className="hidden pb-6 text-[48px] leading-[67px] md:block">
         {record.featuredHeading}
       </h2>
@@ -124,7 +133,7 @@ function FeaturedNews({ record }: { record: NewsListingRecord }) {
             {record.featured.title}
           </h3>
           <p className="text-16 leading-[24px]">
-            {record.featured.publishedLabel}
+            <PublishedDate label={record.featured.publishedLabel} />
           </p>
           <p className="text-16 leading-[24px]">
             {record.featured.description}
