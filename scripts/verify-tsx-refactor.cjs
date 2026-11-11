@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports -- offline CommonJS TSX module loader */
 /** Compare authored TSX with the immutable local pre-refactor snapshot.
  * This checks offline SSR structure/content, not hydration or visual parity.
  * node scripts/verify-tsx-refactor.cjs [packages|news|collections]
@@ -22,14 +21,29 @@ function makeLoader() {
     if (filename.startsWith(oldPackages + path.sep)) {
       const relative = path.relative(oldPackages, filename);
       const components = new Set([
-        "package-content", "package-content.module.css", "package-page",
-        "package-source-dialog-trigger", "related-package-card",
+        "package-content",
+        "package-content.module.css",
+        "package-page",
+        "package-source-dialog-trigger",
+        "related-package-card",
       ]);
-      filename = relative === "source-pages"
-        ? path.join(root, "src/content/packages")
-        : relative.startsWith("source-pages" + path.sep)
-          ? path.join(root, "src/content/packages", relative.slice("source-pages".length + 1))
-          : path.join(root, "src", components.has(relative) ? "components/packages" : "constants/packages", relative);
+      filename =
+        relative === "source-pages"
+          ? path.join(root, "src/content/packages")
+          : relative.startsWith("source-pages" + path.sep)
+            ? path.join(
+                root,
+                "src/content/packages",
+                relative.slice("source-pages".length + 1),
+              )
+            : path.join(
+                root,
+                "src",
+                components.has(relative)
+                  ? "components/packages"
+                  : "constants/packages",
+                relative,
+              );
     }
     const candidates = [
       filename,
@@ -180,16 +194,34 @@ function entries(load, base, group) {
   if (group === "packages") {
     const current = base === path.join(root, "src/features");
     const packageBase = path.join(base, group);
-    const registry = load(current ? path.join(root, "src/content/packages") : path.join(packageBase, "source-pages"));
+    const registry = load(
+      current
+        ? path.join(root, "src/content/packages")
+        : path.join(packageBase, "source-pages"),
+    );
     if (registry.sourcePackageRoutes)
       return Object.entries(registry.sourcePackageRoutes);
-    const { PackagePage } = load(current ? path.join(root, "src/components/packages/package-page") : path.join(packageBase, "package-page"));
-    const { PACKAGE_PAGES } = load(current ? path.join(root, "src/constants/packages/package-data") : path.join(packageBase, "package-data"));
-    return Object.entries(registry.packageDetailsByRoute).map(([route, Details]) => [
-      route,
-      () => React.createElement(PackagePage, { record: PACKAGE_PAGES[route] },
-        React.createElement(Details)),
-    ]);
+    const { PackagePage } = load(
+      current
+        ? path.join(root, "src/components/packages/package-page")
+        : path.join(packageBase, "package-page"),
+    );
+    const { PACKAGE_PAGES } = load(
+      current
+        ? path.join(root, "src/constants/packages/package-data")
+        : path.join(packageBase, "package-data"),
+    );
+    return Object.entries(registry.packageDetailsByRoute).map(
+      ([route, Details]) => [
+        route,
+        () =>
+          React.createElement(
+            PackagePage,
+            { record: PACKAGE_PAGES[route] },
+            React.createElement(Details),
+          ),
+      ],
+    );
   }
   if (group === "news")
     return Object.entries(

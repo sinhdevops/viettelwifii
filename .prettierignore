@@ -1,0 +1,19 @@
+node_modules/
+.pnpm-store/
+.next/
+.next-preview/
+out/
+coverage/
+reports/
+reference-clone/
+work/
+outputs/
+public/
+playwright-report/
+test-results/
+.playwright-mcp/
+pnpm-lock.yaml
+src/generated/
+data/pages.json
+# Captured source CSS is evidence; avoid reserializing it.
+src/styles/viettelup-source.css

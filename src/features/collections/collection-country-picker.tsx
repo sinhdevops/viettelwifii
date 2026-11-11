@@ -138,7 +138,7 @@ export function CollectionCountryPicker({
               <div className="flex w-full items-center justify-between rounded-2xl border border-white bg-white px-3 py-2.5">
                 <div className="flex items-center gap-1">
                   <CountryFlag flag={selected.flag} />
-                  <span className="text-fspd text-primary-text max-w-[140px] truncate text-[14px] leading-[24px] font-semibold">
+                  <span className="max-w-[140px] truncate text-[14px] leading-[24px] font-semibold text-[#282828]">
                     {selected.nameVN}
                   </span>
                 </div>
@@ -228,7 +228,7 @@ export function CollectionCountryPicker({
                     aria-selected={
                       country.country_code === selected?.country_code
                     }
-                    className="border-black-200 relative flex w-full cursor-pointer items-center gap-2 truncate border-b px-3 py-3 select-none last:border-0 hover:bg-neutral-200/60 md:py-4"
+                    className="relative flex w-full cursor-pointer items-center gap-2 truncate border-b border-[#E9E9E9] px-3 py-3 select-none last:border-0 hover:bg-neutral-200/60 md:py-4"
                     style={
                       index === active
                         ? { backgroundColor: "rgb(229 229 229 / 0.6)" }

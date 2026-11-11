@@ -15,7 +15,7 @@ export default function InternetCollection() {
   return (
     <CollectionAccordionGroup>
       <main className="flex min-h-screen flex-col items-center bg-white">
-        <article className="w-full max-w-[1140px] md:max-w-[unset] md:flex md:flex-col md:items-center">
+        <article className="w-full max-w-[1140px] md:flex md:max-w-[unset] md:flex-col md:items-center">
           <InternetHero />
           <InternetPricing />
           <InternetEntertainmentAndCamera />
@@ -41,7 +41,7 @@ export default function InternetCollection() {
                 <li key={path}>
                   <Link
                     href={path}
-                    className="inline-flex min-h-11 items-center text-14 font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 md:text-16"
+                    className="text-14 text-primary md:text-16 inline-flex min-h-11 items-center font-medium underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
                     {page.code}
                   </Link>

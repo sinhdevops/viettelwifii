@@ -2,7 +2,11 @@
 import { sourceAsset } from "@/lib/viettelup-source-assets";
 import type { CSSProperties } from "react";
 import type { InternetBenefitCardData } from "./internet-data";
-export function InternetBenefitCard({ item }: { item: InternetBenefitCardData }) {
+export function InternetBenefitCard({
+  item,
+}: {
+  item: InternetBenefitCardData;
+}) {
   return (
     <div>
       <img
@@ -15,10 +19,12 @@ export function InternetBenefitCard({ item }: { item: InternetBenefitCardData })
         style={{ color: "transparent" } as CSSProperties}
         src={sourceAsset(item.image)}
       />
-      <h5 className="pb-1 pt-[7px] font-beausans text-12 font-bold leading-[16px] text-[#2C2F31] md:pb-3 md:pt-6 md:text-22 md:leading-[30px]">
+      <h5 className="font-beausans text-12 md:text-22 pt-[7px] pb-1 leading-[16px] font-bold text-[#2C2F31] md:pt-6 md:pb-3 md:leading-[30px]">
         {item.title}
       </h5>
-      <p className="text-10 text-[#444444] opacity-70 md:text-18">{item.description}</p>
+      <p className="text-10 md:text-18 text-[#444444] opacity-70">
+        {item.description}
+      </p>
     </div>
   );
 }

@@ -1,4 +1,9 @@
-export type CollectionNewsCardData = { href: string; title: string; image: string; date: string };
+export type CollectionNewsCardData = {
+  href: string;
+  title: string;
+  image: string;
+  date: string;
+};
 export const collectionNews: readonly CollectionNewsCardData[] = [
   {
     href: "/tin-tuc/so-sanh-roaming",
@@ -10,7 +15,8 @@ export const collectionNews: readonly CollectionNewsCardData[] = [
   },
   {
     href: "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
-    title: "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
+    title:
+      "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
     image:
       "https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg",
     date: "27/06/2026",

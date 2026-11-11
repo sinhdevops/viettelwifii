@@ -47,7 +47,11 @@ export default function TermsPage() {
           content: (
             <p>
               Tên pháp lý, địa chỉ đầy đủ, email và điều kiện áp dụng còn cần
-              được xác nhận. Xem trang <Link className="underline underline-offset-4" href="/lien-he">Liên hệ</Link> để biết thông tin hiện có.
+              được xác nhận. Xem trang{" "}
+              <Link className="underline underline-offset-4" href="/lien-he">
+                Liên hệ
+              </Link>{" "}
+              để biết thông tin hiện có.
             </p>
           ),
         },

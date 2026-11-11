@@ -16,19 +16,13 @@ export const newsArticles = {
     title:
       "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
     publishedLabel: "27/06/2026",
-    relatedCards: [
-      "so-sanh-roaming",
-      "goi-cuoc-data-4g-viettel-2026",
-    ],
+    relatedCards: ["so-sanh-roaming", "goi-cuoc-data-4g-viettel-2026"],
   },
   "goi-cuoc-data-4g-viettel-2026": {
     route: "/tin-tuc/goi-cuoc-data-4g-viettel-2026",
     title: "Tổng hợp chi tiết gói cước data 4G Viettel 2026 và cách đăng ký",
     publishedLabel: "11/05/2026",
-    relatedCards: [
-      "so-sanh-roaming",
-      "viettel-roaming-chuyen-vung-quoc-te",
-    ],
+    relatedCards: ["so-sanh-roaming", "viettel-roaming-chuyen-vung-quoc-te"],
   },
   "huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android": {
     route: "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",

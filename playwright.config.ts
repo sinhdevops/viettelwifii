@@ -32,7 +32,7 @@ export default defineConfig({
             url: previewBaseURL,
             reuseExistingServer: false,
             timeout: 120000,
-            env: { SITE_PREVIEW_DRAFTS: "1", VIETTELUP_PREVIEW_ISOLATED: "1" },
+            env: { VIETTELUP_PREVIEW_ISOLATED: "1" },
           }
         : {
             command: "pnpm dev",

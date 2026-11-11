@@ -1,4 +1,6 @@
 node_modules/
+.pnpm-store/
+debug.log
 .next/
 .next-preview/
 out/

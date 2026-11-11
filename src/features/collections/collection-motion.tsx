@@ -12,13 +12,18 @@ const animations = {
 
 export type CollectionAnimation = keyof typeof animations;
 
-let playerModule: Promise<typeof import("@lottiefiles/dotlottie-web")> | undefined;
+let playerModule:
+  Promise<typeof import("@lottiefiles/dotlottie-web")> | undefined;
 function loadPlayer() {
-  return (playerModule ??= import("@lottiefiles/dotlottie-web").then((module) => {
-    // Pin the original runtime and serve its WASM locally, without CDN requests.
-    module.DotLottie.setWasmUrl("/assets/viettelup-motion/dotlottie-player.wasm");
-    return module;
-  }));
+  return (playerModule ??= import("@lottiefiles/dotlottie-web").then(
+    (module) => {
+      // Pin the original runtime and serve its WASM locally, without CDN requests.
+      module.DotLottie.setWasmUrl(
+        "/assets/viettelup-motion/dotlottie-player.wasm",
+      );
+      return module;
+    },
+  ));
 }
 
 /** Original source animations; the parent retains its source size/position. */
@@ -43,7 +48,10 @@ export function CollectionMotion({
     const onError = (event: { error: Error }) => {
       if (cancelled) return;
       element.dataset.motionState = "error";
-      console.error(`Unable to render original ${animation} animation`, event.error);
+      console.error(
+        `Unable to render original ${animation} animation`,
+        event.error,
+      );
     };
 
     void loadPlayer()

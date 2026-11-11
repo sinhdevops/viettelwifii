@@ -1,6 +1,21 @@
-# ViettelUp — Implementation Contract v1 (2026-10-27)
+# ViettelUp — Implementation Contract
 
-## Current scope addendum — 175 routes / source-first migration
+## Hợp đồng hiện hành — AUDIT-RESUME-DOCS (2026-11-11)
+
+- Phạm vi: 175 route sản phẩm/nội dung trong `src/lib/approved-routes.ts`, cộng 5 support trong `src/lib/site-routes.ts` = SEO allowlist 180. Phụ lục master prompt là 171 gốc; bốn collection bổ sung đã được duyệt. Không tự thêm route từ link nguồn; giữ case và full-path product ID, kể cả namespace trả sau.
+- Registry thực tế `src/lib/page-content-registry.ts` nhập `src/constants/{home,news,packages}/page-content.ts`, `src/content/internet/page-content.ts`, `src/features/collections/page-content.ts`. Không giả định metadata tất cả nằm ở `src/content/`. `data/approved-routes.json` đối chiếu scope; `data/pages.json` chỉ là archive, không phải runtime/test truth.
+- Route entries nằm ở `src/app/`, UI chính trong `src/components/`, nội dung chi tiết trong `src/content/{packages,news,internet}/`. Không còn renderer JSON toàn site/catch-all. `src/lib/server/page-repository.ts` là repository hiện hành; compatibility `site-data.ts` đã được coordinator xóa. getPage/getRenderablePage trả record approved, kể cả draft. Indexability là phép lọc riêng.
+- Mọi route approved render ở mọi môi trường. Chỉ `ready` được index, canonical, JSON-LD và sitemap; draft `noindex,nofollow`, không canonical/JSON-LD. Không dùng `SITE_LIVE`, bốn approval flags hoặc `SITE_PREVIEW_DRAFTS`. Được render không có nghĩa đã QA/đủ quyền nội dung.
+- Form luôn mở, không dùng `LEAD_CAPTURE_ENABLED` hoặc readiness của privacy làm gate. Consent thật và server-resolved approved/ready product identity vẫn bắt buộc; policy version mặc định `v1` nếu thiếu/placeholder. Turnstile tùy chọn mọi môi trường, nhưng phải đủ cặp khóa và xác minh token khi cấu hình. Gửi thật cần Supabase (hiện chưa cấu hình); thiếu storage trả `503 lead_storage_unconfigured` trước đọc body, form giữ dữ liệu và báo chưa gửi. Telegram tùy chọn sau lưu bền vững; không báo thành công khi chưa lưu, không gửi lead thật trong kiểm tra.
+- Các quy tắc dữ liệu nguồn, không đoán giá/quyền lợi, không hotlink/script nguồn, semantic TSX, Server Component mặc định, ownership độc quyền và QA có bằng chứng vẫn áp dụng. Phân công hiện hành do Boardroom/Lead quyết định, không theo các đường dẫn owner lịch sử bên dưới.
+- Dùng pnpm theo `packageManager`, một lockfile `pnpm-lock.yaml`. CI cấu hình routes/type/lint/test/format:check/build, cần xác minh lần chạy. Không có kết quả check mới được khẳng định bởi tài liệu này.
+- Đối chiếu cây file: package private folders `src/app/goi-cuoc-viettel/{_components,_data,_content}`, orphan `src/features/{home,internet}/page-content.ts`, collection source pages/UI carousel cũ không còn ở đường dẫn cũ; news generate/verify CJS hiện ở `scripts/news/`, evidence tại `reports/source-news/`. Giữ archive có chú thích. GTM không bật; kiểm tra cây file không thay nghiệm thu cleanup/hồi quy.
+
+## Lưu trữ lịch sử — v1 (2026-10-27), không phải chỉ dẫn hiện hành
+
+**Toàn bộ phần bên dưới là hợp đồng đợt đầu được giữ để đối chiếu nguồn/quyết định. Các đường dẫn, owner, số route và guard preview/publication cũ bên dưới đã bị hợp đồng hiện hành phía trên thay thế; không áp dụng chúng như chỉ dẫn runtime hoặc kiểm thử.**
+
+### Historical scope addendum — 175 routes / source-first migration
 
 The user added `/internet`, `/goi-cuoc-gic`, `/goi-cuoc-nine`, and `/goi-cuoc-roaming` to the original 171 paths. The exact allowlist now has 175 entries; the appendix remains the original 171. `PageContent.kind` additionally permits `collection`. Lead owns `src/features/collections/**` except the temporary explicit worker assignments recorded in Boardroom. `CollectionContent` dispatches those four source-captured pages. Their DOM/classes/assets come from captures 0171–0174; original CSS is localized. Captured public Flight data may be parsed at generation time into inspectable JSX for content omitted from closed server-rendered widgets; it must never be executed or become an arbitrary runtime HTML renderer. All four remain draft previews until independent visual and interaction QA passes. The source-first user instruction supersedes conflicting migration advice in the historical first-batch contract below.
 

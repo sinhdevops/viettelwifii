@@ -6,15 +6,15 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { getRenderablePage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
 import { isPublicationEnabled } from "@/features/seo/page-seo";
-import {
-  isSiteRouteRenderable,
-  siteRouteDefinitions,
-} from "@/lib/site-routes";
+import { isSiteRouteRenderable, siteRouteDefinitions } from "@/lib/site-routes";
 import { sourceFont } from "./fonts";
 // Exact stylesheets extracted by true-web-clone, with only local asset URLs rewritten.
 import "@/styles/viettelup-source.css";
 import "@/styles/brand.css";
 import "@/styles/fonts.css";
+// Theme + utilities only (no Preflight), so authored components get the utility
+// classes the captured bundle never contained. Captured rules stay authoritative.
+import "@/styles/utilities.css";
 
 const publicationEnabled = isPublicationEnabled();
 const availableSiteRoutes = siteRouteDefinitions

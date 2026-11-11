@@ -101,12 +101,12 @@ export async function POST(req: NextRequest) {
   if (length > maxBodyBytes)
     return NextResponse.json({ error: "payload_too_large" }, { status: 413 });
 
-  // Fail closed before reading personal data, contacting third parties, or
-  // storing anything.
   const intakeConfig = getLeadPrivacyConfig();
-  if (!intakeConfig.available) {
+  // Missing infrastructure is not a form-visibility flag. Never accept a lead
+  // unless there is a durable destination, and reject before reading its body.
+  if (!leadStoreConfigured()) {
     return NextResponse.json(
-      { error: "lead_intake_unavailable" },
+      { error: "lead_storage_unconfigured" },
       { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
     );
   }
@@ -159,16 +159,9 @@ export async function POST(req: NextRequest) {
   const captchaSecret = process.env.TURNSTILE_SECRET_KEY?.trim() ?? "";
   const captchaSiteKey =
     process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim() ?? "";
-  if (!leadStoreConfigured())
-    return NextResponse.json(
-      { error: "lead_intake_unavailable" },
-      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
-    );
-  if (
-    (process.env.NODE_ENV === "production" &&
-      (!captchaSecret || !captchaSiteKey)) ||
-    Boolean(captchaSecret) !== Boolean(captchaSiteKey)
-  ) {
+  // Turnstile is optional; when configured, require a complete key pair and
+  // continue verifying every submitted token rather than bypassing CAPTCHA.
+  if (Boolean(captchaSecret) !== Boolean(captchaSiteKey)) {
     return NextResponse.json(
       { error: "lead_intake_unavailable" },
       { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
@@ -210,9 +203,11 @@ export async function POST(req: NextRequest) {
   let leadId: string;
   try {
     leadId = await saveLead(lead, productPage.title, {
-      // Only record affirmative consent when the submitted form actually collected it.
+      // Do not record acceptance of a policy the Internet modal no longer shows.
       consentAt: lead.privacyConsent ? new Date().toISOString() : null,
-      privacyPolicyVersion: lead.privacyConsent ? intakeConfig.policyVersion : null,
+      privacyPolicyVersion: lead.privacyConsent
+        ? intakeConfig.policyVersion
+        : null,
     });
   } catch {
     return NextResponse.json(

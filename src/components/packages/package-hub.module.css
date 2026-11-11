@@ -1,0 +1,259 @@
+/* Package directory on the support hub. Self-contained: the captured source
+   stylesheet never contained these classes. */
+
+.hub {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e9e1e1;
+  border-radius: 12px;
+  background: #ffffff;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.search:focus-within {
+  border-color: #f3b8bc;
+  box-shadow: 0 0 0 3px rgba(237, 28, 36, 0.1);
+}
+
+.searchIcon {
+  flex-shrink: 0;
+  margin-left: 13px;
+  color: #a8a0a0;
+}
+
+.searchInput {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  padding: 12px 40px 12px 10px;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #282828;
+}
+
+.searchInput::placeholder {
+  color: #9a9292;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInput::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.searchClear {
+  position: absolute;
+  right: 8px;
+  display: inline-flex;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: #f4eeee;
+  color: #6b6363;
+  cursor: pointer;
+}
+
+.searchClear:hover {
+  background: #ece4e4;
+  color: #282828;
+}
+
+.searchMeta {
+  margin: -18px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #8a8282;
+}
+
+.empty {
+  border: 1px dashed #e6dcdc;
+  border-radius: 14px;
+  background: #fcfafa;
+  padding: 26px 20px;
+  text-align: center;
+}
+
+.emptyTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+.emptyText {
+  margin: 6px auto 0;
+  max-width: 44ch;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7a7272;
+}
+
+.emptyAction {
+  margin-top: 14px;
+  border: 1px solid var(--brand, #ed1c24);
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand, #ed1c24);
+  cursor: pointer;
+}
+
+.emptyAction:hover {
+  background: #fff5f5;
+}
+
+.group {
+  min-width: 0;
+}
+
+.groupHead {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.groupIcon {
+  display: inline-flex;
+  height: 38px;
+  width: 38px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #fff1f2;
+  color: var(--brand, #ed1c24);
+}
+
+.groupIconAlt {
+  background: #f3f4f6;
+  color: #3f3f46;
+}
+
+.groupText {
+  min-width: 0;
+}
+
+.groupTitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1f1f1f;
+}
+
+.count {
+  border-radius: 999px;
+  background: #f6f2f2;
+  padding: 2px 9px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #767676;
+}
+
+.groupDescription {
+  margin: 5px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #7a7a7a;
+}
+
+/* Beats the support-page prose list styling; this grid is a component list. */
+.hub .grid {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 54px;
+  border: 1px solid #f0eaea;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 9px 11px;
+  text-decoration: none;
+  transition:
+    border-color 0.15s,
+    background-color 0.15s,
+    box-shadow 0.15s;
+}
+
+.cardBody {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card:hover {
+  border-color: #f3c9cc;
+  background: #fffafa;
+  box-shadow: 0 8px 18px -14px rgba(237, 28, 36, 0.55);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--brand, #ed1c24);
+  outline-offset: 2px;
+}
+
+.cardTitle {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #2f2f2f;
+}
+
+.cardCode {
+  align-self: flex-start;
+  border-radius: 5px;
+  background: #f5f1f1;
+  padding: 0 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #8a8a8a;
+}
+
+.cardArrow {
+  flex-shrink: 0;
+  color: #c4b9b9;
+  transition: color 0.15s;
+}
+
+.card:hover .cardArrow {
+  color: var(--brand, #ed1c24);
+}

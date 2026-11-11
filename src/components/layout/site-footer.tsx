@@ -4,7 +4,11 @@ import { siteConfig } from "@/lib/site-config";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+const emptySubscribe = () => () => {};
+const getCurrentYear = () => new Date().getFullYear();
+const getServerYear = () => null;
 
 const footerLinks = [
   { label: "Gói cước", href: "/goi-cuoc-viettel" },
@@ -23,10 +27,11 @@ export function SiteFooter({
   // Current time is an unstable value: reading it while rendering would tie the
   // prerendered HTML to build time. Resolve it after hydration instead so every
   // route can stay fully static.
-  const [currentYear, setCurrentYear] = useState<number | null>(null);
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = useSyncExternalStore(
+    emptySubscribe,
+    getCurrentYear,
+    getServerYear,
+  );
   const sectionTextClass = isNine ? "text-white" : "";
   const visibleFooterLinks = footerLinks.filter((item) =>
     availableSiteRoutes.includes(item.href),
@@ -93,10 +98,12 @@ export function SiteFooter({
             <nav aria-label="Liên kết chân trang">
               <h5 className="pb-2">
                 <strong>
-                  <span className="text-16 sm:text-[19px]">Thông tin website</span>
+                  <span className="text-16 sm:text-[19px]">
+                    Thông tin website
+                  </span>
                 </strong>
               </h5>
-              <ul className="flex flex-col gap-1 text-14 sm:text-16">
+              <ul className="text-14 sm:text-16 flex flex-col gap-1">
                 {visibleFooterLinks.map((item) => (
                   <li key={item.href}>
                     <Link
@@ -113,7 +120,10 @@ export function SiteFooter({
         </div>
       </div>
       <div className="bg-primary flex justify-center pt-[8px] pb-[11px] text-[#ffffffbd]">
-        <p>© {currentYear !== null ? `${currentYear} ` : ""}{siteConfig.hostname}</p>
+        <p>
+          © {currentYear !== null ? `${currentYear} ` : ""}
+          {siteConfig.hostname}
+        </p>
       </div>
     </footer>
   );

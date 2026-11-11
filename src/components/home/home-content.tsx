@@ -236,9 +236,6 @@ function HomePackageCard({
 export function HomeContent({ path }: { page: PageContent; path: string }) {
   const allowlist = new Set(getApprovedRoutes());
   const readyPages = getIndexablePages();
-  const readyPaths = new Set(
-    readyPages.map(({ path: readyPath }) => readyPath),
-  );
   // All approved pages are live in production.
   const localPaths = allowlist;
   const readyProducts = new Set(

@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import {
-  buildPageMetadata,
-  seoApprovedRoutes,
-} from "@/features/seo/page-seo";
+import { buildPageMetadata, seoApprovedRoutes } from "@/features/seo/page-seo";
 import { siteRouteDefinitions } from "./site-routes";
 
 /** Support pages use the same publication gate and canonical policy as products. */

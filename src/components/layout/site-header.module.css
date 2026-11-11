@@ -1,0 +1,119 @@
+/* Doubled selectors override shared Sheet's >=640px centered variant,
+   regardless of stylesheet order. Source navigation remains mobile below 960px. */
+.mobileOverlay.mobileOverlay {
+  top: 4rem;
+  z-index: 110;
+  background: rgb(0 0 0 / 80%);
+}
+
+.mobileSheet.mobileSheet {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 111;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  max-height: calc(100dvh - 4rem);
+  overflow-y: auto;
+  padding: 16px 16px calc(32px + env(safe-area-inset-bottom, 0px));
+  transform: none;
+  border: 0;
+  border-radius: 12px 12px 0 0;
+  background: #fff;
+  color: #111;
+  overscroll-behavior: contain;
+}
+
+@media (width < 960px) {
+  .mobileSheet.mobileSheet[data-state="open"] {
+    animation: menu-in 220ms ease-out;
+  }
+
+  .mobileSheet.mobileSheet[data-state="closed"] {
+    animation: menu-out 180ms ease-in;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobileSheet.mobileSheet[data-state="open"],
+  .mobileSheet.mobileSheet[data-state="closed"] {
+    animation: none;
+  }
+}
+
+@keyframes menu-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menu-out {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.handle.handle {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 16px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.handle::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #d9d9d9;
+  content: "";
+}
+
+.handle:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.handle:focus-visible,
+.mobileLinks a:focus-visible {
+  outline: 2px solid var(--brand, #ed1c24);
+  outline-offset: 3px;
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileLinks a {
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobileLinks a[aria-current="page"],
+.mobileLinks a:global(.text-primary) {
+  color: var(--brand, #ed1c24);
+}

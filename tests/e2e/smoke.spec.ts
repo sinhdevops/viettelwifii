@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { expect, test } from "@playwright/test";
 import type { PageContent } from "../../src/lib/content-schema";
+import { siteConfig } from "../../src/lib/site-config";
+import { siteRouteDefinitions } from "../../src/lib/site-routes";
 import { homePageContent } from "../../src/constants/home/page-content";
 import { packagePageContents } from "../../src/constants/packages/page-content";
 import { newsPageContents } from "../../src/constants/news/page-content";
@@ -42,15 +44,18 @@ const expectedDraftRoutes = [
   "/goi-cuoc-viettel/FB5K",
 ];
 
-// Run preview against an isolated dev server with SITE_PREVIEW_DRAFTS=1.
-// Run production against a separate build/start server with drafts disabled.
+// Both preview and production serve all approved routes, including drafts.
+// Readiness alone controls indexing; absolute URLs use the configured origin.
 // Neither mode submits a lead or changes authored status.
 test("E2E mode is explicit", () => {
   expect(["preview", "production"]).toContain(mode);
 });
 
-test.describe("175 approved routes: authored content identities in preview", () => {
-  test.skip(mode !== "preview", "Requires isolated draft preview mode");
+test.describe("175 approved routes: authored identities and readiness SEO in both modes", () => {
+  test.skip(
+    !["preview", "production"].includes(mode ?? ""),
+    "Requires explicit E2E mode",
+  );
 
   test("authored route data covers the manifest with only explicitly stale routes drafted", () => {
     expect(approved.routes).toHaveLength(175);
@@ -84,6 +89,9 @@ test.describe("175 approved routes: authored content identities in preview", () 
       });
       expect(response?.status()).toBe(200);
       expect(new URL(page.url()).pathname).toBe(route);
+      // Streaming may briefly retain the loading boundary beside the page.
+      // Require it to settle to exactly one main; never select around duplicates.
+      await expect(page.locator("main")).toHaveCount(1);
       await expect(page.locator("main")).toBeVisible();
       await expect(page.locator("h1")).toHaveCount(1);
       const headingText = await page.locator("h1").textContent();
@@ -96,11 +104,22 @@ test.describe("175 approved routes: authored content identities in preview", () 
         "content",
         content.description,
       );
-      await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
-        "content",
-        /noindex/i,
-      );
-      await expect(page.locator('link[rel="canonical"]')).toHaveCount(0);
+      const robots = page.locator('meta[name="robots"]');
+      const canonical = page.locator('link[rel="canonical"]');
+      if (content.status === "ready") {
+        await expect(robots).toHaveAttribute("content", /^index,\s*follow$/i);
+        await expect(canonical).toHaveCount(1);
+        await expect(canonical).toHaveAttribute("href", /^https?:\/\//);
+        expect(new URL((await canonical.getAttribute("href"))!).href).toBe(
+          siteConfig.url(route),
+        );
+      } else {
+        await expect(robots).toHaveAttribute(
+          "content",
+          /^noindex,\s*nofollow$/i,
+        );
+        await expect(canonical).toHaveCount(0);
+      }
       if (content.product) {
         // A correct title alone can hide a different product's rendered body.
         await expect(page.locator("main h1")).toContainText(
@@ -115,7 +134,10 @@ test.describe("175 approved routes: authored content identities in preview", () 
 });
 
 test.describe("shared package codes have different direct and postpaid content", () => {
-  test.skip(mode !== "preview", "Requires isolated draft preview mode");
+  test.skip(
+    !["preview", "production"].includes(mode ?? ""),
+    "Requires explicit E2E mode",
+  );
   for (const code of ["MXH120", "MXH150"]) {
     const direct = `/goi-cuoc-viettel/${code}`;
     const postpaid = `/goi-cuoc-viettel/tra-sau/${code}`;
@@ -134,8 +156,49 @@ test.describe("shared package codes have different direct and postpaid content",
   }
 });
 
+test.describe("readiness sitemap and configured-origin crawling in both modes", () => {
+  test("sitemap contains exactly ready approved and support routes", async ({
+    request,
+  }) => {
+    const response = await request.get("/sitemap.xml");
+    expect(response.status()).toBe(200);
+    const xml = await response.text();
+    const locations = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
+      (match) => match[1],
+    );
+    const expectedPaths = [
+      ...approved.routes.filter((route) => pages[route]?.status === "ready"),
+      ...siteRouteDefinitions
+        .filter(({ status }) => status === "ready")
+        .map(({ path }) => path),
+    ];
+    expect(locations.sort()).toEqual(
+      expectedPaths.map((path) => siteConfig.url(path)).sort(),
+    );
+    expect(new Set(locations).size).toBe(locations.length);
+    for (const route of approved.routes.filter(
+      (path) => pages[path]?.status === "draft",
+    )) {
+      expect(locations, route).not.toContain(siteConfig.url(route));
+    }
+  });
+
+  test("robots permits pages, blocks API and advertises the configured sitemap", async ({
+    request,
+  }) => {
+    const response = await request.get("/robots.txt");
+    expect(response.status()).toBe(200);
+    const text = await response.text();
+    expect(text).toMatch(/^Allow:\s*\/$/im);
+    expect(text).toMatch(/^Disallow:\s*\/api\/$/im);
+    expect(text).not.toMatch(/^Disallow:\s*\/$/im);
+    expect(text).toContain(`Sitemap: ${siteConfig.url("/sitemap.xml")}`);
+  });
+});
+
 test.describe("unknown paths and case-sensitive namespaces", () => {
   const invalidPaths = [
+    "/not-an-approved-route-qa",
     "/goi-cuoc-viettel/not-a-plan-qa",
     "/goi-cuoc-viettel/tra-sau/not-a-plan-qa",
     "/internet/not-a-plan-qa",
@@ -150,60 +213,4 @@ test.describe("unknown paths and case-sensitive namespaces", () => {
       expect(response.status()).toBe(404);
     });
   }
-});
-
-test.describe("production draft guard across the approved manifest", () => {
-  test.skip(
-    mode !== "production",
-    "Requires VIETTELUP_E2E_MODE=production and a separate build/start server",
-  );
-
-  test("authored status inventory matches the approved manifest", () => {
-    expect(Object.keys(pages).sort()).toEqual([...approved.routes].sort());
-    expect(
-      approved.routes
-        .filter((route) => pages[route]?.status === "draft")
-        .sort(),
-    ).toEqual([...expectedDraftRoutes].sort());
-  });
-
-  for (const route of approved.routes.filter((path) => path !== "/")) {
-    test(`${route} renders only when its authored status is ready`, async ({
-      request,
-    }) => {
-      const response = await request.get(route, { maxRedirects: 0 });
-      expect(response.status()).toBe(
-        pages[route]?.status === "ready" ? 200 : 404,
-      );
-    });
-  }
-
-  test("ready home content remains noindex while publication gates are closed", async ({
-    page,
-  }) => {
-    expect(pages["/"]?.status).toBe("ready");
-    const response = await page.goto("/", { waitUntil: "domcontentloaded" });
-    expect(response?.status()).toBe(200);
-    await expect(page.locator("main h1")).toHaveCount(1);
-    await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
-      "content",
-      /noindex/i,
-    );
-    await expect(page.locator('link[rel="canonical"]')).toHaveCount(0);
-  });
-
-  test("drafts are absent from the sitemap and crawling is blocked", async ({
-    request,
-  }) => {
-    const sitemap = await request.get("/sitemap.xml");
-    expect(sitemap.status()).toBe(200);
-    const xml = await sitemap.text();
-    for (const route of approved.routes) {
-      expect(xml, route).not.toContain(`<loc>${route}</loc>`);
-    }
-    expect(xml).not.toContain("<loc>");
-    const robots = await request.get("/robots.txt");
-    expect(robots.status()).toBe(200);
-    expect(await robots.text()).toMatch(/Disallow:\s*\//i);
-  });
 });

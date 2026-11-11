@@ -1,4 +1,3 @@
-import { siteConfig } from "@/lib/site-config";
 /* eslint-disable @next/next/no-img-element */
 import { sourceAsset } from "@/lib/viettelup-source-assets";
 import { ArticleLayout } from "@/components/news/article-layout";

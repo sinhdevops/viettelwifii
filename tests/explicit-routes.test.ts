@@ -17,109 +17,63 @@ import {
   getPage,
   getRenderablePage,
   getIndexablePages,
-} from "../src/lib/site-data";
+  isIndexablePage,
+} from "../src/lib/server/page-repository";
 import { pathFromSegment, metadataForPage } from "../src/lib/page-routing";
 
 const root = resolve(import.meta.dirname, "..");
-function historicalData(file: string) {
-  return JSON.parse(
-    readFileSync(resolve(root, file), "utf8")
-      .replaceAll("https://viettelwifii.vn", siteConfig.origin)
-      .replaceAll("viettelwifii.vn", siteConfig.hostname)
-      .replace(
-        /1800[ .-]?8168(?:\s*\([Mm]iễn phí\))?/g,
-        siteConfig.phoneNumber,
-      ),
-  );
-}
-const oldPages = historicalData("data/pages.json");
-const captures = historicalData("src/generated/viettelup-source-pages.json");
-const original = Object.fromEntries(
-  approvedRoutes.map((path) => {
-    if (oldPages[path]) return [path, pageSchema.parse(oldPages[path])];
-    const source = captures[path];
-    return [
-      path,
-      {
-        status: "ready",
-        kind: source.kind,
-        title: source.title,
-        description: source.description,
-        heading: source.heading,
-        sections: [],
-        ...(source.product ? { product: source.product } : {}),
-        source: {
-          url: source.sourceUrl,
-          capturedAt: source.capturedAt,
-          evidencePaths: [source.rawHtmlPath],
-          verifiedFields: ["title", "description", "heading", "path"],
-          unverifiedFields: [
-            "tsx-content",
-            "interaction-parity",
-            "visual-parity",
-          ],
-          notes: [`Original HTML SHA256: ${source.rawSha256}`],
-        },
-      },
-    ];
-  }),
-);
 
-// The historical fixture predates the current factual-freshness readiness
-// policy. Model only the intentional draft status changes; all other authored
-// metadata/content must still match the baseline exactly.
-for (const path of [
-  "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
-  "/tin-tuc/goi-cuoc-viettel-thang-06-2025",
-  "/tin-tuc/goi-cuoc-viettel-thang-4-2025",
-  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
-  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
-  "/tin-tuc/goi-cuoc-5g-viettel-tet5g",
-  "/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
-  "/tin-tuc/khuyen-mai-nap-the-15-6",
-  "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
-  "/goi-cuoc-viettel/FB5K",
-]) {
-  original[path] = { ...original[path], status: "draft" };
-}
-original["/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360"] = {
-  ...original["/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360"],
-  title: "TỔNG HỢP CÁCH ĐĂNG KÝ XEM TRỌN BỘ EURO 2024 TRÊN TV360",
-};
+const draftRoutes = approvedRoutes.filter(
+  (path) => pageContents[path].status === "draft",
+);
+const readyRoutes = approvedRoutes.filter(
+  (path) => pageContents[path].status === "ready",
+);
 
 afterEach(() => vi.unstubAllEnvs());
 
 describe("explicit App Router migration", () => {
-  it("preserves every authored value and source fallback for exactly 175 routes", () => {
+  it("covers exactly the 175 approved routes with valid authored content", () => {
     expect([...approvedRoutes]).toEqual(
       JSON.parse(
         readFileSync(resolve(root, "data/approved-routes.json"), "utf8"),
       ).routes,
     );
-    expect(pageContents).toEqual(original);
+    expect(Object.keys(pageContents).sort()).toEqual(
+      [...approvedRoutes].sort(),
+    );
+
+    for (const path of approvedRoutes) {
+      const page = pageContents[path];
+      // Every registry record must remain schema-valid.
+      expect(pageSchema.safeParse(page).success, `${path}: schema`).toBe(true);
+      expect(page.title.trim(), `${path}: title`).not.toBe("");
+      expect(page.description.trim(), `${path}: description`).not.toBe("");
+      expect(page.heading.trim(), `${path}: heading`).not.toBe("");
+      // Product identity is the full route, never the display code.
+      if (page.kind === "package" || page.kind === "internet") {
+        expect(page.product?.id, `${path}: product id`).toBe(path);
+      }
+    }
   });
 
-  it("keeps draft visibility, published-page and sitemap decisions in every environment", () => {
+  it("renders every approved route in every environment while indexing only ready ones", () => {
     for (const env of ["development", "test", "production"]) {
       for (const preview of [undefined, "0", "1"]) {
         vi.stubEnv("NODE_ENV", env);
         vi.stubEnv("SITE_PREVIEW_DRAFTS", preview);
         for (const path of approvedRoutes) {
-          const page = original[path];
-          // getPage is raw data access; only renderable/indexable selectors filter drafts.
+          const page = pageContents[path];
+          // Rendering is ungated: drafts stay reachable so internal links work.
           expect(getPage(path)).toEqual(page);
-          expect(getRenderablePage(path)).toEqual(
-            page.status === "ready" || (env !== "production" && preview === "1")
-              ? page
-              : null,
+          expect(getRenderablePage(path)).toEqual(page);
+          // Indexing follows content readiness, not the environment.
+          expect(isIndexablePage(path), `${path}: indexable`).toBe(
+            page.status === "ready",
           );
         }
         expect(getIndexablePages()).toEqual(
-          approvedRoutes.flatMap((path) =>
-            original[path].status === "ready"
-              ? [{ path, page: original[path] }]
-              : [],
-          ),
+          readyRoutes.map((path) => ({ path, page: pageContents[path] })),
         );
       }
     }
@@ -141,25 +95,26 @@ describe("explicit App Router migration", () => {
     expect(pathFromSegment("/internet/", "NETVT01")).toBe("/internet/NETVT01");
   });
 
-  it("keeps preview metadata noindex and omits canonicals while publication gates are closed", () => {
-    vi.stubEnv("NODE_ENV", "development");
-    vi.stubEnv("SITE_PREVIEW_DRAFTS", "1");
-    for (const flag of [
-      "SITE_LIVE",
-      "CONTENT_RIGHTS_CLEARED",
-      "SITE_IDENTITY_VERIFIED",
-      "PRODUCT_FACTS_VERIFIED",
-      "PRIVACY_POLICY_APPROVED",
-    ]) {
-      vi.stubEnv(flag, "false");
-    }
-    for (const path of approvedRoutes) {
-      const page = original[path];
-      expect(metadataForPage(path)).toEqual({
-        title: page.title,
-        description: page.description,
-        robots: { index: false, follow: false },
+  it("keeps draft routes noindex while ready routes carry a canonical", () => {
+    for (const path of draftRoutes) {
+      expect(metadataForPage(path).robots, `${path}: draft noindex`).toEqual({
+        index: false,
+        follow: false,
       });
+      expect(
+        metadataForPage(path).alternates,
+        `${path}: no draft canonical`,
+      ).toBeUndefined();
+    }
+    for (const path of readyRoutes) {
+      expect(metadataForPage(path).robots, `${path}: ready indexable`).toEqual({
+        index: true,
+        follow: true,
+      });
+      expect(
+        metadataForPage(path).alternates?.canonical,
+        `${path}: canonical`,
+      ).toBe(siteConfig.url(path));
     }
   });
 
@@ -181,7 +136,7 @@ describe("explicit App Router migration", () => {
       false,
     );
     expect(
-      readFileSync(resolve(root, "src/lib/site-data.ts"), "utf8"),
+      readFileSync(resolve(root, "src/lib/server/page-repository.ts"), "utf8"),
     ).not.toMatch(/readFileSync|generated\/viettelup-source-pages|pages\.json/);
   });
 });

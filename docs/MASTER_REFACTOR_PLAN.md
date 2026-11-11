@@ -192,7 +192,7 @@ Mục tiêu là loại **markup lặp**, không bắt buộc giảm số file v�
 - Trang tĩnh: `page.tsx` chứa object SEO dễ thấy và export `metadata` qua helper policy chung, sau đó import/ghép các section.
 - Route động: `page.tsx` export `generateMetadata`, đọc `record.seo` từ catalog đúng route; không viết 116 page chỉ để đặt 116 title.
 - Mỗi record có `seo.title`, `seo.description`, optional OG image; title SEO và heading hiển thị được tách nếu cần, không tự đổi copy trong đợt refactor.
-- Một hàm thống nhất policy: allowlist + ready + SITE_LIVE quyết định index. Giữ noindex hiện tại, không tự chuyển draft thành ready.
+- Policy hiện hành: allowlist + ready + origin hợp lệ quyết định index; render không gated. Không còn SITE_LIVE; không tự chuyển draft thành ready.
 - Canonical theo `siteConfig.origin` và path nguyên bản; chốt behavior preview dựa trên baseline vì hai helper hiện có có thể xử lý canonical khác nhau.
 - Structured data phải lấy từ cùng record đang render; không tự thêm review/rating/giá/ngày/author thiếu nguồn. Bổ sung mới là hạng mục SEO tách khỏi bước bảo toàn output.
 - Tạo tài liệu “sửa SEO trang X” có ví dụ trước/sau và lệnh kiểm HTML; thêm audit title/description/canonical cho toàn bộ 175 URL.
@@ -304,7 +304,7 @@ Các deliverable khi triển khai: route matrix, old→new mapping, baseline và
 
 **So sánh:** chuẩn hóa chỉ phần biến thiên như React ID/CSS module hash; không bỏ text/class/layout để làm diff xanh. Visual diff được xem lại; tolerance chỉ cho anti-aliasing/nội dung động đã xác định. Khác biệt có chủ đích phải tách khỏi refactor và được chốt riêng.
 
-Production guard hiện có có thể khiến draft không render khi `build/start`; vì vậy build thành công không chứng minh UI đủ175 route. Kiểm UI draft ở preview được kiểm soát; kiểm production guard riêng. Kế hoạch đo production cần fixture/đầu vào đủ điều kiện ở môi trường test cô lập, không sửa trạng thái bản thật để vượt guard.
+Hợp đồng hiện hành render đủ 175 route ở cả preview và production, kể cả draft. Kiểm riêng policy index/noindex theo readiness; build thành công không thay thế kiểm định danh/H1/metadata và UI. Không sửa trạng thái bản thật để vượt kiểm tra.
 
 Lệnh nền: `pnpm routes:check`, `pnpm typecheck`, `pnpm lint`, `pnpm test`, `pnpm build`, `pnpm test:e2e`. Kiểm script/test hiện có có đúng scope và env trước khi dùng; sửa test phụ thuộc path cũ nhưng không nới assertion bảo vệ hành vi. Chỉ một build owner; chạy build ở mốc có ý nghĩa, không sau từng thay đổi CSS.
 

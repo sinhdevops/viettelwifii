@@ -145,11 +145,10 @@ function CapNhatGoiCuocGICCapNhatChiTietCacGoiCuocGICViettelMoiNhat2026() {
         {", "}
         <b>GIC90N</b>
         {", "}
-        <b>GIC125N</b>
-        . Mỗi gói đều cung cấp tối đa tiện ích của 1 loại nhu cầu đặc thù: gọi
-        nội mạng, ngoại mạng, data, lướt mạng xã hội Tiktok, Youtube, Facebook,
-        Instagram và Threads. Hãy cùng xem gói cước nào phù hợp nhất cho điện
-        thoại của bạn nhé!
+        <b>GIC125N</b>. Mỗi gói đều cung cấp tối đa tiện ích của 1 loại nhu cầu
+        đặc thù: gọi nội mạng, ngoại mạng, data, lướt mạng xã hội Tiktok,
+        Youtube, Facebook, Instagram và Threads. Hãy cùng xem gói cước nào phù
+        hợp nhất cho điện thoại của bạn nhé!
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <i>{"Đọc thêm: "}</i>

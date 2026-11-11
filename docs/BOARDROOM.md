@@ -1,5 +1,54 @@
 # BOARDROOM — ĐIỀU PHỐI ĐỘI AGENT VIETTELUP
 
+### SIGNUP-NO-CHECKBOX-20261111 — hoàn thành phạm vi modal Internet
+
+- User yêu cầu bỏ checkbox và toàn bộ dòng đồng ý Chính sách bảo mật trong modal Internet. Đây là thay đổi hợp đồng được yêu cầu trực tiếp, thay yêu cầu checkbox trước; không tự đánh dấu consent=true khi người dùng không chọn.
+- Worker chuẩn nạp vt_forms_integrations (`4fc873b3-24d5-4adf-8cab-bb4cd46aace2`) đã bàn giao đúng collection-signup-dialog.tsx, lib/lead-schema.ts, api/leads/route.ts, tests/internet-collection-lead.test.ts và tests/e2e/internet-lead.spec.ts. /internet không checkbox/nhãn/link và không chặn nút theo consent; payload thiếu consent chuẩn hóa false chỉ được chấp nhận cho collection Internet; các form khác giữ require affirmative. False ghi consentAt/version null, không giả acceptance; giữ validation/CAPTCHA/origin/storage/product identity và width480.
+- Worker focused18unit/scopedlint/Prettier PASS. Lead review tích hợp + TypeScript PASS, full unit185/185 PASS; browser390/650/1280 xác nhận vắng checkbox/text/link, nút enabled khi không CAPTCHA, width390/480/480, không POST; đã xem3ảnh tại reports/integration/signup-no-checkbox. E2E desktop/mobile cuối16/16 PASS (POST mock, real config GET); lượt đầu13pass3fail vì3test desktop click trước hydration, đã bổ sung guard __reactProps$ như helper sẵn có rồi rerun đủ, không nới assertion. Không build/deploy/lead thật, không xác nhận backend thật đã cấu hình.
+
+### SIGNUP-MODAL-WIDTH-20261111 — tăng nhẹ chiều rộng
+
+- User yêu cầu modal Thông tin đặt mua rộng hơn. Lead chỉ đổi max-width regular signup410→480px bằng inline style tại collection-signup-dialog, tránh utility nguồn/Sheet ghi đè; giữ modal SMS/Nine và bố cục bottom-sheet mobile, không đổi form/submit.
+- Scoped ESLint PASS; browser sau hydration MESHVT3 modal480px tại viewport1024 và fullwidth390px mobile, không tràn; đóng Escape, không submit. Lần thử đầu click trước hydration không mở dialog, đã kiểm lại theo hydration guard của test hiện hữu. Không build/deploy/lead.
+
+### NEWS-HERO-ALIGN-20261111 — hoàn thành phạm vi banner
+
+- User báo banner /tin-tuc lệch ảnh/chữ. Baseline browser xác nhận ảnh mới1774×887 (2:1) vẫn absolute top−96 theo artwork cũ, ảnh y86 trong khi panel y182. Worker chuẩn nạp vt_news (`01c2e9bd-b81a-4b35-9dd5-b813925459ac`) đã bàn giao phần ListingHero/import của `src/components/news/news-listing.tsx` và file mới `src/components/news/news-listing-hero.module.css`; không sửa sections khác/data/assets/routes/thay đổi đang có.
+- Desktop>=960 dùng grid2cột căn giữa, ảnh static đúng tỷ lệ2:1 nằm trong panel300px, gap32/padding24, giữ nền/radius/chữ; margin32/40 thay khoảng bù absolute cũ. Mobile<960 giữ heading/text-only ẩn ảnh như trước.
+- Worker scoped ESLint/Prettier/diff-check PASS. Lead TypeScript và browser dev localhost3000 PASS tại390/768/960/1024/1280/1450: ảnh/chữ trong panel, không overlap, tâm dọc khớp, ảnh không biến dạng, mobile heading giữ, không overflow ngang/pageerror; đã xem cả6 screenshot và baseline tại reports/integration/news-hero-align. Chưa production build/QA độc lập; không nghiệm thu các bố cục ngoài hero (featured/cards/header hiện hữu giữ nguyên). Không deploy/push/lead.
+
+### MOBILE-BOTTOM-SHEET-20261111 — hoàn thành phạm vi menu
+
+- User yêu cầu menu giống hình 1: header giữ nguyên, overlay tối dưới header, bottom sheet trắng bo góc trên, thanh ngang xám và 6 link căn giữa; không header/logo/× lặp bên trong popup.
+- Worker chuẩn nạp profile vt_shared_home (`0cab9a40-c19b-4264-b681-101b74ed89e6`) đã bàn giao `src/components/layout/site-header.tsx` và file mới `src/components/layout/site-header.module.css`; tái sử dụng Sheet hiện có, không sửa shared Sheet/API hoặc form. Bottom sheet 280px + safe-area, fullwidth mọi mobile <960, animation trượt và reduced motion, resize desktop đóng modal. Giữ routes/newsLocal/desktop/Nine.
+- Worker scoped ESLint/Prettier/diff-check PASS; Lead TypeScript PASS và browser dev localhost3000 final PASS ở 390/620/768: sheet bottom/radius12/căn giữa6links, overlay80% từ dưới header64, không logo lặp/overflow/pageerror; Tab trap/Escape focus restore/overlay/handle/link Internet đóng và điều hướng đúng. 390×240 cuộn và reduced-motion PASS; resize1440 đóng/desktop nav giữ nguyên; Nine active/theme PASS. Đã xem screenshot baseline và bản sửa (mobile/tablet/desktop/short/Nine); evidence reports/integration/mobile-bottom-sheet/{results.json,menu-620.png,...}. Chưa production build/QA browser độc lập; dev issue badge có trong một số ảnh, không quy thành lỗi menu. Không deploy/push/lead.
+
+### LOADING-SPINNER-20261111 — hoàn thành phạm vi component
+
+- User yêu cầu loading page chung thay skeleton mô phỏng nội dung. Lead sở hữu `src/app/loading.tsx`, `src/components/ui/loading-spinner.tsx`, CSS module spinner và phần loading của status-screen CSS; giữ nguyên error/404, routes, forms và thay đổi sẵn có.
+- Spinner CSS-only màu brand, nhãn tiếng Việt, ba kích cỡ; nền trắng, căn giữa, không timer giữ loading giả, không thêm dependency. Reduced motion tắt animation.
+- QA độc lập worker chuẩn nạp profile vt_qa (`d59669f8-856b-43aa-97a1-902d3a166b13`): review tĩnh bốn file, không finding; không chạy browser/build. Lead self-check: Prettier + scoped ESLint + TypeScript PASS. Chromium component-isolation dùng TSX/CSS thật ở 390/768/1440 PASS: ring 64×64, đúng màu brand, căn giữa trong vùng loading, không overflow; reduced-motion animation none; sm/md/lg và nhãn ẩn PASS. Đã xem cả ba screenshot tại reports/integration/loading-spinner; results.json ghi rõ phạm vi isolation, chưa kiểm navigation boundary/production build/screen reader thực. Không deploy/push/lead, không thêm route.
+
+### LEAD-UNGATE-20261111 — mở form theo yêu cầu trực tiếp
+
+- User yêu cầu bỏ flags làm ẩn form. Lead bỏ LEAD_CAPTURE_ENABLED và readiness của privacy route khỏi config; version consent mặc định v1 nếu thiếu/placeholder. Turnstile optional mọi môi trường, vẫn kiểm token khi đủ khóa. Giữ consent, origin, honeypot, validation, kiểm định danh sản phẩm và lưu bền vững trước báo thành công. Không sửa trạng thái SEO/nội dung pháp lý.
+- Form mở mặc định kể cả thiếu backend. API từ chối thiếu nơi lưu trước đọc body bằng 503 lead_storage_unconfigured; hai form hiển thị thông báo chưa gửi và giữ dữ liệu. Môi trường kiểm tra không có Supabase/Telegram/Turnstile; chưa thể nhận lead thật nếu chưa cấu hình storage. Không thêm lưu tạm/giả success, không gửi lead thật.
+- Self-check: 177 unit tests PASS; scoped lint PASS; pnpm build PASS (175 route scope + shipped CSS). E2E Internet desktop/mobile 16/16 PASS, gồm config thật không mock mở form và missing-storage giữ dữ liệu (POST mock). Docs SITE_ENV và env example cập nhật. Chưa có QA độc lập; không deploy/push/index.
+
+### NEWS-CARD-BUTTONS-20261111 — sửa căn giữa CTA
+
+- User chỉ ra nút CHI TIẾT lệch trong GÓI CƯỚC HOT. Khảo sát: Home dùng ButtonLink chung; news-listing và related-data-plans vẫn giữ card/anchor riêng. Không tuyên bố đã thống nhất component card.
+- Lead sửa đúng 6 anchor chi tiết ở hai component Tin tức: md:block → md:flex, bỏ padding-bottom bù 2px; giữ kích thước, link, SMS và responsive hiện hữu. Không sửa form/routing/SEO hoặc các thay đổi trước.
+- Self-check: scoped ESLint PASS, pnpm build PASS (route scope 175 + shipped CSS). Browser production 390/768/1400 trên Home, Tin tức và bài so-sanh-roaming: desktop CTA 106×34, text chính giữa (dx=dy=0 ở hai trang Tin tức); mobile/tablet giữ ẩn nút chi tiết như trước. Ảnh đã xem: reports/integration/status-ui/news-buttons-fixed.png. Không deploy/push/gửi lead; chưa có QA độc lập cho bản sửa hẹp này.
+
+### AUDIT-FIX-20261110 — đang tiếp tục
+
+- User yêu cầu sửa toàn bộ P0/P1/P2. Giữ các thay đổi đã có, không commit/deploy/gửi lead thật. Hợp đồng: mọi route approved render; chỉ `ready` được index; privacy còn draft nên intake đóng.
+- Lead sở hữu schema/config gốc, SEO/routing, CI/fallback, cleanup mã chết và tích hợp/verification. Worker chuẩn nạp profile tương ứng vì công cụ không có custom role.
+- AUDIT-FORMS: vt_forms_integrations độc quyền lead-schema, API leads, hai lead form và tests/internet-collection-lead.test.ts + tests/e2e/internet-lead.spec.ts; bắt buộc consent thật, không đọc PII khi intake đóng, test mock.
+- AUDIT-DOCS: vt_source_data được chuyển quyền độc quyền README.md, docs/ARCHITECTURE.md, ROUTE_SCOPE.md, IMPLEMENTATION_CONTRACT.md, MASTER_PLAN.md, EDITING_TSX.md, SITE_ENV.md; cập nhật registry/content paths và 175 route + 5 support, bỏ flags cũ; không sửa Boardroom hoặc code.
+- Chưa nghiệm thu full lint/test/build sau tích hợp.
+
 ### BUILD-FIX-20261110 — 10/11/2026
 
 - User yêu cầu chạy build và sửa các lỗi build. Lead sở hữu fixture `src/features/seo/page-seo.test.ts` và Boardroom; giữ nguyên thay đổi `next-env.d.ts` đã có trước lượt này. Build đầu thất bại TS2322 tại source của verifiedArticle do annotation PageContent làm mất thông tin source bắt buộc của fixture.

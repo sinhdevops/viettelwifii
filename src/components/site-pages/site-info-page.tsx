@@ -1,33 +1,60 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
-import { PageJsonLd } from "./page-json-ld";
-import { isPublicationEnabled } from "@/features/seo/page-seo";
 import {
-  isSiteRouteRenderable,
-  siteRouteDefinitions,
-} from "@/lib/site-routes";
+  ChevronRight,
+  Clock3,
+  MapPin,
+  Phone,
+  ShieldAlert,
+  ShieldCheck,
+} from "lucide-react";
+import { PageJsonLd } from "./page-json-ld";
+import { ButtonLink } from "@/components/ui/button-link";
+import { isPublicationEnabled } from "@/features/seo/page-seo";
+import { siteConfig } from "@/lib/site-config";
+import { isSiteRouteRenderable, siteRouteDefinitions } from "@/lib/site-routes";
+import styles from "./site-info-page.module.css";
 
 type SiteInfoSection = {
   heading: string;
   content: ReactNode;
 };
 
+/** Anchor ids stay stable and ASCII so TOC links never need encoding. */
+function sectionId(heading: string): string {
+  return heading
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export function SiteInfoPage({
   path,
   title,
   intro,
   sections,
+  secondaryHref = "/goi-cuoc-viettel",
+  secondaryLabel = "Xem gói cước",
 }: {
   path: string;
   title: string;
   intro: string;
   sections: SiteInfoSection[];
+  secondaryHref?: string;
+  secondaryLabel?: string;
 }) {
   const route = siteRouteDefinitions.find((entry) => entry.path === path);
   if (!route || !isSiteRouteRenderable(path)) notFound();
   const publicationEnabled = isPublicationEnabled();
   const routeReady = route?.status === "ready";
+  const noticeVisible = !routeReady || !publicationEnabled;
+  const phone = siteConfig.phoneNumber;
+
   return (
     <>
       {route && (
@@ -40,49 +67,156 @@ export function SiteInfoPage({
           }}
         />
       )}
-      <main className="mx-auto w-full max-w-[1080px] px-4 py-10 sm:px-6 md:py-16">
-        <nav aria-label="Breadcrumb" className="mb-6 text-base text-neutral-800">
-          <Link className="underline underline-offset-4" href="/">
-            Trang chủ
-          </Link>
-          <span aria-hidden="true" className="px-2">
-            /
-          </span>
-          <span aria-current="page">{title}</span>
-        </nav>
+      <main className={styles.page}>
+        <div className={styles.shell}>
+          <nav aria-label="Breadcrumb" className={styles.crumb}>
+            <Link href="/">Trang chủ</Link>
+            <ChevronRight size={14} aria-hidden="true" />
+            <span aria-current="page">{title}</span>
+          </nav>
 
-        <article>
-          <h1 className="max-w-4xl text-3xl font-semibold leading-tight text-neutral-950 sm:text-4xl">
-            {title}
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-neutral-700">
-            {intro}
-          </p>
+          <header className={styles.hero}>
+            <div className={styles.heroMain}>
+              <p className={styles.eyebrow}>
+                <ShieldCheck size={15} aria-hidden="true" />
+                ViettelWiFii.vn
+              </p>
+              <h1 className={styles.title}>{title}</h1>
+              <p className={styles.intro}>{intro}</p>
+            </div>
+            <div className={styles.heroActions}>
+              {phone && (
+                <ButtonLink href={siteConfig.phoneHref} variant="primary">
+                  <Phone size={18} aria-hidden="true" /> Gọi {phone}
+                </ButtonLink>
+              )}
+              <ButtonLink href={secondaryHref} variant="outline">
+                {secondaryLabel}
+              </ButtonLink>
+            </div>
+          </header>
 
-          {(!routeReady || !publicationEnabled) && (
-            <aside
-              role="status"
-              className="mt-8 bg-neutral-100 px-4 py-4 text-base leading-7 text-neutral-900"
-            >
-              {routeReady
-                ? "Website đang ở chế độ chưa công khai. Trang chưa được phê duyệt để lập chỉ mục hoặc chạy quảng cáo."
-                : "Bản nháp: thông tin nội dung, pháp lý hoặc quyền sử dụng tài nguyên còn cần được xác minh. Trang chưa được phê duyệt để lập chỉ mục hoặc chạy quảng cáo."}
-            </aside>
-          )}
+          <div className={styles.layout}>
+            <article className={styles.content}>
+              {noticeVisible && (
+                <aside
+                  className={`${styles.notice} ${routeReady ? "" : styles.noticeDraft}`}
+                  aria-label="Trạng thái xuất bản"
+                >
+                  <ShieldAlert size={20} aria-hidden="true" />
+                  <div>
+                    <p className={styles.noticeTitle}>
+                      {routeReady
+                        ? "Chưa mở chỉ mục công khai"
+                        : "Trang đang ở trạng thái bản nháp"}
+                    </p>
+                    <p className={styles.noticeBody}>
+                      {routeReady
+                        ? "Website đang hoàn thiện nội dung và quyền sử dụng tài nguyên. Trang chưa được lập chỉ mục hoặc dùng làm trang đích quảng cáo."
+                        : "Thông tin nội dung, pháp lý hoặc quyền sử dụng tài nguyên còn cần xác minh. Trang chưa được lập chỉ mục hoặc dùng làm trang đích quảng cáo."}
+                    </p>
+                  </div>
+                </aside>
+              )}
 
-          <div className="mt-10 max-w-3xl space-y-9">
-            {sections.map((section) => (
-              <section key={section.heading}>
-                <h2 className="text-xl font-semibold leading-7 text-neutral-950">
-                  {section.heading}
-                </h2>
-                <div className="mt-3 space-y-4 text-base leading-7 text-neutral-700">
-                  {section.content}
+              <div className={styles.sections}>
+                {sections.map((section, index) => {
+                  const id = sectionId(section.heading) || `muc-${index + 1}`;
+                  return (
+                    <section
+                      key={section.heading}
+                      id={id}
+                      className={styles.section}
+                      aria-labelledby={`${id}-heading`}
+                    >
+                      <h2
+                        id={`${id}-heading`}
+                        className={styles.sectionHeading}
+                      >
+                        <span
+                          className={styles.sectionIndex}
+                          aria-hidden="true"
+                        >
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        {section.heading}
+                      </h2>
+                      <div className={styles.sectionBody}>
+                        {section.content}
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+
+              <div className={styles.cta}>
+                <div>
+                  <p className={styles.ctaTitle}>Cần tư vấn gói cước?</p>
+                  <p className={styles.ctaText}>
+                    Kiểm tra giá và điều kiện hiện hành trước khi đăng ký.
+                  </p>
                 </div>
-              </section>
-            ))}
+                <div className={styles.ctaActions}>
+                  {phone && (
+                    <ButtonLink href={siteConfig.phoneHref} variant="primary">
+                      <Phone size={18} aria-hidden="true" /> {phone}
+                    </ButtonLink>
+                  )}
+                  <ButtonLink href="/lien-he" variant="outline">
+                    Liên hệ
+                  </ButtonLink>
+                </div>
+              </div>
+            </article>
+
+            <aside className={styles.side} aria-label="Thông tin bổ sung">
+              {sections.length > 1 && (
+                <nav className={styles.toc} aria-label="Mục lục">
+                  <p className={styles.sideTitle}>Nội dung trang</p>
+                  <ol className={styles.tocList}>
+                    {sections.map((section, index) => (
+                      <li key={section.heading}>
+                        <a
+                          href={`#${sectionId(section.heading) || `muc-${index + 1}`}`}
+                        >
+                          {section.heading}
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                </nav>
+              )}
+
+              <div className={styles.contactCard}>
+                <p className={styles.sideTitle}>Liên hệ nhanh</p>
+                {phone ? (
+                  <a className={styles.contactRow} href={siteConfig.phoneHref}>
+                    <Phone size={17} aria-hidden="true" />
+                    <span>{phone}</span>
+                  </a>
+                ) : (
+                  <p className={styles.contactMuted}>
+                    Chưa cấu hình số điện thoại.
+                  </p>
+                )}
+                <p className={styles.contactRow}>
+                  <MapPin size={17} aria-hidden="true" />
+                  <span>Ông Ích Khiêm, Cẩm Lệ, Đà Nẵng</span>
+                </p>
+                <p className={styles.contactRow}>
+                  <Clock3 size={17} aria-hidden="true" />
+                  <span>Hỗ trợ hằng ngày</span>
+                </p>
+                {path !== "/lien-he" && (
+                  <Link className={styles.contactLink} href="/lien-he">
+                    Xem trang liên hệ
+                    <ChevronRight size={15} aria-hidden="true" />
+                  </Link>
+                )}
+              </div>
+            </aside>
           </div>
-        </article>
+        </div>
       </main>
     </>
   );

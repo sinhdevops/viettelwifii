@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { useForm, type FieldErrors } from "react-hook-form";
+import { useForm, useWatch, type FieldErrors } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { toast } from "sonner";
@@ -44,7 +44,7 @@ export function LeadDialogForm({
     handleSubmit,
     reset,
     setValue,
-    watch,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<LeadPayload, unknown, ValidatedLead>({
     resolver: zodResolver(leadSchema),
@@ -63,7 +63,7 @@ export function LeadDialogForm({
     },
   });
 
-  const privacyConsent = watch("privacyConsent");
+  const privacyConsent = useWatch({ control, name: "privacyConsent" });
 
   useEffect(() => {
     let active = true;
@@ -103,15 +103,13 @@ export function LeadDialogForm({
     };
   }, [setValue]);
 
-  useEffect(() => {
-    if (!privacyConsent) {
-      setTurnstileToken("");
-      turnstileRef.current?.reset();
-    }
-  }, [privacyConsent]);
-
   async function submit(values: ValidatedLead) {
-    if (pendingRef.current) return;
+    if (
+      pendingRef.current ||
+      privacyAvailability !== "available" ||
+      !values.privacyConsent
+    )
+      return;
     pendingRef.current = true;
     setStatusMessage(null);
     const url = new URL(window.location.href);
@@ -147,6 +145,11 @@ export function LeadDialogForm({
         error?: string;
       } | null;
       if (!response.ok || result?.ok !== true) {
+        if (result?.error === "lead_storage_unconfigured") {
+          throw new Error(
+            "Chưa cấu hình nơi nhận đăng ký. Vui lòng gọi hotline để được hỗ trợ; thông tin chưa được gửi.",
+          );
+        }
         if (
           result?.error === "lead_intake_unavailable" ||
           response.status === 503
@@ -180,6 +183,7 @@ export function LeadDialogForm({
       setTurnstileToken("");
     } catch (error) {
       const knownErrors = [
+        "Chưa cấu hình nơi nhận đăng ký. Vui lòng gọi hotline để được hỗ trợ; thông tin chưa được gửi.",
         "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.",
         "Chính sách bảo mật vừa thay đổi. Biểu mẫu tạm thời chưa khả dụng; vui lòng tải lại trang để xem bản hiện hành.",
         "Mã xác minh đã hết hạn hoặc không hợp lệ. Vui lòng xác minh lại.",
@@ -299,13 +303,23 @@ export function LeadDialogForm({
         <label className="flex items-start gap-2 text-base leading-6 text-neutral-700">
           <input
             {...register("privacyConsent")}
+            onChange={(event) => {
+              setValue("privacyConsent", event.target.checked, {
+                shouldValidate: true,
+                shouldDirty: true,
+              });
+              if (!event.target.checked) {
+                setTurnstileToken("");
+                turnstileRef.current?.reset();
+              }
+            }}
             type="checkbox"
             required
             aria-invalid={Boolean(errors.privacyConsent)}
             aria-describedby={
               errors.privacyConsent ? `${formId}-privacy-error` : undefined
             }
-            className="mt-0.5 size-4 shrink-0 accent-primary"
+            className="accent-primary mt-0.5 size-4 shrink-0"
           />
           <span>
             Tôi đồng ý để thông tin đã cung cấp được xử lý theo{" "}
@@ -357,7 +371,11 @@ export function LeadDialogForm({
         )}
         <Button
           type="submit"
-          disabled={isSubmitting || Boolean(siteKey && !turnstileToken)}
+          disabled={
+            isSubmitting ||
+            !privacyConsent ||
+            Boolean(siteKey && !turnstileToken)
+          }
           className="w-full"
         >
           {isSubmitting ? "Đang gửi…" : "Gửi đăng ký"}

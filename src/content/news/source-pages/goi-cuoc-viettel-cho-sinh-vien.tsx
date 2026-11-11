@@ -262,8 +262,8 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <i>{"Đọc thêm: "}</i>
         <i>
-            Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?
-          </i>
+          Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?
+        </i>
         <i></i>
       </p>
       <h3 className="text-20 md:text-24 py-3 leading-[28px] font-bold md:leading-[32px]">
@@ -367,12 +367,8 @@ function GoiCuocViettelChoSinhVienDanhSachGoiCuocViettelPhuHopVoiSinhVien2026() 
                   </p>
                 </td>
                 <td className="border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0">
-                  <div className="flex justify-center md:hidden">
-                    ĐĂNG KÝ
-                  </div>
-                  <div className="hidden justify-center md:flex">
-                    Đăng ký
-                  </div>
+                  <div className="flex justify-center md:hidden">ĐĂNG KÝ</div>
+                  <div className="hidden justify-center md:flex">Đăng ký</div>
                 </td>
               </tr>
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">

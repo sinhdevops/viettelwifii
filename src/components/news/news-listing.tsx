@@ -8,6 +8,7 @@ import { NewsCard } from "./news-card";
 import { NewsLoadMore } from "./news-load-more";
 import { newsCards } from "@/constants/news/card-records";
 import type { NewsListingRecord } from "@/types/news/news-types";
+import styles from "./news-listing-hero.module.css";
 export function NewsListing({ record }: { record: NewsListingRecord }) {
   return (
     <article className="w-full max-w-[1140px]">
@@ -20,28 +21,28 @@ export function NewsListing({ record }: { record: NewsListingRecord }) {
 }
 function ListingHero({ record }: { record: NewsListingRecord }) {
   return (
-    <div className="hidden px-8 md:block lg:px-0">
-      <div className="relative mt-[86px] mb-[80px] flex h-[300px] rounded-[40px] bg-gradient-to-r from-[#FFD7DB] to-[#FFFFFF]">
+    <div className="px-4 pt-6 md:px-8 md:pt-0 lg:px-0">
+      <div className={styles.panel}>
         <img
           alt={record.bannerAlt}
           loading="lazy"
-          width="533"
-          height="420"
+          width="1774"
+          height="887"
           decoding="async"
-          className="absolute top-[-96px] left-[10px]"
+          className={styles.image}
           style={{ color: "transparent" }}
           src={sourceAsset(record.bannerImage)}
         />
-        <div className="pt-[93px] pl-[48%] uppercase">
-          <h1 className="text-[42px] leading-[54px]">
+        <div className={`${styles.copy} uppercase`}>
+          <h1 className={`${styles.title} text-[28px] leading-[40px]`}>
             {record.title}
-            <span className="text-primary block text-[57px] leading-[74px]">
+            <span className={`${styles.accent} text-primary block`}>
               {record.titleAccent}
             </span>
           </h1>
         </div>
       </div>
-      <div className="font-sarabun flex w-fit gap-[60px]">
+      <div className="font-sarabun hidden w-fit gap-[60px] md:flex">
         <img
           alt="tin tức"
           loading="lazy"
@@ -192,7 +193,7 @@ function ListingDataPlans() {
                 </a>
               </div>
               <a
-                className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:flex dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                 href="/goi-cuoc-viettel/SD90"
               >
                 CHI TIẾT
@@ -257,7 +258,7 @@ function ListingDataPlans() {
                 </a>
               </div>
               <a
-                className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:flex dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                 href="/goi-cuoc-viettel/SD120"
               >
                 CHI TIẾT
@@ -322,7 +323,7 @@ function ListingDataPlans() {
                 </a>
               </div>
               <a
-                className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:flex dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                 href="/goi-cuoc-viettel/SD135"
               >
                 CHI TIẾT

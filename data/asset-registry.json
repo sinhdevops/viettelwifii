@@ -1,9 +1,6 @@
 {
   "taskId": "REF-02",
-  "taskIds": [
-    "REF-02",
-    "ASSET-01"
-  ],
+  "taskIds": ["REF-02", "ASSET-01"],
   "schemaVersion": 1,
   "sourceSite": "https://viettelwifii.vn",
   "generatedAt": "2026-10-27T06:42:35.006Z",
@@ -14,10 +11,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/175S6tUWrxZSARxDOH8rNv/afaff854b53b08e10a7b2925c13bfd26/goi-cuoc-internet-viettel-2025.jpg",
       "localPath": "public/assets/viettelup/external/ctfassets/175S6tUWrxZSARxDOH8rNv-internet-wifi6-2025.jpg",
       "publicUrl": "/assets/viettelup/external/ctfassets/175S6tUWrxZSARxDOH8rNv-internet-wifi6-2025.jpg",
-      "roles": [
-        "img",
-        "article-body"
-      ],
+      "roles": ["img", "article-body"],
       "sourcePages": [
         "https://viettelwifii.vn/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025"
       ],
@@ -46,10 +40,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1KRArNaoC7v6uku5ujG9D8/7ff6e1b074795063fd5a88a7c97887b2/viettel15.jpeg",
       "localPath": "public/assets/viettelup/external/ctfassets/1KRArNaoC7v6uku5ujG9D8-viettel15.jpeg",
       "publicUrl": "/assets/viettelup/external/ctfassets/1KRArNaoC7v6uku5ujG9D8-viettel15.jpeg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/tin-tuc"
@@ -79,10 +70,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1KsjQU0QC3CGIY94oTDgC7/c095731e11a0f7c69b210ec3fb48714d/viettel_11.jpeg",
       "localPath": "public/assets/viettelup/external/ctfassets/1KsjQU0QC3CGIY94oTDgC7-viettel_11.jpeg",
       "publicUrl": "/assets/viettelup/external/ctfassets/1KsjQU0QC3CGIY94oTDgC7-viettel_11.jpeg",
-      "roles": [
-        "img",
-        "article-body"
-      ],
+      "roles": ["img", "article-body"],
       "sourcePages": [
         "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
       ],
@@ -111,10 +99,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1u3BHeC7tdjlpn6fm9mR1F/bb0bc6a32e7e91713fe484f51291c403/viettel_10.jpeg",
       "localPath": "public/assets/viettelup/external/ctfassets/1u3BHeC7tdjlpn6fm9mR1F-viettel_10.jpeg",
       "publicUrl": "/assets/viettelup/external/ctfassets/1u3BHeC7tdjlpn6fm9mR1F-viettel_10.jpeg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/tin-tuc",
@@ -145,12 +130,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg",
       "localPath": "public/assets/viettelup/external/ctfassets/1vLaqVRd9vs5WonZE1kiaN-viettel21.jpeg",
       "publicUrl": "/assets/viettelup/external/ctfassets/1vLaqVRd9vs5WonZE1kiaN-viettel21.jpeg",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset",
-        "background"
-      ],
+      "roles": ["img", "img-src", "img-srcset", "background"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/tin-tuc",
@@ -185,11 +165,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/2ityVh2bIO2h28MbpcRmQY/e74c183506454c1ffcf7d25933da6272/viettel2_7.jpeg",
       "localPath": "public/assets/viettelup/external/ctfassets/2ityVh2bIO2h28MbpcRmQY-viettel2_7.jpeg",
       "publicUrl": "/assets/viettelup/external/ctfassets/2ityVh2bIO2h28MbpcRmQY-viettel2_7.jpeg",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/tin-tuc",
@@ -224,10 +200,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/2kSZIv8CFvtYxZ4v4ycsnY/22542e1a2b478d3cacd36944179bb83c/Goi-cuoc-sinh-vien-viettel.jpg",
       "localPath": "public/assets/viettelup/external/ctfassets/2kSZIv8CFvtYxZ4v4ycsnY-Goi-cuoc-sinh-vien-viettel.jpg",
       "publicUrl": "/assets/viettelup/external/ctfassets/2kSZIv8CFvtYxZ4v4ycsnY-Goi-cuoc-sinh-vien-viettel.jpg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/tin-tuc"
@@ -257,13 +230,8 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/5k7CxcNVFRN1RV5SnhqgNf/ebff85572328370facb93d62a04d5b5d/3.jpg",
       "localPath": "public/assets/viettelup/external/ctfassets/5k7CxcNVFRN1RV5SnhqgNf-3.jpg",
       "publicUrl": "/assets/viettelup/external/ctfassets/5k7CxcNVFRN1RV5SnhqgNf-3.jpg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/tin-tuc"
-      ],
+      "roles": ["img", "img-src"],
+      "sourcePages": ["https://viettelwifii.vn/tin-tuc"],
       "sourcePage": "https://viettelwifii.vn/tin-tuc",
       "observedRenderUrls": [],
       "bytes": 164282,
@@ -289,10 +257,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/69vhu7erKiLUvGCa6PkDRc/484730b99e51d506f99eb28f89546ce1/2-Banner-web2.jpg",
       "localPath": "public/assets/viettelup/external/ctfassets/69vhu7erKiLUvGCa6PkDRc-2-Banner-web2.jpg",
       "publicUrl": "/assets/viettelup/external/ctfassets/69vhu7erKiLUvGCa6PkDRc-2-Banner-web2.jpg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/tin-tuc"
@@ -322,10 +287,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/6HSzS1h0Ds10uo5eAhd9N3/ca7fa4400861b32fcc0c7e3021b42786/gói_cước_data_4g_viettel_miễn_phí_gọi.jpg",
       "localPath": "public/assets/viettelup/external/ctfassets/6HSzS1h0Ds10uo5eAhd9N3-data-4g-free-call.jpg",
       "publicUrl": "/assets/viettelup/external/ctfassets/6HSzS1h0Ds10uo5eAhd9N3-data-4g-free-call.jpg",
-      "roles": [
-        "img",
-        "article-body"
-      ],
+      "roles": ["img", "article-body"],
       "sourcePages": [
         "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
       ],
@@ -354,10 +316,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/6WmNHtpnGXoj6YgE1OHIwM/1b102170b060d483994b42f7573752d4/gói_cước_data_4g_viettel_miễn_phí_mạng_xã_hội.jpg",
       "localPath": "public/assets/viettelup/external/ctfassets/6WmNHtpnGXoj6YgE1OHIwM-data-4g-social.jpg",
       "publicUrl": "/assets/viettelup/external/ctfassets/6WmNHtpnGXoj6YgE1OHIwM-data-4g-social.jpg",
-      "roles": [
-        "img",
-        "article-body"
-      ],
+      "roles": ["img", "article-body"],
       "sourcePages": [
         "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
       ],
@@ -386,10 +345,7 @@
       "sourceUrl": "https://images.ctfassets.net/dbp77tujye9f/EBgoF9xUgPGIPm95vwaaX/438468cc01d91b2361bd9566ba97e362/Gói_cước_4g_data_viettel.jpg",
       "localPath": "public/assets/viettelup/external/ctfassets/EBgoF9xUgPGIPm95vwaaX-goi-cuoc-4g-data-viettel.jpg",
       "publicUrl": "/assets/viettelup/external/ctfassets/EBgoF9xUgPGIPm95vwaaX-goi-cuoc-4g-data-viettel.jpg",
-      "roles": [
-        "img",
-        "article-body"
-      ],
+      "roles": ["img", "article-body"],
       "sourcePages": [
         "https://viettelwifii.vn/tin-tuc/goi-cuoc-data-4g-viettel-2026"
       ],
@@ -418,9 +374,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/3405f01dea64a005-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/3405f01dea64a005-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/3405f01dea64a005-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -450,9 +404,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/46d165ad616e4216-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/46d165ad616e4216-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/46d165ad616e4216-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -482,9 +434,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/4f330a9a3e3b6523-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/4f330a9a3e3b6523-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/4f330a9a3e3b6523-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -514,9 +464,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/4f37d6edfd555d71-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/4f37d6edfd555d71-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/4f37d6edfd555d71-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -546,9 +494,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/5769b3cfb316ec95-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/5769b3cfb316ec95-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/5769b3cfb316ec95-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -578,9 +524,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/57ab35ab9018dc34-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/57ab35ab9018dc34-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/57ab35ab9018dc34-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -610,9 +554,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/613709a08e1b710d-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/613709a08e1b710d-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/613709a08e1b710d-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -642,9 +584,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/7326b6e59a32b958-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/7326b6e59a32b958-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/7326b6e59a32b958-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -674,9 +614,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/77f7e3119a5ad966-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/77f7e3119a5ad966-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/77f7e3119a5ad966-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -706,9 +644,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/897baf52a03f8017-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/897baf52a03f8017-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/897baf52a03f8017-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -738,9 +674,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/c24a04e319296b27-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/c24a04e319296b27-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/c24a04e319296b27-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -770,9 +704,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/c6fb6ea5d8ef8742-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/c6fb6ea5d8ef8742-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/c6fb6ea5d8ef8742-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -802,9 +734,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/dab87edb4e84492a-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/dab87edb4e84492a-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/dab87edb4e84492a-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -834,9 +764,7 @@
       "sourceUrl": "https://viettelwifii.vn/_next/static/media/e9ee7175085fb48d-s.p.woff2",
       "localPath": "public/assets/viettelup/fonts/e9ee7175085fb48d-s.p.woff2",
       "publicUrl": "/assets/viettelup/fonts/e9ee7175085fb48d-s.p.woff2",
-      "roles": [
-        "font"
-      ],
+      "roles": ["font"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -866,19 +794,14 @@
       "sourceUrl": "https://viettelwifii.vn/icons/arrow-right.svg",
       "localPath": "public/assets/viettelup/icons/arrow-right.svg",
       "publicUrl": "/assets/viettelup/icons/arrow-right.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/tin-tuc",
         "https://viettelwifii.vn/tin-tuc/so-sanh-roaming"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/icons/arrow-right.svg"
-      ],
+      "observedRenderUrls": ["/icons/arrow-right.svg"],
       "bytes": 365,
       "contentType": "image/svg+xml",
       "sha256": "6ba4f64e9c0517275180c4295568eacd4b3cfd9124fe06016fbea95fd29c0ad2",
@@ -902,18 +825,13 @@
       "sourceUrl": "https://viettelwifii.vn/icons/clock.svg",
       "localPath": "public/assets/viettelup/icons/clock.svg",
       "publicUrl": "/assets/viettelup/icons/clock.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
-      "observedRenderUrls": [
-        "/icons/clock.svg"
-      ],
+      "observedRenderUrls": ["/icons/clock.svg"],
       "bytes": 1642,
       "contentType": "image/svg+xml",
       "sha256": "0900ea7737a84f649b214b695bfb634e996ccc03e1f6c96a0dd8e5cff65151c4",
@@ -937,18 +855,13 @@
       "sourceUrl": "https://viettelwifii.vn/icons/data.svg",
       "localPath": "public/assets/viettelup/icons/data.svg",
       "publicUrl": "/assets/viettelup/icons/data.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
-      "observedRenderUrls": [
-        "/icons/data.svg"
-      ],
+      "observedRenderUrls": ["/icons/data.svg"],
       "bytes": 1304,
       "contentType": "image/svg+xml",
       "sha256": "860d7487cdac49364793fbc82768a22efb6ec8830ed3ff05f56ad09a36875bd0",
@@ -972,17 +885,10 @@
       "sourceUrl": "https://viettelwifii.vn/icons/date.svg",
       "localPath": "public/assets/viettelup/icons/date.svg",
       "publicUrl": "/assets/viettelup/icons/date.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/tin-tuc/so-sanh-roaming"
-      ],
+      "roles": ["img", "img-src"],
+      "sourcePages": ["https://viettelwifii.vn/tin-tuc/so-sanh-roaming"],
       "sourcePage": "https://viettelwifii.vn/tin-tuc/so-sanh-roaming",
-      "observedRenderUrls": [
-        "/icons/date.svg"
-      ],
+      "observedRenderUrls": ["/icons/date.svg"],
       "bytes": 787,
       "contentType": "image/svg+xml",
       "sha256": "5b5a271c7f7192f80c573a1b6de4051697b497b66bb4652cbebfc21afff8a177",
@@ -1006,17 +912,10 @@
       "sourceUrl": "https://viettelwifii.vn/icons/discount.svg",
       "localPath": "public/assets/viettelup/icons/discount.svg",
       "publicUrl": "/assets/viettelup/icons/discount.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/"
-      ],
+      "roles": ["img", "img-src"],
+      "sourcePages": ["https://viettelwifii.vn/"],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/icons/discount.svg"
-      ],
+      "observedRenderUrls": ["/icons/discount.svg"],
       "bytes": 3069,
       "contentType": "image/svg+xml",
       "sha256": "6842c5e5dac308a3c2f2a80cabfa9a481c5257ea5bff52d0797c88ba66480421",
@@ -1040,11 +939,7 @@
       "sourceUrl": "https://viettelwifii.vn/icons/hamburger.png",
       "localPath": "public/assets/viettelup/icons/hamburger.png",
       "publicUrl": "/assets/viettelup/icons/hamburger.png",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -1083,11 +978,7 @@
       "sourceUrl": "https://viettelwifii.vn/icons/home.png",
       "localPath": "public/assets/viettelup/icons/home.png",
       "publicUrl": "/assets/viettelup/icons/home.png",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -1125,11 +1016,7 @@
       "sourceUrl": "https://viettelwifii.vn/icons/phone.png",
       "localPath": "public/assets/viettelup/icons/phone.png",
       "publicUrl": "/assets/viettelup/icons/phone.png",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -1167,18 +1054,13 @@
       "sourceUrl": "https://viettelwifii.vn/icons/price.svg",
       "localPath": "public/assets/viettelup/icons/price.svg",
       "publicUrl": "/assets/viettelup/icons/price.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
-      "observedRenderUrls": [
-        "/icons/price.svg"
-      ],
+      "observedRenderUrls": ["/icons/price.svg"],
       "bytes": 3558,
       "contentType": "image/svg+xml",
       "sha256": "1a9a65c8c103511e96fdb985c9389688e7c3a8bc335884238defbb830599267e",
@@ -1202,17 +1084,10 @@
       "sourceUrl": "https://viettelwifii.vn/icons/sms.svg",
       "localPath": "public/assets/viettelup/icons/sms.svg",
       "publicUrl": "/assets/viettelup/icons/sms.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/goi-cuoc-viettel/5G20"
-      ],
+      "roles": ["img", "img-src"],
+      "sourcePages": ["https://viettelwifii.vn/goi-cuoc-viettel/5G20"],
       "sourcePage": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
-      "observedRenderUrls": [
-        "/icons/sms.svg"
-      ],
+      "observedRenderUrls": ["/icons/sms.svg"],
       "bytes": 2719,
       "contentType": "image/svg+xml",
       "sha256": "33a798e8e1dff6faa8c1f965562da51e698b7b17ff11f9cd32bf8e590dad57df",
@@ -1236,11 +1111,7 @@
       "sourceUrl": "https://viettelwifii.vn/icons/viettel-big.png",
       "localPath": "public/assets/viettelup/icons/viettel-big.png",
       "publicUrl": "/assets/viettelup/icons/viettel-big.png",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -1278,10 +1149,7 @@
       "sourceUrl": "https://viettelwifii.vn/icons/viettel.svg",
       "localPath": "public/assets/viettelup/icons/viettel.svg",
       "publicUrl": "/assets/viettelup/icons/viettel.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -1291,9 +1159,7 @@
         "https://viettelwifii.vn/tin-tuc/so-sanh-roaming"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/icons/viettel.svg"
-      ],
+      "observedRenderUrls": ["/icons/viettel.svg"],
       "bytes": 3185,
       "contentType": "image/svg+xml",
       "sha256": "0b80e45291a714533b69afd6c60d0bc0c6418861cf698f95b35da24a2d0a2bec",
@@ -1317,14 +1183,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/banner-news.webp",
       "localPath": "public/assets/viettelup/images/banner-news.webp",
       "publicUrl": "/assets/viettelup/images/banner-news.webp",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/tin-tuc"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
+      "sourcePages": ["https://viettelwifii.vn/tin-tuc"],
       "sourcePage": "https://viettelwifii.vn/tin-tuc",
       "observedRenderUrls": [
         "https://viettelwifii.vn/_next/image?url=%2Fimages%2Fbanner-news.webp&w=640&q=75",
@@ -1354,14 +1214,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/banner-wifi-mesh-desktop.webp",
       "localPath": "public/assets/viettelup/images/banner-wifi-mesh-desktop.webp",
       "publicUrl": "/assets/viettelup/images/banner-wifi-mesh-desktop.webp",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
+      "sourcePages": ["https://viettelwifii.vn/"],
       "sourcePage": "https://viettelwifii.vn/",
       "observedRenderUrls": [
         "https://viettelwifii.vn/_next/image?url=%2Fimages%2Fbanner-wifi-mesh-desktop.webp&w=1920&q=75",
@@ -1391,12 +1245,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/banner-wifi-mesh-mobile.webp",
       "localPath": "public/assets/viettelup/images/banner-wifi-mesh-mobile.webp",
       "publicUrl": "/assets/viettelup/images/banner-wifi-mesh-mobile.webp",
-      "roles": [
-        "img"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/"
-      ],
+      "roles": ["img"],
+      "sourcePages": ["https://viettelwifii.vn/"],
       "sourcePage": "https://viettelwifii.vn/",
       "observedRenderUrls": [
         "https://viettelwifii.vn/_next/image?url=%2Fimages%2Fbanner-wifi-mesh-mobile.webp&w=1200&q=75"
@@ -1424,14 +1274,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/banner-youtube-premium-desktop.webp",
       "localPath": "public/assets/viettelup/images/banner-youtube-premium-desktop.webp",
       "publicUrl": "/assets/viettelup/images/banner-youtube-premium-desktop.webp",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
+      "sourcePages": ["https://viettelwifii.vn/"],
       "sourcePage": "https://viettelwifii.vn/",
       "observedRenderUrls": [
         "https://viettelwifii.vn/_next/image?url=%2Fimages%2Fbanner-youtube-premium-desktop.webp&w=1920&q=75",
@@ -1462,9 +1306,7 @@
       "sourceUrl": "https://viettelwifii.vn/images/bg-data.png",
       "localPath": "public/assets/viettelup/images/bg-data.png",
       "publicUrl": "/assets/viettelup/images/bg-data.png",
-      "roles": [
-        "background"
-      ],
+      "roles": ["background"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -1497,14 +1339,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/contact-phone.png",
       "localPath": "public/assets/viettelup/images/contact-phone.png",
       "publicUrl": "/assets/viettelup/images/contact-phone.png",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/internet/NETVT01"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
+      "sourcePages": ["https://viettelwifii.vn/internet/NETVT01"],
       "sourcePage": "https://viettelwifii.vn/internet/NETVT01",
       "observedRenderUrls": [
         "https://viettelwifii.vn/_next/image?url=%2Fimages%2Fcontact-phone.png&w=64&q=75",
@@ -1534,18 +1370,13 @@
       "sourceUrl": "https://viettelwifii.vn/images/facebook.svg",
       "localPath": "public/assets/viettelup/images/facebook.svg",
       "publicUrl": "/assets/viettelup/images/facebook.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/facebook.svg"
-      ],
+      "observedRenderUrls": ["/images/facebook.svg"],
       "bytes": 764,
       "contentType": "image/svg+xml",
       "sha256": "b7aece2fd1f2ad89720c3a0a3e65da7082691b0de16b3a6198df00b96ac47f57",
@@ -1569,12 +1400,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/internet-card-bg-mobi.png",
       "localPath": "public/assets/viettelup/images/internet-card-bg-mobi.png",
       "publicUrl": "/assets/viettelup/images/internet-card-bg-mobi.png",
-      "roles": [
-        "background"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/internet/NETVT01"
-      ],
+      "roles": ["background"],
+      "sourcePages": ["https://viettelwifii.vn/internet/NETVT01"],
       "sourcePage": "https://viettelwifii.vn/internet/NETVT01",
       "observedRenderUrls": [],
       "bytes": 21909,
@@ -1600,12 +1427,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/internet-card-bg.png",
       "localPath": "public/assets/viettelup/images/internet-card-bg.png",
       "publicUrl": "/assets/viettelup/images/internet-card-bg.png",
-      "roles": [
-        "background"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/internet/NETVT01"
-      ],
+      "roles": ["background"],
+      "sourcePages": ["https://viettelwifii.vn/internet/NETVT01"],
       "sourcePage": "https://viettelwifii.vn/internet/NETVT01",
       "observedRenderUrls": [],
       "bytes": 50984,
@@ -1631,14 +1454,8 @@
       "sourceUrl": "https://viettelwifii.vn/images/internet-ultra-speed.png",
       "localPath": "public/assets/viettelup/images/internet-ultra-speed.png",
       "publicUrl": "/assets/viettelup/images/internet-ultra-speed.png",
-      "roles": [
-        "img",
-        "img-src",
-        "img-srcset"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/internet/NETVT01"
-      ],
+      "roles": ["img", "img-src", "img-srcset"],
+      "sourcePages": ["https://viettelwifii.vn/internet/NETVT01"],
       "sourcePage": "https://viettelwifii.vn/internet/NETVT01",
       "observedRenderUrls": [
         "https://viettelwifii.vn/_next/image?url=%2Fimages%2Finternet-ultra-speed.png&w=128&q=75",
@@ -1668,18 +1485,13 @@
       "sourceUrl": "https://viettelwifii.vn/images/messenger.svg",
       "localPath": "public/assets/viettelup/images/messenger.svg",
       "publicUrl": "/assets/viettelup/images/messenger.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/messenger.svg"
-      ],
+      "observedRenderUrls": ["/images/messenger.svg"],
       "bytes": 1105,
       "contentType": "image/svg+xml",
       "sha256": "dcf8ab9c06393e210daba0fa71fa29c637d4ae0b5c373618df8809ecdf069a06",
@@ -1703,17 +1515,10 @@
       "sourceUrl": "https://viettelwifii.vn/images/mybox.svg",
       "localPath": "public/assets/viettelup/images/mybox.svg",
       "publicUrl": "/assets/viettelup/images/mybox.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/"
-      ],
+      "roles": ["img", "img-src"],
+      "sourcePages": ["https://viettelwifii.vn/"],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/mybox.svg"
-      ],
+      "observedRenderUrls": ["/images/mybox.svg"],
       "bytes": 3971,
       "contentType": "image/svg+xml",
       "sha256": "7bec5cdbe1fce1f41865fcedc873586989f808d27026d1ba5b1b26f3b1167684",
@@ -1737,17 +1542,10 @@
       "sourceUrl": "https://viettelwifii.vn/images/mydio.svg",
       "localPath": "public/assets/viettelup/images/mydio.svg",
       "publicUrl": "/assets/viettelup/images/mydio.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/"
-      ],
+      "roles": ["img", "img-src"],
+      "sourcePages": ["https://viettelwifii.vn/"],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/mydio.svg"
-      ],
+      "observedRenderUrls": ["/images/mydio.svg"],
       "bytes": 3799,
       "contentType": "image/svg+xml",
       "sha256": "b1c39ae6dcf70f0320f909a8330a908878be334b5b2a09a3c3bb0e2d4c20abc3",
@@ -1771,18 +1569,13 @@
       "sourceUrl": "https://viettelwifii.vn/images/phone.svg",
       "localPath": "public/assets/viettelup/images/phone.svg",
       "publicUrl": "/assets/viettelup/images/phone.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/phone.svg"
-      ],
+      "observedRenderUrls": ["/images/phone.svg"],
       "bytes": 2104,
       "contentType": "image/svg+xml",
       "sha256": "aca9af16114e7447b5d40afa80263a805c2cf3f10a7611c81f02ab2206b6a373",
@@ -1806,18 +1599,13 @@
       "sourceUrl": "https://viettelwifii.vn/images/sms.svg",
       "localPath": "public/assets/viettelup/images/sms.svg",
       "publicUrl": "/assets/viettelup/images/sms.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/sms.svg"
-      ],
+      "observedRenderUrls": ["/images/sms.svg"],
       "bytes": 1516,
       "contentType": "image/svg+xml",
       "sha256": "f8b3433c91f395f6b54fce0d8f24aaa488ab701429fdff68a8cb4c2aba793a6a",
@@ -1841,18 +1629,13 @@
       "sourceUrl": "https://viettelwifii.vn/images/tiktok.svg",
       "localPath": "public/assets/viettelup/images/tiktok.svg",
       "publicUrl": "/assets/viettelup/images/tiktok.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/tiktok.svg"
-      ],
+      "observedRenderUrls": ["/images/tiktok.svg"],
       "bytes": 1641,
       "contentType": "image/svg+xml",
       "sha256": "6fbdb46b05670575f55ff76c163b868336e5b7c2608b1a2f72faaace969ce25b",
@@ -1876,10 +1659,7 @@
       "sourceUrl": "https://viettelwifii.vn/images/tv360.svg",
       "localPath": "public/assets/viettelup/images/tv360.svg",
       "publicUrl": "/assets/viettelup/images/tv360.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -1887,9 +1667,7 @@
         "https://viettelwifii.vn/tin-tuc/so-sanh-roaming"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/tv360.svg"
-      ],
+      "observedRenderUrls": ["/images/tv360.svg"],
       "bytes": 2162,
       "contentType": "image/svg+xml",
       "sha256": "0c76a18b6cae6731be153cc4c2e735b017562bea27a69cd38826c0233c0bf290",
@@ -1913,17 +1691,10 @@
       "sourceUrl": "https://viettelwifii.vn/images/tv3604k.svg",
       "localPath": "public/assets/viettelup/images/tv3604k.svg",
       "publicUrl": "/assets/viettelup/images/tv3604k.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
-      "sourcePages": [
-        "https://viettelwifii.vn/"
-      ],
+      "roles": ["img", "img-src"],
+      "sourcePages": ["https://viettelwifii.vn/"],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/tv3604k.svg"
-      ],
+      "observedRenderUrls": ["/images/tv3604k.svg"],
       "bytes": 3408,
       "contentType": "image/svg+xml",
       "sha256": "650446c643e757faf37892b6de67d90c01bcaefeb0b625d2eac796d3c7fbaf7c",
@@ -1947,18 +1718,13 @@
       "sourceUrl": "https://viettelwifii.vn/images/youtube.svg",
       "localPath": "public/assets/viettelup/images/youtube.svg",
       "publicUrl": "/assets/viettelup/images/youtube.svg",
-      "roles": [
-        "img",
-        "img-src"
-      ],
+      "roles": ["img", "img-src"],
       "sourcePages": [
         "https://viettelwifii.vn/",
         "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120"
       ],
       "sourcePage": "https://viettelwifii.vn/",
-      "observedRenderUrls": [
-        "/images/youtube.svg"
-      ],
+      "observedRenderUrls": ["/images/youtube.svg"],
       "bytes": 969,
       "contentType": "image/svg+xml",
       "sha256": "ff87e86339ddd2fb0f04cf23ed110566ac531936f14e4ce6dde0772a58627ae9",

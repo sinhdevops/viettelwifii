@@ -21,7 +21,9 @@ export default function PackageHubPage() {
     <SiteInfoPage
       path="/goi-cuoc-viettel"
       title="Danh mục gói cước Viettel"
-      intro="Danh sách route gói cước hiện có trong hệ thống. Giá, điều kiện và cú pháp đăng ký cần được xác minh với nhà mạng trước khi sử dụng."
+      intro="Tra cứu toàn bộ gói cước Viettel đang có trên hệ thống. Giá, điều kiện và cú pháp đăng ký cần được xác minh với nhà mạng trước khi sử dụng."
+      secondaryHref="/internet"
+      secondaryLabel="Xem Internet"
       sections={[
         {
           heading: "Danh sách gói cước",

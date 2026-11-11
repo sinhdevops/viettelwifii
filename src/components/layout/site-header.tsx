@@ -4,9 +4,18 @@ import { siteConfig } from "@/lib/site-config";
 import { Button as AppButton } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import * as Dialog from "@radix-ui/react-dialog";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetOverlay,
+  SheetPortal,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import styles from "./site-header.module.css";
 
 type NavigationItem = {
   text: string;
@@ -78,6 +87,17 @@ export function SiteHeader({
   const path = usePathname();
   const isNine = path === "/goi-cuoc-nine";
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    // The captured source uses md at 960px, not Tailwind's default 768px.
+    const desktop = window.matchMedia("(min-width: 960px)");
+    const closeOnDesktop = () => {
+      if (desktop.matches) setOpen(false);
+    };
+    desktop.addEventListener("change", closeOnDesktop);
+    return () => desktop.removeEventListener("change", closeOnDesktop);
+  }, []);
+
   const visibleItems = items.filter(
     (item) => !item.supportRoute || availableSiteRoutes.includes(item.href),
   );
@@ -118,8 +138,8 @@ export function SiteHeader({
           ))}
         </div>
         <div className="md:hidden">
-          <Dialog.Root open={open} onOpenChange={setOpen}>
-            <Dialog.Trigger asChild>
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
               <AppButton
                 variant="unstyled"
                 size="unstyled"
@@ -135,39 +155,25 @@ export function SiteHeader({
                   height={32}
                 />
               </AppButton>
-            </Dialog.Trigger>
-            <Dialog.Portal>
-              {/* These overlay utilities are absent from the captured source CSS. */}
-              <Dialog.Overlay
-                className="fixed inset-0"
-                style={{ zIndex: 110, backgroundColor: "rgb(0 0 0 / 0.4)" }}
-              />
-              <Dialog.Content
-                className="font-sarabun fixed inset-x-0 top-0 bg-white px-4 pt-6 pb-8 shadow-lg"
-                style={{ zIndex: 111, maxHeight: "100dvh", overflowY: "auto" }}
+            </SheetTrigger>
+            <SheetPortal>
+              <SheetOverlay className={styles.mobileOverlay} />
+              <SheetContent
+                mobileSide="bottom"
+                className={`font-sarabun ${styles.mobileSheet}`}
                 aria-describedby={undefined}
               >
-                <Dialog.Title className="sr-only">Menu điều hướng</Dialog.Title>
-                <div className="flex items-center justify-between pb-6">
-                  <Image
-                    unoptimized
-                    alt="Viettel"
-                    src="/assets/viettelup/99a5712d86ce7a98a3e03885.svg"
-                    width={96}
-                    height={18}
+                <SheetTitle className="sr-only">Menu điều hướng</SheetTitle>
+                <SheetClose asChild>
+                  <AppButton
+                    variant="unstyled"
+                    size="unstyled"
+                    type="button"
+                    className={styles.handle}
+                    aria-label="Đóng menu"
                   />
-                  <Dialog.Close asChild>
-                    <AppButton
-                      variant="unstyled"
-                      size="unstyled"
-                      className="text-22 rounded-md border border-[#ddd] px-3 py-1"
-                      aria-label="Đóng menu"
-                    >
-                      ×
-                    </AppButton>
-                  </Dialog.Close>
-                </div>
-                <div className="flex flex-col gap-4 font-medium">
+                </SheetClose>
+                <div className={styles.mobileLinks}>
                   {visibleItems.map((item) => (
                     <NavItem
                       key={item.href}
@@ -178,9 +184,9 @@ export function SiteHeader({
                     />
                   ))}
                 </div>
-              </Dialog.Content>
-            </Dialog.Portal>
-          </Dialog.Root>
+              </SheetContent>
+            </SheetPortal>
+          </Sheet>
         </div>
       </div>
     </nav>

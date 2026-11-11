@@ -1,5 +1,12 @@
-﻿.section {
+.section {
   scroll-margin-top: 112px;
+}
+
+/* Contain the slide track before Swiper finishes client initialization. */
+@media (max-width: 959px) {
+  .section {
+    overflow-x: clip;
+  }
 }
 
 .carousel {

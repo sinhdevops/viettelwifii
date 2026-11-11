@@ -2,12 +2,72 @@
   "taskId": "REF-01",
   "context": "Media references visible in public text extraction, URL/src unresolved. Asset agent owns downloads and local registry. These are requests for matching, not a downloaded asset registry.",
   "items": [
-    {"path": "/", "labels": ["Navigation menu", "tv360", "mybox", "phone", "tiktok", "youtube", "facebook", "messenger", "discount-icon"], "sourceUrl": "https://viettelwifii.vn/", "assetUrls": []},
-    {"path": "/goi-cuoc-viettel/5G20", "labels": ["Cước phí", "thời hạn sử dụng", "Dung lượng data 4G tốc độ cao", "Cú pháp đăng ký qua SMS"], "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G20", "assetUrls": []},
-    {"path": "/goi-cuoc-viettel/tra-sau/MXH120", "labels": ["Cước phí", "thời hạn sử dụng", "Dung lượng data 4G tốc độ cao", "tiktok", "youtube", "facebook", "messenger", "phone", "sms"], "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120", "assetUrls": []},
-    {"path": "/goi-cuoc-viettel/MXH120", "labels": ["YouTube video player", "Cước phí", "Cú pháp đăng ký qua SMS"], "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/MXH120", "assetUrls": []},
-    {"path": "/internet/NETVT01", "labels": ["package icon", "phone"], "sourceUrl": "https://viettelwifii.vn/internet/NETVT01", "assetUrls": []},
-    {"path": "/tin-tuc", "labels": ["Dùng mạng mỗi ngày không cần wifi", "tin tức"], "sourceUrl": "https://viettelwifii.vn/tin-tuc", "assetUrls": []},
-    {"path": "/tin-tuc/so-sanh-roaming", "labels": ["Ngày", "so-sanh-roaming"], "sourceUrl": "https://viettelwifii.vn/tin-tuc/so-sanh-roaming", "assetUrls": []}
+    {
+      "path": "/",
+      "labels": [
+        "Navigation menu",
+        "tv360",
+        "mybox",
+        "phone",
+        "tiktok",
+        "youtube",
+        "facebook",
+        "messenger",
+        "discount-icon"
+      ],
+      "sourceUrl": "https://viettelwifii.vn/",
+      "assetUrls": []
+    },
+    {
+      "path": "/goi-cuoc-viettel/5G20",
+      "labels": [
+        "Cước phí",
+        "thời hạn sử dụng",
+        "Dung lượng data 4G tốc độ cao",
+        "Cú pháp đăng ký qua SMS"
+      ],
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
+      "assetUrls": []
+    },
+    {
+      "path": "/goi-cuoc-viettel/tra-sau/MXH120",
+      "labels": [
+        "Cước phí",
+        "thời hạn sử dụng",
+        "Dung lượng data 4G tốc độ cao",
+        "tiktok",
+        "youtube",
+        "facebook",
+        "messenger",
+        "phone",
+        "sms"
+      ],
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/tra-sau/MXH120",
+      "assetUrls": []
+    },
+    {
+      "path": "/goi-cuoc-viettel/MXH120",
+      "labels": ["YouTube video player", "Cước phí", "Cú pháp đăng ký qua SMS"],
+      "sourceUrl": "https://viettelwifii.vn/goi-cuoc-viettel/MXH120",
+      "assetUrls": []
+    },
+    {
+      "path": "/internet/NETVT01",
+      "labels": ["package icon", "phone"],
+      "sourceUrl": "https://viettelwifii.vn/internet/NETVT01",
+      "assetUrls": []
+    },
+    {
+      "path": "/tin-tuc",
+      "labels": ["Dùng mạng mỗi ngày không cần wifi", "tin tức"],
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc",
+      "assetUrls": []
+    },
+    {
+      "path": "/tin-tuc/so-sanh-roaming",
+      "labels": ["Ngày", "so-sanh-roaming"],
+      "sourceUrl": "https://viettelwifii.vn/tin-tuc/so-sanh-roaming",
+      "assetUrls": []
+    }
   ]
 }

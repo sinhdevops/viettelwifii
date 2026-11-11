@@ -4,7 +4,11 @@ import type { CSSProperties } from "react";
 import type { BroadbandInternetCardData } from "./internet-data";
 import { InternetPlanCard } from "./internet-plan-card";
 
-export function BroadbandInternetCard({ item }: { item: BroadbandInternetCardData }) {
+export function BroadbandInternetCard({
+  item,
+}: {
+  item: BroadbandInternetCardData;
+}) {
   return (
     <InternetPlanCard
       item={item}

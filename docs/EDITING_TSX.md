@@ -1,38 +1,37 @@
 # Chỉnh giao diện và nội dung TSX
 
-Code giao diện được tổ chức thành **bố cục/component dùng chung → dữ liệu có kiểu → nội dung riêng của trang**. Gói cước được đặt cạnh route trong `src/app/goi-cuoc-viettel`: `_components/` chứa giao diện, `_data/` chứa dữ liệu và `_content/` chứa nội dung TSX từng gói. Các thư mục có dấu `_` không tạo URL. Script gói cước nằm ở `scripts/packages/`, ảnh bằng chứng nằm ở `reports/integration/package-source-evidence/`.
+Code chia thành **component dùng chung → dữ liệu có kiểu → nội dung riêng từng trang**. App Router chỉ ghép route, metadata và component; không sửa bản sao package private folder cũ trong app. Dùng registry thực tế, không giả định mọi metadata đã nằm trong `src/content/`.
 
 ## Tìm đúng file cần sửa
 
-| Cần sửa                                               | File/thư mục                                                                                                              |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Bố cục chung của các gói di động                      | `src/app/goi-cuoc-viettel/_components/package-page.tsx`                                                                   |
-| Tên, thông số tóm tắt, CTA và danh sách gói liên quan | `src/app/goi-cuoc-viettel/_data/package-data.ts`                                                                          |
-| Kiểu dữ liệu gói di động                              | `src/app/goi-cuoc-viettel/_data/package-types.ts`                                                                         |
-| Nội dung chi tiết gói 3N                              | `src/app/goi-cuoc-viettel/_content/general-3N.tsx`                                                                        |
-| Nội dung gói MXH120 trả sau                           | `src/app/goi-cuoc-viettel/_content/postpaid-MXH120.tsx`                                                                   |
-| Thẻ gói liên quan và dữ liệu thẻ                      | `src/app/goi-cuoc-viettel/_components/related-package-card.tsx`, `src/app/goi-cuoc-viettel/_data/related-package-data.ts` |
-| Bố cục bài tin, tiêu đề và ngày đăng                  | `src/features/news/article-layout.tsx`                                                                                    |
-| Tiêu đề/ngày đăng/danh sách tin liên quan             | `src/features/news/article-records.ts`                                                                                    |
-| Nội dung bài so sánh Roaming                          | `src/features/news/source-pages/so-sanh-roaming.tsx`                                                                      |
-| Trang danh sách tin                                   | `src/features/news/news-listing.tsx`, `listing-records.ts`                                                                |
-| Thẻ tin dùng chung                                    | `src/features/news/news-card.tsx`, `card-records.ts`                                                                      |
-| Trang Internet/GIC/Nine/Roaming                       | `src/features/collections/{internet,gic,nine,roaming}/`                                                                   |
-| Thứ tự các phần trên trang Roaming                    | `src/features/collections/roaming/roaming-collection.tsx`                                                                 |
-| Banner Roaming                                        | `src/features/collections/roaming/hero.tsx`                                                                               |
-| Quốc gia phổ biến và FAQ Roaming                      | `src/features/collections/roaming/roaming-data.tsx`                                                                       |
-| Popup chọn quốc gia / popup đăng ký                   | `src/features/collections/collection-country-picker.tsx`, `collection-signup-dialog.tsx`                                  |
-| Trang chủ                                             | `src/features/home/home-content.tsx`, `home-source-data.ts`                                                               |
-| Bố cục trang chi tiết Internet                        | `src/features/internet/internet-content.tsx`                                                                              |
-| Nội dung riêng từng gói Internet                      | `src/features/internet/copy/`                                                                                             |
-| Header/menu mobile                                    | `src/components/layout/site-header.tsx`                                                                                   |
-| Route trang chủ / danh mục / bài viết                 | `src/app/**/page.tsx`                                                                                                     |
-| Metadata, trạng thái và dữ liệu trang có kiểu         | `src/features/*/page-content.ts`, `src/app/goi-cuoc-viettel/_data/page-content.ts`                                        |
-| Danh sách URL được duyệt và loader server             | `src/lib/approved-routes.ts`, `site-data.ts`, `page-content-registry.ts`                                                  |
+| Cần sửa                              | File/thư mục hiện hành                                                                                |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Bố cục gói di động                   | `src/components/packages/package-page.tsx`                                                            |
+| Thông số tóm tắt, CTA, danh sách gói | `src/constants/packages/package-data.ts`                                                              |
+| Kiểu dữ liệu gói                     | `src/types/packages/`                                                                                 |
+| Chi tiết 3N / MXH120 trả sau         | `src/content/packages/general-3N.tsx`, `src/content/packages/postpaid-MXH120.tsx`                     |
+| Registry chi tiết gói                | `src/content/packages/index.ts`, `src/content/packages/package-route.ts`                              |
+| Thẻ gói liên quan                    | `src/components/packages/related-package-card.tsx`, `src/constants/packages/related-package-data.ts`  |
+| Bố cục bài tin                       | `src/components/news/article-layout.tsx`                                                              |
+| Tiêu đề/ngày/danh sách tin           | `src/constants/news/{article-records,listing-records,card-records}.ts`                                |
+| Nội dung so sánh Roaming             | `src/content/news/source-pages/so-sanh-roaming.tsx`                                                   |
+| Listing/thẻ tin/tải thêm             | `src/components/news/{news-listing,news-card,news-load-more}.tsx`                                     |
+| Collection GIC/Nine/Roaming          | `src/components/{gic,nine,roaming}/`                                                                  |
+| Collection Internet                  | `src/features/collections/internet/`                                                                  |
+| Roaming hero/thứ tự section          | `src/components/roaming/{hero,roaming-collection}.tsx`                                                |
+| Dữ liệu Roaming                      | `src/constants/roaming/roaming-data.tsx`                                                              |
+| Popup chọn quốc gia/đăng ký          | `src/features/collections/{collection-country-picker,collection-signup-dialog}.tsx`                   |
+| Trang chủ                            | `src/components/home/home-content.tsx`, `src/constants/home/home-source-data.ts`                      |
+| Chi tiết Internet                    | `src/components/internet/internet-content.tsx`, `src/content/internet/copy/`                          |
+| Header/menu                          | `src/components/layout/site-header.tsx`                                                               |
+| Route entry                          | `src/app/**/page.tsx`                                                                                 |
+| Metadata/status home/news/packages   | `src/constants/{home,news,packages}/page-content.ts`                                                  |
+| Metadata/status Internet/collection  | `src/content/internet/page-content.ts`, `src/features/collections/page-content.ts`                    |
+| Allowlist và repository              | `src/lib/{approved-routes,site-routes,page-content-registry}.ts`, `src/lib/server/page-repository.ts` |
 
 ## Ví dụ: gói 3N
 
-Route động `/goi-cuoc-viettel/[code]` và `/goi-cuoc-viettel/tra-sau/[code]` dùng `PackageContent` để ghép `PackagePage`, dữ liệu trong `PACKAGE_PAGES` và component chi tiết tra theo đường dẫn đầy đủ. Mỗi file nội dung chỉ xuất phần chi tiết:
+Hai route động `/goi-cuoc-viettel/[code]` và `/goi-cuoc-viettel/tra-sau/[code]` dùng `PackageContent` ghép `PackagePage`, record trong `PACKAGE_PAGES` và phần chi tiết tra theo full path. File nội dung chỉ xuất chi tiết:
 
 ```tsx
 export default function General3NPageDetails() {
@@ -44,30 +43,37 @@ export default function General3NPageDetails() {
 }
 ```
 
-Sửa bố cục/thông số hiển thị ở `PackagePage` và `package-data.ts`. Sửa đoạn giải thích, bảng, ảnh hoặc hướng dẫn riêng của 3N ở `General3NPageDetails`. `packageDetailsByRoute` trong `src/app/goi-cuoc-viettel/_content/index.ts` đăng ký các phần chi tiết; không ghép thêm `PackagePage` trong từng file. Nội dung bài viết dài vẫn là JSX đọc được; không ép các đoạn khác nhau vào một schema chung.
+Sửa bố cục ở `PackagePage`, thông số ở `package-data.ts`, đoạn riêng ở `General3NPageDetails`. `packageDetailsByRoute` đăng ký phần chi tiết; không ghép thêm `PackagePage` trong từng file. Giữ bài dài là JSX đọc được, không ép nội dung khác nhau vào cây JSON.
 
-Giá/quyền lợi xuất hiện trong đoạn văn chi tiết vẫn là nội dung biên tập riêng: khi đổi thông số tóm tắt, cần đối chiếu cả đoạn văn có nhắc đến thông số đó. Giữ định danh đầy đủ `/goi-cuoc-viettel/tra-sau/MXH120` để phân biệt với gói cùng mã ở nhóm khác.
+Giá/quyền lợi trong đoạn văn là nội dung biên tập riêng: khi đổi thông số tóm tắt phải đối chiếu cả chi tiết. Full path `/goi-cuoc-viettel/tra-sau/MXH120` khác gói thường cùng mã. Không tự đoán thông số khi thiếu nguồn.
 
 ## Giữ giao diện khi chỉnh code
 
-Nút hành động dùng `Button`, nút điều hướng dùng `ButtonLink` ở `src/components/ui/`. Xem [quy ước button](COMMON_BUTTONS.md) cho variants, kích thước và cách ghép với Radix.
+Nút hành động dùng `Button`, điều hướng dùng `ButtonLink` trong `src/components/ui/`; xem [quy ước button](COMMON_BUTTONS.md).
 
-- Dùng thuộc tính tĩnh như `className="..."`; dùng `{...}` khi có biến/biểu thức hoặc cần giữ chính xác khoảng trắng quanh chữ in đậm/link.
-- Component bố cục và nội dung là Server Component mặc định. Chỉ phần có state/event/DOM mới dùng `"use client"`.
-- CSS hiện hành là bundle nguồn `src/styles/viettelup-source.css`. Class Tailwind mới viết thêm chưa chắc có rule trong bundle; thêm CSS có phạm vi hoặc style rõ ràng và kiểm tra computed style trên trình duyệt.
-- Asset đã tải local được tra qua `sourceAsset()`. Giữ đúng URL nguồn làm khóa tra hoặc dùng asset local đã có; không đổi ảnh vì refactor code.
-- Các generator HTML cũ đã được chặn để tránh ghi đè code đã chỉnh. Không bỏ chặn để cập nhật nội dung; chỉnh trực tiếp component/dữ liệu tương ứng.
+- Dùng thuộc tính tĩnh như `className="..."`; dùng biểu thức khi có biến hoặc cần bảo toàn khoảng trắng quanh chữ/link.
+- Server Component mặc định; chỉ state/event/DOM mới dùng `"use client"`. Đọc guide Next cục bộ trước khi viết code Next.
+- Giữ CSS hiện hành `src/styles/viettelup-source.css`. Utility mới chưa chắc có rule; dùng CSS scoped/style rõ ràng và kiểm computed style.
+- Media tra qua `sourceAsset()` hoặc asset local đã có; không thay ảnh chỉ vì refactor.
+- Không bỏ chặn generator cũ để ghi đè code đã biên tập.
 
-## Chạy và kiểm tra
+## Render, SEO và kiểm tra
 
-Chạy `npm run dev` rồi mở `http://localhost:3000`. Draft preview đã được bật riêng cho dev; trạng thái duyệt nội dung và guard production vẫn giữ nguyên.
+Dùng pnpm theo `packageManager`, một lockfile `pnpm-lock.yaml`. `pnpm dev` phục vụ mặc định `http://localhost:3000`, không cần cờ preview. Tất cả 175 approved product/content route và 5 support render; chỉ `ready` được index/sitemap/canonical/JSON-LD. Draft `noindex,nofollow`, không canonical/JSON-LD. Form luôn mở, không phụ thuộc readiness của privacy; gửi thật cần Supabase (hiện chưa cấu hình). Giữ consent/phiên bản mặc định `v1`; Turnstile tùy chọn theo cặp khóa và được xác minh khi cấu hình, Telegram tùy chọn sau lưu bền vững. Không thử lead thật.
 
-Sau khi sửa, chạy kiểm tra phù hợp:
+Lệnh kiểm tra theo phạm vi (không phải kết quả đã chạy):
 
 ```bash
-npm run typecheck
-npm run routes:check
-npm test
+pnpm routes:check
+pnpm typecheck
+pnpm lint
+pnpm test
 ```
 
-Trong đợt tái cấu trúc này, `node scripts/verify-tsx-refactor.cjs` đối chiếu SSR với bản trước sửa ở `reports/integration/tsx-refactor/before/`. Đây là công cụ kiểm hồi quy cho lần refactor, không phải phép thử để buộc nội dung mới sau này phải giống nội dung cũ. Nó không kiểm thay cho hydration, tương tác hoặc ảnh giao diện; Next Link/Image và router được mô phỏng khi render offline.
+CI có `pnpm format:check` và `pnpm build` ở mốc tích hợp do coordinator quản lý, chưa xác minh lần chạy; không format toàn repo hoặc tự chạy build trong task tài liệu.
+
+`node scripts/verify-tsx-refactor.cjs` đối chiếu SSR với `reports/integration/tsx-refactor/before/` là công cụ hồi quy lịch sử, không ép nội dung mới giống nội dung cũ và không thay kiểm hydration/tương tác/hình ảnh. `data/pages.json` cũng chỉ là archive, không phải runtime/test truth.
+
+## Cleanup dự kiến
+
+Các package private folders `src/app/goi-cuoc-viettel/{_components,_data,_content}/`, orphan `src/features/{home,internet}/page-content.ts`, collection source pages và UI carousel cũ không còn ở đường dẫn cũ. News generate/verify CJS hiện ở `scripts/news/`, evidence tại `reports/source-news/`; scripts package hiện ở `scripts/packages/`, evidence package tại `reports/integration/package-source-evidence/`. GTM config không dùng sẽ xóa, không bật. Chưa coi danh sách này là cleanup đã hoàn tất.

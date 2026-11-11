@@ -254,8 +254,7 @@ function Dung5gCoHaoPinVaTonDataNhungLyDoNenNangCapTu4GLen5GViettel() {
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"- Không cần đổi SIM, chỉ cần đăng ký gói cước và "}
-        bật 5G trên điện thoại
-        .
+        bật 5G trên điện thoại .
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         - Dịch vụ chăm sóc khách hàng tận tâm, hỗ trợ mọi lúc, mọi nơi (hotline:

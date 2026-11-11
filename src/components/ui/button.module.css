@@ -18,6 +18,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   vertical-align: middle;
   white-space: nowrap;
   text-decoration: none;
@@ -33,6 +34,10 @@
 
 .control:disabled {
   opacity: 0.5;
+}
+
+.control svg {
+  flex: 0 0 auto;
 }
 
 .primary {

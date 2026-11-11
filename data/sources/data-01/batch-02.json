@@ -10,11 +10,38 @@
       "lead": "Gói cước ngày Viettel 5G30 chỉ 30.000đ/3 ngày, nhận ngay 21GB (7GB/ngày), sử dụng trên cả mạng 4G & 5G.",
       "price": 30000,
       "cycle": { "quantity": 3, "unit": "day", "label": "3 ngày" },
-      "allowances": [{ "value": 7, "unit": "GB", "period": "ngày", "sourceLabel": "7GB/ngày" }, { "value": 21, "unit": "GB", "period": "3 ngày", "sourceLabel": "21GB (7GB/ngày)" }],
+      "allowances": [
+        {
+          "value": 7,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "7GB/ngày"
+        },
+        {
+          "value": 21,
+          "unit": "GB",
+          "period": "3 ngày",
+          "sourceLabel": "21GB (7GB/ngày)"
+        }
+      ],
       "benefits": ["Sử dụng trên hạ tầng 4G và 5G"],
-      "conditions": ["Hết data hệ thống ngắt truy cập", "Gói tự động gia hạn nếu tài khoản đủ tiền"],
-      "headings": ["Thông Tin Gói Cước Ngày Viettel 5G30", "Lợi Ích Khi Đăng Ký Gói 5G30 Viettel", "Kiểm Tra & Hủy Gói 5G30 Viettel", "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5G30?", "Có Nên Đăng Ký Gói Cước Ngày Viettel 5G30?"],
-      "excerpts": ["L3: # Gói cước Viettel 5G30", "L9-L29: Cước phí 30.000đ; Thời hạn 3 ngày; Dung lượng 7GB/ngày; 5G30 UP gửi 290", "L35-L43: 21GB (7GB/ngày); áp dụng 4G & 5G", "L55-L61: Tự gia hạn nếu đủ tiền; KTTK gửi 191; HUY 5G30 gửi 191"]
+      "conditions": [
+        "Hết data hệ thống ngắt truy cập",
+        "Gói tự động gia hạn nếu tài khoản đủ tiền"
+      ],
+      "headings": [
+        "Thông Tin Gói Cước Ngày Viettel 5G30",
+        "Lợi Ích Khi Đăng Ký Gói 5G30 Viettel",
+        "Kiểm Tra & Hủy Gói 5G30 Viettel",
+        "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5G30?",
+        "Có Nên Đăng Ký Gói Cước Ngày Viettel 5G30?"
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 5G30",
+        "L9-L29: Cước phí 30.000đ; Thời hạn 3 ngày; Dung lượng 7GB/ngày; 5G30 UP gửi 290",
+        "L35-L43: 21GB (7GB/ngày); áp dụng 4G & 5G",
+        "L55-L61: Tự gia hạn nếu đủ tiền; KTTK gửi 191; HUY 5G30 gửi 191"
+      ]
     },
     {
       "code": "5G40",
@@ -22,11 +49,32 @@
       "lead": "Đăng ký gói 5G40 Viettel chỉ 40.000đ dùng 15GB trong 7 ngày, tốc độ cao 4G/5G, hết dung lượng ngừng truy cập.",
       "price": 40000,
       "cycle": { "quantity": 7, "unit": "day", "label": "7 ngày" },
-      "allowances": [{ "value": 15, "unit": "GB", "period": "7 ngày", "sourceLabel": "15GB/7 ngày" }],
+      "allowances": [
+        {
+          "value": 15,
+          "unit": "GB",
+          "period": "7 ngày",
+          "sourceLabel": "15GB/7 ngày"
+        }
+      ],
       "benefits": ["Hỗ trợ 4G/5G"],
-      "conditions": ["Hết dung lượng ngừng truy cập", "Tự động gia hạn nếu tài khoản đủ tiền"],
-      "headings": ["Thông tin chi tiết gói 5G40", "Ưu điểm nổi bật của gói 5G40", "Cách đăng ký và hủy gói 5G40", "Ai nên dùng gói 5G40?", "Tổng kết"],
-      "excerpts": ["L3: # Gói cước Viettel 5G40", "L9-L29: Cước phí 40.000đ; Thời hạn 7 ngày; Dung lượng 15GB/7 ngày; 5G40 UP gửi 290", "L50-L61: Ngừng data khi hết; tự động gia hạn", "L64-L80: 5G40 UP gửi 290; HUY 5G40 gửi 191"]
+      "conditions": [
+        "Hết dung lượng ngừng truy cập",
+        "Tự động gia hạn nếu tài khoản đủ tiền"
+      ],
+      "headings": [
+        "Thông tin chi tiết gói 5G40",
+        "Ưu điểm nổi bật của gói 5G40",
+        "Cách đăng ký và hủy gói 5G40",
+        "Ai nên dùng gói 5G40?",
+        "Tổng kết"
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 5G40",
+        "L9-L29: Cước phí 40.000đ; Thời hạn 7 ngày; Dung lượng 15GB/7 ngày; 5G40 UP gửi 290",
+        "L50-L61: Ngừng data khi hết; tự động gia hạn",
+        "L64-L80: 5G40 UP gửi 290; HUY 5G40 gửi 191"
+      ]
     },
     {
       "code": "5G70",
@@ -34,11 +82,38 @@
       "lead": "Gói cước ngày Viettel 5G70 chỉ 70.000đ/7 ngày, nhận ngay 56GB (8GB/ngày), dùng trên cả mạng 4G & 5G.",
       "price": 70000,
       "cycle": { "quantity": 7, "unit": "day", "label": "7 ngày" },
-      "allowances": [{ "value": 8, "unit": "GB", "period": "ngày", "sourceLabel": "8GB/ngày" }, { "value": 56, "unit": "GB", "period": "7 ngày", "sourceLabel": "56GB (8GB/ngày)" }],
+      "allowances": [
+        {
+          "value": 8,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "8GB/ngày"
+        },
+        {
+          "value": 56,
+          "unit": "GB",
+          "period": "7 ngày",
+          "sourceLabel": "56GB (8GB/ngày)"
+        }
+      ],
       "benefits": ["Sử dụng trên hạ tầng 4G và 5G"],
-      "conditions": ["Hết data trong ngày ngừng truy cập", "Gói tự động gia hạn nếu tài khoản đủ tiền"],
-      "headings": ["Thông Tin Gói Cước Ngày Viettel 5G70", "Lợi Ích Khi Đăng Ký Gói 5G70 Viettel", "Kiểm Tra & Hủy Gói 5G70 Viettel", "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5G70?", "Có Nên Đăng Ký Gói Cước Ngày Viettel 5G70?"],
-      "excerpts": ["L3: # Gói cước Viettel 5G70", "L9-L29: Cước phí 70.000đ; Thời hạn 7 ngày; Dung lượng 8GB/ngày; 5G70 UP gửi 290", "L35-L43: 56GB (8GB/ngày); áp dụng 4G & 5G", "L55-L61: Tự gia hạn; KTTK gửi 191; HUY 5G70 gửi 191"]
+      "conditions": [
+        "Hết data trong ngày ngừng truy cập",
+        "Gói tự động gia hạn nếu tài khoản đủ tiền"
+      ],
+      "headings": [
+        "Thông Tin Gói Cước Ngày Viettel 5G70",
+        "Lợi Ích Khi Đăng Ký Gói 5G70 Viettel",
+        "Kiểm Tra & Hủy Gói 5G70 Viettel",
+        "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5G70?",
+        "Có Nên Đăng Ký Gói Cước Ngày Viettel 5G70?"
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 5G70",
+        "L9-L29: Cước phí 70.000đ; Thời hạn 7 ngày; Dung lượng 8GB/ngày; 5G70 UP gửi 290",
+        "L35-L43: 56GB (8GB/ngày); áp dụng 4G & 5G",
+        "L55-L61: Tự gia hạn; KTTK gửi 191; HUY 5G70 gửi 191"
+      ]
     },
     {
       "code": "5GVS80",
@@ -46,11 +121,35 @@
       "lead": "Gói cước ngày Viettel 5GVS80 chỉ 80.000đ/7 ngày, nhận 8GB/ngày, xem miễn phí Ngoại Hạng Anh, Cúp C1 trên TV360.",
       "price": 80000,
       "cycle": { "quantity": 7, "unit": "day", "label": "7 ngày" },
-      "allowances": [{ "value": 8, "unit": "GB", "period": "ngày", "sourceLabel": "8GB/ngày" }],
-      "benefits": ["Xem Ngoại Hạng Anh và Cúp C1 trên TV360 theo mô tả nguồn", "Sử dụng 4G và 5G"],
-      "conditions": ["Hết data trong ngày ngắt kết nối", "Gói tự động gia hạn nếu tài khoản đủ tiền"],
-      "headings": ["Thông Tin Gói Cước Ngày Viettel 5GVS80", "Lợi Ích Khi Đăng Ký Gói 5GVS80 Viettel", "Kiểm Tra & Hủy Gói 5GVS80 Viettel", "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5GVS80?", "Có Nên Đăng Ký Gói Cước Ngày Viettel 5GVS80?"],
-      "excerpts": ["L3: # Gói cước Viettel 5GVS80", "L9-L29: 80.000đ; 7 ngày; 8GB/ngày; 5GVS80 UP gửi 290", "L35-L49: 56GB (8GB/ngày); TV360 bóng đá; mã USSD 0985128#", "L63-L69: KTTK gửi 191; HUY 5GVS80 gửi 191"]
+      "allowances": [
+        {
+          "value": 8,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "8GB/ngày"
+        }
+      ],
+      "benefits": [
+        "Xem Ngoại Hạng Anh và Cúp C1 trên TV360 theo mô tả nguồn",
+        "Sử dụng 4G và 5G"
+      ],
+      "conditions": [
+        "Hết data trong ngày ngắt kết nối",
+        "Gói tự động gia hạn nếu tài khoản đủ tiền"
+      ],
+      "headings": [
+        "Thông Tin Gói Cước Ngày Viettel 5GVS80",
+        "Lợi Ích Khi Đăng Ký Gói 5GVS80 Viettel",
+        "Kiểm Tra & Hủy Gói 5GVS80 Viettel",
+        "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5GVS80?",
+        "Có Nên Đăng Ký Gói Cước Ngày Viettel 5GVS80?"
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 5GVS80",
+        "L9-L29: 80.000đ; 7 ngày; 8GB/ngày; 5GVS80 UP gửi 290",
+        "L35-L49: 56GB (8GB/ngày); TV360 bóng đá; mã USSD 0985128#",
+        "L63-L69: KTTK gửi 191; HUY 5GVS80 gửi 191"
+      ]
     },
     {
       "code": "3N",
@@ -58,11 +157,38 @@
       "lead": "Gói cước combo 3N giá 30.000đ cho 3 ngày, dung lượng 5GB/ngày, kèm gọi, SMS nội mạng và TV360 theo mô tả nguồn.",
       "price": 30000,
       "cycle": { "quantity": 3, "unit": "day", "label": "3 ngày" },
-      "allowances": [{ "value": 5, "unit": "GB", "period": "ngày", "sourceLabel": "5GB/ngày" }, { "value": 15, "unit": "GB", "period": "3 ngày", "sourceLabel": "15GB (5GB/ngày)" }],
-      "benefits": ["Gọi nội mạng dưới 10 phút/cuộc", "15 phút gọi ngoại mạng", "SMS nội mạng", "TV360 Basic"],
-      "conditions": ["Nguồn ghi áp dụng cho thuê bao Viettel trả trước và trả sau"],
-      "headings": ["Thông tin chi tiết gói cước 3N của Viettel", "Cách đăng ký gói cước 3N"],
-      "excerpts": ["L3: # Gói cước Viettel 3N", "L9-L29: 30.000đ; 3 ngày; 5GB/ngày; 3N UP gửi 290", "L39-L53: 15GB; gọi nội mạng dưới 10 phút; 15 phút ngoại mạng; SMS nội mạng; TV360 Basic; thuê bao trả trước và trả sau"]
+      "allowances": [
+        {
+          "value": 5,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "5GB/ngày"
+        },
+        {
+          "value": 15,
+          "unit": "GB",
+          "period": "3 ngày",
+          "sourceLabel": "15GB (5GB/ngày)"
+        }
+      ],
+      "benefits": [
+        "Gọi nội mạng dưới 10 phút/cuộc",
+        "15 phút gọi ngoại mạng",
+        "SMS nội mạng",
+        "TV360 Basic"
+      ],
+      "conditions": [
+        "Nguồn ghi áp dụng cho thuê bao Viettel trả trước và trả sau"
+      ],
+      "headings": [
+        "Thông tin chi tiết gói cước 3N của Viettel",
+        "Cách đăng ký gói cước 3N"
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 3N",
+        "L9-L29: 30.000đ; 3 ngày; 5GB/ngày; 3N UP gửi 290",
+        "L39-L53: 15GB; gọi nội mạng dưới 10 phút; 15 phút ngoại mạng; SMS nội mạng; TV360 Basic; thuê bao trả trước và trả sau"
+      ]
     },
     {
       "code": "7N",
@@ -70,11 +196,38 @@
       "lead": "Gói cước combo 7N giá 70.000đ cho 7 ngày, dung lượng 5GB/ngày, kèm gọi, SMS nội mạng và TV360 theo mô tả nguồn.",
       "price": 70000,
       "cycle": { "quantity": 7, "unit": "day", "label": "7 ngày" },
-      "allowances": [{ "value": 5, "unit": "GB", "period": "ngày", "sourceLabel": "5GB/ngày" }, { "value": 35, "unit": "GB", "period": "7 ngày", "sourceLabel": "35GB (5GB/ngày)" }],
-      "benefits": ["Gọi nội mạng dưới 10 phút/cuộc", "35 phút gọi ngoại mạng", "SMS nội mạng", "TV360 Basic"],
-      "conditions": ["Nguồn ghi áp dụng cho thuê bao Viettel trả trước và trả sau"],
-      "headings": ["Thông tin chi tiết gói cước 7N của Viettel", "Cách đăng ký gói cước 7N"],
-      "excerpts": ["L3: # Gói cước Viettel 7N", "L9-L29: 70.000đ; 7 ngày; 5GB/ngày; 7N UP gửi 290", "L39-L53: 35GB; gọi nội mạng dưới 10 phút; 35 phút ngoại mạng; SMS nội mạng; TV360 Basic; thuê bao trả trước và trả sau"]
+      "allowances": [
+        {
+          "value": 5,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "5GB/ngày"
+        },
+        {
+          "value": 35,
+          "unit": "GB",
+          "period": "7 ngày",
+          "sourceLabel": "35GB (5GB/ngày)"
+        }
+      ],
+      "benefits": [
+        "Gọi nội mạng dưới 10 phút/cuộc",
+        "35 phút gọi ngoại mạng",
+        "SMS nội mạng",
+        "TV360 Basic"
+      ],
+      "conditions": [
+        "Nguồn ghi áp dụng cho thuê bao Viettel trả trước và trả sau"
+      ],
+      "headings": [
+        "Thông tin chi tiết gói cước 7N của Viettel",
+        "Cách đăng ký gói cước 7N"
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 7N",
+        "L9-L29: 70.000đ; 7 ngày; 5GB/ngày; 7N UP gửi 290",
+        "L39-L53: 35GB; gọi nội mạng dưới 10 phút; 35 phút ngoại mạng; SMS nội mạng; TV360 Basic; thuê bao trả trước và trả sau"
+      ]
     },
     {
       "code": "5G10",
@@ -82,12 +235,35 @@
       "lead": "Gói cước ngày Viettel 5G10 chỉ 10.000đ nhận ngay 6GB tốc độ cao, hỗ trợ cả mạng 4G và 5G.",
       "price": 10000,
       "cycle": { "quantity": 1, "unit": "day", "label": "1 ngày" },
-      "allowances": [{ "value": 6, "unit": "GB", "period": "ngày", "sourceLabel": "6GB/ngày" }],
+      "allowances": [
+        {
+          "value": 6,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "6GB/ngày"
+        }
+      ],
       "benefits": ["Hỗ trợ 4G và 5G"],
-      "conditions": ["Hết dung lượng ngắt truy cập", "Gói tự động gia hạn nếu tài khoản đủ tiền"],
-      "headings": ["Thông Tin Gói Cước Ngày Viettel 5G10", "Lợi Ích Khi Đăng Ký Gói 5G10 Viettel", "Kiểm Tra & Hủy Gói 5G10 Viettel", "Gói Cước Ngày Viettel 5G10 Phù Hợp Với Ai?", "Có Nên Đăng Ký Gói Cước Ngày Viettel 5G10?"],
-      "notes": ["Top summary duration says only 'ngày' without numeral; article text L35-L43 says 1 ngày."],
-      "excerpts": ["L3: # Gói cước Viettel 5G10", "L9-L29: 10.000đ; thời hạn 'ngày' (missing numeral); 6GB/ngày; 5G10 UP gửi 290", "L35-L43: Giá cước 10.000đ/ngày; chu kỳ 1 ngày", "L55-L61: KTTK gửi 191; HUY 5G10 gửi 191"]
+      "conditions": [
+        "Hết dung lượng ngắt truy cập",
+        "Gói tự động gia hạn nếu tài khoản đủ tiền"
+      ],
+      "headings": [
+        "Thông Tin Gói Cước Ngày Viettel 5G10",
+        "Lợi Ích Khi Đăng Ký Gói 5G10 Viettel",
+        "Kiểm Tra & Hủy Gói 5G10 Viettel",
+        "Gói Cước Ngày Viettel 5G10 Phù Hợp Với Ai?",
+        "Có Nên Đăng Ký Gói Cước Ngày Viettel 5G10?"
+      ],
+      "notes": [
+        "Top summary duration says only 'ngày' without numeral; article text L35-L43 says 1 ngày."
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 5G10",
+        "L9-L29: 10.000đ; thời hạn 'ngày' (missing numeral); 6GB/ngày; 5G10 UP gửi 290",
+        "L35-L43: Giá cước 10.000đ/ngày; chu kỳ 1 ngày",
+        "L55-L61: KTTK gửi 191; HUY 5G10 gửi 191"
+      ]
     },
     {
       "code": "1N",
@@ -95,11 +271,32 @@
       "lead": "Gói cước combo 1N giá 10.000đ cho 1 ngày, dung lượng 5GB/ngày, kèm gọi, SMS nội mạng và TV360 theo mô tả nguồn.",
       "price": 10000,
       "cycle": { "quantity": 1, "unit": "day", "label": "1 ngày" },
-      "allowances": [{ "value": 5, "unit": "GB", "period": "ngày", "sourceLabel": "5GB/ngày" }],
-      "benefits": ["Gọi nội mạng dưới 10 phút/cuộc", "5 phút gọi ngoại mạng", "SMS nội mạng", "TV360 Basic"],
-      "conditions": ["Nguồn ghi áp dụng cho thuê bao Viettel trả trước và trả sau"],
-      "headings": ["Thông tin chi tiết gói cước 1N của Viettel", "Cách đăng ký gói cước 1N"],
-      "excerpts": ["L3: # Gói cước Viettel 1N", "L9-L29: 10.000đ; 1 ngày; 5GB/ngày; 1N UP gửi 290", "L39-L53: Gọi nội mạng dưới 10 phút; 5 phút ngoại mạng; SMS nội mạng; TV360 Basic; thuê bao trả trước và trả sau"]
+      "allowances": [
+        {
+          "value": 5,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "5GB/ngày"
+        }
+      ],
+      "benefits": [
+        "Gọi nội mạng dưới 10 phút/cuộc",
+        "5 phút gọi ngoại mạng",
+        "SMS nội mạng",
+        "TV360 Basic"
+      ],
+      "conditions": [
+        "Nguồn ghi áp dụng cho thuê bao Viettel trả trước và trả sau"
+      ],
+      "headings": [
+        "Thông tin chi tiết gói cước 1N của Viettel",
+        "Cách đăng ký gói cước 1N"
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 1N",
+        "L9-L29: 10.000đ; 1 ngày; 5GB/ngày; 1N UP gửi 290",
+        "L39-L53: Gọi nội mạng dưới 10 phút; 5 phút ngoại mạng; SMS nội mạng; TV360 Basic; thuê bao trả trước và trả sau"
+      ]
     },
     {
       "code": "5GVS12",
@@ -107,12 +304,38 @@
       "lead": "Gói cước ngày Viettel 5GVS12 chỉ 12.000đ/ngày, nhận 6GB tốc độ cao, xem miễn phí Cúp C1, Ngoại Hạng Anh trên TV360.",
       "price": 12000,
       "cycle": { "quantity": 1, "unit": "day", "label": "1 ngày" },
-      "allowances": [{ "value": 6, "unit": "GB", "period": "ngày", "sourceLabel": "6GB/ngày" }],
-      "benefits": ["Xem Ngoại Hạng Anh và Cúp C1 trên TV360 theo mô tả nguồn", "Hỗ trợ 4G và 5G"],
-      "conditions": ["Hết data ngắt kết nối", "Gói tự động gia hạn nếu tài khoản đủ tiền"],
-      "headings": ["Thông Tin Gói Cước Ngày Viettel 5GVS12", "Lợi Ích Khi Đăng Ký Gói 5GVS12 Viettel", "Kiểm Tra & Hủy Gói 5GVS12 Viettel", "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5GVS12?", "Có Nên Đăng Ký Gói Cước Ngày Viettel 5GVS12?"],
-      "notes": ["Top summary duration says only 'ngày' without numeral; article text L35-L43 says 1 ngày."],
-      "excerpts": ["L3: # Gói cước Viettel 5GVS12", "L9-L29: 12.000đ; thời hạn 'ngày' (missing numeral); 6GB/ngày; 5GVS12 UP gửi 290", "L35-L49: Chu kỳ 1 ngày; TV360 bóng đá; mã USSD 0985127#", "L63-L69: KTTK gửi 191; HUY 5GVS12 gửi 191"]
+      "allowances": [
+        {
+          "value": 6,
+          "unit": "GB",
+          "period": "ngày",
+          "sourceLabel": "6GB/ngày"
+        }
+      ],
+      "benefits": [
+        "Xem Ngoại Hạng Anh và Cúp C1 trên TV360 theo mô tả nguồn",
+        "Hỗ trợ 4G và 5G"
+      ],
+      "conditions": [
+        "Hết data ngắt kết nối",
+        "Gói tự động gia hạn nếu tài khoản đủ tiền"
+      ],
+      "headings": [
+        "Thông Tin Gói Cước Ngày Viettel 5GVS12",
+        "Lợi Ích Khi Đăng Ký Gói 5GVS12 Viettel",
+        "Kiểm Tra & Hủy Gói 5GVS12 Viettel",
+        "Ai Nên Sử Dụng Gói Cước Ngày Viettel 5GVS12?",
+        "Có Nên Đăng Ký Gói Cước Ngày Viettel 5GVS12?"
+      ],
+      "notes": [
+        "Top summary duration says only 'ngày' without numeral; article text L35-L43 says 1 ngày."
+      ],
+      "excerpts": [
+        "L3: # Gói cước Viettel 5GVS12",
+        "L9-L29: 12.000đ; thời hạn 'ngày' (missing numeral); 6GB/ngày; 5GVS12 UP gửi 290",
+        "L35-L49: Chu kỳ 1 ngày; TV360 bóng đá; mã USSD 0985127#",
+        "L63-L69: KTTK gửi 191; HUY 5GVS12 gửi 191"
+      ]
     }
   ]
 }

@@ -17,6 +17,7 @@ export default defineConfig([
     "out/**",
     "coverage/**",
     "node_modules/**",
+    ".pnpm-store/**",
     "outputs/**",
     "work/**",
     "reference-clone/**",

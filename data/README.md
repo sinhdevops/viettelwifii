@@ -1,6 +1,5 @@
-This directory intentionally excludes two required source-of-truth files:
+# Data provenance
 
-- `approved-routes.json`: exact **171** URL paths from the user's 2026-10-26 sitemap, never guessed from a live crawl.
-- `pages.json`: authored/verified page content, keyed by those exact paths.
-
-See `approved-routes.example.json` and `pages.example.json` for **shape only**. The example files are not production inputs. A production build is blocked until the allowlist is present and has the prescribed counts. A page without reviewed content is a 404 and never enters the sitemap.
+- `approved-routes.json`: bản đối chiếu phạm vi 175 URL, giữ chữ hoa/thường; runtime dùng `src/lib/approved-routes.ts` và test kiểm tra hai bản khớp nhau.
+- `pages.json`: historical fixture (171 record), giữ để đối chiếu các lần capture/chuyển đổi cũ. Không phải nguồn nội dung runtime, không phải golden fixture cho trạng thái ready/draft hiện hành. Các script lịch sử trong `scripts/content/` có thể đọc/ghi bản lưu trữ này; không chạy để cập nhật website hiện hành.
+- Nội dung đang chạy được khai báo tại các module được import trong `src/lib/page-content-registry.ts`, validate một lần bằng Zod. Sửa module TypeScript tương ứng thay vì sửa `pages.json`.

@@ -122,7 +122,9 @@ export function CollectionSignupDialog({
       return;
     }
     if (privacyAvailability !== "available") {
-      toast.error("Chưa thể gửi đăng ký trực tuyến. Vui lòng gọi để được tư vấn.");
+      toast.error(
+        "Chưa thể gửi đăng ký trực tuyến. Vui lòng gọi để được tư vấn.",
+      );
       return;
     }
     const form = new FormData(event.currentTarget);
@@ -179,13 +181,21 @@ export function CollectionSignupDialog({
         notificationSent?: boolean;
       } | null;
       if (!response.ok || result?.ok !== true) {
+        if (result?.error === "lead_storage_unconfigured") {
+          toast.error(
+            "Chưa cấu hình nơi nhận đăng ký. Vui lòng gọi hotline để được hỗ trợ; thông tin chưa được gửi.",
+          );
+          return;
+        }
         if (
           result?.error === "lead_intake_unavailable" ||
           response.status === 503
         ) {
           setPrivacyAvailability("unavailable");
           setPrivacyPolicyVersion("");
-          toast.error("Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.");
+          toast.error(
+            "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.",
+          );
           return;
         }
         if (result?.error === "privacy_policy_version_mismatch") {
@@ -206,6 +216,8 @@ export function CollectionSignupDialog({
         return;
       }
       setOpen(false);
+      setPrivacyAvailability("checking");
+      setPrivacyPolicyVersion("");
       if (result?.notificationSent === true) {
         toast.success("Đã gửi đăng ký thành công. Chúng tôi sẽ liên hệ sớm!");
       } else {
@@ -245,7 +257,6 @@ export function CollectionSignupDialog({
         if (!nextOpen) {
           setPrivacyAvailability("checking");
           setPrivacyPolicyVersion("");
-          
           setTurnstileToken("");
         }
       }}
@@ -265,7 +276,6 @@ export function CollectionSignupDialog({
             setWard("");
             setPrivacyAvailability("checking");
             setPrivacyPolicyVersion("");
-            
             setTurnstileToken("");
           }}
         >
@@ -289,12 +299,13 @@ export function CollectionSignupDialog({
           data-source-product={selection.code}
           data-source-region={selection.region}
           data-source-price={selection.price}
+          style={!sms && !nine ? { maxWidth: 480 } : undefined}
           className={
             sms
               ? "gap-8 border-none bg-white p-6 sm:max-w-[425px]"
               : nine
                 ? "gap-0 !rounded-2xl border-none bg-transparent p-0 sm:max-w-[400px]"
-                : "gap-4 bg-white px-[18px] py-6 sm:max-w-[410px] sm:!rounded-2xl"
+                : "gap-4 bg-white px-[18px] py-6 sm:!rounded-2xl"
           }
         >
           <div
@@ -354,9 +365,7 @@ export function CollectionSignupDialog({
             </div>
           ) : !internetPage ? (
             <div className="flex flex-col gap-4 text-center text-sm text-neutral-700">
-              <p role="status">
-                Gói này chưa hỗ trợ đăng ký qua biểu mẫu.
-              </p>
+              <p role="status">Gói này chưa hỗ trợ đăng ký qua biểu mẫu.</p>
               <SheetClose asChild>
                 <AppButton
                   variant="unstyled"
@@ -368,6 +377,15 @@ export function CollectionSignupDialog({
                 </AppButton>
               </SheetClose>
             </div>
+          ) : privacyAvailability !== "available" ? (
+            <p
+              className="pt-3 text-center text-sm text-neutral-600"
+              role="status"
+            >
+              {privacyAvailability === "checking"
+                ? "Đang kiểm tra khả năng gửi đăng ký…"
+                : "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau."}
+            </p>
           ) : (
             <form
               onSubmit={(event) => {
@@ -464,16 +482,6 @@ export function CollectionSignupDialog({
                   pointerEvents: "none",
                 }}
               />
-              {privacyAvailability === "checking" && (
-                <p className="pt-3 text-center text-sm text-neutral-600" role="status">
-                  Đang kiểm tra khả năng gửi đăng ký…
-                </p>
-              )}
-              {privacyAvailability === "unavailable" && (
-                <p className="pt-3 text-center text-sm text-primary" role="alert">
-                  Đăng ký trực tuyến hiện chưa khả dụng. Vui lòng liên hệ để được hỗ trợ.
-                </p>
-              )}
               <div className="flex justify-center gap-4 pt-5">
                 <SheetClose asChild>
                   <AppButton
@@ -490,11 +498,7 @@ export function CollectionSignupDialog({
                   size="unstyled"
                   className={`${action} bg-primary hover:bg-primary-dark text-gray-50 disabled:cursor-not-allowed disabled:opacity-50 ${formButton}`}
                   type="submit"
-                  disabled={
-                    privacyAvailability !== "available" ||
-                    submitting ||
-                    Boolean(siteKey && !turnstileToken)
-                  }
+                  disabled={submitting || Boolean(siteKey && !turnstileToken)}
                 >
                   {submitting ? "ĐANG GỬI…" : "XÁC NHẬN"}
                 </AppButton>

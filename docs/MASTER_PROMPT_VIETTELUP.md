@@ -80,7 +80,7 @@ Giữ secret ở server; không log hoặc đưa dữ liệu cá nhân vào anal
 
 Mỗi trang hoàn thiện có title/description phù hợp, một H1, heading có thứ bậc, link `href` thật và nội dung chính trong HTML server khi phù hợp. Canonical dùng domain triển khai theo cấu hình; không vô tình trỏ toàn bộ bản mới về domain tham chiếu. Structured data phải khớp nội dung đang hiển thị.
 
-Sitemap chỉ chứa route được duyệt, có nội dung hoàn thiện và đủ điều kiện index. Giữ chính sách noindex của môi trường thử nghiệm; không tự bật `SITE_LIVE` hoặc mở index production. Trang thiếu nội dung không được đánh dấu `ready` chỉ để vượt kiểm tra.
+Hợp đồng hiện hành: 175 route nội dung (171 gốc + 4 collection được duyệt thêm) và 5 support render ở mọi môi trường. Chỉ `ready` được index và vào sitemap khi origin hợp lệ; draft noindex, không canonical/JSON-LD. Không còn `SITE_LIVE` hoặc approval flags. Không tự triển khai/mở index production hay nâng draft thành ready để vượt kiểm tra. Phụ lục 171 dưới đây giữ nguyên như nguồn lịch sử của manifest.
 
 Tối ưu theo nút thắt thực tế: font, tỷ lệ ảnh để hạn chế nhảy bố cục, tài nguyên đầu màn hình, lượng JS và script bên thứ ba. Không tải eager toàn bộ ảnh. Không cam kết thứ hạng SEO, điểm Lighthouse hoặc Core Web Vitals khi chưa đo; đổi JSON sang TSX không tự bảo đảm các kết quả đó.
 

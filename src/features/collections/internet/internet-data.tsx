@@ -205,7 +205,8 @@ export type UltraSpeedInternetSlideData = {
   capitalRadioId: string;
   monthlyPrice: string;
 };
-export const ultraSpeedSlides: readonly UltraSpeedInternetSlideData[] = ultraSpeedPlans;
+export const ultraSpeedSlides: readonly UltraSpeedInternetSlideData[] =
+  ultraSpeedPlans;
 export type InternetBenefitCardData = {
   imageAlt: string;
   image: string;
@@ -217,7 +218,8 @@ export const internetBenefits: readonly InternetBenefitCardData[] = [
     imageAlt: "internet-top",
     image: "/icons/internet-top.svg",
     title: "Kết nối ổn định, tốc độ cao cho các nhu cầu cá nhân",
-    description: "Dành cho các hoạt động cá nhân như xem phim, lướt web và làm việc từ xa",
+    description:
+      "Dành cho các hoạt động cá nhân như xem phim, lướt web và làm việc từ xa",
   },
   {
     imageAlt: "internet-connect",
@@ -229,10 +231,16 @@ export const internetBenefits: readonly InternetBenefitCardData[] = [
     imageAlt: "internet-speed",
     image: "/icons/internet-speed.svg",
     title: "Tốc độ cao, độ trễ thấp cho trải nghiệm game đỉnh cao",
-    description: "Dành cho các hoạt động cá nhân như xem phim, lướt web và làm việc từ xa.",
+    description:
+      "Dành cho các hoạt động cá nhân như xem phim, lướt web và làm việc từ xa.",
   },
 ];
-export type InternetNewsCardData = { href: string; title: string; image: string; date: string };
+export type InternetNewsCardData = {
+  href: string;
+  title: string;
+  image: string;
+  date: string;
+};
 export const internetNews: readonly InternetNewsCardData[] = [
   {
     href: "/tin-tuc/so-sanh-roaming",
@@ -244,7 +252,8 @@ export const internetNews: readonly InternetNewsCardData[] = [
   },
   {
     href: "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
-    title: "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
+    title:
+      "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
     image:
       "https://images.ctfassets.net/dbp77tujye9f/1vLaqVRd9vs5WonZE1kiaN/ab0417c8ad4486931ada6380636bad07/viettel21.jpeg",
     date: "27/06/2026",
@@ -263,8 +272,9 @@ export const internetFaqs: readonly CollectionFaq[] = [
     question: "Làm thế nào để chọn gói Internet Viettel phù hợp?",
     answer: (
       <>
-        Hãy dựa vào số người dùng, số thiết bị và diện tích nhà. Nhà ít người chọn 300Mbps; gia đình
-        đông người nên dùng từ 500Mbps; nhà nhiều tầng nên ưu tiên gói có Mesh Wifi để phủ sóng đều.
+        Hãy dựa vào số người dùng, số thiết bị và diện tích nhà. Nhà ít người
+        chọn 300Mbps; gia đình đông người nên dùng từ 500Mbps; nhà nhiều tầng
+        nên ưu tiên gói có Mesh Wifi để phủ sóng đều.
       </>
     ),
   },
@@ -273,8 +283,8 @@ export const internetFaqs: readonly CollectionFaq[] = [
     question: "Gia đình nên dùng băng thông bao nhiêu Mbps là đủ?",
     answer: (
       <>
-        1–2 người: ~300Mbps; 3–5 người: 300–500Mbps; trên 5 người hoặc nhiều thiết bị: từ
-        500Mbps–1Gbps để đảm bảo mượt khi dùng đồng thời.
+        1–2 người: ~300Mbps; 3–5 người: 300–500Mbps; trên 5 người hoặc nhiều
+        thiết bị: từ 500Mbps–1Gbps để đảm bảo mượt khi dùng đồng thời.
       </>
     ),
   },
@@ -283,8 +293,8 @@ export const internetFaqs: readonly CollectionFaq[] = [
     question: "Wifi 6 của Viettel có khác Wifi thường không?",
     answer: (
       <>
-        Wifi 6 chịu tải nhiều thiết bị tốt hơn, giảm độ trễ và ổn định hơn khi xem 4K, chơi game và
-        họp online so với Wifi đời cũ.
+        Wifi 6 chịu tải nhiều thiết bị tốt hơn, giảm độ trễ và ổn định hơn khi
+        xem 4K, chơi game và họp online so với Wifi đời cũ.
       </>
     ),
   },
@@ -293,35 +303,50 @@ export const internetFaqs: readonly CollectionFaq[] = [
     question: "Nhà nhiều tầng có cần Mesh Wifi không?",
     answer: (
       <>
-        Nên có. Mesh Wifi giúp mở rộng vùng phủ, loại bỏ điểm chết và giữ tốc độ ổn định ở mọi
-        phòng, mọi tầng.
+        Nên có. Mesh Wifi giúp mở rộng vùng phủ, loại bỏ điểm chết và giữ tốc độ
+        ổn định ở mọi phòng, mọi tầng.
       </>
     ),
   },
   {
     id: "internet-faq-5",
-    question: "Có thể nâng cấp hoặc hạ cấp gói Internet trong quá trình sử dụng không?",
-    answer: <>Có. Bạn chỉ cần liên hệ tổng đài Viettel để được hỗ trợ đổi gói theo nhu cầu mới.</>,
+    question:
+      "Có thể nâng cấp hoặc hạ cấp gói Internet trong quá trình sử dụng không?",
+    answer: (
+      <>
+        Có. Bạn chỉ cần liên hệ tổng đài Viettel để được hỗ trợ đổi gói theo nhu
+        cầu mới.
+      </>
+    ),
   },
   {
     id: "internet-faq-6",
     question: "Đổi gói Internet có bị gián đoạn mạng không?",
     answer: (
-      <>Thông thường không. Việc đổi gói được xử lý nhanh và hầu như không ảnh hưởng đến kết nối.</>
+      <>
+        Thông thường không. Việc đổi gói được xử lý nhanh và hầu như không ảnh
+        hưởng đến kết nối.
+      </>
     ),
   },
   {
     id: "internet-faq-7",
     question: "Thời gian lắp mạng Internet Viettel mất bao lâu?",
-    answer: <>Khoảng 12–24 giờ sau khi đăng ký; khu vực có sẵn hạ tầng có thể lắp trong ngày.</>,
+    answer: (
+      <>
+        Khoảng 12–24 giờ sau khi đăng ký; khu vực có sẵn hạ tầng có thể lắp
+        trong ngày.
+      </>
+    ),
   },
   {
     id: "internet-faq-8",
-    question: "Internet Viettel có phù hợp cho chơi game và làm việc online không?",
+    question:
+      "Internet Viettel có phù hợp cho chơi game và làm việc online không?",
     answer: (
       <>
-        Có. Các gói từ 500Mbps–1Gbps, độ trễ thấp, kết hợp Wifi 6/Mesh giúp chơi game, họp online và
-        stream mượt hơn.
+        Có. Các gói từ 500Mbps–1Gbps, độ trễ thấp, kết hợp Wifi 6/Mesh giúp chơi
+        game, họp online và stream mượt hơn.
       </>
     ),
   },

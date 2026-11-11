@@ -1,0 +1,31 @@
+/*
+ * Tailwind utility layer for utilities that the captured source stylesheet never
+ * shipped (support pages, lead form, dialogs).
+ *
+ * Important: this file intentionally does NOT import Tailwind Preflight. The
+ * captured `viettelup-source.css` is the source of truth for the 175 cloned
+ * routes, so the global reset must never reach them. Only the `theme` and
+ * `utilities` layers are imported; unlayered captured rules therefore always win
+ * over these layered utilities on shared class names.
+ */
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/*
+ * The captured bundle uses 576 / 960 / 1280 / 1536px breakpoints, not the
+ * Tailwind defaults (640 / 768 / 1024 / 1280). Align them so `md:` means the
+ * same thing in authored components and in the cloned source CSS.
+ */
+@theme {
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 60rem;
+  --breakpoint-lg: 80rem;
+  --breakpoint-xl: 96rem;
+
+  /* Brand red used by the captured stylesheet (rgb(238 0 51)). Exposes the
+     `primary` color to utilities the captured bundle never generated, such as
+     `accent-primary` on the lead form checkboxes. */
+  --color-primary: #ee0033;
+}

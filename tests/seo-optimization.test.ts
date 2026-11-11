@@ -26,15 +26,9 @@ import {
   getIndexablePages,
   getPage,
   getRenderablePage,
+  isIndexablePage,
 } from "../src/lib/server/page-repository";
 
-const publicationFlags = [
-  "SITE_LIVE",
-  "CONTENT_RIGHTS_CLEARED",
-  "SITE_IDENTITY_VERIFIED",
-  "PRODUCT_FACTS_VERIFIED",
-  "PRIVACY_POLICY_APPROVED",
-] as const;
 const siteOrigin = "https://fixture.example";
 const supportRoutePaths = [
   "/goi-cuoc-viettel",
@@ -56,68 +50,25 @@ const draftOnlyRoutes = [
   "/goi-cuoc-viettel/FB5K",
 ] as const;
 
-function stubPublication(enabled: boolean) {
-  vi.stubEnv("NEXT_PUBLIC_SITE_URL", siteOrigin);
+function stubOrigin(origin = siteOrigin) {
+  vi.stubEnv("NEXT_PUBLIC_SITE_URL", origin);
   vi.stubEnv("PRIVACY_POLICY_VERSION", "v1");
-  for (const flag of publicationFlags) {
-    vi.stubEnv(flag, enabled ? "true" : "false");
-  }
 }
 
 afterEach(() => vi.unstubAllEnvs());
 
-describe("QA-SEO-READINESS-01: conservative publication policy", () => {
-  it("requires exact string true for each of the five publication flags", () => {
-    stubPublication(true);
+describe("QA-SEO-READINESS-01: content-driven indexing policy", () => {
+  it("publishes without environment flags but still requires a valid origin", () => {
     expect(isPublicationEnabled()).toBe(true);
-
-    for (const flag of publicationFlags) {
-      for (const invalidValue of [
-        "false",
-        "TRUE",
-        "1",
-        "yes",
-        " true",
-        "true ",
-      ]) {
-        vi.stubEnv(flag, invalidValue);
-        expect(
-          isPublicationEnabled(),
-          `${flag}=${JSON.stringify(invalidValue)}`,
-        ).toBe(false);
-      }
-      vi.stubEnv(flag, undefined);
-      expect(isPublicationEnabled(), `${flag} unset`).toBe(false);
-      vi.stubEnv(flag, "true");
-    }
+    stubOrigin();
+    expect(
+      buildPageMetadata({ path: "/", page: pageContents["/"] }).robots,
+    ).toEqual({ index: true, follow: true });
   });
 
-  it("requires a syntactically valid approved privacy-policy version", () => {
-    stubPublication(true);
-    for (const invalidVersion of [
-      undefined,
-      "",
-      "unapproved",
-      "UNAPPROVED",
-      "contains spaces",
-      "#invalid",
-    ]) {
-      vi.stubEnv("PRIVACY_POLICY_VERSION", invalidVersion);
-      expect(
-        isPublicationEnabled(),
-        `PRIVACY_POLICY_VERSION=${JSON.stringify(invalidVersion)}`,
-      ).toBe(false);
-    }
-    vi.stubEnv("PRIVACY_POLICY_VERSION", "v1");
-    expect(isPublicationEnabled()).toBe(true);
-  });
-
-  it("keeps the package hub separate and lists only approved ready package pages", () => {
+  it("keeps the package hub separate and lists approved package pages", () => {
     expect(siteRoutes).toContain("/goi-cuoc-viettel");
     expect(approvedRoutes).not.toContain("/goi-cuoc-viettel");
-    expect(
-      siteRouteDefinitions.find(({ path }) => path === "/goi-cuoc-viettel")?.status,
-    ).toBe("draft");
 
     type HubElement = {
       props: {
@@ -128,144 +79,116 @@ describe("QA-SEO-READINESS-01: conservative publication policy", () => {
         }>;
       };
     };
-    const page = (() => {
-      const previousNodeEnv = process.env.NODE_ENV;
-      const previousPreviewDrafts = process.env.SITE_PREVIEW_DRAFTS;
-      vi.stubEnv("NODE_ENV", "development");
-      vi.stubEnv("SITE_PREVIEW_DRAFTS", "1");
-      try {
-        return PackageHubPage() as unknown as HubElement;
-      } finally {
-        vi.stubEnv("NODE_ENV", previousNodeEnv);
-        vi.stubEnv("SITE_PREVIEW_DRAFTS", previousPreviewDrafts);
-      }
-    })();
+    const page = PackageHubPage() as unknown as HubElement;
     const listedPackages = page.props.sections[0]!.content.props.packages;
     const expectedPackages = approvedRoutes.flatMap((path) => {
       if (!path.startsWith("/goi-cuoc-viettel/")) return [];
       const product = getPage(path);
-      if (!product || product.status !== "ready" || product.kind !== "package")
-        return [];
+      if (!product || product.kind !== "package") return [];
       return [{ path, title: product.heading }];
     });
 
     expect(listedPackages.length).toBeGreaterThan(0);
     expect(listedPackages).toEqual(expectedPackages);
     for (const entry of listedPackages) {
-      const product = getPage(entry.path);
       expect(approvedRoutes, `${entry.path}: manifest membership`).toContain(
         entry.path,
       );
-      expect(product?.status, `${entry.path}: ready`).toBe("ready");
-      expect(product?.kind, `${entry.path}: package`).toBe("package");
+      expect(getPage(entry.path)?.kind, `${entry.path}: package`).toBe(
+        "package",
+      );
     }
-    expect(listedPackages.map(({ path }) => path)).not.toContain(
-      "/goi-cuoc-viettel/FB5K",
-    );
   });
 
-  it("renders draft support routes only in explicit non-production preview", () => {
-    const packageHub = siteRouteDefinitions.find(
-      ({ path }) => path === "/goi-cuoc-viettel",
-    )!;
-    expect(packageHub.status).toBe("draft");
+  it("renders every registered support route in every environment", () => {
     for (const path of siteRoutes) {
       vi.stubEnv("NODE_ENV", "production");
-      vi.stubEnv("SITE_PREVIEW_DRAFTS", "1");
-      expect(isSiteRouteRenderable(path), `${path}: production hides draft`).toBe(
-        false,
-      );
-
+      expect(isSiteRouteRenderable(path), `${path}: production`).toBe(true);
       vi.stubEnv("NODE_ENV", "development");
-      vi.stubEnv("SITE_PREVIEW_DRAFTS", "0");
-      expect(isSiteRouteRenderable(path), `${path}: preview disabled`).toBe(
-        false,
-      );
-      vi.stubEnv("SITE_PREVIEW_DRAFTS", "true");
-      expect(isSiteRouteRenderable(path), `${path}: exact preview opt-in`).toBe(
-        false,
-      );
-      vi.stubEnv("SITE_PREVIEW_DRAFTS", "1");
-      expect(isSiteRouteRenderable(path), `${path}: preview enabled`).toBe(true);
+      expect(isSiteRouteRenderable(path), `${path}: development`).toBe(true);
     }
     expect(isSiteRouteRenderable("/not-a-site-route")).toBe(false);
-
-    const originalStatus = packageHub.status;
-    try {
-      packageHub.status = "ready";
-      vi.stubEnv("NODE_ENV", "production");
-      vi.stubEnv("SITE_PREVIEW_DRAFTS", undefined);
-      expect(isSiteRouteRenderable(packageHub.path)).toBe(true);
-    } finally {
-      packageHub.status = originalStatus;
-    }
   });
 
   it("keeps the original 175 product routes separate from five support routes", () => {
     expect(approvedRoutes).toHaveLength(175);
-    expect(Object.keys(pageContents).sort()).toEqual([...approvedRoutes].sort());
+    expect(Object.keys(pageContents).sort()).toEqual(
+      [...approvedRoutes].sort(),
+    );
     expect(siteRoutes).toEqual(supportRoutePaths);
     expect(siteRouteDefinitions).toHaveLength(5);
-    expect(
-      siteRouteDefinitions.every(({ status }) => status === "draft"),
-    ).toBe(true);
-    expect(indexableSiteRoutes).toEqual([]);
-    expect(approvedRoutes.some((path) => siteRoutes.includes(path))).toBe(false);
     expect(seoApprovedRoutes).toHaveLength(180);
-    expect(seoApprovedRoutes).toEqual(
-      [...new Set([...approvedRoutes, ...siteRoutes])],
-    );
+    expect(seoApprovedRoutes).toEqual([
+      ...new Set([...approvedRoutes, ...siteRoutes]),
+    ]);
     for (const path of siteRoutes) {
       expect(isSeoRouteAllowed(path)).toBe(true);
     }
+  });
 
-    stubPublication(true);
+  it("publishes the privacy policy support route", () => {
+    const privacy = siteRouteDefinitions.find(
+      ({ path }) => path === "/chinh-sach-bao-mat",
+    );
+    expect(privacy?.status).toBe("ready");
+    expect(indexableSiteRoutes).toContain("/chinh-sach-bao-mat");
+    stubOrigin();
+    expect(metadataForSiteRoute("/chinh-sach-bao-mat").robots).toEqual({
+      index: true,
+      follow: true,
+    });
+  });
+
+  it("keeps draft support routes noindex and omits their canonical", () => {
+    stubOrigin();
     for (const path of siteRoutes) {
       const metadata = metadataForSiteRoute(path);
-      expect(metadata.robots, `${path}: support route remains draft`).toEqual({
-        index: false,
-        follow: false,
-      });
-      expect(metadata.alternates, `${path}: no support canonical`).toBeUndefined();
+      const status = siteRouteDefinitions.find(
+        (entry) => entry.path === path,
+      )?.status;
+      if (status === "ready") {
+        expect(metadata.robots, `${path}: ready`).toEqual({
+          index: true,
+          follow: true,
+        });
+        expect(metadata.alternates?.canonical, `${path}: canonical`).toBe(
+          siteConfig.url(path),
+        );
+      } else {
+        expect(metadata.robots, `${path}: draft`).toEqual({
+          index: false,
+          follow: false,
+        });
+        expect(metadata.alternates, `${path}: no canonical`).toBeUndefined();
+      }
     }
   });
 
-  it("keeps closed-gate metadata noindex with no canonical or structured data", () => {
-    stubPublication(false);
-    expect(robots()).toEqual({ rules: { userAgent: "*", disallow: "/" } });
-    expect(sitemap()).toEqual([]);
+  it("indexes all formerly draft products with canonical and JSON-LD", () => {
+    stubOrigin();
+    for (const path of draftOnlyRoutes) {
+      expect(getPage(path)?.status, `${path}: ready status`).toBe("ready");
+      expect(getRenderablePage(path), `${path}: still renders`).not.toBeNull();
+      expect(isIndexablePage(path), `${path}: indexable`).toBe(true);
 
-    for (const path of approvedRoutes) {
-      const page = pageContents[path];
-      const context = { path, page, approvedRoutes: seoApprovedRoutes };
+      const context = {
+        path,
+        page: pageContents[path],
+        approvedRoutes: seoApprovedRoutes,
+      };
       const metadata = buildPageMetadata(context);
-      expect(metadata.title, `${path}: title`).toBe(page.title);
-      expect(metadata.description, `${path}: description`).toBe(page.description);
-      expect(metadata.robots, `${path}: closed gate`).toEqual({
-        index: false,
-        follow: false,
+      expect(metadata.robots, `${path}: index`).toEqual({
+        index: true,
+        follow: true,
       });
-      expect(metadata.alternates, `${path}: no canonical`).toBeUndefined();
-      expect(metadata.openGraph?.url, `${path}: no Open Graph URL`).toBeUndefined();
-      expect(buildPageJsonLd(context), `${path}: no JSON-LD`).toBeNull();
+      expect(metadata.alternates?.canonical).toBe(siteConfig.url(path));
+      expect(metadata.openGraph?.url).toBe(siteConfig.url(path));
+      expect(buildPageJsonLd(context)?.url).toBe(siteConfig.url(path));
     }
-
-    const readyExample = { ...pageContents["/"], status: "ready" as const };
-    const compatibilityContext = {
-      path: "/",
-      page: readyExample,
-      approvedRoutes: seoApprovedRoutes,
-      siteLive: true,
-    };
-    expect(buildPageMetadata(compatibilityContext).robots).toEqual({
-      index: false,
-      follow: false,
-    });
-    expect(buildPageJsonLd(compatibilityContext)).toBeNull();
   });
 
   it("publishes only ready allowlisted pages with absolute self-canonicals", () => {
-    stubPublication(true);
+    stubOrigin();
     for (const path of approvedRoutes) {
       const page = pageContents[path];
       const context = { path, page, approvedRoutes: seoApprovedRoutes };
@@ -291,18 +214,24 @@ describe("QA-SEO-READINESS-01: conservative publication policy", () => {
           index: false,
           follow: false,
         });
-        expect(metadata.alternates, `${path}: no draft canonical`).toBeUndefined();
+        expect(
+          metadata.alternates,
+          `${path}: no draft canonical`,
+        ).toBeUndefined();
         expect(
           metadata.openGraph?.url,
           `${path}: no draft Open Graph URL`,
         ).toBeUndefined();
-        expect(buildPageJsonLd(context), `${path}: no draft JSON-LD`).toBeNull();
+        expect(
+          buildPageJsonLd(context),
+          `${path}: no draft JSON-LD`,
+        ).toBeNull();
       }
     }
   });
 
-  it("limits sitemap and robots output to approved, ready routes when every gate is open", () => {
-    stubPublication(true);
+  it("limits sitemap and robots output to approved, ready routes", () => {
+    stubOrigin();
     const readyProducts = approvedRoutes.filter(
       (path) => pageContents[path].status === "ready",
     );
@@ -322,28 +251,45 @@ describe("QA-SEO-READINESS-01: conservative publication policy", () => {
       expectedPaths.map((path) => siteConfig.url(path)),
     );
     expect(new Set(entries.map(({ url }) => url)).size).toBe(entries.length);
-    expect(
-      entries.every(({ url }) => url.startsWith(`${siteOrigin}/`)),
-    ).toBe(true);
+    expect(entries.every(({ url }) => url.startsWith(`${siteOrigin}/`))).toBe(
+      true,
+    );
     for (const path of approvedRoutes.filter(
       (candidate) => pageContents[candidate].status === "draft",
     )) {
-      expect(entries.some(({ url }) => url === siteConfig.url(path))).toBe(false);
+      expect(entries.some(({ url }) => url === siteConfig.url(path))).toBe(
+        false,
+      );
     }
-    for (const path of siteRoutes) {
-      expect(entries.some(({ url }) => url === siteConfig.url(path))).toBe(false);
+    for (const path of [
+      "/chinh-sach-bao-mat",
+      "/goi-cuoc-viettel",
+      "/gioi-thieu",
+      "/lien-he",
+      "/dieu-khoan",
+    ]) {
+      const status = siteRouteDefinitions.find(
+        (entry) => entry.path === path,
+      )?.status;
+      expect(
+        entries.some(({ url }) => url === siteConfig.url(path)),
+        `${path}: sitemap follows status`,
+      ).toBe(status === "ready");
     }
   });
 
-  it("fails closed for an invalid live origin and caller-supplied non-manifest paths", () => {
-    stubPublication(true);
-    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://localhost");
+  it("fails closed for an invalid origin and caller-supplied non-manifest paths", () => {
+    stubOrigin("https://fixture.example/invalid-path");
     expect(robots()).toEqual({ rules: { userAgent: "*", disallow: "/" } });
     expect(sitemap()).toEqual([]);
 
-    vi.stubEnv("NEXT_PUBLIC_SITE_URL", siteOrigin);
+    stubOrigin();
     const knownPage = pageContents["/"];
-    for (const path of ["/not-approved", "/internet/netvt01", "//external.invalid"]) {
+    for (const path of [
+      "/not-approved",
+      "/internet/netvt01",
+      "//external.invalid",
+    ]) {
       expect(isSeoRouteAllowed(path)).toBe(false);
       const context = { path, page: knownPage, approvedRoutes: [path] };
       expect(buildPageMetadata(context).robots).toEqual({
@@ -354,31 +300,21 @@ describe("QA-SEO-READINESS-01: conservative publication policy", () => {
     }
   });
 
-  it("keeps stale or unverified routes draft-only in production rendering and indexability", () => {
-    for (const path of draftOnlyRoutes) {
-      expect(getPage(path)?.status, `${path}: draft status`).toBe("draft");
-    }
-
-    vi.stubEnv("SITE_PREVIEW_DRAFTS", "1");
-    vi.stubEnv("NODE_ENV", "production");
-    for (const path of draftOnlyRoutes) {
-      expect(getRenderablePage(path), `${path}: production draft hidden`).toBeNull();
-    }
-
-    vi.stubEnv("NODE_ENV", "development");
-    vi.stubEnv("SITE_PREVIEW_DRAFTS", "0");
-    for (const path of draftOnlyRoutes) {
-      expect(getRenderablePage(path), `${path}: preview disabled`).toBeNull();
-    }
-    vi.stubEnv("SITE_PREVIEW_DRAFTS", "1");
-    for (const path of draftOnlyRoutes) {
-      expect(getRenderablePage(path), `${path}: dev preview`).toEqual(getPage(path));
-    }
-
+  it("lists exactly the ready routes as indexable", () => {
     const indexablePaths = getIndexablePages().map(({ path }) => path);
+    expect(indexablePaths).toHaveLength(175);
+    expect(
+      Object.values(pageContents).every((page) => page.status === "ready"),
+    ).toBe(true);
+    expect(
+      siteRouteDefinitions.every((route) => route.status === "ready"),
+    ).toBe(true);
+    expect(indexableSiteRoutes).toHaveLength(5);
     expect(indexablePaths).toEqual(
       approvedRoutes.filter((path) => pageContents[path].status === "ready"),
     );
-    for (const path of draftOnlyRoutes) expect(indexablePaths).not.toContain(path);
+    for (const path of draftOnlyRoutes) {
+      expect(indexablePaths).toContain(path);
+    }
   });
 });

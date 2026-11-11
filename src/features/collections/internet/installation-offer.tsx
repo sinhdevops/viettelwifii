@@ -8,14 +8,18 @@ export function InternetInstallationOffer() {
         <h2 className="font-beausans text-22 leading-[28px] text-[#2C2F31] md:text-[44px] md:leading-[54px]">
           {"Ưu đãi lắp đặt "}
           <br className="hidden md:block" />
-          <span className="hidden text-primary md:inline">dành riêng cho bạn</span>
+          <span className="text-primary hidden md:inline">
+            dành riêng cho bạn
+          </span>
           <span className="md:hidden">dành cho bạn</span>
         </h2>
-        <p className="hidden pb-4 pt-4 text-20 text-[#2C2F31] md:block">
-          Khách hàng hòa mạng gói 12 tháng được gia hạn thêm 01 tháng sử dụng, tối ưu chi phí – nâng
-          trọn trải nghiệm.
+        <p className="text-20 hidden pt-4 pb-4 text-[#2C2F31] md:block">
+          Khách hàng hòa mạng gói 12 tháng được gia hạn thêm 01 tháng sử dụng,
+          tối ưu chi phí – nâng trọn trải nghiệm.
         </p>
-        <p className="pt-2 text-14 text-[#2C2F31] md:hidden">Lắp 12 tháng tặng 1 tháng</p>
+        <p className="text-14 pt-2 text-[#2C2F31] md:hidden">
+          Lắp 12 tháng tặng 1 tháng
+        </p>
       </div>
       <div className="pt-6 md:py-0">
         <img
@@ -25,7 +29,9 @@ export function InternetInstallationOffer() {
           height="459"
           decoding="async"
           style={{ color: "transparent" } as CSSProperties}
-          src={sourceAsset("/_next/image?url=%2Fimages%2Finternet-request.webp&w=1080&q=75")}
+          src={sourceAsset(
+            "/_next/image?url=%2Fimages%2Finternet-request.webp&w=1080&q=75",
+          )}
           srcSet={[
             `${sourceAsset("/_next/image?url=%2Fimages%2Finternet-request.webp&w=640&q=75")} 1x`,
             `${sourceAsset("/_next/image?url=%2Fimages%2Finternet-request.webp&w=1080&q=75")} 2x`,

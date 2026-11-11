@@ -35,7 +35,9 @@ export function collectionSlider(root: HTMLElement): Slider | undefined {
   // CSS transitions must not fight Embla's frame-by-frame physics transforms.
   track.style.transition = "none";
   const nine = window.location.pathname === "/goi-cuoc-nine";
-  let retainedIndex = Number(root.dataset.collectionStartIndex ?? (nine ? 4 : 0));
+  let retainedIndex = Number(
+    root.dataset.collectionStartIndex ?? (nine ? 4 : 0),
+  );
   let measuredWidth = viewport.clientWidth;
   const api = EmblaCarousel(viewport, {
     align: "start",

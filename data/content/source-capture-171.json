@@ -942,12 +942,7 @@
       ],
       "articleLinks": [],
       "publishedLabel": null,
-      "h2s": [
-        "Tin tức",
-        "TIN MỚI NHẤT",
-        "TIN NỔI BẬT",
-        "Gói Cước Hot"
-      ]
+      "h2s": ["Tin tức", "TIN MỚI NHẤT", "TIN NỔI BẬT", "Gói Cước Hot"]
     },
     "/goi-cuoc-viettel/5G20": {
       "kind": "package",
@@ -22446,10 +22441,7 @@
         }
       ],
       "publishedLabel": "3/3/2026",
-      "h2s": [
-        "TIN TỨC KHÁC",
-        "GÓI CƯỚC HOT"
-      ]
+      "h2s": ["TIN TỨC KHÁC", "GÓI CƯỚC HOT"]
     },
     "/tin-tuc/goi-cuoc-viettel-thang-3-2026": {
       "kind": "news-article",
@@ -27838,10 +27830,7 @@
         }
       ],
       "publishedLabel": "04/03/2025",
-      "h2s": [
-        "TIN TỨC KHÁC",
-        "GÓI CƯỚC HOT"
-      ]
+      "h2s": ["TIN TỨC KHÁC", "GÓI CƯỚC HOT"]
     },
     "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025": {
       "kind": "news-article",

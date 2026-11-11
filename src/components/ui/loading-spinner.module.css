@@ -1,0 +1,70 @@
+.wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: var(--brand, #ed1c24);
+}
+
+.ring {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.sm .ring {
+  height: 28px;
+  width: 28px;
+}
+
+.md .ring {
+  height: 48px;
+  width: 48px;
+}
+
+.lg .ring {
+  height: 64px;
+  width: 64px;
+}
+
+.spinner {
+  height: 100%;
+  width: 100%;
+  animation: spin 0.9s linear infinite;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #6b6b6b;
+}
+
+.sm .label {
+  font-size: 13px;
+}
+
+.lg .label {
+  font-size: 15px;
+}
+
+.srOnly {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}

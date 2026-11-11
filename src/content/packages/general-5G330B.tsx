@@ -96,9 +96,7 @@ export default function General5G330BPageDetails() {
         khoản chính là 330.000 đồng để đăng ký gói cước
       </p>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
-        Tham khảo thêm{" "}
-          <u>cách bật 5G trên điện thoại</u>{" "}
-        và{" "}
+        Tham khảo thêm <u>cách bật 5G trên điện thoại</u> và{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -1072,7 +1070,7 @@ export default function General5G330BPageDetails() {
                   </div>
                 </td>
               </tr>
-              
+
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&>p]:text-14 [&>p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">

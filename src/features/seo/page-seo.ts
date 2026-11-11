@@ -16,10 +16,10 @@ const seoApprovedRouteSet = new Set(seoApprovedRoutes);
 const blockedRobots = { index: false, follow: false } as const;
 
 /**
- * Publication is no longer gated. The owner asked to remove SITE_LIVE, the four
- * approval flags and the policy-version prerequisite so that production renders
- * and indexes exactly like local development. Keep the function so every caller
- * keeps one shared answer.
+ * Publication is no longer gated by environment flags: every approved route is
+ * served in every environment. Content-level readiness still
+ * matters — a `draft` page renders but stays `noindex, nofollow` and stays out
+ * of the sitemap. Keep the function so every caller keeps one shared answer.
  */
 export function isPublicationEnabled(): boolean {
   return true;
@@ -36,7 +36,7 @@ export type PageSeoContext = {
   approvedRoutes?: readonly string[];
   /** Optional origin supplied by the server route; must match NEXT_PUBLIC_SITE_URL. */
   siteUrl?: string;
-  /** @deprecated This value no longer controls indexing; use the publication flags and valid policy version. */
+  /** @deprecated Ignored; indexing follows the page's readiness status. */
   siteLive?: boolean;
 };
 
@@ -63,6 +63,13 @@ function approvedPage(
     (context.approvedRoutes === undefined ||
       context.approvedRoutes.includes(context.path))
   );
+}
+
+/** Only `ready` content may be indexed; drafts render but stay out of search. */
+function indexablePage(
+  context: PageSeoContext,
+): context is PageSeoContext & { page: SeoPage } {
+  return approvedPage(context) && context.page.status === "ready";
 }
 
 function validatePublicationOrigin(rawUrl: string | undefined): URL {
@@ -105,8 +112,8 @@ function validatePublicationOrigin(rawUrl: string | undefined): URL {
 }
 
 /**
- * Returns the validated public origin only after all five publication flags
- * opt in. Lead can use this for canonical, Open Graph, robots, and sitemap URLs.
+ * Returns the validated configured origin for canonical, Open Graph, robots,
+ * and sitemap URLs. Publication does not depend on legacy environment flags.
  */
 export function getPublicationOrigin(siteUrl?: string): URL | null {
   if (!isPublicationEnabled()) return null;
@@ -118,10 +125,7 @@ type SocialMetadata = {
   twitter: NonNullable<Metadata["twitter"]>;
 };
 
-function socialMetadata(
-  title: string,
-  description: string,
-): SocialMetadata {
+function socialMetadata(title: string, description: string): SocialMetadata {
   const openGraph: NonNullable<Metadata["openGraph"]> = {
     type: "website",
     title,
@@ -148,6 +152,9 @@ export function buildPageMetadata(context: PageSeoContext): Metadata {
     robots: blockedRobots,
     ...social,
   };
+
+  // Draft pages render so links keep working, but they must never be indexed.
+  if (!indexablePage(context)) return blocked;
 
   if (!isPublicationEnabled()) return blocked;
 
@@ -206,13 +213,13 @@ function getVerifiedArticleDetails(
 }
 
 /**
- * Emits JSON-LD only for an approved, ready page after publication is explicitly
- * cleared. Articles without verified author + ISO publication date remain WebPage.
+ * Emits JSON-LD only for an approved, ready page. Articles without verified
+ * author + ISO publication date remain WebPage.
  */
 export function buildPageJsonLd(
   context: PageSeoContext,
 ): StructuredPage | null {
-  if (!approvedPage(context) || !isPublicationEnabled()) {
+  if (!indexablePage(context) || !isPublicationEnabled()) {
     return null;
   }
 
@@ -241,8 +248,7 @@ export function buildPageJsonLd(
     }
   }
 
-  const isCollection =
-    page.kind === "news-list" || page.kind === "collection";
+  const isCollection = page.kind === "news-list" || page.kind === "collection";
   return {
     "@context": "https://schema.org",
     "@type": isCollection ? "CollectionPage" : "WebPage",

@@ -62,7 +62,7 @@ export function RelatedDataPlans() {
                   </a>
                 </div>
                 <a
-                  className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                  className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:flex dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                   href="/goi-cuoc-viettel/SD90"
                 >
                   CHI TIẾT
@@ -129,7 +129,7 @@ export function RelatedDataPlans() {
                   </a>
                 </div>
                 <a
-                  className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                  className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:flex dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                   href="/goi-cuoc-viettel/SD120"
                 >
                   CHI TIẾT
@@ -196,7 +196,7 @@ export function RelatedDataPlans() {
                   </a>
                 </div>
                 <a
-                  className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:block md:pb-[2px] dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                  className="border-primary hover:text-primary-dark text-16 hidden h-[34px] w-[106px] items-center justify-center rounded-full border bg-white px-4 py-0 text-sm font-semibold whitespace-nowrap ring-offset-white transition-colors hover:bg-red-50 focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:flex dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                   href="/goi-cuoc-viettel/SD135"
                 >
                   CHI TIẾT

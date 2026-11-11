@@ -17,10 +17,7 @@ async function mockLeadConfig(
   );
 }
 
-async function fillMeshForm(
-  page: import("@playwright/test").Page,
-  consent = true,
-) {
+async function fillMeshForm(page: import("@playwright/test").Page) {
   await page.goto("/internet");
   const card = page
     .locator(".internet-card")
@@ -37,13 +34,14 @@ async function fillMeshForm(
   await signup.click();
   const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
   await expect(dialog).toBeVisible();
-  const privacyConsent = dialog.getByRole("checkbox");
-  await expect(privacyConsent).toBeVisible();
-  await expect(privacyConsent).not.toBeChecked();
-  expect(
-    await privacyConsent.evaluate((input) => (input as HTMLInputElement).required),
-  ).toBe(true);
-  if (consent) await privacyConsent.check();
+  await expect(
+    dialog.getByRole("textbox", { name: "Nhập họ tên" }),
+  ).toBeVisible();
+  await expect(dialog.getByRole("checkbox")).toHaveCount(0);
+  await expect(dialog.getByText(/Tôi đồng ý/)).toHaveCount(0);
+  await expect(
+    dialog.getByRole("link", { name: "Chính sách bảo mật" }),
+  ).toHaveCount(0);
   const viewport = page.viewportSize()!;
   if (viewport.width < 640) {
     await expect
@@ -103,6 +101,63 @@ async function fillMeshForm(
 
 test.setTimeout(90_000);
 
+// Real config endpoint; never submit real personal data or contact external services.
+test("Internet signup form opens without deployment approval flags", async ({
+  page,
+}) => {
+  const response = await page.request.get("/api/leads/config");
+  expect(response.ok()).toBe(true);
+  expect(await response.json()).toMatchObject({ available: true });
+  await page.goto("/internet");
+  const signup = page
+    .locator(".internet-card")
+    .filter({ hasText: "MESHVT3" })
+    .first()
+    .getByRole("button", { name: "Đăng ký" });
+  await expect
+    .poll(() =>
+      signup.evaluate((button) =>
+        Object.keys(button).some((key) => key.startsWith("__reactProps$")),
+      ),
+    )
+    .toBe(true);
+  await signup.click();
+  const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
+  await expect(
+    dialog.getByRole("textbox", { name: "Nhập họ tên" }),
+  ).toBeVisible();
+  await expect(
+    dialog.getByRole("textbox", { name: "Nhập số điện thoại" }),
+  ).toBeVisible();
+  await expect(
+    dialog.getByRole("combobox", { name: "Chọn tỉnh/thành phố" }),
+  ).toBeVisible();
+});
+
+test("Missing storage keeps entered form data and never reports success", async ({
+  page,
+}) => {
+  await mockLeadConfig(page);
+  await page.route("**/api/leads", (route) =>
+    route.fulfill({
+      status: 503,
+      contentType: "application/json",
+      body: JSON.stringify({ error: "lead_storage_unconfigured" }),
+    }),
+  );
+  const dialog = await fillMeshForm(page);
+  await dialog.getByRole("button", { name: "XÁC NHẬN" }).click();
+  await expect(dialog).toBeVisible();
+  await expect(
+    dialog.getByRole("textbox", { name: "Nhập họ tên" }),
+  ).toHaveValue("Khách thử nghiệm");
+  await expect(
+    page.getByText(
+      "Chưa cấu hình nơi nhận đăng ký. Vui lòng gọi hotline để được hỗ trợ; thông tin chưa được gửi.",
+    ),
+  ).toBeVisible();
+});
+
 test("Internet dropdown supports keyboard selection and Escape", async ({
   page,
 }) => {
@@ -149,7 +204,7 @@ test("Internet signup shows success only after API confirmation", async ({
     await route.fulfill({
       status: 200,
       contentType: "application/json",
-      body: JSON.stringify({ ok: true }),
+      body: JSON.stringify({ ok: true, notificationSent: true }),
     });
   });
   const dialog = await fillMeshForm(page);
@@ -161,7 +216,7 @@ test("Internet signup shows success only after API confirmation", async ({
   expect(sent?.itemId).toBe("/internet/MESHVT3");
   expect(sent?.pagePath).toBe("/internet");
   expect(sent?.note).toContain("Đà Nẵng");
-  expect(sent?.privacyConsent).toBe(true);
+  expect(sent?.privacyConsent).toBe(false);
   expect(sent?.privacyPolicyVersion).toBe(policyVersion);
 });
 
@@ -197,6 +252,13 @@ test("Internet signup hides personal-data fields when intake is unavailable", as
     .filter({ hasText: "MESHVT3" })
     .first()
     .getByRole("button", { name: "Đăng ký" });
+  await expect
+    .poll(() =>
+      signup.evaluate((button) =>
+        Object.keys(button).some((key) => key.startsWith("__reactProps$")),
+      ),
+    )
+    .toBe(true);
   await signup.click();
   const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
   await expect(dialog).toBeVisible();
@@ -211,27 +273,74 @@ test("Internet signup hides personal-data fields when intake is unavailable", as
   ).toHaveCount(0);
 });
 
-test("Internet signup requires affirmative consent before posting", async ({
+test("Internet signup renders no personal fields while config is checking", async ({
+  page,
+}) => {
+  let releaseConfig!: () => void;
+  const configReady = new Promise<void>((resolve) => {
+    releaseConfig = resolve;
+  });
+  await page.route("**/api/leads/config", async (route) => {
+    await configReady;
+    await route.fulfill({
+      status: 200,
+      contentType: "application/json",
+      body: JSON.stringify({ available: false }),
+    });
+  });
+  await page.goto("/internet");
+  const signup = page
+    .locator(".internet-card")
+    .filter({ hasText: "MESHVT3" })
+    .first()
+    .getByRole("button", { name: "Đăng ký" });
+  await expect
+    .poll(() =>
+      signup.evaluate((button) =>
+        Object.keys(button).some((key) => key.startsWith("__reactProps$")),
+      ),
+    )
+    .toBe(true);
+  await signup.click();
+  const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
+  try {
+    await expect(
+      dialog.getByText("Đang kiểm tra khả năng gửi đăng ký…"),
+    ).toBeVisible();
+    await expect(dialog.locator("input, textarea")).toHaveCount(0);
+    await expect(dialog.getByRole("combobox")).toHaveCount(0);
+  } finally {
+    releaseConfig();
+  }
+  await expect(
+    dialog.getByText("Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau."),
+  ).toBeVisible();
+  await expect(dialog.locator("input, textarea")).toHaveCount(0);
+});
+
+test("Internet signup submits without a checkbox or implied policy acceptance", async ({
   page,
 }) => {
   await mockLeadConfig(page);
   let postCount = 0;
+  let sent: Record<string, unknown> | undefined;
   await page.route("**/api/leads", async (route) => {
     postCount += 1;
+    sent = route.request().postDataJSON() as Record<string, unknown>;
     await route.fulfill({
       status: 200,
       contentType: "application/json",
-      body: JSON.stringify({ ok: true }),
+      body: JSON.stringify({ ok: true, notificationSent: true }),
     });
   });
 
-  const dialog = await fillMeshForm(page, false);
+  const dialog = await fillMeshForm(page);
   const submit = dialog.getByRole("button", { name: "XÁC NHẬN" });
-  if (await submit.isEnabled()) {
-    await submit.click();
-    await expect(
-      page.getByText("Vui lòng xác nhận đồng ý với Chính sách bảo mật"),
-    ).toBeVisible();
-  }
+  await expect(submit).toBeEnabled();
   expect(postCount).toBe(0);
+  await submit.click();
+  await expect(dialog).toBeHidden();
+  expect(postCount).toBe(1);
+  expect(sent?.privacyConsent).toBe(false);
+  expect(sent?.privacyPolicyVersion).toBe(policyVersion);
 });

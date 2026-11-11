@@ -20,11 +20,11 @@ const viewports = [
 ];
 
 // The full 175-route identity and publishing checks live in smoke.spec.ts.
-// This matrix samples distinct layouts at fixed sizes in isolated preview mode.
-test.describe("preview template viewport matrix", () => {
+// Render behavior is the same in preview and production; no draft flags.
+test.describe("template viewport matrix", () => {
   test.skip(
-    mode !== "preview",
-    "Requires isolated SITE_PREVIEW_DRAFTS=1 server",
+    mode !== "preview" && mode !== "production",
+    "Requires an explicit preview or production E2E mode",
   );
 
   for (const route of templates) {
@@ -37,13 +37,14 @@ test.describe("preview template viewport matrix", () => {
           waitUntil: "domcontentloaded",
         });
         expect(response?.status()).toBe(200);
+        await expect(page.locator("main")).toHaveCount(1);
         await expect(page.locator("main")).toBeVisible();
         await expect(page.locator("h1")).toHaveCount(1);
         await expect(page.locator("h1")).toBeVisible();
         await page.evaluate(() => document.fonts.ready);
         const dimensions = await page.evaluate(() => ({
           pageWidth: document.documentElement.scrollWidth,
-          viewportWidth: window.innerWidth,
+          viewportWidth: document.documentElement.clientWidth,
         }));
         expect(
           dimensions.pageWidth,

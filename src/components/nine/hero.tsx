@@ -49,7 +49,7 @@ export function NineHero() {
         />
       </div>
       <div className="max-w-[325px]">
-        <p className="md:font-20 hidden text-white md:mb-8 md:block md:leading-[28px]">
+        <p className="md:text-20 hidden text-white md:mb-8 md:block md:leading-[28px]">
           Thỏa sức gọi, lướt 5G cực nhanh mọi lúc mọi nơi. Data roaming miễn phí
           tại hơn 150 quốc gia. Hỗ trợ VIP 24/7. Phòng chờ hạng sang, đưa đón
           tận sân bay

@@ -34,7 +34,8 @@ export const siteRouteDefinitions: SiteRouteDefinition[] = [
     path: "/chinh-sach-bao-mat",
     kind: "privacy",
     title: "Chính sách bảo mật | ViettelWiFii.vn",
-    description: "Thông tin về việc thu thập, sử dụng và bảo vệ dữ liệu cá nhân.",
+    description:
+      "Thông tin về việc thu thập, sử dụng và bảo vệ dữ liệu cá nhân.",
     status: "ready",
   },
   {

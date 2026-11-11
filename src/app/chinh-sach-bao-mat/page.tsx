@@ -15,9 +15,9 @@ export default function PrivacyPolicyPage() {
           heading: "Trạng thái xử lý dữ liệu",
           content: (
             <p>
-              Không gửi thông tin cá nhân qua biểu mẫu khi trang này còn hiển thị
-              trạng thái bản nháp. Không có dữ liệu nào được lưu theo chính sách
-              này trước khi chính sách được hoàn thiện và công bố.
+              Không gửi thông tin cá nhân qua biểu mẫu khi trang này còn hiển
+              thị trạng thái bản nháp. Không có dữ liệu nào được lưu theo chính
+              sách này trước khi chính sách được hoàn thiện và công bố.
             </p>
           ),
         },
@@ -25,11 +25,19 @@ export default function PrivacyPolicyPage() {
           heading: "Thông tin phải được công bố trước khi bật biểu mẫu",
           content: (
             <ul className="list-disc space-y-2 pl-6">
-              <li>Tên và địa chỉ liên hệ đầy đủ của người kiểm soát dữ liệu.</li>
+              <li>
+                Tên và địa chỉ liên hệ đầy đủ của người kiểm soát dữ liệu.
+              </li>
               <li>Loại dữ liệu thu thập và mục đích sử dụng từng loại.</li>
-              <li>Đơn vị xử lý dữ liệu, nơi lưu trữ và việc chuyển dữ liệu nếu có.</li>
-              <li>Thời hạn lưu trữ, cách yêu cầu truy cập, chỉnh sửa hoặc xóa.</li>
-              <li>Đầu mối tiếp nhận yêu cầu và khiếu nại về dữ liệu cá nhân.</li>
+              <li>
+                Đơn vị xử lý dữ liệu, nơi lưu trữ và việc chuyển dữ liệu nếu có.
+              </li>
+              <li>
+                Thời hạn lưu trữ, cách yêu cầu truy cập, chỉnh sửa hoặc xóa.
+              </li>
+              <li>
+                Đầu mối tiếp nhận yêu cầu và khiếu nại về dữ liệu cá nhân.
+              </li>
             </ul>
           ),
         },

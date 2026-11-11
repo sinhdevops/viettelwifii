@@ -202,7 +202,7 @@ function GoiCuoc4g5gViettelCapNhatThang32025TongQuanVeGoiCuoc4GCuaViettel() {
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
-                      FB5K
+                    FB5K
                   </p>
                 </td>
                 <td className="[&amp;&gt;p]:text-14 [&amp;&gt;p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
@@ -1716,12 +1716,8 @@ function GoiCuoc4g5gViettelCapNhatThang32025TongQuanVeGoiCuoc4GCuaViettel() {
                   </p>
                 </td>
                 <td className="border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0">
-                  <div className="flex justify-center md:hidden">
-                    ĐĂNG KÝ
-                  </div>
-                  <div className="hidden justify-center md:flex">
-                    Đăng ký
-                  </div>
+                  <div className="flex justify-center md:hidden">ĐĂNG KÝ</div>
+                  <div className="hidden justify-center md:flex">Đăng ký</div>
                 </td>
               </tr>
             </tbody>
@@ -4095,8 +4091,8 @@ function GoiCuoc4g5gViettelCapNhatThang32025TongHopCacGoiCuoc5GPhoBien() {
       </ul>
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         {"Xem thêm: "}
-        Danh sách các dòng điện thoại hỗ trợ 5G và Hướng dẫn bật 5G trên
-        Android và IOS
+        Danh sách các dòng điện thoại hỗ trợ 5G và Hướng dẫn bật 5G trên Android
+        và IOS
       </p>
       <br />
     </>

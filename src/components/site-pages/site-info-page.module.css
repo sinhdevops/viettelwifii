@@ -1,0 +1,417 @@
+/* Shared support-page shell: about, contact, privacy, terms and the package hub.
+   Matches the captured brand language (white ground, #ed1c24 accent, 960/1280
+   breakpoints) without reusing captured page classes. */
+
+.page {
+  background: #ffffff;
+  color: #282828;
+  padding: 18px 0 56px;
+}
+
+.shell {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 16px;
+}
+
+.crumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8a8a8a;
+}
+
+.crumb a {
+  color: #5b5b5b;
+  text-decoration: none;
+}
+
+.crumb a:hover {
+  color: var(--brand, #ed1c24);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.crumb span {
+  color: #282828;
+}
+
+.hero {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-radius: 20px;
+  border: 1px solid #f3ebeb;
+  background:
+    radial-gradient(120% 150% at 0% 0%, #fff4f4 0%, rgba(255, 255, 255, 0) 62%),
+    #ffffff;
+  padding: 26px 20px;
+}
+
+.heroMain {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand, #ed1c24);
+}
+
+.title {
+  margin: 12px 0 0;
+  font-family: var(--font-magistral), Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: #1f1f1f;
+}
+
+.intro {
+  margin: 14px 0 0;
+  max-width: 62ch;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #5b5b5b;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.heroActions > * {
+  min-width: 156px;
+}
+
+.layout {
+  margin-top: 26px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+
+.content {
+  min-width: 0;
+}
+
+.notice {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  border-radius: 14px;
+  border: 1px solid #e8eeee;
+  background: #f6f9f8;
+  padding: 14px 16px;
+  color: #2f4a45;
+}
+
+.noticeDraft {
+  border-color: #f6e2c8;
+  background: #fff8ec;
+  color: #6b4a12;
+}
+
+.notice svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.noticeTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.noticeBody {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sections {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.section {
+  scroll-margin-top: 84px;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0;
+  font-family: var(--font-magistral), Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1f1f1f;
+}
+
+.sectionIndex {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #c9c1c1;
+}
+
+/* Authored copy inside sections keeps its own markup (p, ul, table, hub). */
+.sectionBody {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.68;
+  color: #4d4d4d;
+}
+
+.sectionBody > * + * {
+  margin-top: 12px;
+}
+
+/* Only authored top-level lists inside a section get markers; nested component
+   lists (the package grid) keep their own list styling. */
+.sectionBody > ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.sectionBody > ul > li + li {
+  margin-top: 6px;
+}
+
+.sectionBody strong {
+  color: #2f2f2f;
+}
+
+.sectionBody a {
+  color: #1f1f1f;
+  text-decoration: underline;
+  text-decoration-color: #d9cfcf;
+  text-underline-offset: 3px;
+}
+
+.sectionBody a:hover {
+  color: var(--brand, #ed1c24);
+}
+
+.cta {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 18px;
+  background: #1f1f1f;
+  padding: 22px 20px;
+}
+
+.ctaTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ctaText {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+.ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ctaActions > * {
+  min-width: 148px;
+}
+
+.ctaActions a[class*="primary"] {
+  background: var(--brand, #ed1c24);
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sideTitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.toc,
+.contactCard {
+  border: 1px solid #f0eaea;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.tocList {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: toc;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tocList li {
+  counter-increment: toc;
+}
+
+.tocList a {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.tocList a::before {
+  content: counter(toc);
+  flex-shrink: 0;
+  min-width: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #c9c1c1;
+}
+
+.tocList a:hover {
+  background: #fff5f5;
+  color: var(--brand, #ed1c24);
+}
+
+.contactRow {
+  margin: 12px 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.contactRow svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #b4a9a9;
+}
+
+.contactRow:first-of-type {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.contactRow:hover {
+  color: var(--brand, #ed1c24);
+}
+
+.contactMuted {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.contactLink {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand, #ed1c24);
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (min-width: 640px) {
+  .shell {
+    padding: 0 24px;
+  }
+
+  .hero {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 32px 28px;
+  }
+
+  .heroActions {
+    flex-shrink: 0;
+  }
+
+  .cta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 26px;
+  }
+}
+
+@media (min-width: 960px) {
+  .page {
+    padding: 26px 0 72px;
+  }
+
+  .hero {
+    margin-top: 22px;
+    padding: 38px 36px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .layout {
+    margin-top: 32px;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 40px;
+  }
+
+  .side {
+    position: sticky;
+    top: 92px;
+  }
+
+  .sectionHeading {
+    font-size: 21px;
+  }
+}

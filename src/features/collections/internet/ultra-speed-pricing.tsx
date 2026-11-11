@@ -42,7 +42,6 @@ export function InternetUltraSpeedPricing() {
             spaceBetween={12}
             slidesOffsetBefore={20}
             slidesOffsetAfter={20}
-            className="!overflow-visible"
           >
             {ultraSpeedPlans.map((item, index) => (
               <SwiperSlide key={index} style={{ width: 196 }}>

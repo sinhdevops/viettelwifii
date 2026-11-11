@@ -258,8 +258,7 @@ export default function GeneralTV65KPageDetails() {
                   </p>
                 </th>
               </tr>
-              
-              
+
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&>p]:text-14 [&>p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">
@@ -529,7 +528,7 @@ export default function GeneralTV65KPageDetails() {
                   </p>
                 </th>
               </tr>
-              
+
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
                 <td className="[&>p]:text-14 [&>p]:md:text-16 border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0 md:px-4 md:py-3">
                   <p className="text-12 md:text-14 pb-2 leading-[22px] md:leading-[22px]">

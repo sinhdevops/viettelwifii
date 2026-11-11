@@ -2,10 +2,7 @@ import "server-only";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { PageContent } from "./content-schema";
-import {
-  buildPageMetadata,
-  seoApprovedRoutes,
-} from "@/features/seo/page-seo";
+import { buildPageMetadata, seoApprovedRoutes } from "@/features/seo/page-seo";
 import { getRenderablePage } from "./server/page-repository";
 
 export { pathFromSegment, staticRouteSegments } from "./routing/route-segments";

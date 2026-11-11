@@ -14,20 +14,24 @@ export function InternetBenefits() {
         decoding="async"
         className="absolute bottom-0 left-0 hidden md:block"
         style={{ color: "transparent" } as CSSProperties}
-        src={sourceAsset("/_next/image?url=%2Fimages%2Fbg-internet-statements.png&w=1920&q=75")}
+        src={sourceAsset(
+          "/_next/image?url=%2Fimages%2Fbg-internet-statements.png&w=1920&q=75",
+        )}
         srcSet={[
           `${sourceAsset("/_next/image?url=%2Fimages%2Fbg-internet-statements.png&w=750&q=75")} 1x`,
           `${sourceAsset("/_next/image?url=%2Fimages%2Fbg-internet-statements.png&w=1920&q=75")} 2x`,
         ].join(", ")}
       />
       <div className="container px-5 md:px-0">
-        <h2 className="hidden text-center font-beausans text-[44px] leading-[54px] text-[#2C2F31] md:block">
+        <h2 className="font-beausans hidden text-center text-[44px] leading-[54px] text-[#2C2F31] md:block">
           {"Internet Viettel phục vụ trọn vẹn "}
           <br />
-          <span className="text-primary">nhu cầu cá nhân, gia đình, game thủ</span>
+          <span className="text-primary">
+            nhu cầu cá nhân, gia đình, game thủ
+          </span>
         </h2>
-        <div className="grid grid-cols-2 grid-rows-2 gap-x-3.5 gap-y-4 py-8 md:flex md:gap-8 md:pb-[90px] md:pt-[60px]">
-          <h2 className="text-left font-beausans text-22 leading-[28px] text-[#2C2F31] md:hidden">
+        <div className="grid grid-cols-2 grid-rows-2 gap-x-3.5 gap-y-4 py-8 md:flex md:gap-8 md:pt-[60px] md:pb-[90px]">
+          <h2 className="font-beausans text-22 text-left leading-[28px] text-[#2C2F31] md:hidden">
             {"Phục vụ trọn vẹn nhu cầu "}
             <br />
             <span className="text-primary">cá nhân, gia đình, game thủ</span>
@@ -45,7 +49,9 @@ export function InternetBenefits() {
               height="402"
               decoding="async"
               style={{ color: "transparent" } as CSSProperties}
-              src={sourceAsset("/_next/image?url=%2Fimages%2Finternet-statements.png&w=1920&q=75")}
+              src={sourceAsset(
+                "/_next/image?url=%2Fimages%2Finternet-statements.png&w=1920&q=75",
+              )}
               srcSet={[
                 `${sourceAsset("/_next/image?url=%2Fimages%2Finternet-statements.png&w=750&q=75")} 1x`,
                 `${sourceAsset("/_next/image?url=%2Fimages%2Finternet-statements.png&w=1920&q=75")} 2x`,
@@ -53,18 +59,19 @@ export function InternetBenefits() {
             />
           </div>
           <div className="max-w-[484px] pb-6 md:pb-0">
-            <h3 className="hidden font-beausans text-[44px] font-bold leading-[52px] md:block">
+            <h3 className="font-beausans hidden text-[44px] leading-[52px] font-bold md:block">
               {"HomeWifi - Router "}
               <br />
               phủ sóng cả nhà
             </h3>
-            <h3 className="font-beausans text-22 font-bold leading-[28px] md:hidden">
-              HomeWifi - <span className="text-primary">Router phủ sóng cả nhà</span>
+            <h3 className="font-beausans text-22 leading-[28px] font-bold md:hidden">
+              HomeWifi -{" "}
+              <span className="text-primary">Router phủ sóng cả nhà</span>
             </h3>
-            <p className="pt-2 text-12 leading-[18px] md:pt-6 md:text-20 md:leading-[28px]">
-              Thiết bị kích sóng wifi và mở rộng vùng phủ khắc phục mọi vấn đề của wifi truyền thống
-              (không phủ sóng nhà nhiều tầng, nhiễu sóng do vật cản, chịu tải không lớn, mạng giật
-              lag,...).
+            <p className="text-12 md:text-20 pt-2 leading-[18px] md:pt-6 md:leading-[28px]">
+              Thiết bị kích sóng wifi và mở rộng vùng phủ khắc phục mọi vấn đề
+              của wifi truyền thống (không phủ sóng nhà nhiều tầng, nhiễu sóng
+              do vật cản, chịu tải không lớn, mạng giật lag,...).
             </p>
           </div>
         </div>

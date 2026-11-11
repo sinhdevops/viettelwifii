@@ -1530,12 +1530,8 @@ function GoiCuoc4g5gViettelCapNhatThang22025GOICUOC4GVIETTEL() {
                   </p>
                 </td>
                 <td className="border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0">
-                  <div className="flex justify-center md:hidden">
-                    ĐĂNG KÝ
-                  </div>
-                  <div className="hidden justify-center md:flex">
-                    Đăng ký
-                  </div>
+                  <div className="flex justify-center md:hidden">ĐĂNG KÝ</div>
+                  <div className="hidden justify-center md:flex">Đăng ký</div>
                 </td>
               </tr>
             </tbody>

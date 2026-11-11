@@ -57,8 +57,8 @@ function GiaiDapThacMacHssvIntroduction() {
       <p className="text-16 md:text-18 pb-2 leading-[24px] md:leading-[24px]">
         <i>{"Đọc thêm: "}</i>
         <i>
-            Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?
-          </i>
+          Tại sao GIC Viettel vẫn là gói cước quốc dân dành cho HSSV năm 2026?
+        </i>
         <i></i>
       </p>
       <p className="text-18 md:text-20 pb-2 leading-[28px] md:leading-[28px]">

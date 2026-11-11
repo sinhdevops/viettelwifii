@@ -11,7 +11,7 @@ export function InternetFaqItem({ item }: { item: CollectionFaq }) {
       trigger={
         <>
           {item.question}
-          <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full pr-4 md:h-16 md:w-16 md:pr-0 !w-fit !h-fit md:bg-transparent [&amp;&gt;svg]:h-5 [&amp;&gt;svg]:w-5">
+          <div className="[&amp;&gt;svg]:h-5 [&amp;&gt;svg]:w-5 flex !h-fit h-6 !w-fit w-6 shrink-0 items-center justify-center rounded-full pr-4 md:h-16 md:w-16 md:bg-transparent md:pr-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

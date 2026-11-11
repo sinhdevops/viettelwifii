@@ -7,7 +7,12 @@
     "approvedRoutes": 171,
     "sampledRoutes": 9,
     "archetypes": ["home", "package", "internet", "news-list", "news-article"],
-    "additionalVariants": ["postpaid subscription", "same-code prepaid collision", "camera bundle", "gigabit Internet"]
+    "additionalVariants": [
+      "postpaid subscription",
+      "same-code prepaid collision",
+      "camera bundle",
+      "gigabit Internet"
+    ]
   },
   "httpProbe": {
     "testedUrl": "https://viettelwifii.vn/goi-cuoc-viettel/5G20",
@@ -34,15 +39,57 @@
       "sourceTextType": "text/html text extraction",
       "h1": "GÓI CƯỚC DATA 4G 5G VIETTEL",
       "pageTitle": "Gói cước Viettel 2026 | Đăng ký 4G 5G nhanh nhất",
-      "sectionOrderObserved": ["Gói cước tháng", "GÓI CƯỚC DATA 5G", "GÓI CƯỚC DATA 4G", "GÓI CƯỚC MIỄN PHÍ MẠNG XÃ HỘI", "Gói cước ngày", "GÓI CƯỚC MẠNG XÃ HỘI - ADD ON", "GÓI CƯỚC DATA COMBO", "GÓI CƯỚC 1-7 NGÀY", "GÓI CƯỚC 30 NGÀY", "Tin tức"],
-      "examples": [
-        {"productPath": "/goi-cuoc-viettel/5G20", "code": "5G20", "dataLabel": "6GB/3 ngày", "priceText": "20.000đ / 3 ngày"},
-        {"productPath": "/goi-cuoc-viettel/5G135", "code": "5G135", "dataLabel": "4GB/ngày", "priceText": "135.000đ / tháng"},
-        {"productPath": "/goi-cuoc-viettel/KS2H", "code": "KS2H", "dataLabel": "1.2GB/2 giờ", "priceText": "5.700đ / 2 giờ"}
+      "sectionOrderObserved": [
+        "Gói cước tháng",
+        "GÓI CƯỚC DATA 5G",
+        "GÓI CƯỚC DATA 4G",
+        "GÓI CƯỚC MIỄN PHÍ MẠNG XÃ HỘI",
+        "Gói cước ngày",
+        "GÓI CƯỚC MẠNG XÃ HỘI - ADD ON",
+        "GÓI CƯỚC DATA COMBO",
+        "GÓI CƯỚC 1-7 NGÀY",
+        "GÓI CƯỚC 30 NGÀY",
+        "Tin tức"
       ],
-      "cta": [{"label": "Đăng Ký", "actionVerified": false}, {"label": "Xem tất cả", "targetPath": "/tin-tuc", "actionVerified": false}],
-      "structure": ["slider previous/next buttons", "sectioned product cards", "news preview cards"],
-      "unverified": ["full grouping/order of 171 cards", "card click and signup CTA behavior", "slider behavior", "direct status/redirect"]
+      "examples": [
+        {
+          "productPath": "/goi-cuoc-viettel/5G20",
+          "code": "5G20",
+          "dataLabel": "6GB/3 ngày",
+          "priceText": "20.000đ / 3 ngày"
+        },
+        {
+          "productPath": "/goi-cuoc-viettel/5G135",
+          "code": "5G135",
+          "dataLabel": "4GB/ngày",
+          "priceText": "135.000đ / tháng"
+        },
+        {
+          "productPath": "/goi-cuoc-viettel/KS2H",
+          "code": "KS2H",
+          "dataLabel": "1.2GB/2 giờ",
+          "priceText": "5.700đ / 2 giờ"
+        }
+      ],
+      "cta": [
+        { "label": "Đăng Ký", "actionVerified": false },
+        {
+          "label": "Xem tất cả",
+          "targetPath": "/tin-tuc",
+          "actionVerified": false
+        }
+      ],
+      "structure": [
+        "slider previous/next buttons",
+        "sectioned product cards",
+        "news preview cards"
+      ],
+      "unverified": [
+        "full grouping/order of 171 cards",
+        "card click and signup CTA behavior",
+        "slider behavior",
+        "direct status/redirect"
+      ]
     },
     {
       "path": "/goi-cuoc-viettel/5G20",
@@ -53,14 +100,58 @@
       "rawCapture": "reference-clone/raw/ref-01/package-5G20.txt",
       "pageTitle": "Gói 5G20 Viettel: 6GB/3 ngày chỉ 20.000đ",
       "h1": "Gói cước Viettel 5G20",
-      "price": {"value": 20000, "currency": "VND", "sourceLabel": "20.000đ", "cycle": {"amount": 3, "unit": "day", "sourceLabel": "3 ngày"}},
-      "dataAllowance": [{"value": 6, "unit": "GB", "period": "3 ngày", "sourceLabel": "6GB/3 ngày"}],
-      "conditions": ["Hết data ngừng truy cập, không phát sinh cước ngoài gói", "Tự động gia hạn sau 3 ngày"],
-      "sms": {"registration": "5G20 UP", "registrationShortcode": "290", "cancellation": "HUY 5G20", "cancellationShortcode": "191"},
-      "headings": ["Thông tin chi tiết gói 5G20", "Ưu điểm nổi bật của gói 5G20", "Cách đăng ký gói 5G20", "Ai nên dùng gói 5G20?", "Tổng kết", "Gói cước tương tự"],
-      "contentBlocks": ["intro paragraph", "eligibility/use-case list", "features list", "registration instruction", "renewal/cancellation prose", "related product cards"],
-      "cta": [{"label": "Đăng Ký", "actionVerified": false, "associatedProductKey": "/goi-cuoc-viettel/5G20"}],
-      "unverified": ["CTA actual SMS URL/handler", "offer eligibility for subscriber", "direct status/redirect"]
+      "price": {
+        "value": 20000,
+        "currency": "VND",
+        "sourceLabel": "20.000đ",
+        "cycle": { "amount": 3, "unit": "day", "sourceLabel": "3 ngày" }
+      },
+      "dataAllowance": [
+        {
+          "value": 6,
+          "unit": "GB",
+          "period": "3 ngày",
+          "sourceLabel": "6GB/3 ngày"
+        }
+      ],
+      "conditions": [
+        "Hết data ngừng truy cập, không phát sinh cước ngoài gói",
+        "Tự động gia hạn sau 3 ngày"
+      ],
+      "sms": {
+        "registration": "5G20 UP",
+        "registrationShortcode": "290",
+        "cancellation": "HUY 5G20",
+        "cancellationShortcode": "191"
+      },
+      "headings": [
+        "Thông tin chi tiết gói 5G20",
+        "Ưu điểm nổi bật của gói 5G20",
+        "Cách đăng ký gói 5G20",
+        "Ai nên dùng gói 5G20?",
+        "Tổng kết",
+        "Gói cước tương tự"
+      ],
+      "contentBlocks": [
+        "intro paragraph",
+        "eligibility/use-case list",
+        "features list",
+        "registration instruction",
+        "renewal/cancellation prose",
+        "related product cards"
+      ],
+      "cta": [
+        {
+          "label": "Đăng Ký",
+          "actionVerified": false,
+          "associatedProductKey": "/goi-cuoc-viettel/5G20"
+        }
+      ],
+      "unverified": [
+        "CTA actual SMS URL/handler",
+        "offer eligibility for subscriber",
+        "direct status/redirect"
+      ]
     },
     {
       "path": "/goi-cuoc-viettel/tra-sau/MXH120",
@@ -71,14 +162,60 @@
       "rawCapture": "reference-clone/raw/ref-01/package-postpaid-MXH120.txt",
       "pageTitle": "Gói Cước Trả Sau MXH120 Viettel - 30GB Data + Miễn Phí Mạng Xã Hội, Chỉ 120K/tháng",
       "h1": "Gói cước Viettel trả sau MXH120",
-      "price": {"value": 120000, "currency": "VND", "sourceLabel": "120.000đ", "cycle": {"amount": 1, "unit": "month", "sourceLabel": "1 tháng"}},
-      "dataAllowance": [{"value": 1, "unit": "GB", "period": "day", "sourceLabel": "1GB/ngày"}, {"value": 30, "unit": "GB", "period": "30 ngày", "sourceLabel": "30GB/30 ngày"}],
-      "benefits": ["Miễn phí data TikTok, YouTube, Facebook, Facebook Messenger", "Miễn phí gọi nội mạng dưới 10 phút/cuộc", "30 phút gọi ngoại mạng/tháng", "30 SMS trong nước"],
-      "headings": ["1. Thông tin chi tiết gói cước MXH120 trả sau Viettel", "2. Đăng ký gói cước MXH120 hoặc chuyển đổi SIM sang trả sau", "3. Lợi ích khi sử dụng SIM trả sau Viettel", "4. Lưu ý khi sử dụng SIM trả sau Viettel", "5. Hướng dẫn thanh toán cước trả sau Viettel", "Gói cước tương tự"],
-      "contentBlocks": ["product benefits prose", "postpaid signup documents for individual/business", "My Viettel payment steps", "Viettel Money payment steps", "related package cards"],
+      "price": {
+        "value": 120000,
+        "currency": "VND",
+        "sourceLabel": "120.000đ",
+        "cycle": { "amount": 1, "unit": "month", "sourceLabel": "1 tháng" }
+      },
+      "dataAllowance": [
+        {
+          "value": 1,
+          "unit": "GB",
+          "period": "day",
+          "sourceLabel": "1GB/ngày"
+        },
+        {
+          "value": 30,
+          "unit": "GB",
+          "period": "30 ngày",
+          "sourceLabel": "30GB/30 ngày"
+        }
+      ],
+      "benefits": [
+        "Miễn phí data TikTok, YouTube, Facebook, Facebook Messenger",
+        "Miễn phí gọi nội mạng dưới 10 phút/cuộc",
+        "30 phút gọi ngoại mạng/tháng",
+        "30 SMS trong nước"
+      ],
+      "headings": [
+        "1. Thông tin chi tiết gói cước MXH120 trả sau Viettel",
+        "2. Đăng ký gói cước MXH120 hoặc chuyển đổi SIM sang trả sau",
+        "3. Lợi ích khi sử dụng SIM trả sau Viettel",
+        "4. Lưu ý khi sử dụng SIM trả sau Viettel",
+        "5. Hướng dẫn thanh toán cước trả sau Viettel",
+        "Gói cước tương tự"
+      ],
+      "contentBlocks": [
+        "product benefits prose",
+        "postpaid signup documents for individual/business",
+        "My Viettel payment steps",
+        "Viettel Money payment steps",
+        "related package cards"
+      ],
       "sms": null,
-      "cta": [{"label": "Liên hệ", "actionVerified": false, "associatedProductKey": "/goi-cuoc-viettel/tra-sau/MXH120"}],
-      "unverified": ["CTA contact destination", "package-specific postpaid terms", "direct status/redirect"]
+      "cta": [
+        {
+          "label": "Liên hệ",
+          "actionVerified": false,
+          "associatedProductKey": "/goi-cuoc-viettel/tra-sau/MXH120"
+        }
+      ],
+      "unverified": [
+        "CTA contact destination",
+        "package-specific postpaid terms",
+        "direct status/redirect"
+      ]
     },
     {
       "path": "/goi-cuoc-viettel/MXH120",
@@ -89,15 +226,54 @@
       "rawCapture": "reference-clone/raw/ref-01/package-prepaid-MXH120.txt",
       "pageTitle": "Gói MXH120 Viettel - 120K Nhận 30GB Data. Miễn Phí Truy Cập Mạng Xã Hội. Miễn Phí Gọi",
       "h1": "Gói cước Viettel MXH120",
-      "price": {"value": 120000, "currency": "VND", "sourceLabel": "120.000đ", "cycle": {"amount": 1, "unit": "month", "sourceLabel": "1 tháng"}},
-      "dataAllowance": [{"value": 1, "unit": "GB", "period": "day", "sourceLabel": "1GB/ngày"}, {"value": 30, "unit": "GB", "period": "30 ngày", "sourceLabel": "30GB/30 ngày"}],
-      "benefits": ["Miễn phí data TikTok, YouTube, Facebook, Facebook Messenger", "Gọi nội mạng dưới 10 phút", "30 phút ngoại mạng"],
+      "price": {
+        "value": 120000,
+        "currency": "VND",
+        "sourceLabel": "120.000đ",
+        "cycle": { "amount": 1, "unit": "month", "sourceLabel": "1 tháng" }
+      },
+      "dataAllowance": [
+        {
+          "value": 1,
+          "unit": "GB",
+          "period": "day",
+          "sourceLabel": "1GB/ngày"
+        },
+        {
+          "value": 30,
+          "unit": "GB",
+          "period": "30 ngày",
+          "sourceLabel": "30GB/30 ngày"
+        }
+      ],
+      "benefits": [
+        "Miễn phí data TikTok, YouTube, Facebook, Facebook Messenger",
+        "Gọi nội mạng dưới 10 phút",
+        "30 phút ngoại mạng"
+      ],
       "eligibilitySourceText": "Thuê bao di động mạng Viettel kích hoạt mới từ 01/01/2023 và thuê bao nằm trong danh sách được hưởng ưu đãi",
-      "sms": {"registration": "MXH120 UP", "registrationShortcode": "290"},
-      "headings": ["Thông tin chi tiết gói cước MXH120 của Viettel", "Cách đăng ký gói cước MXH120"],
-      "contentBlocks": ["product facts", "multiple registration methods", "embedded YouTube video"],
-      "cta": [{"label": "Đăng Ký", "actionVerified": false, "associatedProductKey": "/goi-cuoc-viettel/MXH120"}],
-      "unverified": ["actual signup CTA handler", "full lower-page section order", "direct status/redirect"]
+      "sms": { "registration": "MXH120 UP", "registrationShortcode": "290" },
+      "headings": [
+        "Thông tin chi tiết gói cước MXH120 của Viettel",
+        "Cách đăng ký gói cước MXH120"
+      ],
+      "contentBlocks": [
+        "product facts",
+        "multiple registration methods",
+        "embedded YouTube video"
+      ],
+      "cta": [
+        {
+          "label": "Đăng Ký",
+          "actionVerified": false,
+          "associatedProductKey": "/goi-cuoc-viettel/MXH120"
+        }
+      ],
+      "unverified": [
+        "actual signup CTA handler",
+        "full lower-page section order",
+        "direct status/redirect"
+      ]
     },
     {
       "path": "/internet/NETVT01",
@@ -107,19 +283,61 @@
       "rawCapture": "reference-clone/raw/ref-01/internet-NETVT01.txt",
       "pageTitle": "Gói NETVT01 Viettel 300Mbps + Camera + TV360 | Chỉ từ 225K/tháng",
       "h1": "Gói Internet NETVT01",
-      "speed": {"value": 300, "unit": "Mbps"},
+      "speed": { "value": 300, "unit": "Mbps" },
       "regionalPrices": [
-        {"regionSourceText": "Ngoại thành & các tỉnh", "amountVND": 225000, "cycle": "month"},
-        {"regionSourceText": "Nội thành Hà Nội & TP.HCM", "amountVND": 265000, "cycle": "month"}
+        {
+          "regionSourceText": "Ngoại thành & các tỉnh",
+          "amountVND": 225000,
+          "cycle": "month"
+        },
+        {
+          "regionSourceText": "Nội thành Hà Nội & TP.HCM",
+          "amountVND": 265000,
+          "cycle": "month"
+        }
       ],
-      "included": ["01 Modem WiFi 6", "01 Camera trong nhà", "Cloud lưu trữ 24h", "TV360 (Bundesliga, AFC)"],
-      "installation": {"connectionFeeVND": 300000, "vatIncluded": true, "sourceLabel": "Phí hòa mạng: 300.000đ; Giá đã bao gồm VAT"},
+      "included": [
+        "01 Modem WiFi 6",
+        "01 Camera trong nhà",
+        "Cloud lưu trữ 24h",
+        "TV360 (Bundesliga, AFC)"
+      ],
+      "installation": {
+        "connectionFeeVND": 300000,
+        "vatIncluded": true,
+        "sourceLabel": "Phí hòa mạng: 300.000đ; Giá đã bao gồm VAT"
+      },
       "promotion": "Đóng trước 12 tháng tặng thêm 01 tháng",
-      "headings": ["Thông tin gói cước NETVT01", "Ưu điểm nổi bật của NETVT01", "Chi phí & điều kiện đăng ký", "NETVT01 phù hợp với ai?", "Câu hỏi thường gặp", "Gói cước tương tự"],
-      "contentBlocks": ["facts", "benefits with H3", "region-specific pricing", "FAQ pairs", "related Internet product card with region controls"],
-      "cta": [{"label": "Đăng ký", "actionVerified": false}, {"label": "Lắp đặt mới", "actionVerified": false}, {"label": "Gọi 1800 8132", "sourceType": "paragraph", "actionVerified": false}],
+      "headings": [
+        "Thông tin gói cước NETVT01",
+        "Ưu điểm nổi bật của NETVT01",
+        "Chi phí & điều kiện đăng ký",
+        "NETVT01 phù hợp với ai?",
+        "Câu hỏi thường gặp",
+        "Gói cước tương tự"
+      ],
+      "contentBlocks": [
+        "facts",
+        "benefits with H3",
+        "region-specific pricing",
+        "FAQ pairs",
+        "related Internet product card with region controls"
+      ],
+      "cta": [
+        { "label": "Đăng ký", "actionVerified": false },
+        { "label": "Lắp đặt mới", "actionVerified": false },
+        {
+          "label": "Gọi 1800 8132",
+          "sourceType": "paragraph",
+          "actionVerified": false
+        }
+      ],
       "sourceAnomaly": "TV360 paragraph names NETVT1 although H1 and facts say NETVT01; do not silently rewrite",
-      "unverified": ["region selector behavior", "CTA popup/link", "direct status/redirect"]
+      "unverified": [
+        "region selector behavior",
+        "CTA popup/link",
+        "direct status/redirect"
+      ]
     },
     {
       "path": "/internet/NETVT1_CAM1",
@@ -130,15 +348,53 @@
       "rawCapture": "reference-clone/raw/ref-01/internet-NETVT1_CAM1.txt",
       "pageTitle": "Internet + Camera Viettel NETVT1_CAM1 | 350Mbps",
       "h1": "Gói Internet NETVT1_CAM1",
-      "speed": {"value": 350, "unit": "Mbps", "conditionalSpeedClaim": "Có thể tới 450Mbps khi dùng 2 camera và đăng ký truyền hình"},
-      "regionalPrices": [{"regionSourceText": "Khu vực 32 tỉnh/thành", "amountVND": 215000, "cycle": "month"}, {"regionSourceText": "Ngoại thành Hà Nội & TP.HCM", "amountVND": 255000, "cycle": "month"}],
-      "included": ["01 Camera AI Viettel", "01 ngày lưu trữ cloud", "01 Modem WiFi 6"],
-      "extraFees": ["Camera thứ 2: 20.000đ/camera/tháng cho lưu trữ cloud 1 ngày", "Combo 01 camera: hòa mạng 300.000đ", "Từ camera thứ 2: hòa mạng 300.000đ/camera", "Lắp đặt miễn phí"],
+      "speed": {
+        "value": 350,
+        "unit": "Mbps",
+        "conditionalSpeedClaim": "Có thể tới 450Mbps khi dùng 2 camera và đăng ký truyền hình"
+      },
+      "regionalPrices": [
+        {
+          "regionSourceText": "Khu vực 32 tỉnh/thành",
+          "amountVND": 215000,
+          "cycle": "month"
+        },
+        {
+          "regionSourceText": "Ngoại thành Hà Nội & TP.HCM",
+          "amountVND": 255000,
+          "cycle": "month"
+        }
+      ],
+      "included": [
+        "01 Camera AI Viettel",
+        "01 ngày lưu trữ cloud",
+        "01 Modem WiFi 6"
+      ],
+      "extraFees": [
+        "Camera thứ 2: 20.000đ/camera/tháng cho lưu trữ cloud 1 ngày",
+        "Combo 01 camera: hòa mạng 300.000đ",
+        "Từ camera thứ 2: hòa mạng 300.000đ/camera",
+        "Lắp đặt miễn phí"
+      ],
       "promotion": "Đóng trước 12 tháng tặng 01 tháng",
-      "headings": ["Thông tin gói cước", "Chi phí & khuyến mại", "Ưu điểm nổi bật", "NETVT1_CAM1 phù hợp với ai?"],
-      "contentBlocks": ["product facts", "region tariffs", "camera capabilities", "Viettel Home app external link"],
+      "headings": [
+        "Thông tin gói cước",
+        "Chi phí & khuyến mại",
+        "Ưu điểm nổi bật",
+        "NETVT1_CAM1 phù hợp với ai?"
+      ],
+      "contentBlocks": [
+        "product facts",
+        "region tariffs",
+        "camera capabilities",
+        "Viettel Home app external link"
+      ],
       "cta": [],
-      "unverified": ["complete lower-page CTA", "actual applicability and regional selector", "direct status/redirect"]
+      "unverified": [
+        "complete lower-page CTA",
+        "actual applicability and regional selector",
+        "direct status/redirect"
+      ]
     },
     {
       "path": "/internet/GIGA1",
@@ -149,15 +405,39 @@
       "rawCapture": "reference-clone/raw/ref-01/internet-GIGA1.txt",
       "pageTitle": "Internet Viettel GIGA1_H 1Gbps | Nội Thành HN, HCM – 320K",
       "h1": "Gói Internet GIGA1",
-      "speed": {"value": 1, "unit": "Gbps", "symmetric": true},
-      "regionalPrices": [{"regionSourceText": "Nội thành Hà Nội & TP.HCM", "amountVND": 320000, "cycle": "month"}],
+      "speed": { "value": 1, "unit": "Gbps", "symmetric": true },
+      "regionalPrices": [
+        {
+          "regionSourceText": "Nội thành Hà Nội & TP.HCM",
+          "amountVND": 320000,
+          "cycle": "month"
+        }
+      ],
       "availabilitySourceText": "Ngoại thành và 32 tỉnh/thành khác đang cập nhật",
       "included": ["01 modem WiFi 6 / XGSPON"],
-      "installation": {"connectionFeeVND": 500000, "vatIncluded": true},
+      "installation": { "connectionFeeVND": 500000, "vatIncluded": true },
       "promotion": "Đóng trước 12 tháng tặng 01 tháng",
-      "headings": ["Tổng quan gói GIGA1", "GIGA1 phù hợp với ai?", "Ưu điểm nổi bật", "Chi phí & ưu đãi", "So sánh nhanh GIGA1 với gói phổ thông", "Kết luận: Có nên lắp GIGA1?"],
-      "contentBlocks": ["facts", "benefits", "3-column comparison table", "signup narrative"],
-      "cta": [{"label": "Gọi 1800 8132", "sourceType": "paragraph", "actionVerified": false}],
+      "headings": [
+        "Tổng quan gói GIGA1",
+        "GIGA1 phù hợp với ai?",
+        "Ưu điểm nổi bật",
+        "Chi phí & ưu đãi",
+        "So sánh nhanh GIGA1 với gói phổ thông",
+        "Kết luận: Có nên lắp GIGA1?"
+      ],
+      "contentBlocks": [
+        "facts",
+        "benefits",
+        "3-column comparison table",
+        "signup narrative"
+      ],
+      "cta": [
+        {
+          "label": "Gọi 1800 8132",
+          "sourceType": "paragraph",
+          "actionVerified": false
+        }
+      ],
       "sourceAnomaly": "Page title mentions GIGA1_H but approved path and heading are GIGA1",
       "unverified": ["live CTA behavior", "direct status/redirect"]
     },
@@ -169,16 +449,65 @@
       "pageTitle": "Tin Tức Viettel - Cập Nhật Mới Nhất Về Gói Cước & Khuyến Mãi",
       "h1": "Dùng mạng mỗi ngày không cần wifi",
       "headings": ["Tin tức", "Gói Cước Hot"],
-      "featured": {"title": "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data", "displayDate": "27/06/2026", "articlePath": "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te"},
+      "featured": {
+        "title": "Cẩm Nang Chuyển Vùng Quốc Tế (Roaming) Từ A-Z: Cách Bật, Chi Phí Và Mẹo Tiết Kiệm Data",
+        "displayDate": "27/06/2026",
+        "articlePath": "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te"
+      },
       "visibleItems": [
-        {"path": "/tin-tuc/so-sanh-roaming", "title": "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?", "displayDate": "2/7/2026"},
-        {"path": "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android", "title": "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026", "displayDate": "24/4/2026"},
-        {"path": "/tin-tuc/goi-cuoc-roaming-viettel-la-gi", "title": "Gói cước Roaming Viettel là gì?", "displayDate": "31/3/2026"},
-        {"path": "/tin-tuc/giai-dap-thac-mac-hssv", "title": "GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP CHO HSSV KHI ĐĂNG KÝ DATA VIETTEL", "displayDate": "3/3/2026"}
+        {
+          "path": "/tin-tuc/so-sanh-roaming",
+          "title": "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?",
+          "displayDate": "2/7/2026"
+        },
+        {
+          "path": "/tin-tuc/huong-dan-cach-bat-5g-tren-dong-may-iphone-va-android",
+          "title": "Hướng dẫn chi tiết cách bật 5G trên iPhone và Andoid mới nhất 2026",
+          "displayDate": "24/4/2026"
+        },
+        {
+          "path": "/tin-tuc/goi-cuoc-roaming-viettel-la-gi",
+          "title": "Gói cước Roaming Viettel là gì?",
+          "displayDate": "31/3/2026"
+        },
+        {
+          "path": "/tin-tuc/giai-dap-thac-mac-hssv",
+          "title": "GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP CHO HSSV KHI ĐĂNG KÝ DATA VIETTEL",
+          "displayDate": "3/3/2026"
+        }
       ],
-      "structure": ["hero image and featured article", "news card grid", "load-more button", "popular product cards"],
-      "cta": [{"label": "ĐỌC THÊM", "targetPath": "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te", "actionVerified": true, "verificationMethod": "web extractor followed article link"}, {"label": "Xem thêm", "targetPath": "/tin-tuc/so-sanh-roaming", "actionVerified": true, "verificationMethod": "web extractor followed article link"}, {"label": "Xem thêm", "sourceType": "load-more button", "actionVerified": false}, {"label": "Đăng Ký", "actionVerified": false}],
-      "unverified": ["complete paginated item collection", "load more behavior", "all article image URLs", "direct status/redirect"]
+      "structure": [
+        "hero image and featured article",
+        "news card grid",
+        "load-more button",
+        "popular product cards"
+      ],
+      "cta": [
+        {
+          "label": "ĐỌC THÊM",
+          "targetPath": "/tin-tuc/viettel-roaming-chuyen-vung-quoc-te",
+          "actionVerified": true,
+          "verificationMethod": "web extractor followed article link"
+        },
+        {
+          "label": "Xem thêm",
+          "targetPath": "/tin-tuc/so-sanh-roaming",
+          "actionVerified": true,
+          "verificationMethod": "web extractor followed article link"
+        },
+        {
+          "label": "Xem thêm",
+          "sourceType": "load-more button",
+          "actionVerified": false
+        },
+        { "label": "Đăng Ký", "actionVerified": false }
+      ],
+      "unverified": [
+        "complete paginated item collection",
+        "load more behavior",
+        "all article image URLs",
+        "direct status/redirect"
+      ]
     },
     {
       "path": "/tin-tuc/so-sanh-roaming",
@@ -187,14 +516,41 @@
       "rawCapture": "reference-clone/raw/ref-01/news-article-roaming.txt",
       "pageTitle": "Nên chọn Gói cước Roaming, eSIM du lịch hay SIM vật lý nước ngoài? Lựa chọn tốt nhất dành cho bạn",
       "h1": "So Sánh Gói Cước Roaming, eSIM Du Lịch Và SIM Vật Lý Nước Ngoài: Lựa Chọn Nào Tốt Nhất Cho Bạn?",
-      "publishedDate": {"display": "2/7/2026", "isoInferredFromDisplay": "2026-07-02", "dateSource": "visible page date; no structured timestamp verified"},
-      "articleHeadings": ["Tổng quan về Gói cước Roaming, eSIM du lịch và SIM vật lý nước ngoài", "Roaming là gì? Hiểu đúng bản chất sản phẩm", "Đánh giá chi tiết: Nên chọn giải pháp nào khi đi nước ngoài?", "Tổng kết"],
-      "contentBlocks": ["intro paragraph", "H2 headings", "comparison and explanatory paragraphs", "checkmark recommendation items", "related internal link", "inline article image"],
-      "articleMedia": [{"alt": "so-sanh-roaming", "url": null}],
+      "publishedDate": {
+        "display": "2/7/2026",
+        "isoInferredFromDisplay": "2026-07-02",
+        "dateSource": "visible page date; no structured timestamp verified"
+      },
+      "articleHeadings": [
+        "Tổng quan về Gói cước Roaming, eSIM du lịch và SIM vật lý nước ngoài",
+        "Roaming là gì? Hiểu đúng bản chất sản phẩm",
+        "Đánh giá chi tiết: Nên chọn giải pháp nào khi đi nước ngoài?",
+        "Tổng kết"
+      ],
+      "contentBlocks": [
+        "intro paragraph",
+        "H2 headings",
+        "comparison and explanatory paragraphs",
+        "checkmark recommendation items",
+        "related internal link",
+        "inline article image"
+      ],
+      "articleMedia": [{ "alt": "so-sanh-roaming", "url": null }],
       "relatedSections": ["TIN TỨC KHÁC", "GÓI CƯỚC HOT"],
       "articleBodyComplete": false,
-      "cta": [{"label": "Xem thêm", "sourceType": "related item", "actionVerified": false}],
-      "unverified": ["full fidelity rich text/inline links", "article image URL", "content publication time zone", "direct status/redirect"]
+      "cta": [
+        {
+          "label": "Xem thêm",
+          "sourceType": "related item",
+          "actionVerified": false
+        }
+      ],
+      "unverified": [
+        "full fidelity rich text/inline links",
+        "article image URL",
+        "content publication time zone",
+        "direct status/redirect"
+      ]
     }
   ]
 }

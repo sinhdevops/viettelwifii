@@ -1,4 +1,3 @@
-import { siteConfig } from "@/lib/site-config";
 /* eslint-disable @next/next/no-img-element */
 import { sourceAsset } from "@/lib/viettelup-source-assets";
 import { ArticleLayout } from "@/components/news/article-layout";
@@ -203,12 +202,8 @@ function GoiCuocData4gViettel2026DanhSachGoiCuoc4GViettelMoiNhatNam2026() {
                   </p>
                 </td>
                 <td className="border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0">
-                  <div className="flex justify-center md:hidden">
-                    ĐĂNG KÝ
-                  </div>
-                  <div className="hidden justify-center md:flex">
-                    Đăng ký
-                  </div>
+                  <div className="flex justify-center md:hidden">ĐĂNG KÝ</div>
+                  <div className="hidden justify-center md:flex">Đăng ký</div>
                 </td>
               </tr>
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
@@ -1475,12 +1470,8 @@ function GoiCuocData4gViettel2026DanhSachGoiCuocData4GViettelKemUuDaiXemTV360() 
                   </p>
                 </td>
                 <td className="border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0">
-                  <div className="flex justify-center md:hidden">
-                    ĐĂNG KÝ
-                  </div>
-                  <div className="hidden justify-center md:flex">
-                    Đăng ký
-                  </div>
+                  <div className="flex justify-center md:hidden">ĐĂNG KÝ</div>
+                  <div className="hidden justify-center md:flex">Đăng ký</div>
                 </td>
               </tr>
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
@@ -1502,12 +1493,8 @@ function GoiCuocData4gViettel2026DanhSachGoiCuocData4GViettelKemUuDaiXemTV360() 
                   </p>
                 </td>
                 <td className="border border-t border-r border-b-0 border-l-0 border-black px-2 py-1 last:border-r-0">
-                  <div className="flex justify-center md:hidden">
-                    ĐĂNG KÝ
-                  </div>
-                  <div className="hidden justify-center md:flex">
-                    Đăng ký
-                  </div>
+                  <div className="flex justify-center md:hidden">ĐĂNG KÝ</div>
+                  <div className="hidden justify-center md:flex">Đăng ký</div>
                 </td>
               </tr>
               <tr className="border border-t border-r border-b-0 border-l-0 border-black">
