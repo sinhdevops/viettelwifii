@@ -38,6 +38,28 @@ export type CollectionSignupDialogProps =
     pagePath: string;
   };
 
+/** Server privacy version; null when the lookup fails (network, blocker, timeout). */
+async function fetchPolicyVersion(): Promise<string | null> {
+  try {
+    const response = await fetch("/api/leads/config", {
+      cache: "no-store",
+      signal: AbortSignal.timeout(5000),
+    });
+    if (!response.ok) return null;
+    const { policyVersion } = (await response.json()) as {
+      policyVersion?: unknown;
+    };
+    return typeof policyVersion === "string" &&
+      /^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$/.test(policyVersion)
+      ? policyVersion
+      : null;
+  } catch {
+    return null;
+  }
+}
+// Matches the server default in api/leads/_lib/privacy-config.ts.
+const DEFAULT_POLICY_VERSION = "v1";
+
 const input =
   "flex h-[42px] w-full rounded-xl border border-[#E9E9E9] bg-[#F4F4F4] px-3 py-2 text-16 ring-offset-white focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-gray-600 focus-visible:ring-offset-2 md:h-[52px] md:text-16 placeholder:text-[#737373]";
 const action =
@@ -63,11 +85,7 @@ export function CollectionSignupDialog({
   const pendingRef = useRef(false);
   const [city, setCity] = useState("");
   const [ward, setWard] = useState("");
-  const [privacyAvailability, setPrivacyAvailability] = useState<
-    "checking" | "available" | "unavailable"
-  >("checking");
   const [privacyPolicyVersion, setPrivacyPolicyVersion] = useState("");
-  const [checkingConfig, setCheckingConfig] = useState(false);
   const [loadedWards, setLoadedWards] = useState<{
     city: string;
     wards: readonly SignupWard[];
@@ -95,49 +113,11 @@ export function CollectionSignupDialog({
   const internetPage = pagePath === "/internet";
   const supported = sms || nine || internetPage;
 
-  async function openInternetSignup() {
-    setCheckingConfig(true);
-    try {
-      const response = await fetch("/api/leads/config", {
-        cache: "no-store",
-        signal: AbortSignal.timeout(5000),
-      });
-      if (!response.ok)
-        throw new Error("Lead capture availability unavailable");
-      const config = (await response.json()) as {
-        available?: unknown;
-        policyVersion?: unknown;
-      };
-      const version = config.policyVersion;
-      const available =
-        config.available === true &&
-        typeof version === "string" &&
-        /^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$/.test(version) &&
-        version.toLowerCase() !== "unapproved";
-      if (!available || typeof version !== "string") {
-        setPrivacyAvailability("unavailable");
-      } else {
-        setPrivacyPolicyVersion(version);
-        setPrivacyAvailability("available");
-      }
-    } catch {
-      setPrivacyAvailability("unavailable");
-    } finally {
-      setCheckingConfig(false);
-      setOpen(true);
-    }
-  }
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (pendingRef.current) return;
     if (pagePath !== "/internet") {
       toast.error("Gói này chưa hỗ trợ đăng ký qua biểu mẫu.");
-      return;
-    }
-    if (privacyAvailability !== "available") {
-      toast.error(
-        "Chưa thể gửi đăng ký trực tuyến. Vui lòng gọi để được tư vấn.",
-      );
       return;
     }
     const form = new FormData(event.currentTarget);
@@ -184,7 +164,8 @@ export function CollectionSignupDialog({
       itemTitle: code,
       pagePath,
       attribution,
-      privacyPolicyVersion,
+      // Replaced with the server's version just before sending.
+      privacyPolicyVersion: privacyPolicyVersion || DEFAULT_POLICY_VERSION,
       company: String(form.get("company") ?? ""),
     });
     if (!parsed.success) {
@@ -194,16 +175,35 @@ export function CollectionSignupDialog({
     pendingRef.current = true;
     setSubmitting(true);
     try {
-      const response = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(parsed.data),
-        signal: AbortSignal.timeout(15000),
-      });
-      const result = (await response.json().catch(() => null)) as {
-        ok?: boolean;
-        error?: string;
-      } | null;
+      const post = async (version: string) => {
+        const response = await fetch("/api/leads", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ...parsed.data,
+            privacyPolicyVersion: version,
+          }),
+          signal: AbortSignal.timeout(15000),
+        });
+        const result = (await response.json().catch(() => null)) as {
+          ok?: boolean;
+          error?: string;
+        } | null;
+        return { response, result };
+      };
+      const version =
+        privacyPolicyVersion ||
+        (await fetchPolicyVersion()) ||
+        DEFAULT_POLICY_VERSION;
+      let { response, result } = await post(version);
+      if (result?.error === "privacy_policy_version_mismatch") {
+        // The policy changed or the earlier lookup failed: retry once.
+        const latest = await fetchPolicyVersion();
+        if (latest && latest !== version) {
+          setPrivacyPolicyVersion(latest);
+          ({ response, result } = await post(latest));
+        }
+      }
       if (!response.ok || result?.ok !== true) {
         if (result?.error === "lead_storage_unconfigured") {
           toast.error(
@@ -241,7 +241,6 @@ export function CollectionSignupDialog({
       }
       trackLeadFormConversion({ phone: parsed.data.phone });
       setOpen(false);
-      setPrivacyAvailability("checking");
       setPrivacyPolicyVersion("");
       toast.success("Đã gửi đăng ký thành công. Chúng tôi sẽ liên hệ sớm!");
     } catch {
@@ -271,10 +270,7 @@ export function CollectionSignupDialog({
       open={open}
       onOpenChange={(nextOpen) => {
         setOpen(nextOpen);
-        if (!nextOpen) {
-          setPrivacyAvailability("checking");
-          setPrivacyPolicyVersion("");
-        }
+        if (!nextOpen) setPrivacyPolicyVersion("");
       }}
     >
       <SheetTrigger asChild>
@@ -284,20 +280,19 @@ export function CollectionSignupDialog({
           {...props}
           type={props.type ?? "button"}
           aria-label={props["aria-label"] ?? dialogLabel}
-          aria-busy={checkingConfig}
-          disabled={props.disabled || checkingConfig}
           onClick={(event) => {
             onClick?.(event);
             if (event.defaultPrevented) return;
             setSelection(readSignupSelection(event.currentTarget, pagePath));
             setCity("");
             setWard("");
-            setPrivacyAvailability("checking");
             setPrivacyPolicyVersion("");
-            if (internetPage) {
-              event.preventDefault();
-              void openInternetSignup();
-            }
+            // Open immediately; the policy version loads in the background
+            // and submit falls back if it never arrives.
+            if (internetPage)
+              void fetchPolicyVersion().then((version) => {
+                if (version) setPrivacyPolicyVersion(version);
+              });
           }}
         >
           {children}
@@ -398,15 +393,6 @@ export function CollectionSignupDialog({
                 </AppButton>
               </SheetClose>
             </div>
-          ) : privacyAvailability !== "available" ? (
-            <p
-              className="pt-3 text-center text-sm text-neutral-600"
-              role="status"
-            >
-              {privacyAvailability === "checking"
-                ? "Đang kiểm tra khả năng gửi đăng ký…"
-                : "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau."}
-            </p>
           ) : (
             <form
               onSubmit={(event) => {

@@ -1,5 +1,11 @@
 # BOARDROOM — ĐIỀU PHỐI ĐỘI AGENT VIETTELUP
 
+### SIGNUP-NONBLOCKING-20261117 — tích hợp bởi lead, chờ nghiệm thu
+
+- User báo modal Internet trên production hiện "Biểu mẫu tạm thời chưa khả dụng" thay cho form. `/api/leads/config` trên production trả `available:true`; trình duyệt sạch thấy form, nên lỗi xảy ra khi preflight bị chặn/lỗi/quá 5s (máy user có adblock chặn request). Server luôn `available:true` nên cổng phía client là thừa.
+- `collection-signup-dialog.tsx`: mở modal ngay, không chờ config; tải policy version nền; khi gửi dùng version đã tải, hoặc tải lại, hoặc mặc định `v1` (khớp server), và tự gửi lại 1 lần nếu `privacy_policy_version_mismatch`. Bỏ trạng thái "chưa khả dụng"/aria-busy. Lỗi gửi vẫn báo bằng toast và giữ dữ liệu.
+- E2E: thay 2 test hợp đồng cũ bằng "config bị chặn vẫn hiện form và gửi được (version v1)" và "mở ngay khi config đang tải". internet-lead 24/24 PASS trên build production; unit PASS; tsc/ESLint PASS. Self-check, chưa deploy.
+
 ### FIX-BUILD-E2E-20261117 — tích hợp bởi lead, chờ nghiệm thu
 
 - User yêu cầu sửa hai vấn đề có sẵn: `SecurityFatalError` của Next 16.4.3 và 358 e2e smoke/route matrix fail. Lead làm trực tiếp, không mở worker; self-check, chưa có QA độc lập.

@@ -404,10 +404,7 @@ for (const [status, error, message] of [
   });
 }
 
-test("Internet signup hides personal-data fields when intake is unavailable", async ({
-  page,
-}) => {
-  await mockLeadConfig(page, false);
+async function openMeshSignup(page: import("@playwright/test").Page) {
   await page.goto("/internet");
   const signup = page
     .locator(".internet-card")
@@ -424,18 +421,37 @@ test("Internet signup hides personal-data fields when intake is unavailable", as
   await signup.click();
   const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
   await expect(dialog).toBeVisible();
+  return dialog;
+}
+
+test("Internet signup still shows the form when the config check is blocked", async ({
+  page,
+}) => {
+  // Ad blockers or network errors must never replace the form.
+  await page.route("**/api/leads/config", (route) =>
+    route.abort("blockedbyclient"),
+  );
+  let sent: Record<string, unknown> | undefined;
+  await page.route("**/api/leads", async (route) => {
+    sent = route.request().postDataJSON() as Record<string, unknown>;
+    await route.fulfill({
+      status: 200,
+      contentType: "application/json",
+      body: JSON.stringify({ ok: true }),
+    });
+  });
+  // fillMeshForm asserts the name/phone fields are visible and fills them.
+  const dialog = await fillMeshForm(page);
   await expect(
     dialog.getByText("Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau."),
-  ).toBeVisible();
-  await expect(
-    dialog.getByRole("textbox", { name: "Nhập họ tên" }),
   ).toHaveCount(0);
-  await expect(
-    dialog.getByRole("textbox", { name: "Nhập số điện thoại" }),
-  ).toHaveCount(0);
+  await dialog.getByRole("button", { name: "XÁC NHẬN" }).click();
+  await expect(page.getByText(successMessage)).toBeVisible();
+  // Falls back to the server's default policy version.
+  expect(sent?.privacyPolicyVersion).toBe("v1");
 });
 
-test("Internet signup waits for config before showing the modal", async ({
+test("Internet signup opens immediately while config is still loading", async ({
   page,
 }) => {
   let releaseConfig!: () => void;
@@ -450,34 +466,14 @@ test("Internet signup waits for config before showing the modal", async ({
       body: JSON.stringify({ available: true, policyVersion }),
     });
   });
-  await page.goto("/internet");
-  const signup = page
-    .locator(".internet-card")
-    .filter({ hasText: "MESHVT3" })
-    .first()
-    .getByRole("button", { name: "Đăng ký" });
-  await expect
-    .poll(() =>
-      signup.evaluate((button) =>
-        Object.keys(button).some((key) => key.startsWith("__reactProps$")),
-      ),
-    )
-    .toBe(true);
-  await signup.click();
-  const dialog = page.getByRole("dialog", { name: "Thông tin đặt mua" });
   try {
-    await expect(signup).toHaveAttribute("aria-busy", "true");
-    await expect(dialog).toHaveCount(0);
+    const dialog = await openMeshSignup(page);
+    await expect(
+      dialog.getByRole("textbox", { name: "Nhập họ tên" }),
+    ).toBeVisible();
   } finally {
     releaseConfig();
   }
-  await expect(dialog).toBeVisible();
-  await expect(
-    dialog.getByRole("textbox", { name: "Nhập họ tên" }),
-  ).toBeVisible();
-  await expect(
-    dialog.getByText("Đang kiểm tra khả năng gửi đăng ký…"),
-  ).toHaveCount(0);
 });
 
 test("Internet signup submits without a checkbox or implied policy acceptance", async ({
