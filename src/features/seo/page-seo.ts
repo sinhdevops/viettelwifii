@@ -192,8 +192,8 @@ function socialMetadata(title: string, description: string): SocialMetadata {
   return { openGraph, twitter };
 }
 
-/** Metadata title/description normalised to the display-length gates. */
-function seoCopy(page: SeoPage): { title: string; description: string } {
+/** Metadata title/description normalised to the display-length gates (shared with e2e). */
+export function seoCopy(page: SeoPage): { title: string; description: string } {
   const normalisable = {
     title: page.title,
     description: page.description,

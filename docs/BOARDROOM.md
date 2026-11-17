@@ -1,5 +1,24 @@
 # BOARDROOM — ĐIỀU PHỐI ĐỘI AGENT VIETTELUP
 
+### FIX-BUILD-E2E-20261117 — tích hợp bởi lead, chờ nghiệm thu
+
+- User yêu cầu sửa hai vấn đề có sẵn: `SecurityFatalError` của Next 16.4.3 và 358 e2e smoke/route matrix fail. Lead làm trực tiếp, không mở worker; self-check, chưa có QA độc lập.
+- Nâng `next`, `@next/env`, `eslint-config-next` lên 16.4.6 (latest, bản vá). `next build` exit 0, không còn cảnh báo bảo mật.
+- `/internet` tràn 759px ở 390px: input ẩn `position:absolute` của Radix RadioGroup (chọn khu vực trong thẻ gói) không có tổ tiên định vị nên thoát khỏi carousel `overflow-auto`. Sửa `.group { position: relative }` trong `src/components/ui/radio-group.module.css`.
+- Smoke spec lỗi thời: 10 route draft cũ đã được chuyển `ready` có chủ đích (unit "indexes all formerly draft products"), nên `expectedDraftRoutes = []`; title/description so với `seoCopy()` (export từ `page-seo.ts`) thay vì chuỗi gốc, vì metadata được chuẩn hóa có chủ đích.
+- Self-check: unit 231/231, ESLint 0, tsc PASS, Prettier PASS. E2E smoke + route matrix + internet-lead trên build production với `NEXT_PUBLIC_SITE_URL=https://fixture.example` (như CI): 460/460 PASS. Với `.env.local` (localhost) 354 test robots/canonical/sitemap vẫn fail do chặn index loopback — đúng thiết kế, ghi chú trong README. Không deploy/push/lead thật.
+
+### OPTIMIZE-SUPABASE-20261117 — tích hợp bởi lead, chờ nghiệm thu
+
+- User yêu cầu làm toàn bộ khuyến nghị review: SQL leads, quick wins, Supabase cho leads, gom bảng giá gói cước. Lead làm trực tiếp trong main chat (không mở worker); đây là self-check, chưa có QA độc lập.
+- Supabase: `public.leads` + quyền db/002 đã có sẵn (probe đọc bằng secret key). Thêm `db/003` (cột `install_*`, `lead_rate_limits`, RPC `lead_intake_guard`/`lead_notifications_due`/`lead_mark_notification`) và `db/004` tùy chọn (pg_net trigger + pg_cron retry) cùng Edge Function `supabase/functions/lead-telegram`. Chưa chạy 003/004, chưa deploy function — cần user.
+- API: tách `src/lib/server/lead-intake.ts`; route thêm guard (429/duplicate) và `LEAD_NOTIFY_MODE`. Lead store tự lưu dạng cũ khi thiếu db/003.
+- Client: phường/xã lazy-load từ `public/data/internet-wards/*.json` (bỏ chunk ~176KB); modal gửi `installation` có cấu trúc; xử lý `rate_limited`.
+- Assets: crawl 181 route trên `next start` + quét `.next/static`; 469 file (57.5MB) không được tham chiếu đã `git mv` sang `archive/public-unused/` (giữ lottie động, font next/font, literal path). public/assets 82.8MB → 25.4MB; recrawl: 0 asset thiếu. Gỡ `.pnpm-store` khỏi git.
+- Gói cước: codemod `scripts/packages/extract-shared-price-tables.mjs` tách 11 bảng giá trùng (74 bản sao) sang `src/content/packages/price-tables/` với prop `itemPath`; nguồn gói 5.0MB → 2.8MB (+0.36MB bảng chung).
+- Self-check: unit 231/231, ESLint 0 warning, Prettier PASS trên file đã sửa, routes:check PASS; HTML 176 trang trước/sau refactor bảng giá: 0 khác biệt; e2e internet-lead 24/24 PASS (production build). Smoke + route matrix: 358 fail, chạy lại đúng 358 test trên build HEAD 8a51ee5 cũng fail 358 (title/description rút gọn, /internet tràn 390px) — lỗi có sẵn, chưa sửa.
+- `next build` sinh đủ 193 trang rồi dừng với `SecurityFatalError` của Next 16.4.3 (lỗ hổng đã biết) — cần user quyết định nâng cấp Next. Không deploy/push/lead thật/Telegram thật.
+
 ### LEAD-NOCAPTCHA-20261112 — đang thực hiện
 
 - User yêu cầu sửa modal Internet báo thiếu gói/địa chỉ dù đã nhập, xóa CAPTCHA và luồng lưu DB → báo thành công → thông báo Telegram. Hợp đồng mới thay yêu cầu CAPTCHA lịch sử; giữ validation/origin/honeypot/định danh sản phẩm và bảo toàn dữ liệu khi lỗi.

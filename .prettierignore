@@ -17,3 +17,4 @@ src/generated/
 data/pages.json
 # Captured source CSS is evidence; avoid reserializing it.
 src/styles/viettelup-source.css
+archive/

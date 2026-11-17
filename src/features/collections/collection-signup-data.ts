@@ -1,16 +1,39 @@
-import wardSource from "../../../data/content/internet-wards.json";
+export type SignupWard = { name: string; ward_code: string };
 
-export function getSignupWards(
-  city: string,
-): readonly { name: string; ward_code: string }[] {
-  return (
-    (
-      wardSource.cities as Record<
-        string,
-        { wards: { name: string; ward_code: string }[] }
-      >
-    )[city]?.wards ?? []
-  );
+/** Keep in sync with wardCitySlug() in scripts/content/split-internet-wards.mjs. */
+export function wardCitySlug(city: string): string {
+  return city
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[đĐ]/g, "d")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+const wardCache = new Map<string, Promise<readonly SignupWard[]>>();
+
+/**
+ * Wards are static per-city files generated from data/content/internet-wards.json
+ * (scripts/content/split-internet-wards.mjs), fetched only for the chosen city.
+ */
+export function loadSignupWards(city: string): Promise<readonly SignupWard[]> {
+  if (!(signupCities as readonly string[]).includes(city))
+    return Promise.resolve([]);
+  let pending = wardCache.get(city);
+  if (!pending) {
+    pending = fetch(`/data/internet-wards/${wardCitySlug(city)}.json`)
+      .then((response) => {
+        if (!response.ok) throw new Error(`Ward list ${response.status}`);
+        return response.json() as Promise<SignupWard[]>;
+      })
+      .catch((error: unknown) => {
+        wardCache.delete(city); // allow a retry on the next selection
+        throw error;
+      });
+    wardCache.set(city, pending);
+  }
+  return pending;
 }
 
 /** Captured from the open /internet source dialog (COLLECTION-CTA-02). */

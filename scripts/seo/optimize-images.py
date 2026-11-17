@@ -17,6 +17,9 @@ ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 ASSETS = PUBLIC / "assets"
 DERIVED = ASSETS / "optimized"
+# Originals that no rendered route requests live outside public/ so they are not
+# deployed; their derivatives stay in public/assets/optimized.
+ARCHIVE = ROOT / "archive" / "public-unused"
 MANIFEST = ROOT / "src/generated/optimized-images.json"
 THRESHOLD_BYTES = 300_000  # decimal KB; includes all images above 300 KiB too
 MAX_WIDTH = 1600
@@ -26,8 +29,10 @@ QUALITY = 82
 def main() -> None:
     mapping: dict[str, str] = {}
     reports = []
-    for source in sorted(ASSETS.rglob("*")):
-        if not source.is_file() or DERIVED in source.parents:
+    sources = [(PUBLIC, s) for s in ASSETS.rglob("*")]
+    sources += [(ARCHIVE, s) for s in (ARCHIVE / "assets").rglob("*")]
+    for base, source in sorted(sources, key=lambda pair: pair[1].relative_to(pair[0]).as_posix()):
+        if not source.is_file() or DERIVED in source.parents or (ARCHIVE / "assets" / "optimized") in source.parents:
             continue
         if source.suffix.lower() not in {".png", ".jpg", ".jpeg"}:
             continue
@@ -53,10 +58,10 @@ def main() -> None:
                     raise ValueError(f"Derived validation failed: {source}")
             if len(encoded) >= len(original):
                 raise ValueError(f"Derived image has no savings: {source}")
-            local = "/" + source.relative_to(PUBLIC).as_posix()
+            local = "/" + source.relative_to(base).as_posix()
             # Full source hash prevents collisions and makes provenance explicit.
             digest = hashlib.sha256(original).hexdigest()
-            target = DERIVED / (source.relative_to(ASSETS).as_posix() + f".{digest}.webp")
+            target = DERIVED / (source.relative_to(base / "assets").as_posix() + f".{digest}.webp")
             target.parent.mkdir(parents=True, exist_ok=True)
             if target.exists():
                 if target.read_bytes() != encoded:

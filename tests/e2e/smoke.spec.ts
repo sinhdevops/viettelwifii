@@ -9,6 +9,7 @@ import { packagePageContents } from "../../src/constants/packages/page-content";
 import { newsPageContents } from "../../src/constants/news/page-content";
 import { internetDetailPageContents } from "../../src/content/internet/page-content";
 import { collectionPageContents } from "../../src/features/collections/page-content";
+import { seoCopy } from "../../src/features/seo/page-seo";
 
 const repo = process.cwd();
 const approved = JSON.parse(
@@ -31,18 +32,10 @@ const extraCollections = [
   "/goi-cuoc-nine",
   "/goi-cuoc-roaming",
 ];
-const expectedDraftRoutes = [
-  "/tin-tuc/dang-ky-internet-viettel-wifi-6-moi-nhat-04-2025",
-  "/tin-tuc/goi-cuoc-viettel-thang-06-2025",
-  "/tin-tuc/goi-cuoc-viettel-thang-4-2025",
-  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-3-2025",
-  "/tin-tuc/goi-cuoc-4g-5g-viettel-cap-nhat-thang-2-2025",
-  "/tin-tuc/goi-cuoc-5g-viettel-tet5g",
-  "/tin-tuc/khuyen-mai-nap-the-viettel-20-7",
-  "/tin-tuc/khuyen-mai-nap-the-15-6",
-  "/tin-tuc/tong-hop-cach-dang-ky-xem-tron-bo-euro-2024-tren-tv360",
-  "/goi-cuoc-viettel/FB5K",
-];
+// Every formerly stale route was promoted to `ready` (see the
+// "indexes all formerly draft products" unit test in
+// tests/seo-optimization.test.ts). New drafts must be listed here explicitly.
+const expectedDraftRoutes: string[] = [];
 
 // Both preview and production serve all approved routes, including drafts.
 // Readiness alone controls indexing; absolute URLs use the configured origin.
@@ -99,10 +92,12 @@ test.describe("175 approved routes: authored identities and readiness SEO in bot
         headingText?.replace(/\s+/g, "").toLocaleLowerCase("vi"),
         route,
       ).toBe(content.heading.replace(/\s+/g, "").toLocaleLowerCase("vi"));
-      await expect(page).toHaveTitle(content.title);
+      // Metadata is the normalised SEO copy, not the raw authored strings.
+      const seo = seoCopy(content);
+      await expect(page).toHaveTitle(seo.title);
       await expect(page.locator('meta[name="description"]')).toHaveAttribute(
         "content",
-        content.description,
+        seo.description,
       );
       const robots = page.locator('meta[name="robots"]');
       const canonical = page.locator('link[rel="canonical"]');

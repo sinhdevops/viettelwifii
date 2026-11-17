@@ -23,6 +23,8 @@ export default defineConfig([
     "reference-clone/**",
     "reports/**",
     "public/**",
+    "archive/**",
+    "supabase/functions/**",
     "playwright-report/**",
     "test-results/**",
     ".playwright-mcp/**",

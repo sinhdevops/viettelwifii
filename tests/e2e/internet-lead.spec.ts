@@ -275,7 +275,7 @@ test("Internet signup shows success only after API confirmation", async ({
   ).toBeVisible();
   expect(sent?.itemId).toBe("/internet/MESHVT3");
   expect(sent?.pagePath).toBe("/internet");
-  expect(sent?.note).toContain("Cà Mau");
+  expect(sent?.installation).toMatchObject({ city: "Cà Mau" });
   expect(sent?.privacyConsent).toBe(false);
   expect(sent?.privacyPolicyVersion).toBe(policyVersion);
 });
@@ -309,7 +309,10 @@ for (const [code, notification] of [
     expect(sent?.itemTitle).toBe(code);
     expect(sent?.pagePath).toBe("/internet");
     expect(sent?.phone).toBe("+84 900 000 000");
-    expect(sent?.note).toContain("Phường Bạc Liêu, Cà Mau");
+    expect(sent?.installation).toMatchObject({
+      city: "Cà Mau",
+      wardName: "Phường Bạc Liêu",
+    });
     expect(sent).not.toHaveProperty("turnstileToken");
     expect(
       Object.keys(sent!).some((key) => /captcha|turnstile/i.test(key)),

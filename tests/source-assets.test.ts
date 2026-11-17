@@ -24,8 +24,19 @@ describe("generated editorial asset replacements", () => {
     expect(sourceAsset(reordered)).toBe(optimizedArtwork);
   });
 
-  it("points to an existing PNG file in public assets", () => {
-    const filePath = resolve(process.cwd(), "public", originalArtwork.slice(1));
+  // Originals no route requests are archived outside public/ (not deployed);
+  // only the WebP derivative is served.
+  const archivedOriginal = resolve(
+    process.cwd(),
+    "archive/public-unused",
+    originalArtwork.slice(1),
+  );
+
+  it("archives the original PNG outside public assets", () => {
+    expect(
+      existsSync(resolve(process.cwd(), "public", originalArtwork.slice(1))),
+    ).toBe(false);
+    const filePath = archivedOriginal;
     expect(existsSync(filePath)).toBe(true);
     expect(readFileSync(filePath).subarray(0, 8)).toEqual(
       Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]),
@@ -34,9 +45,7 @@ describe("generated editorial asset replacements", () => {
 
   it("keeps the original and serves a smaller, valid WebP derivative", () => {
     expect(optimizedArtwork).toMatch(/^\/assets\/optimized\/.+\.webp$/);
-    const original = readFileSync(
-      resolve(process.cwd(), "public", originalArtwork.slice(1)),
-    );
+    const original = readFileSync(archivedOriginal);
     const derivative = readFileSync(
       resolve(process.cwd(), "public", optimizedArtwork.slice(1)),
     );

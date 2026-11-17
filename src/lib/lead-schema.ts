@@ -22,6 +22,25 @@ export const leadSchema = z
         return count >= 9 && count <= 15;
       }, "Số điện thoại không hợp lệ"),
     note: z.string().trim().max(500).optional().default(""),
+    // Structured installation address (Internet collection). Stored in its own
+    // columns instead of being concatenated into `note`.
+    installation: z
+      .object({
+        city: z.string().trim().min(1).max(80),
+        wardCode: z
+          .string()
+          .trim()
+          .regex(/^\d{1,10}$/, "Phường/xã không hợp lệ"),
+        wardName: z.string().trim().min(1).max(120),
+        address: z
+          .string()
+          .trim()
+          .min(1, "Vui lòng nhập đầy đủ địa chỉ lắp đặt.")
+          .max(300),
+        region: z.string().trim().max(40).optional(),
+        displayedPrice: z.string().trim().max(80).optional(),
+      })
+      .optional(),
     // The approved full product route is the identity; the display code is not unique.
     itemId: approvedPathShape.refine(
       (path) => path !== "/",
@@ -49,6 +68,21 @@ export const leadSchema = z
       message: "Vui lòng xác nhận đồng ý với Chính sách bảo mật",
       path: ["privacyConsent"],
     },
+  )
+  .refine(
+    (lead) => lead.pagePath !== "/internet" || lead.installation !== undefined,
+    {
+      message: "Vui lòng nhập đầy đủ địa chỉ lắp đặt.",
+      path: ["installation"],
+    },
   );
 export type LeadPayload = z.input<typeof leadSchema>;
 export type ValidatedLead = z.output<typeof leadSchema>;
+
+/** Human-readable installation summary (legacy `note` fallback and Telegram). */
+export function formatInstallation(
+  installation: ValidatedLead["installation"],
+): string {
+  if (!installation) return "";
+  return `Địa chỉ lắp đặt: ${installation.address}, ${installation.wardName}, ${installation.city}. Khu vực: ${installation.region || "—"}. Giá hiển thị: ${installation.displayedPrice || "—"}.`;
+}

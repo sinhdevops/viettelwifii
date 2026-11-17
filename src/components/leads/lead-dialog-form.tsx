@@ -151,6 +151,11 @@ export function LeadDialogForm({
             "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.",
           );
         }
+        if (result?.error === "rate_limited" || response.status === 429) {
+          throw new Error(
+            "Bạn đã gửi quá nhiều lần. Vui lòng thử lại sau ít phút hoặc gọi hotline.",
+          );
+        }
         if (result?.error === "privacy_policy_version_mismatch") {
           throw new Error(
             "Chính sách bảo mật vừa thay đổi. Biểu mẫu tạm thời chưa khả dụng; vui lòng tải lại trang để xem bản hiện hành.",

@@ -13,6 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import {
+  useEffect,
   useId,
   useRef,
   useState,
@@ -23,10 +24,11 @@ import { toast } from "sonner";
 import { leadSchema } from "@/lib/lead-schema";
 import { CollectionSelect } from "./collection-select";
 import {
-  getSignupWards,
+  loadSignupWards,
   readSignupSelection,
   signupCities,
   type SignupSelection,
+  type SignupWard,
 } from "./collection-signup-data";
 
 export type CollectionSignupDialogProps =
@@ -65,7 +67,27 @@ export function CollectionSignupDialog({
   >("checking");
   const [privacyPolicyVersion, setPrivacyPolicyVersion] = useState("");
   const [checkingConfig, setCheckingConfig] = useState(false);
-  const wards = getSignupWards(city);
+  const [loadedWards, setLoadedWards] = useState<{
+    city: string;
+    wards: readonly SignupWard[];
+  }>({ city: "", wards: [] });
+  const wards = loadedWards.city === city ? loadedWards.wards : [];
+  useEffect(() => {
+    if (!city) return;
+    let active = true;
+    loadSignupWards(city).then(
+      (list) => {
+        if (active) setLoadedWards({ city, wards: list });
+      },
+      () => {
+        if (active)
+          toast.error("Chưa tải được danh sách phường/xã. Vui lòng chọn lại.");
+      },
+    );
+    return () => {
+      active = false;
+    };
+  }, [city]);
   const id = useId();
   const nine = pagePath === "/goi-cuoc-nine";
   const sms = pagePath === "/goi-cuoc-gic";
@@ -149,7 +171,14 @@ export function CollectionSignupDialog({
     const parsed = leadSchema.safeParse({
       name: String(form.get("name") ?? ""),
       phone: String(form.get("phone") ?? ""),
-      note: `Địa chỉ lắp đặt: ${address}, ${selectedWard}, ${city}. Khu vực: ${selection.region ?? "—"}. Giá hiển thị: ${selection.price ?? "—"}.`,
+      installation: {
+        city,
+        wardCode: ward,
+        wardName: selectedWard,
+        address,
+        region: selection.region,
+        displayedPrice: selection.price,
+      },
       itemId: `/internet/${code}`,
       itemTitle: code,
       pagePath,
@@ -187,6 +216,12 @@ export function CollectionSignupDialog({
         ) {
           toast.error(
             "Biểu mẫu tạm thời chưa khả dụng. Vui lòng quay lại sau.",
+          );
+          return;
+        }
+        if (result?.error === "rate_limited" || response.status === 429) {
+          toast.error(
+            "Bạn đã gửi quá nhiều lần. Vui lòng thử lại sau ít phút hoặc gọi hotline.",
           );
           return;
         }

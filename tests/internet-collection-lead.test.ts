@@ -18,11 +18,13 @@ const store = vi.hoisted(() => ({
   configured: vi.fn(() => true),
   saveLead: vi.fn(),
   setLeadNotificationStatus: vi.fn(),
+  guardLeadIntake: vi.fn(),
 }));
 vi.mock("../src/lib/server/lead-store", () => ({
   leadStoreConfigured: store.configured,
   saveLead: store.saveLead,
   setLeadNotificationStatus: store.setLeadNotificationStatus,
+  guardLeadIntake: store.guardLeadIntake,
 }));
 import { POST } from "../src/app/api/leads/route";
 import { GET } from "../src/app/api/leads/config/route";
@@ -30,7 +32,15 @@ import { GET } from "../src/app/api/leads/config/route";
 const payload = {
   name: "Khách thử nghiệm",
   phone: "0900000000",
-  note: "Địa chỉ thử nghiệm, Đà Nẵng",
+  note: "",
+  installation: {
+    city: "Đà Nẵng",
+    wardCode: "20194",
+    wardName: "Phường Hải Châu",
+    address: "Địa chỉ thử nghiệm",
+    region: "mien-trung",
+    displayedPrice: "300.000đ/tháng",
+  },
   itemId: "/internet/MESHVT3",
   itemTitle: "MESHVT3",
   pagePath: "/internet",
@@ -54,6 +64,7 @@ function setup() {
   store.configured.mockReturnValue(true);
   store.saveLead.mockResolvedValue("lead-1");
   store.setLeadNotificationStatus.mockResolvedValue(undefined);
+  store.guardLeadIntake.mockResolvedValue({ allowed: true, duplicateId: null });
 }
 
 function request(body: unknown = payload) {
@@ -371,4 +382,78 @@ describe("Internet collection lead delivery without manual gates", () => {
       );
     },
   );
+
+  it("requires a structured installation address on the Internet collection", async () => {
+    setup();
+    const withoutInstallation = Object.fromEntries(
+      Object.entries(payload).filter(([key]) => key !== "installation"),
+    );
+    for (const body of [
+      withoutInstallation,
+      { ...payload, installation: { ...payload.installation, address: "" } },
+      { ...payload, installation: { ...payload.installation, wardCode: "x1" } },
+    ]) {
+      expect((await POST(request(body))).status).toBe(400);
+    }
+    expect(store.saveLead).not.toHaveBeenCalled();
+  });
+
+  it("includes the installation address in the Telegram message", async () => {
+    setup();
+    vi.stubEnv("TELEGRAM_BOT_TOKEN", "test-token");
+    vi.stubEnv("TELEGRAM_CHAT_ID", "test-chat");
+    const send = vi.fn(async () => Response.json({ ok: true }));
+    vi.stubGlobal("fetch", send);
+    expect((await POST(request())).status).toBe(200);
+    expect(store.saveLead.mock.calls[0][0].installation).toMatchObject({
+      city: "Đà Nẵng",
+      wardName: "Phường Hải Châu",
+    });
+    await drainAfter();
+    const body = JSON.parse(
+      (send.mock.calls[0] as unknown as [string, { body: string }])[1].body,
+    ) as { text: string };
+    expect(body.text).toContain(
+      "Địa chỉ lắp đặt: Địa chỉ thử nghiệm, Phường Hải Châu, Đà Nẵng.",
+    );
+  });
+
+  it("returns 429 without storing when the rate limit is exceeded", async () => {
+    setup();
+    store.guardLeadIntake.mockResolvedValue({
+      allowed: false,
+      duplicateId: null,
+    });
+    const response = await POST(request());
+    expect(response.status).toBe(429);
+    expect(await response.json()).toEqual({ error: "rate_limited" });
+    expect(store.saveLead).not.toHaveBeenCalled();
+    expect(postResponse.queue).toHaveLength(0);
+  });
+
+  it("confirms a recent duplicate without a second row or notification", async () => {
+    setup();
+    store.guardLeadIntake.mockResolvedValue({
+      allowed: true,
+      duplicateId: "lead-0",
+    });
+    const response = await POST(request());
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ ok: true });
+    expect(store.saveLead).not.toHaveBeenCalled();
+    expect(postResponse.queue).toHaveLength(0);
+  });
+
+  it("leaves Telegram to Supabase when LEAD_NOTIFY_MODE=supabase", async () => {
+    setup();
+    vi.stubEnv("LEAD_NOTIFY_MODE", "supabase");
+    vi.stubEnv("TELEGRAM_BOT_TOKEN", "test-token");
+    vi.stubEnv("TELEGRAM_CHAT_ID", "test-chat");
+    const send = vi.fn();
+    vi.stubGlobal("fetch", send);
+    expect((await POST(request())).status).toBe(200);
+    expect(store.saveLead).toHaveBeenCalledOnce();
+    expect(postResponse.queue).toHaveLength(0);
+    expect(send).not.toHaveBeenCalled();
+  });
 });

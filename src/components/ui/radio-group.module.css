@@ -1,4 +1,7 @@
 .group {
+  /* Contain Radix's hidden absolute form inputs; without a positioned
+     ancestor they escape horizontal carousels and widen the page. */
+  position: relative;
   display: grid;
   gap: 6px;
 }

@@ -1,42 +1,22 @@
 import { after, NextRequest, NextResponse } from "next/server";
 import { leadSchema } from "@/lib/lead-schema";
-import { getPage } from "@/lib/server/page-repository";
-import { siteConfig } from "@/lib/site-config";
 import { getLeadPrivacyConfig } from "./_lib/privacy-config";
 import {
+  guardLeadIntake,
   leadStoreConfigured,
   saveLead,
   setLeadNotificationStatus,
 } from "@/lib/server/lead-store";
 import {
-  broadbandPlans,
-  cameraPlans,
-  comboPlans,
-  meshPlans,
-  televisionPlans,
-  ultraSpeedPlans,
-} from "@/features/collections/internet/internet-data";
+  buildLeadMessage,
+  clientIpBucket,
+  isAllowedOrigin,
+  leadNotifyMode,
+  resolveLeadProduct,
+} from "@/lib/server/lead-intake";
 
-const internetCollectionCodes = new Set(
-  [
-    ...broadbandPlans,
-    ...cameraPlans,
-    ...comboPlans,
-    ...meshPlans,
-    ...televisionPlans,
-    ...ultraSpeedPlans,
-  ].map((plan) => plan.code),
-);
-
-const allowedAttribution = new Set([
-  "utm_source",
-  "utm_medium",
-  "utm_campaign",
-  "utm_content",
-  "utm_term",
-  "gclid",
-]);
 const maxBodyBytes = 12000;
+const noStore = { "Cache-Control": "no-store, max-age=0" };
 
 async function readBody(
   req: NextRequest,
@@ -66,35 +46,31 @@ async function readBody(
   }
 }
 
-export async function POST(req: NextRequest) {
-  const origin = req.headers.get("origin");
-  let originAllowed = true;
+async function sendTelegram(message: string): Promise<boolean> {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  if (!token || !chatId) return false;
   try {
-    if (origin) {
-      const requestOrigin = new URL(origin).origin;
-      const deploymentOrigin = process.env.VERCEL_URL
-        ? new URL(
-            process.env.VERCEL_URL.startsWith("https://")
-              ? process.env.VERCEL_URL
-              : `https://${process.env.VERCEL_URL}`,
-          ).origin
-        : null;
-      const localPreview =
-        process.env.NODE_ENV !== "production" &&
-        ["localhost", "127.0.0.1", "[::1]"].includes(
-          new URL(req.url).hostname,
-        ) &&
-        requestOrigin === new URL(req.url).origin;
-      originAllowed =
-        requestOrigin === siteConfig.origin ||
-        (requestOrigin === deploymentOrigin &&
-          requestOrigin === new URL(req.url).origin) ||
-        localPreview;
-    }
+    const response = await fetch(
+      `https://api.telegram.org/bot${token}/sendMessage`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: chatId, text: message }),
+        signal: AbortSignal.timeout(8000),
+        cache: "no-store",
+      },
+    );
+    if (!response.ok) return false;
+    const delivered = (await response.json()) as { ok?: boolean };
+    return delivered.ok === true;
   } catch {
-    originAllowed = false;
+    return false; // The lead is durable even if Telegram is unavailable.
   }
-  if (!originAllowed || req.headers.get("sec-fetch-site") === "cross-site") {
+}
+
+export async function POST(req: NextRequest) {
+  if (!isAllowedOrigin(req)) {
     return NextResponse.json({ error: "invalid_origin" }, { status: 403 });
   }
   if (
@@ -118,7 +94,7 @@ export async function POST(req: NextRequest) {
   if (!leadStoreConfigured()) {
     return NextResponse.json(
       { error: "lead_storage_unconfigured" },
-      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
+      { status: 503, headers: noStore },
     );
   }
 
@@ -137,50 +113,29 @@ export async function POST(req: NextRequest) {
   if (lead.privacyPolicyVersion !== intakeConfig.policyVersion) {
     return NextResponse.json(
       { error: "privacy_policy_version_mismatch" },
-      { status: 409, headers: { "Cache-Control": "no-store, max-age=0" } },
+      { status: 409, headers: noStore },
     );
   }
-  const sourcePage = getPage(lead.pagePath);
-  const productPage = getPage(lead.itemId);
-  const isReadyProduct =
-    productPage &&
-    productPage.status === "ready" &&
-    (productPage.kind === "package" || productPage.kind === "internet") &&
-    productPage.product?.id === lead.itemId;
-  const isOwnDetail =
-    lead.pagePath === lead.itemId && sourcePage?.product?.id === lead.itemId;
-  const isReferencedCard = sourcePage?.sections.some(
-    (section) =>
-      section.type === "cards" &&
-      section.cards.some((card) => card.productId === lead.itemId),
-  );
-  const isInternetCollectionCard =
-    lead.pagePath === "/internet" &&
-    sourcePage?.kind === "collection" &&
-    productPage?.kind === "internet" &&
-    lead.itemId.startsWith("/internet/") &&
-    internetCollectionCodes.has(lead.itemId.slice("/internet/".length));
-  if (
-    !isReadyProduct ||
-    (!isOwnDetail && !isReferencedCard && !isInternetCollectionCard)
-  ) {
+  const productPage = resolveLeadProduct(lead);
+  if (!productPage) {
     return NextResponse.json({ error: "invalid_item" }, { status: 400 });
   }
 
-  const attribution = Object.entries(lead.attribution)
-    .filter(([key]) => allowedAttribution.has(key))
-    .map(([key, value]) => `${key}: ${value}`)
-    .join("\n");
-  const message = [
-    "📥 ĐĂNG KÝ MỚI",
-    `Khách: ${lead.name}`,
-    `Điện thoại: ${lead.phone}`,
-    `Quan tâm: ${productPage.heading} (${lead.itemId})`,
-    `Ghi chú: ${lead.note || "—"}`,
-    attribution && `Nguồn:\n${attribution}`,
-  ]
-    .filter(Boolean)
-    .join("\n");
+  const guard = await guardLeadIntake({
+    ipBucket: await clientIpBucket(req),
+    phone: lead.phone,
+    itemId: lead.itemId,
+  });
+  if (!guard.allowed) {
+    return NextResponse.json(
+      { error: "rate_limited" },
+      { status: 429, headers: { ...noStore, "Retry-After": "600" } },
+    );
+  }
+  // The same phone already registered this product minutes ago: it is stored
+  // and notified, so confirm without creating a duplicate row or message.
+  if (guard.duplicateId) return NextResponse.json({ ok: true });
+
   let leadId: string;
   try {
     leadId = await saveLead(lead, productPage.heading, {
@@ -193,42 +148,23 @@ export async function POST(req: NextRequest) {
   } catch {
     return NextResponse.json(
       { error: "lead_intake_unavailable" },
-      { status: 503, headers: { "Cache-Control": "no-store, max-age=0" } },
+      { status: 503, headers: noStore },
     );
   }
 
-  after(async () => {
-    const token = process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
-    let notificationSent = false;
-    if (token && chatId) {
+  if (leadNotifyMode() === "next") {
+    const message = buildLeadMessage(lead, productPage.heading);
+    after(async () => {
+      const notificationSent = await sendTelegram(message);
       try {
-        const response = await fetch(
-          `https://api.telegram.org/bot${token}/sendMessage`,
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ chat_id: chatId, text: message }),
-            signal: AbortSignal.timeout(8000),
-            cache: "no-store",
-          },
+        await setLeadNotificationStatus(
+          leadId,
+          notificationSent ? "sent" : "failed",
         );
-        if (response.ok) {
-          const delivered = (await response.json()) as { ok?: boolean };
-          notificationSent = delivered.ok === true;
-        }
       } catch {
-        // The lead is durable even if Telegram is unavailable.
+        // The saved lead remains pending if the status update fails.
       }
-    }
-    try {
-      await setLeadNotificationStatus(
-        leadId,
-        notificationSent ? "sent" : "failed",
-      );
-    } catch {
-      // The saved lead remains pending if the status update fails.
-    }
-  });
+    });
+  }
   return NextResponse.json({ ok: true });
 }
