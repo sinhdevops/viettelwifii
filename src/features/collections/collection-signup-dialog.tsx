@@ -22,6 +22,7 @@ import {
 } from "react";
 import { toast } from "sonner";
 import { leadSchema } from "@/lib/lead-schema";
+import { trackLeadFormConversion } from "@/lib/gtag";
 import { CollectionSelect } from "./collection-select";
 import {
   loadSignupWards,
@@ -238,6 +239,7 @@ export function CollectionSignupDialog({
         toast.error(message);
         return;
       }
+      trackLeadFormConversion({ phone: parsed.data.phone });
       setOpen(false);
       setPrivacyAvailability("checking");
       setPrivacyPolicyVersion("");

@@ -9,6 +9,7 @@ export function trackEvent(
 ) {
   if (typeof window === "undefined") return;
   // Only non-PII. Never send form name, phone, notes, or Telegram payload.
+  // (Google Ads Enhanced Conversions phone data goes only through lib/gtag.ts.)
   const safeParams = Object.fromEntries(
     Object.entries(params).filter(([key]) =>
       ["item_id", "page_path"].includes(key),

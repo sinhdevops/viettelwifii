@@ -3,6 +3,7 @@ import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "sonner";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { GoogleAdsTag } from "@/components/analytics/google-ads-tag";
 import { getRenderablePage } from "@/lib/server/page-repository";
 import { siteConfig } from "@/lib/site-config";
 import {
@@ -79,6 +80,7 @@ export default function RootLayout({
         {children}
         <SiteFooter availableSiteRoutes={availableSiteRoutes} />
         <Toaster position="top-right" richColors />
+        <GoogleAdsTag />
       </body>
     </html>
   );

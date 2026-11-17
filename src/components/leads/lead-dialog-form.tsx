@@ -16,6 +16,7 @@ import {
   type ValidatedLead,
 } from "@/lib/lead-schema";
 import { trackEvent } from "@/lib/analytics";
+import { trackLeadFormConversion } from "@/lib/gtag";
 
 export function LeadDialogForm({
   itemId,
@@ -169,6 +170,7 @@ export function LeadDialogForm({
         item_id: itemId,
         page_path: sourcePath,
       });
+      trackLeadFormConversion({ phone: values.phone });
       toast.success("Đã gửi đăng ký. Chúng tôi sẽ liên hệ sớm!");
       reset();
       onClose();

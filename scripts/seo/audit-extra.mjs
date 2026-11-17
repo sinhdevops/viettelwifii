@@ -30,12 +30,10 @@ for (const path of [
 const external = new Map();
 for (let i = 0; i < paths.length; i += 10) {
   const batch = await Promise.all(
-    paths
-      .slice(i, i + 10)
-      .map(async (p) => ({
-        p,
-        html: await (await fetch(`${base}${p}`)).text(),
-      })),
+    paths.slice(i, i + 10).map(async (p) => ({
+      p,
+      html: await (await fetch(`${base}${p}`)).text(),
+    })),
   );
   for (const { html } of batch) {
     for (const m of html.matchAll(/<a\b[^>]*href="(https?:\/\/[^"]+)"/gi)) {
