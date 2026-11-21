@@ -43,17 +43,6 @@
   border-left: 1px solid rgb(255 255 255 / 55%);
   padding-left: 10px;
 }
-.zalo {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-radius: 9999px;
-  background: #0068ff;
-  color: #fff;
-  font-family: var(--font-beausans), Arial, sans-serif;
-  text-decoration: none;
-}
 @media (max-width: 959px) {
   .floating {
     right: 16px;

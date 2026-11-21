@@ -1,5 +1,10 @@
 # BOARDROOM — ĐIỀU PHỐI ĐỘI AGENT VIETTELUP
 
+### HIDE-FLOATING-ZALO-20261118 — tích hợp bởi lead
+
+- User yêu cầu ẩn nút Zalo nổi trên `/internet` vì chat Zalo khó đo chuyển đổi Google Ads. Bỏ nút Zalo khỏi `src/components/site/floating-contact.tsx` (và style `.zalo`); giữ nút hotline "Lắp đặt mới". `NEXT_PUBLIC_ZALO_URL` không còn hiển thị nút nổi nhưng vẫn được Google Ads tag nhận diện nếu có link Zalo khác.
+- Self-check: tsc/ESLint/Prettier PASS; dev `/internet` (có `NEXT_PUBLIC_ZALO_URL` trong `.env.local`) chỉ còn "Lắp đặt mới", không còn "Zalo". Chưa commit/deploy.
+
 ### SIGNUP-NONBLOCKING-20261117 — tích hợp bởi lead, chờ nghiệm thu
 
 - User báo modal Internet trên production hiện "Biểu mẫu tạm thời chưa khả dụng" thay cho form. `/api/leads/config` trên production trả `available:true`; trình duyệt sạch thấy form, nên lỗi xảy ra khi preflight bị chặn/lỗi/quá 5s (máy user có adblock chặn request). Server luôn `available:true` nên cổng phía client là thừa.
